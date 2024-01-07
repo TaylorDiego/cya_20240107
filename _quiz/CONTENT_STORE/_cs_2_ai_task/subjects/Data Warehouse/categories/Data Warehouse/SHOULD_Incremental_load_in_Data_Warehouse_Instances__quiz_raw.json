@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What happens when a table mapped from an ODX does not have an incremental load rule applied in the source?",
+        "options": {
+            "option_a": "The table will load incrementally with an 'I' icon displayed.",
+            "option_b": "The table will not load until the rule is manually set.",
+            "option_c": "A full load will occur when the table is executed.",
+            "option_d": "The table will load incrementally without an 'I' icon displayed."
+        },
+        "answer": "option_c",
+        "explanation": "If no incremental load rule is applied in the source, the mapping for the table will not display an 'I' icon, indicating that a full load will occur when the table is executed."
+    },
+    "question_2": {
+        "question": "In TimeXtender, if you are mapping a table from another Data Area and the source table has an incremental rule setup in the ODX, what is recommended?",
+        "options": {
+            "option_a": "Use the Automate feature to base the incremental rule on the DW_Timestamp field.",
+            "option_b": "Set the data extraction settings to Full Load.",
+            "option_c": "Ignore the incremental rule and perform a full load.",
+            "option_d": "Use the Automate feature to base the incremental rule on the IncrementalTimeStamp field."
+        },
+        "answer": "option_d",
+        "explanation": "When mapping a table from another Data Area with an incremental rule setup in the ODX, it is recommended to use the Automate feature to base the incremental rule on the auto-suggested IncrementalTimeStamp field."
+    },
+    "question_3": {
+        "question": "What is the purpose of the 'Mapping id field' in the incremental table?",
+        "options": {
+            "option_a": "To indicate the last time the table was fully loaded.",
+            "option_b": "To ensure the correct table is always used for mapping.",
+            "option_c": "To display the batch number of the last incremental load.",
+            "option_d": "To show whether an execution was a full load or not."
+        },
+        "answer": "option_b",
+        "explanation": "The 'Mapping id field' contains the GUID value of the mapping of the two tables and is used to ensure that the correct table is always used for mapping."
+    },
+    "question_4": {
+        "question": "What does the 'Status field' in the _I table indicate after a successful execution?",
+        "options": {
+            "option_a": "It shows the number of records loaded.",
+            "option_b": "It remains null.",
+            "option_c": "It is set to 'OK'.",
+            "option_d": "It indicates the batch number."
+        },
+        "answer": "option_c",
+        "explanation": "After a successful execution, the 'Status field' in the _I table will be set to 'OK', indicating that the execution was successful."
+    }
+}

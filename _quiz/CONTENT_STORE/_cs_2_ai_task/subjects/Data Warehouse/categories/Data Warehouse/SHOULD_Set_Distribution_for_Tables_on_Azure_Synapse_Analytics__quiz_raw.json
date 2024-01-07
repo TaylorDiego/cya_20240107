@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the default distribution method for tables on Azure Synapse Analytics?",
+        "options": {
+            "option_a": "Replicate",
+            "option_b": "Round-robin",
+            "option_c": "Hash",
+            "option_d": "Shard"
+        },
+        "answer": "option_b",
+        "explanation": "Round-robin is the default distribution method, which distributes rows of data evenly across the server."
+    },
+    "question_2": {
+        "question": "How many distributions are data split across in Azure Synapse Analytics?",
+        "options": {
+            "option_a": "30 distributions",
+            "option_b": "60 distributions",
+            "option_c": "90 distributions",
+            "option_d": "120 distributions"
+        },
+        "answer": "option_b",
+        "explanation": "Data in the table is distributed among the 60 distributions on the server."
+    },
+    "question_3": {
+        "question": "In the context of Azure Synapse Analytics, what does the 'Replicate' distribution option do?",
+        "options": {
+            "option_a": "Distributes rows of data based on a hash function",
+            "option_b": "Distributes rows of data evenly across the server",
+            "option_c": "Stores a copy of all data in the table on all nodes",
+            "option_d": "Partitions the table based on the date"
+        },
+        "answer": "option_c",
+        "explanation": "The 'Replicate' distribution option stores a copy of all data in the table on all nodes."
+    },
+    "question_4": {
+        "question": "What is the default 'distribution column' used by the Hash distribution method in Azure Synapse Analytics?",
+        "options": {
+            "option_a": "DW_id",
+            "option_b": "Unique_id",
+            "option_c": "Hash_key",
+            "option_d": "Node_id"
+        },
+        "answer": "option_a",
+        "explanation": "The default 'distribution column' for the Hash distribution method is the system field 'DW_id'."
+    }
+}

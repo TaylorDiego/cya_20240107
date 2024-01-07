@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the primary purpose of deployment in TimeXtender?",
+        "options": {
+            "option_a": "To schedule data refreshes",
+            "option_b": "To generate scripts for creating tables and associated stored procedures",
+            "option_c": "To visualize data in reports",
+            "option_d": "To manage user permissions"
+        },
+        "answer": "option_b",
+        "explanation": "Deployment in TimeXtender is used to take table definitions from the TimeXtender Desktop and generate scripts that create tables and their associated stored procedures in the data area storage."
+    },
+    "question_2": {
+        "question": "What are the two processes commonly performed one after the other in TimeXtender?",
+        "options": {
+            "option_a": "Deploy and Refresh",
+            "option_b": "Deploy and Execute",
+            "option_c": "Execute and Validate",
+            "option_d": "Refresh and Validate"
+        },
+        "answer": "option_b",
+        "explanation": "Deploy and Execute are two separate processes in TimeXtender that are commonly performed one after the other via the Deploy and Execute command to create and populate tables in the SQL database."
+    },
+    "question_3": {
+        "question": "What does the 'Enable differential deployment' option do in the Deploy and/or Execute dialog?",
+        "options": {
+            "option_a": "It deploys all objects regardless of changes",
+            "option_b": "It deploys only the objects that have not been changed",
+            "option_c": "It focuses the deployment on only those objects that have been changed",
+            "option_d": "It disables incremental loading"
+        },
+        "answer": "option_c",
+        "explanation": "The 'Enable differential deployment' option focuses the deployment so that only those objects that have been changed will be deployed."
+    },
+    "question_4": {
+        "question": "What is the result of deploying a guarded table in TimeXtender?",
+        "options": {
+            "option_a": "The table is deployed without any warnings",
+            "option_b": "The table is deployed and truncated",
+            "option_c": "The table appears to start running but a message states that the table is guarded upon completion",
+            "option_d": "The table is immediately deleted"
+        },
+        "answer": "option_c",
+        "explanation": "A guarded table may appear to start running if you attempt to deploy it, but upon completion, a message will appear stating that the table is guarded, preventing its deployment or accidental truncation."
+    },
+    "question_5": {
+        "question": "What is the purpose of the Transformation View (_T) in a TimeXtender data area table?",
+        "options": {
+            "option_a": "To store a raw copy of the source table",
+            "option_b": "To hold the list of DW_IDs for flagged rows",
+            "option_c": "To perform all the needed transformations on the data",
+            "option_d": "To relate to the Messages Table and include error messages"
+        },
+        "answer": "option_c",
+        "explanation": "The Transformation View (_T) in a TimeXtender data area table performs all the needed transformations on the data using CAST and AS, along with other operators."
+    },
+    "question_6": {
+        "question": "How is the deployment scope determined in TimeXtender?",
+        "options": {
+            "option_a": "By the size of the data warehouse",
+            "option_b": "By the number of tables in the data area",
+            "option_c": "By where or what level the deployment is initiated from",
+            "option_d": "By the number of users accessing the tables"
+        },
+        "answer": "option_c",
+        "explanation": "Deployment scope in TimeXtender is determined by where or what level the deployment is initiated from, allowing for focused deployment on specific tables or broader deployment at the data area or data warehouse level."
+    }
+}

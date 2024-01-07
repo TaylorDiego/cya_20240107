@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:42:50",
+    "URL": "https://support.timextender.com/troubleshooting-134/error-the-type-initializer-for-oracle-dataaccess-client-oracleconnectionstringbuilder-threw-an-exception-1240",
+    "Keywords": "missing",
+    "Title": "Error_ The type initializer for 'Oracle.DataAccess.Client. OracleConnectionStringBuilder' threw an exception. _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "Testing the connection to a new Oracle data source results in an error message. However, using an ADO.net Any Source or the local oracle client via TNS connection succeeds.  There may be a conflict between Oracle Native Client and Oracle Data Provider Remove the Oracle Native Client and install only the Oracle Data Provider according to the instructions provided in the below article   ",
+    "Lists": []
+}

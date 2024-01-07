@@ -1,0 +1,20 @@
+{
+    "DateTime": "2023-12-27 14:43:04",
+    "URL": "https://support.timextender.com/troubleshooting-134/error-timeout-expired-1273",
+    "Keywords": "missing",
+    "Title": "Error_ _Timeout expired_ _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "You receive an error similar to the following: Timeout expired. The timeout period elapsed prior to completion of the operation or the server is not responding. Error during Data Processing for Table: <TABLENAME> Timeout expired. The timeout period elapsed prior to completion of the operation or the server is not responding. Stored Procedure: [dbo].[usp_XXXXXX_Clean] Parameters: @Debug = 0 @Version = 182 @LoadDate = 09-01-2012 16:59:06 If you do not change the default timeout settings, any query on a DW instance will timeout after 100 seconds. To change the timeout setting and solve the described timeout problem do the following on the DW instance in question: ",
+    "Lists": [
+        {
+            "heading": "Resolution",
+            "paragraphs": [
+                "To change the timeout setting and solve the described timeout problem do the following on the DW instance in question:"
+            ],
+            "list": [
+                "Select Edit for the DW instance in the TimeXtender Portal",
+                "Set the Command Timeout to a higher value (e.g. 3600 for a one hour timeout)"
+            ]
+        }
+    ]
+}

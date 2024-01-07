@@ -1,0 +1,48 @@
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the main benefit of upgrading to the Premium tier according to the text provided?
+
+{"score":0}Limited access to features
+{"score":100.0}Unlimited everything
+{"score":0}Free tier benefits
+{"score":0}Discounted pricing
+-
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What types of instances can have their firewall configured in TimeXtender?
+
+{"score":0}ODX instances only
+{"score":0}DW instances only
+{"score":0}Semantic Model instances only
+{"score":100.0}ODX, DW, and Semantic Model instances
+-
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the main advantage of using automatic firewall rules in TimeXtender?
+
+{"score":0}They offer more control over IP address access
+{"score":0}They require manual authentication each time
+{"score":100.0}They provide convenience and efficiency
+{"score":0}They are necessary for all TimeXtender setups
+-
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does the TimeXtender Portal Admin page display regarding credits and billing?
+
+{"score":0}Only the current credit balance
+{"score":0}Only a monthly overview of usage
+{"score":100.0}Both the current credit balance and a monthly overview of usage
+{"score":0}Historical credit balances and future credit projections
+-
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How often are credits deducted from your balance in TimeXtender?
+
+{"score":0}Weekly
+{"score":100.0}Daily
+{"score":0}Monthly
+{"score":0}At the end of the billing cycle
+-
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step to update an existing data source provider in TimeXtender according to the article?
+
+{"score":0}Download the new provider version
+{"score":100.0}Sign into the TimeXtender Portal and go to data sources
+{"score":0}Contact TimeXtender support
+{"score":0}Uninstall the previous version of the provider
+-
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where will a newer version of a data source provider appear if it is available?
+
+{"score":0}In an email notification
+{"score":0}On the TimeXtender Portal homepage
+{"score":100.0}On the list in the data sources section of the TimeXtender Portal
+{"score":0}It needs to be searched for manually in the portal

@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "Which AWS service is recommended for hosting the TimeXtender application according to the provided architecture?",
+        "options": {
+            "option_a": "AWS Lambda",
+            "option_b": "AWS EC2",
+            "option_c": "AWS S3",
+            "option_d": "AWS RDS"
+        },
+        "answer": "option_b",
+        "explanation": "AWS EC2 is recommended for serving the TimeXtender application in AWS, as it allows for sizing according to the solution's requirements."
+    },
+    "question_2": {
+        "question": "What is the recommended instance type for moderate workloads of TimeXtender on AWS EC2?",
+        "options": {
+            "option_a": "t2.micro",
+            "option_b": "t2.xlarge",
+            "option_c": "t2.2xlarge",
+            "option_d": "m5.large"
+        },
+        "answer": "option_c",
+        "explanation": "The recommended EC2 instance type for moderate workloads is t2.2xlarge, which provides 8 vCPUs and 32 GiB of memory."
+    },
+    "question_3": {
+        "question": "For small size databases, which AWS RDS SQL Server instance is suggested?",
+        "options": {
+            "option_a": "m5.large",
+            "option_b": "t2.micro",
+            "option_c": "t2.xlarge",
+            "option_d": "m5.xlarge"
+        },
+        "answer": "option_a",
+        "explanation": "The m5.large instance is recommended for small size databases, offering 2 vCPUs and 8 GiB of memory."
+    },
+    "question_4": {
+        "question": "What tool does AWS provide to help estimate costs for various configurations?",
+        "options": {
+            "option_a": "AWS Cost Explorer",
+            "option_b": "AWS Budgets",
+            "option_c": "AWS Pricing Calculator",
+            "option_d": "AWS Total Cost of Ownership Calculator"
+        },
+        "answer": "option_c",
+        "explanation": "AWS provides the AWS Pricing Calculator to help users estimate their costs for different configurations."
+    }
+}

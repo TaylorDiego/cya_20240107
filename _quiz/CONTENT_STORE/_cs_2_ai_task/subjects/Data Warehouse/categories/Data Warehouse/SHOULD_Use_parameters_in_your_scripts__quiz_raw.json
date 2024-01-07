@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the primary function of parameters in custom scripts or views as described in the text?",
+        "options": {
+            "option_a": "To delete views and scripts",
+            "option_b": "To convert instances of a name to its content",
+            "option_c": "To rename tables automatically",
+            "option_d": "To notify users about system errors"
+        },
+        "answer": "option_b",
+        "explanation": "Parameters in custom scripts or views replace all instances of a name with its actual content, aiding in the customization process."
+    },
+    "question_2": {
+        "question": "What happens when you try to pull in a field from another table without renaming it?",
+        "options": {
+            "option_a": "The field is automatically renamed",
+            "option_b": "The script is executed without errors",
+            "option_c": "You receive a notification to rename the field",
+            "option_d": "The field is deleted from the table"
+        },
+        "answer": "option_c",
+        "explanation": "When you pull in a field from another table and a name conflict occurs, you receive a notification prompting you to rename the field."
+    },
+    "question_3": {
+        "question": "Which of the following is NOT listed as a feature that uses parameters according to the provided text?",
+        "options": {
+            "option_a": "Custom Views",
+            "option_b": "Semantic Custom Scripts",
+            "option_c": "Automated Table Indexing",
+            "option_d": "Derived Measures"
+        },
+        "answer": "option_c",
+        "explanation": "Automated Table Indexing is not mentioned in the list of features that use parameters; all other options are included in the list."
+    },
+    "question_4": {
+        "question": "What is the advantage of changing field names in the view as mentioned in the text?",
+        "options": {
+            "option_a": "It prevents the script from executing",
+            "option_b": "It automatically updates the names in the code",
+            "option_c": "It deletes the old fields from the database",
+            "option_d": "It creates a new table in the database"
+        },
+        "answer": "option_b",
+        "explanation": "Changing field names in the view automatically updates the names in the associated code, reflecting the changes without manual intervention."
+    }
+}

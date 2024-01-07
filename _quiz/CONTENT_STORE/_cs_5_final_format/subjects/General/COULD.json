@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What is a potential reason for an Azure Data Factory (ADF) execution error when using ODX Server with an Azure Data Lake Gen2 storage?",
+        "options": {
+            "option_a": "Incorrect file format",
+            "option_b": "Firewall blocking ADF from accessing the Data Lake",
+            "option_c": "Insufficient permissions on the ADF",
+            "option_d": "ODX Server is offline"
+        },
+        "answer": "option_b",
+        "explanation": "The error 'Forbidden' indicates that the firewall is blocking ADF from reading or writing files in the Data Lake, which is a networking issue rather than a problem with file formats, permissions, or server status."
+    }
+    , "question_2": {
+        "question": "What is the likely cause of the error 'Could not load file or assembly' when using TimeXtender?",
+        "options": {
+            "option_a": "Incorrect TimeXtender version",
+            "option_b": "Missing SQL Shared Management Objects (SMO)",
+            "option_c": "Corrupted TimeXtender project file",
+            "option_d": "Outdated Windows operating system"
+        },
+        "answer": "option_b",
+        "explanation": "The error is caused by missing SQL Shared Management Objects (SMO), which are necessary for creating tables and other SQL objects from TimeXtender."
+    }
+}

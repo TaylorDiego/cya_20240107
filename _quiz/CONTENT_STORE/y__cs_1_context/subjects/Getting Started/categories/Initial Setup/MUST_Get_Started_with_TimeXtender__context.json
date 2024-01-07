@@ -1,0 +1,73 @@
+{
+    "DateTime": "2023-12-27 14:39:08",
+    "URL": "https://support.timextender.com/initial-setup-start-here-115/get-started-with-timextender-794",
+    "Keywords": "missing",
+    "Title": "Get Started with TimeXtender _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "TimeXtender Training  Windows-based server software installed on a centrally located physical or virtual machine. This software orchestrates the ingestion of data from various sources. This separates data movement from the desktop software, while ensuring data never leaves a users environment. ASQL databaseorAzure Data Lakewhere raw data is stored after ingestion from sources. By storing data in it's raw form, it can be used for later analysis, or retrieval. A SQL Database, Synapse Dedicated SQL Pool, or Snowflake Data Warehousewhere data from multiple sources is cleansed, transformed, and consolidated into a single version of truth. A subset of related data combined into a single model or \"mart\". This model can be exported to multiple endpoints such as Power BI, Qlik, Tableau, Analysis Services, or CSV. A web portal handling the administration of your TimeXtender Data Estate. Instances hold the storage connection details as well as maintain the configuration information implemented in TimeXtender Desktop. Windows-based Desktop-client software where each instance can be configured & implemented through a single, integrated user-interface. Instances are the metadata components of your TimeXtender Data Estate which are configured in the portal and Also referred to as the ODX, this is you ingest raw data from disparate sources into a centralized storage. An infrastructure choice has to be made regarding ODX storage, although this can always be easily adjusted at a later point. Also referred to as the MDW or DW, this is where you prepare, cleanse, transform, and consolidate data into a \"single version of truth\". An infrastructure choice has to be made regarding DW storage, although this can always be easily adjusted at a later point. Also referred to as the SSL or semantic model, this is where combine and deliver relevant data into data marts or models and publish to various endpoints for business consumption. A SSL instance can have multiple endpoints, but a choice has to be made as to whichendpoint(s) should be used as a starting point. Learn more about adding Instances and Data Sources here TimeXtender supports various storage options, so environments can be configured in many different ways. Below are 4 suggested reference architectures based on common scenarios:  Keep in mind that it is quick and easy to deploy TimeXtender instances to a different environment architecture at any time. For example, if you build your TimeXtender instance on-premise, you can quickly and easily deploy your instance onto Azure SQL DB or Azure Synapse, with little to no downtime. So, don't feel like you will need to live with your decision forever. please reach out to your TimeXtender Partner or Solution Specialist To learn more about installing TimeXtender and setting up your instances see the below article:   ",
+    "Lists": [
+        {
+            "heading": "TimeXtender Instances",
+            "paragraphs": [
+                "Instances are the metadata components of your TimeXtender Data Estate which are configured in the portal and"
+            ],
+            "list": [
+                "store the connection info to the associated target storage.",
+                "contain the metadata for how this area of TimeXtender is configured. (e.g. What tables are selects in an ODX Data Source, What relations & transformations exist in your MDW, etc.)",
+                "maintain versioning, so each individual instance can be rolled back a previous version.",
+                "can be copied to another instance of the same type. Allowing you to migrate your instance configuration to another storage type or environment."
+            ]
+        },
+        {
+            "heading": "Sandbox",
+            "paragraphs": [],
+            "list": [
+                "Ideal for non-production use cases such as prototyping, demonstration and training",
+                "Can be setup for FREE, using SQL Server Developer Edition on an existing windows machine in less than 20 minutes"
+            ]
+        },
+        {
+            "heading": "Azure SQL Database",
+            "paragraphs": [],
+            "list": [
+                "Balance cost and performance in an Azure cloud solution",
+                "Ideal for production data solutions smaller than 1 TB"
+            ]
+        },
+        {
+            "heading": "Azure Synapse Dedicated SQL Pool",
+            "paragraphs": [],
+            "list": [
+                "Geared towards big data solutions in Azure",
+                "Ideal for production data solutions greater than 1 TB",
+                "Near-infinite scalability, up to PB scale",
+                "Extremely powerful, distributed, analytics workloads",
+                "Not suitable for smaller data solutions, as performance, in these cases, is better served by Azure SQL Database"
+            ]
+        },
+        {
+            "heading": "Snowflake",
+            "paragraphs": [],
+            "list": [
+                "Snowflake's multi-cloud compatibility allows users to deploy on AWS or GCP.",
+                "Automatic usage-based scaling of compute and storage resource provides ideal cost/resource optimization.",
+                "Suitable for medium to large data solutions. A great choice for mid-size data solutions (from 500GB and up), or in cases where estimated size of data solution is uncertain and/or might rapidly grow."
+            ]
+        },
+        {
+            "heading": "AWS",
+            "paragraphs": [],
+            "list": [
+                "Balance performance and cost using Amazon Web Services (AWS)",
+                "Use AWS VM for the application server and Amazon RDS SQL database for ODX and MDW storage"
+            ]
+        },
+        {
+            "heading": "On-Premise SQL Server",
+            "paragraphs": [],
+            "list": [
+                "Ideal for production on-premise data solutions in SQL server"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What should you do if you want to include all accounts except for specific ones when setting up a TimeXtender Dynamics 365 Finance data source?",
+        "options": {
+            "option_a": "Leave the 'Accounts' box empty and check the 'Include all accounts' checkbox.",
+            "option_b": "Enter the accounts you want to include in the 'Accounts' box and check the 'Include all accounts' checkbox.",
+            "option_c": "Enter the accounts you want to exclude in the 'Accounts' box and check the 'Include all accounts' checkbox.",
+            "option_d": "Clear the 'Include all accounts' checkbox and leave the 'Accounts' box empty."
+        },
+        "answer": "option_c",
+        "explanation": "To include all accounts except specific ones, you should enter the accounts you want to exclude in the 'Accounts' box and check the 'Include all accounts' checkbox. This setup ensures all accounts are included except those listed."
+    },
+    "question_2": {
+        "question": "Which fields are recommended to be added when setting up Incremental Load in TimeXtender for Dynamics 365 Finance data source?",
+        "options": {
+            "option_a": "DATAAREAID and CREATEDDATETIME",
+            "option_b": "DATAAREAID and MODIFIEDDATETIME",
+            "option_c": "USERNAME and MODIFIEDDATETIME",
+            "option_d": "USERNAME and CREATEDDATETIME"
+        },
+        "answer": "option_b",
+        "explanation": "For Incremental Load setup, it is recommended to add the fields DATAAREAID and MODIFIEDDATETIME, if they exist, as they contain the account name and a timestamp, which are suitable for tracking changes."
+    }
+}

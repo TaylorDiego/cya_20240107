@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the purpose of setting the 'pageurlpath' in an RSD file?",
+        "options": {
+            "option_a": "To define the structure of the database",
+            "option_b": "To set the XPath of the element where the next page URL is passed in the response body",
+            "option_c": "To increase the speed of data retrieval",
+            "option_d": "To specify the API endpoint for the initial request"
+        },
+        "answer": "option_b",
+        "explanation": "The 'pageurlpath' is set to the XPath of the element that contains the URL for the next page in the response body, enabling pagination through the API data."
+    },
+    "question_2": {
+        "question": "What should you do if the API does not provide a parameter to control the page size?",
+        "options": {
+            "option_a": "Set pagesize to zero",
+            "option_b": "Set pagesize to the maximum value allowed by the API",
+            "option_c": "Set pagesize to the default page size provided by the API",
+            "option_d": "Omit the pagesize parameter from the RSD file"
+        },
+        "answer": "option_c",
+        "explanation": "If the API does not have a parameter to control the page size, you must set pagesize to the default page size that the API uses."
+    },
+    "question_3": {
+        "question": "What is the function of the 'PushResponseHeader Page' method?",
+        "options": {
+            "option_a": "To push header names onto the end of the PushResponseHeader# input array",
+            "option_b": "To retrieve the total number of pages from the API",
+            "option_c": "To set the page size for the API call",
+            "option_d": "To synchronize the RSD file with the API"
+        },
+        "answer": "option_a",
+        "explanation": "The 'PushResponseHeader Page' method is used to push header names onto the end of the PushResponseHeader# input array, which marks them to be saved and used for pagination."
+    },
+    "question_4": {
+        "question": "After making changes to an RSD file, what is the next step to apply those changes?",
+        "options": {
+            "option_a": "Deploy and synchronize the RSD file",
+            "option_b": "Execute the table/task associated with the RSD file",
+            "option_c": "Restart the server to apply changes",
+            "option_d": "Submit the RSD file for review"
+        },
+        "answer": "option_b",
+        "explanation": "After making changes to an RSD file, it is not necessary to deploy or synchronize anything; simply executing the table/task is enough to apply the changes."
+    }
+}

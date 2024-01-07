@@ -1,0 +1,167 @@
+{
+    "question_1": {
+        "question": "Who is the author of the article titled 'Upgrade from Free to Premium _ Community'?",
+        "options": {
+            "option_a": "Timextender Support",
+            "option_b": "Thomas Hjermitslev",
+            "option_c": "Premium User",
+            "option_d": "Community Member"
+        },
+        "answer": "option_b",
+        "explanation": "The author of the article is explicitly mentioned as Thomas Hjermitslev."
+    }
+    , "question_2": {
+        "question": "Who can grant access to instances according to the article?",
+        "options": {
+            "option_a": "Any user with the desktop application",
+            "option_b": "Only the instance creator",
+            "option_c": "Admin users",
+            "option_d": "External consultants"
+        },
+        "answer": "option_c",
+        "explanation": "The text mentions 'Users Admin Users with access Grant access', implying that admin users have the authority to grant access to instances."
+    }
+    , "question_3": {
+        "question": "What capability do users have once they are granted access to a particular instance?",
+        "options": {
+            "option_a": "They can only view the instance",
+            "option_b": "They can delete the instance",
+            "option_c": "They can see and edit the instance",
+            "option_d": "They can transfer ownership of the instance"
+        },
+        "answer": "option_c",
+        "explanation": "The text states that users granted access to a particular instance will be able to see and edit it within the TimeXtender Desktop Application."
+    }
+    , "question_4": {
+        "question": "What method is used for communications between the various services on the TimeXtender Portal?",
+        "options": {
+            "option_a": "Public key infrastructure",
+            "option_b": "Custom Authentication through Client secrets",
+            "option_c": "Username and password only",
+            "option_d": "Biometric authentication"
+        },
+        "answer": "option_b",
+        "explanation": "For secure communication between services, the TimeXtender Portal uses custom Authentication through Client secrets."
+    }
+    , "question_5": {
+        "question": "How are the databases on the TimeXtender Portal secured?",
+        "options": {
+            "option_a": "Through encrypted connection strings with username and password",
+            "option_b": "By using a public Wi-Fi network",
+            "option_c": "Using a single master password",
+            "option_d": "Databases are left open for ease of access"
+        },
+        "answer": "option_a",
+        "explanation": "Databases are secured using connection strings that include a username and password, ensuring controlled access."
+    }
+    , "question_6": {
+        "question": "What is the purpose of a TriggerId in TimeXtender's API?",
+        "options": {
+            "option_a": "To authenticate users",
+            "option_b": "To filter logs",
+            "option_c": "To execute jobs",
+            "option_d": "To create new API keys"
+        },
+        "answer": "option_b",
+        "explanation": "A TriggerId is unique to an execution of a job and is used to filter logs."
+    }
+    , "question_7": {
+        "question": "Which HTTP method is used by the 'Get All Jobs Endpoint' in TimeXtender's API?",
+        "options": {
+            "option_a": "POST",
+            "option_b": "PUT",
+            "option_c": "DELETE",
+            "option_d": "GET"
+        },
+        "answer": "option_d",
+        "explanation": "The 'Get All Jobs Endpoint' uses the GET method to retrieve a list of all jobs for an organization."
+    }
+    , "question_8": {
+        "question": "What should you do immediately after generating a new API key?",
+        "options": {
+            "option_a": "Select Close to close the window",
+            "option_b": "Select Copy and save the key in a secure location",
+            "option_c": "Provide a name for the API key",
+            "option_d": "Navigate back to the main dashboard"
+        },
+        "answer": "option_b",
+        "explanation": "After generating a new API key, it is crucial to select Copy and save the key in a secure location because it will not be visible again."
+    }
+    , "question_9": {
+        "question": "What must you do to confirm the deletion of an API key?",
+        "options": {
+            "option_a": "Just select the delete icon",
+            "option_b": "Type the name of the API key",
+            "option_c": "Provide a reason for deletion in the comments",
+            "option_d": "Select Delete to confirm and finalize the deletion"
+        },
+        "answer": "option_d",
+        "explanation": "To confirm the deletion of an API key, you must select Delete to confirm and finalize the deletion process."
+    }
+    , "question_10": {
+        "question": "What visual cue indicates a user with 'company admin' permission in the TimeXtender Portal?",
+        "options": {
+            "option_a": "A star icon next to their name",
+            "option_b": "A crown icon next to their name",
+            "option_c": "A lock icon next to their name",
+            "option_d": "A checkmark next to their name"
+        },
+        "answer": "option_b",
+        "explanation": "Users with 'company admin' permission have a crown icon displayed next to their name in the user list."
+    }
+    , "question_11": {
+        "question": "What should a user do if they did not receive the invitation email or have forgotten their password for the TimeXtender Portal?",
+        "options": {
+            "option_a": "Contact TimeXtender support",
+            "option_b": "Create a new user account",
+            "option_c": "Use the 'Forgot your password?' link or have a company admin trigger a password reset",
+            "option_d": "Wait for the system to resend the invitation automatically"
+        },
+        "answer": "option_c",
+        "explanation": "Users can use the 'Forgot your password?' link on the sign-in page or have a company admin trigger a password reset from within the Portal."
+    }
+    , "question_12": {
+        "question": "How can you view the number of automatic firewall rules created for an instance in TimeXtender?",
+        "options": {
+            "option_a": "By checking the instance's metadata database",
+            "option_b": "By selecting 'Show automatic rules' in the Firewall rules section",
+            "option_c": "By contacting TimeXtender support",
+            "option_d": "Automatic rules are not visible to users"
+        },
+        "answer": "option_b",
+        "explanation": "To view automatic firewall rules, you need to add or edit an instance, scroll down to the Firewall rules section, and select 'Show automatic rules'. The number of rules is shown in parentheses."
+    }
+    , "question_13": {
+        "question": "What should you do if the TimeXtender automatic rule system does not support your setup or is malfunctioning?",
+        "options": {
+            "option_a": "Contact TimeXtender support immediately",
+            "option_b": "Disable automatic rules and create manual rules",
+            "option_c": "Ignore the issue as it will resolve itself",
+            "option_d": "Reinstall TimeXtender"
+        },
+        "answer": "option_b",
+        "explanation": "If the automatic rule system is not suitable or is malfunctioning, you should disable automatic rules and manually create rules for each instance to maintain security and control."
+    }
+    , "question_14": {
+        "question": "What happens if more credits are consumed than are available in TimeXtender?",
+        "options": {
+            "option_a": "The system will automatically top up the credits",
+            "option_b": "The account will be suspended until credits are added",
+            "option_c": "The credit balance becomes negative and you will be invoiced",
+            "option_d": "The excess usage will be deducted from the next month's credit balance"
+        },
+        "answer": "option_c",
+        "explanation": "If credit consumption exceeds the available balance, the credit balance becomes negative, and the user will be invoiced at the end of the billing cycle."
+    }
+    , "question_15": {
+        "question": "What is shown in the Total column of the monthly overview table in TimeXtender?",
+        "options": {
+            "option_a": "The total number of instances available",
+            "option_b": "The total number of credits added for the month",
+            "option_c": "The total number of credits remaining at the end of the month",
+            "option_d": "The total number of credits used throughout the month"
+        },
+        "answer": "option_d",
+        "explanation": "The Total column in the monthly overview table displays the total number of credits used throughout the month."
+    }
+}

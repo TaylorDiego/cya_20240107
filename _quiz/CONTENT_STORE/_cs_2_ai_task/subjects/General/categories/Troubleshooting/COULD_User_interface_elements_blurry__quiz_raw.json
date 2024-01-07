@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What is a potential cause for user interface elements appearing blurry or very small in TimeXtender?",
+        "options": {
+            "option_a": "Issues with the user's vision",
+            "option_b": "Incorrect display scaling settings",
+            "option_c": "Outdated graphics drivers",
+            "option_d": "Corrupted TimeXtender installation files"
+        },
+        "answer": "option_b",
+        "explanation": "The blurriness or small size of UI elements in TimeXtender is due to issues with display scaling, especially when the application is moved to a monitor with a different scaling factor."
+    },
+    "question_2": {
+        "question": "What steps should be followed to ensure correct display scaling for TimeXtender on all monitors?",
+        "options": {
+            "option_a": "Update the TimeXtender software to the latest version",
+            "option_b": "Change the screen resolution on all monitors",
+            "option_c": "Ensure the display scaling factor is the same on all monitors",
+            "option_d": "Replace all monitors with the same model"
+        },
+        "answer": "option_c",
+        "explanation": "To prevent display issues with TimeXtender, the display scaling factor should not be custom and must be consistent across all monitors."
+    }
+}

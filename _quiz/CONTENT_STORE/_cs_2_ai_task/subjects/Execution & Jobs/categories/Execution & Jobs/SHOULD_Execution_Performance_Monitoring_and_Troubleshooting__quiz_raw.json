@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What should you review if a package execution in TimeXtender is taking longer than usual without specific errors or retries?",
+        "options": {
+            "option_a": "Review the latest code changes in the package",
+            "option_b": "Review Windows Event Viewer logs for related errors or warnings",
+            "option_c": "Increase the memory allocation for the TimeXtender application",
+            "option_d": "Check the network speed of the internet connection"
+        },
+        "answer": "option_b",
+        "explanation": "Reviewing Windows Event Viewer logs can help identify errors or warnings related to ODX Service and TimeXtender Scheduler Service that might be affecting package execution times."
+    },
+    "question_2": {
+        "question": "Which of the following is NOT a recommended step when dealing with slow package executions in TimeXtender?",
+        "options": {
+            "option_a": "Implement incremental load for loading big tables",
+            "option_b": "Lower the number of concurrent execution threads on ODX data source",
+            "option_c": "Ignore network latency and CPU/memory usage on other machines",
+            "option_d": "Use a Profiler tool to trace SQL queries and resolve blocking problems"
+        },
+        "answer": "option_c",
+        "explanation": "Ignoring network latency and CPU/memory usage on other machines is not recommended as these factors can significantly impact execution performance."
+    },
+    "question_3": {
+        "question": "What is a proactive step you can take to maintain TimeXtender execution performance?",
+        "options": {
+            "option_a": "Regularly reboot the server to clear temporary files",
+            "option_b": "Use the SQL Database Cleanup Tool to remove unused objects",
+            "option_c": "Always keep the number of threads at the maximum level",
+            "option_d": "Avoid reviewing the Execution History Gantt charts"
+        },
+        "answer": "option_b",
+        "explanation": "Using the SQL Database Cleanup Tool to remove objects no longer used in the instance is a proactive maintenance step to help maintain performance."
+    },
+    "question_4": {
+        "question": "When experiencing slow executions in TimeXtender, what should you compare to identify potential issues?",
+        "options": {
+            "option_a": "Compare the color schemes of the Execution Overview Log",
+            "option_b": "Compare the user permissions of the current and previous executions",
+            "option_c": "Compare slow and fast executions, looking at timings and number of rows",
+            "option_d": "Compare the version of TimeXtender used in both executions"
+        },
+        "answer": "option_c",
+        "explanation": "Comparing slow and fast executions by looking at timings and the number of rows processed can help identify where performance may be degrading."
+    }
+}

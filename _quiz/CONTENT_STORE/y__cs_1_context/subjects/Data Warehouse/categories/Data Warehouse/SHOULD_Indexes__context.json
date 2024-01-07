@@ -1,0 +1,70 @@
+{
+    "DateTime": "2023-12-27 14:41:13",
+    "URL": "https://support.timextender.com/data-warehouse-108/indexes-1138",
+    "Keywords": "missing",
+    "Title": "Indexes _ Community",
+    "Author": "Thomas Lind",
+    "Text": "To achieve the optimal performance foryour data warehouse, it is important to have the right indexes on your tables. TimeXtender can generate the necessary indexes automatically and also assist with the manual creation ofindexes. Indexes can also be handled according to alegacy approach. Index Automation AutoIndex  postfixed data warehouse level individual tables Use the following steps to configure the Index Automation setting on anentire instance. Use the following steps toconfigure the Index Automation setting on a specific table.  Configuring the index automation setting to manual enables users to utilize the index generation features of TimeXtender while still retaining complete control over the indexes in their instance. When manual index generation is executed on a table or data warehouse instance, TimeXtender creates any indexes deemed necessary by Index Automation. However, users have the freedom to delete and modify indexes according to their preferences. It is important to note that TimeXtender will not generate new indexes for the tables unless manual index generation is performed again. This functionality allows users to manage indexes based on their specific needs and preferences. Use the following steps to configure themanualgeneration ofindexes on an instance.  Use the following steps to configure themanualgeneration ofindexes on a table. Include Fields Name   Lookup Field  It is not possible to select any fields for this option, simply selecting this option is sufficient for its configuration. Hi, Looking ata the data cleansing procedure for a table with default settings, it seems that indexes on are being rebuilt every time the data cleansingis exectued, is this correct?  I.e. the rebuilding of indexes is removed. However, when Irun the tables data transfer, I can see in SSMS that an ALTER INDEX statement is run. Can we find this code somewhere in TimeXtender to better understand it? Thanks! ",
+    "Lists": [
+        {
+            "heading": "Setting up Index Automation",
+            "paragraphs": [
+                "Index Automation is configured on the data warehouse level, but can be overwritten on the individual tables. The following options are available:"
+            ],
+            "list": [
+                "Automatic (default): Index automation updates the indexes whenever the user changes the instance in a way that could trigger a new or altered index.",
+                "Manual: The user can have TimeXtender create indexes on selected tables. However, these indexes are not managed by TimeXtender. Nothing happens automatically if the table is changed in a way that impacts the indexes.",
+                "Disabled: TimeXtender will use the legacy index generation behavior. Indexes will be generated during execution when needed by a data cleansing procedure. However, the same index might be created multiple times, since the index generation behavior is not fine tuned for performance. In addition to that, these auto-generated indexes are not visible to the end user."
+            ]
+        },
+        {
+            "heading": "Configuring Index Automation for the Instance",
+            "paragraphs": [
+                "Use the following steps to configure the Index Automation setting on an entire instance."
+            ],
+            "list": [
+                "Right-click on a data warehouse instance and select Edit Instance to open the following window.",
+                "In the Index generation list, select the appropriate index option.",
+                "Click OK."
+            ]
+        },
+        {
+            "heading": "Configuring Index Automation for a Table",
+            "paragraphs": [
+                "Use the following steps to configure the Index Automation setting on a specific table."
+            ],
+            "list": [
+                "Right-click the table and select Table Settings to open the following window.",
+                "On the General tab, in the Index Automation group, select the appropriate index option.",
+                "Click OK."
+            ]
+        },
+        {
+            "heading": "Generate Indexes Manually on an Instance",
+            "paragraphs": [
+                "Use the following steps to configure the manual generation of indexes on an instance."
+            ],
+            "list": [
+                "Right-click the instance you want to use manual index generation on and change Index Automation to Manual.",
+                "The existing Automatic indexes will stay, but you can now manually add them as well."
+            ]
+        },
+        {
+            "heading": "Generate Indexes Manually on a Table",
+            "paragraphs": [
+                "Use the following steps to configure the manual generation of indexes on a table."
+            ],
+            "list": [
+                "Right-click the table, select Advanced, and then click on Index Settings.",
+                "If the table already has one or more indexes, then the Index Settings will not be located in the Advanced menu, but instead in an Indexes menu that is in the expanded table tree as shown below.",
+                "In the Index Settings menu, click on Add Index, Edit Index, or Delete Index as appropriate.",
+                "Clicking on Add Index will open the following Create Index window.",
+                "Depending on the index option selected, the dialog window may include different items. The following are the different options along with their dialog windows. NonClustered Index is the default index option and has a structure separate from the data rows. A nonclustered index contains the nonclustered index key values and each key value entry has a pointer to the data row that contains the key value. Select the fields to be indexed, which would usually include the Primary Keys but can also include other specified fields as well. The following example shows the automated index for a lookup from a table.  In the Include Fields area above, the Name field is selected because it is used as the Lookup Field from this table, and the query for this will appear as follows in the SQL Server Management Studio.  SET ANSI_PADDING ONGO/****** Object:  Index [AutoIndex]    Script Date: 2023-05-10 14:05:14 ******/CREATE NONCLUSTERED INDEX [AutoIndex] ON [Landing].[Territory]( [Code] ASC, [Source Table] ASC)INCLUDE([Name]) WITH (STATISTICS_NORECOMPUTE = OFF, DROP_EXISTING = OFF, ONLINE = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]GO  Unique Index will guarantee that each combination of values in the index key is unique. For example, if a unique index is created on a combination of the LastName, FirstName, and MiddleName columns, then no two rows in the table can have the same combination of values for these three columns.     Columnstore Index. A columnstore is data that is logically organized as a table with rows and columns, and physically stored in a column-wise data format. Using this removes the option to Include Fields, so only Index Fields can be seleted.   Clustered Columnstore Index, is similar to a NonClustered Columnstore Index with the difference being that it is the primary storage for the entire table.  It is not possible to select any fields for this option, simply selecting this option is sufficient for its configuration.",
+                "NonClustered Index is the default index option and has a structure separate from the data rows. A nonclustered index contains the nonclustered index key values and each key value entry has a pointer to the data row that contains the key value. Select the fields to be indexed, which would usually include the Primary Keys but can also include other specified fields as well. The following example shows the automated index for a lookup from a table.  In the Include Fields area above, the Name field is selected because it is used as the Lookup Field from this table, and the query for this will appear as follows in the SQL Server Management Studio.  SET ANSI_PADDING ONGO/****** Object:  Index [AutoIndex]    Script Date: 2023-05-10 14:05:14 ******/CREATE NONCLUSTERED INDEX [AutoIndex] ON [Landing].[Territory]( [Code] ASC, [Source Table] ASC)INCLUDE([Name]) WITH (STATISTICS_NORECOMPUTE = OFF, DROP_EXISTING = OFF, ONLINE = OFF, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]GO",
+                "Unique Index will guarantee that each combination of values in the index key is unique. For example, if a unique index is created on a combination of the LastName, FirstName, and MiddleName columns, then no two rows in the table can have the same combination of values for these three columns.",
+                "Columnstore Index. A columnstore is data that is logically organized as a table with rows and columns, and physically stored in a column-wise data format. Using this removes the option to Include Fields, so only Index Fields can be seleted.",
+                "Clustered Columnstore Index, is similar to a NonClustered Columnstore Index with the difference being that it is the primary storage for the entire table.  It is not possible to select any fields for this option, simply selecting this option is sufficient for its configuration."
+            ]
+        }
+    ]
+}

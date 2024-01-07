@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the first step to update an existing data source provider in TimeXtender according to the article?",
+        "options": {
+            "option_a": "Download the new provider version",
+            "option_b": "Sign into the TimeXtender Portal and go to data sources",
+            "option_c": "Contact TimeXtender support",
+            "option_d": "Uninstall the previous version of the provider"
+        },
+        "answer": "option_b",
+        "explanation": "The first step is to sign into the TimeXtender Portal and navigate to data sources, as this is where you can see if updates are available."
+    },
+    "question_2": {
+        "question": "Where will a newer version of a data source provider appear if it is available?",
+        "options": {
+            "option_a": "In an email notification",
+            "option_b": "On the TimeXtender Portal homepage",
+            "option_c": "On the list in the data sources section of the TimeXtender Portal",
+            "option_d": "It needs to be searched for manually in the portal"
+        },
+        "answer": "option_c",
+        "explanation": "If a newer version of a data source provider is available, it will appear on the list in the data sources section of the TimeXtender Portal."
+    },
+    "question_3": {
+        "question": "Who is the author of the article on updating data source providers in TimeXtender?",
+        "options": {
+            "option_a": "TimeXtender Support Team",
+            "option_b": "Christian Hauggaard",
+            "option_c": "Data Source Community",
+            "option_d": "Anonymous"
+        },
+        "answer": "option_b",
+        "explanation": "The article was authored by Christian Hauggaard, as indicated in the provided context."
+    },
+    "question_4": {
+        "question": "What is the purpose of the article written by Christian Hauggaard?",
+        "options": {
+            "option_a": "To introduce new data source providers",
+            "option_b": "To describe how to delete a data source provider",
+            "option_c": "To describe how to update an existing data source provider to a newer version",
+            "option_d": "To troubleshoot issues with data source providers"
+        },
+        "answer": "option_c",
+        "explanation": "The article's purpose is to describe how to update an existing data source provider to a newer version."
+    }
+}

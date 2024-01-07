@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What permission should be given to the user running the Analysis Services Service to resolve the login failure error?",
+        "options": {
+            "option_a": "db_datawriter",
+            "option_b": "db_datareader",
+            "option_c": "db_owner",
+            "option_d": "db_accessadmin"
+        },
+        "answer": "option_b",
+        "explanation": "The user running the Analysis Services Service needs at least db_datareader permissions on the data warehouse to resolve the login failure error."
+    },
+    "question_2": {
+        "question": "How can you find the username that needs permissions on the data warehouse to fix the Analysis Services model execution error?",
+        "options": {
+            "option_a": "Check the Services console and look for the SQL Server Analysis Services service.",
+            "option_b": "Query the database users directly via SQL Server Management Studio.",
+            "option_c": "Review the error log in the Event Viewer.",
+            "option_d": "Inspect the Analysis Services configuration file."
+        },
+        "answer": "option_a",
+        "explanation": "To find the username, you should go to the Services console, locate the SQL Server Analysis Services service, and check the 'Log on as' column for the username."
+    }
+}

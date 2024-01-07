@@ -1,0 +1,47 @@
+{
+    "DateTime": "2023-12-27 14:40:49",
+    "URL": "https://support.timextender.com/data-warehouse-108/data-selection-rules-1031",
+    "Keywords": "missing",
+    "Title": "Data Selection rules _ Community",
+    "Author": "Thomas Lind",
+    "Text": "Selecting the right data from the source, validating it, and transforming the data as needed are central to the process. Data selection rules can be added to filter the data so that only that data that is needed for analysis will be imported from the data source and present in the data area tables. Data cleansing can further be performed by applying validation and transformation rules to ensure that only valid data gets loaded into the specific data area. Data selection, validation, and transformation rules can also be used to confirm the validity of any data that is moved from one data area to another. The following operators are available for use when defining data selection or validation rules. Values must be alphanumeric characters and can also be specified as a comma separated list. Operator Definition Not Empty Selects records where the value of a field is not empty or NULL Equal Selects records where the value of a field is equal to the specified value Greater Than Selects records where the value of a field is greater than the specified value Less Than Selects records where the value of a field is less than the specified value Not Equal Selects records where the value of a field is not equal to the specified value Greater or Equal Selects records where the value of a field is greater than or equal to the specified value Less or Equal Selects records where the value of a field is less than or equal to the specified value Min. Length Selects records that contain at least the specified number of characters Max. Length Selects records that contain no more than the specified number of characters List Selects records where the value of a field is equal to one of the specified comma-separated values Empty Selects records where the value of a field is empty or NULL Not in List Selects records where the value of a field is not equal to one of the specified comma-separated values Like Selects records where the value of a field is similar to the specified value. A percent sign (%) can be used as a wildcard. For instance, \"ABC%\" will return all records where the value in the specified field starts with \"ABC\". Not Like Selects records where the value of a field is not similar to the specified value. A percent sign ( % ) can be used as a wildcard. For instance, \"ABC%\" will return all records where the value in the specified field does not start with \"ABC\". Data selection rules specify a set of conditions that data must satisfy in order for that data to be extracted from a source table. Data selection rules provide a way to filter the data so only that data that is needed will be loaded into the data area. In data areas, you can add data selection rules on either the source table or any of its destination tables. When a table has more than one source table, then the data selection rules can be setup individually for each source table, providing more granularity with regards to the data that actually gets imported. On Qlik models, data selection rules are configured on the source table level. Data selection rules can include usage conditions that are based on instance variables, which allow for the data to be filtered based on the specific environment that the data is being loaded into. For example, a usage condition can be set in the data selection rule so that only specific data gets loaded into the development environment while all of the data will be loaded into the production environment.    Tables will display all of the selection rules that have been applied to them. The following example shows setting up a data selection rule that is comprised of two different filters using the same field. AND OR The following example shows a table insert where only the newest rows from the source table will be imported. Show Translation Follow the steps below to add a usage condition to a selection rule based on a instance variable. The following example shows a usage condition in a selection rule the references a username variable.     ",
+    "Lists": [
+        {
+            "heading": "Add a Data Selection Rule",
+            "paragraphs": [],
+            "list": [
+                "Expand the table where the data selection rule should be applied. If the table is consisting of many mapped tables, then further expand Mappings under that table as well.",
+                "Right-click the relevant table and select Add Data Selection Rule from the context menu, which will open The Data Selection pane on the right-hand side of the window. Tables that are mapping from an ODX table will have the following options:    Tables that are not mapping from an ODX table will have the following options.",
+                "Tables that are mapping from an ODX table will have the following options:",
+                "Tables that are not mapping from an ODX table will have the following options.",
+                "Click the field to be used in the data selection rule or click Add to create a Custom rule, provided the table is not being mapped from an ODX table.",
+                "Select the appropriate operator from the Operator list. See the Operators for Selecting and Validating Data section above for more information.",
+                "If applicable, type a value for the operator in the Value box.",
+                "Click Add."
+            ]
+        },
+        {
+            "heading": "Usage Condition to a Selection Rule",
+            "paragraphs": [
+                "Follow the steps below to add a usage condition to a selection rule based on a instance variable."
+            ],
+            "list": [
+                "Right-click a selection rule and click Add Usage Condition to open the Usage Condition panel on the right-hand side of the window.",
+                "In the Usage Condition panel, click the instance variable to be used in the rule.",
+                "In the Operator list, click the appropriate operator to be used with the instance variable above from the following options: Equal NotEqual GreaterThan LessThan GreaterEqual (Greater than or Equal to) LessEqual (Less than or Equal to)",
+                "Equal",
+                "NotEqual",
+                "GreaterThan",
+                "LessThan",
+                "GreaterEqual (Greater than or Equal to)",
+                "LessEqual (Less than or Equal to)",
+                "In the Comparer list, click the general data type of the variable that TimeXtender will use in the comparison with the instance variable from one of following: String Date Numeric",
+                "String",
+                "Date",
+                "Numeric",
+                "In the Value box, enter the value to be used as in this comparison.",
+                "Click Add to add the usage condition."
+            ]
+        }
+    ]
+}

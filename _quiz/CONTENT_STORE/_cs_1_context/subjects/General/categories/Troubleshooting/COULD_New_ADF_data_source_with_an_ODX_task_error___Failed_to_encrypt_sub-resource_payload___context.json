@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:43:22",
+    "URL": "https://support.timextender.com/troubleshooting-134/new-adf-data-source-with-an-odx-task-error-failed-to-encrypt-sub-resource-payload-1310",
+    "Keywords": "missing",
+    "Title": "New ADF data source with an ODX task error_ _Failed to encrypt sub-resource payload_ _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "new on-prem Microsoft.Rest.Azure.CloudException: Failed to encrypt sub-resource payload .. Self-Hosted Integration Runtime is offline. Ensure your Self-Hosted Integration Runtime is online (connected to the cloud service) when executing ODX tasks for an ADF data source that requires it. Self-hosted IR is used to encryptyourpayload. After the data source is successfully configured (ODX Synchronization or Transfer tasks succeeded), if you then stop the Self-Hosted Integration Runtime, you may get a more descriptive message: The Self-hosted Integration Runtime <Name> is offline ",
+    "Lists": []
+}

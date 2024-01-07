@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the primary purpose of semantic tables in a data warehouse?",
+        "options": {
+            "option_a": "To store raw data for future processing",
+            "option_b": "To serve as the serving layer representing the culmination of all ETL processes",
+            "option_c": "To act as a backup for the transactional database",
+            "option_d": "To directly interact with the user's queries"
+        },
+        "answer": "option_b",
+        "explanation": "Semantic tables are the serving layer in a data warehouse, representing the culmination of all extraction, transformation, and loading (ETL) processes."
+    },
+    "question_2": {
+        "question": "How can the data format and category of a field in a semantic table be configured?",
+        "options": {
+            "option_a": "By modifying the field properties in the source database",
+            "option_b": "Through the use of SQL queries",
+            "option_c": "By right-clicking the field and selecting 'Edit Field'",
+            "option_d": "By exporting and re-importing the data with the desired format"
+        },
+        "answer": "option_c",
+        "explanation": "The data format and category for a field can be set by right-clicking the field and selecting 'Edit Field' to open the configuration window."
+    },
+    "question_3": {
+        "question": "What effect does categorizing a text field as 'Web URL' have in client applications like Power BI?",
+        "options": {
+            "option_a": "It encrypts the text field for security purposes",
+            "option_b": "It displays the text fields as links",
+            "option_c": "It converts the text field into a numerical value",
+            "option_d": "It hides the text field from the report"
+        },
+        "answer": "option_b",
+        "explanation": "When a text field is categorized as 'Web URL' in the semantic model, client applications like Power BI will display these fields as links."
+    },
+    "question_4": {
+        "question": "Which of the following is NOT a correct way to summarize a field in the semantic layer for Power BI?",
+        "options": {
+            "option_a": "Sum",
+            "option_b": "Average",
+            "option_c": "Maximum",
+            "option_d": "Concatenate"
+        },
+        "answer": "option_d",
+        "explanation": "In the semantic layer, fields can be summarized by 'sum', 'average', 'minimum', etc., but 'concatenate' is not a summarization setting."
+    },
+    "question_5": {
+        "question": "What is the purpose of using display folders in semantic models?",
+        "options": {
+            "option_a": "To improve query performance",
+            "option_b": "To organize fields and measures for client applications",
+            "option_c": "To secure fields by restricting access",
+            "option_d": "To automatically generate reports"
+        },
+        "answer": "option_b",
+        "explanation": "Display folders are used to organize fields and measures into folders for easier navigation and use in client applications like PowerBI."
+    },
+    "question_6": {
+        "question": "How can you create a hierarchy of display folders in TimeXtender?",
+        "options": {
+            "option_a": "By using a semicolon to separate folder names",
+            "option_b": "By using a comma to separate folder names",
+            "option_c": "By using a backslash to create nested folders",
+            "option_d": "By using parentheses to denote subfolders"
+        },
+        "answer": "option_c",
+        "explanation": "In TimeXtender, a hierarchy of display folders can be created by using a backslash to denote nested folders, such as 'AB' to create a folder 'A' containing a subfolder 'B'."
+    }
+}

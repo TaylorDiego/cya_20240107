@@ -1,0 +1,222 @@
+{
+    "question_1": {
+        "question": "What is the primary purpose of adding custom measures to a semantic table?",
+        "options": {
+            "option_a": "To change the data source fields",
+            "option_b": "To calculate values not directly available in the data source",
+            "option_c": "To customize the semantic model's appearance",
+            "option_d": "To reduce the size of the semantic tables"
+        },
+        "answer": "option_b",
+        "explanation": "Custom measures are used to produce values that may not be directly available in the data source, such as calculated profit percentages."
+    }
+    , "question_2": {
+        "question": "Which of the following settings is specific to SSAS Tabular and PowerBI Premium endpoints when adding a custom measure?",
+        "options": {
+            "option_a": "Name of the custom measure",
+            "option_b": "Script that generates the value for the custom measure",
+            "option_c": "Description of the custom measure",
+            "option_d": "Data type of the custom measure"
+        },
+        "answer": "option_c",
+        "explanation": "The description of the custom measure may be available in front-end tools and this setting applies specifically to SSAS Tabular and PowerBI Premium endpoints."
+    }
+    , "question_3": {
+        "question": "What is the primary purpose of adding custom fields to a semantic table?",
+        "options": {
+            "option_a": "To delete existing fields from the data warehouse",
+            "option_b": "To present content not normally available from a data warehouse instance",
+            "option_c": "To change the data type of existing fields",
+            "option_d": "To merge multiple semantic tables into one"
+        },
+        "answer": "option_b",
+        "explanation": "Custom fields allow for the presentation of content that isn't normally accessible from a data warehouse instance, enhancing the semantic model with additional, customized data."
+    }
+    , "question_4": {
+        "question": "Which character is used to separate fields in a custom field script for a Qlik Sense endpoint?",
+        "options": {
+            "option_a": "Comma ','",
+            "option_b": "Plus sign '+'",
+            "option_c": "Ampersand '&'",
+            "option_d": "Semicolon ';'"
+        },
+        "answer": "option_c",
+        "explanation": "For Qlik Sense endpoints, the ampersand '&' character is used to separate fields in the script for a custom field."
+    }
+    , "question_5": {
+        "question": "What is the first step to configure Power BI for deploying a semantic model according to the TimeXtender article?",
+        "options": {
+            "option_a": "Copy the workspace connection.",
+            "option_b": "Login to app.powerbi.com",
+            "option_c": "Click the Premium tab",
+            "option_d": "Select the Premium per user or Premium per capacity License mode"
+        },
+        "answer": "option_b",
+        "explanation": "The first step listed under 'Configure Power BI' is to login to app.powerbi.com before any other actions are taken."
+    }
+    , "question_6": {
+        "question": "What should you do if you receive an authentication error when first attempting to execute your model in TimeXtender?",
+        "options": {
+            "option_a": "Restart TimeXtender Desktop",
+            "option_b": "Update your data source credentials",
+            "option_c": "Copy the workspace connection again",
+            "option_d": "Create a new semantic model instance"
+        },
+        "answer": "option_b",
+        "explanation": "The article advises updating your data source credentials if you encounter an authentication error when first executing your model."
+    }
+    , "question_7": {
+        "question": "What is the default port used when setting up a Qlik Endpoint with certificate authentication in TimeXtender?",
+        "options": {
+            "option_a": "80",
+            "option_b": "443",
+            "option_c": "4747",
+            "option_d": "8080"
+        },
+        "answer": "option_c",
+        "explanation": "The default port for certificate authentication is 4747, as mentioned in the Server Settings section for deploying to Qlik Sense Enterprise."
+    }
+    , "question_8": {
+        "question": "When deploying to Qlik Sense Enterprise, what should you do if you want TimeXtender to terminate an execution when a timeout is reached?",
+        "options": {
+            "option_a": "Select 'Terminate execution when timeout is reached'",
+            "option_b": "Enter a timeout value in the Timeout box",
+            "option_c": "Use proxy authentication",
+            "option_d": "Use certificate authentication"
+        },
+        "answer": "option_a",
+        "explanation": "You should select 'Terminate execution when timeout is reached' to have TimeXtender terminate an execution when the timeout is reached, as indicated in the Server Settings instructions."
+    }
+    , "question_9": {
+        "question": "What is the only applicable type for a table-based measure in the semantic model?",
+        "options": {
+            "option_a": "Sum",
+            "option_b": "Row Count",
+            "option_c": "Average",
+            "option_d": "Distinct Count"
+        },
+        "answer": "option_b",
+        "explanation": "For a table-based measure, 'Row Count' is the only applicable type as it pertains to the entire table rather than individual fields."
+    }
+    , "question_10": {
+        "question": "Which of the following settings is applicable to SSAS Tabular, PowerBI Premium, and Tableau endpoints only?",
+        "options": {
+            "option_a": "Name of the measure",
+            "option_b": "Type of measure",
+            "option_c": "Data type of the measure",
+            "option_d": "Description of the measure"
+        },
+        "answer": "option_c",
+        "explanation": "The setting for the data type of the measure applies specifically to SSAS Tabular, PowerBI Premium, and Tableau endpoints."
+    }
+    , "question_11": {
+        "question": "What action should be taken when the data type of a field in the Data Warehouse has been changed and is used in the semantic model?",
+        "options": {
+            "option_a": "Delete the semantic model and create a new one.",
+            "option_b": "Manually change the data type in the semantic model.",
+            "option_c": "Synchronize the semantic model.",
+            "option_d": "Ignore the change as it will update automatically."
+        },
+        "answer": "option_c",
+        "explanation": "When the data type of a field in the Data Warehouse is changed and the field is used in the semantic model, it is recommended to synchronize the semantic model to reflect the change."
+    }
+    , "question_12": {
+        "question": "What happens when you synchronize a semantic model after a data type change in the Data Warehouse?",
+        "options": {
+            "option_a": "The semantic model is deleted.",
+            "option_b": "The data type change is auto-resolved.",
+            "option_c": "The semantic model becomes corrupted.",
+            "option_d": "The data type change must be resolved manually."
+        },
+        "answer": "option_b",
+        "explanation": "Upon synchronizing the semantic model after a data type change in the Data Warehouse, the data type change is auto-resolved, aligning the semantic model with the Data Warehouse."
+    }
+    , "question_13": {
+        "question": "What is the primary function of semantic models in a data warehouse?",
+        "options": {
+            "option_a": "To store raw data for future processing",
+            "option_b": "To serve as the extraction layer for data",
+            "option_c": "To represent the culmination of all extraction, transformation, and loading processes",
+            "option_d": "To provide real-time data analytics"
+        },
+        "answer": "option_c",
+        "explanation": "Semantic models are the serving layer in a data warehouse, representing the culmination of all the extraction, transformation, and loading (ETL) that happens prior to the tables being added to the semantic model."
+    }
+    , "question_14": {
+        "question": "What does Model-Level Security in TimeXtender Semantic Security allow developers to do?",
+        "options": {
+            "option_a": "Restrict access to specific rows within a table",
+            "option_b": "Implement role-based access to the semantic model",
+            "option_c": "Encrypt the data at the database level",
+            "option_d": "Automatically back up the semantic model"
+        },
+        "answer": "option_b",
+        "explanation": "TimeXtender Semantic Security allows developers to implement role-based access to the semantic model, which can provide access to either the entire model or a subset of the model data."
+    }
+    , "question_15": {
+        "question": "What is the purpose of a relationship in semantic tables?",
+        "options": {
+            "option_a": "To format the data in the tables",
+            "option_b": "To establish a connection between two tables of data",
+            "option_c": "To delete data from the tables",
+            "option_d": "To create a backup of the tables"
+        },
+        "answer": "option_b",
+        "explanation": "In semantic tables, a relationship establishes a connection between two tables, defining how data from each table relates to the other, such as linking customer names to their invoices."
+    }
+    , "question_16": {
+        "question": "How can you add a new relation for a Qlik endpoint in a Semantic model?",
+        "options": {
+            "option_a": "By writing a SQL query",
+            "option_b": "By importing an Excel file",
+            "option_c": "By dragging a field from one table to a field on another table and confirming the action",
+            "option_d": "By manually entering data into both tables"
+        },
+        "answer": "option_c",
+        "explanation": "To add a new relation on a model where Qlik is the only endpoint type enabled, you drag a field from one table to a field on another table and click Yes when prompted."
+    }
+    , "question_17": {
+        "question": "What is the primary purpose of SSAS Perspectives?",
+        "options": {
+            "option_a": "To increase the complexity of the tabular model",
+            "option_b": "To provide a focused subset of objects related to a specific area",
+            "option_c": "To rename tables in the tabular model",
+            "option_d": "To deploy the semantic model"
+        },
+        "answer": "option_b",
+        "explanation": "SSAS Perspectives are used to simplify interaction with complex tabular models by providing a focused subset of objects related to a specific area, such as finance."
+    }
+    , "question_18": {
+        "question": "How can you create a new SSAS perspective in the Semantic Model Manage Perspectives window?",
+        "options": {
+            "option_a": "By clicking 'Deploy'",
+            "option_b": "By clicking 'Execute'",
+            "option_c": "By clicking 'Add'",
+            "option_d": "By clicking 'Finish'"
+        },
+        "answer": "option_c",
+        "explanation": "To create a new SSAS perspective, you click on 'Add' in the Perspectives window."
+    }
+    , "question_19": {
+        "question": "What is created in the data warehouse when you deploy a Tableau endpoint according to the provided text?",
+        "options": {
+            "option_a": "A new data warehouse",
+            "option_b": "A view for each table in the model",
+            "option_c": "A copy of the semantic model",
+            "option_d": "A new Tableau dashboard"
+        },
+        "answer": "option_b",
+        "explanation": "Deploying a Tableau endpoint results in the creation of a view for each table in the model within the data warehouse."
+    }
+    , "question_20": {
+        "question": "What additional steps are mentioned for deploying a Tableau endpoint with Snowflake?",
+        "options": {
+            "option_a": "Configure security settings",
+            "option_b": "Install Tableau Desktop",
+            "option_c": "Additional steps are required",
+            "option_d": "No additional steps are mentioned"
+        },
+        "answer": "option_c",
+        "explanation": "The text explicitly mentions that there are additional steps required when deploying a Tableau endpoint with Snowflake."
+    }
+}

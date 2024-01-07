@@ -1,0 +1,90 @@
+{
+    "question_1": {
+        "question": "How many methods are described for adding tables to a Semantic Model instance in the provided text?",
+        "options": {
+            "option_a": "One",
+            "option_b": "Two",
+            "option_c": "Three",
+            "option_d": "Four"
+        },
+        "answer": "option_b",
+        "explanation": "The text specifies that there are two ways to add tables from a data area to a Semantic Model instance."
+    }
+    , "question_2": {
+        "question": "What is the first step when using the drag-and-drop method from the Data Area to add tables to a Semantic Model instance?",
+        "options": {
+            "option_a": "Open the Semantic Model instance",
+            "option_b": "Drag-and-drop the table from the data area",
+            "option_c": "Open the relevant Data Warehouse instance and data area",
+            "option_d": "Select the relevant data area from the dropdown"
+        },
+        "answer": "option_c",
+        "explanation": "The first step is to open the relevant Data Warehouse instance and data area which contains the tables you want to move to the semantic model."
+    }
+    , "question_3": {
+        "question": "What is the primary action described in the context for interacting with a semantic model instance?",
+        "options": {
+            "option_a": "Delete semantic model instance",
+            "option_b": "Add semantic model instance",
+            "option_c": "Update semantic model instance",
+            "option_d": "Review semantic model instance"
+        },
+        "answer": "option_b",
+        "explanation": "The context specifically mentions 'Add semantic model instance' as an action, indicating that the primary interaction is to add a new instance."
+    }
+    , "question_4": {
+        "question": "Which of the following is a step in the process outlined in the context?",
+        "options": {
+            "option_a": "Remove endpoints",
+            "option_b": "Add an endpoint",
+            "option_c": "Configure global settings",
+            "option_d": "Export semantic model"
+        },
+        "answer": "option_b",
+        "explanation": "The text includes 'Add an endpoint' as part of the process, making it a correct step according to the provided context."
+    }
+    , "question_5": {
+        "question": "What is the primary purpose of semantic tables in a data warehouse?",
+        "options": {
+            "option_a": "To store raw data for future processing",
+            "option_b": "To serve as the serving layer representing the culmination of all ETL processes",
+            "option_c": "To act as a backup for the transactional database",
+            "option_d": "To directly interact with the user's queries"
+        },
+        "answer": "option_b",
+        "explanation": "Semantic tables are the serving layer in a data warehouse, representing the culmination of all extraction, transformation, and loading (ETL) processes."
+    }
+    , "question_6": {
+        "question": "How can the data format and category of a field in a semantic table be configured?",
+        "options": {
+            "option_a": "By modifying the field properties in the source database",
+            "option_b": "Through the use of SQL queries",
+            "option_c": "By right-clicking the field and selecting 'Edit Field'",
+            "option_d": "By exporting and re-importing the data with the desired format"
+        },
+        "answer": "option_c",
+        "explanation": "The data format and category for a field can be set by right-clicking the field and selecting 'Edit Field' to open the configuration window."
+    }
+    , "question_7": {
+        "question": "What is the primary action described in the context for interacting with a semantic model instance?",
+        "options": {
+            "option_a": "Deleting an instance",
+            "option_b": "Adding an instance",
+            "option_c": "Updating an instance",
+            "option_d": "Reviewing an instance"
+        },
+        "answer": "option_b",
+        "explanation": "The context specifically mentions 'Add Instance> Add semantic model instance' indicating that the primary action is adding an instance."
+    }
+    , "question_8": {
+        "question": "Which additional action is mentioned in the context after adding a semantic model instance?",
+        "options": {
+            "option_a": "Add tables",
+            "option_b": "Add relationships",
+            "option_c": "Add endpoints",
+            "option_d": "Add filters"
+        },
+        "answer": "option_c",
+        "explanation": "The context includes the step 'Add endpoints' following the addition of a semantic model instance."
+    }
+}

@@ -1,0 +1,195 @@
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a potential reason for an Azure Data Factory (ADF) execution error when using ODX Server with an Azure Data Lake Gen2 storage?
+
+{"score":0}Incorrect file format
+{"score":100.0}Firewall blocking ADF from accessing the Data Lake
+{"score":0}Insufficient permissions on the ADF
+{"score":0}ODX Server is offline
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the likely cause of the error 'Could not load file or assembly' when using TimeXtender?
+
+{"score":0}Incorrect TimeXtender version
+{"score":100.0}Missing SQL Shared Management Objects (SMO)
+{"score":0}Corrupted TimeXtender project file
+{"score":0}Outdated Windows operating system
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary reason for the 'Requested registry access is not allowed' error in TimeXtender?
+
+{"score":0}The TimeXtender service is not installed correctly.
+{"score":100.0}The account used by TimeXtender lacks permission to read System DSN entries.
+{"score":0}The ODBC data source is corrupted.
+{"score":0}The Registry Editor is not functioning properly.
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default timeout setting for a query on a DW instance if it is not changed?
+
+{"score":0}60 seconds
+{"score":100.0}100 seconds
+{"score":0}360 seconds
+{"score":0}3600 seconds
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the recommended solution when encountering an error related to 'Microsoft.SqlServer.BatchParser.dll' according to the provided context?
+
+{"score":0}Reinstall Microsoft SQL Server 2016
+{"score":100.0}Download and install specific packages from Microsoft SQL Server 2016 Service Pack 2 Feature Pack
+{"score":0}Update the existing Microsoft SQL Server to the latest version
+{"score":0}Ignore the error as it does not affect the database functionality
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default directory for the OLEAUT32.dll file according to the provided text?
+
+{"score":0}C:Program FilesOLEAUT32.dll
+{"score":0}C:WindowsOLEAUT32.dll
+{"score":100.0}C:Windowssystem32OLEAUT32.dll
+{"score":0}C:OLEAUT32system32.dll
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What permission should be given to the user running the Analysis Services Service to resolve the login failure error?
+
+{"score":0}db_datawriter
+{"score":100.0}db_datareader
+{"score":0}db_owner
+{"score":0}db_accessadmin
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a likely reason for receiving an error message when reading objects from an Oracle data source, despite the Test Connection to the Oracle data source working?
+
+{"score":0}The Oracle database is offline
+{"score":100.0}The Oracle Data Provider is a different bit version than TimeXtender
+{"score":0}The network connection is unstable
+{"score":0}The Oracle data source contains no tables
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a potential cause for the locale id error when executing a data area table?
+
+{"score":0}Mismatched time zones between the source and destination databases
+{"score":100.0}Different collation options between the Data Warehouse instance and source databases
+{"score":0}Incorrect SQL query syntax
+{"score":0}Mismatched data types between source and destination columns
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What action is suggested to resolve the error encountered when testing the connection to a new Oracle data source?
+
+{"score":0}Reboot the system
+{"score":100.0}Remove the Oracle Native Client and install only the Oracle Data Provider
+{"score":0}Update the Oracle data source credentials
+{"score":0}Ignore the error and continue
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a likely cause of the 'Login failed for user' error when executing a table in a Data Warehouse Instance sourced from an ODX?
+
+{"score":0}The ODX Server service account has 'read-only' access to the DWH Database.
+{"score":0}The ODX Server and DWH database are on the same server, causing conflicts.
+{"score":100.0}The ODX Server service account does not have 'write' access to the DWH Database.
+{"score":0}The DWH database does not support data loading from an ODX Instance.
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the main reason duplicates occur in a custom table according to the text?
+
+{"score":0}Because the custom table is truncated after each insert
+{"score":100.0}Due to a select statement being used instead of an Insert Into command
+{"score":0}Because the script is executed only once
+{"score":0}The custom table does not support the insert operation
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a likely cause for the 'Service request failed: Access is denied' error when adding or editing an ODX data source according to the provided text?
+
+{"score":0}Incorrect login credentials for the ODX data source
+{"score":0}Network connectivity issues
+{"score":100.0}Configuration on the machine blocking ODX from starting new processes
+{"score":0}Outdated version of the TimeXtender software
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if you encounter an ODX error stating that the 'OwnerId' property does not exist for the specified object?
+
+{"score":0}Ignore the error as it does not affect the ODX operation.
+{"score":100.0}Create a new SQL Server Data Storage from within ODX.
+{"score":0}Restart the SQL Server to refresh the system.
+{"score":0}Delete the database and create a new one.
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which debugger is mentioned in the article for attaching to a running TimeXtender process?
+
+{"score":0}GDB
+{"score":100.0}x64Dbg
+{"score":0}LLDB
+{"score":0}JDB
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you ensure is online when executing ODX tasks for an ADF data source that requires it?
+
+{"score":100.0}Self-Hosted Integration Runtime
+{"score":0}Cloud Data Factory
+{"score":0}On-Prem Data Gateway
+{"score":0}Azure Blob Storage
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary reason a new field in an incremental table might not populate with data?
+
+{"score":0}The database connection is lost
+{"score":100.0}Incremental tables only update new or changed records
+{"score":0}The field is not properly defined in the database schema
+{"score":0}The data source does not contain any data for the new field
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the most likely cause for not receiving notification e-mails when executing on a schedule according to the provided text?
+
+{"score":0}The e-mail server is down.
+{"score":100.0}The execution package is not part of the latest deployed version of the project.
+{"score":0}The notification system is not configured correctly.
+{"score":0}The project has not been saved.
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does the exit code 0016 indicate in the context of an ODX execution error?
+
+{"score":0}Successful completion of the task
+{"score":100.0}The execution unexpectedly stopped
+{"score":0}Syntax error in the code
+{"score":0}Missing file or resource
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a likely cause for the 'Could not load file or assembly' error when connecting to an Oracle data source according to the text?
+
+{"score":100.0}The Oracle.DataAccess assembly is missing.
+{"score":0}The Oracle data source window is outdated.
+{"score":0}The PublicKeyToken is incorrect.
+{"score":0}The assembly is compiled for the correct processor.
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of the 'sys.query_store_query_text' mentioned in the context?
+
+{"score":0}To modify data in Azure SQL DB
+{"score":100.0}To profile queries in Azure SQL DB
+{"score":0}To create new tables in Azure SQL DB
+{"score":0}To delete records from Azure SQL DB
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do first to manually remove the TimeXtender Scheduler service using the command prompt?
+
+{"score":0}Type 'sc delete 'timeXtender Scheduler <Version>'' and press enter
+{"score":0}Click Start, type 'CMD', and press enter
+{"score":100.0}Run command prompt with elevated rights
+{"score":0}Restart the computer
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a potential benefit of restricting synchronization to only necessary tables when synchronizing an Azure Data Factory with an Oracle data source?
+
+{"score":0}Increases the number of tables synchronized
+{"score":100.0}Speeds up the synchronization process
+{"score":0}Reduces the cost of Azure Data Factory
+{"score":0}Eliminates the need for owner permissions
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where can you find the TimeXtender LogEngine events in the Event Viewer?
+
+{"score":0}Tools -> Options -> Advanced tab
+{"score":100.0}Tools -> Options -> General tab
+{"score":0}File -> View -> Event Viewer
+{"score":0}View -> Logs -> TimeXtender
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a possible cause of sporadic failures in ODX load from source systems as described in the article?
+
+{"score":0}Consistent failure of a specific table/connection
+{"score":0}Manual execution of tables always fails
+{"score":100.0}Intermittent errors during scheduled execution of tasks
+{"score":0}Issues with the ODX Server Service handling outbound transfers only
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a potential consequence of upgrading TimeXtender if circular reference detection wasn't properly configured in older versions?
+
+{"score":0}Older objects will deploy more efficiently.
+{"score":100.0}Certain objects may not deploy properly after upgrading.
+{"score":0}Execution packages will run without errors.
+{"score":0}Circular references will be automatically fixed.
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a potential cause for user interface elements appearing blurry or very small in TimeXtender?
+
+{"score":0}Issues with the user's vision
+{"score":100.0}Incorrect display scaling settings
+{"score":0}Outdated graphics drivers
+{"score":0}Corrupted TimeXtender installation files
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary use of TCPView in troubleshooting a TimeXtender ODX instance?
+
+{"score":0}To view and edit database records within the ODX
+{"score":100.0}To monitor TCP and UDP endpoints, including the state of TCP connections
+{"score":0}To increase the speed of data transfer in the ODX
+{"score":0}To create new TCP connections for the ODX instance

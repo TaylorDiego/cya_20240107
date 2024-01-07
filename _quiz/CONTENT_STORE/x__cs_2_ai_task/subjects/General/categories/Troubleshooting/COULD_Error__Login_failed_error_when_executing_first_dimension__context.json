@@ -1,0 +1,21 @@
+{
+    "DateTime": "2023-12-27 14:42:54",
+    "URL": "https://support.timextender.com/troubleshooting-134/error-login-failed-error-when-executing-first-dimension-1243",
+    "Keywords": "missing",
+    "Title": "Error_ Login failed error when executing first dimension _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "When you execute the analysis services model you get the following error: Login failed for user 'domain\\username'.; 28000; Cannot open database \"DWH\" requested by the login. The login failed.; 42000. Errors in the high-level relational engine. A connection could not be made to the data source with the DataSourceID of 'DWH', Name of 'DWH'. Errors in the OLAP storage engine: An error occurred while the dimension, with the ID of 'Dimension', Name of 'Dimension' was being processed. Errors in the OLAP storage engine: An error occurred while the 'Dimension Level' attribute of the 'Dimension' dimension from the 'OLAP' database was being processed. Internal error: The operation terminated unsuccessfully. Server: The operation has been cancelled. OR A connection could not be made to the data source with the Name of 'MDW' The user that runs Analysis Services service does not have sufficient rights to access the data warehouse. The default user name in MSSQL 2016 is NT Service\\MSOLAP$MSSQLSERVER16, the default name in earlier versions is NT Service\\MSSQLServerOLAPService. To resolve this you have to give at least db_datareader to the user that the Analysis Services Service is running as on the data warehouse. To find out which user this is do as follows: Then add the user rights to the data warehouse: ",
+    "Lists": [
+        {
+            "heading": "Resolution",
+            "paragraphs": [
+                "To resolve this you have to give at least db_datareader to the user that the Analysis Services Service is running as on the data warehouse. To find out which user this is do as follows:"
+            ],
+            "list": [
+                "Start -> Run -> Services.msc",
+                "Locate the service with the display name: SQL Server Analysis Services (...)",
+                "Locate the username in the Log on as column, this is the username that needs permissions on the data warehouse."
+            ]
+        }
+    ]
+}

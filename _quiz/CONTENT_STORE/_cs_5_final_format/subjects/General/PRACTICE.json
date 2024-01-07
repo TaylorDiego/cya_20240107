@@ -1,0 +1,398 @@
+{
+    "question_1": {
+        "question": "What should you do to edit a documentation template in TimeXtender?",
+        "options": {
+            "option_a": "Click Add in the window that opens",
+            "option_b": "Type a new name in the Name box",
+            "option_c": "Click on the template you want to edit in the list",
+            "option_d": "Delete the old template and create a new one"
+        },
+        "answer": "option_c",
+        "explanation": "To edit a documentation template, you should click on the template you want to edit in the list that appears after clicking Manage."
+    }
+    , "question_2": {
+        "question": "Which of the following is NOT an option for including descriptions in TimeXtender documentation?",
+        "options": {
+            "option_a": "As plain text without any formatting",
+            "option_b": "As rich text in attached RTF files",
+            "option_c": "As encrypted text for security purposes",
+            "option_d": "No descriptions"
+        },
+        "answer": "option_c",
+        "explanation": "The options for including descriptions in TimeXtender documentation are as plain text, as rich text in attached RTF files, or no descriptions at all. Encrypted text is not mentioned as an option."
+    }
+    , "question_3": {
+        "question": "What feature is suggested to be brought back for better navigation in TimeXtender's GUI?",
+        "options": {
+            "option_a": "Double-click on a node to go to that object",
+            "option_b": "Reset Layout option",
+            "option_c": "Expand All feature",
+            "option_d": "Object Dependencies menu"
+        },
+        "answer": "option_a",
+        "explanation": "The user suggests bringing back the feature to double-click on a node to go to that object in the GUI, which is valuable when working with large solutions."
+    }
+    , "question_4": {
+        "question": "What issue is mentioned regarding the data lineage view in TimeXtender?",
+        "options": {
+            "option_a": "It does not show any tables",
+            "option_b": "It incorrectly shows the same schema for all tables",
+            "option_c": "It does not refresh automatically",
+            "option_d": "It lacks a feature to show object dependencies"
+        },
+        "answer": "option_b",
+        "explanation": "The issue mentioned is that the data lineage view shows an incorrect schema for the tables, indicating [dbo] for all tables even if they have different schemas."
+    }
+    , "question_5": {
+        "question": "What issue is mentioned in the article regarding moving from a local database to Azure?",
+        "options": {
+            "option_a": "The transfer is faster than expected.",
+            "option_b": "There is a problem with the database size.",
+            "option_c": "There are issues moving security settings.",
+            "option_d": "The content of the database cannot be moved."
+        },
+        "answer": "option_c",
+        "explanation": "The article mentions there are some issues with moving security settings when migrating from local to Azure."
+    }
+    , "question_6": {
+        "question": "What alternative method to bacpac export is Andrew considering for copying Azure databases between tenants?",
+        "options": {
+            "option_a": "Using a traditional BAK backup.",
+            "option_b": "Copying the database manually.",
+            "option_c": "Using PowerShell scripts.",
+            "option_d": "Transferring the database via email."
+        },
+        "answer": "option_c",
+        "explanation": "Andrew is considering using PowerShell to copy Azure databases between tenants as an alternative to bacpac export."
+    }
+    , "question_7": {
+        "question": "Which setting must be checked in the SQL Server machine's Server Properties to allow remote connections?",
+        "options": {
+            "option_a": "Enable Contained Databases",
+            "option_b": "Allow Remote Connections",
+            "option_c": "Enable TCP/IP Networking",
+            "option_d": "Enable AUTO_CLOSE"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Allow Remote Connections' option in the Server Properties must be checked to permit remote connections to the SQL Server."
+    }
+    , "question_8": {
+        "question": "After configuring remote connections, how can you verify that a SQL Server is accessible remotely before connecting with TimeXtender?",
+        "options": {
+            "option_a": "Ping the SQL Server IP address",
+            "option_b": "Connect using SSMS on the client machine",
+            "option_c": "Check the SQL Server logs",
+            "option_d": "Restart the client machine"
+        },
+        "answer": "option_b",
+        "explanation": "You can run SSMS on the client machine and connect to the remote SQL Server by specifying its IP address or name to verify the connection."
+    }
+    , "question_9": {
+        "question": "How can you resolve the 'Forbidden' error when ADF fails to access ADLS Gen2?",
+        "options": {
+            "option_a": "Restart the ADF service",
+            "option_b": "Allow access from 'All networks' in the ADLS storage account networking options",
+            "option_c": "Increase the storage capacity of ADLS Gen2",
+            "option_d": "Modify firewall settings to allow access from ADF"
+        },
+        "answer": "option_b",
+        "explanation": "To resolve the 'Forbidden' error, you can allow access from 'All networks' in the ADLS storage account networking options or modify firewall settings to specifically allow access from ADF."
+    }
+    , "question_10": {
+        "question": "If you are deploying to multiple versions of SQL Server, what must you do to resolve the 'Could not load file or assembly' error?",
+        "options": {
+            "option_a": "Install the latest version of TimeXtender on all servers",
+            "option_b": "Install the latest version of SQL Server Management Studio on all servers",
+            "option_c": "Install all relevant versions of SMO/XMO for each SQL Server version",
+            "option_d": "Only install the newest client libraries for Azure"
+        },
+        "answer": "option_c",
+        "explanation": "When deploying to multiple versions of SQL Server, you must install all relevant versions of SMO/XMO to ensure compatibility with each version."
+    }
+    , "question_11": {
+        "question": "Which of the following steps is NOT part of the resolution process for the 'Requested registry access is not allowed' error in TimeXtender?",
+        "options": {
+            "option_a": "Running 'regedit' from the Start menu to open Registry Editor.",
+            "option_b": "Adding the TimeXtender account to the list of users with 'Read' permission for the ODBC.INI key.",
+            "option_c": "Reinstalling TimeXtender software on the machine.",
+            "option_d": "Browsing to the HKLMSOFTWAREODBCODBC.INI key in the Registry Editor."
+        },
+        "answer": "option_c",
+        "explanation": "Reinstalling TimeXtender is not mentioned as a step in the resolution process. The steps provided focus on granting the necessary permissions in the registry."
+    }
+    , "question_12": {
+        "question": "How can you resolve a timeout error for a table during data processing on a DW instance?",
+        "options": {
+            "option_a": "Restart the DW instance",
+            "option_b": "Decrease the Command Timeout value",
+            "option_c": "Set the Command Timeout to a higher value",
+            "option_d": "Delete and recreate the table"
+        },
+        "answer": "option_c",
+        "explanation": "To resolve a timeout error, you should set the Command Timeout to a higher value, such as 3600 seconds for a one-hour timeout."
+    }
+    , "question_13": {
+        "question": "Which of the following files is NOT mentioned as part of the resolution for the 'Microsoft.SqlServer.BatchParser.dll' error?",
+        "options": {
+            "option_a": "SharedManagementObjects.msi",
+            "option_b": "SQLSysClrTypes.msi",
+            "option_c": "BatchParser.msi",
+            "option_d": "Both A and B are mentioned"
+        },
+        "answer": "option_c",
+        "explanation": "The resolution provided in the context mentions 'ENUx64SharedManagementObjects.msi' and 'ENUx64SQLSysClrTypes.msi' as the necessary files to download and install, not 'BatchParser.msi'."
+    }
+    , "question_14": {
+        "question": "Which of the following is NOT listed as a recommended step if the OLEAUT32.dll error is not related to a system, software, or driver change?",
+        "options": {
+            "option_a": "Restore OLEAUT32.dll from a backup.",
+            "option_b": "Ensure the System OS is up to date.",
+            "option_c": "Reinstall your server's OS.",
+            "option_d": "Update the .NET Framework."
+        },
+        "answer": "option_a",
+        "explanation": "Restoring OLEAUT32.dll from a backup is not listed as a step under the 'Repair or restore the file' section for when the problem is not related to a system, software, or driver change. The steps listed include updating the System OS, SQL Server, and .NET Framework."
+    }
+    , "question_15": {
+        "question": "How can you find the username that needs permissions on the data warehouse to fix the Analysis Services model execution error?",
+        "options": {
+            "option_a": "Check the Services console and look for the SQL Server Analysis Services service.",
+            "option_b": "Query the database users directly via SQL Server Management Studio.",
+            "option_c": "Review the error log in the Event Viewer.",
+            "option_d": "Inspect the Analysis Services configuration file."
+        },
+        "answer": "option_a",
+        "explanation": "To find the username, you should go to the Services console, locate the SQL Server Analysis Services service, and check the 'Log on as' column for the username."
+    }
+    , "question_16": {
+        "question": "What should you ensure when troubleshooting an error related to an Oracle driver in TimeXtender?",
+        "options": {
+            "option_a": "That the Oracle server is reachable over the network",
+            "option_b": "That the Oracle Data Provider is installed on the TimeXtender server",
+            "option_c": "That the Oracle Data Provider and TimeXtender are the same bit version",
+            "option_d": "That the Oracle data source has at least one table"
+        },
+        "answer": "option_c",
+        "explanation": "To resolve the driver error, verify that the Oracle Data Provider and TimeXtender are of the same bit version, as this is a common cause of such errors."
+    }
+    , "question_17": {
+        "question": "How can the locale id error be resolved when a numeric field is being converted to a text field using ODX SQL storage?",
+        "options": {
+            "option_a": "Restarting the database server",
+            "option_b": "Changing the server's locale settings",
+            "option_c": "Using a data type override for the numeric column in the ODX data source",
+            "option_d": "Ignoring the error and proceeding with the data transfer"
+        },
+        "answer": "option_c",
+        "explanation": "The error can be resolved by using a data type override for the numeric column in the ODX data source to convert it to text before bringing it into the data area."
+    }
+    , "question_18": {
+        "question": "Which alternative connection method was successful according to the context provided?",
+        "options": {
+            "option_a": "Using an ADO.net Any Source",
+            "option_b": "Using a direct Oracle database link",
+            "option_c": "Using an ODBC data source",
+            "option_d": "Using the local oracle client via TNS connection"
+        },
+        "answer": "option_d",
+        "explanation": "The context indicates that while testing the connection to a new Oracle data source resulted in an error, using the local oracle client via TNS connection was successful."
+    }
+    , "question_19": {
+        "question": "Which of the following is NOT a recommended resolution for the 'Login failed for user' error when executing a Data Warehouse table from an ODX Instance?",
+        "options": {
+            "option_a": "Granting the ODX Server service account the necessary permissions to write into the DWH database.",
+            "option_b": "Specifying the full remote SQL Server instance name for the DWH database.",
+            "option_c": "Resolving any network issues, such as firewall or VPN problems.",
+            "option_d": "Ignoring network issues and retrying the operation until it succeeds."
+        },
+        "answer": "option_d",
+        "explanation": "Ignoring network issues is not a recommended resolution. Proper permissions, correct SQL Server instance specification, and resolving network issues are the correct steps to address the problem."
+    }
+    , "question_20": {
+        "question": "Which method to avoid duplicates in a custom table is highlighted for its clarity in understanding the script's actions and affected table?",
+        "options": {
+            "option_a": "Adding a truncate statement as the first line of the script",
+            "option_b": "Checking the table for truncation after data cleansing",
+            "option_c": "Using the Custom Table Insert feature and modifying the script",
+            "option_d": "Calling a custom script as a Pre Step"
+        },
+        "answer": "option_c",
+        "explanation": "Method 3, which involves using the Custom Table Insert feature and removing the insert into statement from the script, is noted for its ease of understanding regarding the script's function and the table it impacts."
+    }
+    , "question_21": {
+        "question": "Where should one look to examine errors and warnings related to the 'Access is denied' error in ODX?",
+        "options": {
+            "option_a": "ODX service log",
+            "option_b": "Event Viewer under Application and Services Log",
+            "option_c": "TimeXtender support website",
+            "option_d": "Windows Update history"
+        },
+        "answer": "option_b",
+        "explanation": "The Event Viewer, specifically under Application and Services Log for Microsoft Windows Defender Operational logs, should be examined for errors and warnings."
+    }
+    , "question_22": {
+        "question": "How can you manually add an extended property to a pre-existing SQL database for ODX storage?",
+        "options": {
+            "option_a": "Use the 'New Query' option in SSMS to write a script.",
+            "option_b": "Update the database schema to include the 'OwnerId' property.",
+            "option_c": "In SSMS, right-click the database -> Properties -> Extended Properties, then add 'OwnerId' with a specified value.",
+            "option_d": "Contact the database administrator to add the property for you."
+        },
+        "answer": "option_c",
+        "explanation": "To manually add an extended property, use SSMS to navigate to the database properties and add 'OwnerId' with the value '00000000000000000000000000000000' in the Extended Properties section."
+    }
+    , "question_23": {
+        "question": "What should you do with the dump file created by Task Manager when a TimeXtender process hangs?",
+        "options": {
+            "option_a": "Delete it immediately",
+            "option_b": "Analyze it in a text editor",
+            "option_c": "Analyze it in a Windows debugger",
+            "option_d": "Send it to TimeXtender support without analysis"
+        },
+        "answer": "option_c",
+        "explanation": "The article advises to use the dump file for further analysis in a Windows debugger, such as Windbg, especially for exception analysis."
+    }
+    , "question_24": {
+        "question": "What error message might you receive if the Self-Hosted Integration Runtime is stopped after configuring a data source?",
+        "options": {
+            "option_a": "Data source configuration failed",
+            "option_b": "The Self-hosted Integration Runtime <Name> is offline",
+            "option_c": "CloudException: Failed to encrypt sub-resource payload",
+            "option_d": "ODX Synchronization or Transfer tasks failed"
+        },
+        "answer": "option_b",
+        "explanation": "Stopping the Self-Hosted Integration Runtime after configuring a data source may result in an error message indicating that the Self-hosted Integration Runtime is offline."
+    }
+    , "question_25": {
+        "question": "Which method is NOT suggested for updating a new field in an incremental table?",
+        "options": {
+            "option_a": "Performing a full load of the incremental table",
+            "option_b": "Updating the field manually with an UPDATE command",
+            "option_c": "Running the Data Cleansing Script's lookup section manually",
+            "option_d": "Ignoring the new field until it populates over time"
+        },
+        "answer": "option_d",
+        "explanation": "Ignoring the new field is not a suggested method. The recommended methods include performing a full load, manually updating the field with an UPDATE command, or running the lookup section of the Data Cleansing Script manually with modifications."
+    }
+    , "question_26": {
+        "question": "Which method is NOT suggested for updating a new field in an incremental table?",
+        "options": {
+            "option_a": "Performing a full load of the incremental table",
+            "option_b": "Updating the field manually with an UPDATE command",
+            "option_c": "Running the Data Cleansing Script's lookup section manually",
+            "option_d": "Ignoring the new field until it populates over time"
+        },
+        "answer": "option_d",
+        "explanation": "Ignoring the new field is not a suggested method. The recommended methods include performing a full load, manually updating the field with an UPDATE command, or running the lookup section of the Data Cleansing Script manually with modifications."
+    }
+    , "question_27": {
+        "question": "Which exception is mentioned in the context that is associated with an ODX execution error?",
+        "options": {
+            "option_a": "IndexOutOfRangeException",
+            "option_b": "NullReferenceException",
+            "option_c": "TaskCanceledException",
+            "option_d": "OutOfMemoryException"
+        },
+        "answer": "option_c",
+        "explanation": "The 'System.Threading.Tasks.TaskCanceledException: A task was canceled' is mentioned, indicating a task cancellation is associated with the error."
+    }
+    , "question_28": {
+        "question": "What step is recommended after installing the Oracle Data Provider to resolve the error mentioned in the text?",
+        "options": {
+            "option_a": "Recompile the Oracle.DataAccess assembly.",
+            "option_b": "Restart the computer.",
+            "option_c": "Update the PublicKeyToken.",
+            "option_d": "Close and reopen the Oracle data source window."
+        },
+        "answer": "option_b",
+        "explanation": "The text advises to restart the computer after installing the Oracle Data Provider to ensure the changes take effect."
+    }
+    , "question_29": {
+        "question": "Where can you find more information about querying the SQL Server System Catalog?",
+        "options": {
+            "option_a": "Azure SQL DB official blog",
+            "option_b": "Microsoft's customer service",
+            "option_c": "Microsoft documentation",
+            "option_d": "Community forums"
+        },
+        "answer": "option_c",
+        "explanation": "The context suggests reviewing Microsoft documentation for more information, specifically the 'Querying the SQL Server System Catalog FAQ - SQL Server | Microsoft Docs'."
+    }
+    , "question_30": {
+        "question": "Which command is used to remove the TimeXtender Scheduler service?",
+        "options": {
+            "option_a": "sc remove 'timeXtender Scheduler <Version>'",
+            "option_b": "sc delete 'timeXtender Scheduler <Version>'",
+            "option_c": "delete 'timeXtender Scheduler <Version>'",
+            "option_d": "uninstall 'timeXtender Scheduler <Version>'"
+        },
+        "answer": "option_b",
+        "explanation": "The correct command to remove a service is 'sc delete', followed by the service name, which in this case is 'timeXtender Scheduler <Version>'."
+    }
+    , "question_31": {
+        "question": "Why might an Oracle database require careful synchronization with Azure Data Factory?",
+        "options": {
+            "option_a": "Because it uses a different cloud provider",
+            "option_b": "Due to its potential high degree of normalization and large number of tables",
+            "option_c": "Oracle databases do not support synchronization",
+            "option_d": "Because Oracle databases are less secure"
+        },
+        "answer": "option_b",
+        "explanation": "Oracle databases tend to be highly normalized with many tables, which can complicate synchronization efforts."
+    }
+    , "question_32": {
+        "question": "What is the default location of the 'tracelog.txt' file for TimeXtender?",
+        "options": {
+            "option_a": "C:TimeXtenderLogstracelog.txt",
+            "option_b": "C:Program FilesTimeXtendertracelog.txt",
+            "option_c": "C:Users<UserAccount>DocumentsTimeXtendertracelog.txt",
+            "option_d": "C:Users<UserAccount>AppDataRoamingTimeXtenderTimeXtender Saas<version>"
+        },
+        "answer": "option_d",
+        "explanation": "The 'tracelog.txt' file is created in the user's AppDataRoaming folder under TimeXtenderTimeXtender Saas<version> upon deployment or execution of objects."
+    }
+    , "question_33": {
+        "question": "How can you increase the timeout for very large data transfers from ODX to a Data Warehouse when using Azure Data Factory?",
+        "options": {
+            "option_a": "Decrease the Connection timeout to less than 30",
+            "option_b": "Set the timeout to infinite (0)",
+            "option_c": "Increase the Connection timeout from 30 to 7200",
+            "option_d": "Edit the ADF data source settings to decrease the number of concurrent tasks"
+        },
+        "answer": "option_c",
+        "explanation": "For very large data transfers, the article suggests increasing the timeouts on the Data Lake storage and specifically mentions editing the Azure Data Factory (ADF) data source settings in the portal to increase the Connection timeout from 30 to 7200, rather than setting it to infinite or decreasing it."
+    }
+    , "question_34": {
+        "question": "What should you check if tables are getting deadlocked based on views?",
+        "options": {
+            "option_a": "If the views have been parametrized and mapped to their source tables.",
+            "option_b": "If the views are using the latest TimeXtender version.",
+            "option_c": "If the views have circular references.",
+            "option_d": "If the views are included in the Execution Package retries."
+        },
+        "answer": "option_a",
+        "explanation": "To resolve deadlocks, it's important to check if the views have been parametrized and correctly mapped to their source tables, ensuring proper execution flow."
+    }
+    , "question_35": {
+        "question": "What steps should be followed to ensure correct display scaling for TimeXtender on all monitors?",
+        "options": {
+            "option_a": "Update the TimeXtender software to the latest version",
+            "option_b": "Change the screen resolution on all monitors",
+            "option_c": "Ensure the display scaling factor is the same on all monitors",
+            "option_d": "Replace all monitors with the same model"
+        },
+        "answer": "option_c",
+        "explanation": "To prevent display issues with TimeXtender, the display scaling factor should not be custom and must be consistent across all monitors."
+    }
+    , "question_36": {
+        "question": "How can you use TCPView to filter the information for a specific port of an ODX instance?",
+        "options": {
+            "option_a": "By configuring the ODX settings to only use the specific port",
+            "option_b": "By restarting the ODX instance on the desired port",
+            "option_c": "By entering the port number in the search box of TCPView",
+            "option_d": "By uninstalling and reinstalling TCPView with the specific port settings"
+        },
+        "answer": "option_c",
+        "explanation": "In TCPView, you can filter the displayed information for a specific port by entering the port number into the search box, which helps in monitoring and troubleshooting specific communications of an ODX instance."
+    }
+}

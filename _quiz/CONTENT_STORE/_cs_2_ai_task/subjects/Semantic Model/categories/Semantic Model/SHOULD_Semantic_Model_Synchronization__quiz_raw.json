@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What action should be taken when the data type of a field in the Data Warehouse has been changed and is used in the semantic model?",
+        "options": {
+            "option_a": "Delete the semantic model and create a new one.",
+            "option_b": "Manually change the data type in the semantic model.",
+            "option_c": "Synchronize the semantic model.",
+            "option_d": "Ignore the change as it will update automatically."
+        },
+        "answer": "option_c",
+        "explanation": "When the data type of a field in the Data Warehouse is changed and the field is used in the semantic model, it is recommended to synchronize the semantic model to reflect the change."
+    },
+    "question_2": {
+        "question": "What happens when you synchronize a semantic model after a data type change in the Data Warehouse?",
+        "options": {
+            "option_a": "The semantic model is deleted.",
+            "option_b": "The data type change is auto-resolved.",
+            "option_c": "The semantic model becomes corrupted.",
+            "option_d": "The data type change must be resolved manually."
+        },
+        "answer": "option_b",
+        "explanation": "Upon synchronizing the semantic model after a data type change in the Data Warehouse, the data type change is auto-resolved, aligning the semantic model with the Data Warehouse."
+    },
+    "question_3": {
+        "question": "What should you do if a table in the Data Warehouse has been deleted and you want to use a new table in the semantic model?",
+        "options": {
+            "option_a": "Create a new semantic model from scratch.",
+            "option_b": "Update the semantic model manually to use the new table.",
+            "option_c": "Synchronize the semantic model and remap the tables and fields.",
+            "option_d": "Leave the semantic model unchanged."
+        },
+        "answer": "option_c",
+        "explanation": "If a table in the Data Warehouse has been deleted and a new table should be used in the semantic model, you should synchronize the semantic model and remap the tables and fields to reflect the new structure."
+    },
+    "question_4": {
+        "question": "What is the result of selecting 'Schema' during the remapping process in the semantic model synchronization?",
+        "options": {
+            "option_a": "It deletes the existing schema in the semantic model.",
+            "option_b": "It creates a new schema unrelated to the previous mappings.",
+            "option_c": "It automatically selects the table as a result of the schema selection.",
+            "option_d": "It prevents any new mappings from being created."
+        },
+        "answer": "option_c",
+        "explanation": "During the remapping process in semantic model synchronization, selecting 'Schema' will automatically select the table as a result of the schema selection, which helps in reestablishing the mappings with the new table."
+    }
+}

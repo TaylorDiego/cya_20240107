@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the first step to create an Azure Synapse Dedicated SQL Pool according to the provided text?",
+        "options": {
+            "option_a": "Create a Server Level Firewall Rule",
+            "option_b": "In the Azure Portal, click 'Create a Resource' and type 'Dedicated SQL Pool'",
+            "option_c": "Right-click the Instance > Edit Instance > Create Storage...",
+            "option_d": "Open the Data Warehouse Instance"
+        },
+        "answer": "option_b",
+        "explanation": "The first step listed under 'Create an Azure Synapse Dedicated SQL Pool' is to go to the Azure Portal and click 'Create a Resource', then type 'Dedicated SQL Pool'."
+    },
+    "question_2": {
+        "question": "Which authentication method uses the logged-in Windows user's credentials for authentication, provided that the user is logged in using Azure AD credentials from a domain that is federated with Azure AD?",
+        "options": {
+            "option_a": "Windows Authentication",
+            "option_b": "SQL Server Authentication",
+            "option_c": "Azure AD Password Authentication",
+            "option_d": "Azure AD Integrated Authentication"
+        },
+        "answer": "option_d",
+        "explanation": "Azure AD Integrated Authentication uses the logged-in Windows user's credentials for authentication when the user is logged in using Azure AD credentials from a domain that is federated with Azure AD."
+    },
+    "question_3": {
+        "question": "What should you do if you encounter an error when trying to create required objects for SQL Data Warehouse?",
+        "options": {
+            "option_a": "Create a Server Level Firewall Rule",
+            "option_b": "Right-click on Data Warehouse > Create required objects for SQL DW as indicated in step 2",
+            "option_c": "Create a new Azure SQL Server",
+            "option_d": "Change the Server Storage Type to SLQ - Dedicated SQL Pool"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Troubleshooting' section suggests that if you encounter an error, you should right-click on Data Warehouse and create required objects for SQL DW as indicated in step 2."
+    },
+    "question_4": {
+        "question": "Which option is NOT recommended for use on public networks when configuring the encryption for the connection to the Dedicated SQL Pool?",
+        "options": {
+            "option_a": "Yes: The communication is encrypted. The server's certificate is verified by a certificate authority.",
+            "option_b": "No: The communication is not encrypted (default).",
+            "option_c": "Yes, trust server certificate: The communication is encrypted, but the server's certificate is not verified.",
+            "option_d": "Use Azure AD Password Authentication"
+        },
+        "answer": "option_c",
+        "explanation": "The option 'Yes, trust server certificate' is not recommended for use on public networks because it encrypts the communication but does not verify the server's certificate."
+    }
+}

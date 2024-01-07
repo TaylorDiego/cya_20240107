@@ -1,0 +1,237 @@
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you be cautious of when removing a data source mapping in TimeXtender?
+
+{"score":0}The data source connection can be deleted at any time.
+{"score":100.0}Any data sources on the ODX that use the data source connection will stop working.
+{"score":0}You must first add a new data source connection before removing an old one.
+{"score":0}The data source connection must be cloned before it can be removed.
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if you want to limit the synchronization to files from a specific SharePoint site in Excel Online?
+
+{"score":0}Set the Workbook field to include the site's name.
+{"score":100.0}Set the SharePoint URL to point at the specific site.
+{"score":0}Use the Include SharePoint Sites field with 'false'.
+{"score":0}Set the Drive field to include the site's ID.
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following steps is crucial when installing ODP.Net for TX on a machine?
+
+{"score":0}Running the Command Prompt without administrator privileges.
+{"score":100.0}Running the Command Prompt as administrator.
+{"score":0}Installing the ODP.Net package without the Oracle Client.
+{"score":0}Copying the TNSNames.ora and SQLNet.ora files to the root directory.
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When connecting to SharePoint On-Premises 2010, which property must be set to true?
+
+{"score":100.0}UseRESTAPI
+{"score":0}UseNTLMV1
+{"score":0}UseADFS
+{"score":0}UseOData
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When setting up an XML data source with attributes, what additional information must be provided?
+
+{"score":0}A link to the file and the Row Scan Depth
+{"score":0}The Data Model and Data Type overwrites
+{"score":100.0}A link to the file and XPath
+{"score":0}Incremental load and data selection rules
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What permissions must be given to the Azure AD application set up for authentication to Dynamics Business Central?
+
+{"score":0}HTTP client requests
+{"score":100.0}D365 AUTOMATION User Permission Set
+{"score":0}Extension Management
+{"score":0}Deployment Status
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is a prerequisite for installing Theobald Xtract Universal according to the provided context?
+
+{"score":0}Install .NET Framework 4.5 or later
+{"score":0}Ensure a VPN connection is established
+{"score":100.0}Ensure Python (version 3.8 or later) is installed
+{"score":0}Configure a static IP address for the server
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In TimeXtender, when adding a data source connection for Dynamics 365 Business Central - SQL Server, which authentication methods are available?
+
+{"score":0}OAuth 2.0 and Service to Service Authentication
+{"score":0}SQL Server Authentication and OAuth 2.0
+{"score":100.0}SQL Server Authentication and Active Directory Password Authentication
+{"score":0}Service to Service Authentication and Active Directory Integrated Authentication
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which fields are recommended to be added when setting up Incremental Load in TimeXtender for Dynamics 365 Finance data source?
+
+{"score":0}DATAAREAID and CREATEDDATETIME
+{"score":100.0}DATAAREAID and MODIFIEDDATETIME
+{"score":0}USERNAME and MODIFIEDDATETIME
+{"score":0}USERNAME and CREATEDDATETIME
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if you receive an 'out of range date conversion' error in TimeXtender when using an Oracle data source?
+
+{"score":0}Reinstall the Oracle Data Source provider
+{"score":0}Set the 'out of range date conversion' option to 'Ignore'
+{"score":100.0}Set the 'out of range date conversion' option to 'MS SQL min/max date'
+{"score":0}Contact TimeXtender support
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do after mapping a data source to an ODX instance?
+
+{"score":100.0}Create it as a data source
+{"score":0}Set up a log file immediately
+{"score":0}Choose the specific CData provider
+{"score":0}Increase the default string size
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the recommended verbosity level for a log file when troubleshooting a new CData data source setup?
+
+{"score":0}1
+{"score":0}2
+{"score":100.0}3
+{"score":0}5
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do to configure a data source to transfer data into ODX storage on demand?
+
+{"score":0}Double-click on your ODX instance.
+{"score":0}Right-click 'Data Sources' > Add Data Source.
+{"score":100.0}Right-click on your data source > Edit, then click on Advanced Settings and check 'Data on demand'.
+{"score":0}Select the Connection from available connections in TimeXtender Portal.
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of enabling 'Data on demand' in TimeXtender Desktop's data source settings?
+
+{"score":0}To automatically create a new ODX instance.
+{"score":100.0}To transfer data into ODX storage before the MDW ingests the data without configuring an explicit 'Transfer task'.
+{"score":0}To add a new data source to the TimeXtender Desktop.
+{"score":0}To select the Connection from available connections in TimeXtender Portal.
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does SOAP stand for?
+
+{"score":100.0}Simple Object Access Protocol
+{"score":0}Service Oriented Architecture Protocol
+{"score":0}Simple Online API Procedure
+{"score":0}Secure Operational Application Process
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of the Row Scan Depth setting?
+
+{"score":0}To determine the number of API calls made
+{"score":0}To set the depth of data analysis
+{"score":100.0}To ensure all the file is read before choosing the data types
+{"score":0}To limit the number of rows returned in the response
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When connecting to an Excel file stored in Azure Blob storage, what should the URI field format be?
+
+{"score":100.0}azureblob://mycontainer/myblob/file.xlsx
+{"score":0}azurefile://fileShare/remotePath/file.xlsx
+{"score":0}abfss://myfilesystem/folder1/file.xlsx
+{"score":0}adl://myfilesystem/folder1/file.xlsx
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of setting up an app registration when connecting to an Excel file through Microsoft Excel Online?
+
+{"score":0}To create a new Excel file
+{"score":0}To generate a unique file identifier
+{"score":100.0}To establish OAuth credentials
+{"score":0}To set up a data source name
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must be consistent across multiple CSV files in a folder for the 'Aggregate Files' feature to work correctly?
+
+{"score":0}The file size
+{"score":0}The file extension
+{"score":100.0}The field names
+{"score":0}The date the files were created
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What setting should be used if the CSV files to be aggregated do not have consistent field names?
+
+{"score":0}Set 'Row Scan Depth' to 0
+{"score":0}Set 'Include Column Headers' to False
+{"score":0}Set 'Aggregate Files' to False
+{"score":100.0}Set 'Skip Top' to -1
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does the 'Relational' option do when parsing hierarchical data in JSON?
+
+{"score":0}It flattens the nested objects into one large table.
+{"score":100.0}It creates a table for each nested object with relational IDs.
+{"score":0}It ignores nested objects and only parses top-level data.
+{"score":0}It sets the JSON Path to the deepest nested object.
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the JSONPath syntax used to identify the column and row paths in the JSONRows format?
+
+{"score":100.0}column:$.dataset.column_names;row:$.dataset.data
+{"score":0}column:$.columns;row:$.rows
+{"score":0}column:$.columns.name;row:$.rows
+{"score":0}column:$.dataset.data;row:$.dataset.column_names
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should be done after synchronizing the data source using the RSD file setup?
+
+{"score":100.0}Rename the file to 'Users' and edit the info row to match
+{"score":0}Encrypt the RSD file for security
+{"score":0}Upload the RSD file to a public server
+{"score":0}Delete the RSD file to prevent duplication
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where should RSD files be stored according to the provided information?
+
+{"score":0}In a secure cloud service
+{"score":100.0}In the default folder path specified by the application
+{"score":0}On an external hard drive
+{"score":0}In the root directory of the web server
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which provider type is described as TimeXtender's own with enhancements and usually the best choice if available?
+
+{"score":0}Managed ADO.NET
+{"score":0}Local ADO.NET
+{"score":0}Local OLE DB
+{"score":100.0}TimeXtender enhanced
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which provider type uses Azure Data Factory for transferring data?
+
+{"score":0}Managed ADO.NET
+{"score":100.0}ADF
+{"score":0}Local OLE DB
+{"score":0}TimeXtender enhanced
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should be set as the 'Web Redirect URL' in the App Registration for Method 2?
+
+{"score":100.0}http://localhost:33333
+{"score":0}http://contoso.sharepoint.com
+{"score":0}http://yourtenant.sharepoint.com
+{"score":0}http://localhost:8080
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of the 'Authorize OAuth' button in the TimeXtender Portal when setting up a SharePoint data source with Method 2?
+
+{"score":0}To enable MFA for the user account
+{"score":100.0}To create the OAuth settings file
+{"score":0}To reset the user password
+{"score":0}To refresh the data source connection
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the function of the 'PushResponseHeader Page' method?
+
+{"score":100.0}To push header names onto the end of the PushResponseHeader# input array
+{"score":0}To retrieve the total number of pages from the API
+{"score":0}To set the page size for the API call
+{"score":0}To synchronize the RSD file with the API
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}After making changes to an RSD file, what is the next step to apply those changes?
+
+{"score":0}Deploy and synchronize the RSD file
+{"score":100.0}Execute the table/task associated with the RSD file
+{"score":0}Restart the server to apply changes
+{"score":0}Submit the RSD file for review
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What can be done to reduce the amount of log writing when using CData Providers?
+
+{"score":0}Increase the Timeout value
+{"score":100.0}Decrease the Verbosity level
+{"score":0}Set Logfile to a shorter path
+{"score":0}Disable the internet connection
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does the major version number of a CData provider indicate?
+
+{"score":0}The number of daily builds
+{"score":0}The number of updates per month
+{"score":100.0}The year of the update
+{"score":0}The specific features included
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the recommended column to always keep when selecting columns for the BC data source in TimeXtender?
+
+{"score":0}CreatedAt
+{"score":0}UpdatedAt
+{"score":100.0}SystemModifiedAt
+{"score":0}LastSyncedAt
+-
+{"folder":"(2024_01) PRACTICE - Data Sources","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What issue did the user Thomas Lind face when running extractions for the TimeXtender Business Central 365 data source?
+
+{"score":0}OAuth token was invalid
+{"score":100.0}Multiple parquet files were received where one was expected
+{"score":0}The data source was not authorized correctly
+{"score":0}Primary keys were missing from the tables

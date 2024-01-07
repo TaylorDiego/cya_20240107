@@ -1,0 +1,69 @@
+{
+    "question_1": {
+        "question_content": {
+            "question": "What is the primary purpose of conditional lookup fields in TimeXtender?",
+            "options": {
+                "option_a": "To delete values from a field in another table",
+                "option_b": "To update values in the same table",
+                "option_c": "To look up values from a field in another table within the same data area",
+                "option_d": "To create new tables in the Data Warehouse"
+            },
+            "answer": "option_c",
+            "explanation": "Conditional lookup fields are used to look up values from a field in another table within the same data area of a Data Warehouse instance, allowing for the addition of fields from one table to another based on certain conditions."
+        },
+        "question_facts": [
+            "After reviewing the provided test question, there are no typos or misspelled items to report. The question, options, and explanation are all correctly spelled and grammatically correct.",
+            "The question:\n\n\"What is the primary purpose of conditional lookup fields in TimeXtender?\"\n\nis relevant to the material provided. The original material clearly states that \"Conditional lookup fields are used to look up values from a field in another table in the same data area within a Data Warehouse instance.\" This matches the answer 'option_c' which is \"To look up values from a field in another table within the same data area.\" The explanation for the answer is also consistent with the description in the material.",
+            "The question appears to be good and not 'BS'. The question asks for the primary purpose of conditional lookup fields in TimeXtender, which are indeed used to look up values from a field in another table within the same data area, as stated in the provided answer and supported by the explanation from the scraped content. The question is straightforward, the answer is correct, and there is a clear explanation available, making this a valid test question for someone familiar with TimeXtender's features."
+        ]
+    },
+    "question_2": {
+        "question_content": {
+            "question": "What happens if you create a conditional lookup field without specifying any conditions when multiple source lookup fields are present?",
+            "options": {
+                "option_a": "The last lookup field will be used",
+                "option_b": "The first lookup field will always be used",
+                "option_c": "A random lookup field will be used",
+                "option_d": "The lookup will fail and return an error"
+            },
+            "answer": "option_b",
+            "explanation": "If no conditions are specified for a conditional lookup field with multiple source lookup fields, the first lookup field will always be used and any subsequent lookup fields will be ignored."
+        },
+        "question_facts": [
+            "The test question is grammatically correct and clear. It is suitable for a diverse audience as it avoids complex jargon and is presented in a straightforward manner. The question, options, and explanation are all coherent and relevant to the provided article content."
+        ]
+    },
+    "question_3": {
+        "question_content": {
+            "question": "When adding a new conditional lookup field, what options are available if the source and destination tables already have established relationships?",
+            "options": {
+                "option_a": "Use default relation, add new joins, or copy joins from another lookup",
+                "option_b": "Delete existing joins and create new ones",
+                "option_c": "Ignore existing joins and create a conditional field without joins",
+                "option_d": "Use only the default relation without the option to add new joins"
+            },
+            "answer": "option_a",
+            "explanation": "If table relations or joins have already been established between the source and destination tables, the user can choose to use the default relation, add new joins, or copy joins from an existing relation or conditional lookup field."
+        },
+        "question_facts": [
+            "I rate this question a 4."
+        ]
+    },
+    "question_4": {
+        "question_content": {
+            "question": "What must be configured when creating a conditional lookup field from a history-enabled table?",
+            "options": {
+                "option_a": "A fixed value for all lookups",
+                "option_b": "A condition that specifies the date to use when looking up the appropriate record",
+                "option_c": "A default relation that cannot be changed",
+                "option_d": "A single source field for the lookup"
+            },
+            "answer": "option_b",
+            "explanation": "When creating a conditional lookup field from a history-enabled table, a condition must be configured that specifies the date to use when looking up the appropriate record."
+        },
+        "question_facts": [
+            "After reviewing the test question provided, there are no typos or misspelled items to report. The question, options, answer, and explanation are all correctly spelled and grammatically correct.",
+            "The test question is grammatically correct and clear. It is suitable for a diverse audience in its final format."
+        ]
+    }
+}

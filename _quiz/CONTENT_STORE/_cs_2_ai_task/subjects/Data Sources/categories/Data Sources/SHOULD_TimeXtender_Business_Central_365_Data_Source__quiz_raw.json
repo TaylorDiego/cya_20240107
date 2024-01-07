@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What should be replaced in the API URL field when setting up the BC data source in TimeXtender?",
+        "options": {
+            "option_a": "The {tenantId} with the actual Azure AD Tenant ID",
+            "option_b": "The {userId} with the actual user's ID",
+            "option_c": "The {clientSecret} with the actual client's secret",
+            "option_d": "The {apiKey} with the actual API key"
+        },
+        "answer": "option_a",
+        "explanation": "The {tenantId} placeholder in the API URL field should be replaced with the actual Azure AD Tenant ID, which can be found in the BC environment's 'Help & Support' section."
+    },
+    "question_2": {
+        "question": "Which authentication method is no longer possible with TimeXtender Business Central 365 according to the provided text?",
+        "options": {
+            "option_a": "OAuth 2.0 authentication",
+            "option_b": "Service to Service Authentication",
+            "option_c": "Username and Password",
+            "option_d": "API Key authentication"
+        },
+        "answer": "option_c",
+        "explanation": "The Username and Password option is expired by BC and used to work with a Web Service Access Key as the Password, which is no longer possible."
+    },
+    "question_3": {
+        "question": "What is the recommended column to always keep when selecting columns for the BC data source in TimeXtender?",
+        "options": {
+            "option_a": "CreatedAt",
+            "option_b": "UpdatedAt",
+            "option_c": "SystemModifiedAt",
+            "option_d": "LastSyncedAt"
+        },
+        "answer": "option_c",
+        "explanation": "When selecting columns for the BC data source, it is recommended to always keep the 'SystemModifiedAt' column as it is optimal for Incremental load."
+    },
+    "question_4": {
+        "question": "What issue did the user Thomas Lind face when running extractions for the TimeXtender Business Central 365 data source?",
+        "options": {
+            "option_a": "OAuth token was invalid",
+            "option_b": "Multiple parquet files were received where one was expected",
+            "option_c": "The data source was not authorized correctly",
+            "option_d": "Primary keys were missing from the tables"
+        },
+        "answer": "option_b",
+        "explanation": "Thomas Lind faced an issue where multiple parquet files were received during extraction when only one file was expected, leading to an error."
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the primary function described in the article 'Grant and Revoke Access to Instances' by Christian Hauggaard?",
+        "options": {
+            "option_a": "Describing how to install TimeXtender",
+            "option_b": "Explaining how to grant and revoke user access to instances",
+            "option_c": "Guiding users through data visualization in TimeXtender",
+            "option_d": "Providing a history of TimeXtender versions"
+        },
+        "answer": "option_b",
+        "explanation": "The article's title and text clearly indicate that it is about granting and revoking users' access to instances within the TimeXtender Desktop Application."
+    },
+    "question_2": {
+        "question": "Which version of TimeXtender does the article refer to?",
+        "options": {
+            "option_a": "6024.0",
+            "option_b": "6024.1",
+            "option_c": "6025.1",
+            "option_d": "6023.1"
+        },
+        "answer": "option_b",
+        "explanation": "The text specifies 'TimeXtender 6024.1', indicating the version of TimeXtender the article is referencing."
+    },
+    "question_3": {
+        "question": "Who can grant access to instances according to the article?",
+        "options": {
+            "option_a": "Any user with the desktop application",
+            "option_b": "Only the instance creator",
+            "option_c": "Admin users",
+            "option_d": "External consultants"
+        },
+        "answer": "option_c",
+        "explanation": "The text mentions 'Users Admin Users with access Grant access', implying that admin users have the authority to grant access to instances."
+    },
+    "question_4": {
+        "question": "What capability do users have once they are granted access to a particular instance?",
+        "options": {
+            "option_a": "They can only view the instance",
+            "option_b": "They can delete the instance",
+            "option_c": "They can see and edit the instance",
+            "option_d": "They can transfer ownership of the instance"
+        },
+        "answer": "option_c",
+        "explanation": "The text states that users granted access to a particular instance will be able to see and edit it within the TimeXtender Desktop Application."
+    },
+    "question_5": {
+        "question": "What action is the counterpart to 'Grant access' as described in the article?",
+        "options": {
+            "option_a": "Delete access",
+            "option_b": "Revoke access",
+            "option_c": "Suspend access",
+            "option_d": "Ignore access"
+        },
+        "answer": "option_b",
+        "explanation": "The text pairs 'Grant access' with 'Revoke', indicating that revoking access is the action that counteracts granting access."
+    },
+    "question_6": {
+        "question": "In the context of the article, what is the likely role of 'TimeXtender Desktop Application'?",
+        "options": {
+            "option_a": "A tool for managing user permissions",
+            "option_b": "A database for storing instances",
+            "option_c": "A platform for data analysis",
+            "option_d": "A communication software for users"
+        },
+        "answer": "option_a",
+        "explanation": "Since the article discusses granting and revoking access to instances, it implies that the TimeXtender Desktop Application is used for managing user permissions related to those instances."
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What is a likely cause of the 'Login failed for user' error when executing a table in a Data Warehouse Instance sourced from an ODX?",
+        "options": {
+            "option_a": "The ODX Server service account has 'read-only' access to the DWH Database.",
+            "option_b": "The ODX Server and DWH database are on the same server, causing conflicts.",
+            "option_c": "The ODX Server service account does not have 'write' access to the DWH Database.",
+            "option_d": "The DWH database does not support data loading from an ODX Instance."
+        },
+        "answer": "option_c",
+        "explanation": "The error is likely due to the service account running the ODX Server not having 'write' access to the DWH Database, which is necessary to execute data transfer operations."
+    },
+    "question_2": {
+        "question": "Which of the following is NOT a recommended resolution for the 'Login failed for user' error when executing a Data Warehouse table from an ODX Instance?",
+        "options": {
+            "option_a": "Granting the ODX Server service account the necessary permissions to write into the DWH database.",
+            "option_b": "Specifying the full remote SQL Server instance name for the DWH database.",
+            "option_c": "Resolving any network issues, such as firewall or VPN problems.",
+            "option_d": "Ignoring network issues and retrying the operation until it succeeds."
+        },
+        "answer": "option_d",
+        "explanation": "Ignoring network issues is not a recommended resolution. Proper permissions, correct SQL Server instance specification, and resolving network issues are the correct steps to address the problem."
+    }
+}

@@ -1,0 +1,50 @@
+{
+    "DateTime": "2023-12-27 14:39:55",
+    "URL": "https://support.timextender.com/odx-107/tasks-in-an-odx-instance-704",
+    "Keywords": "missing",
+    "Title": "Tasks in an ODX Instance _ Community",
+    "Author": "missing",
+    "Text": "TimeXtender 6024.1 rollup storage management TimeXtender 6024.1 Transfer Synchronization Storage management: clean-up delete rollup To add a task to a data source Note: Storage management Rollup incremental data with Azure Data Factory To enter credentials for Azure Data Factory, refer to the ADF data source you have already configured in TimeXtender Portal. To change settings for a task, follow the steps below. Edit TransferTask Edit Synchronize Task Edit Storage Management Tasks Name Description 3. The other settings available depend on the task type. Those are listed below: Use incremental load when available Note: Add transfer task Executing a transfer task will transfer data from data source to data storage, respecting table selection on the data source and the task itself. To execute a task For transfer and storage management tasks, you can select which tables the task should process. To select tables to process Table and Column Selection in an ODX Instance ",
+    "Lists": [
+        {
+            "heading": "Adding a Task to a Data Source",
+            "paragraphs": [
+                "To add a task to a data source"
+            ],
+            "list": [
+                "Right click the data source, click Add Transfer Task or Add Synchronize Task or Add Storage Management Tasks and follow the instructions in the wizard."
+            ]
+        },
+        {
+            "heading": "Storage management task",
+            "paragraphs": [],
+            "list": [
+                "Select Delete old versions to free up storage and enter the number of versions to keep in storage in the Versions to keep box to delete all but the specified amount of versions from storage when you execute the task.",
+                "Select Move old versions to cool storage to save costs and enter the number of versions to keep in hot storage in the Versions to keep in hot storage box to move all but the specified amount of versions to cool storage when you execute the task. Note: This setting applies to Azure Data Lake Storage only.",
+                "Note: This setting applies to Azure Data Lake Storage only.",
+                "Select Rollup incremental data with Azure Data Factory to specify minimum and maximum size of rollup file. To enter credentials for Azure Data Factory, refer to the ADF data source you have already configured in TimeXtender Portal.  Note: This setting applies to Azure Data Lake only.",
+                "Note: This setting applies to Azure Data Lake only."
+            ]
+        },
+        {
+            "heading": "Executing a Task",
+            "paragraphs": [
+                "Executing a transfer task will transfer data from data source to data storage, respecting table selection on the data source and the task itself.",
+                "To execute a task"
+            ],
+            "list": [
+                "Right click the task and click Execute. The status of the execution will displayed in parenthesis after the task name in the tree."
+            ]
+        },
+        {
+            "heading": "Selecting Tables",
+            "paragraphs": [
+                "For transfer and storage management tasks, you can select which tables the task should process.",
+                "To select tables to process"
+            ],
+            "list": [
+                "Right click the task a click Select tables..."
+            ]
+        }
+    ]
+}

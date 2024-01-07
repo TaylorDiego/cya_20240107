@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the primary focus of the provided text?",
+        "options": {
+            "option_a": "Guidelines for team development",
+            "option_b": "Instructions for database management",
+            "option_c": "Tips for individual developers",
+            "option_d": "Rules for consistent time management"
+        },
+        "answer": "option_a",
+        "explanation": "The text is about 'work items' and following 'rules to ensure consistency,' which implies a focus on team development practices."
+    },
+    "question_2": {
+        "question": "As of the given DateTime, when was the information about working with multiple developers published or last updated?",
+        "options": {
+            "option_a": "December 27, 2023",
+            "option_b": "January 1, 2023",
+            "option_c": "December 27, 2022",
+            "option_d": "The exact date is not provided"
+        },
+        "answer": "option_a",
+        "explanation": "The 'DateTime' field shows '2023-12-27 14:40:22', which indicates the date of publication or last update."
+    },
+    "question_3": {
+        "question": "Where can additional information regarding team development and working with multiple developers be found?",
+        "options": {
+            "option_a": "In the provided text",
+            "option_b": "On the referenced URL",
+            "option_c": "From the author mentioned",
+            "option_d": "Additional context is missing"
+        },
+        "answer": "option_b",
+        "explanation": "The 'URL' field contains a link to a webpage that likely contains more information on the topic."
+    },
+    "question_4": {
+        "question": "What is the format of the content provided in the text?",
+        "options": {
+            "option_a": "A detailed guide",
+            "option_b": "A set of rules",
+            "option_c": "A narrative story",
+            "option_d": "A technical manual"
+        },
+        "answer": "option_b",
+        "explanation": "The text mentions 'Follow the rules below to ensure consistency,' indicating the content is formatted as a set of rules."
+    },
+    "question_5": {
+        "question": "What is the title of the source from which the context is derived?",
+        "options": {
+            "option_a": "Team Development: Best Practices",
+            "option_b": "Team Development: How to work with multiple developers",
+            "option_c": "Multiple Developers: A Comprehensive Guide",
+            "option_d": "The Community's Guide to Team Development"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Title' field specifies the title as 'Team Development_ How to work with multiple developers _ Community'."
+    },
+    "question_6": {
+        "question": "What key element is missing from the provided context that would typically be useful for understanding the credibility of the information?",
+        "options": {
+            "option_a": "The date and time",
+            "option_b": "The URL",
+            "option_c": "The author",
+            "option_d": "The title"
+        },
+        "answer": "option_c",
+        "explanation": "The 'Author' field is marked as 'missing', which is a key element for assessing the credibility of the information."
+    }
+}

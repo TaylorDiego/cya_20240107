@@ -1,0 +1,769 @@
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When adding a new conditional lookup field, what options are available if the source and destination tables already have established relationships?
+
+{"score":100.0}Use default relation, add new joins, or copy joins from another lookup
+{"score":0}Delete existing joins and create new ones
+{"score":0}Ignore existing joins and create a conditional field without joins
+{"score":0}Use only the default relation without the option to add new joins
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must be configured when creating a conditional lookup field from a history-enabled table?
+
+{"score":0}A fixed value for all lookups
+{"score":100.0}A condition that specifies the date to use when looking up the appropriate record
+{"score":0}A default relation that cannot be changed
+{"score":0}A single source field for the lookup
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a step in adding a custom view according to the provided context?
+
+{"score":0}Deploy the view
+{"score":0}Preview View to check its functionality
+{"score":100.0}Automatically generate the create statement
+{"score":0}Enter the create statement for the view using standard SQL syntax
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step in mapping custom view fields to parameterized fields?
+
+{"score":0}Delete the existing mappings
+{"score":100.0}Ensure the fields have been read and then map them
+{"score":0}Automatically map fields based on name
+{"score":0}Synchronize View Fields
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does the 'Select Top' option do in the Preview Table window?
+
+{"score":0}It filters the top-priority tables in the database.
+{"score":100.0}It selects the topmost rows from the result set based on the number you type in.
+{"score":0}It sorts the data in descending order.
+{"score":0}It highlights the top rows in the preview for better visibility.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which key do you press to execute a query in the Query Tool window?
+
+{"score":0}Enter
+{"score":0}F8
+{"score":100.0}F5
+{"score":0}Ctrl + R
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens if you add a table with the 'Add table with field selection' option and a field is set as a primary key?
+
+{"score":0}The field is highlighted
+{"score":0}The field is automatically encrypted
+{"score":100.0}A checkmark is indicated in the Primary Key column
+{"score":0}The field is deleted
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a primary key constraint behavior that can be set in the table settings?
+
+{"score":0}Error
+{"score":0}Warning
+{"score":100.0}Ignore
+{"score":0}None
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is recommended when setting up relations in a Semantic Model?
+
+{"score":0}Creating duplicate field names
+{"score":100.0}Using an existing relation defined in the data warehouse
+{"score":0}Avoiding any relations between tables
+{"score":0}Relating tables based on their size
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should a table contain to be set as the default date table in a Semantic Model?
+
+{"score":0}A field of the data type 'string'
+{"score":0}A field named 'default'
+{"score":100.0}A field of the data type 'datetime'
+{"score":0}A field with the current date
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must you do manually in SQL Server after deleting tables in TimeXtender?
+
+{"score":0}Restore the deleted tables
+{"score":100.0}Drop the database schemas
+{"score":0}Recreate the tables
+{"score":0}Optimize the database
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How does TimeXtender handle incrementally loaded tables when using the SQL Database Cleanup Tool?
+
+{"score":0}It deletes them immediately without confirmation
+{"score":100.0}It prevents their selection by default
+{"score":0}It backs them up before deletion
+{"score":0}It requires a special script to delete them
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens when you drag an ID field from one table to a corresponding field in another table to create a relationship?
+
+{"score":0}A message appears to confirm the data types
+{"score":0}The tables are automatically merged into one
+{"score":100.0}A '+' icon appears next to the mouse pointer if the fields are compatible
+{"score":0}The relationship is created without any further confirmation
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default setting when configuring relationship options in a new Data Area?
+
+{"score":0}Add a new relation and set it as default
+{"score":100.0}Extend an existing relation
+{"score":0}Add a new relation
+{"score":0}No default setting is provided
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where can additional information regarding team development and working with multiple developers be found?
+
+{"score":0}In the provided text
+{"score":100.0}On the referenced URL
+{"score":0}From the author mentioned
+{"score":0}Additional context is missing
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the format of the content provided in the text?
+
+{"score":0}A detailed guide
+{"score":100.0}A set of rules
+{"score":0}A narrative story
+{"score":0}A technical manual
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens if you set the Custom Table Insert to 'raw' in TimeXtender?
+
+{"score":0}The data will be deleted after a certain period
+{"score":100.0}The data will be affected by the data cleansing procedure
+{"score":0}The data will be automatically backed up
+{"score":0}The data will be encrypted
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What error is indicated by the message 'Invalid object name '#PurchForecast''?
+
+{"score":0}A syntax error in the SQL query
+{"score":0}A missing or incorrect database connection
+{"score":100.0}A reference to a non-existent table or a temporary table that is no longer available
+{"score":0}An error in the data cleansing procedure
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT an aggregation method mentioned for creating an aggregate table?
+
+{"score":0}DistinctCount
+{"score":0}Sum
+{"score":100.0}Median
+{"score":0}Count_Big
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of clicking 'Yes' in the Override data type column when adding an aggregate table?
+
+{"score":0}To delete the existing data type.
+{"score":100.0}To allow the data type for the field to be amended later.
+{"score":0}To automatically set the data type to bigint.
+{"score":0}To aggregate the data by data type.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What factor determines the optimal batch size for batch data cleansing?
+
+{"score":0}The number of users on the network
+{"score":100.0}The amount of memory available on the server
+{"score":0}The speed of the internet connection
+{"score":0}The time of day the process is run
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where can you find useful information regarding best practices for batch data cleansing?
+
+{"score":0}In the SQL Server manual
+{"score":0}On the official website of the database software
+{"score":100.0}In the community post mentioned in the text
+{"score":0}By contacting the database administrator
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the result of selecting 'Clone values' when cloning a field?
+
+{"score":0}It creates a new field with the same name but no data.
+{"score":100.0}The cloned field will be a custom field that gets its value from the original field.
+{"score":0}It copies the field's structure but not its data.
+{"score":0}It generates a new field with default values.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Can fields that have been added later, after being brought in from a data source, be cloned?
+
+{"score":0}No, only fields from the original data source can be cloned.
+{"score":0}Yes, but only their structure can be cloned, not their values.
+{"score":100.0}Yes, all fields in a table can be cloned, regardless of their origin.
+{"score":0}No, cloning is not supported for fields added after the initial data import.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How do you add a role-playing dimension to a TimeXtender semantic model?
+
+{"score":0}By creating a new dimension table for each role
+{"score":100.0}By adding the dimension to the semantic model multiple times with different names and relationships
+{"score":0}By duplicating the fact table
+{"score":0}By manually editing the SQL queries in the model
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What are the benefits of implementing role-playing dimensions in a data warehouse?
+
+{"score":0}Increased data redundancy and complexity
+{"score":100.0}Improved query performance and simplified maintenance
+{"score":0}Reduced need for data consistency and accuracy
+{"score":0}More frequent need for updating the semantic model
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a use case for custom fields mentioned in the context?
+
+{"score":0}To fix broken links in the data warehouse
+{"score":100.0}To build a model of your data warehouse before adding data
+{"score":0}To create a backup of your data
+{"score":0}To encrypt data for security purposes
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How are custom fields initially created in a table?
+
+{"score":0}From a pre-populated field shell
+{"score":0}From an existing field with data
+{"score":100.0}From an empty field shell
+{"score":0}From a data warehouse template
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you ensure an accurate comparison of two custom hash fields in TimeXtender?
+
+{"score":0}By using the same hashing algorithm
+{"score":100.0}By ensuring the field sequence is the same for both hash fields
+{"score":0}By only including non-null fields
+{"score":0}By comparing the fields manually
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must you do in TimeXtender to change the behavior of a custom hash field to create a hash only if ALL fields are filled?
+
+{"score":0}Modify the table relationships
+{"score":0}Change the hashing algorithm
+{"score":100.0}Create a standard field with a varbinary(20) data type and custom transformation
+{"score":0}Delete and recreate the custom hash field
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is a use case for creating custom tables?
+
+{"score":100.0}To translate boolean fields into more descriptive values.
+{"score":0}To automatically generate reports.
+{"score":0}To create a backup of the data warehouse.
+{"score":0}To increase the speed of data retrieval.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do to enable data lineage when adding a custom table from a view?
+
+{"score":0}Clone the table and remove any mapped tables.
+{"score":0}Deploy/execute immediately after adding the table.
+{"score":100.0}Use object dependencies to relate the table to the sources of the view.
+{"score":0}Enable Simple Mode in the Table Settings.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do after editing code in a custom editor in TimeXtender?
+
+{"score":0}Click 'OK' to confirm the edits.
+{"score":100.0}Save the changes and close the editor.
+{"score":0}Click 'Import' to import the changes.
+{"score":0}Click 'Delete' to remove the customization.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of the 'Parameters' button in the 'Customize Code' window of TimeXtender?
+
+{"score":0}To add new parameters to the code.
+{"score":0}To delete existing parameters from the code.
+{"score":100.0}To decide which parameters are sent to the code on execution.
+{"score":0}To import parameters from an external source.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the consequence of customizing stored procedures in TimeXtender?
+
+{"score":0}TimeXtender will automatically update the customized stored procedures
+{"score":100.0}Customized stored procedures will need to be updated manually
+{"score":0}Customized stored procedures enhance TimeXtender's performance
+{"score":0}Customized stored procedures are deleted after each deployment
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you add a Script Action to a table in TimeXtender?
+
+{"score":0}By customizing the data cleansing procedure
+{"score":100.0}Through the 'Add Custom Step' option under Scripts
+{"score":0}By creating a new Custom View
+{"score":0}By deploying and executing a Custom Table Insert
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a step in adding a database role in TimeXtender?
+
+{"score":0}Selecting the logins to be added from the list in the Select Login(s) window.
+{"score":0}Entering a name for the database role in the Name box.
+{"score":100.0}Dropping all roles on the database before creating a new one.
+{"score":0}Adding logins that exist on the SQL Server configured for the data area storage.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In TimeXtender, what is the purpose of creating a database role based on an SQL Server login?
+
+{"score":0}To manage the TimeXtender application settings.
+{"score":100.0}To implement object level or row level security.
+{"score":0}To configure the data area SQL storage.
+{"score":0}To drop existing roles on the database.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens if a user is a member of a database role that is granted access to an object, but also a member of another role that is denied access?
+
+{"score":0}The user will have access to the object
+{"score":100.0}The user will not have access to the object
+{"score":0}The user's access level will be determined by the object's settings
+{"score":0}The user will have read-only access to the object
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In TimeXtender, what does the permission icon that is split down the middle indicate?
+
+{"score":0}The object is accessible to all users
+{"score":0}The object has row level permissions set
+{"score":100.0}The object has mixed permission settings
+{"score":0}The object is in a locked state
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens when a user not listed in the Securable Column Setup logs into PowerBI?
+
+{"score":0}They can see all the data
+{"score":0}They can see only their own data
+{"score":0}They can see data based on default permissions
+{"score":100.0}No information is available in the secured view
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the result of dragging the SalesRepSecurity securable column onto the Logon field in the Sales facts table?
+
+{"score":0}It creates a new user account
+{"score":0}It generates a report of sales data
+{"score":100.0}It creates the DSA2.Sales_SV secured view
+{"score":0}It deletes the Logon field from the table
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does the Pattern Search functionality in TimeXtender's data profile tool do?
+
+{"score":0}It deletes patterns that do not match the search criteria
+{"score":0}It formats the data according to the specified pattern
+{"score":100.0}It finds rows matching a LIKE or NOT LIKE search phrase
+{"score":0}It automatically corrects incorrect data patterns
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens if you change the 'Select top' number of records from unlimited to 2 in the data profile tool of TimeXtender?
+
+{"score":0}The data profile tool will show only the first two fields of the table
+{"score":0}The data profile tool will stop functioning
+{"score":100.0}Only two records will be returned from the search
+{"score":0}The data profile tool will display two random records
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can data selection rules be configured in Qlik models?
+
+{"score":0}On the destination table level
+{"score":100.0}On the source table level
+{"score":0}On the instance variable level
+{"score":0}On the data cleansing level
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the function of instance variables in data selection rules?
+
+{"score":0}To specify the data type of the variable
+{"score":100.0}To filter data based on the specific environment the data is loaded into
+{"score":0}To determine the maximum length of data
+{"score":0}To validate the alphanumeric characters in the data
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you add a condition to a transformation in the given context?
+
+{"score":0}By writing a custom SQL query
+{"score":100.0}By setting up a condition to be applied to a record based on a field's value
+{"score":0}By selecting the 'To lower' operator
+{"score":0}By expanding the relevant data area
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do after selecting either the 'First characters' or 'Last characters' operators?
+
+{"score":0}Enter a SQL snippet
+{"score":0}Choose a fixed value
+{"score":100.0}Enter a number for the field length
+{"score":0}Reverse the sign for numeric values
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should be done after selecting the appropriate operator in the Field Validations pane?
+
+{"score":0}Click 'Add' to add the rule
+{"score":100.0}Type a value in the Value box, if applicable
+{"score":0}Select Field Validations to open the pane
+{"score":0}Right-click the relevant field
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you view the validation errors or warnings for a specific table in the data warehouse?
+
+{"score":0}By running a diagnostic tool on the database
+{"score":0}By querying the database directly
+{"score":100.0}By clicking Errors or Warnings in the Reports menu
+{"score":0}By exporting the table data to a CSV file
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a valid option for handling primary key constraint violations in TimeXtender's Data Warehouse Table Settings?
+
+{"score":0}Error
+{"score":0}Warning
+{"score":100.0}Ignore
+{"score":0}None
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the effect of disabling 'SCHEMABINDING' in TimeXtender's Data Warehouse Table Settings?
+
+{"score":0}It enables automatic index generation
+{"score":100.0}It allows the use of custom user-defined functions in field transformations
+{"score":0}It compresses the table data
+{"score":0}It partitions the table based on a fixed date range
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How are objects implicitly included in a dynamic perspective indicated?
+
+{"score":0}With a checkmark
+{"score":100.0}With a dot
+{"score":0}With a star
+{"score":0}With a highlight
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is a way to deploy and/or execute a perspective?
+
+{"score":0}By emailing the perspective to the data warehouse admin
+{"score":0}By printing and manually executing the perspective
+{"score":100.0}In the Solution Explorer, right-click the perspective and select Deploy, Execute, or Deploy and Execute
+{"score":0}By adding the perspective to a social media post
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you ensure that the 'MonthName' field in a date table is sorted correctly?
+
+{"score":100.0}By setting the 'Sort by' setting to use the MonthKey
+{"score":0}By manually arranging the months in order
+{"score":0}By using the 'Days Ahead' feature
+{"score":0}By setting the 'First day of the week' to Monday
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default setup for the 'First day of the week' and 'First week of the year' in TX's date table, according to the ISO 8601 standard?
+
+{"score":0}Sunday and First full week
+{"score":100.0}Monday and First 4-day week
+{"score":0}Monday and Starts on Jan 1
+{"score":0}Sunday and Starts on Jan 1
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a recommended approach for managing indexes in extensive databases according to the guidelines?
+
+{"score":0}To always rely on TimeXtender's automated index management
+{"score":100.0}To manually manage the indexes
+{"score":0}To avoid using SQL Server Maintenance Plans
+{"score":0}To truncate and rebuild tables frequently
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When can a maintenance plan reorganize and rebuild indexes according to the text?
+
+{"score":0}During regular business hours
+{"score":0}Only during execution of TimeXtender
+{"score":100.0}After-hours based on a schedule
+{"score":0}At any time without a schedule
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the result of using NEWID() or NEWSEQUENTIALID() functions in a User-Defined Function?
+
+{"score":0}A new GUID is generated.
+{"score":100.0}An exception is thrown.
+{"score":0}The function returns a null value.
+{"score":0}The function is executed successfully.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a recommended method to handle null unique identifier fields in TimeXtender according to the article?
+
+{"score":0}Using a CASE construct in a custom view.
+{"score":0}Adding a default table column value transformation.
+{"score":100.0}Using the GETDATE() function.
+{"score":0}Adding a new custom field to the table.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a fixed date range option for partitioning?
+
+{"score":0}Year (YYYY)
+{"score":100.0}Week (YYYYWW)
+{"score":0}Month (YYYYMM)
+{"score":0}Day (YYYYMMDD)
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do to create a custom partition template?
+
+{"score":100.0}Select the 'Other - Manual Setup' radio button
+{"score":0}Choose the 'Date - System Field' bullet point
+{"score":0}Click the 'Template Add' button twice
+{"score":0}Set the partitioning field to a numeric type
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must mapped tables share in order to implement incremental loading with history enabled?
+
+{"score":0}The same data type for all columns.
+{"score":0}The same number of columns.
+{"score":100.0}The same primary key field.
+{"score":0}The same schema name.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What setting must be reapplied when a table with incremental data loading is transferred to a new data area?
+
+{"score":0}The Direct Read stored procedure.
+{"score":0}The Simple mode setting.
+{"score":100.0}The incremental data loading setting.
+{"score":0}The primary key field.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What might newer versions of TimeXtender do when a circular reference is detected?
+
+{"score":0}Automatically correct the circular reference
+{"score":0}Ignore the circular reference
+{"score":100.0}Display an error message
+{"score":0}Create a backup of the data model
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In a complex data warehouse, where are circular references more likely to occur?
+
+{"score":0}Between fact tables and dimension tables
+{"score":0}Within a single table
+{"score":100.0}Between dimension tables
+{"score":0}In calculated fields
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the format of the DateTime provided in the context?
+
+{"score":100.0}YYYY-MM-DD HH:MM:SS
+{"score":0}MM-DD-YYYY HH:MM
+{"score":0}DD-MM-YYYY SS:MM:HH
+{"score":0}YYYY-DD-MM HH:MM:SS
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is missing from the provided context that might be useful for understanding how to use raw-only fields?
+
+{"score":0}The URL to the article
+{"score":100.0}The steps to designate a field as raw-only
+{"score":0}The title of the article
+{"score":0}The author's name
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of the 'Mapping id field' in the incremental table?
+
+{"score":0}To indicate the last time the table was fully loaded.
+{"score":100.0}To ensure the correct table is always used for mapping.
+{"score":0}To display the batch number of the last incremental load.
+{"score":0}To show whether an execution was a full load or not.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does the 'Status field' in the _I table indicate after a successful execution?
+
+{"score":0}It shows the number of records loaded.
+{"score":0}It remains null.
+{"score":100.0}It is set to 'OK'.
+{"score":0}It indicates the batch number.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens when the Index Automation is set to 'Disabled'?
+
+{"score":0}Indexes are managed by TimeXtender with high performance tuning.
+{"score":100.0}Indexes are generated during execution as needed by data cleansing, potentially multiple times, without fine-tuning for performance.
+{"score":0}No indexes are generated at all.
+{"score":0}Indexes are only generated manually by the user.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which index option in TimeXtender guarantees that each combination of values in the index key is unique?
+
+{"score":0}NonClustered Index
+{"score":0}Clustered Columnstore Index
+{"score":0}Columnstore Index
+{"score":100.0}Unique Index
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When is the value of an instance variable determined?
+
+{"score":0}When the instance is first created
+{"score":0}When the variable is first added to the project
+{"score":100.0}When the object using the variable is deployed
+{"score":0}When the instance is closed
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a type of instance variable mentioned in the context?
+
+{"score":0}Fixed
+{"score":0}Dynamic
+{"score":100.0}Reactive
+{"score":0}System
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does the Junk Dimension Table do when executed?
+
+{"score":0}It truncates the raw table instance
+{"score":100.0}It inserts non-existing junk dimension combinations from associated tables
+{"score":0}It deletes all existing records
+{"score":0}It archives the data for long-term storage
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should be avoided when selecting a hashing algorithm for the Junk Dimension Table key?
+
+{"score":100.0}Using the 'Legacy integer' algorithm
+{"score":0}Choosing a strong encryption method
+{"score":0}Selecting the default algorithm
+{"score":0}Using a hashing algorithm that is too complex
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How do you add a new join when using conditional lookup fields in TimeXtender?
+
+{"score":0}By dragging the Value column onto the Employees table.
+{"score":100.0}By right-clicking on joins and selecting Add Join.
+{"score":0}By using the Lookup Transformation Template.
+{"score":0}By entering a fixed value in the Table column.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the result of applying the Lookup Transformation Template to the Employees table in the given context?
+
+{"score":0}It creates a new table with combined data from JobDept and Employees.
+{"score":100.0}It adds the Job Title and Department Name for each employee from the JobDept table.
+{"score":0}It replaces the existing data in the Employees table with data from JobDept.
+{"score":0}It deletes the JobDept table after transferring the data.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens if there is a data type change in one of the tables involved in a mapping set?
+
+{"score":0}The mapping set will be deleted
+{"score":100.0}The table with the original data type will prevail
+{"score":0}All data types in the mapping set will be converted to VARCHAR
+{"score":0}The mapping set will be disabled until the issue is resolved
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should be done if columns are removed from one or more tables in a mapping set?
+
+{"score":0}Ignore the changes and continue with the current mapping
+{"score":0}Manually add the removed columns back into the tables
+{"score":100.0}Synchronize the mapping set to reflect the changes
+{"score":0}Delete the mapping set and create a new one
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must be done for the changes made by the Performance Recommendations tool to take effect?
+
+{"score":0}Reboot the server
+{"score":100.0}Deploy the Instance
+{"score":0}Clear the undo data
+{"score":0}Wait for 24 hours
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What allows you to undo changes made by the Performance Recommendations tool?
+
+{"score":0}Restoring a database backup
+{"score":0}Running a system restore point
+{"score":100.0}Using the Undo Changes feature, provided the undo data hasn't been cleared
+{"score":0}Undo changes are not possible once applied
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When configuring the Related Records transformation, what does selecting the 'Valid' option for the Data Destination Table do?
+
+{"score":0}It inserts records before data cleansing
+{"score":0}It inserts records without any conditions
+{"score":100.0}It inserts records after data cleansing
+{"score":0}It validates the data before inserting records
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if you want to populate a field with a default value when the field is empty during the Related Records transformation?
+
+{"score":0}Select 'Fixed Value' in the field mappings
+{"score":0}Select 'None' in the field mappings
+{"score":100.0}Select 'Allow Default Value' and specify the Default Value
+{"score":0}Leave the field mapping as is
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a step in the process of removing unused objects from a DW instance?
+
+{"score":0}Expanding the relevant DW instance
+{"score":0}Opening the relevant data area
+{"score":0}Right-clicking on the ODX to select Remove Unused Objects
+{"score":100.0}Creating a new table in the DW instance
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens when you select 'Remove Unused Objects' in a DW instance?
+
+{"score":0}It creates a backup of the DW instance
+{"score":0}It generates a report of unused objects
+{"score":100.0}It removes table references that no longer exist from the DW instance repository
+{"score":0}It updates all existing table references
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens to the objects in the Data Area after the Reverse Data Area process before deployment?
+
+{"score":0}They are deleted
+{"score":0}They are marked as green
+{"score":100.0}They are marked as red
+{"score":0}They are automatically deployed
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the consequence of not updating the database in the TimeXtender Portal for the Data Warehouse instance?
+
+{"score":100.0}The source database may be overwritten
+{"score":0}The objects will be marked as green
+{"score":0}The Reverse Data Area process will be canceled
+{"score":0}TimeXtender Desktop will not refresh
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens if you attempt to use an existing schema name for a different data area in TimeXtender?
+
+{"score":0}The system will automatically rename the schema to avoid conflicts.
+{"score":100.0}A warning message will appear, and errors are likely if you proceed.
+{"score":0}The tables will merge without any issues.
+{"score":0}The existing data area will be overwritten.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if you encounter an error stating that a specific schema name does not exist or you do not have permission to use it during deployment?
+
+{"score":0}Rename the schema to a unique name.
+{"score":100.0}Deploy the tables with the 'Only deploy modified tables and views' option unchecked.
+{"score":0}Ignore the error and continue with the deployment.
+{"score":0}Manually create the schema in the database before deployment.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In the context of Azure Synapse Analytics, what does the 'Replicate' distribution option do?
+
+{"score":0}Distributes rows of data based on a hash function
+{"score":0}Distributes rows of data evenly across the server
+{"score":100.0}Stores a copy of all data in the table on all nodes
+{"score":0}Partitions the table based on the date
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default 'distribution column' used by the Hash distribution method in Azure Synapse Analytics?
+
+{"score":100.0}DW_id
+{"score":0}Unique_id
+{"score":0}Hash_key
+{"score":0}Node_id
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT supported by tables in simple mode?
+
+{"score":0}Field transformations
+{"score":0}Field validations
+{"score":0}Conditional lookup fields
+{"score":100.0}Incremental load
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How is simple mode enabled for a table?
+
+{"score":0}By setting the individual table to simple mode
+{"score":100.0}By inheriting the setting from the data area
+{"score":0}Through a global setting in the database
+{"score":0}By enabling it in the database management system
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must be installed to ensure geography and geometry data types are available in SQL Server for TimeXtender?
+
+{"score":100.0}SQLSysCLRTypes
+{"score":0}ODX
+{"score":0}MDW
+{"score":0}TimeXtender Query Tool
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What was the result of the spatial join query example provided in the context?
+
+{"score":0}All deliveries were successfully mapped to a country
+{"score":100.0}3,357 deliveries could not be mapped to a country
+{"score":0}Most deliveries happened in Canada
+{"score":0}The query failed due to lack of reference data
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if a SQL snippet is returning NULL values in a custom transformation on an incremental table?
+
+{"score":0}Delete the snippet and create a new one
+{"score":100.0}Perform a full load to ensure values are updated
+{"score":0}Change the snippet's parameters
+{"score":0}Ignore the NULL values as they are expected
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When adding a new SQL snippet in TimeXtender, what must you provide?
+
+{"score":100.0}A Name, Description, and Formula
+{"score":0}A SQL query and a linked server
+{"score":0}A database connection string
+{"score":0}A list of all tables in the database
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the final step to make a Stored Procedure executable in TimeXtender?
+
+{"score":0}Saving the script
+{"score":0}Closing the TimeXtender application
+{"score":100.0}Deploying the Stored Procedure
+{"score":0}Scheduling the Stored Procedure
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must be done for a User Defined Function to be executed in relation to a table in TimeXtender?
+
+{"score":0}It must be compiled separately
+{"score":0}It must be included in the table's design
+{"score":100.0}It must be scheduled using the Set Pre- and post scripts dialog
+{"score":0}It must be approved by a TimeXtender administrator
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of the 'Only read from the store' option when adding a supernatural key field?
+
+{"score":0}To create new entries when a key is not found in the key store.
+{"score":100.0}To ensure that the field's value will be null when no matching key is found.
+{"score":0}To reorder the fields in the key store.
+{"score":0}To encrypt the supernatural key for added security.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a data type option for the key in a key store?
+
+{"score":0}Unique identifier (GUID)
+{"score":0}Database unique auto-increment (bigint)
+{"score":0}Auto increment with customizable values
+{"score":100.0}Time-based sequential identifier
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How do you add a new tag in the Solution Explorer?
+
+{"score":0}Double-click Tags and select Add tag
+{"score":0}Right click Tags and select Delete tag
+{"score":0}Left click Tags and choose Add tag
+{"score":100.0}Right click Tags and click Add tag
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the correct way to add a tag to a field?
+
+{"score":100.0}Right click the field, click Tags and select the appropriate tag
+{"score":0}Drag and drop the tag onto the field
+{"score":0}Left click the field and type the tag name
+{"score":0}Use a special tagging tool provided in the software
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which field in a history-enabled table indicates whether a row is the current version aligning with the source data?
+
+{"score":0}SCD From DateTime
+{"score":0}SCD To DateTime
+{"score":100.0}SCD Is Current
+{"score":0}SCD Is TombStone
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens to a Type I field when 'Update also historical records with new value on type I change' is enabled?
+
+{"score":0}It creates a new record with the updated value.
+{"score":0}It updates only the current version of the record.
+{"score":100.0}It updates all versions of the record with the new value.
+{"score":0}It marks the record as deleted.
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT listed as a feature that uses parameters according to the provided text?
+
+{"score":0}Custom Views
+{"score":0}Semantic Custom Scripts
+{"score":100.0}Automated Table Indexing
+{"score":0}Derived Measures
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the advantage of changing field names in the view as mentioned in the text?
+
+{"score":0}It prevents the script from executing
+{"score":100.0}It automatically updates the names in the code
+{"score":0}It deletes the old fields from the database
+{"score":0}It creates a new table in the database
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a component mentioned in the context of a data staging area?
+
+{"score":0}ODX Server
+{"score":0}Data Lake
+{"score":0}SQL storage
+{"score":100.0}Data Mart
+-
+{"folder":"(2024_01) PRACTICE - Data Warehouse","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the main benefit of using a data staging area in data warehousing?
+
+{"score":0}It increases the complexity of data management
+{"score":0}It allows for real-time data analytics
+{"score":100.0}It minimizes the impact on data sources during extraction
+{"score":0}It serves as the primary data source for end-users

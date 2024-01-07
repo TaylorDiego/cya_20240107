@@ -1,0 +1,37 @@
+{
+    "DateTime": "2023-12-27 14:40:39",
+    "URL": "https://support.timextender.com/data-warehouse-108/performance-recommendations-1021",
+    "Keywords": "missing",
+    "Title": "Performance Recommendations _ Community",
+    "Author": "missing",
+    "Text": "The Performance Recommendations tool can be used after an existing project has been upgraded from a previous version to a newer version of TimeXtender. The tool will analyze your existing instances and recommend changes that can improve performance. The Performance Recommendations tool can provide insights by analyzing instances and making recommendations on how to optimize performance. Based on the recommendations provided, the Performance Recommendations tool can apply the following fixes: This improves performance because it makes it possible to merge SQL statements. To analyze your Instance to get performance recommendations and apply them, follow the steps below. The Performance Recommendations tool allows for changes to be undone provided that the most recent undo data has not been cleared. Tools Performance Recommendations Undo Changes If there is a need to disable the undo changes functionality, then clearing the undo data mayaccomplish this. Tools Performance Recommendations Clear Undo Data Use the following steps to perform the testing and acceptance of changes:     ",
+    "Lists": [
+        {
+            "heading": "Finding and Applying Performance Recommendations",
+            "paragraphs": [
+                "To analyze your Instance to get performance recommendations and apply them, follow the steps below."
+            ],
+            "list": [
+                "On the Tools menu, point to Performance Recommendations and click Find.... The Performance Recommendations window appears.",
+                "Review the recommendations in the Apply these changes list and clear the check box next to recommendations that should not be applied. Mouse over objects in the Affected objects to see what issue has been identified for the object and the proposed change. Then click OK to apply the changes.",
+                "Deploy the Instance for the changes to take effect."
+            ]
+        },
+        {
+            "heading": "Undoing and Accepting Changes",
+            "paragraphs": [
+                "The Performance Recommendations tool allows for changes to be undone provided that the most recent undo data has not been cleared.",
+                "To undo changes, on the Tools menu, point to Performance Recommendations, then click Undo Changes.",
+                "If there is a need to disable the undo changes functionality, then clearing the undo data may accomplish this.",
+                "To clear the undo data, on the Tools menu, point to Performance Recommendations, then click Clear Undo Data.",
+                "\u200bUse the following steps to perform the testing and acceptance of changes:"
+            ],
+            "list": [
+                "Apply a selected set of changes.",
+                "Perform quality control testing to confirm these changes are working as expected.",
+                "After passing validation, accept these changes.",
+                "Continue steps 1 through 3 for the next set of changes."
+            ]
+        }
+    ]
+}

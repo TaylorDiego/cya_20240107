@@ -1,0 +1,31 @@
+{
+    "DateTime": "2023-12-27 14:42:12",
+    "URL": "https://support.timextender.com/data-sources-112/timextender-oracle-data-source-provider-for-odx-709",
+    "Keywords": "missing",
+    "Title": "TimeXtender Oracle Data Source provider for ODX _ Community",
+    "Author": "missing",
+    "Text": "TimeXtender 6024.1 This article describes how to add the TimeXtender Oracle Data Source provider in the TimeXtender Portal and to an ODX instance. This provider contains some tweaks that fix common issues using an Oracle data source. This provider is built with a dependency on Oracle's ADO provider, which you will need to install first. See these articles for more information: After the above components are installed, you can add a new data source in ODX that uses the provider. If you receive the error below, set the 'out of range date conversion' option to 'MS SQL min/max date'. Follow the steps below. ",
+    "Lists": [
+        {
+            "heading": "Adding an Oracle Data Source",
+            "paragraphs": [
+                "This provider is built with a dependency on Oracle's ADO provider, which you will need to install first. See these articles for more information:"
+            ],
+            "list": [
+                "Connect to Oracle Database",
+                "Oracle Data Provider for .NET (ODP.NET)"
+            ]
+        },
+        {
+            "heading": "Troubleshooting",
+            "paragraphs": [
+                "If you receive the error below, set the 'out of range date conversion' option to 'MS SQL min/max date'.",
+                "Follow the steps below."
+            ],
+            "list": [
+                "Click on the data source in the TimeXtender Portal, to edit the data source.",
+                "In the Data Conversions section, set Out of range date conversion to MS SQL min/max date"
+            ]
+        }
+    ]
+}

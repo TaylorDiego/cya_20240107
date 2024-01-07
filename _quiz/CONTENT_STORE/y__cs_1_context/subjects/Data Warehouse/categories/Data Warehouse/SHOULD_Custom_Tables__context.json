@@ -1,0 +1,50 @@
+{
+    "DateTime": "2023-12-27 14:40:51",
+    "URL": "https://support.timextender.com/data-warehouse-108/custom-tables-1017",
+    "Keywords": "missing",
+    "Title": "Custom Tables _ Community",
+    "Author": "missing",
+    "Text": "Custom tables are tables that are built from scratch and are not the result of dragginga table from an ODX Instance or another data area. Initially,custom tablescontain only the standard system fields, and are completedby adding in new fields. Si mple Mode Use the following steps to add a custom table to a data warehouse or staging database.      A custom table can be added based on a view. The custom table will be created using a table insert that gets its data from the view. Use the following steps to add a custom table with the same structure as a specific view:  ",
+    "Lists": [
+        {
+            "heading": "Adding a custom table",
+            "paragraphs": [
+                "Use the following steps to add a custom table to a data warehouse or staging database."
+            ],
+            "list": [
+                "Right-click Tables > click Add Table to open the Add Table window.",
+                "In the Name box, enter a name for the table and click OK.",
+                "Select the new table and then add the desired fields and data types."
+            ]
+        },
+        {
+            "heading": "Use cases for the creation of custom tables",
+            "paragraphs": [
+                ""
+            ],
+            "list": [
+                "For data sources that contain boolean or true/false fields, it may be useful to create a custom table that uses the custom data option to translate the \u201c0\u201d and \u201c1\u201d values into those that are more descriptive, as in the following example using \u201cID\u201d and \u201cName\u201d fields.",
+                "Custom tables can also be used as a base for the Row Level Security setup of a Semantic Instance, which can be done by first adding a table with \u201cValue\u201d and \u201cMember\u201d fields, and then importing the desired setup from an Excel or similar type of file.\u200b",
+                "Custom tables can utilize a table insert to create a new table that is generally done according to the following steps: Start by cloning a table. Turn off simple mode Remove any mapped tables.",
+                "Start by cloning a table.",
+                "Turn off simple mode",
+                "Remove any mapped tables.",
+                "Using custom tables may be an effective way of persisting data throughout the project."
+            ]
+        },
+        {
+            "heading": "Adding a custom table from a VIEW",
+            "paragraphs": [
+                "A custom table can be added based on a view. The custom table will be created using a table insert that gets its data from the view.",
+                "Use the following steps to add a custom table with the same structure as a specific view:"
+            ],
+            "list": [
+                "Drag the view to the Table node of a data warehouse instance. For views that do not have any mapped custom view fields, a message will appear advising that data linage will not be possible. To enable data lineage, use object dependencies to relate the table to the sources of the view.",
+                "For views that do not have any mapped custom view fields, a message will appear advising that data linage will not be possible.",
+                "To enable data lineage, use object dependencies to relate the table to the sources of the view.",
+                "If Simple Mode is enablled by default, go to the Table Settings and disable it.",
+                "Deploy/execute."
+            ]
+        }
+    ]
+}

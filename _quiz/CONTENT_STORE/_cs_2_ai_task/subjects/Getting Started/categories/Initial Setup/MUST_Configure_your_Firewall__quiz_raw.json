@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What port should be opened in the firewall settings for a server outside Azure (On-Prem) to use the new version of TimeXtender?",
+        "options": {
+            "option_a": "Port 443",
+            "option_b": "Port 1433",
+            "option_c": "Port range 11000-11999",
+            "option_d": "Port 80"
+        },
+        "answer": "option_b",
+        "explanation": "Port 1433 is the standard for SQL Server and should be opened for servers outside Azure (On-Prem)."
+    },
+    "question_2": {
+        "question": "Which port range should be opened for a server inside Azure to work with TimeXtender?",
+        "options": {
+            "option_a": "Port 80-85",
+            "option_b": "Port 1433",
+            "option_c": "Port 443",
+            "option_d": "Port range 11000-11999"
+        },
+        "answer": "option_d",
+        "explanation": "For servers inside Azure, the port range 11000-11999 should be opened to work with TimeXtender."
+    },
+    "question_3": {
+        "question": "For client secret authentication, data sources provider download and updates, which URL and port should be accessible?",
+        "options": {
+            "option_a": "traws.timextender.com Port 80",
+            "option_b": "traws.timextender.com Port 443",
+            "option_c": "api.timextender.com Port 443",
+            "option_d": "timextender-saas.eu.auth0.com Port 80"
+        },
+        "answer": "option_b",
+        "explanation": "The URL traws.timextender.com should be accessible over Port 443 for client secret authentication, data sources provider download and updates."
+    },
+    "question_4": {
+        "question": "Which URL and port are used for signing in to the TimeXtender Desktop and ODX configuration?",
+        "options": {
+            "option_a": "timextender-saas.eu.auth0.com Port 80",
+            "option_b": "timextender-saas.eu.auth0.com Port 443",
+            "option_c": "api.timextender.com Port 80",
+            "option_d": "api.timextender.com Port 443"
+        },
+        "answer": "option_b",
+        "explanation": "The URL timextender-saas.eu.auth0.com over Port 443 is used for signing in to the TimeXtender Desktop and ODX configuration."
+    },
+    "question_5": {
+        "question": "What should be done if an Azure VM is experiencing access issues due to firewall settings?",
+        "options": {
+            "option_a": "Open Port 80 for all Azure VMs",
+            "option_b": "Create a rule for Port 1433 outside Azure VMs",
+            "option_c": "Make a rule for the server in the firewall to allow communication to the ODX Server",
+            "option_d": "Ignore the issue as it will resolve itself"
+        },
+        "answer": "option_c",
+        "explanation": "A rule should be made in the firewall to allow for communication to the ODX Server from the Cloud repository to resolve access issues."
+    },
+    "question_6": {
+        "question": "Which of the following is NOT a correct pairing of a server and its required port for TimeXtender setup?",
+        "options": {
+            "option_a": "api.timextender.com Port 443",
+            "option_b": "management.azure.com Port 443",
+            "option_c": "auth0.com Port 80",
+            "option_d": "app.timextender.com Port 443"
+        },
+        "answer": "option_c",
+        "explanation": "auth0.com requires Port 443, not Port 80, for TimeXtender setup."
+    }
+}

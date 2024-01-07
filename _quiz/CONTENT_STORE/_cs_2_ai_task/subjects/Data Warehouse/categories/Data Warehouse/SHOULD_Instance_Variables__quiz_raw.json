@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the primary use of instance variables in the context provided?",
+        "options": {
+            "option_a": "To store user credentials securely",
+            "option_b": "To create at the instance level for use in script actions, custom transformation rules, and custom views",
+            "option_c": "To enhance the graphical user interface of the application",
+            "option_d": "To track changes in the database schema"
+        },
+        "answer": "option_b",
+        "explanation": "Instance variables are created at the instance level and are used in script actions, custom transformation rules, and custom views, as stated in the text."
+    },
+    "question_2": {
+        "question": "How can you use a text value instance variable in a script action or custom view?",
+        "options": {
+            "option_a": "By typing the variable name directly into the script",
+            "option_b": "By enclosing the variable in double quotes",
+            "option_c": "By dragging it into the editor window",
+            "option_d": "By enclosing the variable in single quotes"
+        },
+        "answer": "option_d",
+        "explanation": "If the instance variable contains text values, it should be enclosed in single quotes when used in a script action or custom view."
+    },
+    "question_3": {
+        "question": "When is the value of an instance variable determined?",
+        "options": {
+            "option_a": "When the instance is first created",
+            "option_b": "When the variable is first added to the project",
+            "option_c": "When the object using the variable is deployed",
+            "option_d": "When the instance is closed"
+        },
+        "answer": "option_c",
+        "explanation": "The value of an instance variable is determined when the object that is using the variable is deployed, necessitating a redeployment when the variable changes."
+    },
+    "question_4": {
+        "question": "Which of the following is NOT a type of instance variable mentioned in the context?",
+        "options": {
+            "option_a": "Fixed",
+            "option_b": "Dynamic",
+            "option_c": "Reactive",
+            "option_d": "System"
+        },
+        "answer": "option_c",
+        "explanation": "The types of instance variables mentioned are Fixed, System, Source Scope, Destination Scope, Contextual Scope, and Dynamic. 'Reactive' is not listed as a type of instance variable."
+    }
+}

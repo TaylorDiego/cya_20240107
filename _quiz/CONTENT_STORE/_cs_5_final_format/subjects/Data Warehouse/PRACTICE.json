@@ -1,0 +1,1212 @@
+{
+    "question_1": {
+        "question": "When adding a new conditional lookup field, what options are available if the source and destination tables already have established relationships?",
+        "options": {
+            "option_a": "Use default relation, add new joins, or copy joins from another lookup",
+            "option_b": "Delete existing joins and create new ones",
+            "option_c": "Ignore existing joins and create a conditional field without joins",
+            "option_d": "Use only the default relation without the option to add new joins"
+        },
+        "answer": "option_a",
+        "explanation": "If table relations or joins have already been established between the source and destination tables, the user can choose to use the default relation, add new joins, or copy joins from an existing relation or conditional lookup field."
+    }
+    , "question_2": {
+        "question": "What must be configured when creating a conditional lookup field from a history-enabled table?",
+        "options": {
+            "option_a": "A fixed value for all lookups",
+            "option_b": "A condition that specifies the date to use when looking up the appropriate record",
+            "option_c": "A default relation that cannot be changed",
+            "option_d": "A single source field for the lookup"
+        },
+        "answer": "option_b",
+        "explanation": "When creating a conditional lookup field from a history-enabled table, a condition must be configured that specifies the date to use when looking up the appropriate record."
+    }
+    , "question_3": {
+        "question": "Which of the following is NOT a step in adding a custom view according to the provided context?",
+        "options": {
+            "option_a": "Deploy the view",
+            "option_b": "Preview View to check its functionality",
+            "option_c": "Automatically generate the create statement",
+            "option_d": "Enter the create statement for the view using standard SQL syntax"
+        },
+        "answer": "option_c",
+        "explanation": "The create statement for a custom view must be entered manually using standard SQL syntax; it is not automatically generated."
+    }
+    , "question_4": {
+        "question": "What is the first step in mapping custom view fields to parameterized fields?",
+        "options": {
+            "option_a": "Delete the existing mappings",
+            "option_b": "Ensure the fields have been read and then map them",
+            "option_c": "Automatically map fields based on name",
+            "option_d": "Synchronize View Fields"
+        },
+        "answer": "option_b",
+        "explanation": "The first step in mapping custom view fields is to make sure the fields have been read, then proceed to map them."
+    }
+    , "question_5": {
+        "question": "What does the 'Select Top' option do in the Preview Table window?",
+        "options": {
+            "option_a": "It filters the top-priority tables in the database.",
+            "option_b": "It selects the topmost rows from the result set based on the number you type in.",
+            "option_c": "It sorts the data in descending order.",
+            "option_d": "It highlights the top rows in the preview for better visibility."
+        },
+        "answer": "option_b",
+        "explanation": "The 'Select Top' option allows you to specify the number of rows to be fetched and displayed from the top of the result set."
+    }
+    , "question_6": {
+        "question": "Which key do you press to execute a query in the Query Tool window?",
+        "options": {
+            "option_a": "Enter",
+            "option_b": "F8",
+            "option_c": "F5",
+            "option_d": "Ctrl + R"
+        },
+        "answer": "option_c",
+        "explanation": "To execute a query in the Query Tool window, you can press the F5 function key on your keyboard."
+    }
+    , "question_7": {
+        "question": "What happens if you add a table with the 'Add table with field selection' option and a field is set as a primary key?",
+        "options": {
+            "option_a": "The field is highlighted",
+            "option_b": "The field is automatically encrypted",
+            "option_c": "A checkmark is indicated in the Primary Key column",
+            "option_d": "The field is deleted"
+        },
+        "answer": "option_c",
+        "explanation": "When adding a table with the 'Add table with field selection' option, fields set as primary keys are indicated by a checkmark in the Primary Key column."
+    }
+    , "question_8": {
+        "question": "Which of the following is NOT a primary key constraint behavior that can be set in the table settings?",
+        "options": {
+            "option_a": "Error",
+            "option_b": "Warning",
+            "option_c": "Ignore",
+            "option_d": "None"
+        },
+        "answer": "option_c",
+        "explanation": "The primary key constraint behaviors that can be set are 'Use instance setting (error)', 'Error', 'Warning', and 'None'. 'Ignore' is not a listed behavior."
+    }
+    , "question_9": {
+        "question": "Which of the following is recommended when setting up relations in a Semantic Model?",
+        "options": {
+            "option_a": "Creating duplicate field names",
+            "option_b": "Using an existing relation defined in the data warehouse",
+            "option_c": "Avoiding any relations between tables",
+            "option_d": "Relating tables based on their size"
+        },
+        "answer": "option_b",
+        "explanation": "Using an existing relation defined in the data warehouse is recommended for setting up relations in a Semantic Model as it ensures consistency and leverages pre-defined relationships."
+    }
+    , "question_10": {
+        "question": "What should a table contain to be set as the default date table in a Semantic Model?",
+        "options": {
+            "option_a": "A field of the data type 'string'",
+            "option_b": "A field named 'default'",
+            "option_c": "A field of the data type 'datetime'",
+            "option_d": "A field with the current date"
+        },
+        "answer": "option_c",
+        "explanation": "To be set as the default date table, a table needs a field of the data type 'datetime' to be used as the key, such as the 'datevalue' field in tables created by TimeXtender."
+    }
+    , "question_11": {
+        "question": "What must you do manually in SQL Server after deleting tables in TimeXtender?",
+        "options": {
+            "option_a": "Restore the deleted tables",
+            "option_b": "Drop the database schemas",
+            "option_c": "Recreate the tables",
+            "option_d": "Optimize the database"
+        },
+        "answer": "option_b",
+        "explanation": "After deleting tables in TimeXtender, you must manually drop the database schemas in SQL Server as they are not deleted automatically."
+    }
+    , "question_12": {
+        "question": "How does TimeXtender handle incrementally loaded tables when using the SQL Database Cleanup Tool?",
+        "options": {
+            "option_a": "It deletes them immediately without confirmation",
+            "option_b": "It prevents their selection by default",
+            "option_c": "It backs them up before deletion",
+            "option_d": "It requires a special script to delete them"
+        },
+        "answer": "option_b",
+        "explanation": "TimeXtender automatically clears the selection for any incrementally loaded tables to prevent accidental data loss and asks for confirmation if you want to drop such a table."
+    }
+    , "question_13": {
+        "question": "What happens when you drag an ID field from one table to a corresponding field in another table to create a relationship?",
+        "options": {
+            "option_a": "A message appears to confirm the data types",
+            "option_b": "The tables are automatically merged into one",
+            "option_c": "A '+' icon appears next to the mouse pointer if the fields are compatible",
+            "option_d": "The relationship is created without any further confirmation"
+        },
+        "answer": "option_c",
+        "explanation": "A '+' icon appears indicating that the fields are compatible and a relationship can be created."
+    }
+    , "question_14": {
+        "question": "What is the default setting when configuring relationship options in a new Data Area?",
+        "options": {
+            "option_a": "Add a new relation and set it as default",
+            "option_b": "Extend an existing relation",
+            "option_c": "Add a new relation",
+            "option_d": "No default setting is provided"
+        },
+        "answer": "option_b",
+        "explanation": "The default setting is generally to 'Extend an existing relation' to avoid filtering out data."
+    }
+    , "question_15": {
+        "question": "Where can additional information regarding team development and working with multiple developers be found?",
+        "options": {
+            "option_a": "In the provided text",
+            "option_b": "On the referenced URL",
+            "option_c": "From the author mentioned",
+            "option_d": "Additional context is missing"
+        },
+        "answer": "option_b",
+        "explanation": "The 'URL' field contains a link to a webpage that likely contains more information on the topic."
+    }
+    , "question_16": {
+        "question": "What is the format of the content provided in the text?",
+        "options": {
+            "option_a": "A detailed guide",
+            "option_b": "A set of rules",
+            "option_c": "A narrative story",
+            "option_d": "A technical manual"
+        },
+        "answer": "option_b",
+        "explanation": "The text mentions 'Follow the rules below to ensure consistency,' indicating the content is formatted as a set of rules."
+    }
+    , "question_17": {
+        "question": "What happens if you set the Custom Table Insert to 'raw' in TimeXtender?",
+        "options": {
+            "option_a": "The data will be deleted after a certain period",
+            "option_b": "The data will be affected by the data cleansing procedure",
+            "option_c": "The data will be automatically backed up",
+            "option_d": "The data will be encrypted"
+        },
+        "answer": "option_b",
+        "explanation": "Setting the Custom Table Insert to 'raw' means the data will go through the data cleansing procedure in TimeXtender."
+    }
+    , "question_18": {
+        "question": "What error is indicated by the message 'Invalid object name '#PurchForecast''?",
+        "options": {
+            "option_a": "A syntax error in the SQL query",
+            "option_b": "A missing or incorrect database connection",
+            "option_c": "A reference to a non-existent table or a temporary table that is no longer available",
+            "option_d": "An error in the data cleansing procedure"
+        },
+        "answer": "option_c",
+        "explanation": "The error message 'Invalid object name '#PurchForecast'' suggests a reference to a table that does not exist or a temporary table that is not available at the time of the query."
+    }
+    , "question_19": {
+        "question": "Which of the following is NOT an aggregation method mentioned for creating an aggregate table?",
+        "options": {
+            "option_a": "DistinctCount",
+            "option_b": "Sum",
+            "option_c": "Median",
+            "option_d": "Count_Big"
+        },
+        "answer": "option_c",
+        "explanation": "Median is not listed as an aggregation method; the methods provided are Min, Max, Count, Count_Big, DistinctCount, Sum, and Average."
+    }
+    , "question_20": {
+        "question": "What is the purpose of clicking 'Yes' in the Override data type column when adding an aggregate table?",
+        "options": {
+            "option_a": "To delete the existing data type.",
+            "option_b": "To allow the data type for the field to be amended later.",
+            "option_c": "To automatically set the data type to bigint.",
+            "option_d": "To aggregate the data by data type."
+        },
+        "answer": "option_b",
+        "explanation": "Clicking 'Yes' in the Override data type column enables the data type for the field to be changed at a later time."
+    }
+    , "question_21": {
+        "question": "What factor determines the optimal batch size for batch data cleansing?",
+        "options": {
+            "option_a": "The number of users on the network",
+            "option_b": "The amount of memory available on the server",
+            "option_c": "The speed of the internet connection",
+            "option_d": "The time of day the process is run"
+        },
+        "answer": "option_b",
+        "explanation": "The optimal batch size for batch data cleansing is determined by the amount of memory available on the server."
+    }
+    , "question_22": {
+        "question": "Where can you find useful information regarding best practices for batch data cleansing?",
+        "options": {
+            "option_a": "In the SQL Server manual",
+            "option_b": "On the official website of the database software",
+            "option_c": "In the community post mentioned in the text",
+            "option_d": "By contacting the database administrator"
+        },
+        "answer": "option_c",
+        "explanation": "The text refers to a community post that contains useful information regarding best practices for batch data cleansing."
+    }
+    , "question_23": {
+        "question": "What is the result of selecting 'Clone values' when cloning a field?",
+        "options": {
+            "option_a": "It creates a new field with the same name but no data.",
+            "option_b": "The cloned field will be a custom field that gets its value from the original field.",
+            "option_c": "It copies the field's structure but not its data.",
+            "option_d": "It generates a new field with default values."
+        },
+        "answer": "option_b",
+        "explanation": "'Clone values' results in a custom field that derives its value from the original field."
+    }
+    , "question_24": {
+        "question": "Can fields that have been added later, after being brought in from a data source, be cloned?",
+        "options": {
+            "option_a": "No, only fields from the original data source can be cloned.",
+            "option_b": "Yes, but only their structure can be cloned, not their values.",
+            "option_c": "Yes, all fields in a table can be cloned, regardless of their origin.",
+            "option_d": "No, cloning is not supported for fields added after the initial data import."
+        },
+        "answer": "option_c",
+        "explanation": "All fields in a table can be cloned, no matter if they were brought in from a data source or added later."
+    }
+    , "question_25": {
+        "question": "How do you add a role-playing dimension to a TimeXtender semantic model?",
+        "options": {
+            "option_a": "By creating a new dimension table for each role",
+            "option_b": "By adding the dimension to the semantic model multiple times with different names and relationships",
+            "option_c": "By duplicating the fact table",
+            "option_d": "By manually editing the SQL queries in the model"
+        },
+        "answer": "option_b",
+        "explanation": "To add a role-playing dimension in TimeXtender, you add the same dimension to the semantic model several times, each with an appropriate name and relationship to represent its different roles."
+    }
+    , "question_26": {
+        "question": "What are the benefits of implementing role-playing dimensions in a data warehouse?",
+        "options": {
+            "option_a": "Increased data redundancy and complexity",
+            "option_b": "Improved query performance and simplified maintenance",
+            "option_c": "Reduced need for data consistency and accuracy",
+            "option_d": "More frequent need for updating the semantic model"
+        },
+        "answer": "option_b",
+        "explanation": "Role-playing dimensions create consistency, improve query performance, simplify maintenance, and enhance the depth and breadth of business insights."
+    }
+    , "question_27": {
+        "question": "What is a use case for custom fields mentioned in the context?",
+        "options": {
+            "option_a": "To fix broken links in the data warehouse",
+            "option_b": "To build a model of your data warehouse before adding data",
+            "option_c": "To create a backup of your data",
+            "option_d": "To encrypt data for security purposes"
+        },
+        "answer": "option_b",
+        "explanation": "Custom fields can be used to build a model of your data warehouse before actually bringing in the data."
+    }
+    , "question_28": {
+        "question": "How are custom fields initially created in a table?",
+        "options": {
+            "option_a": "From a pre-populated field shell",
+            "option_b": "From an existing field with data",
+            "option_c": "From an empty field shell",
+            "option_d": "From a data warehouse template"
+        },
+        "answer": "option_c",
+        "explanation": "Custom fields are built from an empty field shell, which is then populated using various methods."
+    }
+    , "question_29": {
+        "question": "How can you ensure an accurate comparison of two custom hash fields in TimeXtender?",
+        "options": {
+            "option_a": "By using the same hashing algorithm",
+            "option_b": "By ensuring the field sequence is the same for both hash fields",
+            "option_c": "By only including non-null fields",
+            "option_d": "By comparing the fields manually"
+        },
+        "answer": "option_b",
+        "explanation": "To ensure an accurate comparison of two custom hash fields, the field sequence must be the same for both hash fields, as different sequences can result in different hash values."
+    }
+    , "question_30": {
+        "question": "What must you do in TimeXtender to change the behavior of a custom hash field to create a hash only if ALL fields are filled?",
+        "options": {
+            "option_a": "Modify the table relationships",
+            "option_b": "Change the hashing algorithm",
+            "option_c": "Create a standard field with a varbinary(20) data type and custom transformation",
+            "option_d": "Delete and recreate the custom hash field"
+        },
+        "answer": "option_c",
+        "explanation": "To change the behavior so that a hash is created only when all fields are filled, you need to create a standard field with a varbinary(20) data type and run the conversion with a custom transformation that includes conditions for non-null fields."
+    }
+    , "question_31": {
+        "question": "Which of the following is a use case for creating custom tables?",
+        "options": {
+            "option_a": "To translate boolean fields into more descriptive values.",
+            "option_b": "To automatically generate reports.",
+            "option_c": "To create a backup of the data warehouse.",
+            "option_d": "To increase the speed of data retrieval."
+        },
+        "answer": "option_a",
+        "explanation": "Custom tables can be used to translate '0' and '1' values in boolean fields into more descriptive terms, such as 'ID' and 'Name'."
+    }
+    , "question_32": {
+        "question": "What should you do to enable data lineage when adding a custom table from a view?",
+        "options": {
+            "option_a": "Clone the table and remove any mapped tables.",
+            "option_b": "Deploy/execute immediately after adding the table.",
+            "option_c": "Use object dependencies to relate the table to the sources of the view.",
+            "option_d": "Enable Simple Mode in the Table Settings."
+        },
+        "answer": "option_c",
+        "explanation": "To enable data lineage for a custom table created from a view, you should use object dependencies to relate the table to the sources of the view."
+    }
+    , "question_33": {
+        "question": "What should you do after editing code in a custom editor in TimeXtender?",
+        "options": {
+            "option_a": "Click 'OK' to confirm the edits.",
+            "option_b": "Save the changes and close the editor.",
+            "option_c": "Click 'Import' to import the changes.",
+            "option_d": "Click 'Delete' to remove the customization."
+        },
+        "answer": "option_b",
+        "explanation": "After editing the code in a custom editor, you should save the changes and close the editor as per the instructions."
+    }
+    , "question_34": {
+        "question": "What is the purpose of the 'Parameters' button in the 'Customize Code' window of TimeXtender?",
+        "options": {
+            "option_a": "To add new parameters to the code.",
+            "option_b": "To delete existing parameters from the code.",
+            "option_c": "To decide which parameters are sent to the code on execution.",
+            "option_d": "To import parameters from an external source."
+        },
+        "answer": "option_c",
+        "explanation": "The 'Parameters' button is used to decide which parameters are sent to the code on execution, as indicated in the provided steps."
+    }
+    , "question_35": {
+        "question": "What is the consequence of customizing stored procedures in TimeXtender?",
+        "options": {
+            "option_a": "TimeXtender will automatically update the customized stored procedures",
+            "option_b": "Customized stored procedures will need to be updated manually",
+            "option_c": "Customized stored procedures enhance TimeXtender's performance",
+            "option_d": "Customized stored procedures are deleted after each deployment"
+        },
+        "answer": "option_b",
+        "explanation": "Customizing stored procedures means TimeXtender will no longer maintain them, and any updates will need to be done manually, making it the last option to consider."
+    }
+    , "question_36": {
+        "question": "How can you add a Script Action to a table in TimeXtender?",
+        "options": {
+            "option_a": "By customizing the data cleansing procedure",
+            "option_b": "Through the 'Add Custom Step' option under Scripts",
+            "option_c": "By creating a new Custom View",
+            "option_d": "By deploying and executing a Custom Table Insert"
+        },
+        "answer": "option_b",
+        "explanation": "A Script Action can be added to a table by selecting 'Add Custom Step' from Script Actions under Scripts on a data warehouse."
+    }
+    , "question_37": {
+        "question": "Which of the following is NOT a step in adding a database role in TimeXtender?",
+        "options": {
+            "option_a": "Selecting the logins to be added from the list in the Select Login(s) window.",
+            "option_b": "Entering a name for the database role in the Name box.",
+            "option_c": "Dropping all roles on the database before creating a new one.",
+            "option_d": "Adding logins that exist on the SQL Server configured for the data area storage."
+        },
+        "answer": "option_c",
+        "explanation": "Dropping all roles on the database is not a step in adding a database role; it is a separate action that TimeXtender performs on each deployment."
+    }
+    , "question_38": {
+        "question": "In TimeXtender, what is the purpose of creating a database role based on an SQL Server login?",
+        "options": {
+            "option_a": "To manage the TimeXtender application settings.",
+            "option_b": "To implement object level or row level security.",
+            "option_c": "To configure the data area SQL storage.",
+            "option_d": "To drop existing roles on the database."
+        },
+        "answer": "option_b",
+        "explanation": "Creating a database role based on an SQL Server login in TimeXtender is used to implement object level or row level security for specific data area objects."
+    }
+    , "question_39": {
+        "question": "What happens if a user is a member of a database role that is granted access to an object, but also a member of another role that is denied access?",
+        "options": {
+            "option_a": "The user will have access to the object",
+            "option_b": "The user will not have access to the object",
+            "option_c": "The user's access level will be determined by the object's settings",
+            "option_d": "The user will have read-only access to the object"
+        },
+        "answer": "option_b",
+        "explanation": "According to the text, if a user is a member of a database role that is granted access but also a member of another role that is denied access, the user will not have access to the object."
+    }
+    , "question_40": {
+        "question": "In TimeXtender, what does the permission icon that is split down the middle indicate?",
+        "options": {
+            "option_a": "The object is accessible to all users",
+            "option_b": "The object has row level permissions set",
+            "option_c": "The object has mixed permission settings",
+            "option_d": "The object is in a locked state"
+        },
+        "answer": "option_c",
+        "explanation": "The text explains that a permission icon for tables that is split down the middle indicates mixed permission settings."
+    }
+    , "question_41": {
+        "question": "What happens when a user not listed in the Securable Column Setup logs into PowerBI?",
+        "options": {
+            "option_a": "They can see all the data",
+            "option_b": "They can see only their own data",
+            "option_c": "They can see data based on default permissions",
+            "option_d": "No information is available in the secured view"
+        },
+        "answer": "option_d",
+        "explanation": "If a user not listed in the Securable Column Setup logs into PowerBI, they will not be able to see any information in the secured view."
+    }
+    , "question_42": {
+        "question": "What is the result of dragging the SalesRepSecurity securable column onto the Logon field in the Sales facts table?",
+        "options": {
+            "option_a": "It creates a new user account",
+            "option_b": "It generates a report of sales data",
+            "option_c": "It creates the DSA2.Sales_SV secured view",
+            "option_d": "It deletes the Logon field from the table"
+        },
+        "answer": "option_c",
+        "explanation": "Dragging the SalesRepSecurity securable column onto the Logon field in the Sales facts table creates the DSA2.Sales_SV secured view, which is used for row level security."
+    }
+    , "question_43": {
+        "question": "What does the Pattern Search functionality in TimeXtender's data profile tool do?",
+        "options": {
+            "option_a": "It deletes patterns that do not match the search criteria",
+            "option_b": "It formats the data according to the specified pattern",
+            "option_c": "It finds rows matching a LIKE or NOT LIKE search phrase",
+            "option_d": "It automatically corrects incorrect data patterns"
+        },
+        "answer": "option_c",
+        "explanation": "The Pattern Search button in the data profile tool of TimeXtender is used to explore the data and find patterns within the data by finding rows that match a LIKE or NOT LIKE search phrase."
+    }
+    , "question_44": {
+        "question": "What happens if you change the 'Select top' number of records from unlimited to 2 in the data profile tool of TimeXtender?",
+        "options": {
+            "option_a": "The data profile tool will show only the first two fields of the table",
+            "option_b": "The data profile tool will stop functioning",
+            "option_c": "Only two records will be returned from the search",
+            "option_d": "The data profile tool will display two random records"
+        },
+        "answer": "option_c",
+        "explanation": "When the 'Select top' number of records is set to unlimited, all matching records are returned. If this is changed to 2, then only the first two matching records are returned."
+    }
+    , "question_45": {
+        "question": "How can data selection rules be configured in Qlik models?",
+        "options": {
+            "option_a": "On the destination table level",
+            "option_b": "On the source table level",
+            "option_c": "On the instance variable level",
+            "option_d": "On the data cleansing level"
+        },
+        "answer": "option_b",
+        "explanation": "In Qlik models, data selection rules are configured on the source table level."
+    }
+    , "question_46": {
+        "question": "What is the function of instance variables in data selection rules?",
+        "options": {
+            "option_a": "To specify the data type of the variable",
+            "option_b": "To filter data based on the specific environment the data is loaded into",
+            "option_c": "To determine the maximum length of data",
+            "option_d": "To validate the alphanumeric characters in the data"
+        },
+        "answer": "option_b",
+        "explanation": "Instance variables in data selection rules allow for data to be filtered based on the specific environment, such as development or production, that the data is being loaded into."
+    }
+    , "question_47": {
+        "question": "How can you add a condition to a transformation in the given context?",
+        "options": {
+            "option_a": "By writing a custom SQL query",
+            "option_b": "By setting up a condition to be applied to a record based on a field's value",
+            "option_c": "By selecting the 'To lower' operator",
+            "option_d": "By expanding the relevant data area"
+        },
+        "answer": "option_b",
+        "explanation": "A condition can be added to a transformation so that it will only be applied to a record when a certain field meets the specified criteria, such as 'Document_Line_No is greater than 1'."
+    }
+    , "question_48": {
+        "question": "What should you do after selecting either the 'First characters' or 'Last characters' operators?",
+        "options": {
+            "option_a": "Enter a SQL snippet",
+            "option_b": "Choose a fixed value",
+            "option_c": "Enter a number for the field length",
+            "option_d": "Reverse the sign for numeric values"
+        },
+        "answer": "option_c",
+        "explanation": "After selecting the 'First characters' or 'Last characters' operators, you must also enter a number to be used for the field length."
+    }
+    , "question_49": {
+        "question": "What should be done after selecting the appropriate operator in the Field Validations pane?",
+        "options": {
+            "option_a": "Click 'Add' to add the rule",
+            "option_b": "Type a value in the Value box, if applicable",
+            "option_c": "Select Field Validations to open the pane",
+            "option_d": "Right-click the relevant field"
+        },
+        "answer": "option_b",
+        "explanation": "After selecting the operator, if applicable, you should type a value to be used with the operator in the Value box before adding the rule."
+    }
+    , "question_50": {
+        "question": "How can you view the validation errors or warnings for a specific table in the data warehouse?",
+        "options": {
+            "option_a": "By running a diagnostic tool on the database",
+            "option_b": "By querying the database directly",
+            "option_c": "By clicking Errors or Warnings in the Reports menu",
+            "option_d": "By exporting the table data to a CSV file"
+        },
+        "answer": "option_c",
+        "explanation": "To view validation errors or warnings, you should click on Errors or Warnings in the Reports menu and then select the relevant database and table."
+    }
+    , "question_51": {
+        "question": "Which of the following is NOT a valid option for handling primary key constraint violations in TimeXtender's Data Warehouse Table Settings?",
+        "options": {
+            "option_a": "Error",
+            "option_b": "Warning",
+            "option_c": "Ignore",
+            "option_d": "None"
+        },
+        "answer": "option_c",
+        "explanation": "The valid options for handling primary key constraint violations are 'Use instance setting (error)', 'Error', 'Warning', and 'None'. 'Ignore' is not listed as a valid option."
+    }
+    , "question_52": {
+        "question": "What is the effect of disabling 'SCHEMABINDING' in TimeXtender's Data Warehouse Table Settings?",
+        "options": {
+            "option_a": "It enables automatic index generation",
+            "option_b": "It allows the use of custom user-defined functions in field transformations",
+            "option_c": "It compresses the table data",
+            "option_d": "It partitions the table based on a fixed date range"
+        },
+        "answer": "option_b",
+        "explanation": "Disabling 'SCHEMABINDING' for autogenerated user-defined functions allows the use of custom user-defined functions in field transformations, but it is recommended to check this option only if necessary as it may decrease performance."
+    }
+    , "question_53": {
+        "question": "How are objects implicitly included in a dynamic perspective indicated?",
+        "options": {
+            "option_a": "With a checkmark",
+            "option_b": "With a dot",
+            "option_c": "With a star",
+            "option_d": "With a highlight"
+        },
+        "answer": "option_b",
+        "explanation": "In dynamic perspectives, implicitly included objects are marked by a dot, while explicitly included objects are noted by a checkmark."
+    }
+    , "question_54": {
+        "question": "Which of the following is a way to deploy and/or execute a perspective?",
+        "options": {
+            "option_a": "By emailing the perspective to the data warehouse admin",
+            "option_b": "By printing and manually executing the perspective",
+            "option_c": "In the Solution Explorer, right-click the perspective and select Deploy, Execute, or Deploy and Execute",
+            "option_d": "By adding the perspective to a social media post"
+        },
+        "answer": "option_c",
+        "explanation": "Perspectives can be deployed and/or executed by right-clicking them in the Solution Explorer and selecting the appropriate option."
+    }
+    , "question_55": {
+        "question": "How can you ensure that the 'MonthName' field in a date table is sorted correctly?",
+        "options": {
+            "option_a": "By setting the 'Sort by' setting to use the MonthKey",
+            "option_b": "By manually arranging the months in order",
+            "option_c": "By using the 'Days Ahead' feature",
+            "option_d": "By setting the 'First day of the week' to Monday"
+        },
+        "answer": "option_a",
+        "explanation": "To sort the 'MonthName' field correctly, the 'Sort by' setting should be set to use the 'MonthKey', which is the integer number of the month."
+    }
+    , "question_56": {
+        "question": "What is the default setup for the 'First day of the week' and 'First week of the year' in TX's date table, according to the ISO 8601 standard?",
+        "options": {
+            "option_a": "Sunday and First full week",
+            "option_b": "Monday and First 4-day week",
+            "option_c": "Monday and Starts on Jan 1",
+            "option_d": "Sunday and Starts on Jan 1"
+        },
+        "answer": "option_b",
+        "explanation": "The default setup for the 'First day of the week' is Monday and for the 'First week of the year' is the 'First 4-day week', following the ISO 8601 standard, which is common in Europe."
+    }
+    , "question_57": {
+        "question": "What is a recommended approach for managing indexes in extensive databases according to the guidelines?",
+        "options": {
+            "option_a": "To always rely on TimeXtender's automated index management",
+            "option_b": "To manually manage the indexes",
+            "option_c": "To avoid using SQL Server Maintenance Plans",
+            "option_d": "To truncate and rebuild tables frequently"
+        },
+        "answer": "option_b",
+        "explanation": "The guidelines suggest that for extensive databases, it may be best to manage the indexes manually."
+    }
+    , "question_58": {
+        "question": "When can a maintenance plan reorganize and rebuild indexes according to the text?",
+        "options": {
+            "option_a": "During regular business hours",
+            "option_b": "Only during execution of TimeXtender",
+            "option_c": "After-hours based on a schedule",
+            "option_d": "At any time without a schedule"
+        },
+        "answer": "option_c",
+        "explanation": "The text advises that a maintenance plan can be set up to reorganize and rebuild indexes during after-hours based on a schedule."
+    }
+    , "question_59": {
+        "question": "What is the result of using NEWID() or NEWSEQUENTIALID() functions in a User-Defined Function?",
+        "options": {
+            "option_a": "A new GUID is generated.",
+            "option_b": "An exception is thrown.",
+            "option_c": "The function returns a null value.",
+            "option_d": "The function is executed successfully."
+        },
+        "answer": "option_b",
+        "explanation": "Using NEWID() or NEWSEQUENTIALID() in a UDF results in an exception because they are side-effecting functions."
+    }
+    , "question_60": {
+        "question": "Which of the following is NOT a recommended method to handle null unique identifier fields in TimeXtender according to the article?",
+        "options": {
+            "option_a": "Using a CASE construct in a custom view.",
+            "option_b": "Adding a default table column value transformation.",
+            "option_c": "Using the GETDATE() function.",
+            "option_d": "Adding a new custom field to the table."
+        },
+        "answer": "option_c",
+        "explanation": "The GETDATE() function is not recommended for handling null unique identifier fields; instead, NEWID() or NEWSEQUENTIALID() should be used."
+    }
+    , "question_61": {
+        "question": "Which of the following is NOT a fixed date range option for partitioning?",
+        "options": {
+            "option_a": "Year (YYYY)",
+            "option_b": "Week (YYYYWW)",
+            "option_c": "Month (YYYYMM)",
+            "option_d": "Day (YYYYMMDD)"
+        },
+        "answer": "option_b",
+        "explanation": "The fixed date range options for partitioning listed are Year (YYYY), Month (YYYYMM), Day (YYYYMMDD), and Use NULL value Conversion. Week (YYYYWW) is not mentioned as an option."
+    }
+    , "question_62": {
+        "question": "What should you do to create a custom partition template?",
+        "options": {
+            "option_a": "Select the 'Other - Manual Setup' radio button",
+            "option_b": "Choose the 'Date - System Field' bullet point",
+            "option_c": "Click the 'Template Add' button twice",
+            "option_d": "Set the partitioning field to a numeric type"
+        },
+        "answer": "option_a",
+        "explanation": "To create a custom partition template, you should select the 'Other - Manual Setup' radio button."
+    }
+    , "question_63": {
+        "question": "What must mapped tables share in order to implement incremental loading with history enabled?",
+        "options": {
+            "option_a": "The same data type for all columns.",
+            "option_b": "The same number of columns.",
+            "option_c": "The same primary key field.",
+            "option_d": "The same schema name."
+        },
+        "answer": "option_c",
+        "explanation": "Mapped tables must share the same primary key field to implement incremental loading and to execute with history enabled."
+    }
+    , "question_64": {
+        "question": "What setting must be reapplied when a table with incremental data loading is transferred to a new data area?",
+        "options": {
+            "option_a": "The Direct Read stored procedure.",
+            "option_b": "The Simple mode setting.",
+            "option_c": "The incremental data loading setting.",
+            "option_d": "The primary key field."
+        },
+        "answer": "option_c",
+        "explanation": "If incremental data loading was implemented on the source data table, then that setting will need to be reapplied on the transferred table in the new data area for incremental data loading to take effect."
+    }
+    , "question_65": {
+        "question": "What might newer versions of TimeXtender do when a circular reference is detected?",
+        "options": {
+            "option_a": "Automatically correct the circular reference",
+            "option_b": "Ignore the circular reference",
+            "option_c": "Display an error message",
+            "option_d": "Create a backup of the data model"
+        },
+        "answer": "option_c",
+        "explanation": "Newer versions of TimeXtender may be able to detect circular references and will display an error message to alert the user."
+    }
+    , "question_66": {
+        "question": "In a complex data warehouse, where are circular references more likely to occur?",
+        "options": {
+            "option_a": "Between fact tables and dimension tables",
+            "option_b": "Within a single table",
+            "option_c": "Between dimension tables",
+            "option_d": "In calculated fields"
+        },
+        "answer": "option_c",
+        "explanation": "Circular references are more likely to occur in lookups created between dimension tables in a complex data warehouse."
+    }
+    , "question_67": {
+        "question": "What is the format of the DateTime provided in the context?",
+        "options": {
+            "option_a": "YYYY-MM-DD HH:MM:SS",
+            "option_b": "MM-DD-YYYY HH:MM",
+            "option_c": "DD-MM-YYYY SS:MM:HH",
+            "option_d": "YYYY-DD-MM HH:MM:SS"
+        },
+        "answer": "option_a",
+        "explanation": "The DateTime is formatted as 'YYYY-MM-DD HH:MM:SS', which is a common format for date and time."
+    }
+    , "question_68": {
+        "question": "What is missing from the provided context that might be useful for understanding how to use raw-only fields?",
+        "options": {
+            "option_a": "The URL to the article",
+            "option_b": "The steps to designate a field as raw-only",
+            "option_c": "The title of the article",
+            "option_d": "The author's name"
+        },
+        "answer": "option_b",
+        "explanation": "The context mentions steps to designate a field as raw-only but does not provide them, making this information missing and potentially useful."
+    }
+    , "question_69": {
+        "question": "What is the purpose of the 'Mapping id field' in the incremental table?",
+        "options": {
+            "option_a": "To indicate the last time the table was fully loaded.",
+            "option_b": "To ensure the correct table is always used for mapping.",
+            "option_c": "To display the batch number of the last incremental load.",
+            "option_d": "To show whether an execution was a full load or not."
+        },
+        "answer": "option_b",
+        "explanation": "The 'Mapping id field' contains the GUID value of the mapping of the two tables and is used to ensure that the correct table is always used for mapping."
+    }
+    , "question_70": {
+        "question": "What does the 'Status field' in the _I table indicate after a successful execution?",
+        "options": {
+            "option_a": "It shows the number of records loaded.",
+            "option_b": "It remains null.",
+            "option_c": "It is set to 'OK'.",
+            "option_d": "It indicates the batch number."
+        },
+        "answer": "option_c",
+        "explanation": "After a successful execution, the 'Status field' in the _I table will be set to 'OK', indicating that the execution was successful."
+    }
+    , "question_71": {
+        "question": "What happens when the Index Automation is set to 'Disabled'?",
+        "options": {
+            "option_a": "Indexes are managed by TimeXtender with high performance tuning.",
+            "option_b": "Indexes are generated during execution as needed by data cleansing, potentially multiple times, without fine-tuning for performance.",
+            "option_c": "No indexes are generated at all.",
+            "option_d": "Indexes are only generated manually by the user."
+        },
+        "answer": "option_b",
+        "explanation": "When Index Automation is set to 'Disabled', TimeXtender uses legacy behavior to generate indexes during execution as needed by data cleansing, without performance fine-tuning, and may create the same index multiple times."
+    }
+    , "question_72": {
+        "question": "Which index option in TimeXtender guarantees that each combination of values in the index key is unique?",
+        "options": {
+            "option_a": "NonClustered Index",
+            "option_b": "Clustered Columnstore Index",
+            "option_c": "Columnstore Index",
+            "option_d": "Unique Index"
+        },
+        "answer": "option_d",
+        "explanation": "The Unique Index option in TimeXtender ensures that each combination of values in the index key is unique, preventing duplicate combinations in the indexed columns."
+    }
+    , "question_73": {
+        "question": "When is the value of an instance variable determined?",
+        "options": {
+            "option_a": "When the instance is first created",
+            "option_b": "When the variable is first added to the project",
+            "option_c": "When the object using the variable is deployed",
+            "option_d": "When the instance is closed"
+        },
+        "answer": "option_c",
+        "explanation": "The value of an instance variable is determined when the object that is using the variable is deployed, necessitating a redeployment when the variable changes."
+    }
+    , "question_74": {
+        "question": "Which of the following is NOT a type of instance variable mentioned in the context?",
+        "options": {
+            "option_a": "Fixed",
+            "option_b": "Dynamic",
+            "option_c": "Reactive",
+            "option_d": "System"
+        },
+        "answer": "option_c",
+        "explanation": "The types of instance variables mentioned are Fixed, System, Source Scope, Destination Scope, Contextual Scope, and Dynamic. 'Reactive' is not listed as a type of instance variable."
+    }
+    , "question_75": {
+        "question": "What does the Junk Dimension Table do when executed?",
+        "options": {
+            "option_a": "It truncates the raw table instance",
+            "option_b": "It inserts non-existing junk dimension combinations from associated tables",
+            "option_c": "It deletes all existing records",
+            "option_d": "It archives the data for long-term storage"
+        },
+        "answer": "option_b",
+        "explanation": "When the Junk Dimension Table is executed, it inserts non-existing junk dimension combinations from the associated tables, ensuring that all possible combinations are represented."
+    }
+    , "question_76": {
+        "question": "What should be avoided when selecting a hashing algorithm for the Junk Dimension Table key?",
+        "options": {
+            "option_a": "Using the 'Legacy integer' algorithm",
+            "option_b": "Choosing a strong encryption method",
+            "option_c": "Selecting the default algorithm",
+            "option_d": "Using a hashing algorithm that is too complex"
+        },
+        "answer": "option_a",
+        "explanation": "The 'Legacy integer' hashing algorithm should be avoided for the Junk Dimension Table key because it is less safe than other algorithms and has an increased risk of hash collisions due to using only 8 bytes for the hash value."
+    }
+    , "question_77": {
+        "question": "How do you add a new join when using conditional lookup fields in TimeXtender?",
+        "options": {
+            "option_a": "By dragging the Value column onto the Employees table.",
+            "option_b": "By right-clicking on joins and selecting Add Join.",
+            "option_c": "By using the Lookup Transformation Template.",
+            "option_d": "By entering a fixed value in the Table column."
+        },
+        "answer": "option_b",
+        "explanation": "To add a new join when using conditional lookup fields, you right-click on joins and select Add Join, as described in the context."
+    }
+    , "question_78": {
+        "question": "What is the result of applying the Lookup Transformation Template to the Employees table in the given context?",
+        "options": {
+            "option_a": "It creates a new table with combined data from JobDept and Employees.",
+            "option_b": "It adds the Job Title and Department Name for each employee from the JobDept table.",
+            "option_c": "It replaces the existing data in the Employees table with data from JobDept.",
+            "option_d": "It deletes the JobDept table after transferring the data."
+        },
+        "answer": "option_b",
+        "explanation": "Applying the Lookup Transformation Template to the Employees table brings in the Job Title and Department Name for each employee from the JobDept table, as described in the context."
+    }
+    , "question_79": {
+        "question": "What happens if there is a data type change in one of the tables involved in a mapping set?",
+        "options": {
+            "option_a": "The mapping set will be deleted",
+            "option_b": "The table with the original data type will prevail",
+            "option_c": "All data types in the mapping set will be converted to VARCHAR",
+            "option_d": "The mapping set will be disabled until the issue is resolved"
+        },
+        "answer": "option_b",
+        "explanation": "If there is a data type change in one of the tables in a mapping set, the data type that was originally set will win, meaning the original data type takes precedence over the change."
+    }
+    , "question_80": {
+        "question": "What should be done if columns are removed from one or more tables in a mapping set?",
+        "options": {
+            "option_a": "Ignore the changes and continue with the current mapping",
+            "option_b": "Manually add the removed columns back into the tables",
+            "option_c": "Synchronize the mapping set to reflect the changes",
+            "option_d": "Delete the mapping set and create a new one"
+        },
+        "answer": "option_c",
+        "explanation": "If columns are removed from tables in a mapping set, the mapping set should be synchronized to reflect the changes, which may involve removing the tables with missing fields or adjusting the mapping set to accommodate the new structure."
+    }
+    , "question_81": {
+        "question": "What must be done for the changes made by the Performance Recommendations tool to take effect?",
+        "options": {
+            "option_a": "Reboot the server",
+            "option_b": "Deploy the Instance",
+            "option_c": "Clear the undo data",
+            "option_d": "Wait for 24 hours"
+        },
+        "answer": "option_b",
+        "explanation": "After applying the recommended changes, you must deploy the Instance for the changes to take effect."
+    }
+    , "question_82": {
+        "question": "What allows you to undo changes made by the Performance Recommendations tool?",
+        "options": {
+            "option_a": "Restoring a database backup",
+            "option_b": "Running a system restore point",
+            "option_c": "Using the Undo Changes feature, provided the undo data hasn't been cleared",
+            "option_d": "Undo changes are not possible once applied"
+        },
+        "answer": "option_c",
+        "explanation": "The Performance Recommendations tool allows changes to be undone using the Undo Changes feature, as long as the most recent undo data has not been cleared."
+    }
+    , "question_83": {
+        "question": "When configuring the Related Records transformation, what does selecting the 'Valid' option for the Data Destination Table do?",
+        "options": {
+            "option_a": "It inserts records before data cleansing",
+            "option_b": "It inserts records without any conditions",
+            "option_c": "It inserts records after data cleansing",
+            "option_d": "It validates the data before inserting records"
+        },
+        "answer": "option_c",
+        "explanation": "Selecting the 'Valid' option for the Data Destination Table ensures that records are inserted after the data cleansing process, maintaining data quality."
+    }
+    , "question_84": {
+        "question": "What should you do if you want to populate a field with a default value when the field is empty during the Related Records transformation?",
+        "options": {
+            "option_a": "Select 'Fixed Value' in the field mappings",
+            "option_b": "Select 'None' in the field mappings",
+            "option_c": "Select 'Allow Default Value' and specify the Default Value",
+            "option_d": "Leave the field mapping as is"
+        },
+        "answer": "option_c",
+        "explanation": "To populate an empty field with a default value during the transformation, you should select 'Allow Default Value' and specify the Default Value in the field mappings."
+    }
+    , "question_85": {
+        "question": "Which of the following is NOT a step in the process of removing unused objects from a DW instance?",
+        "options": {
+            "option_a": "Expanding the relevant DW instance",
+            "option_b": "Opening the relevant data area",
+            "option_c": "Right-clicking on the ODX to select Remove Unused Objects",
+            "option_d": "Creating a new table in the DW instance"
+        },
+        "answer": "option_d",
+        "explanation": "Creating a new table is not part of the removal process; the steps involve opening the ODX instance, expanding the DW instance, and removing unused objects."
+    }
+    , "question_86": {
+        "question": "What happens when you select 'Remove Unused Objects' in a DW instance?",
+        "options": {
+            "option_a": "It creates a backup of the DW instance",
+            "option_b": "It generates a report of unused objects",
+            "option_c": "It removes table references that no longer exist from the DW instance repository",
+            "option_d": "It updates all existing table references"
+        },
+        "answer": "option_c",
+        "explanation": "Selecting 'Remove Unused Objects' will remove table references that no longer exist from the DW instance repository."
+    }
+    , "question_87": {
+        "question": "What happens to the objects in the Data Area after the Reverse Data Area process before deployment?",
+        "options": {
+            "option_a": "They are deleted",
+            "option_b": "They are marked as green",
+            "option_c": "They are marked as red",
+            "option_d": "They are automatically deployed"
+        },
+        "answer": "option_c",
+        "explanation": "The objects are generated within the Data Area and marked as red because they have not yet been deployed."
+    }
+    , "question_88": {
+        "question": "What is the consequence of not updating the database in the TimeXtender Portal for the Data Warehouse instance?",
+        "options": {
+            "option_a": "The source database may be overwritten",
+            "option_b": "The objects will be marked as green",
+            "option_c": "The Reverse Data Area process will be canceled",
+            "option_d": "TimeXtender Desktop will not refresh"
+        },
+        "answer": "option_a",
+        "explanation": "If the database is not updated in the portal for the Data Warehouse instance, there is a risk that the objects in the source database may be overwritten."
+    }
+    , "question_89": {
+        "question": "What happens if you attempt to use an existing schema name for a different data area in TimeXtender?",
+        "options": {
+            "option_a": "The system will automatically rename the schema to avoid conflicts.",
+            "option_b": "A warning message will appear, and errors are likely if you proceed.",
+            "option_c": "The tables will merge without any issues.",
+            "option_d": "The existing data area will be overwritten."
+        },
+        "answer": "option_b",
+        "explanation": "If you try to use a schema name that already exists in a different data area, a warning message will appear. Proceeding despite the warning is likely to cause errors due to schema and table name conflicts."
+    }
+    , "question_90": {
+        "question": "What should you do if you encounter an error stating that a specific schema name does not exist or you do not have permission to use it during deployment?",
+        "options": {
+            "option_a": "Rename the schema to a unique name.",
+            "option_b": "Deploy the tables with the 'Only deploy modified tables and views' option unchecked.",
+            "option_c": "Ignore the error and continue with the deployment.",
+            "option_d": "Manually create the schema in the database before deployment."
+        },
+        "answer": "option_b",
+        "explanation": "The error occurs because the 'Only deploy modified tables and views' option excludes the deployment of the new schema. To resolve this, you should deploy without this option checked to include the new schema."
+    }
+    , "question_91": {
+        "question": "In the context of Azure Synapse Analytics, what does the 'Replicate' distribution option do?",
+        "options": {
+            "option_a": "Distributes rows of data based on a hash function",
+            "option_b": "Distributes rows of data evenly across the server",
+            "option_c": "Stores a copy of all data in the table on all nodes",
+            "option_d": "Partitions the table based on the date"
+        },
+        "answer": "option_c",
+        "explanation": "The 'Replicate' distribution option stores a copy of all data in the table on all nodes."
+    }
+    , "question_92": {
+        "question": "What is the default 'distribution column' used by the Hash distribution method in Azure Synapse Analytics?",
+        "options": {
+            "option_a": "DW_id",
+            "option_b": "Unique_id",
+            "option_c": "Hash_key",
+            "option_d": "Node_id"
+        },
+        "answer": "option_a",
+        "explanation": "The default 'distribution column' for the Hash distribution method is the system field 'DW_id'."
+    }
+    , "question_93": {
+        "question": "Which of the following is NOT supported by tables in simple mode?",
+        "options": {
+            "option_a": "Field transformations",
+            "option_b": "Field validations",
+            "option_c": "Conditional lookup fields",
+            "option_d": "Incremental load"
+        },
+        "answer": "option_d",
+        "explanation": "Tables in simple mode do not support field transformations, field validations, or conditional lookup fields, but they can support incremental load."
+    }
+    , "question_94": {
+        "question": "How is simple mode enabled for a table?",
+        "options": {
+            "option_a": "By setting the individual table to simple mode",
+            "option_b": "By inheriting the setting from the data area",
+            "option_c": "Through a global setting in the database",
+            "option_d": "By enabling it in the database management system"
+        },
+        "answer": "option_b",
+        "explanation": "A table inherits the simple mode setting from the data area it belongs to."
+    }
+    , "question_95": {
+        "question": "What must be installed to ensure geography and geometry data types are available in SQL Server for TimeXtender?",
+        "options": {
+            "option_a": "SQLSysCLRTypes",
+            "option_b": "ODX",
+            "option_c": "MDW",
+            "option_d": "TimeXtender Query Tool"
+        },
+        "answer": "option_a",
+        "explanation": "SQLSysCLRTypes must be installed on the SQL server to make geography and geometry data types available, which are essential for spatial data operations."
+    }
+    , "question_96": {
+        "question": "What was the result of the spatial join query example provided in the context?",
+        "options": {
+            "option_a": "All deliveries were successfully mapped to a country",
+            "option_b": "3,357 deliveries could not be mapped to a country",
+            "option_c": "Most deliveries happened in Canada",
+            "option_d": "The query failed due to lack of reference data"
+        },
+        "answer": "option_b",
+        "explanation": "The example query showed that most deliveries happened in the US, but also that 3,357 deliveries could not be mapped to a country, possibly due to inaccurate GPS coordinates or missing reference data."
+    }
+    , "question_97": {
+        "question": "What should you do if a SQL snippet is returning NULL values in a custom transformation on an incremental table?",
+        "options": {
+            "option_a": "Delete the snippet and create a new one",
+            "option_b": "Perform a full load to ensure values are updated",
+            "option_c": "Change the snippet's parameters",
+            "option_d": "Ignore the NULL values as they are expected"
+        },
+        "answer": "option_b",
+        "explanation": "If a SQL snippet returns NULL values in a custom transformation on an incremental table, performing a full load can ensure that the values are updated for the snippet."
+    }
+    , "question_98": {
+        "question": "When adding a new SQL snippet in TimeXtender, what must you provide?",
+        "options": {
+            "option_a": "A Name, Description, and Formula",
+            "option_b": "A SQL query and a linked server",
+            "option_c": "A database connection string",
+            "option_d": "A list of all tables in the database"
+        },
+        "answer": "option_a",
+        "explanation": "To add a new SQL snippet, you must provide a Name, Description, and Formula for the snippet, and highlight the parameter in the formula to add it."
+    }
+    , "question_99": {
+        "question": "What is the final step to make a Stored Procedure executable in TimeXtender?",
+        "options": {
+            "option_a": "Saving the script",
+            "option_b": "Closing the TimeXtender application",
+            "option_c": "Deploying the Stored Procedure",
+            "option_d": "Scheduling the Stored Procedure"
+        },
+        "answer": "option_c",
+        "explanation": "After creating a Stored Procedure, the final step is to deploy it, making it visible in SQL Server Management Studio."
+    }
+    , "question_100": {
+        "question": "What must be done for a User Defined Function to be executed in relation to a table in TimeXtender?",
+        "options": {
+            "option_a": "It must be compiled separately",
+            "option_b": "It must be included in the table's design",
+            "option_c": "It must be scheduled using the Set Pre- and post scripts dialog",
+            "option_d": "It must be approved by a TimeXtender administrator"
+        },
+        "answer": "option_c",
+        "explanation": "A User Defined Function needs to be scheduled to run in relation to a table's deployment/execution using the Set Pre- and post scripts dialog."
+    }
+    , "question_101": {
+        "question": "What is the purpose of the 'Only read from the store' option when adding a supernatural key field?",
+        "options": {
+            "option_a": "To create new entries when a key is not found in the key store.",
+            "option_b": "To ensure that the field's value will be null when no matching key is found.",
+            "option_c": "To reorder the fields in the key store.",
+            "option_d": "To encrypt the supernatural key for added security."
+        },
+        "answer": "option_b",
+        "explanation": "The 'Only read from the store' option is used to disable the creation of new entries, resulting in a null value when no matching key is found in the key store."
+    }
+    , "question_102": {
+        "question": "Which of the following is NOT a data type option for the key in a key store?",
+        "options": {
+            "option_a": "Unique identifier (GUID)",
+            "option_b": "Database unique auto-increment (bigint)",
+            "option_c": "Auto increment with customizable values",
+            "option_d": "Time-based sequential identifier"
+        },
+        "answer": "option_d",
+        "explanation": "The data type options for the key in a key store include Unique identifier (GUID), Database unique auto-increment (bigint), and Auto increment with customizable values. Time-based sequential identifier is not listed as an option."
+    }
+    , "question_103": {
+        "question": "How do you add a new tag in the Solution Explorer?",
+        "options": {
+            "option_a": "Double-click Tags and select Add tag",
+            "option_b": "Right click Tags and select Delete tag",
+            "option_c": "Left click Tags and choose Add tag",
+            "option_d": "Right click Tags and click Add tag"
+        },
+        "answer": "option_d",
+        "explanation": "To add a new tag, you right click on Tags in the Solution Explorer and click Add tag."
+    }
+    , "question_104": {
+        "question": "What is the correct way to add a tag to a field?",
+        "options": {
+            "option_a": "Right click the field, click Tags and select the appropriate tag",
+            "option_b": "Drag and drop the tag onto the field",
+            "option_c": "Left click the field and type the tag name",
+            "option_d": "Use a special tagging tool provided in the software"
+        },
+        "answer": "option_a",
+        "explanation": "To add a tag to a field, you right click the field, click Tags, and then select the appropriate tag to be added."
+    }
+    , "question_105": {
+        "question": "Which field in a history-enabled table indicates whether a row is the current version aligning with the source data?",
+        "options": {
+            "option_a": "SCD From DateTime",
+            "option_b": "SCD To DateTime",
+            "option_c": "SCD Is Current",
+            "option_d": "SCD Is TombStone"
+        },
+        "answer": "option_c",
+        "explanation": "The 'SCD Is Current' field is set to 1 for rows that are the current version and 0 for historical rows."
+    }
+    , "question_106": {
+        "question": "What happens to a Type I field when 'Update also historical records with new value on type I change' is enabled?",
+        "options": {
+            "option_a": "It creates a new record with the updated value.",
+            "option_b": "It updates only the current version of the record.",
+            "option_c": "It updates all versions of the record with the new value.",
+            "option_d": "It marks the record as deleted."
+        },
+        "answer": "option_c",
+        "explanation": "When enabled, 'Update also historical records with new value on type I change' updates all versions of the record with the new value."
+    }
+    , "question_107": {
+        "question": "Which of the following is NOT listed as a feature that uses parameters according to the provided text?",
+        "options": {
+            "option_a": "Custom Views",
+            "option_b": "Semantic Custom Scripts",
+            "option_c": "Automated Table Indexing",
+            "option_d": "Derived Measures"
+        },
+        "answer": "option_c",
+        "explanation": "Automated Table Indexing is not mentioned in the list of features that use parameters; all other options are included in the list."
+    }
+    , "question_108": {
+        "question": "What is the advantage of changing field names in the view as mentioned in the text?",
+        "options": {
+            "option_a": "It prevents the script from executing",
+            "option_b": "It automatically updates the names in the code",
+            "option_c": "It deletes the old fields from the database",
+            "option_d": "It creates a new table in the database"
+        },
+        "answer": "option_b",
+        "explanation": "Changing field names in the view automatically updates the names in the associated code, reflecting the changes without manual intervention."
+    }
+    , "question_109": {
+        "question": "Which of the following is NOT a component mentioned in the context of a data staging area?",
+        "options": {
+            "option_a": "ODX Server",
+            "option_b": "Data Lake",
+            "option_c": "SQL storage",
+            "option_d": "Data Mart"
+        },
+        "answer": "option_d",
+        "explanation": "Data Mart is not mentioned in the context provided. ODX Server, Data Lake, and SQL storage are mentioned as components related to the data staging area."
+    }
+    , "question_110": {
+        "question": "What is the main benefit of using a data staging area in data warehousing?",
+        "options": {
+            "option_a": "It increases the complexity of data management",
+            "option_b": "It allows for real-time data analytics",
+            "option_c": "It minimizes the impact on data sources during extraction",
+            "option_d": "It serves as the primary data source for end-users"
+        },
+        "answer": "option_c",
+        "explanation": "The main benefit of a data staging area is that it minimizes the impact on data sources during the data extraction process."
+    }
+}

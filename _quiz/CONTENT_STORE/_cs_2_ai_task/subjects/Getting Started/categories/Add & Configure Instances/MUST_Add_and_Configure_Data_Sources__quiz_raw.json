@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the purpose of cloning a data source connection in TimeXtender Desktop?",
+        "options": {
+            "option_a": "To delete the original data source connection",
+            "option_b": "To create a backup of the TimeXtender Portal",
+            "option_c": "To duplicate a heavily customized data source connection",
+            "option_d": "To transfer data directly to the data warehouse"
+        },
+        "answer": "option_c",
+        "explanation": "Cloning a data source connection in TimeXtender Desktop is useful for creating copies of data source connections that are heavily customized, allowing for easier management and deployment of similar configurations."
+    },
+    "question_2": {
+        "question": "How can rows of data be excluded from transfers in an ODX Instance?",
+        "options": {
+            "option_a": "By setting up a primary key",
+            "option_b": "By adding a row filter rule that matches the table",
+            "option_c": "By using the Data Source Explorer",
+            "option_d": "By executing a SELECT statement in the Query Tool"
+        },
+        "answer": "option_b",
+        "explanation": "To exclude rows of data from transfers in an ODX Instance, a row filter rule must be added that matches the table. This rule defines the criteria a row needs to meet to be included or excluded."
+    },
+    "question_3": {
+        "question": "What is required by the ODX server to handle updated and deleted records during incremental load?",
+        "options": {
+            "option_a": "A rule-based interface for defining primary keys",
+            "option_b": "A complete backup of the data source",
+            "option_c": "A manual update of each record",
+            "option_d": "A data type override for each field"
+        },
+        "answer": "option_a",
+        "explanation": "To handle updated and deleted records in the source on incremental load, the ODX server needs to know the primary key on each table, which is set up through a rule-based interface."
+    },
+    "question_4": {
+        "question": "What feature allows you to create a table in the ODX from a SQL query?",
+        "options": {
+            "option_a": "Data Source Explorer",
+            "option_b": "Primary Keys Setup",
+            "option_c": "Query Tables",
+            "option_d": "Filter Rows"
+        },
+        "answer": "option_c",
+        "explanation": "The Query Tables feature enables you to enter a SQL query that the ODX will turn into a table, which is particularly useful when a table cannot be extracted by the regular ODX logic."
+    },
+    "question_5": {
+        "question": "What can you use the Data Source Explorer for in TimeXtender?",
+        "options": {
+            "option_a": "To execute data transfer tasks",
+            "option_b": "To browse tables and columns in the data source",
+            "option_c": "To clone data source connections",
+            "option_d": "To directly modify data in the source"
+        },
+        "answer": "option_b",
+        "explanation": "The Data Source Explorer is used to browse the tables and columns in the data source, providing an overview of the structure and how ODX rules affect the source."
+    },
+    "question_6": {
+        "question": "How can you preview data stored in a data source using the Query Tool in TimeXtender?",
+        "options": {
+            "option_a": "By adding a new data source",
+            "option_b": "By setting up primary keys",
+            "option_c": "By generating a SELECT statement for a table",
+            "option_d": "By cloning the data source connection"
+        },
+        "answer": "option_c",
+        "explanation": "The Query Tool allows you to preview data by generating and executing a SELECT statement for a table, which can be done by dragging a table into the Query box."
+    }
+}

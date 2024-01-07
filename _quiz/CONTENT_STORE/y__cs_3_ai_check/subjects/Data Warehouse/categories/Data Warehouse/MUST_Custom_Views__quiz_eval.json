@@ -1,0 +1,34 @@
+{
+    "question_1": {
+        "question_content": {
+            "question": "What is the primary purpose of creating a custom view in a data warehouse?",
+            "options": {
+                "option_a": "To delete data from the database",
+                "option_b": "To generate reports directly",
+                "option_c": "To provide flexibility in data manipulation using SQL",
+                "option_d": "To increase data storage capacity"
+            },
+            "answer": "option_c",
+            "explanation": "Custom views are used to provide flexibility in data manipulation, as they are generated using SQL CREATE VIEW statements which allow for complex joins, groupings, and other SQL functionalities."
+        },
+        "question_facts": [
+            "The question is relevant to the material provided. The question asks about the primary purpose of creating a custom view in a data warehouse, and the article explains that custom views are generated using SQL CREATE VIEW statements, which allow for flexibility in terms of joins, groupings, and other SQL functionalities. This matches with Option C, which states that the purpose is to \"provide flexibility in data manipulation using SQL,\" and is consistent with the explanation given that custom views enable complex SQL operations."
+        ]
+    },
+    "question_5": {
+        "question_content": {
+            "question": "What action should be taken to modify an existing custom view?",
+            "options": {
+                "option_a": "Add a new custom view",
+                "option_b": "Deploy the view",
+                "option_c": "Edit Custom View",
+                "option_d": "Map Custom View Fields"
+            },
+            "answer": "option_c",
+            "explanation": "To modify an existing custom view, the correct action is to select 'Edit Custom View' and make the necessary changes to the create statement."
+        },
+        "question_facts": [
+            "After reviewing the provided material, the original question \"What action should be taken to modify an existing custom view?\" with the answer being 'option_c' - 'Edit Custom View' is relevant and correctly reflects the content of the material. The material specifically lists the steps to edit a custom view which includes right-clicking the custom view and selecting \"Edit Custom View.\" Therefore, the question is appropriate for the material."
+        ]
+    }
+}

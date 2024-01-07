@@ -1,0 +1,34 @@
+{
+    "question_1": {
+        "question_content": {
+            "question": "What is the primary purpose of deployment in TimeXtender?",
+            "options": {
+                "option_a": "To schedule data refreshes",
+                "option_b": "To generate scripts for creating tables and associated stored procedures",
+                "option_c": "To visualize data in reports",
+                "option_d": "To manage user permissions"
+            },
+            "answer": "option_b",
+            "explanation": "Deployment in TimeXtender is used to take table definitions from the TimeXtender Desktop and generate scripts that create tables and their associated stored procedures in the data area storage."
+        },
+        "question_facts": [
+            "The question is clear, concise, and directly related to the content provided. It tests the understanding of the primary purpose of deployment in TimeXtender, which is well explained in the article. The options provided are relevant and plausible, making the question challenging. The explanation for the correct answer is also well detailed. Therefore, I would rate this question as a 5 - 'very good question'."
+        ]
+    },
+    "question_4": {
+        "question_content": {
+            "question": "What is the result of deploying a guarded table in TimeXtender?",
+            "options": {
+                "option_a": "The table is deployed without any warnings",
+                "option_b": "The table is deployed and truncated",
+                "option_c": "The table appears to start running but a message states that the table is guarded upon completion",
+                "option_d": "The table is immediately deleted"
+            },
+            "answer": "option_c",
+            "explanation": "A guarded table may appear to start running if you attempt to deploy it, but upon completion, a message will appear stating that the table is guarded, preventing its deployment or accidental truncation."
+        },
+        "question_facts": [
+            "The question is clear, specific, and directly related to the content provided. It tests the understanding of a specific feature of TimeXtender, which is the concept of a \"guarded table\". The options provided are distinct and plausible, making the question challenging. The explanation is also comprehensive and directly answers the question. However, the question could be improved by providing a bit more context about what a \"guarded table\" is, especially for those who are not familiar with TimeXtender. Overall, I would rate this question a 4 out of 5. It's a good question, but could use a bit more context for clarity."
+        ]
+    }
+}

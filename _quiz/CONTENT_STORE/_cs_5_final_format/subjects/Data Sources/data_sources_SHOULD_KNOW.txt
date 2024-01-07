@@ -1,0 +1,55 @@
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What authentication method does Method 1 use for adding a SharePoint site as a data source in TimeXtender?
+
+{"score":0}OAuth
+{"score":100.0}Basic
+{"score":0}Digest
+{"score":0}NTLM
+-
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is required when setting up a SharePoint data source using Method 2 in TimeXtender?
+
+{"score":100.0}Setting the Schema to REST
+{"score":0}Enabling MFA for the user account
+{"score":0}Using Basic authentication
+{"score":0}Setting the OAuth Grant Type to Password
+-
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of setting the 'pageurlpath' in an RSD file?
+
+{"score":0}To define the structure of the database
+{"score":100.0}To set the XPath of the element where the next page URL is passed in the response body
+{"score":0}To increase the speed of data retrieval
+{"score":0}To specify the API endpoint for the initial request
+-
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if the API does not provide a parameter to control the page size?
+
+{"score":0}Set pagesize to zero
+{"score":0}Set pagesize to the maximum value allowed by the API
+{"score":100.0}Set pagesize to the default page size provided by the API
+{"score":0}Omit the pagesize parameter from the RSD file
+-
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary factor that the performance of CData Providers is dependent on?
+
+{"score":0}The complexity of the user's computer
+{"score":100.0}The data source and the amount of data
+{"score":0}The speed of the internet connection
+{"score":0}The time of day the data is accessed
+-
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which property should be set to a lower value if an error asks to request less data?
+
+{"score":0}MaxRows
+{"score":0}BatchSize
+{"score":100.0}PageSize
+{"score":0}Verbosity
+-
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should be replaced in the API URL field when setting up the BC data source in TimeXtender?
+
+{"score":100.0}The 'tenantId' with the actual Azure AD Tenant ID
+{"score":0}The 'userId' with the actual user's ID
+{"score":0}The 'clientSecret' with the actual client's secret
+{"score":0}The 'apiKey' with the actual API key
+-
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which authentication method is no longer possible with TimeXtender Business Central 365 according to the provided text?
+
+{"score":0}OAuth 2.0 authentication
+{"score":0}Service to Service Authentication
+{"score":100.0}Username and Password
+{"score":0}API Key authentication

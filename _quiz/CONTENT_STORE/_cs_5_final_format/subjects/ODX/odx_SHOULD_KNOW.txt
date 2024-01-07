@@ -1,0 +1,27 @@
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary benefit of the 'ODX Never Forgets' feature in TimeXtender's ODX service?
+
+{"score":0}It allows for real-time data processing.
+{"score":0}It truncates old data to save storage space.
+{"score":100.0}It ensures data is never truncated and new full loads augment existing data.
+{"score":0}It encrypts data for enhanced security.
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What action should be taken to set up email notifications for critical errors in an ODX instance?
+
+{"score":0}In the Solution Explorer, double-click the ODX and select 'Email Alerts'.
+{"score":100.0}In the Solution Explorer, right-click the ODX and click 'Notifications on Critical Errors'.
+{"score":0}In the Solution Explorer, right-click the ODX and choose 'Properties'.
+{"score":0}In the Solution Explorer, left-click the ODX and select 'Configure Email Notifications'.
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of the Override Data Type feature in ODX?
+
+{"score":0}To change the visual appearance of data in reports
+{"score":100.0}To modify the data type of a field in the data warehouse
+{"score":0}To increase the performance of data synchronization
+{"score":0}To encrypt sensitive data in the data source
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In which scenario might you use the Override Data Type feature?
+
+{"score":0}When a field with only numbers should be treated as a numeric value
+{"score":100.0}When a datetime field contains dates lower than 1753-01-01
+{"score":0}When you need to filter data by a specific criterion
+{"score":0}When you want to merge two fields into one

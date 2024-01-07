@@ -1,0 +1,112 @@
+{
+    "question_1": {
+        "question": "What is the first step to add a data source connection in TimeXtender according to the provided text?",
+        "options": {
+            "option_a": "Select the data source provider you want to use.",
+            "option_b": "Type a name for the data source in the Name box.",
+            "option_c": "Go to Data Estate > Data source connections and click Add data source connection.",
+            "option_d": "Enter the connection information under Connection settings."
+        },
+        "answer": "option_c",
+        "explanation": "The first step to add a data source connection is to navigate to Data Estate > Data source connections and then click on Add data source connection."
+    }
+    , "question_2": {
+        "question": "Which authentication scheme should be set if you are using Managed Service Identity (MSI) credentials to connect Excel Online on an Azure VM?",
+        "options": {
+            "option_a": "AzureAD",
+            "option_b": "OAuthAuthentication",
+            "option_c": "AzureServicePrincipal",
+            "option_d": "AzureMSI"
+        },
+        "answer": "option_d",
+        "explanation": "When using Managed Service Identity (MSI) credentials to connect Excel Online on an Azure VM, the authentication scheme should be set to AzureMSI."
+    }
+    , "question_3": {
+        "question": "What is the primary reason for the change in requirements for using Oracle databases as a data source in TX?",
+        "options": {
+            "option_a": "Microsoft .Net framework has introduced direct Oracle Support.",
+            "option_b": "Oracle databases no longer support TX.",
+            "option_c": "Direct Oracle Support in the Microsoft .Net framework has been discontinued.",
+            "option_d": "ODP.Net package has been updated to .Net 4 support."
+        },
+        "answer": "option_c",
+        "explanation": "The change in requirements is due to the discontinuation of direct Oracle Support in the Microsoft .Net framework, necessitating the installation of the ODP.Net package with .Net 4 support."
+    }
+    , "question_4": {
+        "question": "Which authentication method should you set if you want to use Kerberos authentication when connecting to SharePoint Excel?",
+        "options": {
+            "option_a": "Basic",
+            "option_b": "Negotiate",
+            "option_c": "Digest",
+            "option_d": "Forms"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Negotiate' authentication method allows the provider to negotiate an authentication mechanism with the server, which includes Kerberos authentication."
+    }
+    , "question_5": {
+        "question": "What is the correct URI to access the Kings.XML file structured in element form?",
+        "options": {
+            "option_a": "https://mysafeinfo.com/api/data?list=englishmonarchs&mappingtype=element&rootname=englishmonarchs&elementname=Monarch",
+            "option_b": "http://mysafeinfo.com/api/data?list=englishmonarchs&mappingtype=element&rootname=englishmonarchs&elementname=Monarch",
+            "option_c": "https://mysafeinfo.com/api/data?list=top100rocksongs_billboard_2013&format=xml&abbreviate=false&case=default&token=e3ODIxQFAgT9TD69GSlvZ6rfgMKnZdVt&mappingtype=element&formatting=indented",
+            "option_d": "https://mysafeinfo.com/api/data?list=top100rocksongs_billboard_2013&format=xml&abbreviate=false&case=default&token=e3ODIxQFAgT9TD69GSlvZ6rfgMKnZdVt&mappingtype=attribute&formatting=indented"
+        },
+        "answer": "option_b",
+        "explanation": "The correct URI for the Kings.XML file structured in element form is provided in the context as an HTTP link, which is option B."
+    }
+    , "question_6": {
+        "question": "What is the first step in setting up the BC extension for Dynamics 365 Business Central Online according to the provided text?",
+        "options": {
+            "option_a": "Navigate to Extension Management and click Configure",
+            "option_b": "Search for Jet Analytics in the Extension Marketplace and click Get it now",
+            "option_c": "Register an Azure AD application for authentication to BC",
+            "option_d": "Verify that the status column has a value of completed"
+        },
+        "answer": "option_b",
+        "explanation": "The first step listed under 'Setting up the BC extension' is to search for Jet Analytics in the Extension Marketplace and click 'Get it now'."
+    }
+    , "question_7": {
+        "question": "What is the default port number for Theobald Xtract Universal (XU) when installed on the TimeXtender application server?",
+        "options": {
+            "option_a": "1433",
+            "option_b": "8065",
+            "option_c": "80",
+            "option_d": "8080"
+        },
+        "answer": "option_b",
+        "explanation": "The default port for XU is 8065, as mentioned in the 'Edit parameters in xu_rsd_gen.env' section where it instructs to adjust XU_BASE_URL to point to the XU server and port."
+    }
+    , "question_8": {
+        "question": "When setting up a connection to TimeXtender Dynamics 365 Business Central - Online, what is the default value that should be entered in the Environment field?",
+        "options": {
+            "option_a": "Development",
+            "option_b": "Production",
+            "option_c": "Sandbox",
+            "option_d": "Test"
+        },
+        "answer": "option_b",
+        "explanation": "The default value for the Environment field when setting up a connection to TimeXtender Dynamics 365 Business Central - Online is 'Production'."
+    }
+    , "question_9": {
+        "question": "What should you do if you want to include all accounts except for specific ones when setting up a TimeXtender Dynamics 365 Finance data source?",
+        "options": {
+            "option_a": "Leave the 'Accounts' box empty and check the 'Include all accounts' checkbox.",
+            "option_b": "Enter the accounts you want to include in the 'Accounts' box and check the 'Include all accounts' checkbox.",
+            "option_c": "Enter the accounts you want to exclude in the 'Accounts' box and check the 'Include all accounts' checkbox.",
+            "option_d": "Clear the 'Include all accounts' checkbox and leave the 'Accounts' box empty."
+        },
+        "answer": "option_c",
+        "explanation": "To include all accounts except specific ones, you should enter the accounts you want to exclude in the 'Accounts' box and check the 'Include all accounts' checkbox. This setup ensures all accounts are included except those listed."
+    }
+    , "question_10": {
+        "question": "What must be installed first before adding the TimeXtender Oracle Data Source provider to an ODX instance?",
+        "options": {
+            "option_a": "TimeXtender Portal",
+            "option_b": "Oracle's ADO provider",
+            "option_c": "ODX instance",
+            "option_d": "MS SQL Server"
+        },
+        "answer": "option_b",
+        "explanation": "The TimeXtender Oracle Data Source provider has a dependency on Oracle's ADO provider, which needs to be installed prior to adding the provider to an ODX instance."
+    }
+}

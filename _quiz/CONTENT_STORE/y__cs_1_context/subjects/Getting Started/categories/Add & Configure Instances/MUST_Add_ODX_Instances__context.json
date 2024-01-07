@@ -1,0 +1,61 @@
+{
+    "DateTime": "2023-12-27 17:41:35",
+    "URL": "https://support.timextender.com/add-and-configure-instances-127/add-odx-instances-717",
+    "Keywords": "missing",
+    "Title": "Add ODX Instances _ Community",
+    "Author": "missing",
+    "Text": "TimeXtender 6024.1 ODX server Add ODX instance signed in Data Estate Instances, Add Instance, Add ODX instance Note:  The 'add' form is structured into three sections - we'll take them one by one in the following. The first section is basic information that is - mostly - the same for all instance types. Note: Depending on the type of storage you selected, different fields will appear. Azure Data Lake Gen2 storage:  SQL Server storage: Note: To use the ODX instance, an ODX server needs to be configured to run it. The information in this section is used for connecting to the ODX server from TimeXtender Desktop. Note that the ODX Server does not need to be installed yet to complete this section, and these settings can be updated later, if necessary. One ODX server can only host one ODX instance, so each ODX instance should have unique settings in this section. inbound security rule ODX server connection info An inbound security rule is therefore created under Networking Settings for the VM in the Azure portal.   TimeXtender Portal Home Data Estate Instances Edit Save Note:   TimeXtender Portal Home Data Estate Instances Delete instance name comment Delete Before you can execute transfer tasks in an ODX instance, you must create the data storage. Edit Instance Create Storage... Test Storage Connection Error: storage container Edit Instance  Create Storage... ",
+    "Lists": [
+        {
+            "heading": "Basic Info",
+            "paragraphs": [
+                "The first section is basic information that is - mostly - the same for all instance types."
+            ],
+            "list": [
+                "In the Name box, type the name you want to use for the ODX instance.",
+                "In the Description box, type a description of the ODX instance. The description is displayed on the desktop and on the instance details page.",
+                "(Optional) In the Log Retention Days box, adjust the number of days logs should be kept.",
+                "In the Storage type list, select the type of storage you want to use.  Azure Data Lake Gen2 (default) Azure SQL Database, Azure SQL Managed Instance, SQL Database: The different types of SQL storage that can be selected all require the same set of connection information.               Note: SQL Server Authentication is required for Azure SQL Database, Azure SQL Managed Instance or SQL Database",
+                "Azure Data Lake Gen2 (default)",
+                "Azure SQL Database, Azure SQL Managed Instance, SQL Database: The different types of SQL storage that can be selected all require the same set of connection information.               Note: SQL Server Authentication is required for Azure SQL Database, Azure SQL Managed Instance or SQL Database"
+            ]
+        },
+        {
+            "heading": "Storage",
+            "paragraphs": [
+                "Depending on the type of storage you selected, different fields will appear.",
+                "Azure Data Lake Gen2 storage:",
+                "",
+                "SQL Server storage:"
+            ],
+            "list": [
+                "In the Server name box, enter the name of the server that TimeXtender will use for the creation and storage of the ODX Instance database. For named SQL instances, enter the server name and instance name separated by a backslash: <ServerName>\\<InstanceName>.",
+                "From the Server type list, select the type of SQL server. Note that this setting currently only needs to be changed if you will be using an Azure Dedicated SQL pool, previously known as an Azure SQL Data Warehouse.",
+                "In the Database box, type the name that you want the ODX Server to use when creating the ODX Instance database during the initialization phase of your data estate deployment. (The initialization steps are performed in the TimeXtender Desktop and are described in detail later in this setup guide.)",
+                "In the Username (SQL Server authentication) box, enter the username that TimeXtender will use to connect to the database. Note that TimeXtender does not support Windows Authentication, so SQL authentication is required for connections to the SQL Server database.",
+                "In the Password box, enter the password that is associated with your SQL authentication username.",
+                "(Optional) In the Connection timeout box, enter the number of seconds to wait before terminating the attempt to connect to the server. Set it to 0 to wait indefinitely.",
+                "(Optional) In the Command timeout box, enter the number of seconds to wait before terminating a command. Set it to 0 to wait indefinitely.",
+                "In the Batch size box, enter the number of rows to copy when using ADO.net transfer. '0' equals unlimited.",
+                "(Optional) In the Encrypt connection list, you can enable encryption of the connection, which is recommended when you are not in a private network (e.g. when your server is on Azure). You have the following options: No: The communication is not encrypted (default). Yes: The communication is encrypted. The server's certificate is verified by a certificate authority. Yes, trust server certificate: The communication is encrypted. but the server's certificate is not verified. This setting is not recommended for use on public networks.",
+                "No: The communication is not encrypted (default).",
+                "Yes: The communication is encrypted. The server's certificate is verified by a certificate authority.",
+                "Yes, trust server certificate: The communication is encrypted. but the server's certificate is not verified. This setting is not recommended for use on public networks.",
+                "(Optional) If you need a connection string with properties not found in the UI, you can enter it in the Additional connection properties box. It will override the data in the other boxes with connection information.",
+                "Click Save."
+            ]
+        },
+        {
+            "heading": "ODX Server Connection Info",
+            "paragraphs": [
+                "To use the ODX instance, an ODX server needs to be configured to run it. The information in this section is used for connecting to the ODX server from TimeXtender Desktop.",
+                "Note that the ODX Server does not need to be installed yet to complete this section, and these settings can be updated later, if necessary.",
+                "One ODX server can only host one ODX instance, so each ODX instance should have unique settings in this section."
+            ],
+            "list": [
+                "In the IP or hostname box, enter the name or IP of the machine where the ODX service is or will be installed. In Azure, this is the Public IP address or DNS name defined for the VM. This will be used by TimeXtender Desktop to connect to the ODX, so make sure to use an IP or hostname that is available on your network and can be reached by other machines. If you are installing TimeXtender using the Sandbox reference architecture, where all of the software and services are on the same system, then you may be able to enter \"localhost\" for the ODX Server name.",
+                "Enter the port in the Port box. \u201c20000\u201d is the default port used by the ODX Server. Make sure to allow traffic to the specified port number in the host machine's firewall as well as any network firewalls that may be regulating traffic to the ODX Server."
+            ]
+        }
+    ]
+}

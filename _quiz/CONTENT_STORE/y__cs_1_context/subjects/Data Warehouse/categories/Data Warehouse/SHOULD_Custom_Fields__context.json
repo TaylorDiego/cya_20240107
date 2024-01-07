@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:40:53",
+    "URL": "https://support.timextender.com/data-warehouse-108/custom-fields-1023",
+    "Keywords": "missing",
+    "Title": "Custom Fields _ Community",
+    "Author": "missing",
+    "Text": "Custom fields are similar to other fields in a table, butarebuilt froman empty field shell thatemploysvarious means to populate the field value, includingtransformations, scripting, anddata copy. Custom fields have many use cases, including the ability tobuild a model of your data warehouse before bringing in the data. Use the following steps to adda custom field.  ",
+    "Lists": []
+}

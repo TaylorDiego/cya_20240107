@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What is a likely reason for receiving an error message when reading objects from an Oracle data source, despite the Test Connection to the Oracle data source working?",
+        "options": {
+            "option_a": "The Oracle database is offline",
+            "option_b": "The Oracle Data Provider is a different bit version than TimeXtender",
+            "option_c": "The network connection is unstable",
+            "option_d": "The Oracle data source contains no tables"
+        },
+        "answer": "option_b",
+        "explanation": "The error is likely due to a bit version mismatch between the Oracle Data Provider and TimeXtender, as the connection test succeeds but object reading fails."
+    },
+    "question_2": {
+        "question": "What should you ensure when troubleshooting an error related to an Oracle driver in TimeXtender?",
+        "options": {
+            "option_a": "That the Oracle server is reachable over the network",
+            "option_b": "That the Oracle Data Provider is installed on the TimeXtender server",
+            "option_c": "That the Oracle Data Provider and TimeXtender are the same bit version",
+            "option_d": "That the Oracle data source has at least one table"
+        },
+        "answer": "option_c",
+        "explanation": "To resolve the driver error, verify that the Oracle Data Provider and TimeXtender are of the same bit version, as this is a common cause of such errors."
+    }
+}

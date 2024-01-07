@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "Which authentication scheme should be set if you are using Managed Service Identity (MSI) credentials to connect Excel Online on an Azure VM?",
+        "options": {
+            "option_a": "AzureAD",
+            "option_b": "OAuthAuthentication",
+            "option_c": "AzureServicePrincipal",
+            "option_d": "AzureMSI"
+        },
+        "answer": "option_d",
+        "explanation": "When using Managed Service Identity (MSI) credentials to connect Excel Online on an Azure VM, the authentication scheme should be set to AzureMSI."
+    },
+    "question_2": {
+        "question": "What should you do if you want to limit the synchronization to files from a specific SharePoint site in Excel Online?",
+        "options": {
+            "option_a": "Set the Workbook field to include the site's name.",
+            "option_b": "Set the SharePoint URL to point at the specific site.",
+            "option_c": "Use the Include SharePoint Sites field with 'false'.",
+            "option_d": "Set the Drive field to include the site's ID."
+        },
+        "answer": "option_b",
+        "explanation": "To limit the synchronization to files from a specific SharePoint site, you should set the SharePoint URL to point at that specific site."
+    }
+}

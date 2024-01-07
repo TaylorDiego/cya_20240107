@@ -1,0 +1,27 @@
+{
+    "DateTime": "2023-12-27 14:41:27",
+    "URL": "https://support.timextender.com/data-warehouse-108/create-a-role-playing-dimension-1600",
+    "Keywords": "missing",
+    "Title": "Create a Role-Playing Dimension _ Community",
+    "Author": "Greg Lennox",
+    "Text": "This article clarifies the concepts of role-playingdimensions and explains how to implement them inTimeXtender. Role playing dimensions are a usefulapproach that can streamline your data warehouse byreusingthe same dimension table in a different context depending on how it relates to the fact table. When implemented properly, role-playing dimensionscreateconsistency, improvequery performance, simplifymaintenance, and ultimately enhances the depth and breadth of business insights derived from your data warehouse. Toillustrate this concept, considerthe following two tables: Fact Table: SalesTransactions Dimension Table: Date  The first sign that you may benefit from a role-playing dimension is when your fact table has more than one foreign key which relates to the same dimension table. As you can see in the example above, the Fact table contains values for both OrderDate and ShipDate.In this scenario, the Date dimension table can serveas a role-playing dimension for both OrderDate and ShipDate by relating the DateValue field to either foreign key. By utilizing the same Date dimension for OrderDate and ShipDate, you avoid creating redundant tables and ensure consistency in the way you analyze dates across different aspects of the sales process. DaysToShip DaysToShip To add role-playing features to a semantic model, you simplyaddthe dimension into the semantic model several times using the appropriate table name and relation each time.Employing intuitive labels and relationshipshelp users comprehend how different roles of the same dimension contribute to various analyses without confusion. The following steps explain how to implement theOrderDate/ShipDate role-playing dimension in a TimeXtender semantic model.          This is covered in further detail starting around the 10:30 minute mark in the following TimeXtender Tuesdaysvideo:   ",
+    "Lists": [
+        {
+            "heading": "Instructions",
+            "paragraphs": [
+                "The following steps explain how to implement the OrderDate/ShipDate role-playing dimension in a TimeXtender semantic model."
+            ],
+            "list": [
+                "In your Data Warehouse, right-click on Tables > Add Date Table",
+                "Create your Role-Playing Relations: Drag the \u201cDateValue\u201d from the Date table onto the \u201cOrderDate\u201d field in the Fact table.",
+                "Create another role-playing relation for additional context: Drag the \u201cDateValue\u201d from the Date table onto the \u201cShipDate\u201d field in the Fact table.",
+                "Drag the Fact table onto the semantic model and select your desired fields. It is not necessary to select the foreign keys (OrderDate and ShipDate fields) because these will be added automatically when needed.",
+                "To create the first role-playing dimension, drag the Date table into the semantic model. Amend the table name to \u201cOrderDate\u201d and select desired fields.",
+                "Select the appropriate relation to define the context for this instance of the role-playing dimension. In this case we will use the OrderDate relationship.",
+                "Now, let's create another instance of the role-playing dimensions in another context. Drag the Date table into the semantic model again. Amend the table Name to be \u201cShipDate\u201d and select the fields to be included.",
+                "This time, select the ShipDate relation to define a new context for this instance of the role-playing dimension.",
+                "The Semantic model will now appear to have three tables that are actually based on just two data warehouse tables."
+            ]
+        }
+    ]
+}

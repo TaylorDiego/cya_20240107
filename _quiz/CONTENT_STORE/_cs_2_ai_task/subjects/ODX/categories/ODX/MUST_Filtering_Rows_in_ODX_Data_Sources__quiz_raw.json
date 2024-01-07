@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the primary purpose of adding a row filter rule in ODX data sources?",
+        "options": {
+            "option_a": "To increase the number of rows transferred to ODX storage",
+            "option_b": "To define criteria for rows to be excluded from transfer to ODX storage",
+            "option_c": "To duplicate data for backup purposes",
+            "option_d": "To change the schema of the data source"
+        },
+        "answer": "option_b",
+        "explanation": "A row filter rule is used to define criteria that determine which rows should be included or excluded during the transfer to ODX storage."
+    },
+    "question_2": {
+        "question": "Which of the following can be a criterion for a row filter rule in ODX?",
+        "options": {
+            "option_a": "A row's color",
+            "option_b": "A row's ID being over a specific number",
+            "option_c": "The font style of text in a row",
+            "option_d": "The number of characters in a row"
+        },
+        "answer": "option_b",
+        "explanation": "Row filter rules can be based on data values such as an ID over a specific number or a timestamp later than a specific date."
+    },
+    "question_3": {
+        "question": "What is the first step to filter out rows of data from transfers in ODX?",
+        "options": {
+            "option_a": "Delete the unwanted rows manually",
+            "option_b": "Open the relevant ODX instance and click 'Filter Rows...'",
+            "option_c": "Export the data to a CSV file and filter it externally",
+            "option_d": "Run a SQL query to select the desired rows"
+        },
+        "answer": "option_b",
+        "explanation": "The first step is to open the relevant ODX instance and right-click the data source to click 'Filter Rows...' to begin the process of adding a row filter rule."
+    },
+    "question_4": {
+        "question": "How can you apply a row filter rule to specific tables in ODX?",
+        "options": {
+            "option_a": "By setting global rules that apply to all tables",
+            "option_b": "By entering the schema and/or table names in the Schema/Table list",
+            "option_c": "By emailing the ODX support team with the table names",
+            "option_d": "By renaming the tables you want to filter"
+        },
+        "answer": "option_b",
+        "explanation": "To apply a rule to specific tables, you enter the schema and/or table names that they need to match in the Schema/Table list."
+    },
+    "question_5": {
+        "question": "What should you do after adding a new column and value combination in the row filter rule?",
+        "options": {
+            "option_a": "Click 'Cancel' to discard the rule",
+            "option_b": "Click 'Save' to store the rule permanently",
+            "option_c": "Click 'OK' to add the rule",
+            "option_d": "Click 'Delete' to remove the rule"
+        },
+        "answer": "option_c",
+        "explanation": "After adding a new column and value combination, you click 'OK' to add the rule to the ODX data source."
+    },
+    "question_6": {
+        "question": "What optional step can be taken to verify the effect of a row filter rule in ODX?",
+        "options": {
+            "option_a": "Click 'Refresh' to see a list of affected tables and 'Preview' to see the rows that will be transferred",
+            "option_b": "Click 'Export' to download the filtered data",
+            "option_c": "Click 'Undo' to revert the last action",
+            "option_d": "Click 'Commit' to immediately apply the rule to the database"
+        },
+        "answer": "option_a",
+        "explanation": "Optionally, you can click 'Refresh' to see a list of affected tables and 'Preview' to open the query tool with a preset query to see what rows will be transferred from a specific table."
+    }
+}

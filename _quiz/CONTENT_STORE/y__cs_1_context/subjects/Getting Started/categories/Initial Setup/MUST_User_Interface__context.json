@@ -1,0 +1,22 @@
+{
+    "DateTime": "2023-12-27 17:41:27",
+    "URL": "https://support.timextender.com/initial-setup-start-here-115/user-interface-999",
+    "Keywords": "missing",
+    "Title": "User Interface _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "The TimeXtender user interface is a standard Windows application with a ribbon at the top, a solution explorer on the left, and a middle pane with a number of tabs that contain the different objects that comprise your data estate. The followinginteractive images provide an overview of the interface.    The View menu allows users to customize the user interface by toggling the display of different attributes: Ctrl+F Tools  Options  General Theme Accent color  ",
+    "Lists": [
+        {
+            "heading": "View Menu",
+            "paragraphs": [
+                "The View menu allows users to customize the user interface by toggling the display of different attributes:"
+            ],
+            "list": [
+                "Data types: When checked, field data type are added as a postfix to their name.",
+                "Highlight descriptions: When checked, objects in the tree that have a description are displayed with bold text. Descriptions are added to objects by right-clicking on the object and selecting Description.",
+                "System fields: When checked, system fields are displayed at the bottom of tables.",
+                "Uneven mappings: When checked, the number of mappings are displayed for tables with uneven mapping. In the example below, the table has uneven mappings since it contains two fields with one mapping, and another field with two mappings."
+            ]
+        }
+    ]
+}

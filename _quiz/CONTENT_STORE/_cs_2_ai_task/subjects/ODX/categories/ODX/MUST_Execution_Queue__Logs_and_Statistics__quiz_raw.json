@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What can you see in the Execution Queue of the ODXServer?",
+        "options": {
+            "option_a": "Only the tasks that are currently executing",
+            "option_b": "Tasks that are executing, waiting to start, or just finished",
+            "option_c": "Only the tasks that have finished executing",
+            "option_d": "Only the tasks that are waiting to start"
+        },
+        "answer": "option_b",
+        "explanation": "The Execution Queue allows you to see the tasks in various states: currently executing, waiting to start, or just finished executing."
+    },
+    "question_2": {
+        "question": "How do you open the Execution Queue in the ODXServer?",
+        "options": {
+            "option_a": "Click on the ODX Execution Queue icon in the Tools menu",
+            "option_b": "Double-click on the ODX Server Manager",
+            "option_c": "Right-click on the ODX instance and choose Properties",
+            "option_d": "Go to the File menu and select Open Execution Queue"
+        },
+        "answer": "option_a",
+        "explanation": "To open the Execution Queue, you need to be sure the ODX instance is marked and then click on the ODX Execution Queue in the Tools menu."
+    },
+    "question_3": {
+        "question": "Where can you find the log of communication between the ODX Server Manager and the ODX Server?",
+        "options": {
+            "option_a": "In the Execution Queue",
+            "option_b": "In the Service Log",
+            "option_c": "In the Execution Log",
+            "option_d": "In the Statistics section"
+        },
+        "answer": "option_b",
+        "explanation": "The Service Log contains the log entries of communication between the ODX Server Manager and the ODX Server."
+    },
+    "question_4": {
+        "question": "How can you view the statistics of a data source in the ODXServer?",
+        "options": {
+            "option_a": "By double-clicking on the data source",
+            "option_b": "By right-clicking on the data source and selecting Properties",
+            "option_c": "By right-clicking a data source and clicking Statistics",
+            "option_d": "By selecting the data source and pressing the 'Stats' key"
+        },
+        "answer": "option_c",
+        "explanation": "To view the statistics of a data source, you need to right-click on the data source and then click on Statistics."
+    },
+    "question_5": {
+        "question": "What information can you get from the statistics on the data storage in the ODXServer?",
+        "options": {
+            "option_a": "Number of users and permissions",
+            "option_b": "Number of tables, columns, and total data consumption",
+            "option_c": "Execution time of the last task",
+            "option_d": "List of all data sources connected to the ODXServer"
+        },
+        "answer": "option_b",
+        "explanation": "The statistics on the data storage provide information such as the number of tables, columns, and the total data consumption."
+    },
+    "question_6": {
+        "question": "How can you access the Execution Log for a specific task of a data source?",
+        "options": {
+            "option_a": "By selecting the task and clicking on the 'Details' button",
+            "option_b": "By double-clicking on the task",
+            "option_c": "By right-clicking on the task and choosing View Execution Log",
+            "option_d": "By going to the File menu and selecting Open Specific Log"
+        },
+        "answer": "option_c",
+        "explanation": "To access the Execution Log for a specific task, you need to right-click on the task and choose View Execution Log."
+    }
+}

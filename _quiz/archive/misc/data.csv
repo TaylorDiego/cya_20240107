@@ -1,0 +1,29 @@
+﻿folder,category,type,Count of title,Count of Questions,points per question,points possible,
+Data Sources,Data Sources,COULD,10,10,1,10,0.7%
+Data Sources,Data Sources,MUST,8,24,3,72,5.0%
+Data Sources,Data Sources,SHOULD,4,20,2,40,2.8%
+Data Warehouse,Data Warehouse,MUST,8,24,3,72,5.0%
+Data Warehouse,Data Warehouse,SHOULD,47,235,2,470,33.0%
+Execution & Jobs,Execution & Jobs,MUST,3,9,3,27,1.9%
+Execution & Jobs,Execution & Jobs,SHOULD,4,20,2,40,2.8%
+General,Troubleshooting,COULD,28,28,1,28,2.0%
+General,Documentation and Lineage,MUST,2,6,3,18,1.3%
+General,Infrastructure & Networking,SHOULD,2,10,2,20,1.4%
+Getting Started,Add and Configure Instances,MUST,4,12,3,36,2.5%
+Getting Started,Configure Resources,MUST,2,6,3,18,1.3%
+Getting Started,Initial Setup,MUST,8,24,3,72,5.0%
+Getting Started,Add and Configure Instances,SHOULD,1,5,2,10,0.7%
+Getting Started,Configure Resources,SHOULD,9,45,2,90,6.3%
+Getting Started,Reference Architectures,SHOULD,5,25,2,50,3.5%
+Getting Started,Upgrades & Migration,SHOULD,3,15,2,30,2.1%
+Getting Started,Initial Setup,WON'T,1,0,0,0,0.0%
+ODX,ODX,COULD,2,2,1,2,0.1%
+ODX,ODX,MUST,11,33,3,99,6.9%
+ODX,ODX,SHOULD,1,5,2,10,0.7%
+Semantic Model,Semantic Model,MUST,4,12,3,36,2.5%
+Semantic Model,Semantic Model,SHOULD,10,50,2,100,7.0%
+TimeXtender Portal,TimeXtender Portal,COULD,1,1,1,1,0.1%
+TimeXtender Portal,TimeXtender Portal,MUST,5,15,3,45,3.2%
+TimeXtender Portal,TimeXtender Portal,SHOULD,3,15,2,30,2.1%
+,,,,,,,
+,,,,,,1426,

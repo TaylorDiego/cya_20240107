@@ -1,0 +1,20 @@
+{
+    "DateTime": "2023-12-27 14:40:36",
+    "URL": "https://support.timextender.com/data-warehouse-108/data-transformation-1076",
+    "Keywords": "missing",
+    "Title": "Data Transformation _ Community",
+    "Author": "Thomas Lind",
+    "Text": "Fields transformations let you modify existing data in a number of ways. You can, for example, easily reverse the sign of numeric values, trim fields, or return a specified number of characters from the original field value. Only date Returns only the date portion of a datetime field Only time Returns only the time portion of a datetime field SQL snippet An option to add a SQL snippet to a field The following example shows adding a Date Only transformation to a date field. Adding Conditions The following example shows setting up a condition on atransformation so that it will only be applied to a record when the Document_Line_No is greater than 1.  ",
+    "Lists": [
+        {
+            "heading": "Adding Field Transformation Rules",
+            "paragraphs": [],
+            "list": [
+                "Expand the relevant data area, expand Tables, and then expand the relevant table.",
+                "Right-click the field, and select Field Transformations to open the Field Transformations pane window.",
+                "In the Operator list, select the appropriate operator to be used with the field above and then click Add. Operator Description Custom Allows for custom SQL code to be executed Fixed Inserts a fixed value that is specified by the user Default column value Adds a default value to a column. It can later gain a different value To upper Converts all text values to upper-case To lower Converts all text values to lower-case Trim Trims padded spaces from the left and right of the data Trim left Trims padded spaces from the left of the data Trim right Trims padded spaces from the right of the data First characters Returns the number of beginning characters specified by the user Last characters Returns the number of ending characters specified by the user Replace characters Replaces one set of characters with another ReverseSign Reverses the sign for numeric values  Only date   Returns only the date portion of a datetime field   Only time   Returns only the time portion of a datetime field   SQL snippet   An option to add a SQL snippet to a field  Lookup Is to add values from a lookup transformation",
+                "If selecting either the First or Last operators, then also enter a number to be used for the field length."
+            ]
+        }
+    ]
+}

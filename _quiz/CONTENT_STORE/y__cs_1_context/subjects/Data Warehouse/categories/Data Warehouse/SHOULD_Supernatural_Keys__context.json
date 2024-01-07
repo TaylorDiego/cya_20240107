@@ -1,0 +1,44 @@
+{
+    "DateTime": "2023-12-27 14:40:44",
+    "URL": "https://support.timextender.com/data-warehouse-108/supernatural-keys-1120",
+    "Keywords": "missing",
+    "Title": "Supernatural Keys _ Community",
+    "Author": "Thomas Lind",
+    "Text": "Supernatural Key A supernatural key is a durable key that is independent of the natural keys found in the data, e.g. customer numbers. Durability here means that the keys will not change. Since natural keys can sometimes change in the source system and are unlikely to be the same in different source systems, it can be very useful to have a unique and persistent key for each customer, employee, etc. TimeXtender implements supernatural keys as follows: To add a supernatural key to a table, follow the steps below.  Key stores tie supernatural keys together, and are needed for each concept that requires a supernatural key to implement, e.g. customer, employee, etc. Key stores can be created on either the data warehouse or staging database level, which means that each data warehouse and staging database will have its own key stores. Key Store   Video showing the setup The video shows how to add a key in the customer dimension table and add a key in the fact table to make relations easy in the Semantic instance. https://use.vg/Je5dR6 ",
+    "Lists": [
+        {
+            "heading": "Adding a Supernatural Key Field",
+            "paragraphs": [
+                "To add a supernatural key to a table, follow the steps below."
+            ],
+            "list": [
+                "Right-click on a table in a data area and click on Add Supernatural Key Field.",
+                "Enter a name for the Supernatural Key Field and add a Key Store (see below for directions) or select a key store that is already created.",
+                "Add at least one field to the supernatural key in the Business key selection, from the available fields that are listed out on the left. Select fields and click the Add button to move these fields over to the right side to include them in the list of fields that the supernatural key will be based on.Note: The order of fields matters since two lists of identical fields will only give the same result if they are ordered in the same way. Use the Move Up and Move Down buttons to reorder the fields.",
+                "Select Only read from the store to disable the creation of new entries when a key is not found in the key store. The field's value will be null when no matching key is found. With managed execution enabled, tables with fields that have this option enabled will be executed subsequent to tables where this option is not enabled, which ensures the greatest possibility of a matching key being found in the key store.",
+                "Click OK to add the supernatural key field."
+            ]
+        },
+        {
+            "heading": "Adding a Key Store",
+            "paragraphs": [
+                "Key stores tie supernatural keys together, and are needed for each concept that requires a supernatural key to implement, e.g. customer, employee, etc. Key stores can be created on either the data warehouse or staging database level, which means that each data warehouse and staging database will have its own key stores.",
+                "Add a Key Store for a supernatural key using the following steps:"
+            ],
+            "list": [
+                "If the data warehouse or staging database does not already contain a supernatural key field, then first add a supernatural key. See Adding a Supernatural Key Field above for more information. In the Add Supernatural Key Field dialog, select an existing key store or click the Add button to open the Add Key Store dialog.",
+                "In the Name box, type a name for the key store.",
+                "(Optional) In the Database schema list, select the database schema from those available.",
+                "(Optional) In the Hashing algorithm list, click on the hashing algorithm to be used. Note that the selected Hashing Algorithm may affect performance. In general, TimeXtender recommends using the SHA-1 SQL Server 2005+ or one of the other suggested options as they are type safe and can improve performance. There are other deprecated and legacy hashing algorithms available such as Legacy Binary, Legacy Plain Text, or Plain Text settings, but these should only be used for debugging.",
+                "Click on the data type for the key from one of the following options: Unique identifier (GUID): A 16-byte string of characters that is, for all practical purposes, universally unique. Database unique auto-increment (bigint): A 8-byte int that is only unique within the database, but has better performance than the unique identifier. Auto increment: A customizable auto-incrementing value where the user can specify the following: The first value in the key store. The number to increment when a new row is added. The data type.",
+                "Unique identifier (GUID): A 16-byte string of characters that is, for all practical purposes, universally unique.",
+                "Database unique auto-increment (bigint): A 8-byte int that is only unique within the database, but has better performance than the unique identifier.",
+                "Auto increment: A customizable auto-incrementing value where the user can specify the following: The first value in the key store. The number to increment when a new row is added. The data type.",
+                "The first value in the key store.",
+                "The number to increment when a new row is added.",
+                "The data type.",
+                "Click OK to add the key store."
+            ]
+        }
+    ]
+}

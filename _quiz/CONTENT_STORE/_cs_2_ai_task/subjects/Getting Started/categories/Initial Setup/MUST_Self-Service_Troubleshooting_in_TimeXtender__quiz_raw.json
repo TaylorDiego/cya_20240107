@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the recommended first step when troubleshooting an issue in TimeXtender according to the provided text?",
+        "options": {
+            "option_a": "Contact TimeXtender support immediately",
+            "option_b": "Check if the issue is already documented",
+            "option_c": "Upgrade to the latest version of TimeXtender",
+            "option_d": "Restart the TimeXtender service"
+        },
+        "answer": "option_b",
+        "explanation": "The text suggests looking for best practices already documented as the first step, which implies checking if the issue has been experienced and resolved before."
+    },
+    "question_2": {
+        "question": "Which of the following is NOT listed as a potential workaround for issues with provider's remote connection in TimeXtender?",
+        "options": {
+            "option_a": "Uploading source data to a staging server",
+            "option_b": "Using a faster method to extract data",
+            "option_c": "Changing the visual layout of the data",
+            "option_d": "Using a better connector"
+        },
+        "answer": "option_c",
+        "explanation": "The text mentions uploading data to a staging server and using a faster method or better connector as workarounds, but changing the visual layout is not mentioned."
+    },
+    "question_3": {
+        "question": "What should be done before upgrading TimeXtender according to the best practices outlined?",
+        "options": {
+            "option_a": "Backup the current instance and stop any running jobs",
+            "option_b": "Delete all previous versions of TimeXtender",
+            "option_c": "Disconnect all data sources",
+            "option_d": "Reinstall the .NET framework"
+        },
+        "answer": "option_a",
+        "explanation": "The text advises to save and close current instances and ensure any scheduled jobs are not running before upgrading TimeXtender."
+    },
+    "question_4": {
+        "question": "According to the text, what is a proactive step to maintain the performance of SQL databases in TimeXtender?",
+        "options": {
+            "option_a": "Regularly restarting the database server",
+            "option_b": "Automating a process for backups, cleanups, and optimizations",
+            "option_c": "Increasing the storage capacity",
+            "option_d": "Upgrading the database server hardware"
+        },
+        "answer": "option_b",
+        "explanation": "The text recommends working with a DB administrator to automate a process for backups, cleanups, and optimizations on SQL Servers to maintain performance."
+    },
+    "question_5": {
+        "question": "What is a suggested method to troubleshoot large systems with many moving objects in TimeXtender?",
+        "options": {
+            "option_a": "Upgrade all components to the latest version",
+            "option_b": "Split the problem into smaller parts",
+            "option_c": "Increase the system's memory",
+            "option_d": "Consolidate all tasks into one process"
+        },
+        "answer": "option_b",
+        "explanation": "The text suggests splitting the problem into smaller parts or removing ambiguous layers as a method to troubleshoot large systems, which is a 'divide and conquer' approach."
+    },
+    "question_6": {
+        "question": "What is the recommended action when encountering intermittent cloud issues according to the text?",
+        "options": {
+            "option_a": "Immediately escalate to the cloud service provider",
+            "option_b": "Check Azure Service Health and implement retry logic",
+            "option_c": "Reconfigure the entire cloud setup",
+            "option_d": "Ignore the issue as it is transient"
+        },
+        "answer": "option_b",
+        "explanation": "The text advises checking Azure Service Health and viewing monitoring tools, as well as implementing retry logic in execution packages when facing transient cloud issues."
+    }
+}

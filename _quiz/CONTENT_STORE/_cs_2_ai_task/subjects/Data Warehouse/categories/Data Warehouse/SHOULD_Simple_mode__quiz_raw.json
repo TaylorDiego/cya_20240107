@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the primary goal of enabling simple mode in a data warehouse?",
+        "options": {
+            "option_a": "To enhance the security of the data",
+            "option_b": "To maximize performance during large data copies",
+            "option_c": "To simplify the user interface",
+            "option_d": "To reduce storage space used by the data"
+        },
+        "answer": "option_b",
+        "explanation": "Simple mode is aimed at maximizing performance specifically when copying large amounts of data to create an exact copy."
+    },
+    "question_2": {
+        "question": "What happens to a table when it is set to simple mode?",
+        "options": {
+            "option_a": "It supports more complex data transformations",
+            "option_b": "It enables additional security features",
+            "option_c": "It disables all but the most basic functionality",
+            "option_d": "It increases the number of valid instances of the table"
+        },
+        "answer": "option_c",
+        "explanation": "In simple mode, a table has everything but the most basic functionality disabled to improve performance."
+    },
+    "question_3": {
+        "question": "Which of the following is NOT supported by tables in simple mode?",
+        "options": {
+            "option_a": "Field transformations",
+            "option_b": "Field validations",
+            "option_c": "Conditional lookup fields",
+            "option_d": "Incremental load"
+        },
+        "answer": "option_d",
+        "explanation": "Tables in simple mode do not support field transformations, field validations, or conditional lookup fields, but they can support incremental load."
+    },
+    "question_4": {
+        "question": "How is simple mode enabled for a table?",
+        "options": {
+            "option_a": "By setting the individual table to simple mode",
+            "option_b": "By inheriting the setting from the data area",
+            "option_c": "Through a global setting in the database",
+            "option_d": "By enabling it in the database management system"
+        },
+        "answer": "option_b",
+        "explanation": "A table inherits the simple mode setting from the data area it belongs to."
+    }
+}

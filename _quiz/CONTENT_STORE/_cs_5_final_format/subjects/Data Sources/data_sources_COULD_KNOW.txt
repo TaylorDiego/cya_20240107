@@ -1,0 +1,62 @@
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step to add a data source connection in TimeXtender according to the provided text?
+
+{"score":0}Select the data source provider you want to use.
+{"score":0}Type a name for the data source in the Name box.
+{"score":100.0}Go to Data Estate > Data source connections and click Add data source connection.
+{"score":0}Enter the connection information under Connection settings.
+-
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which authentication scheme should be set if you are using Managed Service Identity (MSI) credentials to connect Excel Online on an Azure VM?
+
+{"score":0}AzureAD
+{"score":0}OAuthAuthentication
+{"score":0}AzureServicePrincipal
+{"score":100.0}AzureMSI
+-
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary reason for the change in requirements for using Oracle databases as a data source in TX?
+
+{"score":0}Microsoft .Net framework has introduced direct Oracle Support.
+{"score":0}Oracle databases no longer support TX.
+{"score":100.0}Direct Oracle Support in the Microsoft .Net framework has been discontinued.
+{"score":0}ODP.Net package has been updated to .Net 4 support.
+-
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which authentication method should you set if you want to use Kerberos authentication when connecting to SharePoint Excel?
+
+{"score":0}Basic
+{"score":100.0}Negotiate
+{"score":0}Digest
+{"score":0}Forms
+-
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step in setting up the BC extension for Dynamics 365 Business Central Online according to the provided text?
+
+{"score":0}Navigate to Extension Management and click Configure
+{"score":100.0}Search for Jet Analytics in the Extension Marketplace and click Get it now
+{"score":0}Register an Azure AD application for authentication to BC
+{"score":0}Verify that the status column has a value of completed
+-
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default port number for Theobald Xtract Universal (XU) when installed on the TimeXtender application server?
+
+{"score":0}1433
+{"score":100.0}8065
+{"score":0}80
+{"score":0}8080
+-
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When setting up a connection to TimeXtender Dynamics 365 Business Central - Online, what is the default value that should be entered in the Environment field?
+
+{"score":0}Development
+{"score":100.0}Production
+{"score":0}Sandbox
+{"score":0}Test
+-
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if you want to include all accounts except for specific ones when setting up a TimeXtender Dynamics 365 Finance data source?
+
+{"score":0}Leave the 'Accounts' box empty and check the 'Include all accounts' checkbox.
+{"score":0}Enter the accounts you want to include in the 'Accounts' box and check the 'Include all accounts' checkbox.
+{"score":100.0}Enter the accounts you want to exclude in the 'Accounts' box and check the 'Include all accounts' checkbox.
+{"score":0}Clear the 'Include all accounts' checkbox and leave the 'Accounts' box empty.
+-
+{"folder":"(2024_01) Data Sources","tags":{"category":"(2024_01) COULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must be installed first before adding the TimeXtender Oracle Data Source provider to an ODX instance?
+
+{"score":0}TimeXtender Portal
+{"score":100.0}Oracle's ADO provider
+{"score":0}ODX instance
+{"score":0}MS SQL Server

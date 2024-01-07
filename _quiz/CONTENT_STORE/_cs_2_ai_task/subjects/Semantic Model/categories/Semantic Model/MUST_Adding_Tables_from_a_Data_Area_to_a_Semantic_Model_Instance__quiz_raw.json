@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "How many methods are described for adding tables to a Semantic Model instance in the provided text?",
+        "options": {
+            "option_a": "One",
+            "option_b": "Two",
+            "option_c": "Three",
+            "option_d": "Four"
+        },
+        "answer": "option_b",
+        "explanation": "The text specifies that there are two ways to add tables from a data area to a Semantic Model instance."
+    },
+    "question_2": {
+        "question": "What is the first step when using the drag-and-drop method from the Data Area to add tables to a Semantic Model instance?",
+        "options": {
+            "option_a": "Open the Semantic Model instance",
+            "option_b": "Drag-and-drop the table from the data area",
+            "option_c": "Open the relevant Data Warehouse instance and data area",
+            "option_d": "Select the relevant data area from the dropdown"
+        },
+        "answer": "option_c",
+        "explanation": "The first step is to open the relevant Data Warehouse instance and data area which contains the tables you want to move to the semantic model."
+    },
+    "question_3": {
+        "question": "Where does the Source Database Browser appear when adding tables to a Semantic Model instance?",
+        "options": {
+            "option_a": "In the left-hand pane",
+            "option_b": "In the right-hand pane",
+            "option_c": "In a new window",
+            "option_d": "In the bottom pane"
+        },
+        "answer": "option_b",
+        "explanation": "The Source Database Browser appears in the right-hand pane when you click on the Semantic Model instance name."
+    },
+    "question_4": {
+        "question": "What action is performed to move a table from the Source Database Browser to the Semantic Model instance?",
+        "options": {
+            "option_a": "Copy-and-paste",
+            "option_b": "Drag-and-drop",
+            "option_c": "Click-and-select",
+            "option_d": "Export-and-import"
+        },
+        "answer": "option_b",
+        "explanation": "Tables are moved from the Source Database Browser to the Semantic Model instance using the drag-and-drop method."
+    },
+    "question_5": {
+        "question": "After adding a table to the Semantic Model instance, how can fields be added?",
+        "options": {
+            "option_a": "Using a SQL query",
+            "option_b": "Through an automated script",
+            "option_c": "Using drag-and-drop",
+            "option_d": "By importing a CSV file"
+        },
+        "answer": "option_c",
+        "explanation": "Once a table has been added to the Semantic Model instance, fields can also be added using the drag-and-drop method."
+    },
+    "question_6": {
+        "question": "What must be opened first to begin the process of adding tables to a Semantic Model instance using the drag-and-drop method from the Data Area?",
+        "options": {
+            "option_a": "The Source Database Browser",
+            "option_b": "The Semantic Model instance",
+            "option_c": "The relevant Data Warehouse instance and data area",
+            "option_d": "A new Semantic Model project"
+        },
+        "answer": "option_c",
+        "explanation": "The process begins by opening the relevant Data Warehouse instance and data area that contains the tables to be moved to the semantic model."
+    }
+}

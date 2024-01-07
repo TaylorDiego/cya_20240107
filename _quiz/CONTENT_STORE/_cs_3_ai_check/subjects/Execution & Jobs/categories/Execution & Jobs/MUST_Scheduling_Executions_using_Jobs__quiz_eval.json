@@ -1,0 +1,99 @@
+{
+    "question_1": {
+        "question_content": {
+            "question": "What is the primary purpose of an execution package in TimeXtender?",
+            "options": {
+                "option_a": "To schedule email notifications",
+                "option_b": "To determine which objects in an instance will be executed and how",
+                "option_c": "To manage user permissions",
+                "option_d": "To log execution times and row counts only"
+            },
+            "answer": "option_b",
+            "explanation": "An execution package in TimeXtender is used to define which objects in an instance will be executed and the manner of their execution, not just for scheduling notifications or logging data."
+        },
+        "question_facts": [
+            "The question and its components are all correctly spelled and do not require any corrections."
+        ]
+    },
+    "question_2": {
+        "question_content": {
+            "question": "In TimeXtender, what restriction applies when adding tasks to a job?",
+            "options": {
+                "option_a": "Tasks from different ODX instances can be added to the same job",
+                "option_b": "A job can contain both execution packages and ODX tasks",
+                "option_c": "Only tasks relating to one ODX instance can be added to a job",
+                "option_d": "There are no restrictions on adding tasks to a job"
+            },
+            "answer": "option_c",
+            "explanation": "In TimeXtender, a job can only contain tasks from one ODX instance, and cannot include both execution packages and ODX tasks in the same job."
+        },
+        "question_facts": [
+            "The question and its options are all correctly spelled and grammatically correct. There are no typos to fix."
+        ]
+    },
+    "question_3": {
+        "question_content": {
+            "question": "What happens to the state of a job in TimeXtender when it is run?",
+            "options": {
+                "option_a": "It changes from Active to Idle",
+                "option_b": "It remains in the Idle state",
+                "option_c": "It changes from Idle to Active, then to Running, and finally to Completed",
+                "option_d": "It is immediately marked as Completed"
+            },
+            "answer": "option_c",
+            "explanation": "When a job is run in TimeXtender, its state progresses from Idle to Active, then to Running, and upon completion, it changes to the Completed state."
+        },
+        "question_facts": [
+            "The question and its components are all correctly spelled and grammatically correct. There are no typos to fix.",
+            "The question is clear, concise, and directly related to the content provided. It tests the understanding of how job states change in TimeXtender, which is a key concept in managing and monitoring jobs in this system. The options are well-structured and plausible, making the question challenging. The explanation is also clear and directly answers the question. \n\nOverall rating: 5 (Very good question)"
+        ]
+    },
+    "question_4": {
+        "question_content": {
+            "question": "How can you prioritize objects during a managed execution in TimeXtender?",
+            "options": {
+                "option_a": "By setting the job to run at a higher priority",
+                "option_b": "By configuring the SMTP server settings",
+                "option_c": "By using the Managed Execution settings in an execution package",
+                "option_d": "By manually executing packages in a specific order"
+            },
+            "answer": "option_c",
+            "explanation": "In TimeXtender, prioritization of objects during a managed execution is configured within an execution package using the Managed Execution settings."
+        },
+        "question_facts": [
+            "The question and its options are all spelled correctly. There are no typos to fix."
+        ]
+    },
+    "question_5": {
+        "question_content": {
+            "question": "What must be done to use SMTP.Send with TimeXtender after Microsoft ended basic authentication on email for online SMTP servers?",
+            "options": {
+                "option_a": "Use a standard password for authentication",
+                "option_b": "Set up an app with specific permissions and use its Application (client) ID and Tenant ID",
+                "option_c": "Enable Multi-factor Authentication for the user account",
+                "option_d": "No action is required as TimeXtender handles this automatically"
+            },
+            "answer": "option_b",
+            "explanation": "After Microsoft ended basic authentication for online SMTP servers, TimeXtender requires setting up an app with specific permissions, including Mail.Send, SMTP.Send, and User.Read, and using its Application (client) ID and Tenant ID for SMTP server configuration."
+        },
+        "question_facts": [
+            "The question and its components are all correctly spelled and do not contain any typos."
+        ]
+    },
+    "question_6": {
+        "question_content": {
+            "question": "What is the result of disabling managed execution in a TimeXtender execution package?",
+            "options": {
+                "option_a": "Tables are executed based on their classification",
+                "option_b": "Tables are executed in the order in which they appear in the tree",
+                "option_c": "Execution is halted until all steps are manually verified",
+                "option_d": "Execution packages are run concurrently by default"
+            },
+            "answer": "option_b",
+            "explanation": "Disabling managed execution in TimeXtender causes tables to be executed in the order they appear in the tree, and it is crucial to ensure that they are arranged in a logical sequence to avoid errors."
+        },
+        "question_facts": [
+            "The question and its options are all spelled correctly. There are no typos to fix."
+        ]
+    }
+}

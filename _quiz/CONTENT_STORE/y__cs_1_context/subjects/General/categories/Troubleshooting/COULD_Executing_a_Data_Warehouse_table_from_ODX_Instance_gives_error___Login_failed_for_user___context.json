@@ -1,0 +1,32 @@
+{
+    "DateTime": "2023-12-27 14:42:58",
+    "URL": "https://support.timextender.com/troubleshooting-134/executing-a-data-warehouse-table-from-odx-instance-gives-error-login-failed-for-user-1249",
+    "Keywords": "missing",
+    "Title": "Executing a Data Warehouse table from ODX Instance gives error_ _Login failed for user_ _ Community",
+    "Author": "Thomas Lind",
+    "Text": "The following error occurs when executing your first table in an Data Warehouse Instance database mapped from an ODX Instance: System.Data.SqlClient.SqlException: Login failed for user '<Username>' service account on different machines and networks, advanced networking configurations In this case, the ODX Instance is attempting to load data into the DWH Instance database, but: Add ODX Instances ",
+    "Lists": [
+        {
+            "heading": "Cause",
+            "paragraphs": [
+                "The ODX Server (and it's associated service account) is responsible for authentication and executing data from the ODX into the DWH Instance. Therefore, when you execute a table in the DWH Instance that is sourced from the ODX, it's the ODX Instance handling the authentication into this. So, If your ODX Instance and the DWH Instance database are on different machines and networks, advanced networking configurations are required (dealing with firewall, VPN and subnet, etc.) before the ODX Server can connect and transfer data.",
+                "In this case, the ODX Instance is attempting to load data into the DWH Instance database, but:"
+            ],
+            "list": [
+                "The Service account running the ODX Server service does not have 'write' access into your DWH Database.",
+                "The ODX Server and MDW database are on separate servers and: You are NOT specifying a full remote server SQL Server instance name (or address) for your DWH database. (i.e. ODX Server is trying to write to \u201clocalhost\u201d but it is located on another computer), You ARE specifying a full remote server SQL Server instance name (or address), but the ODX server is not able to reach the DWH server due to network or firewall issues. This article describes configuration steps to enable a SQL connection from a remote machine.",
+                "You are NOT specifying a full remote server SQL Server instance name (or address) for your DWH database. (i.e. ODX Server is trying to write to \u201clocalhost\u201d but it is located on another computer),",
+                "You ARE specifying a full remote server SQL Server instance name (or address), but the ODX server is not able to reach the DWH server due to network or firewall issues. This article describes configuration steps to enable a SQL connection from a remote machine."
+            ]
+        },
+        {
+            "heading": "Resolution",
+            "paragraphs": [],
+            "list": [
+                "Ensure the service account running the ODX Server service has proper permissions to write into your DWH database.",
+                "Specify the full remote SQL Server instance name (or address) on your DWH database.",
+                "Resolve network (firewall, VPN, subnet etc.) issue, if applicable."
+            ]
+        }
+    ]
+}

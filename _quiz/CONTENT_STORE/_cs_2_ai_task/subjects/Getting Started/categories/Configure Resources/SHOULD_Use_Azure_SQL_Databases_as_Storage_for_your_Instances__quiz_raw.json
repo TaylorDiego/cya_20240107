@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the first step when configuring read access to an Azure SQL Database according to the provided text?",
+        "options": {
+            "option_a": "Run a script in SSMS to create a user from an external provider",
+            "option_b": "Deploy the security tab in TimeXtender",
+            "option_c": "Give admin privileges to the user making the initial changes",
+            "option_d": "Set the user as the Azure Active Directory admin"
+        },
+        "answer": "option_c",
+        "explanation": "The first step is to give admin privileges to the user making the initial changes, as stated in the text."
+    },
+    "question_2": {
+        "question": "How do you assign an Azure Active Directory user as the admin for an Azure SQL Database?",
+        "options": {
+            "option_a": "Run the CREATE USER script in SSMS",
+            "option_b": "In the Azure portal, set your user as the admin using the 'Set admin' option",
+            "option_c": "Deploy the security tab in TimeXtender",
+            "option_d": "Add the user manually in the TimeXtender desktop application"
+        },
+        "answer": "option_b",
+        "explanation": "To set a user as the admin, you use the 'Set admin' option in the Azure portal, as described in the text."
+    },
+    "question_3": {
+        "question": "Which tool is used to run a script that grants read access to all tables in an Azure SQL Database?",
+        "options": {
+            "option_a": "Azure portal",
+            "option_b": "TimeXtender desktop application",
+            "option_c": "Microsoft Docs",
+            "option_d": "SQL Server Management Studio (SSMS)"
+        },
+        "answer": "option_d",
+        "explanation": "The script to grant read access is run in SQL Server Management Studio (SSMS), according to the instructions."
+    },
+    "question_4": {
+        "question": "In the TimeXtender desktop application, how do you provide users in a group access to only valid schemas?",
+        "options": {
+            "option_a": "Run the CREATE USER script with the valid schema",
+            "option_b": "Use the 'Set admin' option in the Azure portal",
+            "option_c": "Right click Database Roles > Object Security Setup > Click on Schemas and check user Access Role",
+            "option_d": "Deploy the security tab without any modifications"
+        },
+        "answer": "option_c",
+        "explanation": "To provide access to valid schemas, you right click Database Roles, go to Object Security Setup, click on Schemas, and check user Access Role, as per the process outlined."
+    }
+}

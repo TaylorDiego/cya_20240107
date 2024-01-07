@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What types of instances can have their firewall configured in TimeXtender?",
+        "options": {
+            "option_a": "ODX instances only",
+            "option_b": "DW instances only",
+            "option_c": "Semantic Model instances only",
+            "option_d": "ODX, DW, and Semantic Model instances"
+        },
+        "answer": "option_d",
+        "explanation": "The firewall can be configured for ODX instances, DW instances, and Semantic Model instances, allowing for flexibility in securing different types of instances."
+    },
+    "question_2": {
+        "question": "What is the main advantage of using automatic firewall rules in TimeXtender?",
+        "options": {
+            "option_a": "They offer more control over IP address access",
+            "option_b": "They require manual authentication each time",
+            "option_c": "They provide convenience and efficiency",
+            "option_d": "They are necessary for all TimeXtender setups"
+        },
+        "answer": "option_c",
+        "explanation": "Automatic rules, or dynamic rules, are created automatically when a user connects, providing convenience and efficiency by eliminating the need for manual rule creation."
+    },
+    "question_3": {
+        "question": "How can you view the number of automatic firewall rules created for an instance in TimeXtender?",
+        "options": {
+            "option_a": "By checking the instance's metadata database",
+            "option_b": "By selecting 'Show automatic rules' in the Firewall rules section",
+            "option_c": "By contacting TimeXtender support",
+            "option_d": "Automatic rules are not visible to users"
+        },
+        "answer": "option_b",
+        "explanation": "To view automatic firewall rules, you need to add or edit an instance, scroll down to the Firewall rules section, and select 'Show automatic rules'. The number of rules is shown in parentheses."
+    },
+    "question_4": {
+        "question": "What should you do if the TimeXtender automatic rule system does not support your setup or is malfunctioning?",
+        "options": {
+            "option_a": "Contact TimeXtender support immediately",
+            "option_b": "Disable automatic rules and create manual rules",
+            "option_c": "Ignore the issue as it will resolve itself",
+            "option_d": "Reinstall TimeXtender"
+        },
+        "answer": "option_b",
+        "explanation": "If the automatic rule system is not suitable or is malfunctioning, you should disable automatic rules and manually create rules for each instance to maintain security and control."
+    }
+}

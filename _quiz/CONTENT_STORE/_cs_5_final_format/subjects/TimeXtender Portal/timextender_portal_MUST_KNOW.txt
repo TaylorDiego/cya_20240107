@@ -1,0 +1,69 @@
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary function described in the article 'Grant and Revoke Access to Instances' by Christian Hauggaard?
+
+{"score":0}Describing how to install TimeXtender
+{"score":100.0}Explaining how to grant and revoke user access to instances
+{"score":0}Guiding users through data visualization in TimeXtender
+{"score":0}Providing a history of TimeXtender versions
+-
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which version of TimeXtender does the article refer to?
+
+{"score":0}6024.0
+{"score":100.0}6024.1
+{"score":0}6025.1
+{"score":0}6023.1
+-
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary function of HTTPS on the TimeXtender Portal?
+
+{"score":0}To speed up the data transfer
+{"score":100.0}To redirect all HTTP requests as HTTPS
+{"score":0}To serve as a user interface
+{"score":0}To provide firewall services
+-
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How are the backend services on the TimeXtender Portal protected?
+
+{"score":0}Using a blacklist rule
+{"score":0}Through open access
+{"score":100.0}By a firewall with a whitelist rule
+{"score":0}With antivirus software
+-
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must be set up to use the TimeXtender API endpoints?
+
+{"score":0}User credentials
+{"score":100.0}API Key
+{"score":0}Database connection
+{"score":0}Postman installation
+-
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where is the apiKey variable used in the TimeXtender Postman collection?
+
+{"score":0}In the body of the requests
+{"score":0}In the request URLs
+{"score":100.0}In the request headers
+{"score":0}In the Postman environment settings
+-
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where in the TimeXtender Portal can you create a new API key?
+
+{"score":100.0}Under Admin, then Security and permissions
+{"score":0}Under the Dashboard settings
+{"score":0}In the Data Sources configuration
+{"score":0}In the Help and Support section
+-
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step to delete an API key in the TimeXtender Portal?
+
+{"score":0}Type the name of the API key to confirm deletion
+{"score":100.0}Navigate to Security and permissions and select the delete icon next to the API key
+{"score":0}Add a Comment stating the reason for deletion
+{"score":0}Select Delete to confirm and finalize the deletion
+-
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary function of the TimeXtender Portal?
+
+{"score":0}To manage email campaigns
+{"score":100.0}To create and manage data estate items
+{"score":0}To track time and attendance
+{"score":0}To conduct online training
+-
+{"folder":"(2024_01) TimeXtender Portal","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which permission level cannot be removed by the user from themselves in the TimeXtender Portal?
+
+{"score":0}Customer manager
+{"score":0}Data estate admin
+{"score":100.0}Company admin
+{"score":0}Portal user-level

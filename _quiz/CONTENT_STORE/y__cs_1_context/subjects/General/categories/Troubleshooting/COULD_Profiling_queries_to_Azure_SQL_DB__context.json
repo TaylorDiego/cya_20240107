@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:43:13",
+    "URL": "https://support.timextender.com/troubleshooting-134/profiling-queries-to-azure-sql-db-1293",
+    "Keywords": "missing",
+    "Title": "Profiling queries to Azure SQL DB _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "sys.query_store_query_text Below is an example output For more information, review Microsoft documentation: Querying the SQL Server System Catalog FAQ - SQL Server | Microsoft Docs ",
+    "Lists": []
+}

@@ -1,0 +1,706 @@
+{
+    "question_1": {
+        "question": "What is required by the ODX server to handle updated and deleted records during incremental load?",
+        "options": {
+            "option_a": "A rule-based interface for defining primary keys",
+            "option_b": "A complete backup of the data source",
+            "option_c": "A manual update of each record",
+            "option_d": "A data type override for each field"
+        },
+        "answer": "option_a",
+        "explanation": "To handle updated and deleted records in the source on incremental load, the ODX server needs to know the primary key on each table, which is set up through a rule-based interface."
+    }
+    , "question_2": {
+        "question": "What feature allows you to create a table in the ODX from a SQL query?",
+        "options": {
+            "option_a": "Data Source Explorer",
+            "option_b": "Primary Keys Setup",
+            "option_c": "Query Tables",
+            "option_d": "Filter Rows"
+        },
+        "answer": "option_c",
+        "explanation": "The Query Tables feature enables you to enter a SQL query that the ODX will turn into a table, which is particularly useful when a table cannot be extracted by the regular ODX logic."
+    }
+    , "question_3": {
+        "question": "Which authentication method uses the logged-in Windows user's credentials for authentication in a domain federated with Azure AD?",
+        "options": {
+            "option_a": "Windows Authentication",
+            "option_b": "SQL Server Authentication",
+            "option_c": "Azure AD Password Authentication",
+            "option_d": "Azure AD Integrated Authentication"
+        },
+        "answer": "option_d",
+        "explanation": "Azure AD Integrated Authentication uses the logged-in Windows user's credentials for authentication, provided that the user is logged in using Azure AD credentials from a domain that is federated with Azure AD."
+    }
+    , "question_4": {
+        "question": "What should you do if your ODX server becomes overloaded during data transfer?",
+        "options": {
+            "option_a": "Increase the Command timeout",
+            "option_b": "Use Azure Data Factory for transferring data",
+            "option_c": "Decrease the Batch size",
+            "option_d": "Enable Encrypt connection"
+        },
+        "answer": "option_b",
+        "explanation": "If the ODX server becomes overloaded during transfer, it is recommended to use Azure Data Factory to auto-generate an ADF pipeline to transfer the data from the ODX Server to the data warehouse storage."
+    }
+    , "question_5": {
+        "question": "What should be entered in the 'IP or hostname' box when configuring the ODX Server Connection Info in TimeXtender?",
+        "options": {
+            "option_a": "The private IP address of the ODX server",
+            "option_b": "The public IP address or DNS name defined for the VM in Azure",
+            "option_c": "The MAC address of the ODX server",
+            "option_d": "Any IP address as it does not need to be reachable"
+        },
+        "answer": "option_b",
+        "explanation": "The public IP address or DNS name defined for the VM in Azure should be entered in the 'IP or hostname' box, as this will be used by TimeXtender Desktop to connect to the ODX."
+    }
+    , "question_6": {
+        "question": "What is the purpose of the 'Encrypt connection' list when setting up storage for an ODX instance in TimeXtender?",
+        "options": {
+            "option_a": "To choose the encryption algorithm for the database",
+            "option_b": "To enable or disable encryption of the connection",
+            "option_c": "To encrypt the ODX instance's data at rest",
+            "option_d": "To generate a new encryption key"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Encrypt connection' list is used to enable or disable encryption of the connection between TimeXtender and the SQL server, with options to verify the server's certificate or not."
+    }
+    , "question_7": {
+        "question": "What is the default number of days for log retention in TimeXtender?",
+        "options": {
+            "option_a": "30 days",
+            "option_b": "60 days",
+            "option_c": "90 days",
+            "option_d": "120 days"
+        },
+        "answer": "option_c",
+        "explanation": "The default setting for log retention days in TimeXtender is 90 days."
+    }
+    , "question_8": {
+        "question": "What should you enable if you want multiple developers to work on the same instance simultaneously?",
+        "options": {
+            "option_a": "Team Development",
+            "option_b": "Multi-User Access",
+            "option_c": "Collaborative Mode",
+            "option_d": "Concurrent Development"
+        },
+        "answer": "option_a",
+        "explanation": "Team Development should be enabled to allow multiple developers to develop on the instance at the same time."
+    }
+    , "question_9": {
+        "question": "How can you undo a transfer of a data warehouse or semantic model instance in TimeXtender?",
+        "options": {
+            "option_a": "By deleting the instance and recreating it.",
+            "option_b": "By using the standard version system in TimeXtender to revert to a previous version.",
+            "option_c": "By transferring the instance back to the original environment.",
+            "option_d": "By renaming the instance to its original name."
+        },
+        "answer": "option_b",
+        "explanation": "To undo a transfer, you can use the standard version system in TimeXtender to go back to a previous version of the instance."
+    }
+    , "question_10": {
+        "question": "What should you do if you encounter an error stating 'MDW repository version not supported' during a transfer in TimeXtender?",
+        "options": {
+            "option_a": "Remove the instances from the environment and try again.",
+            "option_b": "Rename the MDW instance and initiate the transfer once more.",
+            "option_c": "Upgrade all instances before starting the transfer.",
+            "option_d": "Open a support ticket as suggested by a user in the article."
+        },
+        "answer": "option_c",
+        "explanation": "If you encounter an error stating 'MDW repository version not supported', you need to upgrade all instances before starting the transfer, as advised by a user in the article."
+    }
+    , "question_11": {
+        "question": "What role is required for a user to manage an Azure SQL Database as a Target Database?",
+        "options": {
+            "option_a": "db_datareader",
+            "option_b": "dbmanager",
+            "option_c": "db_owner",
+            "option_d": "server admin"
+        },
+        "answer": "option_d",
+        "explanation": "For Azure SQL DB as a Target Database, a user needs to be a server admin, Azure Active Directory admin, or have the dbmanager role in the master database."
+    }
+    , "question_12": {
+        "question": "Which permission level is needed for a Service Account on the Application Server to run TimeXtender services?",
+        "options": {
+            "option_a": "db_datawriter",
+            "option_b": "db_owner",
+            "option_c": "sysadmin",
+            "option_d": "server administrator"
+        },
+        "answer": "option_c",
+        "explanation": "The Service Account on the Application Server must have sysadmin or dbOwner permissions to run the TimeXtender Execution Service and the TimeXtender ODX Server Service."
+    }
+    , "question_13": {
+        "question": "What are Data Warehouse Units (DWUs) used for in Azure Synapse SQL Pool?",
+        "options": {
+            "option_a": "To measure the amount of storage used.",
+            "option_b": "To determine the number of concurrent queries allowed.",
+            "option_c": "To measure the computational power and affect performance and cost.",
+            "option_d": "To track the number of user connections to the database."
+        },
+        "answer": "option_c",
+        "explanation": "DWUs measure the computational power in a Synapse SQL Pool, which influences the available compute nodes, performance, and cost."
+    }
+    , "question_14": {
+        "question": "Which type of table distribution is ideal for Dimension Tables smaller than 2GB in Azure Synapse?",
+        "options": {
+            "option_a": "Round-robin",
+            "option_b": "Replicated",
+            "option_c": "Hash",
+            "option_d": "Sharded"
+        },
+        "answer": "option_b",
+        "explanation": "Replicated distribution is ideal for Dimension Tables smaller than 2GB, as it allows for quick access to the data without the need for sharding."
+    }
+    , "question_15": {
+        "question": "What is a key consideration when setting up separate Application and Database Servers for TimeXtender?",
+        "options": {
+            "option_a": "Ensuring the Application server has internet access.",
+            "option_b": "Mitigating risk by avoiding additional applications on the database server.",
+            "option_c": "Using the same operating system on both servers.",
+            "option_d": "Ensuring both servers are in the same geographic location."
+        },
+        "answer": "option_b",
+        "explanation": "Separating the Application and Database servers can mitigate risk by ensuring that additional applications aren't installed on the database server."
+    }
+    , "question_16": {
+        "question": "According to the text, what is NOT a minimum hardware requirement for TimeXtender?",
+        "options": {
+            "option_a": "Specific TimeXtender requirements beyond Microsoft SQL Server.",
+            "option_b": "A Windows server for hosting services and databases.",
+            "option_c": "Adequate hardware to support Microsoft SQL Server.",
+            "option_d": "Network infrastructure to support zero latency."
+        },
+        "answer": "option_a",
+        "explanation": "TimeXtender does not have minimum hardware requirements beyond what is required by Microsoft SQL Server."
+    }
+    , "question_17": {
+        "question": "How do you connect to the Virtual Machine after deploying the TimeXtender Application Server?",
+        "options": {
+            "option_a": "Use SSH to connect to the Virtual Machine",
+            "option_b": "Navigate to the Virtual Machine and click 'Connect'",
+            "option_c": "Email Azure support for connection details",
+            "option_d": "Connect via the Azure mobile app"
+        },
+        "answer": "option_b",
+        "explanation": "After deployment, you navigate to the Virtual Machine and click 'Connect' to proceed with the RDP connection process."
+    }
+    , "question_18": {
+        "question": "What should you do after downloading the RDP file to connect to your TimeXtender Application Server?",
+        "options": {
+            "option_a": "Upload the RDP file back to the Azure portal",
+            "option_b": "Open the RDP file and click 'Connect'",
+            "option_c": "Convert the RDP file to a different format",
+            "option_d": "Delete the RDP file for security reasons"
+        },
+        "answer": "option_b",
+        "explanation": "Once the RDP file is downloaded, you should open it and click 'Connect' to initiate the remote desktop connection."
+    }
+    , "question_19": {
+        "question": "What must be configured in the AWS RDS SQL Database to allow remote access?",
+        "options": {
+            "option_a": "Inbound rules only",
+            "option_b": "Outbound rules only",
+            "option_c": "Both inbound and outbound rules",
+            "option_d": "Remote access is not configurable"
+        },
+        "answer": "option_c",
+        "explanation": "To allow remote access to the AWS RDS SQL Database, both inbound and outbound rules must be set in the VPC security group."
+    }
+    , "question_20": {
+        "question": "After setting up an AWS RDS Custom for SQL Server, what should you verify?",
+        "options": {
+            "option_a": "Ability to connect via SSH",
+            "option_b": "Connection via SQL Server Management Studio (SSMS)",
+            "option_c": "Connection via AWS Management Console",
+            "option_d": "Ability to host a website"
+        },
+        "answer": "option_b",
+        "explanation": "After setting up, you should verify the ability to connect via SQL Server Management Studio (SSMS) running on a remote machine."
+    }
+    , "question_21": {
+        "question": "How can you provide users access to the Analysis Services model?",
+        "options": {
+            "option_a": "By adding their e-mail address or Azure User Groups",
+            "option_b": "By creating a new Analysis Services Resource",
+            "option_c": "By registering a new App in Azure Active Directory",
+            "option_d": "By deploying a Semantic Model in TimeXtender"
+        },
+        "answer": "option_a",
+        "explanation": "Access to the Analysis Services model is provided by adding the user's e-mail address or Azure User Groups."
+    }
+    , "question_22": {
+        "question": "What should you do if you encounter authentication errors due to 2-factor authentication when deploying models?",
+        "options": {
+            "option_a": "Create a new Active Directory user account without 2-factor authentication",
+            "option_b": "Skip the step of App Registration",
+            "option_c": "Use an On-premises Data Gateway",
+            "option_d": "Assign the App Registration as Analysis Services Admin again"
+        },
+        "answer": "option_a",
+        "explanation": "To resolve authentication errors due to 2-factor authentication, you can create a new Active Directory user account that does not use 2-factor authentication."
+    }
+    , "question_23": {
+        "question": "Which of the following is NOT a required field when setting up a connection to a PostgreSQL database using Azure Data Factory?",
+        "options": {
+            "option_a": "Server Name",
+            "option_b": "Port",
+            "option_c": "Force unicode conversion",
+            "option_d": "Azure Data Factory Name"
+        },
+        "answer": "option_d",
+        "explanation": "Azure Data Factory Name is not a required field when setting up a PostgreSQL connection; it is required when configuring the data factory resource itself."
+    }
+    , "question_24": {
+        "question": "What should you do if you encounter a 'JreNotFound' error when running a copy activity in Azure Data Factory?",
+        "options": {
+            "option_a": "Install the latest .NET Framework on the Integration Runtime machine",
+            "option_b": "Update the SQL authentication password",
+            "option_c": "Install Java Runtime Environment on the Self-hosted Integration Runtime machine",
+            "option_d": "Disable Git in the Azure Data Factory resource settings"
+        },
+        "answer": "option_c",
+        "explanation": "The 'JreNotFound' error indicates that Java Runtime Environment (JRE) is required for parsing or writing to Parquet/ORC files and must be installed on the Self-hosted Integration Runtime machine."
+    }
+    , "question_25": {
+        "question": "Where can you find the Tenant ID required to configure ODX Instance Storage in TimeXtender?",
+        "options": {
+            "option_a": "Under properties of Azure Storage Account",
+            "option_b": "Under properties of Azure Active Directory",
+            "option_c": "In the Azure portal's main dashboard",
+            "option_d": "Under the App Registrations section"
+        },
+        "answer": "option_b",
+        "explanation": "The Tenant ID, also known as the Directory ID, is found under the properties of Azure Active Directory."
+    }
+    , "question_26": {
+        "question": "What is the purpose of creating an App Registration in Azure when configuring Azure Data Lake Storage for an ODX instance?",
+        "options": {
+            "option_a": "To generate a new Azure subscription",
+            "option_b": "To configure access to Data Lake resources from TimeXtender",
+            "option_c": "To create a new Azure Storage Account",
+            "option_d": "To monitor the performance of the ODX instance"
+        },
+        "answer": "option_b",
+        "explanation": "An App Registration in Azure is necessary to configure access to Data Lake resources from TimeXtender, allowing the ODX instance to interact with the data lake."
+    }
+    , "question_27": {
+        "question": "Which tool is used to run a script that grants read access to all tables in an Azure SQL Database?",
+        "options": {
+            "option_a": "Azure portal",
+            "option_b": "TimeXtender desktop application",
+            "option_c": "Microsoft Docs",
+            "option_d": "SQL Server Management Studio (SSMS)"
+        },
+        "answer": "option_d",
+        "explanation": "The script to grant read access is run in SQL Server Management Studio (SSMS), according to the instructions."
+    }
+    , "question_28": {
+        "question": "In the TimeXtender desktop application, how do you provide users in a group access to only valid schemas?",
+        "options": {
+            "option_a": "Run the CREATE USER script with the valid schema",
+            "option_b": "Use the 'Set admin' option in the Azure portal",
+            "option_c": "Right click Database Roles > Object Security Setup > Click on Schemas and check user Access Role",
+            "option_d": "Deploy the security tab without any modifications"
+        },
+        "answer": "option_c",
+        "explanation": "To provide access to valid schemas, you right click Database Roles, go to Object Security Setup, click on Schemas, and check user Access Role, as per the process outlined."
+    }
+    , "question_29": {
+        "question": "What should you do if you encounter an error when trying to create required objects for SQL Data Warehouse?",
+        "options": {
+            "option_a": "Create a Server Level Firewall Rule",
+            "option_b": "Right-click on Data Warehouse > Create required objects for SQL DW as indicated in step 2",
+            "option_c": "Create a new Azure SQL Server",
+            "option_d": "Change the Server Storage Type to SLQ - Dedicated SQL Pool"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Troubleshooting' section suggests that if you encounter an error, you should right-click on Data Warehouse and create required objects for SQL DW as indicated in step 2."
+    }
+    , "question_30": {
+        "question": "Which option is NOT recommended for use on public networks when configuring the encryption for the connection to the Dedicated SQL Pool?",
+        "options": {
+            "option_a": "Yes: The communication is encrypted. The server's certificate is verified by a certificate authority.",
+            "option_b": "No: The communication is not encrypted (default).",
+            "option_c": "Yes, trust server certificate: The communication is encrypted, but the server's certificate is not verified.",
+            "option_d": "Use Azure AD Password Authentication"
+        },
+        "answer": "option_c",
+        "explanation": "The option 'Yes, trust server certificate' is not recommended for use on public networks because it encrypts the communication but does not verify the server's certificate."
+    }
+    , "question_31": {
+        "question": "Which role must you select in the Snowflake portal to create a Snowflake Database?",
+        "options": {
+            "option_a": "ACCOUNTADMIN",
+            "option_b": "USER",
+            "option_c": "SYSADMIN",
+            "option_d": "PUBLIC"
+        },
+        "answer": "option_c",
+        "explanation": "To create a Snowflake Database, you must switch to the SYSADMIN role in the Snowflake portal."
+    }
+    , "question_32": {
+        "question": "How do you configure the ODBC Data Source for Snowflake in TimeXtender?",
+        "options": {
+            "option_a": "Install the Snowflake JDBC driver and configure in TimeXtender",
+            "option_b": "Use the default ODBC Data Source provided by TimeXtender",
+            "option_c": "Download and install the Snowflake ODBC driver and configure in the ODBC Data Source Administrator Application",
+            "option_d": "Configure directly in TimeXtender without any additional drivers"
+        },
+        "answer": "option_c",
+        "explanation": "To configure the ODBC Data Source for Snowflake, you must download and install the Snowflake ODBC driver and then configure it in the ODBC Data Source Administrator Application."
+    }
+    , "question_33": {
+        "question": "What should be done if an Azure VM is experiencing access issues due to firewall settings?",
+        "options": {
+            "option_a": "Open Port 80 for all Azure VMs",
+            "option_b": "Create a rule for Port 1433 outside Azure VMs",
+            "option_c": "Make a rule for the server in the firewall to allow communication to the ODX Server",
+            "option_d": "Ignore the issue as it will resolve itself"
+        },
+        "answer": "option_c",
+        "explanation": "A rule should be made in the firewall to allow for communication to the ODX Server from the Cloud repository to resolve access issues."
+    }
+    , "question_34": {
+        "question": "Which of the following is NOT a correct pairing of a server and its required port for TimeXtender setup?",
+        "options": {
+            "option_a": "api.timextender.com Port 443",
+            "option_b": "management.azure.com Port 443",
+            "option_c": "auth0.com Port 80",
+            "option_d": "app.timextender.com Port 443"
+        },
+        "answer": "option_c",
+        "explanation": "auth0.com requires Port 443, not Port 80, for TimeXtender setup."
+    }
+    , "question_35": {
+        "question": "What is the purpose of a SQL Database, Synapse Dedicated SQL Pool, or Snowflake Data Warehouse in TimeXtender?",
+        "options": {
+            "option_a": "To store raw data for backup purposes",
+            "option_b": "To serve as a web portal for administration",
+            "option_c": "To cleanse, transform, and consolidate data into a single version of truth",
+            "option_d": "To configure and implement instances through a user interface"
+        },
+        "answer": "option_c",
+        "explanation": "A SQL Database, Synapse Dedicated SQL Pool, or Snowflake Data Warehouse is used to cleanse, transform, and consolidate data from multiple sources into a single version of truth in TimeXtender."
+    }
+    , "question_36": {
+        "question": "What is an instance in the context of TimeXtender?",
+        "options": {
+            "option_a": "A physical or virtual machine where the server software is installed",
+            "option_b": "A subset of related data combined into a single model",
+            "option_c": "A metadata component configured in the portal",
+            "option_d": "A type of data source used for ingestion"
+        },
+        "answer": "option_c",
+        "explanation": "In TimeXtender, an instance refers to a metadata component of the TimeXtender Data Estate, which is configured in the portal."
+    }
+    , "question_37": {
+        "question": "What version of TimeXtender is being referred to in the article?",
+        "options": {
+            "option_a": "6024.0",
+            "option_b": "6024.1",
+            "option_c": "6025.1",
+            "option_d": "6023.1"
+        },
+        "answer": "option_b",
+        "explanation": "The article mentions 'TimeXtender 6024.1' indicating the version being referred to."
+    }
+    , "question_38": {
+        "question": "What is the URL for accessing TimeXtender Portal according to the article?",
+        "options": {
+            "option_a": "www.timextender.com",
+            "option_b": "portal.timextender.com",
+            "option_c": "app.timextender.com",
+            "option_d": "desktop.timextender.com"
+        },
+        "answer": "option_c",
+        "explanation": "The article provides 'app.timextender.com' as the URL for accessing TimeXtender Portal."
+    }
+    , "question_39": {
+        "question": "What should you do if your server is behind a Proxy Server during the ODX Server Service configuration?",
+        "options": {
+            "option_a": "Skip the proxy settings",
+            "option_b": "Configure your proxy settings",
+            "option_c": "Contact TimeXtender support",
+            "option_d": "Disable the Proxy Server"
+        },
+        "answer": "option_b",
+        "explanation": "If your server is behind a Proxy Server, you should configure your proxy settings during the ODX Server Service configuration."
+    }
+    , "question_40": {
+        "question": "How should you specify the user account to run the ODX Server Service?",
+        "options": {
+            "option_a": "As .useraccount",
+            "option_b": "As useraccount@domainname",
+            "option_c": "As domainnameuseraccount",
+            "option_d": "As useraccount only"
+        },
+        "answer": "option_c",
+        "explanation": "The user account to run the ODX Server Service should be specified as domainnameuseraccount, not as .useraccount."
+    }
+    , "question_41": {
+        "question": "In TimeXtender, what does the 'Type for new relations' setting determine?",
+        "options": {
+            "option_a": "How new tables are created",
+            "option_b": "How TimeXtender treats foreign key violations",
+            "option_c": "The type of relationship between tables",
+            "option_d": "The naming convention for new relations"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Type for new relations' setting in TimeXtender determines how the system should treat foreign key violations, with options such as Error, Warning, or Physical."
+    }
+    , "question_42": {
+        "question": "Which hashing algorithm is described as the safest in terms of the probability that two different data sets would create identical hashes?",
+        "options": {
+            "option_a": "SHA-1, SQL Server 2016 +",
+            "option_b": "SHA-1, SQL Server 2005 +",
+            "option_c": "SHA-2 512, SQL Server 2016 +",
+            "option_d": "Legacy binary"
+        },
+        "answer": "option_c",
+        "explanation": "SHA-2 512, SQL Server 2016 + is described as the safest hashing algorithm offered by TimeXtender, due to its low probability of creating identical hashes for different data sets."
+    }
+    , "question_43": {
+        "question": "What should be done before upgrading TimeXtender according to the best practices outlined?",
+        "options": {
+            "option_a": "Backup the current instance and stop any running jobs",
+            "option_b": "Delete all previous versions of TimeXtender",
+            "option_c": "Disconnect all data sources",
+            "option_d": "Reinstall the .NET framework"
+        },
+        "answer": "option_a",
+        "explanation": "The text advises to save and close current instances and ensure any scheduled jobs are not running before upgrading TimeXtender."
+    }
+    , "question_44": {
+        "question": "According to the text, what is a proactive step to maintain the performance of SQL databases in TimeXtender?",
+        "options": {
+            "option_a": "Regularly restarting the database server",
+            "option_b": "Automating a process for backups, cleanups, and optimizations",
+            "option_c": "Increasing the storage capacity",
+            "option_d": "Upgrading the database server hardware"
+        },
+        "answer": "option_b",
+        "explanation": "The text recommends working with a DB administrator to automate a process for backups, cleanups, and optimizations on SQL Servers to maintain performance."
+    }
+    , "question_45": {
+        "question": "Which components are not necessary for SQL Server 2017 editions and above when installing TimeXtender on a separate server?",
+        "options": {
+            "option_a": "Microsoft SQL Server Native Client",
+            "option_b": "Microsoft SQL Server System CLR Types",
+            "option_c": "Microsoft SQL Server Management Objects (SMO)",
+            "option_d": "All of the above"
+        },
+        "answer": "option_d",
+        "explanation": "For SQL Server 2017 editions and above, it is not necessary to install Microsoft SQL Server Native Client, Microsoft SQL Server System CLR Types, and Microsoft SQL Server Management Objects (SMO)."
+    }
+    , "question_46": {
+        "question": "Which edition of Microsoft SQL Server is the minimum requirement for TimeXtender?",
+        "options": {
+            "option_a": "Express Edition",
+            "option_b": "Standard Edition",
+            "option_c": "Developer Edition",
+            "option_d": "Enterprise Edition"
+        },
+        "answer": "option_b",
+        "explanation": "The minimum edition of Microsoft SQL Server required for TimeXtender is the Standard Edition."
+    }
+    , "question_47": {
+        "question": "What happens when 'Data types' is checked in the View menu of TimeXtender?",
+        "options": {
+            "option_a": "Data types are hidden in the interface",
+            "option_b": "Data types are added as a prefix to field names",
+            "option_c": "Data types are added as a postfix to field names",
+            "option_d": "Data types are converted to a default type"
+        },
+        "answer": "option_c",
+        "explanation": "When 'Data types' is checked in the View menu, field data types are added as a postfix to their names, providing clarity on the type of data each field contains."
+    }
+    , "question_48": {
+        "question": "What does the TimeXtender user interface display when 'Highlight descriptions' is enabled?",
+        "options": {
+            "option_a": "It highlights the description text in yellow",
+            "option_b": "It displays objects with descriptions in bold text",
+            "option_c": "It underlines the objects with descriptions",
+            "option_d": "It creates a pop-up window with descriptions"
+        },
+        "answer": "option_b",
+        "explanation": "When 'Highlight descriptions' is checked, objects in the tree that have a description are displayed with bold text, making them stand out for easy identification."
+    }
+    , "question_49": {
+        "question": "For small size databases, which AWS RDS SQL Server instance is suggested?",
+        "options": {
+            "option_a": "m5.large",
+            "option_b": "t2.micro",
+            "option_c": "t2.xlarge",
+            "option_d": "m5.xlarge"
+        },
+        "answer": "option_a",
+        "explanation": "The m5.large instance is recommended for small size databases, offering 2 vCPUs and 8 GiB of memory."
+    }
+    , "question_50": {
+        "question": "What tool does AWS provide to help estimate costs for various configurations?",
+        "options": {
+            "option_a": "AWS Cost Explorer",
+            "option_b": "AWS Budgets",
+            "option_c": "AWS Pricing Calculator",
+            "option_d": "AWS Total Cost of Ownership Calculator"
+        },
+        "answer": "option_c",
+        "explanation": "AWS provides the AWS Pricing Calculator to help users estimate their costs for different configurations."
+    }
+    , "question_51": {
+        "question": "What is the primary benefit of using Azure SQL Single DB Serverless for data warehouse storage in TimeXtender's Azure reference architecture?",
+        "options": {
+            "option_a": "Unlimited storage capacity",
+            "option_b": "Auto-scaling compute resources",
+            "option_c": "Auto-pause capability",
+            "option_d": "Built-in machine learning services"
+        },
+        "answer": "option_c",
+        "explanation": "Azure SQL Single DB Serverless has the ability to auto-pause, which can be a cost-saving feature for data warehouse storage."
+    }
+    , "question_52": {
+        "question": "What does TimeXtender recommend using for large data movement tasks in Azure?",
+        "options": {
+            "option_a": "Azure Blob Storage",
+            "option_b": "Azure Data Factory",
+            "option_c": "Azure Data Lake Storage",
+            "option_d": "Azure SQL Data Warehouse"
+        },
+        "answer": "option_b",
+        "explanation": "For large data movement tasks, TimeXtender recommends using Azure Data Factory due to its performance and ease of use."
+    }
+    , "question_53": {
+        "question": "What is the primary benefit of using Azure Synapse SQL Pool for data warehouse storage at scale?",
+        "options": {
+            "option_a": "Support for JSON data types",
+            "option_b": "Massively parallel processing capabilities",
+            "option_c": "Built-in machine learning services",
+            "option_d": "Automatic data encryption"
+        },
+        "answer": "option_b",
+        "explanation": "Azure Synapse SQL Pool offers massively parallel processing capabilities, making it suitable for large-scale data warehouse storage."
+    }
+    , "question_54": {
+        "question": "What does TimeXtender use to transport data when using Azure Synapse for a data warehouse?",
+        "options": {
+            "option_a": "Azure Data Factory",
+            "option_b": "PolyBase",
+            "option_c": "Azure Blob Storage",
+            "option_d": "Azure Data Lake Storage"
+        },
+        "answer": "option_b",
+        "explanation": "TimeXtender automatically switches to PolyBase for data transport when using Azure Synapse for a data warehouse."
+    }
+    , "question_55": {
+        "question": "Where should the ODX Server Service be hosted according to the TimeXtender on-prem reference architecture?",
+        "options": {
+            "option_a": "On a cloud platform",
+            "option_b": "Locally on the App Server",
+            "option_c": "On a separate database server",
+            "option_d": "Remotely on a third-party server"
+        },
+        "answer": "option_b",
+        "explanation": "The ODX Server Service should be hosted locally on the App Server as per the TimeXtender on-prem reference architecture."
+    }
+    , "question_56": {
+        "question": "What is the role of SQL Server Analysis Services in the TimeXtender on-prem reference architecture?",
+        "options": {
+            "option_a": "To host the TimeXtender application",
+            "option_b": "To store raw data",
+            "option_c": "To serve data to Power BI and Excel",
+            "option_d": "To manage firewall exceptions"
+        },
+        "answer": "option_c",
+        "explanation": "SQL Server Analysis Services is the ideal way to serve data to Power BI and Excel, making it an optional step in the TimeXtender on-prem reference architecture."
+    }
+    , "question_57": {
+        "question": "What file format does TimeXtender use to write files in the data lake?",
+        "options": {
+            "option_a": "CSV",
+            "option_b": "JSON",
+            "option_c": "Parquet",
+            "option_d": "Avro"
+        },
+        "answer": "option_c",
+        "explanation": "TimeXtender writes files in Parquet file format, which is a highly compressed, columnar storage format."
+    }
+    , "question_58": {
+        "question": "Which cloud platforms does Snowflake's multi-cloud compatibility allow users to deploy on?",
+        "options": {
+            "option_a": "AWS and Azure",
+            "option_b": "GCP and IBM Cloud",
+            "option_c": "AWS and GCP",
+            "option_d": "Azure and IBM Cloud"
+        },
+        "answer": "option_c",
+        "explanation": "Snowflake's multi-cloud compatibility allows users to deploy on AWS or GCP."
+    }
+    , "question_59": {
+        "question": "What is the correct sequence of steps to remove a project variable that cannot be migrated?",
+        "options": {
+            "option_a": "Tools menu > Project Variables > Select variable > Delete",
+            "option_b": "Project Variables > Tools menu > Delete > Confirm",
+            "option_c": "Select variable > Tools menu > Delete > Save changes",
+            "option_d": "Delete > Project Variables > Tools menu > Confirm deletion"
+        },
+        "answer": "option_a",
+        "explanation": "The correct sequence, as outlined in the provided context, is to open the Tools menu, select Project Variables, select the relevant variable, and then click Delete."
+    }
+    , "question_60": {
+        "question": "Which SQL mode setting should be used for lookup fields to replace the deprecated 'Partition by' setting?",
+        "options": {
+            "option_a": "Group by",
+            "option_b": "Order by",
+            "option_c": "Distinct",
+            "option_d": "None of the above"
+        },
+        "answer": "option_a",
+        "explanation": "The provided context indicates that the 'Partition by' SQL mode in lookup fields is deprecated and should be changed to 'Group by'."
+    }
+    , "question_61": {
+        "question": "Before using the Migration Tool to upgrade from TimeXtender v20.10, what must be done according to the provided checklist?",
+        "options": {
+            "option_a": "Create a new project in the latest version",
+            "option_b": "Upgrade to the newest version of LTS",
+            "option_c": "Host project repositories locally",
+            "option_d": "Generate new License Keys and Client Secrets"
+        },
+        "answer": "option_b",
+        "explanation": "According to the checklist, you need to upgrade to the newest version of LTS (Long Time Support) before using the Migration Tool."
+    }
+    , "question_62": {
+        "question": "What is the purpose of the 'Validate' step when using the Migration Tool in TimeXtender?",
+        "options": {
+            "option_a": "To confirm user permissions for the migration",
+            "option_b": "To ensure the same destination instance is not selected twice",
+            "option_c": "To check the compatibility of the old data sources with the new version",
+            "option_d": "To validate the project's semantic models"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Validate' step checks to ensure that the same destination instance is not selected twice and also validates that the project is mapped into a Data Warehouse instance."
+    }
+    , "question_63": {
+        "question": "What is the first step in the Upgrade Steps for TimeXtender?",
+        "options": {
+            "option_a": "Launch the TimeXtender Execution Server Configuration",
+            "option_b": "Download the latest version of TimeXtender ODX Server",
+            "option_c": "Uninstall previous versions of TimeXtender",
+            "option_d": "Check the Job Monitor"
+        },
+        "answer": "option_b",
+        "explanation": "The first step in the upgrade process is to download the latest version of TimeXtender ODX Server."
+    }
+    , "question_64": {
+        "question": "What should you do after upgrading TimeXtender as per the Post Upgrade Checklist?",
+        "options": {
+            "option_a": "Restart the computer immediately",
+            "option_b": "Open each TimeXtender instance and upgrade it if prompted",
+            "option_c": "Disable the TimeXtender services",
+            "option_d": "Reinstall the previous version of TimeXtender"
+        },
+        "answer": "option_b",
+        "explanation": "After upgrading, you should open each TimeXtender instance and perform an upgrade on the instance if you receive a prompt to do so."
+    }
+}

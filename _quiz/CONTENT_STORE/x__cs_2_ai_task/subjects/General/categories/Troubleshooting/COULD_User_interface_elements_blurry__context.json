@@ -1,0 +1,21 @@
+{
+    "DateTime": "2023-12-27 14:43:16",
+    "URL": "https://support.timextender.com/troubleshooting-134/user-interface-elements-blurry-very-small-or-missing-1299",
+    "Keywords": "missing",
+    "Title": "User interface elements blurry, very small or missing _ Community",
+    "Author": "Thomas Lind",
+    "Text": "The user interface looks blurry, items are very small or items are missing from the user interface. This may only happen when logged into a remote desktop session. None Issues with display scaling. TimeXtender is DPI-aware, which means that it should display properly in the scaling factor of the primary monitor. However, if you move the window to a monitor with a different display scaling factor, Windows will scale the application. Since this basically resizes the application like you would enlarge a picture in a photo editor, this will make the application look slightly blurry. Even when text and UI elements look crisp, bitmap elements in the user interface, such as icons, might look blurry since they are not rendered for all scaling factors. While there should not be issues with incorrect item size and missing items in standard scaling factors such as 125%, 150% or 200%, custom scaling sizes are not guaranteed to work. Ensure that your computer's display scaling factor is not custom and the same on all monitors.  If you are having this issue on a remote desktop connection, thisresolution will not work unless you follow these steps carefully: ",
+    "Lists": [
+        {
+            "heading": "Resolution",
+            "paragraphs": [
+                "Ensure that your computer's display scaling factor is not custom and the same on all monitors."
+            ],
+            "list": [
+                "On the Start Menu, click the settings (gear) icon",
+                "In Windows Settings, click System",
+                "Ensure that the value in Change the size of text, apps, and other items list is the same for all monitors."
+            ]
+        }
+    ]
+}

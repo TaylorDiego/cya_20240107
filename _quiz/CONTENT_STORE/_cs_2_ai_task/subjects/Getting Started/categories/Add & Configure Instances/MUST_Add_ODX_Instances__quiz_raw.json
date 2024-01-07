@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the default storage type when configuring an ODX instance in TimeXtender?",
+        "options": {
+            "option_a": "Azure SQL Database",
+            "option_b": "SQL Server",
+            "option_c": "Azure Data Lake Gen2",
+            "option_d": "Azure SQL Managed Instance"
+        },
+        "answer": "option_c",
+        "explanation": "Azure Data Lake Gen2 is the default storage type for an ODX instance in TimeXtender, as mentioned in the provided context."
+    },
+    "question_2": {
+        "question": "Which authentication method is required for Azure SQL Database, Azure SQL Managed Instance, or SQL Database when adding an ODX instance in TimeXtender?",
+        "options": {
+            "option_a": "Windows Authentication",
+            "option_b": "SQL Server Authentication",
+            "option_c": "OAuth 2.0",
+            "option_d": "No authentication is required"
+        },
+        "answer": "option_b",
+        "explanation": "SQL Server Authentication is required for Azure SQL Database, Azure SQL Managed Instance, or SQL Database when adding an ODX instance in TimeXtender."
+    },
+    "question_3": {
+        "question": "What should be entered in the 'IP or hostname' box when configuring the ODX Server Connection Info in TimeXtender?",
+        "options": {
+            "option_a": "The private IP address of the ODX server",
+            "option_b": "The public IP address or DNS name defined for the VM in Azure",
+            "option_c": "The MAC address of the ODX server",
+            "option_d": "Any IP address as it does not need to be reachable"
+        },
+        "answer": "option_b",
+        "explanation": "The public IP address or DNS name defined for the VM in Azure should be entered in the 'IP or hostname' box, as this will be used by TimeXtender Desktop to connect to the ODX."
+    },
+    "question_4": {
+        "question": "What is the purpose of the 'Encrypt connection' list when setting up storage for an ODX instance in TimeXtender?",
+        "options": {
+            "option_a": "To choose the encryption algorithm for the database",
+            "option_b": "To enable or disable encryption of the connection",
+            "option_c": "To encrypt the ODX instance's data at rest",
+            "option_d": "To generate a new encryption key"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Encrypt connection' list is used to enable or disable encryption of the connection between TimeXtender and the SQL server, with options to verify the server's certificate or not."
+    },
+    "question_5": {
+        "question": "How many ODX instances can one ODX server host according to the TimeXtender setup guide?",
+        "options": {
+            "option_a": "Multiple, as long as they have different names",
+            "option_b": "Only one ODX instance per ODX server",
+            "option_c": "Up to five, depending on the server's capacity",
+            "option_d": "The number is not specified in the guide"
+        },
+        "answer": "option_b",
+        "explanation": "According to the TimeXtender setup guide, one ODX server can only host one ODX instance, and each instance should have unique settings."
+    },
+    "question_6": {
+        "question": "Before executing transfer tasks in an ODX instance, what must be created according to the TimeXtender documentation?",
+        "options": {
+            "option_a": "A new user account",
+            "option_b": "The data storage",
+            "option_c": "A backup of the current system state",
+            "option_d": "An inbound security rule"
+        },
+        "answer": "option_b",
+        "explanation": "Before executing transfer tasks in an ODX instance, the data storage must be created as per the TimeXtender documentation."
+    }
+}

@@ -1,0 +1,80 @@
+{
+    "DateTime": "2023-12-27 14:39:37",
+    "URL": "https://support.timextender.com/configure-resources-126/use-snowflake-data-warehouse-storage-727",
+    "Keywords": "missing",
+    "Title": "Use Snowflake Data Warehouse Storage _ Community",
+    "Author": "missing",
+    "Text": "Snowflake is a cloud-based data warehouse storage technology withautomatic usage-based scaling of compute and storage resources.Additionally, Snowflake offers multi-cloud compatibility, allowing for greater flexibility in data management across different platforms. TimeXtender 6143.1 Premium Tier TimeXtender 6429.1 app.snowflake.com Account Warehouse TimeXtender Porta Instances Add Data Warehouse   Error: Cause: Solution: account name, Error:  Cause Solution: SAS token Error: Cause: Solution: Error: Cause https://community.snowflake.com/s/article/FAQ-User-and-Password-Management ",
+    "Lists": [
+        {
+            "heading": "Create a Snowflake Database",
+            "paragraphs": [],
+            "list": [
+                "Log into the snowflake portal app.snowflake.com, click your name> Switch Role > select the SYSADMIN role",
+                "Click Data > Databases",
+                "Click + Database",
+                "Give your Database a name and click Create"
+            ]
+        },
+        {
+            "heading": "Get Snowflake Instance Details",
+            "paragraphs": [
+                "Log into the snowflake portal app.snowflake.com",
+                "Find the Snowflake Account Identifier"
+            ],
+            "list": [
+                "The Snowflake Account Identifier should look like this: <OrganzationID>-<AccountID>",
+                "To find the Account Identifier in the snowflake portal click  Admin > Accounts > Next to your account ID, click the link Copy the subdomain of the URL, the portion between \u201chttps://\u201d and the first \u201c.\u201d",
+                "Admin >",
+                "Accounts >",
+                "Next to your account ID, click the link",
+                "Copy the subdomain of the URL, the portion between \u201chttps://\u201d and the first \u201c.\u201d"
+            ]
+        },
+        {
+            "heading": "Configure Data Warehouse Instance Storage",
+            "paragraphs": [
+                "In TimeXtender Portal > Data estate > Instances > Add Data Warehouse",
+                ""
+            ],
+            "list": [
+                "In the Server Storage Type, Select Snowflake",
+                "Enter your Account Identifier",
+                "Enter your Warehouse Name",
+                "Enter your Database Name",
+                "Enter your Port (Default is 443)",
+                "Enter Username: Created when you signed up for Snowflake",
+                "Enter Password: Created when you signed up for Snowflake",
+                "Connection Timeout: number of seconds to wait before terminating the attempt to connect to the server. Set it to 0 to wait indefinitely",
+                "Command Timeout: number of seconds to wait before terminating a command. Set it to 0 to wait indefinitely"
+            ]
+        },
+        {
+            "heading": "Configure SAS token for ODX ADLS storage",
+            "paragraphs": [],
+            "list": [
+                "In the Azure Portal portal.azure.com> go to your ADLS resource, go to Shared access signature",
+                "Check mark Service, Container and Object boxes",
+                "Specify an expiry date",
+                "Generate & Copy the SAS token"
+            ]
+        },
+        {
+            "heading": "Connecting to Tabular, Tableau and Power BI Endpoints from a Snowflake MDW",
+            "paragraphs": [],
+            "list": [
+                "Download and install the Snowflake ODBC driver https://developers.snowflake.com/odbc/",
+                "Open the ODBC Data Source Administrator Application and go to the System DSN tab",
+                "Press Add and select SnowflakeDSIIDriver. Click Finish.",
+                "In the Snowflake Configuration Dialog, provide a name for the data source, and enter the user and password that were created when you signed up for Snowflake. Specify the database, schema, warehouse and set Tracing to 0. Click Test to ensure the connection to the data source is successful. Press OK.",
+                "Select the MDW instance with Snowflake storage in the TimeXtender Portal in order to edit its details.",
+                "Type the Data Source name, that was entered into the Snowflake Configuration Dialog, into the DSN field. Press Save to confirm.",
+                "If using the Power BI endpoint, the ODBC Data source credentials must also be updated. After deploying the Power BI endpoint within TimeXtender Desktop. Navigate to the dataset in app.powerbi.com, and click on the three dots, and select Settings.",
+                "Expand the gateway connection menu and press the action button.",
+                "Click Add to gateway on the ODBC data source.",
+                "Provide a name for the gateway and the data source. Select basic authentication method and enter the Snowflake username and password. Press Create.",
+                "Expand the Gateway connection again and map the ODBC connection. Click Apply."
+            ]
+        }
+    ]
+}

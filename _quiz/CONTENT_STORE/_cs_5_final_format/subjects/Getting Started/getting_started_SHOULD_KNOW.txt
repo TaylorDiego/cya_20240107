@@ -1,0 +1,251 @@
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step to add a new environment in TimeXtender according to the article?
+
+{"score":0}Select the instances to include in the environment.
+{"score":100.0}Navigate to Data estate > Environments and click Add environment.
+{"score":0}Name the environment.
+{"score":0}Click on the edit icon to modify an existing environment.
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must be true for an instance to be transferred to another in TimeXtender?
+
+{"score":0}The instances must be of different types.
+{"score":0}The instances must be part of the same environment.
+{"score":100.0}The instances must be of the same type.
+{"score":0}The destination instance must be a new instance.
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary benefit of installing TimeXtender services and SQL Server databases on the same Windows server?
+
+{"score":0}It is more cost-effective.
+{"score":100.0}It offers performance advantages due to zero network latency.
+{"score":0}It allows for unlimited user access.
+{"score":0}It simplifies the SQL Server licensing requirements.
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a recommended practice before finalizing the server configuration for TimeXtender?
+
+{"score":0}Consulting the default settings provided by TimeXtender.
+{"score":0}Using the minimum hardware requirements as a guideline.
+{"score":100.0}Conducting your own testing or obtaining an expert recommendation.
+{"score":0}Copying the configuration from another organization.
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step to deploy the TimeXtender Application Server on Azure?
+
+{"score":0}Install TimeXtender and ODX Server
+{"score":100.0}Sign-in to https://portal.azure.com
+{"score":0}Configure your desired properties for the Virtual Machine
+{"score":0}Navigate to the TimeXtender Application Server Azure Deployment
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Approximately how long does it take to deploy the necessary Azure resources for TimeXtender Application Server?
+
+{"score":0}About 5 minutes
+{"score":100.0}About 15 minutes
+{"score":0}About 30 minutes
+{"score":0}About 60 minutes
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default port number that should be set for a publicly accessible AWS RDS SQL Database?
+
+{"score":0}3306
+{"score":100.0}1433
+{"score":0}1521
+{"score":0}5432
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which AWS service is used to create a virtual machine for SQL Server?
+
+{"score":0}EC2
+{"score":0}Lambda
+{"score":100.0}Lightsail
+{"score":0}Elastic Beanstalk
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step to use Azure Analysis Services as a target for the Semantic Layer Endpoint?
+
+{"score":0}Create an App Registration in Azure Active Directory
+{"score":0}Deploy the Semantic Model in TimeXtender
+{"score":100.0}Create an Analysis Services Resource in Azure
+{"score":0}Assign the App Registration as Analysis Services Admin
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where do you need to complete the App Registration for Azure Analysis Services?
+
+{"score":100.0}Azure Portal > App Registrations > New Registration
+{"score":0}TimeXtender Portal > Data Estate > Instances
+{"score":0}SQL Server Management Studio
+{"score":0}Azure Analysis Services > Server Properties > Security
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of using Azure Data Factory for data movement according to the TimeXtender guide?
+
+{"score":0}To manage user permissions and roles within Azure
+{"score":100.0}To transfer data directly from source to target without relying on application server resources
+{"score":0}To provide a graphical interface for SQL database management
+{"score":0}To encrypt data during transfer between different Azure services
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must be installed on a local server if you want to use Azure Data Factory to transfer data from a non-Azure data source?
+
+{"score":0}Azure Data Lake Storage
+{"score":100.0}Self-Hosted Integration Runtime
+{"score":0}Azure Data Factory V2
+{"score":0}Azure Active Directory
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What type of storage account is recommended for hosting an ODX database in Azure Data Lake?
+
+{"score":0}StorageV1 (general-purpose v1)
+{"score":0}BlobStorage
+{"score":100.0}StorageV2 (general-purpose v2)
+{"score":0}BlockBlobStorage
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must be enabled on the Azure Storage Account to use it with TimeXtender for Azure Data Lake Storage?
+
+{"score":100.0}Hierarchical namespace
+{"score":0}Multi-region writes
+{"score":0}Blob soft delete
+{"score":0}File sync
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step when configuring read access to an Azure SQL Database according to the provided text?
+
+{"score":0}Run a script in SSMS to create a user from an external provider
+{"score":0}Deploy the security tab in TimeXtender
+{"score":100.0}Give admin privileges to the user making the initial changes
+{"score":0}Set the user as the Azure Active Directory admin
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How do you assign an Azure Active Directory user as the admin for an Azure SQL Database?
+
+{"score":0}Run the CREATE USER script in SSMS
+{"score":100.0}In the Azure portal, set your user as the admin using the 'Set admin' option
+{"score":0}Deploy the security tab in TimeXtender
+{"score":0}Add the user manually in the TimeXtender desktop application
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step to create an Azure Synapse Dedicated SQL Pool according to the provided text?
+
+{"score":0}Create a Server Level Firewall Rule
+{"score":100.0}In the Azure Portal, click 'Create a Resource' and type 'Dedicated SQL Pool'
+{"score":0}Right-click the Instance > Edit Instance > Create Storage...
+{"score":0}Open the Data Warehouse Instance
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which authentication method uses the logged-in Windows user's credentials for authentication, provided that the user is logged in using Azure AD credentials from a domain that is federated with Azure AD?
+
+{"score":0}Windows Authentication
+{"score":0}SQL Server Authentication
+{"score":0}Azure AD Password Authentication
+{"score":100.0}Azure AD Integrated Authentication
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default port number used when configuring a Snowflake Data Warehouse instance in TimeXtender?
+
+{"score":0}80
+{"score":100.0}443
+{"score":0}8080
+{"score":0}3306
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where can you find the Snowflake Account Identifier in the Snowflake portal?
+
+{"score":0}Admin > Users > Your Profile
+{"score":100.0}Admin > Accounts > Next to your account ID
+{"score":0}Home > Dashboard > Account Details
+{"score":0}Help > Documentation > Account Information
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which AWS service is recommended for hosting the TimeXtender application according to the provided architecture?
+
+{"score":0}AWS Lambda
+{"score":100.0}AWS EC2
+{"score":0}AWS S3
+{"score":0}AWS RDS
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the recommended instance type for moderate workloads of TimeXtender on AWS EC2?
+
+{"score":0}t2.micro
+{"score":0}t2.xlarge
+{"score":100.0}t2.2xlarge
+{"score":0}m5.large
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the recommended Azure Virtual Machine (VM) size for moderate workloads in TimeXtender's Azure reference architecture?
+
+{"score":100.0}DS2_v2
+{"score":0}DS3_v2
+{"score":0}DS1_v2
+{"score":0}DS4_v2
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which feature must be enabled when creating ADLS Gen2 data lake service for use with TimeXtender?
+
+{"score":100.0}Hierarchical Namespaces
+{"score":0}Blob Storage
+{"score":0}Queue Storage
+{"score":0}File Storage
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the recommended Azure Virtual Machine size for moderate workloads when setting up TimeXtender in Azure?
+
+{"score":100.0}DS2_v2
+{"score":0}DS3_v2
+{"score":0}DS1_v2
+{"score":0}DS4_v2
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which feature must be enabled when creating ADLS Gen2 data lake service for use with TimeXtender?
+
+{"score":100.0}Hierarchical Namespaces
+{"score":0}Blob Storage
+{"score":0}Queue Storage
+{"score":0}File Storage
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What environment is recommended to serve the TimeXtender application on-premise?
+
+{"score":0}Linux Server
+{"score":100.0}Windows Server
+{"score":0}macOS Server
+{"score":0}Solaris Server
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which SQL Server version is recommended for ODX Server Storage database creation in TimeXtender?
+
+{"score":0}SQL Server 2012
+{"score":0}SQL Server 2014
+{"score":0}SQL Server 2016
+{"score":100.0}SQL Server 2017 or higher
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the recommended Azure Virtual Machine (VM) size for moderate workloads when setting up TimeXtender in the cloud?
+
+{"score":100.0}DS2_v2
+{"score":0}DS3_v2
+{"score":0}DS1_v2
+{"score":0}DS4_v2
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which feature must be enabled when creating the ADLS Gen2 data lake service for TimeXtender?
+
+{"score":100.0}Hierarchical Namespaces
+{"score":0}Blob Storage
+{"score":0}Queue Storage
+{"score":0}File Storage
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following objects can be skipped during the migration process without manual changes or deletions?
+
+{"score":100.0}Data Exports
+{"score":0}External Business Unit
+{"score":0}System type project variables
+{"score":0}Data Aggregations
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must be done with a project variable of type 'System' and value 'Environment Name' before migration?
+
+{"score":0}It can be migrated without changes.
+{"score":100.0}It must be manually changed or deleted.
+{"score":0}It can be ignored during migration.
+{"score":0}It should be renamed.
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a new feature of TimeXtender SaaS that enhances automation capabilities within Azure?
+
+{"score":0}Support for Snowflake as a Data Warehouse target storage
+{"score":100.0}Run PowerShell scripts in Execution Packages
+{"score":0}Goodbye License Keys and Client Secrets
+{"score":0}Simplified Multiple-Environment management & transfer in the portal
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following features from TimeXtender v20.10 is NOT present in the new SaaS version?
+
+{"score":100.0}Business Units
+{"score":0}Cloud-based Data Source connection management
+{"score":0}User sign-in and granular user permission management
+{"score":0}Simplified Multiple-Environment management
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do before upgrading TimeXtender according to the Pre-Upgrade Checklist?
+
+{"score":0}Restart your computer
+{"score":100.0}Ensure all Deployments have completed
+{"score":0}Delete old TimeXtender files
+{"score":0}Upgrade your operating system
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How do you prepare the TimeXtender services on the App Server before an upgrade?
+
+{"score":0}Uninstall the services
+{"score":0}Restart the services
+{"score":100.0}Stop the services and set their Startup Type to Disabled
+{"score":0}Upgrade the services directly

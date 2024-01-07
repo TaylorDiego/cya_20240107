@@ -1,0 +1,32 @@
+{
+    "DateTime": "2023-12-27 14:42:35",
+    "URL": "https://support.timextender.com/data-sources-112/prerequisites-to-connecting-to-dynamics-business-central-365-online-data-sources-1431",
+    "Keywords": "missing",
+    "Title": "Prerequisites to Connecting to Dynamics Business Central 365 Online Data Sources _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "TimeXtender Dynamics 365 Business Central - Online D365 AUTOMATION SUPER https://businesscentral.dynamics.com/ SUPER User Permission Sets D365 Automation Jet Analytics Extensions Marketplace Allow HttpClient Request Connecting-to-Business-Central-Version-16-or-Later Note: ",
+    "Lists": [
+        {
+            "heading": "Setting up the BC extension",
+            "paragraphs": [
+                "Install \"Jet Analytics\" from the Extensions Marketplace in BC and enable the setting Allow HttpClient Request, as shown in the following article. Connecting-to-Business-Central-Version-16-or-Later"
+            ],
+            "list": [
+                "Within the Business Central portal, using the search icon, navigate to Extension Management",
+                "Click Manage \u2192 Extension Marketplace",
+                "Search for Jet Analytics and click Get it now",
+                "Verify extension installation. Click Manage and then Deployment Status",
+                "Verify that the status column has a value of completed",
+                "Navigate to Extension Management, locate the Jet Analytics extension, and click on the menu next to the extension name (indicated by three vertical dots). Click Configure and allow HTTP client requests.   Note: if you are configuring a Production environment you can skip this step"
+            ]
+        },
+        {
+            "heading": "Set up an app to use for authentication",
+            "paragraphs": [],
+            "list": [
+                "To register an Azure AD application for authentication to BC, navigate to API permissions select Add a permission, and add the application permissions: https://docs.microsoft.com/en-us/dynamics365/business-central/dev-itpro/administration/automation-apis-using-s2s-authentication",
+                "Once the app is set up you can map it in BC. Search for Azure Active Directory Applications in BC and select new, and to find the client ID enter the Application (client) ID for your app registration, which can be found in the Overview page in Azure, and enter a description. Give the Application the \u201cD365 AUTOMATION\u201d User Permission Set"
+            ]
+        }
+    ]
+}

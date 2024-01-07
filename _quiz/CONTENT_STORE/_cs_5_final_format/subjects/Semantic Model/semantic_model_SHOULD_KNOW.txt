@@ -1,0 +1,139 @@
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of adding custom measures to a semantic table?
+
+{"score":0}To change the data source fields
+{"score":100.0}To calculate values not directly available in the data source
+{"score":0}To customize the semantic model's appearance
+{"score":0}To reduce the size of the semantic tables
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following settings is specific to SSAS Tabular and PowerBI Premium endpoints when adding a custom measure?
+
+{"score":0}Name of the custom measure
+{"score":0}Script that generates the value for the custom measure
+{"score":100.0}Description of the custom measure
+{"score":0}Data type of the custom measure
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of adding custom fields to a semantic table?
+
+{"score":0}To delete existing fields from the data warehouse
+{"score":100.0}To present content not normally available from a data warehouse instance
+{"score":0}To change the data type of existing fields
+{"score":0}To merge multiple semantic tables into one
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which character is used to separate fields in a custom field script for a Qlik Sense endpoint?
+
+{"score":0}Comma ','
+{"score":0}Plus sign '+'
+{"score":100.0}Ampersand '&'
+{"score":0}Semicolon ';'
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step to configure Power BI for deploying a semantic model according to the TimeXtender article?
+
+{"score":0}Copy the workspace connection.
+{"score":100.0}Login to app.powerbi.com
+{"score":0}Click the Premium tab
+{"score":0}Select the Premium per user or Premium per capacity License mode
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if you receive an authentication error when first attempting to execute your model in TimeXtender?
+
+{"score":0}Restart TimeXtender Desktop
+{"score":100.0}Update your data source credentials
+{"score":0}Copy the workspace connection again
+{"score":0}Create a new semantic model instance
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default port used when setting up a Qlik Endpoint with certificate authentication in TimeXtender?
+
+{"score":0}80
+{"score":0}443
+{"score":100.0}4747
+{"score":0}8080
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When deploying to Qlik Sense Enterprise, what should you do if you want TimeXtender to terminate an execution when a timeout is reached?
+
+{"score":100.0}Select 'Terminate execution when timeout is reached'
+{"score":0}Enter a timeout value in the Timeout box
+{"score":0}Use proxy authentication
+{"score":0}Use certificate authentication
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the only applicable type for a table-based measure in the semantic model?
+
+{"score":0}Sum
+{"score":100.0}Row Count
+{"score":0}Average
+{"score":0}Distinct Count
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following settings is applicable to SSAS Tabular, PowerBI Premium, and Tableau endpoints only?
+
+{"score":0}Name of the measure
+{"score":0}Type of measure
+{"score":100.0}Data type of the measure
+{"score":0}Description of the measure
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What action should be taken when the data type of a field in the Data Warehouse has been changed and is used in the semantic model?
+
+{"score":0}Delete the semantic model and create a new one.
+{"score":0}Manually change the data type in the semantic model.
+{"score":100.0}Synchronize the semantic model.
+{"score":0}Ignore the change as it will update automatically.
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens when you synchronize a semantic model after a data type change in the Data Warehouse?
+
+{"score":0}The semantic model is deleted.
+{"score":100.0}The data type change is auto-resolved.
+{"score":0}The semantic model becomes corrupted.
+{"score":0}The data type change must be resolved manually.
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary function of semantic models in a data warehouse?
+
+{"score":0}To store raw data for future processing
+{"score":0}To serve as the extraction layer for data
+{"score":100.0}To represent the culmination of all extraction, transformation, and loading processes
+{"score":0}To provide real-time data analytics
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does Model-Level Security in TimeXtender Semantic Security allow developers to do?
+
+{"score":0}Restrict access to specific rows within a table
+{"score":100.0}Implement role-based access to the semantic model
+{"score":0}Encrypt the data at the database level
+{"score":0}Automatically back up the semantic model
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of a relationship in semantic tables?
+
+{"score":0}To format the data in the tables
+{"score":100.0}To establish a connection between two tables of data
+{"score":0}To delete data from the tables
+{"score":0}To create a backup of the tables
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you add a new relation for a Qlik endpoint in a Semantic model?
+
+{"score":0}By writing a SQL query
+{"score":0}By importing an Excel file
+{"score":100.0}By dragging a field from one table to a field on another table and confirming the action
+{"score":0}By manually entering data into both tables
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of SSAS Perspectives?
+
+{"score":0}To increase the complexity of the tabular model
+{"score":100.0}To provide a focused subset of objects related to a specific area
+{"score":0}To rename tables in the tabular model
+{"score":0}To deploy the semantic model
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you create a new SSAS perspective in the Semantic Model Manage Perspectives window?
+
+{"score":0}By clicking 'Deploy'
+{"score":0}By clicking 'Execute'
+{"score":100.0}By clicking 'Add'
+{"score":0}By clicking 'Finish'
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is created in the data warehouse when you deploy a Tableau endpoint according to the provided text?
+
+{"score":0}A new data warehouse
+{"score":100.0}A view for each table in the model
+{"score":0}A copy of the semantic model
+{"score":0}A new Tableau dashboard
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What additional steps are mentioned for deploying a Tableau endpoint with Snowflake?
+
+{"score":0}Configure security settings
+{"score":0}Install Tableau Desktop
+{"score":100.0}Additional steps are required
+{"score":0}No additional steps are mentioned

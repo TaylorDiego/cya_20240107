@@ -1,0 +1,153 @@
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the maximum number of Data Integration Units (DIUs) per source data partition when copying from partition-option-enabled data stores to a single file?
+
+{"score":0}2 DIUs
+{"score":100.0}4 DIUs
+{"score":0}256 DIUs
+{"score":0}No limit on DIUs
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a benefit of using Delta-parquet files according to the text?
+
+{"score":0}Mitigates day-to-day performance issues
+{"score":100.0}Optimized for IOPS speed
+{"score":0}Reduces initial load benefit
+{"score":0}Adds overhead due to file bloat
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What can you see in the Execution Queue of the ODXServer?
+
+{"score":0}Only the tasks that are currently executing
+{"score":100.0}Tasks that are executing, waiting to start, or just finished
+{"score":0}Only the tasks that have finished executing
+{"score":0}Only the tasks that are waiting to start
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How do you open the Execution Queue in the ODXServer?
+
+{"score":100.0}Click on the ODX Execution Queue icon in the Tools menu
+{"score":0}Double-click on the ODX Server Manager
+{"score":0}Right-click on the ODX instance and choose Properties
+{"score":0}Go to the File menu and select Open Execution Queue
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of adding a row filter rule in ODX data sources?
+
+{"score":0}To increase the number of rows transferred to ODX storage
+{"score":100.0}To define criteria for rows to be excluded from transfer to ODX storage
+{"score":0}To duplicate data for backup purposes
+{"score":0}To change the schema of the data source
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following can be a criterion for a row filter rule in ODX?
+
+{"score":0}A row's color
+{"score":100.0}A row's ID being over a specific number
+{"score":0}The font style of text in a row
+{"score":0}The number of characters in a row
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of the article written by Greg Lennox on TimeXtender's support site?
+
+{"score":0}To discuss the financial aspects of TimeXtender
+{"score":100.0}To provide a tutorial on updating ODX data sources and data warehouse tables
+{"score":0}To announce new features in TimeXtender
+{"score":0}To compare SQL Server with other databases
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which command is mentioned in the article as being used to add an additional column to a table?
+
+{"score":0}CREATE TABLE
+{"score":0}UPDATE TABLE
+{"score":100.0}ALTER TABLE
+{"score":0}INSERT INTO
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of setting up an Incremental Load in a TimeXtender ODX instance?
+
+{"score":0}To ensure that all data transfers are full loads
+{"score":0}To allow for updates and deletes in the Data Warehouse
+{"score":100.0}To transfer only new or changed data since the last load
+{"score":0}To generate a PK table for every data transfer
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens if you do not use deletes in your Incremental Load setup in TimeXtender?
+
+{"score":100.0}It will only insert new rows without checking for duplicates
+{"score":0}Deletes will still be handled by default
+{"score":0}Incremental Load will be disabled
+{"score":0}All data will be treated as updates
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What functionality has been deprecated in favor of the ODX service in TimeXtender versions subsequent to 20.10?
+
+{"score":0}ODX data sources
+{"score":100.0}Business Units
+{"score":0}DSA
+{"score":0}Query Tables
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is TimeXtender currently developing to assist users with migration?
+
+{"score":0}A new version of ODX
+{"score":0}A legacy Business Units functionality
+{"score":100.0}A migration tool for Business Units to ODX
+{"score":0}A data comparison tool
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of synchronizing data sources and objects in TimeXtender?
+
+{"score":0}To improve the performance of data transfers
+{"score":100.0}To ensure that the ODX metadata matches up with the data source
+{"score":0}To create backups of the data source
+{"score":0}To remove outdated data from the ODX
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens when the synchronize task is executed after a column is added to the data source?
+
+{"score":0}The column is removed from the ODX metadata
+{"score":100.0}The column is added to the ODX metadata
+{"score":0}The data source is reset to its original state
+{"score":0}The ODX metadata is deleted
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must be done first to add a new table to a transfer task in TimeXtender?
+
+{"score":0}Execute the synchronization task after selecting the table on the transfer task level.
+{"score":100.0}Select the table on the data source level and execute the synchronization task.
+{"score":0}Directly add the table to the transfer task without any prior selection.
+{"score":0}Remove existing tables from the ODX storage before adding new ones.
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where is column selection available in TimeXtender?
+
+{"score":0}On the transfer task level only.
+{"score":0}On both the data source and transfer task levels.
+{"score":100.0}On the data source level only.
+{"score":0}Column selection is not available in TimeXtender.
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of executing a transfer task in TimeXtender?
+
+{"score":0}To delete data from the data source
+{"score":100.0}To transfer data from data source to data storage
+{"score":0}To synchronize data between different data sources
+{"score":0}To generate reports from the data source
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How do you add a task to a data source in TimeXtender?
+
+{"score":0}By executing a pre-existing task
+{"score":0}By importing tasks from another project
+{"score":100.0}By right-clicking the data source and following the wizard instructions
+{"score":0}By using the TimeXtender API
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step to search for tables in an ODX using TimeXtender?
+
+{"score":0}Drag-and-drop the tables from the data source onto the Data Area.
+{"score":100.0}Right-click on the ODX instance and click Open Table Selector.
+{"score":0}Select the sources you want to search and click Search.
+{"score":0}Right-click on the tables or Data Area and select Deploy.
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you add a new table from an ODX to a data warehouse when the table name does not exist in the data warehouse?
+
+{"score":0}Synchronize on Table Name.
+{"score":0}Add New Table with Field Selection.
+{"score":100.0}Add New Table (default).
+{"score":0}Synchronize with Other Table.
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary function of the ODX server in the context of TimeXtender?
+
+{"score":0}To provide a user interface for data analysis
+{"score":100.0}To perform the actual movement of data
+{"score":0}To generate reports from data
+{"score":0}To visualize data in dashboards
+-
+{"folder":"(2024_01) ODX","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where can the ODX server store the data it ingests?
+
+{"score":0}Only on-premise
+{"score":0}Only in the cloud
+{"score":100.0}Either on-premise or in the cloud
+{"score":0}Directly on TimeXtender desktop

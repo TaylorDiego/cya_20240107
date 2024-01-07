@@ -1,0 +1,67 @@
+{
+    "DateTime": "2023-12-27 14:40:07",
+    "URL": "https://support.timextender.com/odx-107/query-odx-parquet-files-with-azure-synapse-workspace-1469",
+    "Keywords": "missing",
+    "Title": "Query ODX Parquet files with Azure Synapse Workspace _ Community",
+    "Author": "Greg Lennox",
+    "Text": "TimeXtender's ODX service offers the flexibility to store its exchange-related data not only in SQL Server databases but also as Parquet files within an Azure Data Lake Gen 2 storage container. This guide clarifies the process of querying these Parquet files using SQL Server Management Studio, akin to querying data in SQL Server databases. Once your Azure Synapse Workspace establishes a connection with the Azure Data Lake Gen2 storage container, you can seamlessly execute ad hoc queries on the Parquet files. This is made possible through the potent SQL on-demand tool, enabling you to meticulously examine and assess the performance and resultant data stored within the ODX service.   In this article you will learn about:  Operational Data Exchange (ODX) continues to revolutionize TimeXtender's data storage and management practices. A pivotal shift in this paradigm is the concept of \"The ODX Never Forgets.\" By default, data is no longer truncated from the ODX storage. Instead, new full loads seamlessly augment existing data. The ODX Service adeptly oversees data extraction, ensuring only the most recent version is integrated into the data warehouse. However, this methodology poses challenges when querying data directly in theODX Storage. To help with this, the ODX now identifies data in a table by batch and version. When using Azure Data Lake storage, the ODX creates a unique file structure that can be used to determine the most recent version of the data. Starting at the Container level, the file structure for a single table mayappear as follows: The file/folder structure shown above provides the ability to make a visual assessment of each version folder and how itincludes ALL of the rows that the ODX has extracted up to the point where the next version is created. In summary, reviewing the data stored in the latestVERSION folder is a quickway toquery the most recent dataextracted by the ODX and stored inthe data lake. The following steps outlinetheprocess for using the AzureSynapse Workspace SQL On-Demand tool to perform ad hoc queries on the ODX parquet storage files.  MSFT: Query Parquet files AdventureWorks2014 Production.Product  --Query ODX Parquet files (returns all records)                     ",
+    "Lists": [
+        {
+            "heading": "ODX Parquet File Structure and Incremental Loads",
+            "paragraphs": [
+                "Operational Data Exchange (ODX) continues to revolutionize TimeXtender's data storage and management practices. A pivotal shift in this paradigm is the concept of \"The ODX Never Forgets.\" By default, data is no longer truncated from the ODX storage. Instead, new full loads seamlessly augment existing data. The ODX Service adeptly oversees data extraction, ensuring only the most recent version is integrated into the data warehouse. However, this methodology poses challenges when querying data directly in the ODX Storage.",
+                "To help with this, the ODX now identifies data in a table by batch and version."
+            ],
+            "list": [
+                "A batch contains only the rows for a table processed during a single execution.",
+                "A version consists of multiple batches, the initial full load (i.e. Batch 0000), as well as all subsequent incremental loads (i.e. Batches 0001-9999)."
+            ]
+        },
+        {
+            "heading": "Prerequisites",
+            "paragraphs": [],
+            "list": [
+                "Create a Synapse Workspace (MSFT: Create a Synapse Workspace) Note: When creating your workspace, make sure to create your own Security credential, rather than the default, sqladminuser.",
+                "Note: When creating your workspace, make sure to create your own Security credential, rather than the default, sqladminuser.",
+                "Connect SQL Server Management Studio (SSMS) to your workspace (MSFT: Connect Synapse to SSMS) Note: When connecting SSMS to your Synapse workspace, make sure to use the \"SQL on-demand endpoint, rather than the SQL endpoint.",
+                "Note: When connecting SSMS to your Synapse workspace, make sure to use the \"SQL on-demand endpoint, rather than the SQL endpoint.",
+                "In SQL Server Management Studio (SSMS), run a query similar to the following to create a credential using an identity that has access to the Azure Data Lake Gen2 storage location."
+            ]
+        },
+        {
+            "heading": "Query the Data Lake with Synapse Workspace and SSMS",
+            "paragraphs": [
+                "Using a Synapse Workspace to query Parquet files is straightforward. (MSFT: Query Parquet files)",
+                "For illustration, we'll use the AdventureWorks2014 database for our query results examples, specifically the Production.Product tables."
+            ],
+            "list": [
+                "In TimeXtender, Execute a data source in the ODX (connected to your ADLS Gen2 account).",
+                "In Azure Storage Explorer, verify that the data source has been executed.",
+                "In SSMS, execute the following query to connect to the parquet files.       --Query ODX Parquet files (returns all records) SELECT * FROM OPENROWSET(     BULK 'https://<StorageAccountName>.dfs.core.windows.net/<ContainerName>/<DataSourceShortName>/<Schema_TableName>/*/*/*.parquet'     , FORMAT = 'PARQUET') AS a"
+            ]
+        },
+        {
+            "heading": "Using the FILEPATH function to determine ODX version and batch",
+            "paragraphs": [],
+            "list": [
+                "The ODX data sources will not include an ODX_Timestamp within the table, (as of TimeXtender 20.10.1), however the filepath itself does contain the timestamp information. Review the file path to identify the data timestamps."
+            ]
+        },
+        {
+            "heading": "Adding the WHERE clause to filter query result by version",
+            "paragraphs": [],
+            "list": [
+                "Add a sub-query WHERE clause to select only the most current data load."
+            ]
+        },
+        {
+            "heading": "Troubleshooting",
+            "paragraphs": [],
+            "list": [
+                "Error message in SSMS, \"Incorrect Syntax near Format\" Ensure you are using the SQL on-demand endpoint to connect SSMS to your Synapse Workspace. If you re-connect to your Synapse workspace, you may need to create a new query to point to the SQL on-demand endpoint.    If your login to the Synapse Workspace (from SSMS) is sqladminuser, you may try either changing the login credentials (i.e. username and password), or create a new workspace.",
+                "Ensure you are using the SQL on-demand endpoint to connect SSMS to your Synapse Workspace. If you re-connect to your Synapse workspace, you may need to create a new query to point to the SQL on-demand endpoint.",
+                "If your login to the Synapse Workspace (from SSMS) is sqladminuser, you may try either changing the login credentials (i.e. username and password), or create a new workspace."
+            ]
+        }
+    ]
+}

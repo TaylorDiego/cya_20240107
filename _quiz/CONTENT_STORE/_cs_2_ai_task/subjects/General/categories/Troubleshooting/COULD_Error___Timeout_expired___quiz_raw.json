@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What is the default timeout setting for a query on a DW instance if it is not changed?",
+        "options": {
+            "option_a": "60 seconds",
+            "option_b": "100 seconds",
+            "option_c": "360 seconds",
+            "option_d": "3600 seconds"
+        },
+        "answer": "option_b",
+        "explanation": "The default timeout for a query on a DW instance is 100 seconds, after which the query will timeout if not completed."
+    },
+    "question_2": {
+        "question": "How can you resolve a timeout error for a table during data processing on a DW instance?",
+        "options": {
+            "option_a": "Restart the DW instance",
+            "option_b": "Decrease the Command Timeout value",
+            "option_c": "Set the Command Timeout to a higher value",
+            "option_d": "Delete and recreate the table"
+        },
+        "answer": "option_c",
+        "explanation": "To resolve a timeout error, you should set the Command Timeout to a higher value, such as 3600 seconds for a one-hour timeout."
+    }
+}

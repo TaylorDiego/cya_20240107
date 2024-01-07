@@ -1,0 +1,20 @@
+{
+    "DateTime": "2023-12-27 14:42:51",
+    "URL": "https://support.timextender.com/troubleshooting-134/error-could-not-load-file-or-assembly-microsoft-sqlserver-batchparser-dll-1241",
+    "Keywords": "missing",
+    "Title": "Error_ Could not load file or assembly 'Microsoft.SqlServer.BatchParser.dll' _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "You receive the following error:  An error occurred during executing this statement \\r\\n IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[<TableName>]') AND OBJECTPROPERTY(id, N'IsTable') = 1) DROP TABLE [<TableName>];: ExecuteNonQuery failed for Database '<DatabaseName>'. Microsoft.SqlServer.BatchParser.dll MicrosoftSQL Server 2016 Service Pack 2 Feature Pack ",
+    "Lists": [
+        {
+            "heading": "Resolution",
+            "paragraphs": [
+                "Download Microsoft SQL Server\u00ae 2016 Service Pack 2 Feature Pack and install the following packages:"
+            ],
+            "list": [
+                "ENU\\x64\\SharedManagementObjects.msi",
+                "ENU\\x64\\SQLSysClrTypes.msi"
+            ]
+        }
+    ]
+}

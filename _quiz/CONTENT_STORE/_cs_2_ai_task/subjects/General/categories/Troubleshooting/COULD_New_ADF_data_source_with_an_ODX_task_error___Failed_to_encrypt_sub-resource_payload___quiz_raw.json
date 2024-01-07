@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What should you ensure is online when executing ODX tasks for an ADF data source that requires it?",
+        "options": {
+            "option_a": "Self-Hosted Integration Runtime",
+            "option_b": "Cloud Data Factory",
+            "option_c": "On-Prem Data Gateway",
+            "option_d": "Azure Blob Storage"
+        },
+        "answer": "option_a",
+        "explanation": "The Self-Hosted Integration Runtime must be online to encrypt the payload when executing ODX tasks for an ADF data source."
+    },
+    "question_2": {
+        "question": "What error message might you receive if the Self-Hosted Integration Runtime is stopped after configuring a data source?",
+        "options": {
+            "option_a": "Data source configuration failed",
+            "option_b": "The Self-hosted Integration Runtime <Name> is offline",
+            "option_c": "CloudException: Failed to encrypt sub-resource payload",
+            "option_d": "ODX Synchronization or Transfer tasks failed"
+        },
+        "answer": "option_b",
+        "explanation": "Stopping the Self-Hosted Integration Runtime after configuring a data source may result in an error message indicating that the Self-hosted Integration Runtime is offline."
+    }
+}

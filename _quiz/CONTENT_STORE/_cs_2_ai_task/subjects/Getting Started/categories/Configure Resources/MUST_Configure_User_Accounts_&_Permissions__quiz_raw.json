@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "Which directory service is recommended for cloud deployments when configuring user accounts for TimeXtender?",
+        "options": {
+            "option_a": "Active Directory (AD)",
+            "option_b": "Azure Active Directory (AAD)",
+            "option_c": "Google Directory",
+            "option_d": "Amazon Web Services Directory Service"
+        },
+        "answer": "option_b",
+        "explanation": "For Cloud deployment, Azure Active Directory (AAD) is recommended, and for Azure Analysis Services, it is required."
+    },
+    "question_2": {
+        "question": "What type of permissions should the TimeXtender developers have in the TimeXtender Portal?",
+        "options": {
+            "option_a": "Read-only permissions",
+            "option_b": "Execution permissions",
+            "option_c": "Access to relevant instances",
+            "option_d": "Administrator permissions"
+        },
+        "answer": "option_c",
+        "explanation": "Each TimeXtender developer should have access to the relevant instances in the TimeXtender Portal."
+    },
+    "question_3": {
+        "question": "What role is required for a user to manage an Azure SQL Database as a Target Database?",
+        "options": {
+            "option_a": "db_datareader",
+            "option_b": "dbmanager",
+            "option_c": "db_owner",
+            "option_d": "server admin"
+        },
+        "answer": "option_d",
+        "explanation": "For Azure SQL DB as a Target Database, a user needs to be a server admin, Azure Active Directory admin, or have the dbmanager role in the master database."
+    },
+    "question_4": {
+        "question": "Which permission level is needed for a Service Account on the Application Server to run TimeXtender services?",
+        "options": {
+            "option_a": "db_datawriter",
+            "option_b": "db_owner",
+            "option_c": "sysadmin",
+            "option_d": "server administrator"
+        },
+        "answer": "option_c",
+        "explanation": "The Service Account on the Application Server must have sysadmin or dbOwner permissions to run the TimeXtender Execution Service and the TimeXtender ODX Server Service."
+    },
+    "question_5": {
+        "question": "What is the recommended directory service for On-Premise deployments when configuring user accounts for TimeXtender?",
+        "options": {
+            "option_a": "Azure Active Directory (AAD)",
+            "option_b": "Active Directory (AD)",
+            "option_c": "Novell eDirectory",
+            "option_d": "Red Hat Directory Server"
+        },
+        "answer": "option_b",
+        "explanation": "For On-Premise deployments, Active Directory (AD) is recommended, though it is not required."
+    },
+    "question_6": {
+        "question": "To use a Dedicated SQL Pool as the Target Storage for the MDW, what is the first step in the process?",
+        "options": {
+            "option_a": "Create a User in the desired Data Warehouse",
+            "option_b": "Assign the db_owner permission in the Data Warehouse",
+            "option_c": "Create SQL Server Login in the Master Database",
+            "option_d": "Execute sp_addrolemember in the Data Warehouse"
+        },
+        "answer": "option_c",
+        "explanation": "The first step to use a Dedicated SQL Pool as the Target Storage for the MDW is to create a SQL Server Login in the Master Database."
+    }
+}

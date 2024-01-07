@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What should you do if you encounter Error 1064 when using TimeXtender?",
+        "options": {
+            "option_a": "Reinstall TimeXtender",
+            "option_b": "Run the TimeXtender Execution Server Configuration",
+            "option_c": "Restart your computer",
+            "option_d": "Ignore the error"
+        },
+        "answer": "option_b",
+        "explanation": "Error 1064 requires running the TimeXtender Execution Server Configuration before starting the Execution Service to handle the control request properly."
+    },
+    "question_2": {
+        "question": "Which of the following is NOT listed as a step in the installation process of TimeXtender ODX Server?",
+        "options": {
+            "option_a": "Unzip the installation package and run Setup.exe",
+            "option_b": "Choose Setup Type page and select Typical, Complete, or Custom option",
+            "option_c": "Launch the ODX Server Configuration tool",
+            "option_d": "Install additional language packs"
+        },
+        "answer": "option_d",
+        "explanation": "The provided steps for installing TimeXtender ODX Server do not include installing additional language packs."
+    },
+    "question_3": {
+        "question": "What should you do if your server is behind a Proxy Server during the ODX Server Service configuration?",
+        "options": {
+            "option_a": "Skip the proxy settings",
+            "option_b": "Configure your proxy settings",
+            "option_c": "Contact TimeXtender support",
+            "option_d": "Disable the Proxy Server"
+        },
+        "answer": "option_b",
+        "explanation": "If your server is behind a Proxy Server, you should configure your proxy settings during the ODX Server Service configuration."
+    },
+    "question_4": {
+        "question": "How should you specify the user account to run the ODX Server Service?",
+        "options": {
+            "option_a": "As .useraccount",
+            "option_b": "As useraccount@domainname",
+            "option_c": "As domainnameuseraccount",
+            "option_d": "As useraccount only"
+        },
+        "answer": "option_c",
+        "explanation": "The user account to run the ODX Server Service should be specified as domainnameuseraccount, not as .useraccount."
+    },
+    "question_5": {
+        "question": "What is the correct file path to launch the TimeXtender Execution Configuration app?",
+        "options": {
+            "option_a": "C:TimeXtenderExecutionConfig.exe",
+            "option_b": "C:Program FilesTimeXtender<TimeXtender Version>TimeXtender.Job.Execution.Configuration.exe",
+            "option_c": "C:TimeXtenderSetupExecutionConfig.exe",
+            "option_d": "C:ProgramDataTimeXtenderExecutionConfiguration.exe"
+        },
+        "answer": "option_b",
+        "explanation": "The correct file path to launch the TimeXtender Execution Configuration app is C:Program FilesTimeXtender<TimeXtender Version>TimeXtender.Job.Execution.Configuration.exe."
+    },
+    "question_6": {
+        "question": "What should you do after saving your settings in the ODX Server Service configuration wizard?",
+        "options": {
+            "option_a": "Restart your computer",
+            "option_b": "Install TimeXtender Desktop",
+            "option_c": "Start the ODX Server Service",
+            "option_d": "Check for updates"
+        },
+        "answer": "option_c",
+        "explanation": "After saving your settings in the ODX Server Service configuration wizard, you should start the ODX Server Service and check in Windows Services to ensure it is running."
+    }
+}

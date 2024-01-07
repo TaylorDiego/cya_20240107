@@ -1,0 +1,35 @@
+{
+    "DateTime": "2023-12-27 14:39:33",
+    "URL": "https://support.timextender.com/add-and-configure-instances-127/multiple-environments-1527",
+    "Keywords": "missing",
+    "Title": "Multiple Environments _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "TimeXtender supports multiple environment deployments that allow developers to create separate environments for development, testing, and production. These environments can be comprised of separate instances that can then be related to one another. This article clarifies the steps to configure and and utilize these environments as follows: The below diagram shows an example of how instances can be promoted to different environments. Before you add environments, it's a good idea to add your instances. While you can always add and remove instances from environments, it saves you a bit of time if you can include all the relevant instances in the environment when you create it. You can edit environments after they have been made by clicking on the edit icon. It will show the same menu as creating an environment, the only difference is the name of the menu as it is now called Edit environment.  However, you can see that it is not possible to click on it. An environment cannot be deleted as long as it has instances assigned. If you want to delete an environment with instances, first remove the instances by editing the environment. Once the instances have been removed it will be possible to delete it. When you transfer an instance, you move the metadata in the instance to another instance, making the destination instance a copy of the source. This enables you to move work through multiple environments from development to production, you can only transfer an instance to another instance of the same type, but the instances don't have to be part of different environments. The flow is slightly different when you transfer between ODX instances compared to data warehouse and semantic model instances. More on that below. Note To promote changes from one instance to another, select the arrow next to the instancecontaining the changes that are to be promoted, andthen select the targetinstance to promote to. When transferring from DW instances you will need to select what ODX instance it will map from The same procedure exists for the SSL instances, only here you point at a MDW instance instead. Undoing a transfer (data warehouse and semantic models) When you transfer a data warehouse or semantic model instance, it creates a new version in the \"to\" instance with the content of the \"from\" instance. If you need to undo the transfer, you can use the standard version system in TimeXtender to go back to a previous version. To open an instance as the previous version and make it the latest version, follow the steps below:  Warning Make sure both source and target instances have similar mapped data source connections to proceed with the transfer. Open TimeXtender and then open the target instance to initialize the instance. Then navigate back to the TimeXtender portal and transfer the instance.  Great stuff. The ODX transfer worked flawlessly, however we are getting an error on the MDW transfer: - MDW repository version not supported -. We are on version 6346.1. I guess we need to upgrade for this functionality? @Bitmetric_Maarten You need to upgrade all instances before starting this. So open the new version and open each instance in the environment. Once the upgrades are applied it should work. @Christian Hauggaard Ive open a support ticket because this aproach doesnt works with only one ODX instance like in previous versions. In my case its a BIG PROBLEM  @rvgfox @Christian Hauggaard Ive copied from DEV to PROD several times using the copy to instance in the Desktop previous version.  I think that the process must show messages to know what its doing. ",
+    "Lists": [
+        {
+            "heading": "Add a new environment:",
+            "paragraphs": [],
+            "list": [
+                "Navigate to Data estate > Environments and click Add environment.",
+                "Name the environment and select the instances to include in the environment."
+            ]
+        },
+        {
+            "heading": "Transfer Instances",
+            "paragraphs": [
+                "When you transfer an instance, you move the metadata in the instance to another instance, making the destination instance a copy of the source. This enables you to move work through multiple environments from development to production, you can only transfer an instance to another instance of the same type, but the instances don't have to be part of different environments. The flow is slightly different when you transfer between ODX instances compared to data warehouse and semantic model instances. More on that below.",
+                "To promote changes from one instance to another, select the arrow next to the instance containing the changes that are to be promoted, and then select the target instance to promote to.",
+                "When transferring from DW instances you will need to select what ODX instance it will map from",
+                "The same procedure exists for the SSL instances, only here you point at a MDW instance instead.",
+                "Undoing a transfer (data warehouse and semantic models)",
+                "When you transfer a data warehouse or semantic model instance, it creates a new version in the \"to\" instance with the content of the \"from\" instance. If you need to undo the transfer, you can use the standard version system in TimeXtender to go back to a previous version.",
+                "To open an instance as the previous version and make it the latest version, follow the steps below:"
+            ],
+            "list": [
+                "Open TimeXtender Desktop, right-click the \"to\" instance, and click Open Version... to open the Select Version window.",
+                "In the list, click on the previous version and click OK.",
+                "You can only save an instance if it has unsaved changes. Make an inconsequential change like renaming a table and then renaming it back, then click File > Save. A warning message - \"You are about to save an earlier version of the instance as the latest version\" - will appear."
+            ]
+        }
+    ]
+}

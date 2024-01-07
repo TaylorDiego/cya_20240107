@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What authentication method does Method 1 use for adding a SharePoint site as a data source in TimeXtender?",
+        "options": {
+            "option_a": "OAuth",
+            "option_b": "Basic",
+            "option_c": "Digest",
+            "option_d": "NTLM"
+        },
+        "answer": "option_b",
+        "explanation": "Method 1 specifies using a user account with Basic authentication, without MFA enabled."
+    },
+    "question_2": {
+        "question": "Which of the following is required when setting up a SharePoint data source using Method 2 in TimeXtender?",
+        "options": {
+            "option_a": "Setting the Schema to REST",
+            "option_b": "Enabling MFA for the user account",
+            "option_c": "Using Basic authentication",
+            "option_d": "Setting the OAuth Grant Type to Password"
+        },
+        "answer": "option_a",
+        "explanation": "For Method 2, it is crucial to set the Schema to REST, as failing to do so will result in an error when authorizing OAuth."
+    },
+    "question_3": {
+        "question": "What should be set as the 'Web Redirect URL' in the App Registration for Method 2?",
+        "options": {
+            "option_a": "http://localhost:33333",
+            "option_b": "http://contoso.sharepoint.com",
+            "option_c": "http://yourtenant.sharepoint.com",
+            "option_d": "http://localhost:8080"
+        },
+        "answer": "option_a",
+        "explanation": "In the App Registration 'Authentication' page, the 'Web Redirect URL' should be set to http://localhost:33333 for Method 2."
+    },
+    "question_4": {
+        "question": "What is the purpose of the 'Authorize OAuth' button in the TimeXtender Portal when setting up a SharePoint data source with Method 2?",
+        "options": {
+            "option_a": "To enable MFA for the user account",
+            "option_b": "To create the OAuth settings file",
+            "option_c": "To reset the user password",
+            "option_d": "To refresh the data source connection"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Authorize OAuth' button is used to create the OAuth settings file necessary for the SharePoint data source connection in Method 2."
+    }
+}

@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the primary action described in the context for interacting with a semantic model instance?",
+        "options": {
+            "option_a": "Delete semantic model instance",
+            "option_b": "Add semantic model instance",
+            "option_c": "Update semantic model instance",
+            "option_d": "Review semantic model instance"
+        },
+        "answer": "option_b",
+        "explanation": "The context specifically mentions 'Add semantic model instance' as an action, indicating that the primary interaction is to add a new instance."
+    },
+    "question_2": {
+        "question": "Which of the following is a step in the process outlined in the context?",
+        "options": {
+            "option_a": "Remove endpoints",
+            "option_b": "Add an endpoint",
+            "option_c": "Configure global settings",
+            "option_d": "Export semantic model"
+        },
+        "answer": "option_b",
+        "explanation": "The text includes 'Add an endpoint' as part of the process, making it a correct step according to the provided context."
+    },
+    "question_3": {
+        "question": "What is the purpose of the URL provided in the context?",
+        "options": {
+            "option_a": "To direct users to a support page",
+            "option_b": "To download a CSV file",
+            "option_c": "To link to an external advertisement",
+            "option_d": "To submit a bug report"
+        },
+        "answer": "option_a",
+        "explanation": "The URL is likely provided to direct users to a support page related to 'CSV Endpoint', as indicated by the context."
+    },
+    "question_4": {
+        "question": "Who is the author of the content provided in the context?",
+        "options": {
+            "option_a": "Data Estate Instances",
+            "option_b": "Christian Hauggaard",
+            "option_c": "Semantic Model",
+            "option_d": "CSV Endpoint"
+        },
+        "answer": "option_b",
+        "explanation": "The context clearly states that the author of the content is 'Christian Hauggaard'."
+    },
+    "question_5": {
+        "question": "What can be inferred about the 'Data Estate Instances' mentioned in the context?",
+        "options": {
+            "option_a": "It is a type of data visualization tool.",
+            "option_b": "It is a file format for data exchange.",
+            "option_c": "It is a component of the semantic model.",
+            "option_d": "It is a user role within the system."
+        },
+        "answer": "option_c",
+        "explanation": "The context suggests that 'Data Estate Instances' are related to the semantic model, implying they are a component or aspect of it."
+    },
+    "question_6": {
+        "question": "What action is implied to follow 'Add Instance' in the context?",
+        "options": {
+            "option_a": "Configure instance settings",
+            "option_b": "Add semantic model instance",
+            "option_c": "Delete the instance",
+            "option_d": "Review instance performance"
+        },
+        "answer": "option_b",
+        "explanation": "The context implies a sequence where 'Add Instance' is followed by 'Add semantic model instance', indicating the next action in the process."
+    }
+}

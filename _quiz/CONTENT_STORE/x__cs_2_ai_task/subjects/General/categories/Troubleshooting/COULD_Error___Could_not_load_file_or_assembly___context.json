@@ -1,0 +1,24 @@
+{
+    "DateTime": "2023-12-27 14:42:49",
+    "URL": "https://support.timextender.com/troubleshooting-134/error-could-not-load-file-or-assembly-1230",
+    "Keywords": "missing",
+    "Title": "Error_ _Could not load file or assembly_ _ Community",
+    "Author": "Greg Lennox",
+    "Text": "You receive the following error: Could not load file or assembly 'Microsoft.SqlServer.ConnectionInfo[...] Or this: 'Microsoft.SqlServer.BatchParser.dll' The error text may also include the following details: An error occurred during executing this statement \\r\\n IF EXISTS (SELECT * FROM dbo.sysobjects WHERE id = OBJECT_ID(N'[<TableName>]') AND OBJECTPROPERTY(id, N'IsTable') = 1) DROP TABLE [<TableName>];: ExecuteNonQuery failed for Database '<DatabaseName>'. You have not installed the SQL Shared Management Objects (SMO). They are needed to create tables and other SQL objects from TimeXtender, or alternatively you get this error when connecting to the Tabular model because the Analysis Services Management Objects (AMO) are missing. Microsoft.SqlServer.BatchParser.dll . SharedManagementObjects.msi and SQLSysClrTypes.msi If your current SQL server version is newer than 2016, installing the newest version management studio on the server should be enough. When you are also connecting to Analysis services, you will need to download the AMO, ADOMD, MSOLAP programs. The client libraries for Azure will also work for SQL versions newer than 2016. Please be aware that if you are using another version of SQL server, you must find the right version of the feature packages. If you are deploying to multiple versions of SQL Server, you must install all the relevant versions of SMO/XMO. For example, if staging is SQL 2008 and Data Warehouse is SQL 2012, you must install both of these files. SQL Native Client is a pre-requisite and will in most cases need to be installed first. In some cases, you will also need to install more than one version of the Analysis Management Objects package, to resolve this error. Universal ",
+    "Lists": [
+        {
+            "heading": "Resolution",
+            "paragraphs": [
+                "Download the SQL Shared Management Objects from the SQL Server Feature Packages and install it. The download sites are linked below - the files you need are called SharedManagementObjects.msi and SQLSysClrTypes.msi."
+            ],
+            "list": [
+                "SQL Server 2016",
+                "SQL Server 2014",
+                "SQL Server 2012",
+                "SQL Server 2008 R2",
+                "SQL Server 2008",
+                "SQL Server 2005"
+            ]
+        }
+    ]
+}

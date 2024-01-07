@@ -1,0 +1,27 @@
+{
+    "DateTime": "2023-12-27 14:40:25",
+    "URL": "https://support.timextender.com/data-warehouse-108/sql-database-cleanup-tool-1008",
+    "Keywords": "missing",
+    "Title": "SQL Database Cleanup Tool _ Community",
+    "Author": "missing",
+    "Text": "To prevent accidental data loss, deleting a table in TimeXtender UI does not delete the physical table in the data warehouse.The downside is that tables deleted in TimeXtender still takeup space in the database. SQL Database Cleanup Tool Warning To clean up your data warehouse, follow the steps below.   Note:  ",
+    "Lists": [
+        {
+            "heading": "Identifying and Deleting Unused Tables",
+            "paragraphs": [
+                "The SQL Database Cleanup Tool enables you to identify tables left behind by TimeXtender and delete - drop - them to free up space. Note that database schemas are not deleted from the database. You will need to drop those manually in SQL Server after deleting them in TimeXtender.",
+                "To clean up your data warehouse, follow the steps below."
+            ],
+            "list": [
+                "Right click a data warehouse, click Advanced and click SQL Database Cleanup Tool.",
+                "TimeXtender will read the objects from the database and open the SQL Database Cleanup Tool window.",
+                "The objects in the database that are no longer, or never was, part of the currently opened instance are listed.",
+                "(Optional) Right click a table, view, procedure or function and click Script to display the SQL script behind the object.",
+                "Right click a table, view, procedure or table and click Drop to drop the object from the database. If the item does not have subordinate items, click Yes when TimeXtender asks you to confirm the drop. If the item has subordinate items, a window will open with a list of the objects that will be dropped. Clear the selection for any tables you want to keep and then click Drop.   Note: TimeXtender will automatically clear the selection for any incrementally loaded tables to prevent accidental data loss. TimeXtender will ask you to confirm if you want to drop an incrementally loaded table.",
+                "If the item does not have subordinate items, click Yes when TimeXtender asks you to confirm the drop.",
+                "If the item has subordinate items, a window will open with a list of the objects that will be dropped. Clear the selection for any tables you want to keep and then click Drop.   Note: TimeXtender will automatically clear the selection for any incrementally loaded tables to prevent accidental data loss. TimeXtender will ask you to confirm if you want to drop an incrementally loaded table.",
+                "When you have dropped the all the objects you want to delete from the database, close the window."
+            ]
+        }
+    ]
+}

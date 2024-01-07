@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What does the TimeXtender Portal Admin page display regarding credits and billing?",
+        "options": {
+            "option_a": "Only the current credit balance",
+            "option_b": "Only a monthly overview of usage",
+            "option_c": "Both the current credit balance and a monthly overview of usage",
+            "option_d": "Historical credit balances and future credit projections"
+        },
+        "answer": "option_c",
+        "explanation": "The TimeXtender Portal Admin page shows the current credit balance and provides a monthly overview of usage, including ODX, Data Warehouse, and Semantic Model Instances."
+    },
+    "question_2": {
+        "question": "How often are credits deducted from your balance in TimeXtender?",
+        "options": {
+            "option_a": "Weekly",
+            "option_b": "Daily",
+            "option_c": "Monthly",
+            "option_d": "At the end of the billing cycle"
+        },
+        "answer": "option_b",
+        "explanation": "Usage is deducted from the credit balance at the end of each day, based on the number of instances set up."
+    },
+    "question_3": {
+        "question": "What happens if more credits are consumed than are available in TimeXtender?",
+        "options": {
+            "option_a": "The system will automatically top up the credits",
+            "option_b": "The account will be suspended until credits are added",
+            "option_c": "The credit balance becomes negative and you will be invoiced",
+            "option_d": "The excess usage will be deducted from the next month's credit balance"
+        },
+        "answer": "option_c",
+        "explanation": "If credit consumption exceeds the available balance, the credit balance becomes negative, and the user will be invoiced at the end of the billing cycle."
+    },
+    "question_4": {
+        "question": "What is shown in the Total column of the monthly overview table in TimeXtender?",
+        "options": {
+            "option_a": "The total number of instances available",
+            "option_b": "The total number of credits added for the month",
+            "option_c": "The total number of credits remaining at the end of the month",
+            "option_d": "The total number of credits used throughout the month"
+        },
+        "answer": "option_d",
+        "explanation": "The Total column in the monthly overview table displays the total number of credits used throughout the month."
+    }
+}

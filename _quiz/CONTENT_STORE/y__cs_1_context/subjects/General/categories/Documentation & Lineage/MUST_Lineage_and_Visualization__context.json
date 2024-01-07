@@ -1,0 +1,34 @@
+{
+    "DateTime": "2023-12-27 14:42:43",
+    "URL": "https://support.timextender.com/documentation-and-lineage-114/lineage-and-visualization-827",
+    "Keywords": "missing",
+    "Title": "Lineage and Visualization _ Community",
+    "Author": "missing",
+    "Text": "Data lineage  Relation Diagram data lineage  relation diagram save all changes data lineage, ata Content refresh  In the visualization window, you have different options to customize the display: Is this feature related to Object Dependencies menu option:   For what this option is used? Advanced Object Dependencies prior  deadlock Hi Do the tables in question need to be deployed afterwards? And another thing: Are dependencies respected in multi-threaded execution packages? Hi, It seems that the data lineage view show incorrect schema for the tables. It says that the scehma is [dbo] for all tables, even if they have different schemas. This is even the case in the screenshots in this post. It would also be nice if you would bring back the feature to double click on a node to go to that object in the GUI. This is incredibly valuable when working in largesolutions. ",
+    "Lists": [
+        {
+            "heading": "Showing Data Lineage or Relation Diagrams",
+            "paragraphs": [
+                "To show data lineage, right click on a field, click Data Lineage:"
+            ],
+            "list": [
+                "Under Content section (on top-left) check boxes for objects to show, then click the refresh button to show the lineage."
+            ]
+        },
+        {
+            "heading": "Customizing the Display",
+            "paragraphs": [
+                "In the visualization window, you have different options to customize the display:"
+            ],
+            "list": [
+                "Click an object to have the connections to and from the object highlighted.",
+                "Click and hold on an object to move it around and release the mouse button to place it.",
+                "Click the arrow in the header of an object to hide or show object details.",
+                "Right-click the background in the window to bring up a menu with different options for organizing and displaying the data: Click Reset Layout to make TimeXtender reset the layout. Click Collapse All or Expand All to either collapse the objects to create a better overview, or expand the objects to see more details. Click Zoom In, Zoom Out or Zoom 100% change the size of objects.",
+                "Click Reset Layout to make TimeXtender reset the layout.",
+                "Click Collapse All or Expand All to either collapse the objects to create a better overview, or expand the objects to see more details.",
+                "Click Zoom In, Zoom Out or Zoom 100% change the size of objects."
+            ]
+        }
+    ]
+}

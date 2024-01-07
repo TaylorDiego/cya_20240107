@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question_content": {
+            "question": "What action should be taken to set up email notifications for critical errors in an ODX instance?",
+            "options": {
+                "option_a": "In the Solution Explorer, double-click the ODX and select 'Email Alerts'.",
+                "option_b": "In the Solution Explorer, right-click the ODX and click 'Notifications on Critical Errors'.",
+                "option_c": "In the Solution Explorer, right-click the ODX and choose 'Properties'.",
+                "option_d": "In the Solution Explorer, left-click the ODX and select 'Configure Email Notifications'."
+            },
+            "answer": "option_b",
+            "explanation": "To set up email notifications for critical errors, you should right-click the ODX in the Solution Explorer and select 'Notifications on Critical Errors' as per the provided steps."
+        },
+        "question_facts": [
+            "After reviewing the question, there are no typos in the question, options, answer, or explanation provided. Everything is spelled correctly and the response is in plain English format.",
+            "The test question is grammatically correct and clear for a diverse audience. The final format of the question is appropriate for use.",
+            "The question asking about the action to set up email notifications for critical errors in an ODX instance is relevant to the material. The steps outlined in the material include right-clicking the ODX in the Solution Explorer and clicking \"Notifications on Critical Errors,\" which matches the correct answer option B provided in the question. The question accurately reflects the procedure described in the original material.",
+            "The answer provided as 'option_b' is TRUE. According to the steps outlined in the article, to configure email notifications for critical errors on an ODX instance, you should right-click the ODX in the Solution Explorer and click \"Notifications on Critical Errors.\"",
+            "The question seems straightforward and based on the information provided in the webscrape, the correct steps to set up email notifications for critical errors in an ODX instance are indeed to right-click the ODX in the Solution Explorer and click \"Notifications on Critical Errors.\" There's no indication that the question is trying to mislead or confuse the test-taker. Therefore, the question and the answer provided as 'option_b' are 'good' and not 'BS'.",
+            "The question's phrasing assumes familiarity with the term \"ODX instance\" and \"Solution Explorer,\" which may not be common knowledge and could confuse test-takers unfamiliar with the specific software or context. \"Option_a\" and \"option_d\" seem similar and may not be sufficiently distinct, potentially leading to confusion. \"Option_c\" is unclear about what action should be taken after choosing \"Properties.\" The explanation provided does not give enough detail on why the other options are incorrect; it only states the correct procedure without further clarification. Additionally, the question does not clarify whether the process is done within a specific software, which could be confusing for someone who is unaware of where the \"Solution Explorer\" is located. Finally, the question doesn't provide a context about the environment (e.g., specific software version or system requirements) where setting up email notifications is pertinent.",
+            "I would rate the question a 5. It's specific, relevant, and based on the provided article, the correct answer 'option_b' aligns with the correct procedure for setting up email notifications for critical errors in an ODX instance. The question is clear and would effectively assess a candidate's knowledge of the process."
+        ]
+    },
+    "question_2": {
+        "question_content": {
+            "question": "As of October 1st, 2022, what is required for an app to send emails through Microsoft's online SMTP servers?",
+            "options": {
+                "option_a": "Basic authentication with a username and password.",
+                "option_b": "An Application ID and Tenant ID with specific permissions granted.",
+                "option_c": "A direct connection to the Microsoft Exchange server.",
+                "option_d": "A VPN connection to Microsoft's internal network."
+            },
+            "answer": "option_b",
+            "explanation": "Microsoft discontinued basic authentication for email on online SMTP servers as of October 1st, 2022. Instead, an Application ID from an app created for this purpose and the Tenant ID for your company are required, with permissions such as Mail.Send, SMTP.Send, and User.Read set and consented by an Admin."
+        },
+        "question_facts": [
+            "After reviewing the question, there are no typos in the text provided. Everything is spelled correctly and the question is clear and understandable.",
+            "The test question is grammatically correct and clear for a diverse audience. The final format of the question is appropriate for use.",
+            "The question is relevant to the original material. It asks about the requirements for sending emails through Microsoft's online SMTP servers after the discontinuation of basic authentication on October 1st, 2022, which is directly addressed in the provided material. The correct answer is indeed 'option_b', which mentions the need for an Application ID and Tenant ID with specific permissions, consistent with the information given in the material.",
+            "The provided answer \"option_b\" is TRUE. As of October 1st, 2022, basic authentication was discontinued by Microsoft for email on online SMTP servers. An Application ID and Tenant ID with specific permissions (Mail.Send, SMTP.Send, User.Read) are indeed required, and an Admin must grant consent for these settings.",
+            "The question and answer seem valid based on the provided information. The question is clear and specific, asking about the requirements for an app to send emails through Microsoft's online SMTP servers as of a certain date. The answer provided aligns with the content in the article, which states that Microsoft discontinued basic authentication for these services and now requires an Application ID and Tenant ID with specific permissions granted. This is neither a trick nor a 'gotcha' question; it tests knowledge of a specific change in Microsoft's email service requirements.",
+            "The question assumes specific knowledge of a policy change that may not be common knowledge without recent updates in Microsoft's authentication practices. It's not inclusive of all potential test-takers who might not be up to date with Microsoft's changes. There could be ambiguity for someone who last checked Microsoft's requirements before October 1st, 2022, or who is not familiar with the specific terms like \"Application ID\" and \"Tenant ID.\" Furthermore, the question is time-sensitive and might become outdated quickly as systems and authentication methods evolve. It is also specific to Microsoft's SMTP servers, which may not apply to those using other email services. The explanation provides additional context, but the question itself lacks clarity on what \"specific permissions\" are required, which might lead to confusion or misinterpretation of the answer.",
+            "5"
+        ]
+    }
+}

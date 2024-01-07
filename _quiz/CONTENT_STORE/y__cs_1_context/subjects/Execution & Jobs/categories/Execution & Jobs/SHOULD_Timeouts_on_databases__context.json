@@ -1,0 +1,42 @@
+{
+    "DateTime": "2023-12-27 14:41:51",
+    "URL": "https://support.timextender.com/executions-jobs-110/timeouts-on-databases-655",
+    "Keywords": "missing",
+    "Title": "Timeouts on databases _ Community",
+    "Author": "missing",
+    "Text": "There are several places where you can configure timeouts. Thosewill work differently based on where you set it. This article describeshow to configure different types of timeouts. Note: 0 infinite seconds seconds lookup Top You may set the timeout valuein several configuration pages in TimeXtender Portal. TimeXtender Portal Data estate > Data sources TimeXtender Portal ODX instance >Edit TimeXtender Portal data warehouse >Edit TimeXtender Portal semantic model  >Edit minutes which step root cause ",
+    "Lists": [
+        {
+            "heading": "Timeout errors and where to increase the timeouts",
+            "paragraphs": [
+                "The default settings are appropriate for most scenarios. However, when a timeout error occurs, locate which step causes it:"
+            ],
+            "list": [
+                "Is it the first thing that happened when executing a table from a data source? Then it is the connection to the data source where timeout needs to be increased. Place 1 in the above list.",
+                "Is it during the transfer step of a table in the ODX database? Increase the data source command timeout. Place 1 in the above list.",
+                "Is it happening on the DWH during data cleansing? Increase the command timeout on the DWH instance. Place 3 in the above list.",
+                "Is it happening during the Qlik execution? Increase the timeout on the Qlik semantic model instance. Place 4 in the above list."
+            ]
+        },
+        {
+            "heading": "How to analyze a scenario to set timeouts",
+            "paragraphs": [
+                "Increasing the timeout value may help resolve some issues.  However, additional analysis is often needed to implement faster execution. Find the root cause why these timeouts happen."
+            ],
+            "list": [
+                "Does it happen during the nightly execution with a timeout on the data source? Then it might be a loss of connection to the data source server. Was there a restart of service at night, or something similar? Specify the 'next action' when it fails.    Decrease the batch size option, if the data source adapter supports it. This may split out the execution in several parts.    Some providers set 'batch size' to 0 by default.  Setting it to a number will reset the timeouts after each batch has been transferred.",
+                "Specify the 'next action' when it fails.",
+                "Decrease the batch size option, if the data source adapter supports it. This may split out the execution in several parts.    Some providers set 'batch size' to 0 by default.  Setting it to a number will reset the timeouts after each batch has been transferred.",
+                "Does it happen during the transfer step and on which table? How is that table set up and how much data does it contain? Set up incremental load on this table. If automatic index generation turned off, then turn it on.",
+                "Set up incremental load on this table.",
+                "If automatic index generation turned off, then turn it on.",
+                "Does it happen during the data cleansing step of any table? Analyze data cleansing to see how many lookup fields are there and how many tables it relates to. If automatic index generation is turned off, then turn it on. Set up incremental load on that table. Is the lookup type Partition by, or Top? Where applicable, change it to Group by. Do you have a join that is not equal ? (for example, larger than, or smaller than). Where applicable, apply views. Change the lookup fields, so as many lookups as possible are coming from the same table. It will make an overall group, containing all those fields.",
+                "If automatic index generation is turned off, then turn it on.",
+                "Set up incremental load on that table.",
+                "Is the lookup type Partition by, or Top? Where applicable, change it to Group by.",
+                "Do you have a join that is not equal ? (for example, larger than, or smaller than). Where applicable, apply views.",
+                "Change the lookup fields, so as many lookups as possible are coming from the same table. It will make an overall group, containing all those fields."
+            ]
+        }
+    ]
+}

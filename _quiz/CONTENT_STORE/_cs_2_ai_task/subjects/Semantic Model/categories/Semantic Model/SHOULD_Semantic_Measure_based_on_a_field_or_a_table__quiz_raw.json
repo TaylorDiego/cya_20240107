@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the only applicable type for a table-based measure in the semantic model?",
+        "options": {
+            "option_a": "Sum",
+            "option_b": "Row Count",
+            "option_c": "Average",
+            "option_d": "Distinct Count"
+        },
+        "answer": "option_b",
+        "explanation": "For a table-based measure, 'Row Count' is the only applicable type as it pertains to the entire table rather than individual fields."
+    },
+    "question_2": {
+        "question": "Which of the following settings is applicable to SSAS Tabular, PowerBI Premium, and Tableau endpoints only?",
+        "options": {
+            "option_a": "Name of the measure",
+            "option_b": "Type of measure",
+            "option_c": "Data type of the measure",
+            "option_d": "Description of the measure"
+        },
+        "answer": "option_c",
+        "explanation": "The setting for the data type of the measure applies specifically to SSAS Tabular, PowerBI Premium, and Tableau endpoints."
+    },
+    "question_3": {
+        "question": "Which of the following is NOT a type of measure that can be created based on a field?",
+        "options": {
+            "option_a": "Distinct count",
+            "option_b": "Row Count",
+            "option_c": "Maximum",
+            "option_d": "Sum"
+        },
+        "answer": "option_b",
+        "explanation": "'Row Count' is a type of measure for a table-based measure, not for a field-based measure."
+    },
+    "question_4": {
+        "question": "Where can you customize the data format, such as the number of decimal places for decimal numbers?",
+        "options": {
+            "option_a": "In the Type list",
+            "option_b": "In the Name box",
+            "option_c": "In the Data format list, by clicking Customize",
+            "option_d": "In the Description box"
+        },
+        "answer": "option_c",
+        "explanation": "Customization of the data format, including the number of decimal places, is done in the Data format list by clicking on the Customize option."
+    }
+}

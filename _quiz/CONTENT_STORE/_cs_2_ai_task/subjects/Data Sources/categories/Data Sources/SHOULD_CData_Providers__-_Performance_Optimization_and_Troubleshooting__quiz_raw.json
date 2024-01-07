@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the primary factor that the performance of CData Providers is dependent on?",
+        "options": {
+            "option_a": "The complexity of the user's computer",
+            "option_b": "The data source and the amount of data",
+            "option_c": "The speed of the internet connection",
+            "option_d": "The time of day the data is accessed"
+        },
+        "answer": "option_b",
+        "explanation": "The performance of CData Providers largely depends on the data source and the amount of data being retrieved."
+    },
+    "question_2": {
+        "question": "Which property should be set to a lower value if an error asks to request less data?",
+        "options": {
+            "option_a": "MaxRows",
+            "option_b": "BatchSize",
+            "option_c": "PageSize",
+            "option_d": "Verbosity"
+        },
+        "answer": "option_c",
+        "explanation": "Setting PageSize to a lower value can help when an error occurs asking to request less data."
+    },
+    "question_3": {
+        "question": "What can be done to reduce the amount of log writing when using CData Providers?",
+        "options": {
+            "option_a": "Increase the Timeout value",
+            "option_b": "Decrease the Verbosity level",
+            "option_c": "Set Logfile to a shorter path",
+            "option_d": "Disable the internet connection"
+        },
+        "answer": "option_b",
+        "explanation": "Decreasing the Verbosity level will reduce the amount of log writing, which can help in performance optimization."
+    },
+    "question_4": {
+        "question": "What does the major version number of a CData provider indicate?",
+        "options": {
+            "option_a": "The number of daily builds",
+            "option_b": "The number of updates per month",
+            "option_c": "The year of the update",
+            "option_d": "The specific features included"
+        },
+        "answer": "option_c",
+        "explanation": "The major version number of a CData provider is updated every year, indicating the year of the update."
+    }
+}

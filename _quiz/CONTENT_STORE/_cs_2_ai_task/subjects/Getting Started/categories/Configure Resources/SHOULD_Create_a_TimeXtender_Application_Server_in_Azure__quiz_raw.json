@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the first step to deploy the TimeXtender Application Server on Azure?",
+        "options": {
+            "option_a": "Install TimeXtender and ODX Server",
+            "option_b": "Sign-in to https://portal.azure.com",
+            "option_c": "Configure your desired properties for the Virtual Machine",
+            "option_d": "Navigate to the TimeXtender Application Server Azure Deployment"
+        },
+        "answer": "option_b",
+        "explanation": "The first step is to sign in to the Azure portal at https://portal.azure.com before deploying the TimeXtender Application Server."
+    },
+    "question_2": {
+        "question": "Approximately how long does it take to deploy the necessary Azure resources for TimeXtender Application Server?",
+        "options": {
+            "option_a": "About 5 minutes",
+            "option_b": "About 15 minutes",
+            "option_c": "About 30 minutes",
+            "option_d": "About 60 minutes"
+        },
+        "answer": "option_b",
+        "explanation": "Deploying the necessary Azure resources for TimeXtender Application Server generally takes around 15 minutes."
+    },
+    "question_3": {
+        "question": "How do you connect to the Virtual Machine after deploying the TimeXtender Application Server?",
+        "options": {
+            "option_a": "Use SSH to connect to the Virtual Machine",
+            "option_b": "Navigate to the Virtual Machine and click 'Connect'",
+            "option_c": "Email Azure support for connection details",
+            "option_d": "Connect via the Azure mobile app"
+        },
+        "answer": "option_b",
+        "explanation": "After deployment, you navigate to the Virtual Machine and click 'Connect' to proceed with the RDP connection process."
+    },
+    "question_4": {
+        "question": "What should you do after downloading the RDP file to connect to your TimeXtender Application Server?",
+        "options": {
+            "option_a": "Upload the RDP file back to the Azure portal",
+            "option_b": "Open the RDP file and click 'Connect'",
+            "option_c": "Convert the RDP file to a different format",
+            "option_d": "Delete the RDP file for security reasons"
+        },
+        "answer": "option_b",
+        "explanation": "Once the RDP file is downloaded, you should open it and click 'Connect' to initiate the remote desktop connection."
+    }
+}

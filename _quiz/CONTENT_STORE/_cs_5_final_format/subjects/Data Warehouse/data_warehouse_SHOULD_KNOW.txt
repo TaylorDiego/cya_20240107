@@ -1,0 +1,657 @@
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of the Custom Table Insert feature in TimeXtender?
+
+{"score":0}To delete data from a table
+{"score":100.0}To add data to a table based on a custom SQL query
+{"score":0}To modify the structure of the database
+{"score":0}To create a backup of the database
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if the field names in the source table are different from the destination table when using Custom Table Insert?
+
+{"score":0}Change the destination table's field names
+{"score":0}Use a JOIN clause to merge the tables
+{"score":100.0}Use an alias to make the field names match
+{"score":0}It's not possible to insert the data
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step to add an aggregate table in a data warehouse according to the provided steps?
+
+{"score":0}Select the columns to be aggregated.
+{"score":100.0}Right click the table and select 'Add Aggregate Table'.
+{"score":0}Enter a name for the field in the Name column.
+{"score":0}Choose the aggregation method from the given options.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In the GroupBy section, what should you do for columns that contain date values?
+
+{"score":0}Set the GroupBy Type column to Value.
+{"score":100.0}Use the same date column multiple times with different GroupBy types.
+{"score":0}Select the column to be aggregated.
+{"score":0}Enter a name for the field in the Field column.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary benefit of splitting the INSERT statement into batches during data cleansing?
+
+{"score":0}To increase the complexity of the process
+{"score":100.0}To save log space on the SQL Server
+{"score":0}To require more memory on the server
+{"score":0}To extend the duration of data cleansing
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should be done to determine the optimal batch size for data cleansing?
+
+{"score":0}Always use the maximum batch size available
+{"score":0}Choose a random batch size for each table
+{"score":100.0}Execute the process and monitor to see if adjustments are needed
+{"score":0}Consult the SQL Server documentation
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step to clone a field according to the provided instructions?
+
+{"score":0}Select the field and choose 'Clone Values'.
+{"score":100.0}Right-click on a field and click 'Clone Field' to open the Clone Field dialog.
+{"score":0}Copy and paste the field into a new table.
+{"score":0}Rename the field you wish to clone.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does the 'Clone structure' option do when cloning a field?
+
+{"score":0}It duplicates the field's name only.
+{"score":0}It creates a new field unrelated to the original.
+{"score":100.0}The cloned field will be an exact copy of the original field, including any transformations and validations.
+{"score":0}It clones the field's values into a new table.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a role-playing dimension in the context of a data warehouse?
+
+{"score":0}A dimension that plays a critical role in data analysis
+{"score":100.0}A dimension that can be used in multiple contexts within the same model
+{"score":0}A dimension that is only used once in a data model
+{"score":0}A dimension that contains role-based access control
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first sign that you may benefit from a role-playing dimension?
+
+{"score":0}Your fact table has only one foreign key related to the dimension table
+{"score":0}Your dimension table has multiple foreign keys
+{"score":100.0}Your fact table has more than one foreign key related to the same dimension table
+{"score":0}You have redundant tables in your data warehouse
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of custom fields in a data warehouse?
+
+{"score":0}To delete existing data
+{"score":100.0}To populate the field value using various means
+{"score":0}To restrict user access to the data
+{"score":0}To change the data warehouse software
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a method used to populate a custom field value?
+
+{"score":0}Transformations
+{"score":0}Scripting
+{"score":0}Data copy
+{"score":100.0}Manual data entry
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary benefit of using a custom hash field in TimeXtender when dealing with multiple fields making up a primary key?
+
+{"score":0}To encrypt sensitive data
+{"score":100.0}To improve lookup performance
+{"score":0}To reduce storage space
+{"score":0}To enhance data visualization
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In TimeXtender, what can a custom hash field be used for, besides improving lookup performance?
+
+{"score":0}To predict future data trends
+{"score":0}To validate data entry
+{"score":100.0}To investigate changes to a record
+{"score":0}To automatically populate new fields
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the initial content of a custom table when it is created?
+
+{"score":0}It contains a full set of data fields and types.
+{"score":0}It includes data imported from an ODX Instance.
+{"score":100.0}It contains only the standard system fields.
+{"score":0}It is pre-populated with data from a staging database.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you add a custom table to a data warehouse or staging database?
+
+{"score":0}By dragging a table from an ODX Instance.
+{"score":100.0}By right-clicking Tables, then clicking Add Table.
+{"score":0}By importing directly from an Excel file.
+{"score":0}By using a pre-defined template.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step to customize code on a given table in TimeXtender?
+
+{"score":0}Click the 'Add' button to the right of the step to be customized.
+{"score":100.0}Right click the table > Advanced > Customize code.
+{"score":0}Open the 'Custom Code Editor' window.
+{"score":0}Choose the editor from the 'Editor Name' list.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which file name extension is used for the data cleansing procedure and the transformation view in TimeXtender?
+
+{"score":0}.xlsx
+{"score":0}.docx
+{"score":100.0}.sql
+{"score":0}.txt
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the recommended practice when implementing custom code in a TimeXtender data warehouse?
+
+{"score":0}Use Custom Table Inserts for better data lineage
+{"score":0}Customize stored procedures as a first option
+{"score":100.0}Incorporate custom code only when necessary and use Custom Views for maintainability
+{"score":0}Avoid using Global Project Variables in custom scripts
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should be done before deploying a Custom View in TimeXtender?
+
+{"score":100.0}Map Custom View fields to maintain data lineage
+{"score":0}Customize the stored procedures
+{"score":0}Delete the autogenerated stored procedure
+{"score":0}Execute the Custom Table Insert
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step in configuring data area security in TimeXtender?
+
+{"score":100.0}Create a database role based on an SQL Server login.
+{"score":0}Set up either object level or row level security.
+{"score":0}Drop existing roles on the database.
+{"score":0}Edit the data area settings.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if there are no existing SQL Server logins suitable for a database role in TimeXtender?
+
+{"score":0}Skip the creation of a database role.
+{"score":100.0}Create a new SQL Server login either in TimeXtender or on the SQL Server itself.
+{"score":0}Use the default login provided by TimeXtender.
+{"score":0}Contact TimeXtender support for a new login.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the prerequisite for configuring object level permissions in TimeXtender according to the text?
+
+{"score":100.0}Creating a Database Role in the data area
+{"score":0}Setting up row level permissions
+{"score":0}Assigning a user to a database role
+{"score":0}Configuring the SQL Server settings
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following permission settings is NOT one of the three possible settings for object level security in TimeXtender?
+
+{"score":0}Not set (gray dot)
+{"score":0}Grant (green with a white checkmark)
+{"score":0}Deny (red with white bar)
+{"score":100.0}Read-only (blue with white book)
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of a securable column in TimeXtender's data area security?
+
+{"score":0}To store encrypted data
+{"score":100.0}To contain values used in the filter for row level security
+{"score":0}To log user activity
+{"score":0}To trigger security alerts
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How is a secured view used in the context of row level security?
+
+{"score":0}To display all data in the database
+{"score":0}To backup the database
+{"score":100.0}To filter out data the user does not have access to
+{"score":0}To manage database user accounts
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of data profiling in TimeXtender?
+
+{"score":0}To format the data into a more readable format
+{"score":100.0}To examine, analyze, and summarize data sets to understand data quality
+{"score":0}To convert text fields into integer fields
+{"score":0}To delete all null values from the data sets
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you check the data profile of a table in TimeXtender?
+
+{"score":0}By writing a SQL query
+{"score":0}By using the Pattern Search button
+{"score":100.0}By right-clicking on a table and selecting Data Profile
+{"score":0}By setting the 'Select top' number of records to unlimited
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of data selection rules in a data warehouse?
+
+{"score":0}To increase the size of the data warehouse by importing all available data
+{"score":100.0}To filter the data so that only necessary data is imported for analysis
+{"score":0}To create backups of the source data
+{"score":0}To convert all data into alphanumeric characters
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which operator can be used to select records where a field's value starts with 'ABC'?
+
+{"score":0}Equal
+{"score":0}Not Like
+{"score":100.0}Like
+{"score":0}Not in List
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of field transformations in data management?
+
+{"score":0}To create new data fields from scratch
+{"score":100.0}To modify existing data in various ways
+{"score":0}To delete data from the database
+{"score":0}To establish new database connections
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which transformation should you apply to a datetime field when you need only the date portion?
+
+{"score":0}Trim
+{"score":0}To upper
+{"score":100.0}Only date
+{"score":0}SQL snippet
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of using validation rules in a data warehouse?
+
+{"score":0}To format the data into a more readable structure
+{"score":100.0}To discover invalid data and increase data accuracy and reliability
+{"score":0}To encrypt sensitive data
+{"score":0}To decrease the size of the data warehouse
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When defining data selection or validation rules, which of the following is NOT an operator mentioned in the context?
+
+{"score":0}Greater Than
+{"score":100.0}Contains
+{"score":0}Not Empty
+{"score":0}Less or Equal
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary use of the 'Table Classification' setting in TimeXtender's Data Warehouse Table Settings?
+
+{"score":0}To determine the compression level of the table
+{"score":0}To configure the table's partitioning scheme
+{"score":100.0}To manage execution based on the Managed Execution setting
+{"score":0}To handle primary key constraint violations
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In TimeXtender, what does enabling 'Simple Mode' for a table do?
+
+{"score":0}It compresses the table data for better performance
+{"score":100.0}It skips the table on execution or deployment
+{"score":0}It partitions the table into smaller tables
+{"score":0}It enables incremental loading of data
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of using perspectives in a data warehouse?
+
+{"score":0}To increase the processing speed of the data warehouse
+{"score":100.0}To make it easier to work with instances that contain a lot of objects
+{"score":0}To reduce the amount of storage used by the data warehouse
+{"score":0}To enhance the security of the data warehouse
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens when you activate a dynamic perspective in a data warehouse?
+
+{"score":0}It deletes objects that are not part of the perspective
+{"score":100.0}It hides objects that are not part of the perspective
+{"score":0}It archives objects that are not part of the perspective
+{"score":0}It duplicates objects that are part of the perspective
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of adding a date table to a data model?
+
+{"score":0}To track changes in data over time
+{"score":100.0}To provide a semantic instance with a time dimension for calculations
+{"score":0}To store user preferences for date formats
+{"score":0}To increase the performance of the database
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which feature of a date table allows it to effectively have no end by adding new rows each time it is executed?
+
+{"score":0}Custom periods
+{"score":100.0}Days Ahead option
+{"score":0}Date display format
+{"score":0}Week numbering
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary reason for the increasing complexity of queries in data warehouses according to the text?
+
+{"score":0}Due to the reduction of SQL databases
+{"score":100.0}Because of the steady expansion of data warehouses and their underlying SQL databases
+{"score":0}Because TimeXtender's software requires frequent updates
+{"score":0}Due to the decreasing reliance on indexes
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Who is responsible for overseeing the SQL maintenance of tables that are not truncated and rebuilt during execution in TimeXtender?
+
+{"score":0}TimeXtender's automated systems
+{"score":0}SQL Server Maintenance Plan
+{"score":100.0}TimeXtender's users
+{"score":0}The author, Greg Lennox
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What SQL Server functions can be used to assign a new value to a unique identifier field?
+
+{"score":0}GETDATE() and NEWID()
+{"score":100.0}NEWID() and NEWSEQUENTIALID()
+{"score":0}UDF() and NEWSEQUENTIALID()
+{"score":0}GETDATE() and UDF()
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Why can't User-Defined Functions (UDF) use NEWID() or NEWSEQUENTIALID() in SQL Server?
+
+{"score":0}Because they are non-deterministic functions.
+{"score":100.0}Because they are side-effecting functions.
+{"score":0}Because they return void.
+{"score":0}Because they are deprecated.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary benefit of partitioning large tables into smaller ones?
+
+{"score":0}To increase the amount of data stored
+{"score":100.0}To make queries run faster by scanning less data
+{"score":0}To create more tables for organizational purposes
+{"score":0}To use more disk space
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Under which tab can table partitioning be configured?
+
+{"score":0}Data Sources Tab
+{"score":100.0}Performance Tab
+{"score":0}Design Tab
+{"score":0}Execution Tab
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary limitation when copying tables between data areas in a Modern Data Warehouse (MDW) instance?
+
+{"score":0}Tables must have the same column names.
+{"score":100.0}Data areas must be in the same MDW instance.
+{"score":0}Only one table can be copied at a time.
+{"score":0}Tables cannot be copied if they contain more than 1000 records.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which method of copying a table between data areas will display the 'Add New Table options' menu?
+
+{"score":0}Dragging the table with a left-click.
+{"score":100.0}Dragging the table with a right-click.
+{"score":0}Using the Direct Read stored procedure.
+{"score":0}Copying the table using SQL commands.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a circular reference in the context of data models?
+
+{"score":0}A reference where a field is updated by a user
+{"score":100.0}An instance where a field is looking back to itself to populate its value
+{"score":0}A reference that connects two unrelated tables
+{"score":0}A field that is referencing a primary key in another table
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a good practice to avoid circular references between dimension tables?
+
+{"score":0}Create multiple lookups between the tables
+{"score":0}Only create lookups on both sides of the relation
+{"score":100.0}Only create lookups on one side of the relation between two tables
+{"score":0}Avoid using dimension tables altogether
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of designating a field as 'raw-only' according to the provided context?
+
+{"score":0}To filter data in Semantic instances
+{"score":100.0}To designate a field that will not be processed further
+{"score":0}To increase the security of the data
+{"score":0}To create a new Data Area
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Who is the author of the article on how to use raw-only fields?
+
+{"score":0}Timextender Support
+{"score":100.0}Thomas Lind
+{"score":0}Data Warehouse Community
+{"score":0}Semantic Instances
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens when a table mapped from an ODX does not have an incremental load rule applied in the source?
+
+{"score":0}The table will load incrementally with an 'I' icon displayed.
+{"score":0}The table will not load until the rule is manually set.
+{"score":100.0}A full load will occur when the table is executed.
+{"score":0}The table will load incrementally without an 'I' icon displayed.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In TimeXtender, if you are mapping a table from another Data Area and the source table has an incremental rule setup in the ODX, what is recommended?
+
+{"score":0}Use the Automate feature to base the incremental rule on the DW_Timestamp field.
+{"score":0}Set the data extraction settings to Full Load.
+{"score":0}Ignore the incremental rule and perform a full load.
+{"score":100.0}Use the Automate feature to base the incremental rule on the IncrementalTimeStamp field.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default setting for Index Automation in TimeXtender?
+
+{"score":0}Manual
+{"score":100.0}Automatic
+{"score":0}Disabled
+{"score":0}Legacy
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does setting the Index Automation to 'Manual' allow users to do?
+
+{"score":0}Let TimeXtender manage all indexes automatically.
+{"score":0}Prevent any indexes from being created.
+{"score":100.0}Give users complete control over the indexes, allowing them to add, delete, and modify them.
+{"score":0}Automatically generate new indexes without user intervention.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary use of instance variables in the context provided?
+
+{"score":0}To store user credentials securely
+{"score":100.0}To create at the instance level for use in script actions, custom transformation rules, and custom views
+{"score":0}To enhance the graphical user interface of the application
+{"score":0}To track changes in the database schema
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you use a text value instance variable in a script action or custom view?
+
+{"score":0}By typing the variable name directly into the script
+{"score":0}By enclosing the variable in double quotes
+{"score":0}By dragging it into the editor window
+{"score":100.0}By enclosing the variable in single quotes
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of a Junk Dimension Table in a data warehouse?
+
+{"score":0}To store user access logs
+{"score":100.0}To contain distinct combinations of junk dimension attributes
+{"score":0}To increase the size of the fact table
+{"score":0}To serve as a backup for the fact table
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can multiple tables utilize a Junk Dimension Table?
+
+{"score":0}By merging them into a single table
+{"score":0}By creating separate junk dimension tables for each
+{"score":100.0}By referencing a row in the same junk dimension table
+{"score":0}By duplicating the junk dimension attributes in each table
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary benefit of using a Lookup Transformation Template in TimeXtender?
+
+{"score":0}It allows for the creation of multiple conditional lookup fields manually.
+{"score":100.0}It saves time and improves performance when creating multiple lookups.
+{"score":0}It requires more joins which ensures data accuracy.
+{"score":0}It is the only way to create lookups with a variable join field.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In the provided context, what are the fixed join fields when setting up a Lookup Transformation Template?
+
+{"score":0}Job ID and Department ID
+{"score":100.0}Table and Field
+{"score":0}Value and Field
+{"score":0}TableName and FieldName
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary function of the mapping set feature in TimeXtender?
+
+{"score":0}To create visualizations for data analysis
+{"score":100.0}To merge multiple tables from different data sources into one
+{"score":0}To delete redundant data from the database
+{"score":0}To encrypt data for security purposes
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must be true for tables to be merged using the mapping set feature in TimeXtender?
+
+{"score":0}All tables must have different primary keys
+{"score":0}All tables must be from the same data source
+{"score":100.0}All tables must share some fields with exact names
+{"score":0}All tables must contain the same number of records
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of the Performance Recommendations tool in TimeXtender?
+
+{"score":0}To create new data warehouse projects
+{"score":100.0}To analyze and recommend changes for improved performance
+{"score":0}To generate financial reports
+{"score":0}To schedule data refresh tasks
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you apply the changes recommended by the Performance Recommendations tool?
+
+{"score":0}By restarting the TimeXtender service
+{"score":0}By manually writing SQL scripts based on the recommendations
+{"score":100.0}By reviewing and selecting changes in the Performance Recommendations window, then clicking OK
+{"score":0}By contacting TimeXtender support to apply the changes
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of adding related records in a data warehouse environment?
+
+{"score":0}To delete outdated records from the dimension table
+{"score":100.0}To add missing dimension records that are referenced by transactional data
+{"score":0}To create backup copies of the fact table
+{"score":0}To optimize the data warehouse for faster query performance
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does the 'Not Exists' option do when adding related records?
+
+{"score":0}It adds all records from the source table
+{"score":0}It adds records that meet a specified condition
+{"score":100.0}It adds records that do not meet a specified condition
+{"score":0}It deletes records that do not meet a specified condition
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of removing unused objects from a DW instance according to the article?
+
+{"score":0}To optimize the performance of the ODX instance
+{"score":100.0}To remove table references that no longer exist
+{"score":0}To update the DW instance with new data
+{"score":0}To backup the DW instance
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do first when removing unused objects from a DW instance?
+
+{"score":0}Delete the DW instance
+{"score":100.0}Open the relevant ODX instance
+{"score":0}Run the SQL database cleanup tool
+{"score":0}Backup all the data
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step in the Reverse Data Area process in TimeXtender?
+
+{"score":0}Deploy the generated objects
+{"score":100.0}Create or edit a Data Warehouse instance in the TimeXtender Portal
+{"score":0}Refresh TimeXtender Desktop
+{"score":0}Right-click on the Data Area and select Reverse Data Area
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do after selecting 'Reverse Data Area' in TimeXtender Desktop?
+
+{"score":0}Deploy the objects immediately
+{"score":100.0}Select the object types to be included and click OK
+{"score":0}Refresh TimeXtender Desktop
+{"score":0}Edit the Data Warehouse instance again
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What takes precedence in TimeXtender when applying schema settings?
+
+{"score":0}Data area level settings
+{"score":100.0}Table level settings
+{"score":0}The settings of the last table added
+{"score":0}The settings of the first data area created
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default schema for objects in a new data area in TimeXtender?
+
+{"score":0}dbo
+{"score":100.0}The name of the data area
+{"score":0}The name of the first table in the data area
+{"score":0}There is no default schema; it must be set manually
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default distribution method for tables on Azure Synapse Analytics?
+
+{"score":0}Replicate
+{"score":100.0}Round-robin
+{"score":0}Hash
+{"score":0}Shard
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How many distributions are data split across in Azure Synapse Analytics?
+
+{"score":0}30 distributions
+{"score":100.0}60 distributions
+{"score":0}90 distributions
+{"score":0}120 distributions
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary goal of enabling simple mode in a data warehouse?
+
+{"score":0}To enhance the security of the data
+{"score":100.0}To maximize performance during large data copies
+{"score":0}To simplify the user interface
+{"score":0}To reduce storage space used by the data
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens to a table when it is set to simple mode?
+
+{"score":0}It supports more complex data transformations
+{"score":0}It enables additional security features
+{"score":100.0}It disables all but the most basic functionality
+{"score":0}It increases the number of valid instances of the table
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of spatial joins in the context provided?
+
+{"score":0}To update the user interface of TimeXtender
+{"score":0}To create native relationships between tables in TimeXtender
+{"score":100.0}To find the spatial relationship between different geographical entities
+{"score":0}To reduce the computational load on the database
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Why should spatial joins be used carefully in TimeXtender?
+
+{"score":0}Because they are not supported by TimeXtender
+{"score":100.0}Because they are computationally expensive
+{"score":0}Because they can only be used with SQL Management Studio
+{"score":0}Because they require internet access to function
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of SQL snippets in TimeXtender?
+
+{"score":0}To document the database schema
+{"score":100.0}To speed up development by reusing code
+{"score":0}To generate reports
+{"score":0}To create new database tables
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a correct method to apply a SQL snippet in TimeXtender?
+
+{"score":0}As a stored procedure
+{"score":0}As a field level transformation
+{"score":0}As a custom step
+{"score":100.0}As a primary key constraint
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you consider before adding custom Stored Procedures and User Defined Functions in TimeXtender?
+
+{"score":0}Reviewing the TimeXtender documentation
+{"score":100.0}Considering all the native TimeXtender functionality
+{"score":0}Consulting with a database administrator
+{"score":0}Ensuring you have the latest version of TimeXtender
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How do you add a Stored Procedure in TimeXtender?
+
+{"score":0}By writing a script in SQL Server Management Studio
+{"score":100.0}By using the 'Add Stored Procedure' option in the Scripts folder
+{"score":0}By importing it from an external database
+{"score":0}By contacting TimeXtender support
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a supernatural key?
+
+{"score":0}A key that changes frequently to ensure data security.
+{"score":100.0}A durable key that is independent of natural keys like customer numbers.
+{"score":0}A key that is only used in supernatural events.
+{"score":0}A key that is the same across different source systems.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where can key stores for supernatural keys be created?
+
+{"score":0}Only in the data warehouse.
+{"score":0}Only in the staging database.
+{"score":100.0}Either in the data warehouse or staging database.
+{"score":0}In the cloud storage.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When is it recommended to tag fields for data impact documentation in a data warehouse?
+
+{"score":0}After the data reaches the endpoint
+{"score":100.0}As early in the data flow as possible
+{"score":0}Only at the source of the data
+{"score":0}Periodically, at every stage of the data flow
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must be done before a field can be tagged in the data warehouse documentation process?
+
+{"score":0}The field must be validated
+{"score":0}The data must be cleaned
+{"score":100.0}Tags must first be created
+{"score":0}The field must be approved by a supervisor
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of implementing a slowly changing dimension (SCD) in a data warehouse?
+
+{"score":0}To increase the speed of data retrieval
+{"score":100.0}To maintain historical data accuracy
+{"score":0}To reduce the storage space required
+{"score":0}To simplify the data model
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In the context of SCD Type II, what does the 'DW_Id' field represent?
+
+{"score":0}The date when the record was last updated
+{"score":100.0}A unique identifier for each row in the table
+{"score":0}The primary key of the source table
+{"score":0}The timestamp indicating when the record became valid
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary function of parameters in custom scripts or views as described in the text?
+
+{"score":0}To delete views and scripts
+{"score":100.0}To convert instances of a name to its content
+{"score":0}To rename tables automatically
+{"score":0}To notify users about system errors
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens when you try to pull in a field from another table without renaming it?
+
+{"score":0}The field is automatically renamed
+{"score":0}The script is executed without errors
+{"score":100.0}You receive a notification to rename the field
+{"score":0}The field is deleted from the table
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary function of a data staging area in data warehousing?
+
+{"score":0}To serve as the final storage of processed data
+{"score":100.0}To quickly extract data from its sources, minimizing impact
+{"score":0}To perform complex data analytics and reporting
+{"score":0}To encrypt data for security purposes
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where does a data staging area sit in the architecture of data warehousing?
+
+{"score":100.0}Between the data sources and the data warehouse
+{"score":0}After the data warehouse, before the data marts
+{"score":0}At the front-end for user interaction
+{"score":0}As a part of the ETL tools

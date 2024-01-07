@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the purpose of using Azure Data Factory for data movement according to the TimeXtender guide?",
+        "options": {
+            "option_a": "To manage user permissions and roles within Azure",
+            "option_b": "To transfer data directly from source to target without relying on application server resources",
+            "option_c": "To provide a graphical interface for SQL database management",
+            "option_d": "To encrypt data during transfer between different Azure services"
+        },
+        "answer": "option_b",
+        "explanation": "Azure Data Factory transfers data directly from source to target, which is ideal for large data sets as it does not rely on the limited resources of the application server."
+    },
+    "question_2": {
+        "question": "What must be installed on a local server if you want to use Azure Data Factory to transfer data from a non-Azure data source?",
+        "options": {
+            "option_a": "Azure Data Lake Storage",
+            "option_b": "Self-Hosted Integration Runtime",
+            "option_c": "Azure Data Factory V2",
+            "option_d": "Azure Active Directory"
+        },
+        "answer": "option_b",
+        "explanation": "A Self-Hosted Integration Runtime must be installed on the local server if you are connecting to a data source not related to Azure, such as a local SQL database."
+    },
+    "question_3": {
+        "question": "Which of the following is NOT a required field when setting up a connection to a PostgreSQL database using Azure Data Factory?",
+        "options": {
+            "option_a": "Server Name",
+            "option_b": "Port",
+            "option_c": "Force unicode conversion",
+            "option_d": "Azure Data Factory Name"
+        },
+        "answer": "option_d",
+        "explanation": "Azure Data Factory Name is not a required field when setting up a PostgreSQL connection; it is required when configuring the data factory resource itself."
+    },
+    "question_4": {
+        "question": "What should you do if you encounter a 'JreNotFound' error when running a copy activity in Azure Data Factory?",
+        "options": {
+            "option_a": "Install the latest .NET Framework on the Integration Runtime machine",
+            "option_b": "Update the SQL authentication password",
+            "option_c": "Install Java Runtime Environment on the Self-hosted Integration Runtime machine",
+            "option_d": "Disable Git in the Azure Data Factory resource settings"
+        },
+        "answer": "option_c",
+        "explanation": "The 'JreNotFound' error indicates that Java Runtime Environment (JRE) is required for parsing or writing to Parquet/ORC files and must be installed on the Self-hosted Integration Runtime machine."
+    }
+}

@@ -1,0 +1,111 @@
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of conditional lookup fields in TimeXtender?
+
+{"score":0}To delete values from a field in another table
+{"score":0}To update values in the same table
+{"score":100.0}To look up values from a field in another table within the same data area
+{"score":0}To create new tables in the Data Warehouse
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens if you create a conditional lookup field without specifying any conditions when multiple source lookup fields are present?
+
+{"score":0}The last lookup field will be used
+{"score":100.0}The first lookup field will always be used
+{"score":0}A random lookup field will be used
+{"score":0}The lookup will fail and return an error
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of creating a custom view in a data warehouse?
+
+{"score":0}To delete data from the database
+{"score":0}To generate reports directly
+{"score":100.0}To provide flexibility in data manipulation using SQL
+{"score":0}To increase data storage capacity
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must be done to ensure that a custom view's fields are properly documented and traceable in data lineage?
+
+{"score":0}Automatically map the fields using AI
+{"score":100.0}Perform manual mapping of the fields
+{"score":0}Delete and recreate the custom view
+{"score":0}Use default settings without any mapping
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step to preview the contents of a table using the 'Preview Table' feature?
+
+{"score":0}Click the Query Tool button in the Preview Table window.
+{"score":100.0}Right-click on a table and select Preview Table.
+{"score":0}Drag a table into the query window.
+{"score":0}Press the F8 function key.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you apply a specific date format to the results in the Preview Table window?
+
+{"score":0}Right-click on the date column and choose a format.
+{"score":0}Select the date format from the Instance list.
+{"score":100.0}Click Apply Format after selecting the date format from the Date format list.
+{"score":0}Change the system date format settings.
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of a primary key in a database table?
+
+{"score":100.0}To uniquely identify each row in the table
+{"score":0}To encrypt the table data
+{"score":0}To increase the data retrieval speed
+{"score":0}To store user preferences
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you identify fields set as primary keys in a table's list of fields?
+
+{"score":0}They are highlighted in red
+{"score":100.0}They have a key image in their icon
+{"score":0}They are italicized
+{"score":0}They are underlined
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of a Semantic Model in a data warehouse?
+
+{"score":0}To increase the amount of data stored
+{"score":100.0}To translate technical names into business terms
+{"score":0}To reduce the performance of data queries
+{"score":0}To duplicate data for backup purposes
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the benefit of adding hierarchies in a Semantic Model?
+
+{"score":100.0}To improve data sorting in front-end applications
+{"score":0}To increase data storage requirements
+{"score":0}To complicate the data model
+{"score":0}To remove redundant data
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of the SQL Database Cleanup Tool in TimeXtender?
+
+{"score":0}To optimize SQL queries
+{"score":100.0}To identify and delete unused tables to free up space
+{"score":0}To create new tables in the data warehouse
+{"score":0}To backup the data warehouse
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does deleting a table in TimeXtender UI NOT do by default?
+
+{"score":100.0}Delete the physical table in the data warehouse
+{"score":0}Free up space in the database
+{"score":0}Remove the table from the TimeXtender project
+{"score":0}Delete database schemas
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step in creating a relationship between tables in a new Data Area?
+
+{"score":0}Drag the ID field from the 'Many' table to the 'One' table
+{"score":100.0}Identify a field that exists in both tables to use for the relationship
+{"score":0}Set the default relation setting in the Edit Instance menu
+{"score":0}Create a lookup by dragging a field from one table to the other
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following data type combinations cannot be used to create a table relationship?
+
+{"score":0}nvarchar(20) with nvarchar(50)
+{"score":100.0}varchar with nvarchar
+{"score":0}int with bigint
+{"score":0}char with varchar
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary focus of the provided text?
+
+{"score":100.0}Guidelines for team development
+{"score":0}Instructions for database management
+{"score":0}Tips for individual developers
+{"score":0}Rules for consistent time management
+-
+{"folder":"(2024_01) Data Warehouse","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}As of the given DateTime, when was the information about working with multiple developers published or last updated?
+
+{"score":100.0}December 27, 2023
+{"score":0}January 1, 2023
+{"score":0}December 27, 2022
+{"score":0}The exact date is not provided

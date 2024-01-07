@@ -1,0 +1,20 @@
+{"folder":"test_abc","tags":{"category":"test_1234"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should be done to execute a PowerShell script as an external executable in TimeXtender?
+
+{"score":100.0}Right click on the 'External Executables' folder and select 'Add Execute PowerShell Script Step'
+{"score":0}Install the Azure Az PowerShell module
+{"score":0}Set the current Execution Policy
+{"score":0}Add a user under Security in SSMS
+-
+{"folder":"test_abc","tags":{"category":"test_1234"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you implement row level security in a SSAS database using a PowerShell script?
+
+{"score":0}Invoke-ProcessPartition
+{"score":100.0}Execute an XMLA script via PowerShell
+{"score":0}Backup-ASDatabase
+{"score":0}Add-RoleMember
+-
+{"folder":"test_abc","tags":{"category":"test_1234"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you implement row level security in a SSAS database using a PowerShell script?
+
+{"score":0}Invoke-ProcessPartition
+{"score":100.0}Execute an XMLA script via PowerShell
+{"score":0}Backup-ASDatabase
+{"score":0}Add-RoleMember

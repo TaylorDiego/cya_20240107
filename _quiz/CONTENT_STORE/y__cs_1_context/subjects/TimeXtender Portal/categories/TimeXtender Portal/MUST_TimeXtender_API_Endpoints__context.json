@@ -1,0 +1,99 @@
+{
+    "DateTime": "2023-12-27 14:42:10",
+    "URL": "https://support.timextender.com/timextender-portal-111/timextender-api-endpoints-1110",
+    "Keywords": "missing",
+    "Title": "TimeXtender API Endpoints _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "TimeXtender Postman collection download and install Postman download the collection The API Keyneeds to be setup in order to use the TimeXtender API endpoints. Once entered, the apiKey variable isused for the entire collection, as the variable is referenced in therequest headers for the various calls. Alternatively, the variable above can be entered manually within the request headers for the individual calls. For example, the {{apiKey}} variable for the job status request can be replaced with the actual API key. The following variables are included in the Postman collection: As mentioned in the Prerequisites section above, ApiKey must be added in the variables section in Postman.For some of the endpoints, JobId and TriggerId variables also need to be added by modifying the current value in the Variables section. GET This endpoint retrieves a list of all jobs for yourorganization. Each job consists of the following values: POST  JobId Message TriggerId GET Thisendpoint can be used to check the current status of a job. The following status codes exist:  GET  GET job execution job execution log GET Thisendpoint returns a similar result as the Get Job Logs endpoint, except it will only return logs with a trigger Id matching the one given as a route parameter. In other words, this endpoint allows filtering of logs based on a trigger Id.   Get Job Logs Endpoint @Christian Hauggaard I like to create a table in TimeXtender that containsthe last date and time a datasource in the ODX Server is successfully loaded. I'm looking for a API endpoint that can give me the last successful data transfer per datasourcein the ODX Server. The Job Logs endpoint give me some insights, but I cannot figure out which datasource/data transfer task the Job Log belongs to. @bas.hopstaken here  @Christian Hauggaard @Christian Hauggaard I would like to set up a new Data Source in TimeXtender which extracts data from the TimeXtender API Endpoints. However my knowledge in the new version of TimeXtender is quite limited, especially when it comes to configuring REST API data sources in the portal. I have managed to extract the get job logs in postman in accordance with your guide. I would like to do extract the same info directly in TimeXtender. Could you provide me with guidance how thiscould be accomplished?  Best regards, Markus  I have been working on creating some RSD files to use for this. To make them work you need to change the locations where I have added xxxx Once you have added either your own API key and if necessary an existing Job Id it will work. You only have to add the path to the location of the files in the Location field in the REST data source. Try them out, I have some different methods I use, some may work better for your setup. To apply any of the query slicers, you will need to create a managed query like this.  Hi team, Quick question; which aspect of jobs and executions in TimeXtender are called a trigger in this API? Kind regards, Andrew @andrew.gebhard A Trigger Id is unique to an execution of a job and will be attached to the created logs once the job has been started. The primary purpose of aTrigger Id is to filter logs. Please note that only scheduled executions will generate a Trigger Id. Manual executions of a job will resultin the below blank Trigger Id. For example if a job is scheduled to run twice a day. Thentwo new Trigger Ids will appear in the job logs per day for that job. Please let me know if this answers your question? My development team tracks modifications in the description field of each object, using a #-sign to reference the specific DevOps work item driving the change. We extract these descriptions from the local project repository and augment them with information from our DevOps Work Items. I have documented this process in an article, which you can read here: https://www.linkedin.com/pulse/powerbi-timextender-devops-enhancing-deployment-insight-marco-noordam However, with the transition to a new cloud repository, this method is no longer viable. Perhaps TimeXtender could adjust to our workflow, providing a comprehensive changelog for each object that is directly linked to DevOps? ;-)  @mnoordam https://support.timextender.com/ideas @Christian Hauggaard  https://www.bitmetric.nl/blog/schedule-timextender-jobs-qlik-automation/ How long are jobs logs retained by the API? There doesn't seem to be any paging on the job logs endpoint. Won't this data set become quite bulky after a while? Would also be good to have date filters so we can use incremental loading. How long are jobs logs retained by the API? There doesn't seem to be any paging on the job logs endpoint. Won't this data set become quite bulky after a while? Would also be good to have date filters so we can use incremental loading.  @Christian Hauggaard ",
+    "Lists": [
+        {
+            "heading": "Prerequisites",
+            "paragraphs": [
+                "The API Key needs to be setup in order to use the TimeXtender API endpoints."
+            ],
+            "list": [
+                "In Postman, select the Public - Jobs collection that has been imported in the left sidebar",
+                "Select the Variables tab",
+                "Enter the API key in the Current value for the variable apiKey (for more info on how to create an API key see API Key Management)"
+            ]
+        },
+        {
+            "heading": "Variables",
+            "paragraphs": [
+                "The following variables are included in the Postman collection:"
+            ],
+            "list": [
+                "ApiKey - the API key that you have created in the Portal for your organization",
+                "JobId - the Id of the job you want to execute, check status of, etc. Use the \"Get all jobs\" endpoint in order to retrieve the Id for your jobs",
+                "TriggerId - the trigger Id of a specific execution of a job. This Id is returned when running a POST call to execute a job",
+                "Domain - the base domain of the TimeXtender API gateway serving the public API"
+            ]
+        },
+        {
+            "heading": "Get All Jobs Endpoint",
+            "paragraphs": [
+                "This endpoint retrieves a list of all jobs for your organization. Each job consists of the following values:"
+            ],
+            "list": [
+                "Id (guid) - the Id of the job. This will be used for most of the remaining endpoints as an identifier",
+                "Name (string)  - the name of the job"
+            ]
+        },
+        {
+            "heading": "Execute Job Endpoint",
+            "paragraphs": [
+                "This endpoint will queue a job for execution by setting its status to \"pending\". The job will then be picked up by the application, at which point it will start the job execution along with execution logs.If successful, an object will be returned with the following properties:"
+            ],
+            "list": [
+                "JobId (guid) - the Id of the job which has been queued to execute.",
+                "Message (string) - a message explaining that the job has been started.",
+                "TriggerId (guid) - a trigger id is unique to an execution and will be attached to the created logs once the job has been started. It can be used to filter logs."
+            ]
+        },
+        {
+            "heading": "Get Job Status Endpoint",
+            "paragraphs": [
+                "This endpoint can be used to check the current status of a job. The following status codes exist:"
+            ],
+            "list": [
+                "0 - None",
+                "1 - Pending",
+                "2 - Running"
+            ]
+        },
+        {
+            "heading": "Get All Job Statuses Endpoint",
+            "paragraphs": [
+                "This endpoint will return a list of statuses for all jobs in an organization. The status objects in the list will look identical to the one from the Get Job Status endpoint.The all jobs statuses endpoint will return an array of objects with the following properties:"
+            ],
+            "list": [
+                "JobId (guid) - the Id of the requested job.",
+                "Status (int) - the status code.",
+                "Message (string) - a message explaining what the status code means."
+            ]
+        },
+        {
+            "heading": "Get Job Logs Endpoint",
+            "paragraphs": [
+                "This endpoint returns an array of job executions, as well as logs for a specific job.A job execution has the following properties:"
+            ],
+            "list": [
+                "Id (guid) - the Id of the job execution.",
+                "JobId (guid) - the Id of the job that has been executed.",
+                "State (int) - the state of the execution. The following states exist: -1 - none 0 - created 1 - running 2 - completed 3 - failed 4 - completed with errors 5 - completed with warnings",
+                "The following states exist: -1 - none 0 - created 1 - running 2 - completed 3 - failed 4 - completed with errors 5 - completed with warnings",
+                "-1 - none",
+                "0 - created",
+                "1 - running",
+                "2 - completed",
+                "3 - failed",
+                "4 - completed with errors",
+                "5 - completed with warnings",
+                "CreateTime (string) - the create time of the execution.",
+                "EndTime (string) - the end time of the execution (NULL if the execution is still running)",
+                "TriggerId (guid) - the trigger id of the execution (empty guid if started from the application)",
+                "JobExecutionLogs (array) - an array of job execution logs."
+            ]
+        }
+    ]
+}

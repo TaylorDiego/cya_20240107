@@ -1,0 +1,156 @@
+{
+    "question_1": {
+        "question": "What does the 'Enable differential deployment' option do in the Deploy and/or Execute dialog?",
+        "options": {
+            "option_a": "It deploys all objects regardless of changes",
+            "option_b": "It deploys only the objects that have not been changed",
+            "option_c": "It focuses the deployment on only those objects that have been changed",
+            "option_d": "It disables incremental loading"
+        },
+        "answer": "option_c",
+        "explanation": "The 'Enable differential deployment' option focuses the deployment so that only those objects that have been changed will be deployed."
+    }
+    , "question_2": {
+        "question": "What is the result of deploying a guarded table in TimeXtender?",
+        "options": {
+            "option_a": "The table is deployed without any warnings",
+            "option_b": "The table is deployed and truncated",
+            "option_c": "The table appears to start running but a message states that the table is guarded upon completion",
+            "option_d": "The table is immediately deleted"
+        },
+        "answer": "option_c",
+        "explanation": "A guarded table may appear to start running if you attempt to deploy it, but upon completion, a message will appear stating that the table is guarded, preventing its deployment or accidental truncation."
+    }
+    , "question_3": {
+        "question": "What does the 'Guard on Execution' option do in TimeXtender?",
+        "options": {
+            "option_a": "It speeds up the execution process",
+            "option_b": "It prevents a table from being executed",
+            "option_c": "It guards the table against data corruption",
+            "option_d": "It encrypts the table data for security"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Guard on Execution' option prevents a table from being executed, which can be useful to avoid overwriting data that should not be changed."
+    }
+    , "question_4": {
+        "question": "What is the effect of enabling the 'Send to Execution Queue' option in TimeXtender?",
+        "options": {
+            "option_a": "It cancels the execution of tables",
+            "option_b": "It executes tables immediately",
+            "option_c": "It allows users to continue working while execution is performed in the background",
+            "option_d": "It sends a notification to the user when execution is complete"
+        },
+        "answer": "option_c",
+        "explanation": "The 'Send to Execution Queue' option allows users to continue working on other tasks while the execution of tables or the entire instance is performed in the background."
+    }
+    , "question_5": {
+        "question": "What happens to the state of a job in TimeXtender when it is run?",
+        "options": {
+            "option_a": "It changes from Active to Idle",
+            "option_b": "It remains in the Idle state",
+            "option_c": "It changes from Idle to Active, then to Running, and finally to Completed",
+            "option_d": "It is immediately marked as Completed"
+        },
+        "answer": "option_c",
+        "explanation": "When a job is run in TimeXtender, its state progresses from Idle to Active, then to Running, and upon completion, it changes to the Completed state."
+    }
+    , "question_6": {
+        "question": "How can you prioritize objects during a managed execution in TimeXtender?",
+        "options": {
+            "option_a": "By setting the job to run at a higher priority",
+            "option_b": "By configuring the SMTP server settings",
+            "option_c": "By using the Managed Execution settings in an execution package",
+            "option_d": "By manually executing packages in a specific order"
+        },
+        "answer": "option_c",
+        "explanation": "In TimeXtender, prioritization of objects during a managed execution is configured within an execution package using the Managed Execution settings."
+    }
+    , "question_7": {
+        "question": "What should you do if you receive an error indicating a lack of permissions when executing a PowerShell script in TimeXtender?",
+        "options": {
+            "option_a": "Reinstall TimeXtender.",
+            "option_b": "Ensure the user has installed the required module.",
+            "option_c": "Check and update the PowerShell execution policies.",
+            "option_d": "Give the user permissions for the Analysis Services database."
+        },
+        "answer": "option_d",
+        "explanation": "If there's an error related to permissions, the user must be given permissions for the Analysis Services database."
+    }
+    , "question_8": {
+        "question": "What is the result of setting the Timeout for a PowerShell script to 0 in TimeXtender?",
+        "options": {
+            "option_a": "The script will execute immediately.",
+            "option_b": "The script will be executed with the highest priority.",
+            "option_c": "The script will have an infinite timeout.",
+            "option_d": "The script will not execute."
+        },
+        "answer": "option_c",
+        "explanation": "Setting the Timeout to 0 means the timeout is infinite, allowing the script to run indefinitely until completion."
+    }
+    , "question_9": {
+        "question": "What is a proactive step you can take to maintain TimeXtender execution performance?",
+        "options": {
+            "option_a": "Regularly reboot the server to clear temporary files",
+            "option_b": "Use the SQL Database Cleanup Tool to remove unused objects",
+            "option_c": "Always keep the number of threads at the maximum level",
+            "option_d": "Avoid reviewing the Execution History Gantt charts"
+        },
+        "answer": "option_b",
+        "explanation": "Using the SQL Database Cleanup Tool to remove objects no longer used in the instance is a proactive maintenance step to help maintain performance."
+    }
+    , "question_10": {
+        "question": "When experiencing slow executions in TimeXtender, what should you compare to identify potential issues?",
+        "options": {
+            "option_a": "Compare the color schemes of the Execution Overview Log",
+            "option_b": "Compare the user permissions of the current and previous executions",
+            "option_c": "Compare slow and fast executions, looking at timings and number of rows",
+            "option_d": "Compare the version of TimeXtender used in both executions"
+        },
+        "answer": "option_c",
+        "explanation": "Comparing slow and fast executions by looking at timings and the number of rows processed can help identify where performance may be degrading."
+    }
+    , "question_11": {
+        "question": "What is the purpose of 'Retry steps' in execution packages?",
+        "options": {
+            "option_a": "To fix data integrity issues",
+            "option_b": "To wait and retry when a data source is temporarily unavailable",
+            "option_c": "To increase the speed of execution",
+            "option_d": "To skip problematic steps in the execution"
+        },
+        "answer": "option_b",
+        "explanation": "Retry steps allow the execution to wait and retry if a data source is temporarily unavailable."
+    }
+    , "question_12": {
+        "question": "If you want one step to be retried up to three times, how should 'Retries per Step' and 'Retries' be configured?",
+        "options": {
+            "option_a": "'Retries per Step' should be 1 and 'Retries' should be 3",
+            "option_b": "'Retries per Step' should be 3 and 'Retries' should be 3",
+            "option_c": "'Retries per Step' should be 3 and 'Retries' should be 9",
+            "option_d": "'Retries per Step' should be 0 and 'Retries' should be 3"
+        },
+        "answer": "option_b",
+        "explanation": "'Retries per Step' must be 3, and 'Retries' should be equal to 3 retries * 1 step = 3."
+    }
+    , "question_13": {
+        "question": "What should you do if a timeout error occurs during data cleansing on the DWH?",
+        "options": {
+            "option_a": "Increase the timeout on the Qlik semantic model instance",
+            "option_b": "Increase the command timeout on the DWH instance",
+            "option_c": "Set up incremental load on the table",
+            "option_d": "Change the lookup type to Group by"
+        },
+        "answer": "option_b",
+        "explanation": "If a timeout error occurs during data cleansing on the DWH, the command timeout on the DWH instance should be increased."
+    }
+    , "question_14": {
+        "question": "What is a recommended action if a join in the data cleansing step is not an equal join?",
+        "options": {
+            "option_a": "Increase the batch size option",
+            "option_b": "Turn off automatic index generation",
+            "option_c": "Apply views where applicable",
+            "option_d": "Change the lookup type to Partition by"
+        },
+        "answer": "option_c",
+        "explanation": "If there is a join that is not an equal join (e.g., larger than, or smaller than) during the data cleansing step, it is recommended to apply views where applicable."
+    }
+}

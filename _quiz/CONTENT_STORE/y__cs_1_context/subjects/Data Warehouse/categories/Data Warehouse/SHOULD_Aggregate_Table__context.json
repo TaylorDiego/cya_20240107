@@ -1,0 +1,37 @@
+{
+    "DateTime": "2023-12-27 14:40:47",
+    "URL": "https://support.timextender.com/data-warehouse-108/aggregate-table-1016",
+    "Keywords": "missing",
+    "Title": "Aggregate Table _ Community",
+    "Author": "missing",
+    "Text": "AggregateTable  Use the following steps to add an aggregate table.  lookups  data selection rules ",
+    "Lists": [
+        {
+            "heading": "Adding an Aggregated Table",
+            "paragraphs": [
+                "Use the following steps to add an aggregate table."
+            ],
+            "list": [
+                "Under Tables in a data warehouse, right click the table, you want to add an aggregated version of, click Advanced and click Add Aggregate Table. The Add Aggregate Data Table window opens.",
+                "In the GroupBy section, select the table columns that should be used to aggregate the data. In the first Table: [table name] column, select the column to be used for grouping. In the Name column, enter a name for the field. For data types that are not dates, the GroupBy Type column will always be set to Value. For columns that contain date values, the GroupBy Type column allows for the grouping granularity to be set from a list time units ranging from Seconds all the way up to Year. Note that it is possible to use the same date column multiple times with different GroupBy types.",
+                "In the first Table: [table name] column, select the column to be used for grouping.",
+                "In the Name column, enter a name for the field.",
+                "For data types that are not dates, the GroupBy Type column will always be set to Value.",
+                "For columns that contain date values, the GroupBy Type column allows for the grouping granularity to be set from a list time units ranging from Seconds all the way up to Year. Note that it is possible to use the same date column multiple times with different GroupBy types.",
+                "In the Aggregate section, select the columns from the table to be aggregated. In the Table: [table name] column, select the column to be aggregated. In the Field column, enter a name for the field. In Aggregation Type column, select the aggregation method from one of the following options:  Min: The lowest value of the field in question. Max: The highest value of the field in question. Count: The number of rows. Count_Big: Same as count, but is able to count higher than 2^31, be-cause it uses the bigint data type instead of the int data type. DistinctCount: The number of unique values in the field. Sum: The sum of all row values. Average: The average of all row values.",
+                "In the Table: [table name] column, select the column to be aggregated.",
+                "In the Field column, enter a name for the field.",
+                "In Aggregation Type column, select the aggregation method from one of the following options:  Min: The lowest value of the field in question. Max: The highest value of the field in question. Count: The number of rows. Count_Big: Same as count, but is able to count higher than 2^31, be-cause it uses the bigint data type instead of the int data type. DistinctCount: The number of unique values in the field. Sum: The sum of all row values. Average: The average of all row values.",
+                "Min: The lowest value of the field in question.",
+                "Max: The highest value of the field in question.",
+                "Count: The number of rows.",
+                "Count_Big: Same as count, but is able to count higher than 2^31, be-cause it uses the bigint data type instead of the int data type.",
+                "DistinctCount: The number of unique values in the field.",
+                "Sum: The sum of all row values.",
+                "Average: The average of all row values.",
+                "(Optional) Click on Yes in the Override data type column to allow the data type for the field to be amended later. After the Aggregate table has been created, right-click on a field with his setting enabled and select \u201cEdit Aggregate Field\u201d to open a dialog where the data type can be changed.",
+                "Click OK to add the aggregated table."
+            ]
+        }
+    ]
+}

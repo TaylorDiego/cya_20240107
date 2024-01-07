@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:41:38",
+    "URL": "https://support.timextender.com/semantic-model-109/tableau-endpoint-1043",
+    "Keywords": "missing",
+    "Title": "Tableau\u00a0Endpoint _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "semantic model instance Data Estate Instances, Add Instance> Add semantic model instance Add endpoints Add an endpoint File Schema Postfix Note: Snowflake  additional steps When you deploy a Tableau endpoint, a view for each table in the model is created in the data warehouse that houses the table. The view name depends on the settings on the endpoint and has the format [view schema].[model name]_[endpoint name]_[table name]_[postfix], e.g. \"Tableau.MyModel_MyTableau_Customers_tab\". ",
+    "Lists": []
+}

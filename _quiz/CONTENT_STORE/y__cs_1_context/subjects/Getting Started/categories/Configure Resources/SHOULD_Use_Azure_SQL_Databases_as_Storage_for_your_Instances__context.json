@@ -1,0 +1,27 @@
+{
+    "DateTime": "2023-12-27 14:39:34",
+    "URL": "https://support.timextender.com/configure-resources-126/use-azure-sql-databases-as-storage-for-your-instances-801",
+    "Keywords": "missing",
+    "Title": "Use Azure SQL Databases as Storage for your Instances _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "\"Serverless\" Compute Tier Note: In this article you will learn how to: Create an Azure SQL Database \"Serverless\" Compute Tier Note paused retires scaling Min vCores Max vCores create users in Azure SQL Database Create an ODX instance or a Data Warehouse instance using the relevant guide below, for the server name enter the  For the server, copy the server nameprovided in Azure. The first step in the process is to give admin privileges to the user making the initial changes. Learn More in Microsoft Docs Optionally, to give the users read access to all the tables in the database, run the below script in SSMS ",
+    "Lists": [
+        {
+            "heading": "4. Allow read access to the Database",
+            "paragraphs": [
+                "The first step in the process is to give admin privileges to the user making the initial changes.",
+                "Learn More in Microsoft Docs"
+            ],
+            "list": [
+                "Identify the SQL Server in your resource group where the database is.",
+                "Inside the SQL Server resource click on the Azure Active Directory in the settings tab",
+                "To set your user as the admin click on the Set admin option > Search and select the name in the dialogue box.",
+                "In your SSMS Login to the Azure SQL as the Azure Active Directory admin specified above",
+                "Run the below script in SSMS connected to the same Azure SQL database CREATE USER [Azure AD Group Name] FROM EXTERNAL PROVIDER;",
+                "In TimeXtender desktop application where the Azure SQL DB, expand Security right click on the Database Role to Add: Add Database Role-> Add Manually-> Please enter the same AD Group Name used in the SSMS",
+                "To Provide the users in the Group access to only the valid schemas, right click Database Roles > Object Security Setup > Click on Schemas and check user Access Role to the valid schema.",
+                "Deploy the security tab"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,34 @@
+{
+    "question_1": {
+        "question_content": {
+            "question": "Where should you increase the timeout if an error occurs during the transfer step of a table in the ODX database?",
+            "options": {
+                "option_a": "TimeXtender Portal Data estate > Data sources",
+                "option_b": "TimeXtender Portal ODX instance > Edit",
+                "option_c": "TimeXtender Portal data warehouse > Edit",
+                "option_d": "TimeXtender Portal semantic model > Edit"
+            },
+            "answer": "option_a",
+            "explanation": "If a timeout error occurs during the transfer step of a table in the ODX database, the data source command timeout needs to be increased, which is configured in the TimeXtender Portal Data estate > Data sources."
+        },
+        "question_facts": [
+            "The question is well-structured and clear. It tests the understanding of where to adjust settings in the TimeXtender Portal when a specific error occurs. The options provided are all plausible, which makes the question challenging. The answer is correct according to the provided article. However, the question could be improved by providing more context about the ODX database and the transfer step. Overall, I would rate this question a 4 out of 5. It's a good question but could use a bit more context."
+        ]
+    },
+    "question_2": {
+        "question_content": {
+            "question": "What might be a next action to take if a timeout happens during nightly execution on a data source?",
+            "options": {
+                "option_a": "Increase the batch size option",
+                "option_b": "Decrease the batch size option",
+                "option_c": "Turn off automatic index generation",
+                "option_d": "Change the lookup type to Partition by"
+            },
+            "answer": "option_b",
+            "explanation": "If a timeout occurs during nightly execution on a data source, one action to consider is decreasing the batch size option, if supported by the data source adapter, to split the execution into several parts."
+        },
+        "question_facts": [
+            "The question is well-structured and clear. It presents a realistic scenario and offers multiple plausible solutions, requiring the test-taker to apply their knowledge to choose the best one. The correct answer is also supported by the provided explanation. However, the question could be improved by providing more context about the specific data source or system being used. Overall, I would rate this question a 4 out of 5."
+        ]
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What action should be taken to set up email notifications for critical errors in an ODX instance?",
+        "options": {
+            "option_a": "In the Solution Explorer, double-click the ODX and select 'Email Alerts'.",
+            "option_b": "In the Solution Explorer, right-click the ODX and click 'Notifications on Critical Errors'.",
+            "option_c": "In the Solution Explorer, right-click the ODX and choose 'Properties'.",
+            "option_d": "In the Solution Explorer, left-click the ODX and select 'Configure Email Notifications'."
+        },
+        "answer": "option_b",
+        "explanation": "To set up email notifications for critical errors, you should right-click the ODX in the Solution Explorer and select 'Notifications on Critical Errors' as per the provided steps."
+    },
+    "question_2": {
+        "question": "As of October 1st, 2022, what is required for an app to send emails through Microsoft's online SMTP servers?",
+        "options": {
+            "option_a": "Basic authentication with a username and password.",
+            "option_b": "An Application ID and Tenant ID with specific permissions granted.",
+            "option_c": "A direct connection to the Microsoft Exchange server.",
+            "option_d": "A VPN connection to Microsoft's internal network."
+        },
+        "answer": "option_b",
+        "explanation": "Microsoft discontinued basic authentication for email on online SMTP servers as of October 1st, 2022. Instead, an Application ID from an app created for this purpose and the Tenant ID for your company are required, with permissions such as Mail.Send, SMTP.Send, and User.Read set and consented by an Admin."
+    }
+}

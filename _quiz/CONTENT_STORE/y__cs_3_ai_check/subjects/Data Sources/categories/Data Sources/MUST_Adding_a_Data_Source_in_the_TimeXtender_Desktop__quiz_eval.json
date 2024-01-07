@@ -1,0 +1,134 @@
+{
+    "question_1": {
+        "question_content": {
+            "question": "What is the first step to add a new data source in TimeXtender Desktop?",
+            "options": {
+                "option_a": "Select the Connection from available connections in TimeXtender Portal.",
+                "option_b": "Double-click on your ODX instance.",
+                "option_c": "Right-click on your data source > Edit.",
+                "option_d": "Check the box Data on demand."
+            },
+            "answer": "option_b",
+            "explanation": "The first step is to double-click on your ODX instance as per the guide for adding a data source in TimeXtender Desktop."
+        },
+        "question_facts": [
+            "After reviewing the question, there are no typos in the question, options, or explanation provided. Everything is spelled correctly.",
+            "The question is grammatically correct and clear for a diverse audience. The format is appropriate, and the answer aligns with the provided article. No grammatical issues are present.",
+            "Upon reviewing the question and the original material, the question appears to be relevant to the material. The first step for adding a data source in TimeXtender Desktop, according to the provided material, is to \"Double-click on your ODX instance,\" which corresponds to the correct answer 'option_b' in the question. Therefore, the question is appropriate and correctly reflects the content of the guide.",
+            "The answer marked as 'option_b' - \"Double-click on your ODX instance\" is indeed the correct first step for adding a new data source in TimeXtender Desktop, as per the provided guide.",
+            "The question appears to be a good, straightforward question that accurately tests the examinee's knowledge of the initial step in adding a new data source in TimeXtender Desktop. The answer key states that the first step is to \"Double-click on your ODX instance,\" which aligns with the provided official guide's instructions. There are no trick elements or unfair components to this question. It clearly instructs the test taker on what to do first when adding a data source in TimeXtender Desktop.",
+            "The question appears to assume familiarity with TimeXtender Desktop without providing context, which could be problematic for those not versed in the software. Additionally, the question could be more specific: it does not clarify what is meant by 'adding a new data source' in practical terms. The options provided could potentially all be steps in a sequence rather than mutually exclusive actions, leading to confusion. The explanation only restates the selected option without providing a justification for why the other options are incorrect. It would benefit from a more detailed explanation, ideally with reference to the software documentation or official guidelines.",
+            "Rating: 4\n\nThis question clearly references a specific step in the process of adding a data source in TimeXtender Desktop and provides one correct answer along with plausible distractors. The explanation aligns with the cited guide's instructions, making it a very good question. However, it slightly lacks context for someone unfamiliar with TimeXtender, which keeps it from being a perfect score."
+        ]
+    },
+    "question_2": {
+        "question_content": {
+            "question": "How do you initiate adding a data source after accessing the ODX instance in TimeXtender Desktop?",
+            "options": {
+                "option_a": "Click on Advanced Settings.",
+                "option_b": "Double-click on your ODX instance.",
+                "option_c": "Right-click 'Data Sources' > Add Data Source.",
+                "option_d": "Select the Connection from available connections in TimeXtender Portal."
+            },
+            "answer": "option_c",
+            "explanation": "After accessing the ODX instance, you initiate adding a data source by right-clicking 'Data Sources' and selecting 'Add Data Source'."
+        },
+        "question_facts": [
+            "After reviewing the question, there are no typos in the question, options, or explanation provided. Everything is spelled correctly and the question is ready to be used as is.",
+            "The question is grammatically correct and clear for a diverse audience. It accurately reflects the process described in the provided article for adding a data source in TimeXtender Desktop.",
+            "The test question asks about initiating the addition of a data source after accessing the ODX instance in TimeXtender Desktop. The provided content from the webscrape indicates the relevant steps to add a new data source on TimeXtender Desktop, which includes the correct answer \"Right-click 'Data Sources' > Add Data Source.\" Therefore, the question is relevant to the material provided. The answer 'option_c' is correct and matches the procedure outlined in the original material.",
+            "The answer provided as 'option_c' is TRUE. According to the provided article content, one of the steps for adding a data source in TimeXtender Desktop is \"Right-click 'Data Sources' > Add Data Source\", which corresponds with the answer 'option_c'. The explanation aligns with the information in the article.",
+            "The question is good and not 'BS'. It clearly asks how to initiate the process of adding a data source after accessing an ODX instance in TimeXtender Desktop. The correct answer is provided as 'option_c': \"Right-click 'Data Sources' > Add Data Source.\" This matches the information given in the provided support article, making the question straightforward and factual. There are no trick elements or misleading options, so it should be a fair question for a test taker who has studied the material.",
+            "Problems with the question that could be improved:\n\n1. Specificity: The question does not specify the context of the ODX instance or TimeXtender Desktop, which may confuse someone not familiar with the software's environment.\n2. Accuracy: Based on the provided article, both double-clicking on the ODX instance and right-clicking on 'Data Sources' to add a data source are valid methods. The question suggests there is only one correct way.\n3. Clarity: The question could be clearer by specifying that the user is in the TimeXtender Desktop environment.\n4. Distinction between options: Option D is misleading because it refers to the TimeXtender Portal rather than the Desktop, which may not be relevant to the specific action of adding a data source in the Desktop environment.\n5. Missing context: The question does not provide any context or explanation for what an ODX instance is, potentially confusing test-takers unfamiliar with the product.\n6. Explanation: The explanation provided does not include the alternative method (double-clicking on the ODX instance) that is also a valid way to initiate adding a data source.",
+            "Rating: 5"
+        ]
+    },
+    "question_3": {
+        "question_content": {
+            "question": "What should you do to configure a data source to transfer data into ODX storage on demand?",
+            "options": {
+                "option_a": "Double-click on your ODX instance.",
+                "option_b": "Right-click 'Data Sources' > Add Data Source.",
+                "option_c": "Right-click on your data source > Edit, then click on Advanced Settings and check 'Data on demand'.",
+                "option_d": "Select the Connection from available connections in TimeXtender Portal."
+            },
+            "answer": "option_c",
+            "explanation": "To configure on-demand data transfer into ODX storage, edit the data source, access Advanced Settings, and check the 'Data on demand' option."
+        },
+        "question_facts": [
+            "After reviewing the question, there are no typos in the question, options, or explanation provided. Everything is spelled correctly.",
+            "The question is grammatically correct and clear for a diverse audience. The final format of the question is appropriate for use.",
+            "After reviewing the original material, the test question is relevant to the material provided. The steps described in the question for configuring a data source to transfer data into ODX storage on demand are indeed mentioned in the material, specifically under the heading \"On-Demand Data Warehouse Ingestion.\" The correct answer according to the material is to edit the data source by right-clicking it, accessing Advanced Settings, and checking the 'Data on demand' box. Therefore, the correct answer is indeed 'option_c', as stated in the question. The explanation provided with the question accurately reflects the steps described in the material.",
+            "The answer 'option_c' is TRUE. The correct way to configure a data source to transfer data into ODX storage on demand is to right-click on the data source, select 'Edit', click on 'Advanced Settings', and then check the 'Data on demand' box. This information is consistent with the provided knowledge base article.",
+            "The question and answer appear to be good and not 'BS'. The question asks about a specific procedure within TimeXtender for configuring a data source to transfer data into ODX storage on demand. The answer (option_c) accurately reflects the steps outlined in the provided support article, which describes accessing the 'Data on demand' option through the Advanced Settings after editing the data source. This question is straightforward and provides a clear, correct answer based on the available documentation, making it a valid question for a test taker knowledgeable in TimeXtender.",
+            "The question assumes familiarity with the term \"ODX storage,\" which may not be clear to all test-takers, and lacks context on what ODX stands for. The options may be confusing if the user interface terminology has changed or if \"TimeXtender Portal\" and \"TimeXtender Desktop\" are not clearly defined for the user. Option D's mention of \"TimeXtender Portal\" seems out of context based on the provided article. The phrase \"transfer data into ODX storage on demand\" could be clearer—does it refer to an automated process or a manual action initiated by a user? The explanation is succinct but could benefit from specifying that this is done within the TimeXtender Desktop environment for additional clarity.",
+            "Rating: 5\n\nThe question is specific, accurate, and based on the provided information from the TimeXtender support documentation. It tests the understanding of a key process in configuring data transfer into ODX storage on demand."
+        ]
+    },
+    "question_4": {
+        "question_content": {
+            "question": "What is the purpose of enabling 'Data on demand' in TimeXtender Desktop's data source settings?",
+            "options": {
+                "option_a": "To automatically create a new ODX instance.",
+                "option_b": "To transfer data into ODX storage before the MDW ingests the data without configuring an explicit 'Transfer task'.",
+                "option_c": "To add a new data source to the TimeXtender Desktop.",
+                "option_d": "To select the Connection from available connections in TimeXtender Portal."
+            },
+            "answer": "option_b",
+            "explanation": "Enabling 'Data on demand' allows the data source to transfer data into ODX storage before the MDW ingests it, without the need for an explicit 'Transfer task'."
+        },
+        "question_facts": [
+            "After reviewing the test question, there are no typos to report. All items are spelled correctly.",
+            "The test question is grammatically correct and clear for a diverse audience. The final format of the question is appropriate for use.",
+            "The question is relevant to the original material. The material specifically addresses the purpose of the 'Data on demand' option in TimeXtender Desktop's data source settings, stating that enabling it allows the data source to transfer data into ODX storage before the MDW ingests it, without needing an explicit 'Transfer task'. This aligns with the provided answer 'option_b' and the explanation given.",
+            "The answer provided as 'option_b' is TRUE. The explanation correctly states that enabling 'Data on demand' allows the data source to transfer data into ODX storage before the MDW ingests it, without the need for an explicit 'Transfer task'. This is supported by the information in the provided article.",
+            "The question is good. It directly asks about the purpose of the 'Data on demand' feature in TimeXtender Desktop's data source settings. The correct answer given (option_b) aligns with the explanation provided in the resources, which states that enabling 'Data on demand' allows the data source to transfer data into ODX storage before the MDW ingests it, without needing an explicit 'Transfer task'. There's no trick or ambiguity in the question or the answer, so it would not be considered 'BS' for a test-taker.",
+            "1. The term \"TimeXtender Desktop\" might be ambiguous or outdated if the official product name has changed, leading to confusion about applicability.\n2. The question assumes knowledge of acronyms like \"ODX\" and \"MDW\" without defining them, potentially confusing test-takers unfamiliar with these terms.\n3. Options A, C, and D could be misleading or irrelevant if they don't correspond to actual functionalities within the TimeXtender platform.\n4. The 'explanation' provided does not elaborate on what \"MDW\" stands for, which could leave test-takers without a full understanding of the process.\n5. The question might not fully assess a test-taker's understanding of the feature, as it only asks for the purpose but not the implications or use cases of the \"Data on demand\" feature.\n6. No mention of where this setting is located in the software, which could be relevant for understanding the context of the question.\n7. The phrasing of option B is somewhat complex and could be simplified for clarity.",
+            "I would rate the question a 5 - 'very good question'."
+        ]
+    },
+    "question_5": {
+        "question_content": {
+            "question": "After adding a data source in TimeXtender Desktop, what is the next step to configure it for on-demand data transfer?",
+            "options": {
+                "option_a": "Double-click on your ODX instance.",
+                "option_b": "Right-click 'Data Sources' > Add Data Source.",
+                "option_c": "Right-click on your data source > Edit, then click on Advanced Settings.",
+                "option_d": "Select the Connection from available connections in TimeXtender Portal."
+            },
+            "answer": "option_c",
+            "explanation": "The next step after adding a data source is to right-click on it, choose 'Edit', and then click on 'Advanced Settings' to configure on-demand data transfer."
+        },
+        "question_facts": [
+            "After reviewing the question, there are no typos in the question, options, or explanation provided. Everything is spelled correctly.",
+            "The question is grammatically correct and clear for a diverse audience. The final format of the question is appropriate for use.",
+            "Based on the original material, the review of the test question is as follows:\n\nThe question is relevant to the material provided. The correct answer, 'option_c', matches the information in the article under the 'On-Demand Data Warehouse Ingestion' section, which instructs to right-click on the data source, select 'Edit', and click on 'Advanced Settings' to enable the 'Data on demand' option. The question accurately reflects the steps described in the material for configuring on-demand data transfer after adding a data source in TimeXtender Desktop.",
+            "The answer provided as 'option_c' is TRUE. After adding a data source in TimeXtender Desktop, you would indeed right-click on your data source, choose 'Edit', and then click on 'Advanced Settings' to configure on-demand data transfer.",
+            "The question seems legitimate and not 'BS'. It is asking for the next step after adding a data source in TimeXtender Desktop to configure it for on-demand data transfer. The correct answer, according to the provided information, is to 'right-click on your data source > Edit, then click on Advanced Settings', which matches the answer 'option_c'. This aligns with the TimeXtender knowledge base article, which states that enabling the 'Data on demand' option is done through the TX Desktop Data Source's Advanced Settings. The question looks straightforward and relevant to the subject matter without intending to deceive or trick the test taker.",
+            "The question assumes prior knowledge of TimeXtender Desktop and its terminology, which could confuse those unfamiliar with the product. The wording \"configure it for on-demand data transfer\" may be too specific or technical without context. The options provided may not clearly distinguish between steps in the process, as some options seem to describe how to add a data source rather than configure an existing one. The correct answer, 'option_c', might be misleading as it does not explicitly state the objective is to enable 'Data on demand'. The explanation provided does not give a clear rationale as to why other options are incorrect, which could be vital for understanding.",
+            "Rating: 5\n\nThe question is clear and specific, with a correct answer provided, and it aligns with the information available in the provided article. The inclusion of an explanation also helps to clarify the correct procedure, making this a very good question for testing knowledge of configuring data sources in TimeXtender Desktop."
+        ]
+    },
+    "question_6": {
+        "question_content": {
+            "question": "Where do you select the connection for your new data source in TimeXtender Desktop?",
+            "options": {
+                "option_a": "In the TimeXtender Portal after configuring the data source.",
+                "option_b": "In the Advanced Settings of the data source.",
+                "option_c": "After double-clicking on your ODX instance.",
+                "option_d": "From available connections you have configured in TimeXtender Portal."
+            },
+            "answer": "option_d",
+            "explanation": "You select the connection for your new data source from the available connections that you have previously configured in the TimeXtender Portal."
+        },
+        "question_facts": [
+            "After reviewing the question, there are no typos in the question, options, or explanation provided. Everything is spelled correctly.",
+            "The question is grammatically correct and should be clear to a diverse audience. The final format of the question appears to be:\n\n\"Where do you select the connection for your new data source in TimeXtender Desktop?\"\n- In the TimeXtender Portal after configuring the data source.\n- In the Advanced Settings of the data source.\n- After double-clicking on your ODX instance.\n- From available connections you have configured in TimeXtender Portal.\n\nThe correct answer is provided as 'option_d', which aligns with the information in the provided article. The explanation is also clear and concise. No grammatical issues are present.",
+            "The question \"Where do you select the connection for your new data source in TimeXtender Desktop?\" is relevant to the provided material. The options for the question correspond to different actions within TimeXtender, but the correct answer according to the original material is found in the list under \"Adding a Data Source in TimeXtender Desktop,\" which states to \"Select the Connection from available connections you have configured in TimeXtender Portal.\" Therefore, 'option_d' is the correct answer: \"From available connections you have configured in TimeXtender Portal.\" The explanation provided is consistent with this information.",
+            "The answer provided as 'option_d' is correct based on the information from the web scrape. You select the connection for your new data source from the available connections that you have configured in the TimeXtender Portal.",
+            "Based on the provided information, the question seems good and not 'BS'. The options and the answer make sense given the context of how TimeXtender operates. Test takers familiar with TimeXtender should find the question clear and straightforward. The answer 'option_d' aligns with the provided documentation, which states you select the connection from available connections configured in TimeXtender Portal. There is no indication of trickery or intent to mislead.",
+            "Problems with the question:\n\n1. The question lacks specificity. It assumes familiarity with TimeXtender concepts without explaining them, such as \"ODX instance\" or \"TimeXtender Portal.\"\n2. The options may not be mutually exclusive. Options A and D both mention configuring in the TimeXtender Portal, which could lead to confusion about the correct answer.\n3. The phrasing of the options could be clearer. For instance, \"In the Advanced Settings of the data source\" could be misleading because it doesn't specify that this step is done within the TimeXtender Desktop.\n4. The explanation might not be sufficient to clear up confusion or to reinforce the learning objective, as it simply paraphrases the correct option without providing additional context or detail.\n5. The question does not provide any information about what a \"connection\" or \"data source\" is within the context of TimeXtender, which might be necessary for complete understanding.",
+            "I would rate this question as a 4.\n\nThe question's phrasing is clear, and it requires specific knowledge about the process of adding a data source in TimeXtender Desktop. It's not ambiguous and the provided answer aligns with the content scraped from the support article, indicating that the correct answer is indeed to select the connection from available connections configured in TimeXtender Portal. The explanation is concise and accurately reflects the steps outlined in the documentation."
+        ]
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:42:46",
+    "URL": "https://support.timextender.com/infrastructure-networking-133/create-a-bacpac-export-760",
+    "Keywords": "missing",
+    "Title": "Create a bacpac export _ Community",
+    "Author": "Thomas Lind",
+    "Text": "This article describes how to create an export of a database for use in another location. BAK BACPAC There are many benefits to this compared to a backup, as it takes way less space.  @Thomas Lind Thanks for the article! Would this be a good option to use for backing up project repositories before an Azure-to-Azure tenant migration? Kind regards, Andrew @andrew.gebhard Creating bacpac exports is what I found to be the only option to move the content of a database to a Azure SQL database, so I assume it is the only way to do it. We have done a move from local to Azure and while it is possible with the repositories there is some issues moving security settings, if I remember. Hi Thomas, do you mean the security settings such as logins, users and roles on the database?  The roles and users will be transferred in a separate step since all users and roles are deleted anyway during an azure to azure migration.  Kind regards, Andrew Yes, we had to remove them. So it seems it should be no issue for you. Thanks for your quick responses! I will do a little more research into this option: Copying Azure databases between tenants and subscriptions using PowerShell - nimbus (nimbusdti.co.uk) Because it should create the whole database as a copy of a database in another tenant, instead of just copying the contents of the database. But I'm not sure what the requirements are on the azure side. I will let you know how it goes if we choose for this option. Maybe we will use BACPAC as a fallback. Kind regards, Andrew ",
+    "Lists": []
+}

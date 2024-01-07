@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:43:20",
+    "URL": "https://support.timextender.com/troubleshooting-134/oracle-data-source-error-in-command-could-not-load-file-or-assembly-oracle-dataaccess-1308",
+    "Keywords": "missing",
+    "Title": "Oracle data source Error in command_ Could not load file or assembly Oracle.DataAccess _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "Testing the connection to a new Oracle data source causes the Oracle data source window to close and one of the followingerror messages to appear  Could not load file or assembly 'Oracle.DataAccess, Version 4.112.2.0, Culture=neutral, PublicKeyToken=<Public Key>'. This assembly was compiled for a different processor. Missing or incorrectly installed Oracle Data Provider here when performing the install, and remember to restart after the installation is complete ",
+    "Lists": []
+}

@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What can TimeXtender 6024.1 Documentation be generated for?",
+        "options": {
+            "option_a": "ODX instances only",
+            "option_b": "Data Warehouse instances only",
+            "option_c": "Semantic Model instances only",
+            "option_d": "ODX instances, Data Warehouse instances, and Semantic Model instances"
+        },
+        "answer": "option_d",
+        "explanation": "TimeXtender 6024.1 Documentation can be generated for ODX instances, Data Warehouse instances, and Semantic Model instances, including individual data areas within instances."
+    },
+    "question_2": {
+        "question": "How can you generate a deployment status report in TimeXtender?",
+        "options": {
+            "option_a": "By emailing TimeXtender support",
+            "option_b": "By generating it on an instance or data area level",
+            "option_c": "By printing the project",
+            "option_d": "By purchasing an additional module"
+        },
+        "answer": "option_b",
+        "explanation": "A deployment status report can be generated on an instance level as well as a data area level within TimeXtender."
+    },
+    "question_3": {
+        "question": "What should you do to edit a documentation template in TimeXtender?",
+        "options": {
+            "option_a": "Click Add in the window that opens",
+            "option_b": "Type a new name in the Name box",
+            "option_c": "Click on the template you want to edit in the list",
+            "option_d": "Delete the old template and create a new one"
+        },
+        "answer": "option_c",
+        "explanation": "To edit a documentation template, you should click on the template you want to edit in the list that appears after clicking Manage."
+    },
+    "question_4": {
+        "question": "Which of the following is NOT an option for including descriptions in TimeXtender documentation?",
+        "options": {
+            "option_a": "As plain text without any formatting",
+            "option_b": "As rich text in attached RTF files",
+            "option_c": "As encrypted text for security purposes",
+            "option_d": "No descriptions"
+        },
+        "answer": "option_c",
+        "explanation": "The options for including descriptions in TimeXtender documentation are as plain text, as rich text in attached RTF files, or no descriptions at all. Encrypted text is not mentioned as an option."
+    },
+    "question_5": {
+        "question": "What is the purpose of the 'Include instance tree' option in TimeXtender documentation settings?",
+        "options": {
+            "option_a": "To include a list of all users with access to the instance",
+            "option_b": "To include a rendering of the instance tree in the document",
+            "option_c": "To include a family tree of the developers",
+            "option_d": "To include a tree diagram of the network infrastructure"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Include instance tree' option is used to include a rendering of the instance tree in the TimeXtender documentation."
+    },
+    "question_6": {
+        "question": "What happens when you click 'Reset to Defaults' in the Documentation Settings of TimeXtender?",
+        "options": {
+            "option_a": "It resets the template to the last saved state",
+            "option_b": "It deletes the current template",
+            "option_c": "It resets the style settings to their defaults",
+            "option_d": "It logs you out of TimeXtender"
+        },
+        "answer": "option_c",
+        "explanation": "Clicking 'Reset to Defaults' in the Documentation Settings of TimeXtender resets the style settings to their default values."
+    }
+}

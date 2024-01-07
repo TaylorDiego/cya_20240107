@@ -1,0 +1,34 @@
+{
+    "question_2": {
+        "question_content": {
+            "question": "When setting up a CData connector to a JSON data source, what is the first step according to the guide?",
+            "options": {
+                "option_a": "Paste in the link to the JSON resource location.",
+                "option_b": "Set up incremental load and data type overwrites.",
+                "option_c": "Check the online documentation for the JSON guide from CData.",
+                "option_d": "Configure the JSON Path in the data source field."
+            },
+            "answer": "option_c",
+            "explanation": "The first step in setting up a CData connector is to check the online documentation for the JSON guide from CData, ensuring proper configuration and usage."
+        },
+        "question_facts": [
+            "The test question is grammatically correct and should be clear for a diverse audience. The language is straightforward and the options are presented in a clear format. The explanation is concise and directly supports the correct answer."
+        ]
+    },
+    "question_6": {
+        "question_content": {
+            "question": "What is the purpose of the 'Flatten Documents' option when working with JSON data?",
+            "options": {
+                "option_a": "To create a relational database schema from JSON data.",
+                "option_b": "To parse line-delimited JSON files.",
+                "option_c": "To combine nested JSON objects into one large table.",
+                "option_d": "To generate a RSD file for complex JSON structures."
+            },
+            "answer": "option_c",
+            "explanation": "The 'Flatten Documents' option is used to combine all nested JSON objects into one large table, simplifying the data structure."
+        },
+        "question_facts": [
+            "The test question appears to be grammatically correct and clear. It is suitable for a diverse audience as it does not contain any complex jargon that would not be understood by someone familiar with JSON data handling. The final format of the question is as follows:\n\nQuestion: What is the purpose of the 'Flatten Documents' option when working with JSON data?\nOptions:\nA) To create a relational database schema from JSON data.\nB) To parse line-delimited JSON files.\nC) To combine nested JSON objects into one large table.\nD) To generate a RSD file for complex JSON structures.\n\nAnswer: C) To combine nested JSON objects into one large table.\n\nExplanation: The 'Flatten Documents' option is used to combine all nested JSON objects into one large table, simplifying the data structure."
+        ]
+    }
+}

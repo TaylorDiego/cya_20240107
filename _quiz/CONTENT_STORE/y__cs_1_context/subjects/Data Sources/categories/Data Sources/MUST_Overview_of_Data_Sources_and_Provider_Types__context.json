@@ -1,0 +1,23 @@
+{
+    "DateTime": "2023-12-27 14:42:31",
+    "URL": "https://support.timextender.com/data-sources-112/overview-of-data-sources-and-provider-types-1087",
+    "Keywords": "missing",
+    "Title": "Overview of Data Sources and Provider Types _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "This article describes the different provider types for data sources inTimeXtender. Often there are multiple ways to connect to a data source, and several provider types to choose from. This article aims to provide an overview of the different options available to help inform decision-making around provider selection. An ODX instance can connect to a data source through one of five different types of providers:    ",
+    "Lists": [
+        {
+            "heading": "Provider Types",
+            "paragraphs": [
+                "An ODX instance can connect to a data source through one of five different types of providers:"
+            ],
+            "list": [
+                "TimeXtender enhanced: TimeXtender's own providers with tweaks and improvements that usually makes this the best choice if one is available for your data source.",
+                "Managed ADO.NET: Providers from CData, a third-party supplier of drivers and providers for connecting to a massive amount of different systems. For help with setting up CData providers, please refer to CData online documentation for ADO.NET providers at https://www.cdata.com/kb/help/",
+                "Local ADO.NET: Providers installed on the machine that are built on ADO.NET",
+                "Local OLE DB: Providers installed on the machine that supports the OLE DB standard",
+                "ADF: Providers from TimeXtender that use Azure Data Factory for transferring data."
+            ]
+        }
+    ]
+}

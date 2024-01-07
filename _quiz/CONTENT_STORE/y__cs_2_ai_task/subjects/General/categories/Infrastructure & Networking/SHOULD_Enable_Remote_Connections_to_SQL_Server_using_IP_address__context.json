@@ -1,0 +1,28 @@
+{
+    "DateTime": "2023-12-27 14:42:44",
+    "URL": "https://support.timextender.com/infrastructure-networking-133/enable-remote-connections-to-sql-server-using-ip-address-622",
+    "Keywords": "missing",
+    "Title": "Enable Remote Connections to SQL Server using IP address _ Community",
+    "Author": "missing",
+    "Text": "remote Before connecting TimeXtender to a remote SQL Server, you may use SQL Server Management Studio to verify the connections. Take a note of server machines IP address.   ",
+    "Lists": [
+        {
+            "heading": "Configure SQL Server machine",
+            "paragraphs": [],
+            "list": [
+                "Windows Firewall ->Advanced Settings->Inbound Rules Add a rule to enable TCP port 1433 (default port for SQL Server) Read this article for details: Configure the Windows Firewall to Allow SQL Server Access",
+                "Add a rule to enable TCP port 1433 (default port for SQL Server)",
+                "Read this article for details: Configure the Windows Firewall to Allow SQL Server Access",
+                "Run SSMS (SQL Server Management Studio) on SQL Server machine Server Properties -> Security -> SQL Server and Windows Authentication mode (Enable)",
+                "Server Properties -> Security -> SQL Server and Windows Authentication mode (Enable)",
+                "Server Properties - > Connections -> Allow Remote Connections ..\u201d should be checked",
+                "Add a SQL login (if not already there)",
+                "Enable SQL Service to listen on TCP/IP  Check SQL Server version and run appropriate version of SQL Configuration Manager to enable TCP.",
+                "Check SQL Server version and run appropriate version of SQL Configuration Manager to enable TCP.",
+                "Restart SQL Server Service",
+                "Now you can run SSMS on the client machine, connect to (remote) SQL Server by specifying its local or public IP address, or name.  In the example below, all three connections refer to the same remote SQL Server. Once you are able to configure connection to a remote SQL Server, the same address (or server name) should connect OK from TimeXtender.",
+                "Once you are able to configure connection to a remote SQL Server, the same address (or server name) should connect OK from TimeXtender."
+            ]
+        }
+    ]
+}

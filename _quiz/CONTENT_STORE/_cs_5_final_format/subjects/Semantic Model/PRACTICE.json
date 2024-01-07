@@ -1,0 +1,310 @@
+{
+    "question_1": {
+        "question": "Where does the Source Database Browser appear when adding tables to a Semantic Model instance?",
+        "options": {
+            "option_a": "In the left-hand pane",
+            "option_b": "In the right-hand pane",
+            "option_c": "In a new window",
+            "option_d": "In the bottom pane"
+        },
+        "answer": "option_b",
+        "explanation": "The Source Database Browser appears in the right-hand pane when you click on the Semantic Model instance name."
+    }
+    , "question_2": {
+        "question": "What action is performed to move a table from the Source Database Browser to the Semantic Model instance?",
+        "options": {
+            "option_a": "Copy-and-paste",
+            "option_b": "Drag-and-drop",
+            "option_c": "Click-and-select",
+            "option_d": "Export-and-import"
+        },
+        "answer": "option_b",
+        "explanation": "Tables are moved from the Source Database Browser to the Semantic Model instance using the drag-and-drop method."
+    }
+    , "question_3": {
+        "question": "What is the purpose of the URL provided in the context?",
+        "options": {
+            "option_a": "To direct users to a support page",
+            "option_b": "To download a CSV file",
+            "option_c": "To link to an external advertisement",
+            "option_d": "To submit a bug report"
+        },
+        "answer": "option_a",
+        "explanation": "The URL is likely provided to direct users to a support page related to 'CSV Endpoint', as indicated by the context."
+    }
+    , "question_4": {
+        "question": "Who is the author of the content provided in the context?",
+        "options": {
+            "option_a": "Data Estate Instances",
+            "option_b": "Christian Hauggaard",
+            "option_c": "Semantic Model",
+            "option_d": "CSV Endpoint"
+        },
+        "answer": "option_b",
+        "explanation": "The context clearly states that the author of the content is 'Christian Hauggaard'."
+    }
+    , "question_5": {
+        "question": "What effect does categorizing a text field as 'Web URL' have in client applications like Power BI?",
+        "options": {
+            "option_a": "It encrypts the text field for security purposes",
+            "option_b": "It displays the text fields as links",
+            "option_c": "It converts the text field into a numerical value",
+            "option_d": "It hides the text field from the report"
+        },
+        "answer": "option_b",
+        "explanation": "When a text field is categorized as 'Web URL' in the semantic model, client applications like Power BI will display these fields as links."
+    }
+    , "question_6": {
+        "question": "Which of the following is NOT a correct way to summarize a field in the semantic layer for Power BI?",
+        "options": {
+            "option_a": "Sum",
+            "option_b": "Average",
+            "option_c": "Maximum",
+            "option_d": "Concatenate"
+        },
+        "answer": "option_d",
+        "explanation": "In the semantic layer, fields can be summarized by 'sum', 'average', 'minimum', etc., but 'concatenate' is not a summarization setting."
+    }
+    , "question_7": {
+        "question": "What specific database system is mentioned as requiring additional steps?",
+        "options": {
+            "option_a": "MySQL",
+            "option_b": "Oracle",
+            "option_c": "Snowflake",
+            "option_d": "MongoDB"
+        },
+        "answer": "option_c",
+        "explanation": "The context mentions 'Snowflake additional steps', indicating that Snowflake requires additional steps."
+    }
+    , "question_8": {
+        "question": "What is the format of the date and time provided in the context?",
+        "options": {
+            "option_a": "MM-DD-YYYY HH:MM:SS",
+            "option_b": "YYYY-MM-DD HH:MM:SS",
+            "option_c": "DD-MM-YYYY HH:MM:SS",
+            "option_d": "YYYY-DD-MM HH:MM:SS"
+        },
+        "answer": "option_b",
+        "explanation": "The DateTime format in the context is '2023-12-27 14:41:35', which follows the 'YYYY-MM-DD HH:MM:SS' format."
+    }
+    , "question_9": {
+        "question": "What is the result of setting the Data format to Percentage in the custom measure setup?",
+        "options": {
+            "option_a": "It requires a script to manually convert the result to a percentage",
+            "option_b": "It automatically converts the decimal result to a percentage",
+            "option_c": "It changes the data type to Integer",
+            "option_d": "It limits the custom measure to financial data only"
+        },
+        "answer": "option_b",
+        "explanation": "Setting the Data format to Percentage will convert the decimal result to a percentage automatically, so manual conversion using a script is not necessary."
+    }
+    , "question_10": {
+        "question": "In the context of adding a custom measure, what does the 'Show translation' feature do?",
+        "options": {
+            "option_a": "It translates the custom measure's name into different languages",
+            "option_b": "It converts the script into a more user-friendly format",
+            "option_c": "It shows the script TimeXtender will deploy to the endpoint",
+            "option_d": "It changes the script syntax for different endpoint types"
+        },
+        "answer": "option_c",
+        "explanation": "The 'Show translation' feature displays the script that TimeXtender will deploy to the endpoint, reflecting any changes made to the script or parameters."
+    }
+    , "question_11": {
+        "question": "Which of the following settings is NOT available for Qlik and Tableau when setting up a custom field?",
+        "options": {
+            "option_a": "Data type",
+            "option_b": "Data format",
+            "option_c": "Summarize by",
+            "option_d": "Script"
+        },
+        "answer": "option_c",
+        "explanation": "The 'Summarize by' option is not available for Qlik and Tableau endpoints when setting up a custom field."
+    }
+    , "question_12": {
+        "question": "In the context of adding a custom field to a semantic table, what is the purpose of the 'Sort by' list?",
+        "options": {
+            "option_a": "To choose the field that defines the order of records in the table",
+            "option_b": "To select the primary key for the table",
+            "option_c": "To filter the data in the custom field",
+            "option_d": "To specify the default sorting algorithm"
+        },
+        "answer": "option_a",
+        "explanation": "The 'Sort by' list is used to select the field whose values will be used to sort the custom field in the semantic table."
+    }
+    , "question_13": {
+        "question": "Which of the following is NOT a step in adding a Power BI Premium Semantic Model Endpoint?",
+        "options": {
+            "option_a": "Paste the Workspace Connection URL copied from the Power BI workspace.",
+            "option_b": "Authenticate using a Service Principal.",
+            "option_c": "Deploy & Execute the semantic instance in TimeXtender Desktop.",
+            "option_d": "Give your endpoint a friendly name in TimeXtender."
+        },
+        "answer": "option_c",
+        "explanation": "Deploying & Executing the semantic instance is a separate step in TimeXtender Desktop, not part of adding a Power BI Premium Semantic Model Endpoint."
+    }
+    , "question_14": {
+        "question": "What should you take note of when creating an App Registration in Azure for use with TimeXtender?",
+        "options": {
+            "option_a": "The Tenant ID and App ID",
+            "option_b": "The Workspace Connection URL",
+            "option_c": "The Data Warehouse credentials",
+            "option_d": "The Power BI workspace settings"
+        },
+        "answer": "option_a",
+        "explanation": "When creating an App Registration in Azure, it is important to take note of the Tenant ID and App ID, as these will be used as part of your username later."
+    }
+    , "question_15": {
+        "question": "Which of the following is NOT an optional field when adding a Qlik Endpoint in TimeXtender?",
+        "options": {
+            "option_a": "View schema",
+            "option_b": "Postfix",
+            "option_c": "Qlik application",
+            "option_d": "App prefix"
+        },
+        "answer": "option_c",
+        "explanation": "The 'Qlik application' field is not optional as you need to select the Qlik application to target, which is a necessary step in the setup process."
+    }
+    , "question_16": {
+        "question": "In the context of TimeXtender's Qlik Endpoint setup, what is the purpose of the 'Virtual proxy prefix'?",
+        "options": {
+            "option_a": "It is used to specify the schema name for views.",
+            "option_b": "It is the prefix from the virtual proxy in Qlik Sense used for proxy authentication.",
+            "option_c": "It is the prefix added to the endpoint name to create the app name in Qlik Sense.",
+            "option_d": "It is the postfix used for views and folder names."
+        },
+        "answer": "option_b",
+        "explanation": "The 'Virtual proxy prefix' is used when setting up proxy authentication with the Qlik Sense Enterprise server, where you write the prefix from the virtual proxy in Qlik Sense."
+    }
+    , "question_17": {
+        "question": "Which of the following is NOT a type of measure that can be created based on a field?",
+        "options": {
+            "option_a": "Distinct count",
+            "option_b": "Row Count",
+            "option_c": "Maximum",
+            "option_d": "Sum"
+        },
+        "answer": "option_b",
+        "explanation": "'Row Count' is a type of measure for a table-based measure, not for a field-based measure."
+    }
+    , "question_18": {
+        "question": "Where can you customize the data format, such as the number of decimal places for decimal numbers?",
+        "options": {
+            "option_a": "In the Type list",
+            "option_b": "In the Name box",
+            "option_c": "In the Data format list, by clicking Customize",
+            "option_d": "In the Description box"
+        },
+        "answer": "option_c",
+        "explanation": "Customization of the data format, including the number of decimal places, is done in the Data format list by clicking on the Customize option."
+    }
+    , "question_19": {
+        "question": "What should you do if a table in the Data Warehouse has been deleted and you want to use a new table in the semantic model?",
+        "options": {
+            "option_a": "Create a new semantic model from scratch.",
+            "option_b": "Update the semantic model manually to use the new table.",
+            "option_c": "Synchronize the semantic model and remap the tables and fields.",
+            "option_d": "Leave the semantic model unchanged."
+        },
+        "answer": "option_c",
+        "explanation": "If a table in the Data Warehouse has been deleted and a new table should be used in the semantic model, you should synchronize the semantic model and remap the tables and fields to reflect the new structure."
+    }
+    , "question_20": {
+        "question": "What is the result of selecting 'Schema' during the remapping process in the semantic model synchronization?",
+        "options": {
+            "option_a": "It deletes the existing schema in the semantic model.",
+            "option_b": "It creates a new schema unrelated to the previous mappings.",
+            "option_c": "It automatically selects the table as a result of the schema selection.",
+            "option_d": "It prevents any new mappings from being created."
+        },
+        "answer": "option_c",
+        "explanation": "During the remapping process in semantic model synchronization, selecting 'Schema' will automatically select the table as a result of the schema selection, which helps in reestablishing the mappings with the new table."
+    }
+    , "question_21": {
+        "question": "How is Row-Level Security configured in TimeXtender?",
+        "options": {
+            "option_a": "By creating a role that is associated with an endpoint",
+            "option_b": "By creating a Row-Level Security Setup under a specific field",
+            "option_c": "By encrypting specific fields within the database",
+            "option_d": "By manually entering user permissions for each row"
+        },
+        "answer": "option_b",
+        "explanation": "Row-Level Security is configured by creating a Row-Level Security Setup under a specific field, which specifies which field values the role will have access to."
+    }
+    , "question_22": {
+        "question": "What is the result of associating a role with a Row-Level Security Setup that grants access to West Territory field values?",
+        "options": {
+            "option_a": "The role will have access to data in all territories",
+            "option_b": "The role will have access to data only in the East territory",
+            "option_c": "The role will not have access to data outside of the West territory",
+            "option_d": "The role will have access to data without any territorial restrictions"
+        },
+        "answer": "option_c",
+        "explanation": "Associating a role with a Row-Level Security Setup that grants access to West Territory field values means that any role associated with this security setup will not have access to data that is outside of the West territory."
+    }
+    , "question_23": {
+        "question": "What does the symbol '--' represent in the context of a relation's cardinality?",
+        "options": {
+            "option_a": "Many to Many",
+            "option_b": "One to Many",
+            "option_c": "Many to one",
+            "option_d": "One to one"
+        },
+        "answer": "option_d",
+        "explanation": "In the context of a relation's cardinality, the symbol '--' represents a One to one relationship."
+    }
+    , "question_24": {
+        "question": "What should be done first when adding tables to a Semantic instance to ensure relations are automatically brought in?",
+        "options": {
+            "option_a": "Add the associated fact table first",
+            "option_b": "Deploy the relations on the DWH tables",
+            "option_c": "Add the dimension tables first",
+            "option_d": "Manually add the specific fields in the relation"
+        },
+        "answer": "option_c",
+        "explanation": "When adding tables to a Semantic instance, dimension tables should be added first before the associated fact table to ensure that existing relations are automatically brought in."
+    }
+    , "question_25": {
+        "question": "What indicates that all objects in a table are selected for an SSAS perspective?",
+        "options": {
+            "option_a": "The table is marked with a dot",
+            "option_b": "The table is highlighted",
+            "option_c": "The table is marked with a checkmark",
+            "option_d": "The table is underlined"
+        },
+        "answer": "option_c",
+        "explanation": "When all objects in a table are selected for inclusion in an SSAS perspective, the table is marked with a checkmark."
+    }
+    , "question_26": {
+        "question": "What should you do if you encounter an error stating 'No perspectives when deploying tabular model'?",
+        "options": {
+            "option_a": "Ensure that a measure is selected in the SSAS perspective",
+            "option_b": "Rename the perspective",
+            "option_c": "Add more tables to the perspective",
+            "option_d": "Deploy the semantic model again"
+        },
+        "answer": "option_a",
+        "explanation": "To resolve the error 'No perspectives when deploying tabular model', you should ensure that a measure is selected in the SSAS perspective."
+    }
+    , "question_27": {
+        "question": "Which of the following is part of the format for the view name created in the data warehouse?",
+        "options": {
+            "option_a": "[model name]_[data warehouse]_[table name]_[postfix]",
+            "option_b": "[view schema].[model name]_[endpoint name]_[table name]_[postfix]",
+            "option_c": "[endpoint name].[model name]_[table name]_[view schema]",
+            "option_d": "[table name]_[model name]_[endpoint name]_[prefix]"
+        },
+        "answer": "option_b",
+        "explanation": "The view name format is given as [view schema].[model name]_[endpoint name]_[table name]_[postfix]."
+    }
+    , "question_28": {
+        "question": "What is the example view name given in the text for a Tableau endpoint deployment?",
+        "options": {
+            "option_a": "Tableau.MyTableau_MyModel_Customers_tab",
+            "option_b": "MyModel_MyTableau.Customers_tab",
+            "option_c": "Tableau.MyModel_MyTableau_Customers_tab",
+            "option_d": "Customers_tab.MyModel_MyTableau_Tableau"
+        },
+        "answer": "option_c",
+        "explanation": "The example view name provided in the text is 'Tableau.MyModel_MyTableau_Customers_tab'."
+    }
+}

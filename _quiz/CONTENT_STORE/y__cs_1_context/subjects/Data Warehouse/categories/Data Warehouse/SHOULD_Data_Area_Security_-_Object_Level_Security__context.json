@@ -1,0 +1,22 @@
+{
+    "DateTime": "2023-12-27 14:41:00",
+    "URL": "https://support.timextender.com/data-warehouse-108/data-area-security-object-level-security-1215",
+    "Keywords": "missing",
+    "Title": "Data Area Security - Object Level Security _ Community",
+    "Author": "Greg Lennox",
+    "Text": "TimeXtender includes security functionality that provides a way to set access permissions for objects within a data area. Access permissions can be set forspecific views, schemas, tables, as well asindividualtable columns. Row level permissions can be configured for those objects within adata area. Security According to step 1 above, creating a Database Role in the data area is a prerequisiteforconfiguring object level permissions. Click on the following link fora detailed explaination of creating a database role.   Permissions for database roles can be set on objects for database to create object level security. TimeXtender uses the same allow/deny settingsas SQL Server. Select from one of thethree possible permission settings below. Since tables may be a mix of different settings, the permission icon for tables may reflect this by being split down the middle and displaying two different icons side by side. The mixedstates icons are shown and explained below. Use the following steps to assign object-level or column-level permissions todatabase roles for tables.   In addtion to being used to create object level permissions, database roles can also be used to create row level Permissions. Click on the following link to open the article regarding the configuration and setup of row level permissions.    ",
+    "Lists": [
+        {
+            "heading": "Assigning Object Level Permissions to Database Roles",
+            "paragraphs": [
+                "Permissions for database roles can be set on objects for database to create object level security.",
+                "TimeXtender uses the same allow/deny settings as SQL Server. Select from one of the three possible permission settings below."
+            ],
+            "list": [
+                "Not set (gray dot): The database role is not allowed to access the object but is not explicitly denied access.",
+                "Grant (green with a white checkmark): The database role is granted access to the object. However, if a user is a member of another database role that is denied access, then the user will not have access to the object.",
+                "Deny (red with white bar): The database role is denied access to the object. Even if a user is a member of another database role that allows access, the user will still be denied access."
+            ]
+        }
+    ]
+}

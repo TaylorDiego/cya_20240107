@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the default port number used when configuring a Snowflake Data Warehouse instance in TimeXtender?",
+        "options": {
+            "option_a": "80",
+            "option_b": "443",
+            "option_c": "8080",
+            "option_d": "3306"
+        },
+        "answer": "option_b",
+        "explanation": "The default port for Snowflake is 443, as mentioned in the configuration steps for Data Warehouse Instance Storage."
+    },
+    "question_2": {
+        "question": "Where can you find the Snowflake Account Identifier in the Snowflake portal?",
+        "options": {
+            "option_a": "Admin > Users > Your Profile",
+            "option_b": "Admin > Accounts > Next to your account ID",
+            "option_c": "Home > Dashboard > Account Details",
+            "option_d": "Help > Documentation > Account Information"
+        },
+        "answer": "option_b",
+        "explanation": "The Snowflake Account Identifier can be found by navigating to Admin > Accounts and then clicking the link next to your account ID."
+    },
+    "question_3": {
+        "question": "Which role must you select in the Snowflake portal to create a Snowflake Database?",
+        "options": {
+            "option_a": "ACCOUNTADMIN",
+            "option_b": "USER",
+            "option_c": "SYSADMIN",
+            "option_d": "PUBLIC"
+        },
+        "answer": "option_c",
+        "explanation": "To create a Snowflake Database, you must switch to the SYSADMIN role in the Snowflake portal."
+    },
+    "question_4": {
+        "question": "How do you configure the ODBC Data Source for Snowflake in TimeXtender?",
+        "options": {
+            "option_a": "Install the Snowflake JDBC driver and configure in TimeXtender",
+            "option_b": "Use the default ODBC Data Source provided by TimeXtender",
+            "option_c": "Download and install the Snowflake ODBC driver and configure in the ODBC Data Source Administrator Application",
+            "option_d": "Configure directly in TimeXtender without any additional drivers"
+        },
+        "answer": "option_c",
+        "explanation": "To configure the ODBC Data Source for Snowflake, you must download and install the Snowflake ODBC driver and then configure it in the ODBC Data Source Administrator Application."
+    }
+}

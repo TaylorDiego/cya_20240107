@@ -1,0 +1,178 @@
+{
+  "question_1": {
+      "question": "What is the first step required before setting up a specific CData data source according to the guide?",
+      "options": {
+          "option_a": "Creating a data source and searching for the provider",
+          "option_b": "Mapping the data source to an ODX instance",
+          "option_c": "Going through the Initial setup",
+          "option_d": "Setting up a log file for troubleshooting"
+      },
+      "answer": "option_c",
+      "explanation": "Before attempting to set up a specific CData data source, the guide specifies that you must go through the Initial setup."
+  }
+  , "question_2": {
+      "question": "When adding a CData data source, how should you choose between different versions of a provider?",
+      "options": {
+          "option_a": "Select the oldest version for compatibility",
+          "option_b": "Choose the version with the highest number",
+          "option_c": "Pick any version as they are all the same",
+          "option_d": "Choose the version with the lowest number"
+      },
+      "answer": "option_b",
+      "explanation": "The guide advises to generally choose the provider version with the highest number when adding a CData data source."
+  }
+  , "question_3": {
+      "question": "What is the first step to add a new data source in TimeXtender Desktop?",
+      "options": {
+          "option_a": "Select the Connection from available connections in TimeXtender Portal.",
+          "option_b": "Double-click on your ODX instance.",
+          "option_c": "Right-click on your data source > Edit.",
+          "option_d": "Check the box Data on demand."
+      },
+      "answer": "option_b",
+      "explanation": "The first step is to double-click on your ODX instance as per the guide for adding a data source in TimeXtender Desktop."
+  }
+  , "question_4": {
+      "question": "How do you initiate adding a data source after accessing the ODX instance in TimeXtender Desktop?",
+      "options": {
+          "option_a": "Click on Advanced Settings.",
+          "option_b": "Double-click on your ODX instance.",
+          "option_c": "Right-click 'Data Sources' > Add Data Source.",
+          "option_d": "Select the Connection from available connections in TimeXtender Portal."
+      },
+      "answer": "option_c",
+      "explanation": "After accessing the ODX instance, you initiate adding a data source by right-clicking 'Data Sources' and selecting 'Add Data Source'."
+  }
+  , "question_5": {
+      "question": "What is the first step in setting up a REST provider according to the guide?",
+      "options": {
+          "option_a": "Configure the OAuth settings",
+          "option_b": "Click the REST guide from CData link",
+          "option_c": "Set up the data source template",
+          "option_d": "Generate an RSD file"
+      },
+      "answer": "option_b",
+      "explanation": "The first step in setting up a REST provider is to click the REST guide from CData link, as it likely contains important information and instructions for the setup process."
+  }
+  , "question_6": {
+      "question": "Which data format is NOT mentioned as an option for presenting data when setting up a REST provider?",
+      "options": {
+          "option_a": "SOAP",
+          "option_b": "CSV",
+          "option_c": "XML",
+          "option_d": "PDF"
+      },
+      "answer": "option_d",
+      "explanation": "SOAP, CSV, and XML are mentioned as data formats for presenting data. PDF is not listed as an option in the provided context."
+  }
+  , "question_7": {
+      "question": "What is the default Row Scan Depth value when setting up a connection to a local Excel file?",
+      "options": {
+          "option_a": "0",
+          "option_b": "100",
+          "option_c": "1000",
+          "option_d": "10000"
+      },
+      "answer": "option_b",
+      "explanation": "The default Row Scan Depth value is set to 100. This means the provider will read only the first 100 rows to decide the data types."
+  }
+  , "question_8": {
+      "question": "Which authentication scheme is required when connecting to a SharePoint file through the Microsoft Excel Online provider?",
+      "options": {
+          "option_a": "Basic Authentication",
+          "option_b": "OAuth",
+          "option_c": "API Key",
+          "option_d": "Windows Authentication"
+      },
+      "answer": "option_b",
+      "explanation": "OAuth is the required authentication scheme when using the Microsoft Excel Online provider to connect to a SharePoint file."
+  }
+  , "question_9": {
+      "question": "What is the new default 'Row Scan Depth' value when setting up a CSV data source according to the provided text?",
+      "options": {
+          "option_a": "100",
+          "option_b": "0",
+          "option_c": "10000",
+          "option_d": "1"
+      },
+      "answer": "option_b",
+      "explanation": "The new default 'Row Scan Depth' is set to 0, which means the whole file will be read before determining the fields' data types."
+  }
+  , "question_10": {
+      "question": "When connecting to CSV data sources, what does setting the 'Row Scan Depth' to a value like 10000 help with?",
+      "options": {
+          "option_a": "It helps to read the file faster by only scanning the first 10000 rows.",
+          "option_b": "It increases the security of the data source.",
+          "option_c": "It allows for more files to be aggregated.",
+          "option_d": "It changes the file format to JSON."
+      },
+      "answer": "option_a",
+      "explanation": "Setting 'Row Scan Depth' to 10000 is better for very large files as it defines the data types by reading only the first 10000 rows, which can speed up synchronization."
+  }
+  , "question_11": {
+      "question": "What is the primary difference between the REST provider and the CData data source for connecting to JSON data?",
+      "options": {
+          "option_a": "CData data source can only connect to JSON data in APIs, not files.",
+          "option_b": "CData data source is used exclusively for JSON data.",
+          "option_c": "REST provider cannot handle pagination parameters.",
+          "option_d": "CData data source does not support incremental load."
+      },
+      "answer": "option_b",
+      "explanation": "The CData data source is used exclusively for JSON data, whereas the REST provider can be used for various types of data. Both can handle similar functionalities, but CData is specific to JSON."
+  }
+  , "question_12": {
+      "question": "When setting up a CData connector to a JSON data source, what is the first step according to the guide?",
+      "options": {
+          "option_a": "Paste in the link to the JSON resource location.",
+          "option_b": "Set up incremental load and data type overwrites.",
+          "option_c": "Check the online documentation for the JSON guide from CData.",
+          "option_d": "Configure the JSON Path in the data source field."
+      },
+      "answer": "option_c",
+      "explanation": "The first step in setting up a CData connector is to check the online documentation for the JSON guide from CData, ensuring proper configuration and usage."
+  }
+  , "question_13": {
+      "question": "What is the primary function of RSD files in the context provided?",
+      "options": {
+          "option_a": "To store user credentials securely",
+          "option_b": "To generate and synchronize schema files for REST data sources",
+          "option_c": "To increase the speed of data retrieval from REST APIs",
+          "option_d": "To encrypt data transferred from REST APIs"
+      },
+      "answer": "option_b",
+      "explanation": "RSD files are used to generate and synchronize schema files for REST data sources, as indicated by the context which discusses setting up and using RSD files for schema generation and synchronization."
+  }
+  , "question_14": {
+      "question": "Which of the following is NOT a schema generation option for RSD files?",
+      "options": {
+          "option_a": "OnUse",
+          "option_b": "OnStart",
+          "option_c": "OnCreate",
+          "option_d": "OnFinish"
+      },
+      "answer": "option_d",
+      "explanation": "The text lists OnUse, OnStart, and OnCreate as schema generation options. OnFinish is not mentioned and is therefore not a schema generation option for RSD files."
+  }
+  , "question_15": {
+      "question": "What is the primary purpose of the article written by Christian Hauggaard?",
+      "options": {
+          "option_a": "To provide a historical overview of TimeXtender",
+          "option_b": "To describe different provider types for data sources in TimeXtender",
+          "option_c": "To offer troubleshooting tips for TimeXtender",
+          "option_d": "To announce new features in TimeXtender"
+      },
+      "answer": "option_b",
+      "explanation": "The article aims to provide an overview of the different provider types available in TimeXtender to inform decision-making around provider selection."
+  },
+  "question_16": {
+      "question": "How many different types of providers can an ODX instance connect to a data source through, according to the article?",
+      "options": {
+          "option_a": "Three",
+          "option_b": "Four",
+          "option_c": "Five",
+          "option_d": "Six"
+      },
+      "answer": "option_c",
+      "explanation": "An ODX instance can connect to a data source through one of five different types of providers."
+  }
+}

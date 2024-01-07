@@ -1,0 +1,376 @@
+{
+    "question_1": {
+        "question": "What should you be cautious of when removing a data source mapping in TimeXtender?",
+        "options": {
+            "option_a": "The data source connection can be deleted at any time.",
+            "option_b": "Any data sources on the ODX that use the data source connection will stop working.",
+            "option_c": "You must first add a new data source connection before removing an old one.",
+            "option_d": "The data source connection must be cloned before it can be removed."
+        },
+        "answer": "option_b",
+        "explanation": "When removing a data source mapping, caution is advised because any data sources on the ODX that use the data source connection will stop functioning."
+    }
+    , "question_2": {
+        "question": "What should you do if you want to limit the synchronization to files from a specific SharePoint site in Excel Online?",
+        "options": {
+            "option_a": "Set the Workbook field to include the site's name.",
+            "option_b": "Set the SharePoint URL to point at the specific site.",
+            "option_c": "Use the Include SharePoint Sites field with 'false'.",
+            "option_d": "Set the Drive field to include the site's ID."
+        },
+        "answer": "option_b",
+        "explanation": "To limit the synchronization to files from a specific SharePoint site, you should set the SharePoint URL to point at that specific site."
+    }
+    , "question_3": {
+        "question": "Which of the following steps is crucial when installing ODP.Net for TX on a machine?",
+        "options": {
+            "option_a": "Running the Command Prompt without administrator privileges.",
+            "option_b": "Running the Command Prompt as administrator.",
+            "option_c": "Installing the ODP.Net package without the Oracle Client.",
+            "option_d": "Copying the TNSNames.ora and SQLNet.ora files to the root directory."
+        },
+        "answer": "option_b",
+        "explanation": "It is very important to run the Command Prompt as administrator when installing ODP.Net, as indicated in the provided steps for setting up the environment."
+    }
+    , "question_4": {
+        "question": "When connecting to SharePoint On-Premises 2010, which property must be set to true?",
+        "options": {
+            "option_a": "UseRESTAPI",
+            "option_b": "UseNTLMV1",
+            "option_c": "UseADFS",
+            "option_d": "UseOData"
+        },
+        "answer": "option_a",
+        "explanation": "For SharePoint On-Premises 2010, the property 'UseRESTAPI' must be set to true to establish a connection."
+    }
+    , "question_5": {
+        "question": "When setting up an XML data source with attributes, what additional information must be provided?",
+        "options": {
+            "option_a": "A link to the file and the Row Scan Depth",
+            "option_b": "The Data Model and Data Type overwrites",
+            "option_c": "A link to the file and XPath",
+            "option_d": "Incremental load and data selection rules"
+        },
+        "answer": "option_c",
+        "explanation": "For an XML file using attributes, you need to provide a link to the file and the XPath, as the system cannot automatically read the XPath for attribute-based XML files."
+    }
+    , "question_6": {
+        "question": "What permissions must be given to the Azure AD application set up for authentication to Dynamics Business Central?",
+        "options": {
+            "option_a": "HTTP client requests",
+            "option_b": "D365 AUTOMATION User Permission Set",
+            "option_c": "Extension Management",
+            "option_d": "Deployment Status"
+        },
+        "answer": "option_b",
+        "explanation": "The Azure AD application must be given the 'D365 AUTOMATION' User Permission Set for authentication to BC as stated in the second list under 'Set up an app to use for authentication'."
+    }
+    , "question_7": {
+        "question": "Which of the following is a prerequisite for installing Theobald Xtract Universal according to the provided context?",
+        "options": {
+            "option_a": "Install .NET Framework 4.5 or later",
+            "option_b": "Ensure a VPN connection is established",
+            "option_c": "Ensure Python (version 3.8 or later) is installed",
+            "option_d": "Configure a static IP address for the server"
+        },
+        "answer": "option_c",
+        "explanation": "The prerequisite for installing Theobald Xtract Universal is to ensure Python (version 3.8 or later) is installed, as stated in the 'Prerequisites' section."
+    }
+    , "question_8": {
+        "question": "In TimeXtender, when adding a data source connection for Dynamics 365 Business Central - SQL Server, which authentication methods are available?",
+        "options": {
+            "option_a": "OAuth 2.0 and Service to Service Authentication",
+            "option_b": "SQL Server Authentication and OAuth 2.0",
+            "option_c": "SQL Server Authentication and Active Directory Password Authentication",
+            "option_d": "Service to Service Authentication and Active Directory Integrated Authentication"
+        },
+        "answer": "option_c",
+        "explanation": "For TimeXtender Dynamics 365 Business Central - SQL Server, the available authentication methods are SQL Server Authentication and Active Directory Password Authentication."
+    }
+    , "question_9": {
+        "question": "Which fields are recommended to be added when setting up Incremental Load in TimeXtender for Dynamics 365 Finance data source?",
+        "options": {
+            "option_a": "DATAAREAID and CREATEDDATETIME",
+            "option_b": "DATAAREAID and MODIFIEDDATETIME",
+            "option_c": "USERNAME and MODIFIEDDATETIME",
+            "option_d": "USERNAME and CREATEDDATETIME"
+        },
+        "answer": "option_b",
+        "explanation": "For Incremental Load setup, it is recommended to add the fields DATAAREAID and MODIFIEDDATETIME, if they exist, as they contain the account name and a timestamp, which are suitable for tracking changes."
+    }
+    , "question_10": {
+        "question": "What should you do if you receive an 'out of range date conversion' error in TimeXtender when using an Oracle data source?",
+        "options": {
+            "option_a": "Reinstall the Oracle Data Source provider",
+            "option_b": "Set the 'out of range date conversion' option to 'Ignore'",
+            "option_c": "Set the 'out of range date conversion' option to 'MS SQL min/max date'",
+            "option_d": "Contact TimeXtender support"
+        },
+        "answer": "option_c",
+        "explanation": "To fix the 'out of range date conversion' error, you should set the option to 'MS SQL min/max date' in the Data Conversions section of the data source settings in the TimeXtender Portal."
+    }
+    , "question_11": {
+        "question": "What should you do after mapping a data source to an ODX instance?",
+        "options": {
+            "option_a": "Create it as a data source",
+            "option_b": "Set up a log file immediately",
+            "option_c": "Choose the specific CData provider",
+            "option_d": "Increase the default string size"
+        },
+        "answer": "option_a",
+        "explanation": "After mapping the data source to an ODX instance, the next step is to create it as a data source."
+    }
+    , "question_12": {
+        "question": "What is the recommended verbosity level for a log file when troubleshooting a new CData data source setup?",
+        "options": {
+            "option_a": "1",
+            "option_b": "2",
+            "option_c": "3",
+            "option_d": "5"
+        },
+        "answer": "option_c",
+        "explanation": "The recommended verbosity level for a log file during troubleshooting is 3, as it provides a balance of information without being too verbose."
+    }
+    , "question_13": {
+        "question": "What should you do to configure a data source to transfer data into ODX storage on demand?",
+        "options": {
+            "option_a": "Double-click on your ODX instance.",
+            "option_b": "Right-click 'Data Sources' > Add Data Source.",
+            "option_c": "Right-click on your data source > Edit, then click on Advanced Settings and check 'Data on demand'.",
+            "option_d": "Select the Connection from available connections in TimeXtender Portal."
+        },
+        "answer": "option_c",
+        "explanation": "To configure on-demand data transfer into ODX storage, edit the data source, access Advanced Settings, and check the 'Data on demand' option."
+    }
+    , "question_14": {
+        "question": "What is the purpose of enabling 'Data on demand' in TimeXtender Desktop's data source settings?",
+        "options": {
+            "option_a": "To automatically create a new ODX instance.",
+            "option_b": "To transfer data into ODX storage before the MDW ingests the data without configuring an explicit 'Transfer task'.",
+            "option_c": "To add a new data source to the TimeXtender Desktop.",
+            "option_d": "To select the Connection from available connections in TimeXtender Portal."
+        },
+        "answer": "option_b",
+        "explanation": "Enabling 'Data on demand' allows the data source to transfer data into ODX storage before the MDW ingests it, without the need for an explicit 'Transfer task'."
+    }
+    , "question_15": {
+        "question": "What does SOAP stand for?",
+        "options": {
+            "option_a": "Simple Object Access Protocol",
+            "option_b": "Service Oriented Architecture Protocol",
+            "option_c": "Simple Online API Procedure",
+            "option_d": "Secure Operational Application Process"
+        },
+        "answer": "option_a",
+        "explanation": "SOAP stands for Simple Object Access Protocol, which is a protocol designed to ensure that programs built on different platforms and programming languages could exchange data easily."
+    }
+    , "question_16": {
+        "question": "What is the purpose of the Row Scan Depth setting?",
+        "options": {
+            "option_a": "To determine the number of API calls made",
+            "option_b": "To set the depth of data analysis",
+            "option_c": "To ensure all the file is read before choosing the data types",
+            "option_d": "To limit the number of rows returned in the response"
+        },
+        "answer": "option_c",
+        "explanation": "Row Scan Depth is used to ensure that all the file will be read before the data types are chosen, which helps in accurately determining the data types of the fields."
+    }
+    , "question_17": {
+        "question": "When connecting to an Excel file stored in Azure Blob storage, what should the URI field format be?",
+        "options": {
+            "option_a": "azureblob://mycontainer/myblob/file.xlsx",
+            "option_b": "azurefile://fileShare/remotePath/file.xlsx",
+            "option_c": "abfss://myfilesystem/folder1/file.xlsx",
+            "option_d": "adl://myfilesystem/folder1/file.xlsx"
+        },
+        "answer": "option_a",
+        "explanation": "The correct format for the URI field when connecting to an Excel file in Azure Blob storage is 'azureblob://mycontainer/myblob/file.xlsx'."
+    }
+    , "question_18": {
+        "question": "What is the purpose of setting up an app registration when connecting to an Excel file through Microsoft Excel Online?",
+        "options": {
+            "option_a": "To create a new Excel file",
+            "option_b": "To generate a unique file identifier",
+            "option_c": "To establish OAuth credentials",
+            "option_d": "To set up a data source name"
+        },
+        "answer": "option_c",
+        "explanation": "Setting up an app registration is necessary to establish OAuth credentials, which are required for authentication when connecting to an Excel file through Microsoft Excel Online."
+    }
+    , "question_19": {
+        "question": "What must be consistent across multiple CSV files in a folder for the 'Aggregate Files' feature to work correctly?",
+        "options": {
+            "option_a": "The file size",
+            "option_b": "The file extension",
+            "option_c": "The field names",
+            "option_d": "The date the files were created"
+        },
+        "answer": "option_c",
+        "explanation": "For the 'Aggregate Files' feature to work, it is important that all CSV files in the folder have the exact same field names."
+    },
+    "question_20": {
+        "question": "What setting should be used if the CSV files to be aggregated do not have consistent field names?",
+        "options": {
+            "option_a": "Set 'Row Scan Depth' to 0",
+            "option_b": "Set 'Include Column Headers' to False",
+            "option_c": "Set 'Aggregate Files' to False",
+            "option_d": "Set 'Skip Top' to -1"
+        },
+        "answer": "option_d",
+        "explanation": "If the field names are not consistent, setting 'Skip Top' to -1 will ignore the field names and skip the 1st row in each file."
+    }
+    , "question_21": {
+        "question": "What does the 'Relational' option do when parsing hierarchical data in JSON?",
+        "options": {
+            "option_a": "It flattens the nested objects into one large table.",
+            "option_b": "It creates a table for each nested object with relational IDs.",
+            "option_c": "It ignores nested objects and only parses top-level data.",
+            "option_d": "It sets the JSON Path to the deepest nested object."
+        },
+        "answer": "option_b",
+        "explanation": "The 'Relational' option creates a separate table for each nested part of the JSON data and establishes relational IDs to link these tables."
+    }
+    , "question_22": {
+        "question": "What is the JSONPath syntax used to identify the column and row paths in the JSONRows format?",
+        "options": {
+            "option_a": "column:$.dataset.column_names;row:$.dataset.data",
+            "option_b": "column:$.columns;row:$.rows",
+            "option_c": "column:$.columns.name;row:$.rows",
+            "option_d": "column:$.dataset.data;row:$.dataset.column_names"
+        },
+        "answer": "option_a",
+        "explanation": "The JSONPath syntax for identifying column and row paths in the JSONRows format is specified using a 'column:' and 'row:' prefix, as in 'column:$.dataset.column_names;row:$.dataset.data'."
+    }
+    , "question_23": {
+        "question": "What should be done after synchronizing the data source using the RSD file setup?",
+        "options": {
+            "option_a": "Rename the file to 'Users' and edit the info row to match",
+            "option_b": "Encrypt the RSD file for security",
+            "option_c": "Upload the RSD file to a public server",
+            "option_d": "Delete the RSD file to prevent duplication"
+        },
+        "answer": "option_a",
+        "explanation": "After synchronizing, the file should be renamed to 'Users' and the info row should be edited to also be called 'Users', as per the instructions in the context."
+    }
+    , "question_24": {
+        "question": "Where should RSD files be stored according to the provided information?",
+        "options": {
+            "option_a": "In a secure cloud service",
+            "option_b": "In the default folder path specified by the application",
+            "option_c": "On an external hard drive",
+            "option_d": "In the root directory of the web server"
+        },
+        "answer": "option_b",
+        "explanation": "The context specifies that RSD files should be stored in the default folder path, which is typically set by the application, such as TimeXtender or OneDrive."
+    }
+    , "question_25": {
+        "question": "Which provider type is described as TimeXtender's own with enhancements and usually the best choice if available?",
+        "options": {
+            "option_a": "Managed ADO.NET",
+            "option_b": "Local ADO.NET",
+            "option_c": "Local OLE DB",
+            "option_d": "TimeXtender enhanced"
+        },
+        "answer": "option_d",
+        "explanation": "TimeXtender enhanced providers are TimeXtender's own with tweaks and improvements, usually making them the best choice if available for your data source."
+    }
+    , "question_26": {
+        "question": "Which provider type uses Azure Data Factory for transferring data?",
+        "options": {
+            "option_a": "Managed ADO.NET",
+            "option_b": "ADF",
+            "option_c": "Local OLE DB",
+            "option_d": "TimeXtender enhanced"
+        },
+        "answer": "option_b",
+        "explanation": "ADF providers from TimeXtender use Azure Data Factory for transferring data."
+    }
+    , "question_27": {
+        "question": "What should be set as the 'Web Redirect URL' in the App Registration for Method 2?",
+        "options": {
+            "option_a": "http://localhost:33333",
+            "option_b": "http://contoso.sharepoint.com",
+            "option_c": "http://yourtenant.sharepoint.com",
+            "option_d": "http://localhost:8080"
+        },
+        "answer": "option_a",
+        "explanation": "In the App Registration 'Authentication' page, the 'Web Redirect URL' should be set to http://localhost:33333 for Method 2."
+    }
+    , "question_28": {
+        "question": "What is the purpose of the 'Authorize OAuth' button in the TimeXtender Portal when setting up a SharePoint data source with Method 2?",
+        "options": {
+            "option_a": "To enable MFA for the user account",
+            "option_b": "To create the OAuth settings file",
+            "option_c": "To reset the user password",
+            "option_d": "To refresh the data source connection"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Authorize OAuth' button is used to create the OAuth settings file necessary for the SharePoint data source connection in Method 2."
+    }
+    , "question_29": {
+        "question": "What is the function of the 'PushResponseHeader Page' method?",
+        "options": {
+            "option_a": "To push header names onto the end of the PushResponseHeader# input array",
+            "option_b": "To retrieve the total number of pages from the API",
+            "option_c": "To set the page size for the API call",
+            "option_d": "To synchronize the RSD file with the API"
+        },
+        "answer": "option_a",
+        "explanation": "The 'PushResponseHeader Page' method is used to push header names onto the end of the PushResponseHeader# input array, which marks them to be saved and used for pagination."
+    }
+    , "question_30": {
+        "question": "After making changes to an RSD file, what is the next step to apply those changes?",
+        "options": {
+            "option_a": "Deploy and synchronize the RSD file",
+            "option_b": "Execute the table/task associated with the RSD file",
+            "option_c": "Restart the server to apply changes",
+            "option_d": "Submit the RSD file for review"
+        },
+        "answer": "option_b",
+        "explanation": "After making changes to an RSD file, it is not necessary to deploy or synchronize anything; simply executing the table/task is enough to apply the changes."
+    }
+    , "question_31": {
+        "question": "What can be done to reduce the amount of log writing when using CData Providers?",
+        "options": {
+            "option_a": "Increase the Timeout value",
+            "option_b": "Decrease the Verbosity level",
+            "option_c": "Set Logfile to a shorter path",
+            "option_d": "Disable the internet connection"
+        },
+        "answer": "option_b",
+        "explanation": "Decreasing the Verbosity level will reduce the amount of log writing, which can help in performance optimization."
+    }
+    , "question_32": {
+        "question": "What does the major version number of a CData provider indicate?",
+        "options": {
+            "option_a": "The number of daily builds",
+            "option_b": "The number of updates per month",
+            "option_c": "The year of the update",
+            "option_d": "The specific features included"
+        },
+        "answer": "option_c",
+        "explanation": "The major version number of a CData provider is updated every year, indicating the year of the update."
+    }
+    , "question_33": {
+        "question": "What is the recommended column to always keep when selecting columns for the BC data source in TimeXtender?",
+        "options": {
+            "option_a": "CreatedAt",
+            "option_b": "UpdatedAt",
+            "option_c": "SystemModifiedAt",
+            "option_d": "LastSyncedAt"
+        },
+        "answer": "option_c",
+        "explanation": "When selecting columns for the BC data source, it is recommended to always keep the 'SystemModifiedAt' column as it is optimal for Incremental load."
+    }
+    , "question_34": {
+        "question": "What issue did the user Thomas Lind face when running extractions for the TimeXtender Business Central 365 data source?",
+        "options": {
+            "option_a": "OAuth token was invalid",
+            "option_b": "Multiple parquet files were received where one was expected",
+            "option_c": "The data source was not authorized correctly",
+            "option_d": "Primary keys were missing from the tables"
+        },
+        "answer": "option_b",
+        "explanation": "Thomas Lind faced an issue where multiple parquet files were received during extraction when only one file was expected, leading to an error."
+    }
+}

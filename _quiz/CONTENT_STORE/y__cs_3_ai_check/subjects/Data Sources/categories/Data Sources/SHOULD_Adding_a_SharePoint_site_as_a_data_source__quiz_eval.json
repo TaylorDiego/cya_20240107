@@ -1,0 +1,18 @@
+{
+    "question_3": {
+        "question_content": {
+            "question": "What should be set as the 'Web Redirect URL' in the App Registration for Method 2?",
+            "options": {
+                "option_a": "http://localhost:33333",
+                "option_b": "http://contoso.sharepoint.com",
+                "option_c": "http://yourtenant.sharepoint.com",
+                "option_d": "http://localhost:8080"
+            },
+            "answer": "option_a",
+            "explanation": "In the App Registration 'Authentication' page, the 'Web Redirect URL' should be set to http://localhost:33333 for Method 2."
+        },
+        "question_facts": [
+            "The test question is grammatically correct and should be clear to a diverse audience. The final format of the question is appropriate for use."
+        ]
+    }
+}

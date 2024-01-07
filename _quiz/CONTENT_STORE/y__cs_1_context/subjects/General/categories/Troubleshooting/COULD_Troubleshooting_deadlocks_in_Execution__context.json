@@ -1,0 +1,20 @@
+{
+    "DateTime": "2023-12-27 14:43:06",
+    "URL": "https://support.timextender.com/troubleshooting-134/troubleshooting-deadlocks-in-execution-1257",
+    "Keywords": "missing",
+    "Title": "Troubleshooting deadlocks in Execution _ Community",
+    "Author": "Thomas Lind",
+    "Text": "You receive this error when executing your DWH Instance or execution package: deadlocked Rerun concurrent schedules Advanced  Performance Recommendations Find index fix' dependencies There are a few ways you can resolve the above scenario: In older versions of the TimeXtender, circular reference detection wouldn't work properly in some circumstances. This would allow a careless user to make bad circular references; it also allowed careful users to make functioning circular references. In newer versions, circular reference detection works properly, and will not allow you to deploy any object that contains such a reference. This means that certain objects may not deploy properly after upgrading. Circular References Troubleshooting Upgrade Issues Check to see if the tables getting deadlocked are based on views and if those views have not been parametrized. Due to this, they have also not been mapped to their source tables. Parameter Guide lineage In general, make sure everything is related and is known by the object which uses it. ",
+    "Lists": [
+        {
+            "heading": "Resolution",
+            "paragraphs": [
+                "There are a few ways you can resolve the above scenario:"
+            ],
+            "list": [
+                "Address the Symptom: Enable retries on the Execution Package. This will simply retry the deadlocked table and should succeed.",
+                "Address the Cause: Configure dependencies on the table (right-click table > Advanced > Object Dependencies). Select the tables that should be executed prior to the selected table. This will ensure this table never executes simultaneously with the deadlock object."
+            ]
+        }
+    ]
+}

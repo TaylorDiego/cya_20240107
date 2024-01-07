@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the new default 'Row Scan Depth' value when setting up a CSV data source according to the provided text?",
+        "options": {
+            "option_a": "100",
+            "option_b": "0",
+            "option_c": "10000",
+            "option_d": "1"
+        },
+        "answer": "option_b",
+        "explanation": "The new default 'Row Scan Depth' is set to 0, which means the whole file will be read before determining the fields' data types."
+    },
+    "question_2": {
+        "question": "When connecting to CSV data sources, what does setting the 'Row Scan Depth' to a value like 10000 help with?",
+        "options": {
+            "option_a": "It helps to read the file faster by only scanning the first 10000 rows.",
+            "option_b": "It increases the security of the data source.",
+            "option_c": "It allows for more files to be aggregated.",
+            "option_d": "It changes the file format to JSON."
+        },
+        "answer": "option_a",
+        "explanation": "Setting 'Row Scan Depth' to 10000 is better for very large files as it defines the data types by reading only the first 10000 rows, which can speed up synchronization."
+    },
+    "question_3": {
+        "question": "What must be consistent across multiple CSV files in a folder for the 'Aggregate Files' feature to work correctly?",
+        "options": {
+            "option_a": "The file size",
+            "option_b": "The file extension",
+            "option_c": "The field names",
+            "option_d": "The date the files were created"
+        },
+        "answer": "option_c",
+        "explanation": "For the 'Aggregate Files' feature to work, it is important that all CSV files in the folder have the exact same field names."
+    },
+    "question_4": {
+        "question": "What setting should be used if the CSV files to be aggregated do not have consistent field names?",
+        "options": {
+            "option_a": "Set 'Row Scan Depth' to 0",
+            "option_b": "Set 'Include Column Headers' to False",
+            "option_c": "Set 'Aggregate Files' to False",
+            "option_d": "Set 'Skip Top' to -1"
+        },
+        "answer": "option_d",
+        "explanation": "If the field names are not consistent, setting 'Skip Top' to -1 will ignore the field names and skip the 1st row in each file."
+    },
+    "question_5": {
+        "question": "What is the purpose of the 'ConvertDateTimeToGMT' field when setting up a CSV data source?",
+        "options": {
+            "option_a": "To convert the date and time to the local timezone",
+            "option_b": "To prevent the automatic conversion of date and time to the local timezone",
+            "option_c": "To format the date and time according to GMT standards",
+            "option_d": "To add or subtract hours based on daylight saving time"
+        },
+        "answer": "option_b",
+        "explanation": "The 'ConvertDateTimeToGMT' field is used to prevent the automatic conversion of date and time fields to the local timezone."
+    },
+    "question_6": {
+        "question": "Which of the following is NOT a method mentioned for troubleshooting data type detection errors?",
+        "options": {
+            "option_a": "Generate a RSD file and manually change field types",
+            "option_b": "Set Type Detection Scheme to 'None'",
+            "option_c": "Convert all data to string type and convert later as needed",
+            "option_d": "Increase the 'Directory Retrieval Depth' value"
+        },
+        "answer": "option_d",
+        "explanation": "Increasing the 'Directory Retrieval Depth' value is not mentioned as a method for troubleshooting data type detection errors. The other options are valid workarounds."
+    }
+}

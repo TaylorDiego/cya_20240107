@@ -1,0 +1,195 @@
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where does the Source Database Browser appear when adding tables to a Semantic Model instance?
+
+{"score":0}In the left-hand pane
+{"score":100.0}In the right-hand pane
+{"score":0}In a new window
+{"score":0}In the bottom pane
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What action is performed to move a table from the Source Database Browser to the Semantic Model instance?
+
+{"score":0}Copy-and-paste
+{"score":100.0}Drag-and-drop
+{"score":0}Click-and-select
+{"score":0}Export-and-import
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of the URL provided in the context?
+
+{"score":100.0}To direct users to a support page
+{"score":0}To download a CSV file
+{"score":0}To link to an external advertisement
+{"score":0}To submit a bug report
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Who is the author of the content provided in the context?
+
+{"score":0}Data Estate Instances
+{"score":100.0}Christian Hauggaard
+{"score":0}Semantic Model
+{"score":0}CSV Endpoint
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What effect does categorizing a text field as 'Web URL' have in client applications like Power BI?
+
+{"score":0}It encrypts the text field for security purposes
+{"score":100.0}It displays the text fields as links
+{"score":0}It converts the text field into a numerical value
+{"score":0}It hides the text field from the report
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a correct way to summarize a field in the semantic layer for Power BI?
+
+{"score":0}Sum
+{"score":0}Average
+{"score":0}Maximum
+{"score":100.0}Concatenate
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What specific database system is mentioned as requiring additional steps?
+
+{"score":0}MySQL
+{"score":0}Oracle
+{"score":100.0}Snowflake
+{"score":0}MongoDB
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the format of the date and time provided in the context?
+
+{"score":0}MM-DD-YYYY HH:MM:SS
+{"score":100.0}YYYY-MM-DD HH:MM:SS
+{"score":0}DD-MM-YYYY HH:MM:SS
+{"score":0}YYYY-DD-MM HH:MM:SS
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the result of setting the Data format to Percentage in the custom measure setup?
+
+{"score":0}It requires a script to manually convert the result to a percentage
+{"score":100.0}It automatically converts the decimal result to a percentage
+{"score":0}It changes the data type to Integer
+{"score":0}It limits the custom measure to financial data only
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In the context of adding a custom measure, what does the 'Show translation' feature do?
+
+{"score":0}It translates the custom measure's name into different languages
+{"score":0}It converts the script into a more user-friendly format
+{"score":100.0}It shows the script TimeXtender will deploy to the endpoint
+{"score":0}It changes the script syntax for different endpoint types
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following settings is NOT available for Qlik and Tableau when setting up a custom field?
+
+{"score":0}Data type
+{"score":0}Data format
+{"score":100.0}Summarize by
+{"score":0}Script
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In the context of adding a custom field to a semantic table, what is the purpose of the 'Sort by' list?
+
+{"score":100.0}To choose the field that defines the order of records in the table
+{"score":0}To select the primary key for the table
+{"score":0}To filter the data in the custom field
+{"score":0}To specify the default sorting algorithm
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a step in adding a Power BI Premium Semantic Model Endpoint?
+
+{"score":0}Paste the Workspace Connection URL copied from the Power BI workspace.
+{"score":0}Authenticate using a Service Principal.
+{"score":100.0}Deploy & Execute the semantic instance in TimeXtender Desktop.
+{"score":0}Give your endpoint a friendly name in TimeXtender.
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you take note of when creating an App Registration in Azure for use with TimeXtender?
+
+{"score":100.0}The Tenant ID and App ID
+{"score":0}The Workspace Connection URL
+{"score":0}The Data Warehouse credentials
+{"score":0}The Power BI workspace settings
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT an optional field when adding a Qlik Endpoint in TimeXtender?
+
+{"score":0}View schema
+{"score":0}Postfix
+{"score":100.0}Qlik application
+{"score":0}App prefix
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In the context of TimeXtender's Qlik Endpoint setup, what is the purpose of the 'Virtual proxy prefix'?
+
+{"score":0}It is used to specify the schema name for views.
+{"score":100.0}It is the prefix from the virtual proxy in Qlik Sense used for proxy authentication.
+{"score":0}It is the prefix added to the endpoint name to create the app name in Qlik Sense.
+{"score":0}It is the postfix used for views and folder names.
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a type of measure that can be created based on a field?
+
+{"score":0}Distinct count
+{"score":100.0}Row Count
+{"score":0}Maximum
+{"score":0}Sum
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where can you customize the data format, such as the number of decimal places for decimal numbers?
+
+{"score":0}In the Type list
+{"score":0}In the Name box
+{"score":100.0}In the Data format list, by clicking Customize
+{"score":0}In the Description box
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if a table in the Data Warehouse has been deleted and you want to use a new table in the semantic model?
+
+{"score":0}Create a new semantic model from scratch.
+{"score":0}Update the semantic model manually to use the new table.
+{"score":100.0}Synchronize the semantic model and remap the tables and fields.
+{"score":0}Leave the semantic model unchanged.
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the result of selecting 'Schema' during the remapping process in the semantic model synchronization?
+
+{"score":0}It deletes the existing schema in the semantic model.
+{"score":0}It creates a new schema unrelated to the previous mappings.
+{"score":100.0}It automatically selects the table as a result of the schema selection.
+{"score":0}It prevents any new mappings from being created.
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How is Row-Level Security configured in TimeXtender?
+
+{"score":0}By creating a role that is associated with an endpoint
+{"score":100.0}By creating a Row-Level Security Setup under a specific field
+{"score":0}By encrypting specific fields within the database
+{"score":0}By manually entering user permissions for each row
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the result of associating a role with a Row-Level Security Setup that grants access to West Territory field values?
+
+{"score":0}The role will have access to data in all territories
+{"score":0}The role will have access to data only in the East territory
+{"score":100.0}The role will not have access to data outside of the West territory
+{"score":0}The role will have access to data without any territorial restrictions
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does the symbol '--' represent in the context of a relation's cardinality?
+
+{"score":0}Many to Many
+{"score":0}One to Many
+{"score":0}Many to one
+{"score":100.0}One to one
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should be done first when adding tables to a Semantic instance to ensure relations are automatically brought in?
+
+{"score":0}Add the associated fact table first
+{"score":0}Deploy the relations on the DWH tables
+{"score":100.0}Add the dimension tables first
+{"score":0}Manually add the specific fields in the relation
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What indicates that all objects in a table are selected for an SSAS perspective?
+
+{"score":0}The table is marked with a dot
+{"score":0}The table is highlighted
+{"score":100.0}The table is marked with a checkmark
+{"score":0}The table is underlined
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if you encounter an error stating 'No perspectives when deploying tabular model'?
+
+{"score":100.0}Ensure that a measure is selected in the SSAS perspective
+{"score":0}Rename the perspective
+{"score":0}Add more tables to the perspective
+{"score":0}Deploy the semantic model again
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is part of the format for the view name created in the data warehouse?
+
+{"score":0}[model name]_[data warehouse]_[table name]_[postfix]
+{"score":100.0}[view schema].[model name]_[endpoint name]_[table name]_[postfix]
+{"score":0}[endpoint name].[model name]_[table name]_[view schema]
+{"score":0}[table name]_[model name]_[endpoint name]_[prefix]
+-
+{"folder":"(2024_01) PRACTICE - Semantic Model","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the example view name given in the text for a Tableau endpoint deployment?
+
+{"score":0}Tableau.MyTableau_MyModel_Customers_tab
+{"score":0}MyModel_MyTableau.Customers_tab
+{"score":100.0}Tableau.MyModel_MyTableau_Customers_tab
+{"score":0}Customers_tab.MyModel_MyTableau_Tableau

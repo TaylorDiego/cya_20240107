@@ -1,0 +1,38 @@
+{
+    "DateTime": "2023-12-27 14:42:22",
+    "URL": "https://support.timextender.com/data-sources-112/adding-a-data-source-in-the-timextender-desktop-780",
+    "Keywords": "missing",
+    "Title": "Adding a Data Source in the TimeXtender Desktop _ Community",
+    "Author": "missing",
+    "Text": "data source has been added in the TimeXtender Portal This guide describes how to add a newdata source on TimeXtender Desktop Tasks in an ODX Instance Warning: Data on demand Advanced Settings  ",
+    "Lists": [
+        {
+            "heading": "Adding a Data Source in TimeXtender Desktop",
+            "paragraphs": [
+                "This guide describes how to add a new data source on TimeXtender Desktop"
+            ],
+            "list": [
+                "Double-click on your ODX instance",
+                "Right-click \u201cData Sources\u201d > Add Data Source"
+            ]
+        },
+        {
+            "heading": "",
+            "paragraphs": [],
+            "list": [
+                "Select the Connection from available connections you have configured in TimeXtender Portal."
+            ]
+        },
+        {
+            "heading": "On-Demand Data Warehouse Ingestion",
+            "paragraphs": [
+                "When 'Data on demand' option is enabled (in TX Desktop Data Source > Advanced Settings), the data source will transfer data into ODX storage before the MDW ingests the data.  This will work without configuring an explicit \"Transfer task\" under the data source"
+            ],
+            "list": [
+                "Right-click on your data source > Edit",
+                "Click on Advanced Settings",
+                "Check the box Data on demand"
+            ]
+        }
+    ]
+}

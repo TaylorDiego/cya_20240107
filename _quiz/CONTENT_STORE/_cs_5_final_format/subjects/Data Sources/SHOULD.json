@@ -1,0 +1,90 @@
+{
+    "question_1": {
+        "question": "What authentication method does Method 1 use for adding a SharePoint site as a data source in TimeXtender?",
+        "options": {
+            "option_a": "OAuth",
+            "option_b": "Basic",
+            "option_c": "Digest",
+            "option_d": "NTLM"
+        },
+        "answer": "option_b",
+        "explanation": "Method 1 specifies using a user account with Basic authentication, without MFA enabled."
+    }
+    , "question_2": {
+        "question": "Which of the following is required when setting up a SharePoint data source using Method 2 in TimeXtender?",
+        "options": {
+            "option_a": "Setting the Schema to REST",
+            "option_b": "Enabling MFA for the user account",
+            "option_c": "Using Basic authentication",
+            "option_d": "Setting the OAuth Grant Type to Password"
+        },
+        "answer": "option_a",
+        "explanation": "For Method 2, it is crucial to set the Schema to REST, as failing to do so will result in an error when authorizing OAuth."
+    }
+    , "question_3": {
+        "question": "What is the purpose of setting the 'pageurlpath' in an RSD file?",
+        "options": {
+            "option_a": "To define the structure of the database",
+            "option_b": "To set the XPath of the element where the next page URL is passed in the response body",
+            "option_c": "To increase the speed of data retrieval",
+            "option_d": "To specify the API endpoint for the initial request"
+        },
+        "answer": "option_b",
+        "explanation": "The 'pageurlpath' is set to the XPath of the element that contains the URL for the next page in the response body, enabling pagination through the API data."
+    }
+    , "question_4": {
+        "question": "What should you do if the API does not provide a parameter to control the page size?",
+        "options": {
+            "option_a": "Set pagesize to zero",
+            "option_b": "Set pagesize to the maximum value allowed by the API",
+            "option_c": "Set pagesize to the default page size provided by the API",
+            "option_d": "Omit the pagesize parameter from the RSD file"
+        },
+        "answer": "option_c",
+        "explanation": "If the API does not have a parameter to control the page size, you must set pagesize to the default page size that the API uses."
+    }
+    , "question_5": {
+        "question": "What is the primary factor that the performance of CData Providers is dependent on?",
+        "options": {
+            "option_a": "The complexity of the user's computer",
+            "option_b": "The data source and the amount of data",
+            "option_c": "The speed of the internet connection",
+            "option_d": "The time of day the data is accessed"
+        },
+        "answer": "option_b",
+        "explanation": "The performance of CData Providers largely depends on the data source and the amount of data being retrieved."
+    }
+    , "question_6": {
+        "question": "Which property should be set to a lower value if an error asks to request less data?",
+        "options": {
+            "option_a": "MaxRows",
+            "option_b": "BatchSize",
+            "option_c": "PageSize",
+            "option_d": "Verbosity"
+        },
+        "answer": "option_c",
+        "explanation": "Setting PageSize to a lower value can help when an error occurs asking to request less data."
+    }
+    , "question_7": {
+        "question": "What should be replaced in the API URL field when setting up the BC data source in TimeXtender?",
+        "options": {
+            "option_a": "The 'tenantId' with the actual Azure AD Tenant ID",
+            "option_b": "The 'userId' with the actual user's ID",
+            "option_c": "The 'clientSecret' with the actual client's secret",
+            "option_d": "The 'apiKey' with the actual API key"
+        },
+        "answer": "option_a",
+        "explanation": "The 'tenantId' placeholder in the API URL field should be replaced with the actual Azure AD Tenant ID, which can be found in the BC environment's 'Help & Support' section."
+    }
+    , "question_8": {
+        "question": "Which authentication method is no longer possible with TimeXtender Business Central 365 according to the provided text?",
+        "options": {
+            "option_a": "OAuth 2.0 authentication",
+            "option_b": "Service to Service Authentication",
+            "option_c": "Username and Password",
+            "option_d": "API Key authentication"
+        },
+        "answer": "option_c",
+        "explanation": "The Username and Password option is expired by BC and used to work with a Web Service Access Key as the Password, which is no longer possible."
+    }
+}

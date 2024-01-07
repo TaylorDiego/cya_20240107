@@ -1,0 +1,87 @@
+{
+    "DateTime": "2023-12-27 14:42:25",
+    "URL": "https://support.timextender.com/data-sources-112/connect-to-a-rest-api-824",
+    "Keywords": "missing",
+    "Title": "Connect to a REST API _ Community",
+    "Author": "Thomas Lind",
+    "Text": "JSON XML https://gorest.co.in/public-api/users The first step in setting up a REST provider should always be to click following link. REST guide from CData You have three data types of that the data can be presented in. SOAP  URI  https://gorest.co.in/public-api/users?_format=xml&access-token=U7-PD71mEXzfmdDm3uvpUTWzfDgZWsZTxRW1 access token format xml Custom URL Params Row Scan Depth is used so all the file will be read before the data types is chosen. More is explained in CSV, JSON and XML. Additionally there is an area in the setup with options specifically for either XML or JSON data, the options are explained in detail in the specific guides. SOAP is a protocol which was designed before REST and came into the picture. The main idea behind designing SOAP was to ensure that programs built on different platforms and programming languages could exchange data in an easy manner. SOAPstands for Simple Object Access Protocol. RSD Post JSON guide So here are a list of good online API's to test on. Most of these have more or less the same setup, but done in different ways. Here below I have gained access to GoRest. Go to the web page to get the access_token necessary. It iis not an requirement, but for training purposes it is a good option to use. Here is the URI and its contents Here is how I set it up. I added the access token to the Custom URL Params field, but you can add the complete string to the URI field as well. You can add as many options as you have, you just need to know the code and set it equal to something, e.g. page=5 you just need to split it with a , sign. This is a new option. Essentially you can connect ot CSV files instead of XML or JSON. There is a specific area dedicated to this. This FMT field will need to be changed if the file do not use the default delimiter. CSV guide After this you have the data source template. To use it you can look at the following guides  How to update the providers or see the version of the ones you use, see this guide.  Sometimes it is a requirement to have some headers set to gain access. You can state them in that field. A common one is to set the text to be json with the following command. Accept:application/json It is also commonly used to gain access with a bearer token like so. Authorization:Bearer <token id> How it is stated is really important, so a misplaced blank space or incorrect case of a character will make it not work. \\r\\n Then you can add as many headers as you need. If the URL you put in the URI field has a ? and some parameters after this, like so: http://gorest.co.in/public-api/users?_format=json&page=1&per_page=100 Then you can move those after that sign into the custom URL params field. The difference is that you need to use a comma between each parameter instead of a & sign. Like so. It will generate the same get URL when the call is being done. There now is a specific RSD guide available that shows all possible methods of doing this. How to generate an RSD file Using OAuth bearer token Custom Header grant type OAuth Grant Type Graph API Azure AD application secret CODE  CLIENT CODE  Delegated  CLIENT   Application This decides what I am allowed to see with my app. For all three I also need the two following fields set. Auth Scheme OAuth https://developer.microsoft.com/en-us/graph/graph-explorer URI  https://graph.microsoft.com/v1.0/users The Code option is the default method and the most common one. It requires the following. AppData Client Authentication AppData scope  OAuth Param scope  state scope=users.read,state=top , User Password Authentication AppData Once this has been setup and the data source have been created in the portal, you can create it as a datasource. Once created you will have to authenticate it by clicking on the Authorize OAuth button. CODE CLIENT Initiate OAuth REFRESH As standard CData will scan the first 100 rows and determine what data types these fields are. Sometimes this gives an error because the 101 row contained a longer string than was present in the previous rows. Row Scan Depth 0 0 CSV JSON XML Row Scan Depth Type Detection Scheme None JSON XML JSON Creating and using RSD files for CData providers ",
+    "Lists": [
+        {
+            "heading": "XML",
+            "paragraphs": [
+                "In general it is JSON is the most common, but some XML rest providers exists and more about that in the SOAP section.To try it you can use this URI https://gorest.co.in/public-api/users?_format=xml&access-token=U7-PD71mEXzfmdDm3uvpUTWzfDgZWsZTxRW1.",
+                "To try another setup you can remove the access token and format to xml the Custom URL Params. The setup will be like so."
+            ],
+            "list": [
+                "URI: https://gorest.co.in/public-api/users",
+                "Custom URL Params: _format=XML,access-token=U7-PD71mEXzfmdDm3uvpUTWzfDgZWsZTxRW1",
+                "Row Scan Depth:0"
+            ]
+        },
+        {
+            "heading": "JSON",
+            "paragraphs": [
+                "Most REST api's use JSON. You can use most of the features also explained in the JSON guide.",
+                "So here are a list of good online API's to test on."
+            ],
+            "list": [
+                "REQRES - Test your front-end against a real API",
+                "GoREST - Online FREE REST API",
+                "dummy - Dummy Rest API example",
+                "fixer.io - Online Currency data"
+            ]
+        },
+        {
+            "heading": "Code",
+            "paragraphs": [
+                "The Code option is the default method and the most common one. It requires the following."
+            ],
+            "list": [
+                "Initiate OAuth: Set to GETANDREFRESH. It can later on be changed to REFRESH.",
+                "OAuth Version: Set to 2.0 as it is the version we use.",
+                "OAuth Client ID: Set to the id of the app.",
+                "OAuth Secret ID: Set to the secret of the app.",
+                "OAuth Access Token URL: The format is https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token",
+                "OAuth Authorization Token URL:The format is https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/Authorize you can read more about it here https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-auth-code-flow",
+                "OAuth Refresh Token URL: The format is https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token it is set to the same as the Access token URL field as it does the same thing.",
+                "Callback URL: This is the URL you set in the app. CData always suggest to use http://localhost:33333 so I use it as well.",
+                "Scope: Microsoft requires this field to be set with a right such as read.users for connecting to this. There is a lot of options you can read about here https://learn.microsoft.com/en-us/azure/active-directory/develop/scopes-oidc. Due to what I connect to and because I want to use the rights of my app I set it to https://graph.microsoft.com/.default",
+                "OAuth Settings Location: This is the field where the location of the OAuth Settings file is set. By default it will be stored in the folder of the user that authenticates the OAuth call. The tokens will be stored in the OAuthSettings.txt file, as encrypted data, after you click on the Authorize OAuth button. Consider overwriting the default location of the file with a specified location. This will make it work better when using scheduled execution and multiple users. If a new user connects to the file it will look at this persons AppData folder and locate no settings file if it is not specified with a fixed path. Be sure users are allowed to change the content of this folder so other users can update the tokens."
+            ]
+        },
+        {
+            "heading": "Client",
+            "paragraphs": [
+                "The Client Authentication method requires some options set, though seemingly the same. It doesn't require the Authorization Token URL. The main part of this is that the app has the proper rights as explained above. Here I am using the CSSApplicationRights app."
+            ],
+            "list": [
+                "Initiate OAuth: Set to GETANDREFRESH. It can later on be changed to REFRESH.",
+                "OAuth Version: Set to 2.0 as it is the version we use.",
+                "OAuth Client ID: Set to the id of the app.",
+                "OAuth Secret ID: Set to the secret of the app.",
+                "OAuth Access Token URL: The format is https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token. You can read more about the client flow here https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-oauth2-client-creds-grant-flow",
+                "OAuth Refresh Token URL: The format is https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token it is set to the same as the Access token URL field as it does the same thing.",
+                "Callback URL: This is the URL you set in the app. CData always suggest to use http://localhost:33333 so I use it as well.",
+                "Scope: Microsoft requires this field to be set with a right such as read.users for connecting to this. There is a lot of options you can read about here https://learn.microsoft.com/en-us/azure/active-directory/develop/scopes-oidc. Due to what I connect to and because I want to use the rights of my app I set it to https://graph.microsoft.com/.default",
+                "OAuth Settings Location: This is the field where the location of the OAuth Settings file is set. By default it will be stored in the folder of the user that authenticates the OAuth call. The tokens will be stored in the OAuthSettings.txt file, as encrypted data, after you click on the Authorize OAuth button. Consider overwriting the default location of the file with a specified location. This will make it work better when using scheduled execution and multiple users. If a new user connects to the file it will look at this persons AppData folder and locate no settings file if it is not specified with a fixed path. Be sure users are allowed to change the content of this folder so other users can update the tokens."
+            ]
+        },
+        {
+            "heading": "Password",
+            "paragraphs": [
+                "Finally there also is an Password method. It is similar to the others, in that it requires an Access Token URL and an Refresh Token URL, the difference is that it uses an User and Password instead of client and secret. Notice that these fields are in the Authentication section, not in the area of the other OAuth fields."
+            ],
+            "list": [
+                "Initiate OAuth: Set to GETANDREFRESH. It can later on be changed to REFRESH.",
+                "OAuth Version: Set to 2.0 as it is the version we use.",
+                "User: Set to the user authenticating the call.",
+                "Password: Set to the password of the user authenticating the call.",
+                "OAuth Access Token URL: The format is https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token. You can read more about the password flow here https://learn.microsoft.com/en-us/azure/active-directory/develop/v2-oauth-ropc",
+                "OAuth Refresh Token URL: The format is https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token it is set to the same as the Access token URL field as it does the same thing.",
+                "Callback URL: This is the URL you set in the app. CData always suggest to use http://localhost:33333 so I use it as well.",
+                "Scope: Microsoft requires this field to be set with a right such as read.users for connecting to this. There is a lot of options you can read about here https://learn.microsoft.com/en-us/azure/active-directory/develop/scopes-oidc. Due to what I connect to and because I want to use the rights of my app I set it to https://graph.microsoft.com/.default",
+                "OAuth Settings Location: This is the field where the location of the OAuth Settings file is set. By default it will be stored in the folder of the user that authenticates the OAuth call. The tokens will be stored in the OAuthSettings.txt file, as encrypted data, after you click on the Authorize OAuth button. Consider overwriting the default location of the file with a specified location. This will make it work better when using scheduled execution and multiple users. If a new user connects to the file it will look at this persons AppData folder and locate no settings file if it is not specified with a fixed path. Be sure users are allowed to change the content of this folder so other users can update the tokens."
+            ]
+        }
+    ]
+}

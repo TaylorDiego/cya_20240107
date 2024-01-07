@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What is the likely cause of the error 'Could not load file or assembly' when using TimeXtender?",
+        "options": {
+            "option_a": "Incorrect TimeXtender version",
+            "option_b": "Missing SQL Shared Management Objects (SMO)",
+            "option_c": "Corrupted TimeXtender project file",
+            "option_d": "Outdated Windows operating system"
+        },
+        "answer": "option_b",
+        "explanation": "The error is caused by missing SQL Shared Management Objects (SMO), which are necessary for creating tables and other SQL objects from TimeXtender."
+    },
+    "question_2": {
+        "question": "If you are deploying to multiple versions of SQL Server, what must you do to resolve the 'Could not load file or assembly' error?",
+        "options": {
+            "option_a": "Install the latest version of TimeXtender on all servers",
+            "option_b": "Install the latest version of SQL Server Management Studio on all servers",
+            "option_c": "Install all relevant versions of SMO/XMO for each SQL Server version",
+            "option_d": "Only install the newest client libraries for Azure"
+        },
+        "answer": "option_c",
+        "explanation": "When deploying to multiple versions of SQL Server, you must install all relevant versions of SMO/XMO to ensure compatibility with each version."
+    }
+}

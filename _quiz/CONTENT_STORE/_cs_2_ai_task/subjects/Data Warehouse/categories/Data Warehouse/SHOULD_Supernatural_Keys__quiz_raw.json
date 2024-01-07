@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is a supernatural key?",
+        "options": {
+            "option_a": "A key that changes frequently to ensure data security.",
+            "option_b": "A durable key that is independent of natural keys like customer numbers.",
+            "option_c": "A key that is only used in supernatural events.",
+            "option_d": "A key that is the same across different source systems."
+        },
+        "answer": "option_b",
+        "explanation": "A supernatural key is a durable key that remains constant and is not dependent on natural keys, which may change or differ across systems."
+    },
+    "question_2": {
+        "question": "Where can key stores for supernatural keys be created?",
+        "options": {
+            "option_a": "Only in the data warehouse.",
+            "option_b": "Only in the staging database.",
+            "option_c": "Either in the data warehouse or staging database.",
+            "option_d": "In the cloud storage."
+        },
+        "answer": "option_c",
+        "explanation": "Key stores for supernatural keys can be created at either the data warehouse or staging database level."
+    },
+    "question_3": {
+        "question": "What is the purpose of the 'Only read from the store' option when adding a supernatural key field?",
+        "options": {
+            "option_a": "To create new entries when a key is not found in the key store.",
+            "option_b": "To ensure that the field's value will be null when no matching key is found.",
+            "option_c": "To reorder the fields in the key store.",
+            "option_d": "To encrypt the supernatural key for added security."
+        },
+        "answer": "option_b",
+        "explanation": "The 'Only read from the store' option is used to disable the creation of new entries, resulting in a null value when no matching key is found in the key store."
+    },
+    "question_4": {
+        "question": "Which of the following is NOT a data type option for the key in a key store?",
+        "options": {
+            "option_a": "Unique identifier (GUID)",
+            "option_b": "Database unique auto-increment (bigint)",
+            "option_c": "Auto increment with customizable values",
+            "option_d": "Time-based sequential identifier"
+        },
+        "answer": "option_d",
+        "explanation": "The data type options for the key in a key store include Unique identifier (GUID), Database unique auto-increment (bigint), and Auto increment with customizable values. Time-based sequential identifier is not listed as an option."
+    }
+}

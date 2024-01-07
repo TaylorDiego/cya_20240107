@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the first step to clone a field according to the provided instructions?",
+        "options": {
+            "option_a": "Select the field and choose 'Clone Values'.",
+            "option_b": "Right-click on a field and click 'Clone Field' to open the Clone Field dialog.",
+            "option_c": "Copy and paste the field into a new table.",
+            "option_d": "Rename the field you wish to clone."
+        },
+        "answer": "option_b",
+        "explanation": "The first step is to right-click on a field and click 'Clone Field' to open the Clone Field dialog."
+    },
+    "question_2": {
+        "question": "What does the 'Clone structure' option do when cloning a field?",
+        "options": {
+            "option_a": "It duplicates the field's name only.",
+            "option_b": "It creates a new field unrelated to the original.",
+            "option_c": "The cloned field will be an exact copy of the original field, including any transformations and validations.",
+            "option_d": "It clones the field's values into a new table."
+        },
+        "answer": "option_c",
+        "explanation": "Choosing 'Clone structure' creates an exact copy of the original field, including transformations and validations."
+    },
+    "question_3": {
+        "question": "What is the result of selecting 'Clone values' when cloning a field?",
+        "options": {
+            "option_a": "It creates a new field with the same name but no data.",
+            "option_b": "The cloned field will be a custom field that gets its value from the original field.",
+            "option_c": "It copies the field's structure but not its data.",
+            "option_d": "It generates a new field with default values."
+        },
+        "answer": "option_b",
+        "explanation": "'Clone values' results in a custom field that derives its value from the original field."
+    },
+    "question_4": {
+        "question": "Can fields that have been added later, after being brought in from a data source, be cloned?",
+        "options": {
+            "option_a": "No, only fields from the original data source can be cloned.",
+            "option_b": "Yes, but only their structure can be cloned, not their values.",
+            "option_c": "Yes, all fields in a table can be cloned, regardless of their origin.",
+            "option_d": "No, cloning is not supported for fields added after the initial data import."
+        },
+        "answer": "option_c",
+        "explanation": "All fields in a table can be cloned, no matter if they were brought in from a data source or added later."
+    }
+}

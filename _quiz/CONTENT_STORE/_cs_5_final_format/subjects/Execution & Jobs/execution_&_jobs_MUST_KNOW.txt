@@ -1,0 +1,41 @@
+{"folder":"(2024_01) Execution & Jobs","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of deployment in TimeXtender?
+
+{"score":0}To schedule data refreshes
+{"score":100.0}To generate scripts for creating tables and associated stored procedures
+{"score":0}To visualize data in reports
+{"score":0}To manage user permissions
+-
+{"folder":"(2024_01) Execution & Jobs","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What are the two processes commonly performed one after the other in TimeXtender?
+
+{"score":0}Deploy and Refresh
+{"score":100.0}Deploy and Execute
+{"score":0}Execute and Validate
+{"score":0}Refresh and Validate
+-
+{"folder":"(2024_01) Execution & Jobs","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of executing tables in TimeXtender?
+
+{"score":0}To modify the structure of existing tables
+{"score":100.0}To transfer and cleanse data into tables that have been deployed
+{"score":0}To generate reports from the data
+{"score":0}To create new tables without transferring data
+-
+{"folder":"(2024_01) Execution & Jobs","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a step in the execution of tables in TimeXtender?
+
+{"score":0}Truncating the Raw Table
+{"score":0}Transferring data from the ODX Store to Raw tables
+{"score":100.0}Creating new tables in the SQL database
+{"score":0}Processing data through data cleansing
+-
+{"folder":"(2024_01) Execution & Jobs","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of an execution package in TimeXtender?
+
+{"score":0}To schedule email notifications
+{"score":100.0}To determine which objects in an instance will be executed and how
+{"score":0}To manage user permissions
+{"score":0}To log execution times and row counts only
+-
+{"folder":"(2024_01) Execution & Jobs","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In TimeXtender, what restriction applies when adding tasks to a job?
+
+{"score":0}Tasks from different ODX instances can be added to the same job
+{"score":0}A job can contain both execution packages and ODX tasks
+{"score":100.0}Only tasks relating to one ODX instance can be added to a job
+{"score":0}There are no restrictions on adding tasks to a job

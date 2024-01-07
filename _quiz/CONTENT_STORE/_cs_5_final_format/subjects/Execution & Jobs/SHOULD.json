@@ -1,0 +1,90 @@
+{
+    "question_1": {
+        "question": "What is the purpose of creating and executing a PowerShell executable in TimeXtender?",
+        "options": {
+            "option_a": "To automate the process of data analysis.",
+            "option_b": "To schedule the execution of PowerShell scripts.",
+            "option_c": "To generate reports from the data warehouse.",
+            "option_d": "To install new software on the server."
+        },
+        "answer": "option_b",
+        "explanation": "The purpose is to allow for a scheduled execution of PowerShell scripts as part of an execution package."
+    }
+    , "question_2": {
+        "question": "How can you edit a PowerShell script in TimeXtender?",
+        "options": {
+            "option_a": "By using the 'Edit Script' button in the execution pane.",
+            "option_b": "By right-clicking on the external executable and selecting 'Edit'.",
+            "option_c": "By modifying the script directly in the PowerShell console.",
+            "option_d": "By contacting TimeXtender support to request script changes."
+        },
+        "answer": "option_b",
+        "explanation": "A PowerShell script can be edited by right-clicking on the external executable and selecting 'Edit'."
+    }
+    , "question_3": {
+        "question": "What should you review if a package execution in TimeXtender is taking longer than usual without specific errors or retries?",
+        "options": {
+            "option_a": "Review the latest code changes in the package",
+            "option_b": "Review Windows Event Viewer logs for related errors or warnings",
+            "option_c": "Increase the memory allocation for the TimeXtender application",
+            "option_d": "Check the network speed of the internet connection"
+        },
+        "answer": "option_b",
+        "explanation": "Reviewing Windows Event Viewer logs can help identify errors or warnings related to ODX Service and TimeXtender Scheduler Service that might be affecting package execution times."
+    }
+    , "question_4": {
+        "question": "Which of the following is NOT a recommended step when dealing with slow package executions in TimeXtender?",
+        "options": {
+            "option_a": "Implement incremental load for loading big tables",
+            "option_b": "Lower the number of concurrent execution threads on ODX data source",
+            "option_c": "Ignore network latency and CPU/memory usage on other machines",
+            "option_d": "Use a Profiler tool to trace SQL queries and resolve blocking problems"
+        },
+        "answer": "option_c",
+        "explanation": "Ignoring network latency and CPU/memory usage on other machines is not recommended as these factors can significantly impact execution performance."
+    }
+    , "question_5": {
+        "question": "What is the default behavior of execution packages when encountering an error?",
+        "options": {
+            "option_a": "Retry indefinitely",
+            "option_b": "Pause the execution",
+            "option_c": "Fail the execution",
+            "option_d": "Skip the error and continue"
+        },
+        "answer": "option_c",
+        "explanation": "The default behavior is to fail when an error is encountered to ensure data integrity."
+    }
+    , "question_6": {
+        "question": "Why might an execution package fail due to an error with a data source?",
+        "options": {
+            "option_a": "Because the data source is permanently unavailable",
+            "option_b": "Due to a syntax error in the execution package",
+            "option_c": "If the load collides with updates or backups",
+            "option_d": "Because the data source has been deleted"
+        },
+        "answer": "option_c",
+        "explanation": "Data sources may be temporarily locked by updates or backups, causing a collision and failure."
+    }
+    , "question_7": {
+        "question": "Where should you increase the timeout if an error occurs during the transfer step of a table in the ODX database?",
+        "options": {
+            "option_a": "TimeXtender Portal Data estate > Data sources",
+            "option_b": "TimeXtender Portal ODX instance > Edit",
+            "option_c": "TimeXtender Portal data warehouse > Edit",
+            "option_d": "TimeXtender Portal semantic model > Edit"
+        },
+        "answer": "option_a",
+        "explanation": "If a timeout error occurs during the transfer step of a table in the ODX database, the data source command timeout needs to be increased, which is configured in the TimeXtender Portal Data estate > Data sources."
+    }
+    , "question_8": {
+        "question": "What might be a next action to take if a timeout happens during nightly execution on a data source?",
+        "options": {
+            "option_a": "Increase the batch size option",
+            "option_b": "Decrease the batch size option",
+            "option_c": "Turn off automatic index generation",
+            "option_d": "Change the lookup type to Partition by"
+        },
+        "answer": "option_b",
+        "explanation": "If a timeout occurs during nightly execution on a data source, one action to consider is decreasing the batch size option, if supported by the data source adapter, to split the execution into several parts."
+    }
+}

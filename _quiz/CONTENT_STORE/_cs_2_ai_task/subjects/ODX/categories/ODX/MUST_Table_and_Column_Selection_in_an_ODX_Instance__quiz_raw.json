@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What must be done first to add a new table to a transfer task in TimeXtender?",
+        "options": {
+            "option_a": "Execute the synchronization task after selecting the table on the transfer task level.",
+            "option_b": "Select the table on the data source level and execute the synchronization task.",
+            "option_c": "Directly add the table to the transfer task without any prior selection.",
+            "option_d": "Remove existing tables from the ODX storage before adding new ones."
+        },
+        "answer": "option_b",
+        "explanation": "Before adding a new table to a transfer task, it must first be selected on the data source level and then the synchronization task must be executed."
+    },
+    "question_2": {
+        "question": "Where is column selection available in TimeXtender?",
+        "options": {
+            "option_a": "On the transfer task level only.",
+            "option_b": "On both the data source and transfer task levels.",
+            "option_c": "On the data source level only.",
+            "option_d": "Column selection is not available in TimeXtender."
+        },
+        "answer": "option_c",
+        "explanation": "Column selection is exclusively available on the data source level in TimeXtender, not on the transfer task level."
+    },
+    "question_3": {
+        "question": "What happens after selecting tables and executing the transfer task in TimeXtender?",
+        "options": {
+            "option_a": "The tables are deleted from the source.",
+            "option_b": "The tables are moved to the ODX storage.",
+            "option_c": "The tables are loaded from source to ODX storage.",
+            "option_d": "The tables are synchronized between the source and ODX storage."
+        },
+        "answer": "option_c",
+        "explanation": "After selecting tables and executing the transfer task, the tables are loaded from the source into the ODX storage."
+    },
+    "question_4": {
+        "question": "In TimeXtender, what is the purpose of the 'Switch to Simple Selection' feature?",
+        "options": {
+            "option_a": "To remove all tables from the selection.",
+            "option_b": "To filter and select specific columns only.",
+            "option_c": "To simplify the table selection process.",
+            "option_d": "To switch to a more advanced selection mode."
+        },
+        "answer": "option_c",
+        "explanation": "The 'Switch to Simple Selection' feature in TimeXtender is designed to simplify the process of selecting tables."
+    },
+    "question_5": {
+        "question": "How can you preview data before loading it into TimeXtender's ODX storage?",
+        "options": {
+            "option_a": "By executing the synchronization task.",
+            "option_b": "By selecting 'Add Load Preview Data' after choosing tables and columns.",
+            "option_c": "By using the 'Switch to Advanced Selection' feature.",
+            "option_d": "Previewing data is not possible in TimeXtender."
+        },
+        "answer": "option_b",
+        "explanation": "To preview data before loading it into ODX storage, you can select 'Add Load Preview Data' after choosing the relevant tables and columns."
+    },
+    "question_6": {
+        "question": "What is the correct sequence of actions for selecting tables in TimeXtender?",
+        "options": {
+            "option_a": "Select Tables > Add Transfer Task > Execute Transfer Task.",
+            "option_b": "Add Transfer Task > Select Tables > Execute Transfer Task.",
+            "option_c": "Execute Transfer Task > Select Tables > Add Transfer Task.",
+            "option_d": "Select Tables > Execute Transfer Task > Add Transfer Task."
+        },
+        "answer": "option_d",
+        "explanation": "The correct sequence is to first select the tables, then execute the transfer task to load the tables from the source to ODX storage, and finally add the transfer task if needed."
+    }
+}

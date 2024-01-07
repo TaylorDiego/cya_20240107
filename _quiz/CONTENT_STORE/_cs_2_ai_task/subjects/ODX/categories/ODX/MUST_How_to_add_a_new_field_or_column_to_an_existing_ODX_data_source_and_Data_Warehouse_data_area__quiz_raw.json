@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the primary purpose of the article written by Greg Lennox on TimeXtender's support site?",
+        "options": {
+            "option_a": "To discuss the financial aspects of TimeXtender",
+            "option_b": "To provide a tutorial on updating ODX data sources and data warehouse tables",
+            "option_c": "To announce new features in TimeXtender",
+            "option_d": "To compare SQL Server with other databases"
+        },
+        "answer": "option_b",
+        "explanation": "The article's purpose is to clarify the steps needed to update both the ODX data source and the data warehouse table to include a new field."
+    },
+    "question_2": {
+        "question": "Which command is mentioned in the article as being used to add an additional column to a table?",
+        "options": {
+            "option_a": "CREATE TABLE",
+            "option_b": "UPDATE TABLE",
+            "option_c": "ALTER TABLE",
+            "option_d": "INSERT INTO"
+        },
+        "answer": "option_c",
+        "explanation": "The article mentions the use of the 'ALTER TABLE' command to add an additional column called 'Manufacturing Supplier' to the 'LawnProducts' table."
+    },
+    "question_3": {
+        "question": "What example is used in the article to illustrate the process of adding a new field to a data source?",
+        "options": {
+            "option_a": "Adding a 'CustomerID' field to a 'Sales' table",
+            "option_b": "Adding a 'Manufacturing Supplier' column to the 'LawnProducts' table",
+            "option_c": "Removing a 'Discontinued' column from a 'Products' table",
+            "option_d": "Updating a 'Price' field in an 'Inventory' table"
+        },
+        "answer": "option_b",
+        "explanation": "The article uses an SQL Server database source example where a 'Manufacturing Supplier' column is added to the 'LawnProducts' table."
+    },
+    "question_4": {
+        "question": "What flexibility does TimeXtender provide according to the article?",
+        "options": {
+            "option_a": "Flexible pricing models",
+            "option_b": "Flexible user interface customization",
+            "option_c": "The ability to connect to many different data providers",
+            "option_d": "Flexible data storage options"
+        },
+        "answer": "option_c",
+        "explanation": "TimeXtender offers the flexibility to connect to many different data providers, as mentioned in the article."
+    },
+    "question_5": {
+        "question": "What is the context in which new fields might be added to a data source in TimeXtender?",
+        "options": {
+            "option_a": "When a data source is first being configured in the ODX",
+            "option_b": "After a data source has been configured in the ODX",
+            "option_c": "Before any tables from the data source have been mapped into a data warehouse",
+            "option_d": "When the data warehouse is being decommissioned"
+        },
+        "answer": "option_b",
+        "explanation": "The context for adding new fields to a data source in TimeXtender is after that data source has been configured in the ODX."
+    },
+    "question_6": {
+        "question": "What does the article by Greg Lennox specifically address?",
+        "options": {
+            "option_a": "How to configure a new ODX data source from scratch",
+            "option_b": "How to remove a field from an existing ODX data source",
+            "option_c": "How to add a new field to an existing ODX data source and update the data warehouse",
+            "option_d": "How to create a new data warehouse data area in TimeXtender"
+        },
+        "answer": "option_c",
+        "explanation": "The article addresses how to add a new field to an existing ODX data source and how to update the data warehouse table to include this new field."
+    }
+}

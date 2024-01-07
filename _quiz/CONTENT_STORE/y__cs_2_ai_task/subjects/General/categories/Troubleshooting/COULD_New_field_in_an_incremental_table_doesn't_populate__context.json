@@ -1,0 +1,22 @@
+{
+    "DateTime": "2023-12-27 14:42:57",
+    "URL": "https://support.timextender.com/troubleshooting-134/new-field-in-an-incremental-table-doesn-t-populate-1245",
+    "Keywords": "missing",
+    "Title": "New field in an incremental table doesn't populate _ Community",
+    "Author": "Thomas Lind",
+    "Text": "After adding a new field to an incremental table, that field remains entirely or partially NULL. None Incremental tables update only new or changed records by design. Without additional intervention, the new field will only be populated for records created or modified after the field was added. Use Keep field values up-to-date on the table you add the lookup field to. If you do not want to use that, use the below methods. ",
+    "Lists": [
+        {
+            "heading": "Resolution",
+            "paragraphs": [
+                "Use Keep field values up-to-date on the table you add the lookup field to.",
+                "If you do not want to use that, use the below methods."
+            ],
+            "list": [
+                "The easiest and safest way to address this is to do a full load of the incremental table with the new field. However, that can sometimes be time consuming if the table is very large.",
+                "In some cases, the field can be updated manually. If the new field is a custom field with a transformation, the transformation can be applied directly to the table manually with an UPDATE command.",
+                "If the new field is a lookup, it's possible to copy out the section of the Data Cleansing Script that performs the lookup and run it manually as well. Since the script to applies the lookup to the raw table, you will need to make a minor modification to apply the update to the valid table instead."
+            ]
+        }
+    ]
+}

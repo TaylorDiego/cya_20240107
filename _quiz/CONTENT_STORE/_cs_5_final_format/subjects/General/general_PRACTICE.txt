@@ -1,0 +1,251 @@
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do to edit a documentation template in TimeXtender?
+
+{"score":0}Click Add in the window that opens
+{"score":0}Type a new name in the Name box
+{"score":100.0}Click on the template you want to edit in the list
+{"score":0}Delete the old template and create a new one
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT an option for including descriptions in TimeXtender documentation?
+
+{"score":0}As plain text without any formatting
+{"score":0}As rich text in attached RTF files
+{"score":100.0}As encrypted text for security purposes
+{"score":0}No descriptions
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What feature is suggested to be brought back for better navigation in TimeXtender's GUI?
+
+{"score":100.0}Double-click on a node to go to that object
+{"score":0}Reset Layout option
+{"score":0}Expand All feature
+{"score":0}Object Dependencies menu
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What issue is mentioned regarding the data lineage view in TimeXtender?
+
+{"score":0}It does not show any tables
+{"score":100.0}It incorrectly shows the same schema for all tables
+{"score":0}It does not refresh automatically
+{"score":0}It lacks a feature to show object dependencies
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What issue is mentioned in the article regarding moving from a local database to Azure?
+
+{"score":0}The transfer is faster than expected.
+{"score":0}There is a problem with the database size.
+{"score":100.0}There are issues moving security settings.
+{"score":0}The content of the database cannot be moved.
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What alternative method to bacpac export is Andrew considering for copying Azure databases between tenants?
+
+{"score":0}Using a traditional BAK backup.
+{"score":0}Copying the database manually.
+{"score":100.0}Using PowerShell scripts.
+{"score":0}Transferring the database via email.
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which setting must be checked in the SQL Server machine's Server Properties to allow remote connections?
+
+{"score":0}Enable Contained Databases
+{"score":100.0}Allow Remote Connections
+{"score":0}Enable TCP/IP Networking
+{"score":0}Enable AUTO_CLOSE
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}After configuring remote connections, how can you verify that a SQL Server is accessible remotely before connecting with TimeXtender?
+
+{"score":0}Ping the SQL Server IP address
+{"score":100.0}Connect using SSMS on the client machine
+{"score":0}Check the SQL Server logs
+{"score":0}Restart the client machine
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you resolve the 'Forbidden' error when ADF fails to access ADLS Gen2?
+
+{"score":0}Restart the ADF service
+{"score":100.0}Allow access from 'All networks' in the ADLS storage account networking options
+{"score":0}Increase the storage capacity of ADLS Gen2
+{"score":0}Modify firewall settings to allow access from ADF
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}If you are deploying to multiple versions of SQL Server, what must you do to resolve the 'Could not load file or assembly' error?
+
+{"score":0}Install the latest version of TimeXtender on all servers
+{"score":0}Install the latest version of SQL Server Management Studio on all servers
+{"score":100.0}Install all relevant versions of SMO/XMO for each SQL Server version
+{"score":0}Only install the newest client libraries for Azure
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following steps is NOT part of the resolution process for the 'Requested registry access is not allowed' error in TimeXtender?
+
+{"score":0}Running 'regedit' from the Start menu to open Registry Editor.
+{"score":0}Adding the TimeXtender account to the list of users with 'Read' permission for the ODBC.INI key.
+{"score":100.0}Reinstalling TimeXtender software on the machine.
+{"score":0}Browsing to the HKLMSOFTWAREODBCODBC.INI key in the Registry Editor.
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you resolve a timeout error for a table during data processing on a DW instance?
+
+{"score":0}Restart the DW instance
+{"score":0}Decrease the Command Timeout value
+{"score":100.0}Set the Command Timeout to a higher value
+{"score":0}Delete and recreate the table
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following files is NOT mentioned as part of the resolution for the 'Microsoft.SqlServer.BatchParser.dll' error?
+
+{"score":0}SharedManagementObjects.msi
+{"score":0}SQLSysClrTypes.msi
+{"score":100.0}BatchParser.msi
+{"score":0}Both A and B are mentioned
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT listed as a recommended step if the OLEAUT32.dll error is not related to a system, software, or driver change?
+
+{"score":100.0}Restore OLEAUT32.dll from a backup.
+{"score":0}Ensure the System OS is up to date.
+{"score":0}Reinstall your server's OS.
+{"score":0}Update the .NET Framework.
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you find the username that needs permissions on the data warehouse to fix the Analysis Services model execution error?
+
+{"score":100.0}Check the Services console and look for the SQL Server Analysis Services service.
+{"score":0}Query the database users directly via SQL Server Management Studio.
+{"score":0}Review the error log in the Event Viewer.
+{"score":0}Inspect the Analysis Services configuration file.
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you ensure when troubleshooting an error related to an Oracle driver in TimeXtender?
+
+{"score":0}That the Oracle server is reachable over the network
+{"score":0}That the Oracle Data Provider is installed on the TimeXtender server
+{"score":100.0}That the Oracle Data Provider and TimeXtender are the same bit version
+{"score":0}That the Oracle data source has at least one table
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can the locale id error be resolved when a numeric field is being converted to a text field using ODX SQL storage?
+
+{"score":0}Restarting the database server
+{"score":0}Changing the server's locale settings
+{"score":100.0}Using a data type override for the numeric column in the ODX data source
+{"score":0}Ignoring the error and proceeding with the data transfer
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which alternative connection method was successful according to the context provided?
+
+{"score":0}Using an ADO.net Any Source
+{"score":0}Using a direct Oracle database link
+{"score":0}Using an ODBC data source
+{"score":100.0}Using the local oracle client via TNS connection
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a recommended resolution for the 'Login failed for user' error when executing a Data Warehouse table from an ODX Instance?
+
+{"score":0}Granting the ODX Server service account the necessary permissions to write into the DWH database.
+{"score":0}Specifying the full remote SQL Server instance name for the DWH database.
+{"score":0}Resolving any network issues, such as firewall or VPN problems.
+{"score":100.0}Ignoring network issues and retrying the operation until it succeeds.
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which method to avoid duplicates in a custom table is highlighted for its clarity in understanding the script's actions and affected table?
+
+{"score":0}Adding a truncate statement as the first line of the script
+{"score":0}Checking the table for truncation after data cleansing
+{"score":100.0}Using the Custom Table Insert feature and modifying the script
+{"score":0}Calling a custom script as a Pre Step
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where should one look to examine errors and warnings related to the 'Access is denied' error in ODX?
+
+{"score":0}ODX service log
+{"score":100.0}Event Viewer under Application and Services Log
+{"score":0}TimeXtender support website
+{"score":0}Windows Update history
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you manually add an extended property to a pre-existing SQL database for ODX storage?
+
+{"score":0}Use the 'New Query' option in SSMS to write a script.
+{"score":0}Update the database schema to include the 'OwnerId' property.
+{"score":100.0}In SSMS, right-click the database -> Properties -> Extended Properties, then add 'OwnerId' with a specified value.
+{"score":0}Contact the database administrator to add the property for you.
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do with the dump file created by Task Manager when a TimeXtender process hangs?
+
+{"score":0}Delete it immediately
+{"score":0}Analyze it in a text editor
+{"score":100.0}Analyze it in a Windows debugger
+{"score":0}Send it to TimeXtender support without analysis
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What error message might you receive if the Self-Hosted Integration Runtime is stopped after configuring a data source?
+
+{"score":0}Data source configuration failed
+{"score":100.0}The Self-hosted Integration Runtime <Name> is offline
+{"score":0}CloudException: Failed to encrypt sub-resource payload
+{"score":0}ODX Synchronization or Transfer tasks failed
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which method is NOT suggested for updating a new field in an incremental table?
+
+{"score":0}Performing a full load of the incremental table
+{"score":0}Updating the field manually with an UPDATE command
+{"score":0}Running the Data Cleansing Script's lookup section manually
+{"score":100.0}Ignoring the new field until it populates over time
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which method is NOT suggested for updating a new field in an incremental table?
+
+{"score":0}Performing a full load of the incremental table
+{"score":0}Updating the field manually with an UPDATE command
+{"score":0}Running the Data Cleansing Script's lookup section manually
+{"score":100.0}Ignoring the new field until it populates over time
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which exception is mentioned in the context that is associated with an ODX execution error?
+
+{"score":0}IndexOutOfRangeException
+{"score":0}NullReferenceException
+{"score":100.0}TaskCanceledException
+{"score":0}OutOfMemoryException
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What step is recommended after installing the Oracle Data Provider to resolve the error mentioned in the text?
+
+{"score":0}Recompile the Oracle.DataAccess assembly.
+{"score":100.0}Restart the computer.
+{"score":0}Update the PublicKeyToken.
+{"score":0}Close and reopen the Oracle data source window.
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where can you find more information about querying the SQL Server System Catalog?
+
+{"score":0}Azure SQL DB official blog
+{"score":0}Microsoft's customer service
+{"score":100.0}Microsoft documentation
+{"score":0}Community forums
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which command is used to remove the TimeXtender Scheduler service?
+
+{"score":0}sc remove 'timeXtender Scheduler <Version>'
+{"score":100.0}sc delete 'timeXtender Scheduler <Version>'
+{"score":0}delete 'timeXtender Scheduler <Version>'
+{"score":0}uninstall 'timeXtender Scheduler <Version>'
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Why might an Oracle database require careful synchronization with Azure Data Factory?
+
+{"score":0}Because it uses a different cloud provider
+{"score":100.0}Due to its potential high degree of normalization and large number of tables
+{"score":0}Oracle databases do not support synchronization
+{"score":0}Because Oracle databases are less secure
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default location of the 'tracelog.txt' file for TimeXtender?
+
+{"score":0}C:TimeXtenderLogstracelog.txt
+{"score":0}C:Program FilesTimeXtendertracelog.txt
+{"score":0}C:Users<UserAccount>DocumentsTimeXtendertracelog.txt
+{"score":100.0}C:Users<UserAccount>AppDataRoamingTimeXtenderTimeXtender Saas<version>
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you increase the timeout for very large data transfers from ODX to a Data Warehouse when using Azure Data Factory?
+
+{"score":0}Decrease the Connection timeout to less than 30
+{"score":0}Set the timeout to infinite (0)
+{"score":100.0}Increase the Connection timeout from 30 to 7200
+{"score":0}Edit the ADF data source settings to decrease the number of concurrent tasks
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you check if tables are getting deadlocked based on views?
+
+{"score":100.0}If the views have been parametrized and mapped to their source tables.
+{"score":0}If the views are using the latest TimeXtender version.
+{"score":0}If the views have circular references.
+{"score":0}If the views are included in the Execution Package retries.
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What steps should be followed to ensure correct display scaling for TimeXtender on all monitors?
+
+{"score":0}Update the TimeXtender software to the latest version
+{"score":0}Change the screen resolution on all monitors
+{"score":100.0}Ensure the display scaling factor is the same on all monitors
+{"score":0}Replace all monitors with the same model
+-
+{"folder":"(2024_01) PRACTICE - General","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you use TCPView to filter the information for a specific port of an ODX instance?
+
+{"score":0}By configuring the ODX settings to only use the specific port
+{"score":0}By restarting the ODX instance on the desired port
+{"score":100.0}By entering the port number in the search box of TCPView
+{"score":0}By uninstalling and reinstalling TCPView with the specific port settings

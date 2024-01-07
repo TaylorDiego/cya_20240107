@@ -1,0 +1,18 @@
+{
+    "DateTime": "2023-12-27 14:43:12",
+    "URL": "https://support.timextender.com/troubleshooting-134/tracing-to-event-viewer-or-text-file-logs-1292",
+    "Keywords": "missing",
+    "Title": "Tracing to Event Viewer or Text file logs _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "When tracing is activated, theDeployment and Executioninformation is logged in the Event Viewer or in a Text file which can be used to troubleshoot issues. Tools Options General Open log file Tools Options General tracelog.txt UserAccount version Open log file Tools Options General  ",
+    "Lists": [
+        {
+            "heading": "Where to find the trace logs?",
+            "paragraphs": [],
+            "list": [
+                "Select Open EventViewer under Tools -> Options -> General tab to review the Event Viewer Application log for TimeXtender LogEngine events.",
+                "Select Open log file under Tools -> Options -> General tab. The log file tracelog.txt is created in the following folder upon deployment or execution of objects. C:\\Users\\<UserAccount>\\AppData\\Roaming\\TimeXtender\\TimeXtender Saas\\<version>"
+            ]
+        }
+    ]
+}

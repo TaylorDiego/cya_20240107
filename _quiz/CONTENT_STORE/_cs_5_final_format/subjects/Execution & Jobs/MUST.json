@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the primary purpose of deployment in TimeXtender?",
+        "options": {
+            "option_a": "To schedule data refreshes",
+            "option_b": "To generate scripts for creating tables and associated stored procedures",
+            "option_c": "To visualize data in reports",
+            "option_d": "To manage user permissions"
+        },
+        "answer": "option_b",
+        "explanation": "Deployment in TimeXtender is used to take table definitions from the TimeXtender Desktop and generate scripts that create tables and their associated stored procedures in the data area storage."
+    }
+    , "question_2": {
+        "question": "What are the two processes commonly performed one after the other in TimeXtender?",
+        "options": {
+            "option_a": "Deploy and Refresh",
+            "option_b": "Deploy and Execute",
+            "option_c": "Execute and Validate",
+            "option_d": "Refresh and Validate"
+        },
+        "answer": "option_b",
+        "explanation": "Deploy and Execute are two separate processes in TimeXtender that are commonly performed one after the other via the Deploy and Execute command to create and populate tables in the SQL database."
+    }
+    , "question_3": {
+        "question": "What is the primary purpose of executing tables in TimeXtender?",
+        "options": {
+            "option_a": "To modify the structure of existing tables",
+            "option_b": "To transfer and cleanse data into tables that have been deployed",
+            "option_c": "To generate reports from the data",
+            "option_d": "To create new tables without transferring data"
+        },
+        "answer": "option_b",
+        "explanation": "Execution of tables in TimeXtender is done to transfer and cleanse data into tables that have already been deployed, ensuring the data is ready for use."
+    }
+    , "question_4": {
+        "question": "Which of the following is NOT a step in the execution of tables in TimeXtender?",
+        "options": {
+            "option_a": "Truncating the Raw Table",
+            "option_b": "Transferring data from the ODX Store to Raw tables",
+            "option_c": "Creating new tables in the SQL database",
+            "option_d": "Processing data through data cleansing"
+        },
+        "answer": "option_c",
+        "explanation": "Creating new tables is part of the deployment process, not the execution process. Execution involves transferring and cleansing data in already deployed tables."
+    }
+    , "question_5": {
+        "question": "What is the primary purpose of an execution package in TimeXtender?",
+        "options": {
+            "option_a": "To schedule email notifications",
+            "option_b": "To determine which objects in an instance will be executed and how",
+            "option_c": "To manage user permissions",
+            "option_d": "To log execution times and row counts only"
+        },
+        "answer": "option_b",
+        "explanation": "An execution package in TimeXtender is used to define which objects in an instance will be executed and the manner of their execution, not just for scheduling notifications or logging data."
+    }
+    , "question_6": {
+        "question": "In TimeXtender, what restriction applies when adding tasks to a job?",
+        "options": {
+            "option_a": "Tasks from different ODX instances can be added to the same job",
+            "option_b": "A job can contain both execution packages and ODX tasks",
+            "option_c": "Only tasks relating to one ODX instance can be added to a job",
+            "option_d": "There are no restrictions on adding tasks to a job"
+        },
+        "answer": "option_c",
+        "explanation": "In TimeXtender, a job can only contain tasks from one ODX instance, and cannot include both execution packages and ODX tasks in the same job."
+    }
+}

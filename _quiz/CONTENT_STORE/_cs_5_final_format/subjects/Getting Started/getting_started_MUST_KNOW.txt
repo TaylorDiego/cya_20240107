@@ -1,0 +1,195 @@
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of cloning a data source connection in TimeXtender Desktop?
+
+{"score":0}To delete the original data source connection
+{"score":0}To create a backup of the TimeXtender Portal
+{"score":100.0}To duplicate a heavily customized data source connection
+{"score":0}To transfer data directly to the data warehouse
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can rows of data be excluded from transfers in an ODX Instance?
+
+{"score":0}By setting up a primary key
+{"score":100.0}By adding a row filter rule that matches the table
+{"score":0}By using the Data Source Explorer
+{"score":0}By executing a SELECT statement in the Query Tool
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of the Data Warehouse Instance in TimeXtender?
+
+{"score":0}To store raw data from various sources without transformation
+{"score":100.0}To map, cleanse, transform, and consolidate data into a 'single version of truth'
+{"score":0}To serve as a backup for the Operational Data Exchange (ODX)
+{"score":0}To manage user permissions and security settings
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which feature should be enabled to allow multiple developers to access a TimeXtender instance simultaneously?
+
+{"score":0}Log Retention Days
+{"score":0}Server storage type
+{"score":100.0}Team Development
+{"score":0}Encrypt connection
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default storage type when configuring an ODX instance in TimeXtender?
+
+{"score":0}Azure SQL Database
+{"score":0}SQL Server
+{"score":100.0}Azure Data Lake Gen2
+{"score":0}Azure SQL Managed Instance
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which authentication method is required for Azure SQL Database, Azure SQL Managed Instance, or SQL Database when adding an ODX instance in TimeXtender?
+
+{"score":0}Windows Authentication
+{"score":100.0}SQL Server Authentication
+{"score":0}OAuth 2.0
+{"score":0}No authentication is required
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where are semantic models added in TimeXtender?
+
+{"score":0}In the desktop application
+{"score":100.0}In the web interface
+{"score":0}Via command line
+{"score":0}In the mobile app
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What can you do with a semantic model instance after it has been created?
+
+{"score":0}Only delete it
+{"score":0}Only add more endpoints
+{"score":100.0}Edit to add or remove endpoints
+{"score":0}It cannot be modified after creation
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which directory service is recommended for cloud deployments when configuring user accounts for TimeXtender?
+
+{"score":0}Active Directory (AD)
+{"score":100.0}Azure Active Directory (AAD)
+{"score":0}Google Directory
+{"score":0}Amazon Web Services Directory Service
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What type of permissions should the TimeXtender developers have in the TimeXtender Portal?
+
+{"score":0}Read-only permissions
+{"score":0}Execution permissions
+{"score":100.0}Access to relevant instances
+{"score":0}Administrator permissions
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary benefit of using Azure Synapse Analytics in terms of cost management?
+
+{"score":0}It offers unlimited storage for a fixed price.
+{"score":100.0}It allows users to pause the service and only be charged for storage.
+{"score":0}It provides free computation resources indefinitely.
+{"score":0}It charges a flat rate regardless of the amount of data stored.
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens to your data when the Azure Synapse Dedicated SQL Pool is paused?
+
+{"score":0}Data is deleted and must be restored from a backup.
+{"score":0}Data is archived and incurs additional charges.
+{"score":100.0}Data remains intact but is unavailable for queries.
+{"score":0}Data is automatically moved to Azure Blob Storage.
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What port should be opened in the firewall settings for a server outside Azure (On-Prem) to use the new version of TimeXtender?
+
+{"score":0}Port 443
+{"score":100.0}Port 1433
+{"score":0}Port range 11000-11999
+{"score":0}Port 80
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which port range should be opened for a server inside Azure to work with TimeXtender?
+
+{"score":0}Port 80-85
+{"score":0}Port 1433
+{"score":0}Port 443
+{"score":100.0}Port range 11000-11999
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary role of TimeXtender's Windows-based server software?
+
+{"score":0}To provide a user interface for data analysis
+{"score":100.0}To orchestrate the ingestion of data from various sources
+{"score":0}To store raw data after ingestion
+{"score":0}To handle the administration of TimeXtender Data Estate
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where is raw data stored after being ingested by TimeXtender?
+
+{"score":0}In the desktop software
+{"score":100.0}In a SQL database or Azure Data Lake
+{"score":0}In the web portal
+{"score":0}In the TimeXtender Data Estate
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary focus when starting with TimeXtender Portal and Desktop according to the article?
+
+{"score":0}Configuring user permissions
+{"score":100.0}Setting up data estate instances
+{"score":0}Designing data models
+{"score":0}Installing software updates
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where can you add specific instances for your data estate in TimeXtender?
+
+{"score":100.0}Data Estate > Instances > Add instance
+{"score":0}Profile & Preferences > Add instance
+{"score":0}File > New > Instance
+{"score":0}Tools > Options > Instances
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if you encounter Error 1064 when using TimeXtender?
+
+{"score":0}Reinstall TimeXtender
+{"score":100.0}Run the TimeXtender Execution Server Configuration
+{"score":0}Restart your computer
+{"score":0}Ignore the error
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT listed as a step in the installation process of TimeXtender ODX Server?
+
+{"score":0}Unzip the installation package and run Setup.exe
+{"score":0}Choose Setup Type page and select Typical, Complete, or Custom option
+{"score":0}Launch the ODX Server Configuration tool
+{"score":100.0}Install additional language packs
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What are the three types of instances that a TimeXtender solution is built up of?
+
+{"score":0}ODX, MDW, and Semantic Model
+{"score":0}ODX, Data Warehouse, and Semantic Layer
+{"score":100.0}ODX, Data Warehouse, and Semantic Model
+{"score":0}ODX, ETL, and Data Mart
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default setting for 'Postfix valid tables with '_V' in TimeXtender Data Warehouse settings?
+
+{"score":0}Yes
+{"score":100.0}No
+{"score":0}Only for invalid tables
+{"score":0}User-defined
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the recommended first step when troubleshooting an issue in TimeXtender according to the provided text?
+
+{"score":0}Contact TimeXtender support immediately
+{"score":100.0}Check if the issue is already documented
+{"score":0}Upgrade to the latest version of TimeXtender
+{"score":0}Restart the TimeXtender service
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT listed as a potential workaround for issues with provider's remote connection in TimeXtender?
+
+{"score":0}Uploading source data to a staging server
+{"score":0}Using a faster method to extract data
+{"score":100.0}Changing the visual layout of the data
+{"score":0}Using a better connector
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which .NET Framework version is the minimum requirement to run TimeXtender?
+
+{"score":0}.NET Framework 3.5
+{"score":0}.NET Framework 4.5
+{"score":100.0}.NET Framework 4.8 or higher
+{"score":0}.NET Framework 4.7.2
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is required for connecting to ODX Cloud instances when TimeXtender is installed on a separate server from Microsoft SQL Server?
+
+{"score":0}IPv6 connectivity
+{"score":100.0}IPv4 connectivity
+{"score":0}Bluetooth connectivity
+{"score":0}Wi-Fi connectivity
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary function of the View menu in the TimeXtender user interface?
+
+{"score":0}To navigate between different projects
+{"score":100.0}To customize the user interface display
+{"score":0}To create new data objects
+{"score":0}To export data to Excel
+-
+{"folder":"(2024_01) Getting Started","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In the TimeXtender user interface, how can you add a description to an object?
+
+{"score":0}By double-clicking on the object
+{"score":0}By selecting the object and pressing Ctrl+D
+{"score":100.0}By right-clicking on the object and selecting Description
+{"score":0}By dragging the object to the description pane

@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What is the primary reason for the change in requirements for using Oracle databases as a data source in TX?",
+        "options": {
+            "option_a": "Microsoft .Net framework has introduced direct Oracle Support.",
+            "option_b": "Oracle databases no longer support TX.",
+            "option_c": "Direct Oracle Support in the Microsoft .Net framework has been discontinued.",
+            "option_d": "ODP.Net package has been updated to .Net 4 support."
+        },
+        "answer": "option_c",
+        "explanation": "The change in requirements is due to the discontinuation of direct Oracle Support in the Microsoft .Net framework, necessitating the installation of the ODP.Net package with .Net 4 support."
+    },
+    "question_2": {
+        "question": "Which of the following steps is crucial when installing ODP.Net for TX on a machine?",
+        "options": {
+            "option_a": "Running the Command Prompt without administrator privileges.",
+            "option_b": "Running the Command Prompt as administrator.",
+            "option_c": "Installing the ODP.Net package without the Oracle Client.",
+            "option_d": "Copying the TNSNames.ora and SQLNet.ora files to the root directory."
+        },
+        "answer": "option_b",
+        "explanation": "It is very important to run the Command Prompt as administrator when installing ODP.Net, as indicated in the provided steps for setting up the environment."
+    }
+}

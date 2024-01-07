@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What is the first step to add a data source connection in TimeXtender according to the provided text?",
+        "options": {
+            "option_a": "Select the data source provider you want to use.",
+            "option_b": "Type a name for the data source in the Name box.",
+            "option_c": "Go to Data Estate > Data source connections and click Add data source connection.",
+            "option_d": "Enter the connection information under Connection settings."
+        },
+        "answer": "option_c",
+        "explanation": "The first step to add a data source connection is to navigate to Data Estate > Data source connections and then click on Add data source connection."
+    },
+    "question_2": {
+        "question": "What should you be cautious of when removing a data source mapping in TimeXtender?",
+        "options": {
+            "option_a": "The data source connection can be deleted at any time.",
+            "option_b": "Any data sources on the ODX that use the data source connection will stop working.",
+            "option_c": "You must first add a new data source connection before removing an old one.",
+            "option_d": "The data source connection must be cloned before it can be removed."
+        },
+        "answer": "option_b",
+        "explanation": "When removing a data source mapping, caution is advised because any data sources on the ODX that use the data source connection will stop functioning."
+    }
+}

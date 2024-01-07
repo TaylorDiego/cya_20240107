@@ -1,0 +1,27 @@
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary benefit of creating a bacpac export of a database as mentioned in the article?
+
+{"score":0}It includes the security settings.
+{"score":0}It is the only way to move a database to Azure SQL.
+{"score":100.0}It takes way less space compared to a backup.
+{"score":0}It automatically transfers all users and roles.
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}According to the article, what must be done with the roles and users during an Azure-to-Azure migration?
+
+{"score":0}They are automatically transferred.
+{"score":100.0}They must be transferred in a separate step.
+{"score":0}They are included in the bacpac export.
+{"score":0}They remain unchanged.
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default TCP port for SQL Server that must be enabled on the Windows Firewall to allow remote connections?
+
+{"score":100.0}1433
+{"score":0}8080
+{"score":0}3306
+{"score":0}1521
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In SQL Server Management Studio (SSMS), which authentication mode should be enabled for remote connections?
+
+{"score":0}Windows Authentication mode
+{"score":100.0}SQL Server and Windows Authentication mode
+{"score":0}SQL Server Authentication mode
+{"score":0}No authentication mode

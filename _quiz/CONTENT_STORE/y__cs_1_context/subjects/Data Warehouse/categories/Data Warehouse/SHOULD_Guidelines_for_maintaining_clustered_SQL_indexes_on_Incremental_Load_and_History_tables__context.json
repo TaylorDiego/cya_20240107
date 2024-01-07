@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:41:22",
+    "URL": "https://support.timextender.com/data-warehouse-108/guidelines-for-maintaining-clustered-sql-indexes-on-incremental-load-and-history-tables-1567",
+    "Keywords": "missing",
+    "Title": "Guidelines for maintaining clustered SQL indexes on Incremental Load and History tables _ Community",
+    "Author": "Greg Lennox",
+    "Text": "Automatic does not Incremental Load History As data warehouses, along with their underlying SQL databases, steadily expand, their reliance on indexes intensifies. Query complexities escalate with the influx of more data. For tables that are not truncated and rebuilt during execution, TimeXtender's relies onusers to oversee the SQL maintenance of these tables. Incremental Load History Here are the general guidelines forindex optimization: For extensivedatabases, it may be best to manage the indexes manually. However, reorganizing and rebuilding indexes can be integrated intoan SQL Server Maintenance Plan. These plans should be monitored to ensure that they are completing in the time allowed and achieving the desired results. When suitable, amaintenance plan can reorganize and rebuild indexes during after-hours based on a schedule.  ",
+    "Lists": []
+}

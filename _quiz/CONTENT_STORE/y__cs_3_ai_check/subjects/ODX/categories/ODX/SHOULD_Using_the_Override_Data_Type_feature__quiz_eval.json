@@ -1,0 +1,52 @@
+{
+    "question_1": {
+        "question_content": {
+            "question": "What is the purpose of the Override Data Type feature in ODX?",
+            "options": {
+                "option_a": "To change the visual appearance of data in reports",
+                "option_b": "To modify the data type of a field in the data warehouse",
+                "option_c": "To increase the performance of data synchronization",
+                "option_d": "To encrypt sensitive data in the data source"
+            },
+            "answer": "option_b",
+            "explanation": "The Override Data Type feature is used to explicitly change the data type of a field in the data warehouse, as mentioned in the context."
+        },
+        "question_facts": [
+            "After reviewing the test question, there are no typos to report. All words are spelled correctly.",
+            "The question is grammatically correct and clear for a diverse audience. The final format of the question is appropriate for use."
+        ]
+    },
+    "question_3": {
+        "question_content": {
+            "question": "How do you set up a general rule for overriding data types at an ODX data source?",
+            "options": {
+                "option_a": "By writing a custom SQL script",
+                "option_b": "By configuring settings in the data source's properties",
+                "option_c": "By right-clicking on an ODX data source and selecting 'Override Data Types..'",
+                "option_d": "By manually editing each field's data type"
+            },
+            "answer": "option_c",
+            "explanation": "To set up a general rule for overriding data types, you right-click on an ODX data source and select 'Override Data Types..', as described in the context."
+        },
+        "question_facts": [
+            "After reviewing the question, there are no typos in the question, options, or explanation provided. Everything is spelled correctly."
+        ]
+    },
+    "question_4": {
+        "question_content": {
+            "question": "What must you specify when setting up a rule to override data types in ODX?",
+            "options": {
+                "option_a": "The username and password for the data source",
+                "option_b": "The Schema, Table, Field, or Data type where the rule will be applied",
+                "option_c": "The IP address of the data source server",
+                "option_d": "The frequency of data refresh"
+            },
+            "answer": "option_b",
+            "explanation": "When setting up a rule to override data types, you need to specify the Schema, Table, Field, or Data type where this rule will be applied."
+        },
+        "question_facts": [
+            "After reviewing the question, there are no typos in the question, options, or explanation provided. Everything is spelled correctly.",
+            "Rating: 5\n\nThe question is clear, relevant, and correctly aligns with the provided information regarding setting up rules to override data types in ODX, where one must specify the Schema, Table, Field, or Data type."
+        ]
+    }
+}

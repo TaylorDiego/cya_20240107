@@ -1,0 +1,28 @@
+https://support.timextender.com/troubleshooting-134/adf-execution-error-adls-gen2-operation-failed-for-operation-returned-an-invalid-status-code-forbidden-1229;ADF execution error: ADLS Gen2 operation failed for: Operation returned an invalid status code 'Forbidden'
+https://support.timextender.com/troubleshooting-134/error-could-not-load-file-or-assembly-1230;Error: "Could not load file or assembly"
+https://support.timextender.com/troubleshooting-134/error-the-type-initializer-for-oracle-dataaccess-client-oracleconnectionstringbuilder-threw-an-exception-1240;Error: The type initializer for 'Oracle.DataAccess.Client. OracleConnectionStringBuilder' threw an exception.
+https://support.timextender.com/troubleshooting-134/error-could-not-load-file-or-assembly-microsoft-sqlserver-batchparser-dll-1241;Error: Could not load file or assembly 'Microsoft.SqlServer.BatchParser.dll'
+https://support.timextender.com/troubleshooting-134/error-requested-registry-access-is-not-allowed-1242;Error: "Requested registry access is not allowed"
+https://support.timextender.com/troubleshooting-134/error-login-failed-error-when-executing-first-dimension-1243;Error: Login failed error when executing first dimension
+https://support.timextender.com/troubleshooting-134/error-faulting-module-oleaut32-dll-1244;Error: Faulting module OLEAUT32.dll
+https://support.timextender.com/troubleshooting-134/new-field-in-an-incremental-table-doesn-t-populate-1245;New field in an incremental table doesn't populate
+https://support.timextender.com/troubleshooting-134/executing-a-data-warehouse-table-from-odx-instance-gives-error-login-failed-for-user-1249;Executing a Data Warehouse table from ODX Instance gives error: "Login failed for user"
+https://support.timextender.com/troubleshooting-134/how-to-resolve-service-request-failed-access-is-denied-error-in-odx-1252;How to resolve "Service request failed: Access is denied" error in ODX
+https://support.timextender.com/troubleshooting-134/how-to-use-a-debugger-to-review-a-timextender-process-1255;How to use a debugger to review a TimeXtender process
+https://support.timextender.com/troubleshooting-134/odx-execution-error-the-execution-unexpectedly-stopped-with-exit-code-0016-error-1256;ODX execution error: "The execution unexpectedly stopped with exit code: 0016 - Error"
+https://support.timextender.com/troubleshooting-134/troubleshooting-concurrency-issues-in-odx-data-sources-1263;Troubleshooting concurrency issues in ODX data sources
+https://support.timextender.com/troubleshooting-134/error-timeout-expired-1273;Error: "Timeout expired"
+https://support.timextender.com/troubleshooting-134/services-are-not-removed-on-uninstall-1274;Services are not removed on uninstall
+https://support.timextender.com/troubleshooting-134/troubleshooting-deadlocks-in-execution-1257;Troubleshooting deadlocks in Execution
+https://support.timextender.com/troubleshooting-134/how-to-avoid-duplicates-in-a-custom-table-1280;How to avoid duplicates in a custom table
+https://support.timextender.com/troubleshooting-134/error-the-locale-id-of-the-source-column-and-the-locale-id-of-the-destination-column-do-not-match-1247;Error: The locale id of the source column and the locale id of the destination column do not match
+https://support.timextender.com/troubleshooting-134/using-tcpview-tool-to-monitor-an-odx-instance-1291;Using TCPView tool to monitor an ODX instance
+https://support.timextender.com/troubleshooting-134/tracing-to-event-viewer-or-text-file-logs-1292;Tracing to Event Viewer or Text file logs
+https://support.timextender.com/troubleshooting-134/profiling-queries-to-azure-sql-db-1293;Profiling queries to Azure SQL DB
+https://support.timextender.com/troubleshooting-134/synchronizing-adf-oracle-data-source-produces-unexpected-results-1294;Synchronizing ADF Oracle data source produces unexpected results
+https://support.timextender.com/troubleshooting-134/user-interface-elements-blurry-very-small-or-missing-1299;User interface elements blurry, very small or missing
+https://support.timextender.com/troubleshooting-134/no-notification-e-mails-are-send-when-executing-on-a-schedule-1300;No notification e-mails are send when executing on a schedule
+https://support.timextender.com/troubleshooting-134/how-to-resolve-odx-error-property-ownerid-does-not-exist-for-object-specified-1301;How to resolve ODX error: Property 'OwnerId' does not exist for 'object specified'
+https://support.timextender.com/troubleshooting-134/oracle-data-source-error-in-command-could-not-load-file-or-assembly-oracle-dataaccess-1308;Oracle data source Error in command: Could not load file or assembly Oracle.DataAccess
+https://support.timextender.com/troubleshooting-134/error-no-suitable-oracle-driver-installed-1309;Error: No suitable Oracle driver installed
+https://support.timextender.com/troubleshooting-134/new-adf-data-source-with-an-odx-task-error-failed-to-encrypt-sub-resource-payload-1310;New ADF data source with an ODX task error: "Failed to encrypt sub-resource payload"

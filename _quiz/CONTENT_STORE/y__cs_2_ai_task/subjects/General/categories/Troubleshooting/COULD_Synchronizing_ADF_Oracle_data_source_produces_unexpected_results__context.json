@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:43:14",
+    "URL": "https://support.timextender.com/troubleshooting-134/synchronizing-adf-oracle-data-source-produces-unexpected-results-1294",
+    "Keywords": "missing",
+    "Title": "Synchronizing ADF Oracle data source produces unexpected results _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "Azure Data Factory - Oracle owner This is because Oracle databases tend to be very highly normalized, and may contain tens of thousands of tables. Restricting the synchronization to only the necessary tables using owner permissions may speed up this process. owner  ",
+    "Lists": []
+}

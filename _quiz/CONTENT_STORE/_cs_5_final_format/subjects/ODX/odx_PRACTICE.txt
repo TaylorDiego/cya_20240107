@@ -1,0 +1,181 @@
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When querying ODX Parquet files using Azure Synapse Workspace, what must you ensure about the SQL Server Management Studio (SSMS) connection?
+
+{"score":0}It must be connected using the SQL endpoint.
+{"score":100.0}It must be connected using the SQL on-demand endpoint.
+{"score":0}It must use the default 'sqladminuser' credential.
+{"score":0}It must connect directly to the Azure Data Lake Gen2 storage.
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}As of October 1st, 2022, what is required for an app to send emails through Microsoft's online SMTP servers?
+
+{"score":0}Basic authentication with a username and password.
+{"score":100.0}An Application ID and Tenant ID with specific permissions granted.
+{"score":0}A direct connection to the Microsoft Exchange server.
+{"score":0}A VPN connection to Microsoft's internal network.
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the recommended solution in the text to speed up Azure Data Factory (ADF) transfers?
+
+{"score":0}Increase the number of AzureRuntimes
+{"score":100.0}Use a self-hosted integration runtime
+{"score":0}Decrease the memory limit use setting
+{"score":0}Partition large tables more extensively
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where is the packing/unpacking of parquet done when using ADO.net according to the text?
+
+{"score":0}On the AzureRuntime
+{"score":100.0}On the ODX Server VM
+{"score":0}In the cloud
+{"score":0}On the source data store
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where can you find the log of communication between the ODX Server Manager and the ODX Server?
+
+{"score":0}In the Execution Queue
+{"score":100.0}In the Service Log
+{"score":0}In the Execution Log
+{"score":0}In the Statistics section
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you view the statistics of a data source in the ODXServer?
+
+{"score":0}By double-clicking on the data source
+{"score":0}By right-clicking on the data source and selecting Properties
+{"score":100.0}By right-clicking a data source and clicking Statistics
+{"score":0}By selecting the data source and pressing the 'Stats' key
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step to filter out rows of data from transfers in ODX?
+
+{"score":0}Delete the unwanted rows manually
+{"score":100.0}Open the relevant ODX instance and click 'Filter Rows...'
+{"score":0}Export the data to a CSV file and filter it externally
+{"score":0}Run a SQL query to select the desired rows
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you apply a row filter rule to specific tables in ODX?
+
+{"score":0}By setting global rules that apply to all tables
+{"score":100.0}By entering the schema and/or table names in the Schema/Table list
+{"score":0}By emailing the ODX support team with the table names
+{"score":0}By renaming the tables you want to filter
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What example is used in the article to illustrate the process of adding a new field to a data source?
+
+{"score":0}Adding a 'CustomerID' field to a 'Sales' table
+{"score":100.0}Adding a 'Manufacturing Supplier' column to the 'LawnProducts' table
+{"score":0}Removing a 'Discontinued' column from a 'Products' table
+{"score":0}Updating a 'Price' field in an 'Inventory' table
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What flexibility does TimeXtender provide according to the article?
+
+{"score":0}Flexible pricing models
+{"score":0}Flexible user interface customization
+{"score":100.0}The ability to connect to many different data providers
+{"score":0}Flexible data storage options
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In the context of TimeXtender ODX, what is the 'Subtract from value' option used for?
+
+{"score":0}To subtract a fixed value from all numeric fields
+{"score":100.0}To define the interval for updates on recently created rows
+{"score":0}To remove outdated data from the Data Warehouse
+{"score":0}To calculate the total size of the data source
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the consequence of not using updates in the Incremental Load setup in TimeXtender?
+
+{"score":0}Updates will be processed as inserts
+{"score":100.0}Updates in the Data Warehouse will not be possible
+{"score":0}All updates will be ignored
+{"score":0}Full loads will be required less frequently
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which type of data source may allow users to copy the connection string for manual migration to ODX?
+
+{"score":0}ODX storage databases
+{"score":100.0}CData data sources
+{"score":0}DSA data sources
+{"score":0}Query Table data sources
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a crucial difference between Business Unit and ODX mentioned in the text?
+
+{"score":0}ODX allows for more data sources
+{"score":100.0}Business Unit supports conditional lookup fields which ODX does not
+{"score":0}ODX requires manual migration
+{"score":0}Business Unit uses Query Tables
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the consequence of renaming a column in the data source without synchronizing?
+
+{"score":0}The ODX transfer task will fail
+{"score":100.0}The Data Warehouse table execution will fail
+{"score":0}The renamed column will be duplicated in the ODX
+{"score":0}The ODX will automatically update the column name
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do first when resolving a synchronization error due to a renamed column in TimeXtender?
+
+{"score":0}Delete the renamed column from the ODX
+{"score":0}Rename the column back to its original name
+{"score":100.0}Open the Data Warehouse instance containing the objects to be synchronized
+{"score":0}Execute the ODX transfer task again
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens after selecting tables and executing the transfer task in TimeXtender?
+
+{"score":0}The tables are deleted from the source.
+{"score":0}The tables are moved to the ODX storage.
+{"score":100.0}The tables are loaded from source to ODX storage.
+{"score":0}The tables are synchronized between the source and ODX storage.
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In TimeXtender, what is the purpose of the 'Switch to Simple Selection' feature?
+
+{"score":0}To remove all tables from the selection.
+{"score":0}To filter and select specific columns only.
+{"score":100.0}To simplify the table selection process.
+{"score":0}To switch to a more advanced selection mode.
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which setting is specific to Azure Data Lake Storage in TimeXtender's storage management tasks?
+
+{"score":0}Delete old versions to free up storage
+{"score":0}Move old versions to cool storage
+{"score":0}Rollup incremental data with Azure Data Factory
+{"score":100.0}All of the above
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does the 'Rollup incremental data with Azure Data Factory' setting allow you to specify in TimeXtender?
+
+{"score":0}The credentials for Azure Data Factory
+{"score":100.0}The minimum and maximum size of the rollup file
+{"score":0}The frequency of data transfer
+{"score":0}The type of data to be rolled up
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens when you drag and drop a table with the same name from an ODX to a data warehouse?
+
+{"score":0}The table is ignored.
+{"score":0}The table is added as a new table with a suffix.
+{"score":100.0}The table is synchronized with the existing table in the data warehouse.
+{"score":0}The table is deleted from the ODX.
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do to transfer multiple tables from an ODX to a data warehouse?
+
+{"score":0}Drag each table individually.
+{"score":0}Use the secondary mouse button to drag and drop.
+{"score":100.0}Hold Shift or CTRL to select multiple tables to drag.
+{"score":0}Right-click on the ODX instance and select 'Transfer All'.
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How do you add data from a data source to an ODX instance?
+
+{"score":0}By manually entering data into the ODX
+{"score":0}By using the TimeXtender application to transfer data
+{"score":100.0}By configuring data sources in TimeXtender Desktop
+{"score":0}By sending an email request to TimeXtender support
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What can be configured within the TimeXtender Desktop when opening an ODX Instance?
+
+{"score":0}Network configurations only
+{"score":100.0}Data source configurations such as tables, fields, and scheduling
+{"score":0}Visualizations and dashboard layouts
+{"score":0}Email notifications for system errors
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How do you set up a general rule for overriding data types at an ODX data source?
+
+{"score":0}By writing a custom SQL script
+{"score":0}By configuring settings in the data source's properties
+{"score":100.0}By right-clicking on an ODX data source and selecting 'Override Data Types..'
+{"score":0}By manually editing each field's data type
+-
+{"folder":"(2024_01) PRACTICE - ODX","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must you specify when setting up a rule to override data types in ODX?
+
+{"score":0}The username and password for the data source
+{"score":100.0}The Schema, Table, Field, or Data type where the rule will be applied
+{"score":0}The IP address of the data source server
+{"score":0}The frequency of data refresh

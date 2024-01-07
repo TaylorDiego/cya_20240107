@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:42:59",
+    "URL": "https://support.timextender.com/troubleshooting-134/how-to-resolve-service-request-failed-access-is-denied-error-in-odx-1252",
+    "Keywords": "missing",
+    "Title": "How to resolve _Service request failed_ Access is denied_ error in ODX _ Community",
+    "Author": "Thomas Lind",
+    "Text": "You receive the following error when adding or editing an ODX data source: Error in command: 'Add Data Source...'. Service request failed: Access is denied Module: TimeXtender.ODX.Engine TimeXtender.ODX.Engine.ODXFaultException indows Defender Exploit Guard ODX service log may show the following error: Win32Exception Access is denied Process.StartWithCreateProcess Some configuration on this machine is blocking the ODX from starting new processes and communicating with those. Examine errors and warnings in Event Viewer: Application and Services Log Microsoft -> Windows -> Windows Defender -> Operational Below is an example warning: Defender Exploit Guard blocked ExecutionEngine_x64.exe Windows Defender Exploit Guard Windows Defender Exploit Guard policy ",
+    "Lists": []
+}

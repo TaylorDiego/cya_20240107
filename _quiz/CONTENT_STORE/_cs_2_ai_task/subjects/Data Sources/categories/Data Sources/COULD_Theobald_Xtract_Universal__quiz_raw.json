@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What is the default port number for Theobald Xtract Universal (XU) when installed on the TimeXtender application server?",
+        "options": {
+            "option_a": "1433",
+            "option_b": "8065",
+            "option_c": "80",
+            "option_d": "8080"
+        },
+        "answer": "option_b",
+        "explanation": "The default port for XU is 8065, as mentioned in the 'Edit parameters in xu_rsd_gen.env' section where it instructs to adjust XU_BASE_URL to point to the XU server and port."
+    },
+    "question_2": {
+        "question": "Which of the following is a prerequisite for installing Theobald Xtract Universal according to the provided context?",
+        "options": {
+            "option_a": "Install .NET Framework 4.5 or later",
+            "option_b": "Ensure a VPN connection is established",
+            "option_c": "Ensure Python (version 3.8 or later) is installed",
+            "option_d": "Configure a static IP address for the server"
+        },
+        "answer": "option_c",
+        "explanation": "The prerequisite for installing Theobald Xtract Universal is to ensure Python (version 3.8 or later) is installed, as stated in the 'Prerequisites' section."
+    }
+}

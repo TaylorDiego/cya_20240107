@@ -1,0 +1,45 @@
+{
+    "DateTime": "2023-12-27 14:42:14",
+    "URL": "https://support.timextender.com/data-sources-112/add-and-map-a-data-source-connection-in-the-timextender-portal-731",
+    "Keywords": "missing",
+    "Title": "Add and Map a Data Source Connection in the TimeXtender Portal _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "TimeXtender 6024.1 Copying data from a data source to an ODX, begins in the web interface. Here, you add the data source connection and map it to an ODX instance. When you open the instance in the desktop application, you can then use the mapped data source connections when you add a data source. To add a data source connection, follow the steps below. Note: Once you've added a few data source connections, it's time to map them to an ODX. To do that, follow the steps below.  Once youve mapped your connection to an ODX Instance, now you can add a data source in the Desktop Application:  If you need to add a new data source connection that is mostly the same as an existing data source connection, you can clone the existing connection instead of starting from scratch. Actions  Clone This will open a page similar to the Add Data Source page, but prefilled with data from the cloned data source. Nothing is saved before you save the new data source. A data source connection cannot be deleted if it is mapped to an ODX instance. You should also take care when you remove a data source mapping since any data sources on the ODX that use the data source connection will stop working. Follow the steps below to delete a data source mapping. ",
+    "Lists": [
+        {
+            "heading": "Adding a data source connection",
+            "paragraphs": [
+                "To add a data source connection, follow the steps below."
+            ],
+            "list": [
+                "Go to Data Estate > Data source connections and click Add data source connection",
+                "In the Data Source Connection list, select the data source provider you want to use.",
+                "In the Name box, type a name for the data source.",
+                "In the Description box, type a description of the data source connection.",
+                "Under Connection settings, enter the connection information required by the data source you've selected."
+            ]
+        },
+        {
+            "heading": "Mapping a data source connection to an ODX",
+            "paragraphs": [
+                "Once you've added a few data source connections, it's time to map them to an ODX. To do that, follow the steps below."
+            ],
+            "list": [
+                "Go to Data Estate > Instances and click on an ODX instance.",
+                "On the Mapped data source connections list, click Add",
+                "In the Add data source connection modal, select the data source connections you want to add from the Data source connection list, and then click Add. You can search for, and select, multiple data source connections."
+            ]
+        },
+        {
+            "heading": "Remove a Data Source Connection",
+            "paragraphs": [
+                "A data source connection cannot be deleted if it is mapped to an ODX instance. You should also take care when you remove a data source mapping since any data sources on the ODX that use the data source connection will stop working.",
+                "Follow the steps below to delete a data source mapping."
+            ],
+            "list": [
+                "On the Mapped data source connections list, click the Delete icon in the Actions column in the row of the data source you want to remove",
+                "In the Remove data source connection modal, confirm that you want to remove the mapping by clicking Remove"
+            ]
+        }
+    ]
+}

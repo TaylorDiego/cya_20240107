@@ -1,0 +1,7 @@
+{"folder":<folder>,"tags":{"subject":<subject>},"points":[,], "min":1, "max":1, "shuffle":false, "display": {"direction":"column"}}<question>
+
+{"score":0}<answer_1>
+{"score":0}<answer_2>
+{"score":0}<answer_3>
+{"score":0}<answer_4>
+-

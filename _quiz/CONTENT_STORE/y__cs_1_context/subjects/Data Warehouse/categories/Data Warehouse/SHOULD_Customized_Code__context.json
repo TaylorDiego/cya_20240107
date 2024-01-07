@@ -1,0 +1,27 @@
+{
+    "DateTime": "2023-12-27 14:40:33",
+    "URL": "https://support.timextender.com/data-warehouse-108/customized-code-1034",
+    "Keywords": "missing",
+    "Title": "Customized Code _ Community",
+    "Author": "missing",
+    "Text": "TimeXtender allows for an instance to integrate\"hand-written\" code that can be used to customizethe data cleansing procedure and the transformation viewfora given table. To customize the code on a given table, follow the steps below:  If the \"Standard\" editor is chosen, the \"Edit\" window will open. Once the code editing is complete, click \"OK\" to confirm the edits. If a custom editor is chosen, TimeXtender will open the code in the chosen editor. After editing the code, save the changes and close the editor. The \"Custom Code Editor\" window will be open in TimeXtender.  Note: Create Procedure Create View\" name  first line  ",
+    "Lists": [
+        {
+            "heading": "Adding customized code to a table",
+            "paragraphs": [
+                "To customize the code on a given table, follow the steps below:"
+            ],
+            "list": [
+                "Right click the table > Advanced > Customize code",
+                "Click the \"Add\" button to the right of the step to be customized, which will open the \"Choose Editor\" window.",
+                "In the Editor Name list, the following options are available:   Standard is the basic built-in editor in TimeXtender. Default File Program is the program that is set to open files of the type in question. For the data cleansing procedure and the transformation view, the file name extension is .sql.  Any custom editors that have been added (see Managing Custom Editors).",
+                "Standard is the basic built-in editor in TimeXtender.",
+                "Default File Program is the program that is set to open files of the type in question. For the data cleansing procedure and the transformation view, the file name extension is .sql.",
+                "Any custom editors that have been added (see Managing Custom Editors).",
+                "If the \"Standard\" editor is chosen, the \"Edit\" window will open. Once the code editing is complete, click \"OK\" to confirm the edits. If a custom editor is chosen, TimeXtender will open the code in the chosen editor. After editing the code, save the changes and close the editor. The \"Custom Code Editor\" window will be open in TimeXtender.  Click Import to import the changes made in the custom editor into your instance.",
+                "When returning to the \"Customize Code\" window, note that \"Parameters\" (if applicable) and \"Delete\" can now be clicked. Click \"Delete\" to remove the customization and return to having TimeXtender generate the code. Click \"Parameters\" to decide which parameters are sent to the code on execution.",
+                "Click Close to close the window."
+            ]
+        }
+    ]
+}

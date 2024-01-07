@@ -1,0 +1,310 @@
+{
+    "question_1": {
+        "question": "What is the purpose of cloning a data source connection in TimeXtender Desktop?",
+        "options": {
+            "option_a": "To delete the original data source connection",
+            "option_b": "To create a backup of the TimeXtender Portal",
+            "option_c": "To duplicate a heavily customized data source connection",
+            "option_d": "To transfer data directly to the data warehouse"
+        },
+        "answer": "option_c",
+        "explanation": "Cloning a data source connection in TimeXtender Desktop is useful for creating copies of data source connections that are heavily customized, allowing for easier management and deployment of similar configurations."
+    }
+    , "question_2": {
+        "question": "How can rows of data be excluded from transfers in an ODX Instance?",
+        "options": {
+            "option_a": "By setting up a primary key",
+            "option_b": "By adding a row filter rule that matches the table",
+            "option_c": "By using the Data Source Explorer",
+            "option_d": "By executing a SELECT statement in the Query Tool"
+        },
+        "answer": "option_b",
+        "explanation": "To exclude rows of data from transfers in an ODX Instance, a row filter rule must be added that matches the table. This rule defines the criteria a row needs to meet to be included or excluded."
+    }
+    , "question_3": {
+        "question": "What is the primary purpose of the Data Warehouse Instance in TimeXtender?",
+        "options": {
+            "option_a": "To store raw data from various sources without transformation",
+            "option_b": "To map, cleanse, transform, and consolidate data into a 'single version of truth'",
+            "option_c": "To serve as a backup for the Operational Data Exchange (ODX)",
+            "option_d": "To manage user permissions and security settings"
+        },
+        "answer": "option_b",
+        "explanation": "The Data Warehouse Instance in TimeXtender is used to map data from the ODX, then cleanse, transform, and consolidate this data into a 'single version of truth'."
+    }
+    , "question_4": {
+        "question": "Which feature should be enabled to allow multiple developers to access a TimeXtender instance simultaneously?",
+        "options": {
+            "option_a": "Log Retention Days",
+            "option_b": "Server storage type",
+            "option_c": "Team Development",
+            "option_d": "Encrypt connection"
+        },
+        "answer": "option_c",
+        "explanation": "To allow multiple developers to access the instance at the same time, the 'Enable Team Development' feature should be turned on."
+    }
+    , "question_5": {
+        "question": "What is the default storage type when configuring an ODX instance in TimeXtender?",
+        "options": {
+            "option_a": "Azure SQL Database",
+            "option_b": "SQL Server",
+            "option_c": "Azure Data Lake Gen2",
+            "option_d": "Azure SQL Managed Instance"
+        },
+        "answer": "option_c",
+        "explanation": "Azure Data Lake Gen2 is the default storage type for an ODX instance in TimeXtender, as mentioned in the provided context."
+    }
+    , "question_6": {
+        "question": "Which authentication method is required for Azure SQL Database, Azure SQL Managed Instance, or SQL Database when adding an ODX instance in TimeXtender?",
+        "options": {
+            "option_a": "Windows Authentication",
+            "option_b": "SQL Server Authentication",
+            "option_c": "OAuth 2.0",
+            "option_d": "No authentication is required"
+        },
+        "answer": "option_b",
+        "explanation": "SQL Server Authentication is required for Azure SQL Database, Azure SQL Managed Instance, or SQL Database when adding an ODX instance in TimeXtender."
+    }
+    , "question_7": {
+        "question": "Where are semantic models added in TimeXtender?",
+        "options": {
+            "option_a": "In the desktop application",
+            "option_b": "In the web interface",
+            "option_c": "Via command line",
+            "option_d": "In the mobile app"
+        },
+        "answer": "option_b",
+        "explanation": "Semantic models are added in the web interface of TimeXtender, as stated in the provided context."
+    }
+    , "question_8": {
+        "question": "What can you do with a semantic model instance after it has been created?",
+        "options": {
+            "option_a": "Only delete it",
+            "option_b": "Only add more endpoints",
+            "option_c": "Edit to add or remove endpoints",
+            "option_d": "It cannot be modified after creation"
+        },
+        "answer": "option_c",
+        "explanation": "After creating a semantic model instance, you can edit it to add more endpoints or remove existing ones."
+    }
+    , "question_9": {
+        "question": "Which directory service is recommended for cloud deployments when configuring user accounts for TimeXtender?",
+        "options": {
+            "option_a": "Active Directory (AD)",
+            "option_b": "Azure Active Directory (AAD)",
+            "option_c": "Google Directory",
+            "option_d": "Amazon Web Services Directory Service"
+        },
+        "answer": "option_b",
+        "explanation": "For Cloud deployment, Azure Active Directory (AAD) is recommended, and for Azure Analysis Services, it is required."
+    }
+    , "question_10": {
+        "question": "What type of permissions should the TimeXtender developers have in the TimeXtender Portal?",
+        "options": {
+            "option_a": "Read-only permissions",
+            "option_b": "Execution permissions",
+            "option_c": "Access to relevant instances",
+            "option_d": "Administrator permissions"
+        },
+        "answer": "option_c",
+        "explanation": "Each TimeXtender developer should have access to the relevant instances in the TimeXtender Portal."
+    }
+    , "question_11": {
+        "question": "What is the primary benefit of using Azure Synapse Analytics in terms of cost management?",
+        "options": {
+            "option_a": "It offers unlimited storage for a fixed price.",
+            "option_b": "It allows users to pause the service and only be charged for storage.",
+            "option_c": "It provides free computation resources indefinitely.",
+            "option_d": "It charges a flat rate regardless of the amount of data stored."
+        },
+        "answer": "option_b",
+        "explanation": "Azure Synapse Analytics helps manage costs by allowing users to pause the service, which releases compute resources and incurs charges only for storage used."
+    }
+    , "question_12": {
+        "question": "What happens to your data when the Azure Synapse Dedicated SQL Pool is paused?",
+        "options": {
+            "option_a": "Data is deleted and must be restored from a backup.",
+            "option_b": "Data is archived and incurs additional charges.",
+            "option_c": "Data remains intact but is unavailable for queries.",
+            "option_d": "Data is automatically moved to Azure Blob Storage."
+        },
+        "answer": "option_c",
+        "explanation": "When the Azure Synapse Dedicated SQL Pool is paused, the data remains intact but is not accessible via queries."
+    }
+    , "question_13": {
+        "question": "What port should be opened in the firewall settings for a server outside Azure (On-Prem) to use the new version of TimeXtender?",
+        "options": {
+            "option_a": "Port 443",
+            "option_b": "Port 1433",
+            "option_c": "Port range 11000-11999",
+            "option_d": "Port 80"
+        },
+        "answer": "option_b",
+        "explanation": "Port 1433 is the standard for SQL Server and should be opened for servers outside Azure (On-Prem)."
+    }
+    , "question_14": {
+        "question": "Which port range should be opened for a server inside Azure to work with TimeXtender?",
+        "options": {
+            "option_a": "Port 80-85",
+            "option_b": "Port 1433",
+            "option_c": "Port 443",
+            "option_d": "Port range 11000-11999"
+        },
+        "answer": "option_d",
+        "explanation": "For servers inside Azure, the port range 11000-11999 should be opened to work with TimeXtender."
+    }
+    , "question_15": {
+        "question": "What is the primary role of TimeXtender's Windows-based server software?",
+        "options": {
+            "option_a": "To provide a user interface for data analysis",
+            "option_b": "To orchestrate the ingestion of data from various sources",
+            "option_c": "To store raw data after ingestion",
+            "option_d": "To handle the administration of TimeXtender Data Estate"
+        },
+        "answer": "option_b",
+        "explanation": "The Windows-based server software in TimeXtender orchestrates the ingestion of data from various sources, ensuring data movement is separate from the desktop software and that data never leaves a user's environment."
+    }
+    , "question_16": {
+        "question": "Where is raw data stored after being ingested by TimeXtender?",
+        "options": {
+            "option_a": "In the desktop software",
+            "option_b": "In a SQL database or Azure Data Lake",
+            "option_c": "In the web portal",
+            "option_d": "In the TimeXtender Data Estate"
+        },
+        "answer": "option_b",
+        "explanation": "Raw data is stored in a SQL database or Azure Data Lake after ingestion, allowing for later analysis or retrieval in its raw form."
+    }
+    , "question_17": {
+        "question": "What is the primary focus when starting with TimeXtender Portal and Desktop according to the article?",
+        "options": {
+            "option_a": "Configuring user permissions",
+            "option_b": "Setting up data estate instances",
+            "option_c": "Designing data models",
+            "option_d": "Installing software updates"
+        },
+        "answer": "option_b",
+        "explanation": "The article emphasizes that setting up ODX, data warehouse, and semantic model instances are the building blocks of your data estate, indicating that this is the starting point."
+    }
+    , "question_18": {
+        "question": "Where can you add specific instances for your data estate in TimeXtender?",
+        "options": {
+            "option_a": "Data Estate > Instances > Add instance",
+            "option_b": "Profile & Preferences > Add instance",
+            "option_c": "File > New > Instance",
+            "option_d": "Tools > Options > Instances"
+        },
+        "answer": "option_a",
+        "explanation": "The text specifies the navigation path to add instances as 'Data Estate > Instances > Add instance', which is where you can add specific instances."
+    }
+    , "question_19": {
+        "question": "What should you do if you encounter Error 1064 when using TimeXtender?",
+        "options": {
+            "option_a": "Reinstall TimeXtender",
+            "option_b": "Run the TimeXtender Execution Server Configuration",
+            "option_c": "Restart your computer",
+            "option_d": "Ignore the error"
+        },
+        "answer": "option_b",
+        "explanation": "Error 1064 requires running the TimeXtender Execution Server Configuration before starting the Execution Service to handle the control request properly."
+    }
+    , "question_20": {
+        "question": "Which of the following is NOT listed as a step in the installation process of TimeXtender ODX Server?",
+        "options": {
+            "option_a": "Unzip the installation package and run Setup.exe",
+            "option_b": "Choose Setup Type page and select Typical, Complete, or Custom option",
+            "option_c": "Launch the ODX Server Configuration tool",
+            "option_d": "Install additional language packs"
+        },
+        "answer": "option_d",
+        "explanation": "The provided steps for installing TimeXtender ODX Server do not include installing additional language packs."
+    }
+    , "question_21": {
+        "question": "What are the three types of instances that a TimeXtender solution is built up of?",
+        "options": {
+            "option_a": "ODX, MDW, and Semantic Model",
+            "option_b": "ODX, Data Warehouse, and Semantic Layer",
+            "option_c": "ODX, Data Warehouse, and Semantic Model",
+            "option_d": "ODX, ETL, and Data Mart"
+        },
+        "answer": "option_c",
+        "explanation": "A TimeXtender solution comprises ODX (Operational Data Exchange), Data Warehouse, and Semantic Model instances, which serve as its foundational building blocks."
+    }
+    , "question_22": {
+        "question": "What is the default setting for 'Postfix valid tables with '_V' in TimeXtender Data Warehouse settings?",
+        "options": {
+            "option_a": "Yes",
+            "option_b": "No",
+            "option_c": "Only for invalid tables",
+            "option_d": "User-defined"
+        },
+        "answer": "option_b",
+        "explanation": "By default, the setting 'Postfix valid tables with '_V' is set to No in TimeXtender Data Warehouse settings."
+    }
+    , "question_23": {
+        "question": "What is the recommended first step when troubleshooting an issue in TimeXtender according to the provided text?",
+        "options": {
+            "option_a": "Contact TimeXtender support immediately",
+            "option_b": "Check if the issue is already documented",
+            "option_c": "Upgrade to the latest version of TimeXtender",
+            "option_d": "Restart the TimeXtender service"
+        },
+        "answer": "option_b",
+        "explanation": "The text suggests looking for best practices already documented as the first step, which implies checking if the issue has been experienced and resolved before."
+    }
+    , "question_24": {
+        "question": "Which of the following is NOT listed as a potential workaround for issues with provider's remote connection in TimeXtender?",
+        "options": {
+            "option_a": "Uploading source data to a staging server",
+            "option_b": "Using a faster method to extract data",
+            "option_c": "Changing the visual layout of the data",
+            "option_d": "Using a better connector"
+        },
+        "answer": "option_c",
+        "explanation": "The text mentions uploading data to a staging server and using a faster method or better connector as workarounds, but changing the visual layout is not mentioned."
+    }
+    , "question_25": {
+        "question": "Which .NET Framework version is the minimum requirement to run TimeXtender?",
+        "options": {
+            "option_a": ".NET Framework 3.5",
+            "option_b": ".NET Framework 4.5",
+            "option_c": ".NET Framework 4.8 or higher",
+            "option_d": ".NET Framework 4.7.2"
+        },
+        "answer": "option_c",
+        "explanation": "TimeXtender requires .NET Framework 4.8 or higher as a minimum software prerequisite."
+    }
+    , "question_26": {
+        "question": "What is required for connecting to ODX Cloud instances when TimeXtender is installed on a separate server from Microsoft SQL Server?",
+        "options": {
+            "option_a": "IPv6 connectivity",
+            "option_b": "IPv4 connectivity",
+            "option_c": "Bluetooth connectivity",
+            "option_d": "Wi-Fi connectivity"
+        },
+        "answer": "option_b",
+        "explanation": "IPv4 connectivity is required for connecting to ODX Cloud instances when TimeXtender is installed on a separate server from Microsoft SQL Server."
+    }
+    , "question_27": {
+        "question": "What is the primary function of the View menu in the TimeXtender user interface?",
+        "options": {
+            "option_a": "To navigate between different projects",
+            "option_b": "To customize the user interface display",
+            "option_c": "To create new data objects",
+            "option_d": "To export data to Excel"
+        },
+        "answer": "option_b",
+        "explanation": "The View menu in TimeXtender allows users to customize the user interface by toggling the display of different attributes, enhancing the user experience."
+    }
+    , "question_28": {
+        "question": "In the TimeXtender user interface, how can you add a description to an object?",
+        "options": {
+            "option_a": "By double-clicking on the object",
+            "option_b": "By selecting the object and pressing Ctrl+D",
+            "option_c": "By right-clicking on the object and selecting Description",
+            "option_d": "By dragging the object to the description pane"
+        },
+        "answer": "option_c",
+        "explanation": "Descriptions are added to objects in TimeXtender by right-clicking on the object and selecting Description from the context menu."
+    }
+}

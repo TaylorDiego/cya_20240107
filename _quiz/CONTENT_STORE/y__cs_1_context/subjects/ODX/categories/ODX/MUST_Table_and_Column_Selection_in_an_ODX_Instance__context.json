@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:39:57",
+    "URL": "https://support.timextender.com/odx-107/table-and-column-selection-in-an-odx-instance-705",
+    "Keywords": "missing",
+    "Title": "Table and Column Selection in an ODX Instance _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "TimeXtender 6024.1 Select Tables... Search Include A list of rules will then appear in the right-hand pane based on your selection. Select Columns... Include A list of rules then appears in the right hand pane of the menu. Switch to Simple Selection... Select Columns... Remove Add Load Preview Data Note: You may also choose to select tables on a transfer task level (rather than a data source level). If a table or column has not been chosen on the data source level, then it cannot be chosen on a transfer task level. In order to add a new table to the transfer task, you will first have to select the table on the data source level and execute the synchronization task. Please note, that column selection is only available on the data source level, not on the transfer task level. Add Transfer Task Let me select the tables Select Tables Table Selection filter Switch to Advanced Selection  After selecting tables, execute the transfer task to load tables from source to ODX storage. ",
+    "Lists": []
+}

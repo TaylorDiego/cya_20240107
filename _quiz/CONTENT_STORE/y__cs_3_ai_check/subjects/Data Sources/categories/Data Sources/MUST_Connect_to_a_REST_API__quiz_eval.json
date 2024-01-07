@@ -1,0 +1,34 @@
+{
+    "question_1": {
+        "question_content": {
+            "question": "What is the first step in setting up a REST provider according to the guide?",
+            "options": {
+                "option_a": "Configure the OAuth settings",
+                "option_b": "Click the REST guide from CData link",
+                "option_c": "Set up the data source template",
+                "option_d": "Generate an RSD file"
+            },
+            "answer": "option_b",
+            "explanation": "The first step in setting up a REST provider is to click the REST guide from CData link, as it likely contains important information and instructions for the setup process."
+        },
+        "question_facts": [
+            "I would rate this question a 4.\n\nThe provided test question is clear and concise, with a straightforward answer. It is immediately relevant if the candidate is familiar with the referenced guide or has knowledge of REST API setup procedures. The explanation supports the correct answer, reinforcing the importance of following initial setup instructions. While there is always room for improvement in question complexity or context, this question does a good job assessing a specific piece of knowledge."
+        ]
+    },
+    "question_6": {
+        "question_content": {
+            "question": "What is the default method for OAuth authentication mentioned in the context?",
+            "options": {
+                "option_a": "Client Credentials",
+                "option_b": "Resource Owner Password Credentials",
+                "option_c": "Authorization Code",
+                "option_d": "Implicit"
+            },
+            "answer": "option_c",
+            "explanation": "The 'Code' option is mentioned as the default method and the most common one for OAuth authentication in the provided context."
+        },
+        "question_facts": [
+            "The test question is grammatically correct and clear for a diverse audience. The final format of the question appears to be:\n\nQuestion: What is the default method for OAuth authentication mentioned in the context?\nOptions:\nA) Client Credentials\nB) Resource Owner Password Credentials\nC) Authorization Code\nD) Implicit\nAnswer: Option C\nExplanation: The 'Code' option is mentioned as the default method and the most common one for OAuth authentication in the provided context.\n\nThe question is well-structured and the explanation aligns with the information provided in the context."
+        ]
+    }
+}

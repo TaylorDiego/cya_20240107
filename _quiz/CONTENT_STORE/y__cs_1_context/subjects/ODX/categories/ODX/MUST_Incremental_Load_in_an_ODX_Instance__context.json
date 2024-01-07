@@ -1,0 +1,25 @@
+{
+    "DateTime": "2023-12-27 14:40:13",
+    "URL": "https://support.timextender.com/odx-107/incremental-load-in-an-odx-instance-708",
+    "Keywords": "missing",
+    "Title": "Incremental Load in an ODX Instance _ Community",
+    "Author": "Thomas Lind",
+    "Text": "TimeXtender 6024.1 subtract from value TimeXtender 6024.1 Incremental load in Data Warehouse Instances When you have created a data source in the ODX, you have the option of setting up Incremental Load. In there you can add a rule with the following options. Refresh If you use Deletes or Updates in your rule and click OK in this, you may see the following menu, which shows you the tables with missing primary keys and gives you the possibility to choose what these are. When this is set incremental load is set on the source and it will attempt to use it on transfer tasks with this setting. If you uncheck this, it will always run full load transfers. What its the procedure to setup incremental loading in a table in DSA area if you define the incremental rule after that thetable was added? This link should explain all there is to know about incremental load in modern data warehouse instances.  Its clear, thanks Thomas @Thomas Lind I am a bit unclear about setting up the subtraction on an incremental rule. In your explanation: Amount Time In 20.10 incremental loading, we selected a subtraction in time, but no amount. I am unclear about the decrease it will apply to a value applied. Could you please elaborate?  Kind regards, Andrew @andrew.gebhard When you make a rule on a timestamp field it will just be latest value - subtraction amount.  When you make a rule on a DateTime field the subtraction time will be converted to seconds.  It was the same in the old version.  subtract from value Hi, Thanks for the responses! So it's an either/or situation and not something where both will be set for a given table. That clears things up.  ",
+    "Lists": [
+        {
+            "heading": "Setup Incremental Loading in an ODX Instance",
+            "paragraphs": [
+                "When you have created a data source in the ODX, you have the option of setting up Incremental Load.",
+                "In there you can add a rule with the following options."
+            ],
+            "list": [
+                "You can set it up for some specific schemas, tables, or specific columns. Most importantly is the column it will look for. In the above, I look for the ModifiedDateTime field across all tables.",
+                "The Subtract from value is an option to subtract from the field your rule applies to. The ability to apply offset incremental selection rules can be used for data sources where the modified date is a Date field, rather than a DateTime field. It can also be used for data sources where there is a created date but not a modified date, and due to performance an incremental load would be beneficial. In this case, using incremental load, based on created date with an offset, allows updates to occur on the rows have been recently created, provided that the alteration happens in that interval that has been defined. Amount is the decrease it will apply to a value applied. This could be on a timestamp or similar. Time is the Seconds, Minutes, Hours, Days, Weeks, or Years it will subtract from the last added DateTime.",
+                "The Additional actions are regarding whether we use only inserts, or also handle deletes and updates. Without deletes, it will only insert new rows that are larger than the rule field, which means that it doesn't check if the rows already exist in the source, or not. With deletes, a PK table or folder is generated, where the primary keys are compared to the source for updates or deletes. If you do not use updates in your setup, you will not be able to use updates in the Data Warehouse and the same goes for deletes. So if you do not use this, you will need to run frequent full loads.",
+                "Without deletes, it will only insert new rows that are larger than the rule field, which means that it doesn't check if the rows already exist in the source, or not.",
+                "With deletes, a PK table or folder is generated, where the primary keys are compared to the source for updates or deletes.",
+                "If you do not use updates in your setup, you will not be able to use updates in the Data Warehouse and the same goes for deletes. So if you do not use this, you will need to run frequent full loads."
+            ]
+        }
+    ]
+}

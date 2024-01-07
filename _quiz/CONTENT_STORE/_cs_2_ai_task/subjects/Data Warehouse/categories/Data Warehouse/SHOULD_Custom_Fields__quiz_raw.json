@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the primary purpose of custom fields in a data warehouse?",
+        "options": {
+            "option_a": "To delete existing data",
+            "option_b": "To populate the field value using various means",
+            "option_c": "To restrict user access to the data",
+            "option_d": "To change the data warehouse software"
+        },
+        "answer": "option_b",
+        "explanation": "Custom fields are used to populate an empty field shell with values using transformations, scripting, and data copy."
+    },
+    "question_2": {
+        "question": "Which of the following is NOT a method used to populate a custom field value?",
+        "options": {
+            "option_a": "Transformations",
+            "option_b": "Scripting",
+            "option_c": "Data copy",
+            "option_d": "Manual data entry"
+        },
+        "answer": "option_d",
+        "explanation": "The text mentions transformations, scripting, and data copy as means to populate custom fields, but does not mention manual data entry."
+    },
+    "question_3": {
+        "question": "What is a use case for custom fields mentioned in the context?",
+        "options": {
+            "option_a": "To fix broken links in the data warehouse",
+            "option_b": "To build a model of your data warehouse before adding data",
+            "option_c": "To create a backup of your data",
+            "option_d": "To encrypt data for security purposes"
+        },
+        "answer": "option_b",
+        "explanation": "Custom fields can be used to build a model of your data warehouse before actually bringing in the data."
+    },
+    "question_4": {
+        "question": "How are custom fields initially created in a table?",
+        "options": {
+            "option_a": "From a pre-populated field shell",
+            "option_b": "From an existing field with data",
+            "option_c": "From an empty field shell",
+            "option_d": "From a data warehouse template"
+        },
+        "answer": "option_c",
+        "explanation": "Custom fields are built from an empty field shell, which is then populated using various methods."
+    }
+}

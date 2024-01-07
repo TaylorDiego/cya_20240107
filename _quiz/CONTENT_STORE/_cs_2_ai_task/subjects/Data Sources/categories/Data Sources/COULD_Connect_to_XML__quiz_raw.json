@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What is the correct URI to access the Kings.XML file structured in element form?",
+        "options": {
+            "option_a": "https://mysafeinfo.com/api/data?list=englishmonarchs&mappingtype=element&rootname=englishmonarchs&elementname=Monarch",
+            "option_b": "http://mysafeinfo.com/api/data?list=englishmonarchs&mappingtype=element&rootname=englishmonarchs&elementname=Monarch",
+            "option_c": "https://mysafeinfo.com/api/data?list=top100rocksongs_billboard_2013&format=xml&abbreviate=false&case=default&token=e3ODIxQFAgT9TD69GSlvZ6rfgMKnZdVt&mappingtype=element&formatting=indented",
+            "option_d": "https://mysafeinfo.com/api/data?list=top100rocksongs_billboard_2013&format=xml&abbreviate=false&case=default&token=e3ODIxQFAgT9TD69GSlvZ6rfgMKnZdVt&mappingtype=attribute&formatting=indented"
+        },
+        "answer": "option_b",
+        "explanation": "The correct URI for the Kings.XML file structured in element form is provided in the context as an HTTP link, which is option B."
+    },
+    "question_2": {
+        "question": "When setting up an XML data source with attributes, what additional information must be provided?",
+        "options": {
+            "option_a": "A link to the file and the Row Scan Depth",
+            "option_b": "The Data Model and Data Type overwrites",
+            "option_c": "A link to the file and XPath",
+            "option_d": "Incremental load and data selection rules"
+        },
+        "answer": "option_c",
+        "explanation": "For an XML file using attributes, you need to provide a link to the file and the XPath, as the system cannot automatically read the XPath for attribute-based XML files."
+    }
+}

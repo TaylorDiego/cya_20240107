@@ -1,0 +1,75 @@
+{
+    "DateTime": "2023-12-27 14:42:33",
+    "URL": "https://support.timextender.com/data-sources-112/theobald-xtract-universal-839",
+    "Keywords": "missing",
+    "Title": "Theobald Xtract Universal _ Community",
+    "Author": "fwagner",
+    "Text": "Theobald Xtract Universal (XU) offers SAP data over http-json endpoints. XU can be leveraged to extractdata from SAP into an ODX instance using a REST data source. Install XU on the TimeXtender application server.Read and follow the steps at Read and follow the steps at You can use all available extraction types that XU offers. Note: latest version of the xu-rsd-generator utility Note: This will set up python dependencies so that the generator can create rsd files. RSD_TARGET_FOLDER Configuring a Data Source in TimeXtender Desktop If you need to load tables with a large amount of records: Package sizeproperty subtract from value  Incremental Load in an ODX Instance Combine the static full load parquet data source with the sliding window/incremental data source in the MDW table. Package sizeproperty Incremental loading Question: if you want to use DeltaQ (to extract BSEG + BKPF incrementally for instance) does this require anything special wrt to the process for using theDeltaQ in 20.10.x ODX Server? @rory.smith CDC implemented by Theobald @fwagner ",
+    "Lists": [
+        {
+            "heading": "Benefits",
+            "paragraphs": [],
+            "list": [
+                "Schedule executions for all SAP entities (including BAPI, BW Hierarchy, ODP, Query, DeltaQ, etc.) from within TimeXtender. XU supports all SAP entities, unlike the legacy TimeXtender SAP Table Data Source which used Xtract IS, and only supported TimeXtender-scheduled executions for full table extracts.",
+                "XU does not require SQL Server Integration Services (SSIS), unlike the legacy TimeXtender SAP Table Data Source which used Xtract IS."
+            ]
+        },
+        {
+            "heading": "Prerequisites",
+            "paragraphs": [],
+            "list": [
+                "Ensure Python (version 3.8 or later) is installed. Install Python directly from the Microsoft Store (by searching for python) or download from https://www.python.org/downloads/",
+                "Buy a Theobald XU license or download a trial."
+            ]
+        },
+        {
+            "heading": "1. Install and Configure XU",
+            "paragraphs": [
+                "Install XU on the TimeXtender application server. Read and follow the steps at"
+            ],
+            "list": [
+                "Requirements",
+                "Installation and Update",
+                "Getting Started with Xtract Universal"
+            ]
+        },
+        {
+            "heading": "2. Create Extractions in XU",
+            "paragraphs": [
+                "Read and follow the steps at"
+            ],
+            "list": [
+                "Defining a Table Extraction",
+                "Alternatively, use this script for generating extractions automatically"
+            ]
+        },
+        {
+            "heading": "5. Edit parameters in xu_rsd_gen\\.env",
+            "paragraphs": [],
+            "list": [
+                "Adjust XU_BASE_URL to point it to the XU server and port. If you installed XU on the TimeXtender application server then the XU server is simply localhost, and the default port for XU is 8065.",
+                "Point RSD_TARGET_FOLDER to a local folder that you will use for the TimeXtender REST data source."
+            ]
+        },
+        {
+            "heading": "7. Create REST data source",
+            "paragraphs": [],
+            "list": [
+                "Add a data source in the TimeXtender Portal. Select REST from the dropdown.",
+                "Set the Location property under the Schema section to the RSD Target Folder directory.",
+                "Map the data source to the ODX instance. For more info see this guide on how to create and map data sources."
+            ]
+        },
+        {
+            "heading": "1. Incremental loading",
+            "paragraphs": [
+                "If you need to load tables with a large amount of records:"
+            ],
+            "list": [
+                "Use XU to generate a full load of the long table into a parquet file (make sure the Package size property is set on the extraction level, otherwise the extractions can consume extreme amounts of memory on the SAP source system)",
+                "Configure a timestamp based sliding window for data extraction, either in the RSD files, or on the XU extractions directly e.g. each load will get the last 2 days worth of changed data. This is the equivalent of subtract from value feature as described in the Incremental Load in an ODX Instance article.",
+                "Combine the static full load parquet data source with the sliding window/incremental data source in the MDW table."
+            ]
+        }
+    ]
+}

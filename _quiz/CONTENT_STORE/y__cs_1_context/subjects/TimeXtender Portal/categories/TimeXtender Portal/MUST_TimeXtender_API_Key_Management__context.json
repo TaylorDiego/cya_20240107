@@ -1,0 +1,34 @@
+{
+    "DateTime": "2023-12-27 14:42:06",
+    "URL": "https://support.timextender.com/timextender-portal-111/timextender-api-key-management-1109",
+    "Keywords": "missing",
+    "Title": "TimeXtender API Key Management _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "here Note: Note:  ",
+    "Lists": [
+        {
+            "heading": "Create a new API key",
+            "paragraphs": [],
+            "list": [
+                "In the Portal, under Admin, then select Security and permissions",
+                "Select Create API Key",
+                "Provide a name for the API key",
+                "Select Generate API Key",
+                "Select Copy and ensure that the key is saved in a secure location, as it will not be visible again.",
+                "Select Close to close the window and return to the Security and permission page."
+            ]
+        },
+        {
+            "heading": "Delete an API Key",
+            "paragraphs": [
+                ""
+            ],
+            "list": [
+                "In the Portal, under Admin, navigate to Security and permissions. Select the delete icon next to the API key in order to delete the key permanently.",
+                "Type the name of the API key to confirm that this is the key to be deleted. Alternatively, click in the field and select from the drop-down menu which API key to delete.",
+                "Add a Comment stating the reason for deletion, as part of logging which can be found under Admin > Activities.",
+                "Select Delete to confirm and finalize the deletion"
+            ]
+        }
+    ]
+}

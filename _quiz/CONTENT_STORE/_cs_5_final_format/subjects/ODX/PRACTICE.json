@@ -1,0 +1,288 @@
+{
+    "question_1": {
+        "question": "When querying ODX Parquet files using Azure Synapse Workspace, what must you ensure about the SQL Server Management Studio (SSMS) connection?",
+        "options": {
+            "option_a": "It must be connected using the SQL endpoint.",
+            "option_b": "It must be connected using the SQL on-demand endpoint.",
+            "option_c": "It must use the default 'sqladminuser' credential.",
+            "option_d": "It must connect directly to the Azure Data Lake Gen2 storage."
+        },
+        "answer": "option_b",
+        "explanation": "When connecting SSMS to your Synapse workspace to query ODX Parquet files, you must use the 'SQL on-demand endpoint' rather than the standard SQL endpoint."
+    }
+    , "question_2": {
+        "question": "As of October 1st, 2022, what is required for an app to send emails through Microsoft's online SMTP servers?",
+        "options": {
+            "option_a": "Basic authentication with a username and password.",
+            "option_b": "An Application ID and Tenant ID with specific permissions granted.",
+            "option_c": "A direct connection to the Microsoft Exchange server.",
+            "option_d": "A VPN connection to Microsoft's internal network."
+        },
+        "answer": "option_b",
+        "explanation": "Microsoft discontinued basic authentication for email on online SMTP servers as of October 1st, 2022. Instead, an Application ID from an app created for this purpose and the Tenant ID for your company are required, with permissions such as Mail.Send, SMTP.Send, and User.Read set and consented by an Admin."
+    }
+    , "question_3": {
+        "question": "What is the recommended solution in the text to speed up Azure Data Factory (ADF) transfers?",
+        "options": {
+            "option_a": "Increase the number of AzureRuntimes",
+            "option_b": "Use a self-hosted integration runtime",
+            "option_c": "Decrease the memory limit use setting",
+            "option_d": "Partition large tables more extensively"
+        },
+        "answer": "option_b",
+        "explanation": "To speed up ADF, the text suggests running self-hosted integration runtimes, which can be scaled up as far as the budget allows and can be clustered for more performance."
+    }
+    , "question_4": {
+        "question": "Where is the packing/unpacking of parquet done when using ADO.net according to the text?",
+        "options": {
+            "option_a": "On the AzureRuntime",
+            "option_b": "On the ODX Server VM",
+            "option_c": "In the cloud",
+            "option_d": "On the source data store"
+        },
+        "answer": "option_b",
+        "explanation": "Using ADO.net, the packing/unpacking of parquet is done on the ODX Server VM, as mentioned in the text."
+    }
+    , "question_5": {
+        "question": "Where can you find the log of communication between the ODX Server Manager and the ODX Server?",
+        "options": {
+            "option_a": "In the Execution Queue",
+            "option_b": "In the Service Log",
+            "option_c": "In the Execution Log",
+            "option_d": "In the Statistics section"
+        },
+        "answer": "option_b",
+        "explanation": "The Service Log contains the log entries of communication between the ODX Server Manager and the ODX Server."
+    }
+    , "question_6": {
+        "question": "How can you view the statistics of a data source in the ODXServer?",
+        "options": {
+            "option_a": "By double-clicking on the data source",
+            "option_b": "By right-clicking on the data source and selecting Properties",
+            "option_c": "By right-clicking a data source and clicking Statistics",
+            "option_d": "By selecting the data source and pressing the 'Stats' key"
+        },
+        "answer": "option_c",
+        "explanation": "To view the statistics of a data source, you need to right-click on the data source and then click on Statistics."
+    }
+    , "question_7": {
+        "question": "What is the first step to filter out rows of data from transfers in ODX?",
+        "options": {
+            "option_a": "Delete the unwanted rows manually",
+            "option_b": "Open the relevant ODX instance and click 'Filter Rows...'",
+            "option_c": "Export the data to a CSV file and filter it externally",
+            "option_d": "Run a SQL query to select the desired rows"
+        },
+        "answer": "option_b",
+        "explanation": "The first step is to open the relevant ODX instance and right-click the data source to click 'Filter Rows...' to begin the process of adding a row filter rule."
+    }
+    , "question_8": {
+        "question": "How can you apply a row filter rule to specific tables in ODX?",
+        "options": {
+            "option_a": "By setting global rules that apply to all tables",
+            "option_b": "By entering the schema and/or table names in the Schema/Table list",
+            "option_c": "By emailing the ODX support team with the table names",
+            "option_d": "By renaming the tables you want to filter"
+        },
+        "answer": "option_b",
+        "explanation": "To apply a rule to specific tables, you enter the schema and/or table names that they need to match in the Schema/Table list."
+    }
+    , "question_9": {
+        "question": "What example is used in the article to illustrate the process of adding a new field to a data source?",
+        "options": {
+            "option_a": "Adding a 'CustomerID' field to a 'Sales' table",
+            "option_b": "Adding a 'Manufacturing Supplier' column to the 'LawnProducts' table",
+            "option_c": "Removing a 'Discontinued' column from a 'Products' table",
+            "option_d": "Updating a 'Price' field in an 'Inventory' table"
+        },
+        "answer": "option_b",
+        "explanation": "The article uses an SQL Server database source example where a 'Manufacturing Supplier' column is added to the 'LawnProducts' table."
+    }
+    , "question_10": {
+        "question": "What flexibility does TimeXtender provide according to the article?",
+        "options": {
+            "option_a": "Flexible pricing models",
+            "option_b": "Flexible user interface customization",
+            "option_c": "The ability to connect to many different data providers",
+            "option_d": "Flexible data storage options"
+        },
+        "answer": "option_c",
+        "explanation": "TimeXtender offers the flexibility to connect to many different data providers, as mentioned in the article."
+    }
+    , "question_11": {
+        "question": "In the context of TimeXtender ODX, what is the 'Subtract from value' option used for?",
+        "options": {
+            "option_a": "To subtract a fixed value from all numeric fields",
+            "option_b": "To define the interval for updates on recently created rows",
+            "option_c": "To remove outdated data from the Data Warehouse",
+            "option_d": "To calculate the total size of the data source"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Subtract from value' option allows for an offset in incremental selection rules, which can be beneficial for data sources with a created date but not a modified date, allowing updates to occur on rows that have been recently created within the defined interval."
+    }
+    , "question_12": {
+        "question": "What is the consequence of not using updates in the Incremental Load setup in TimeXtender?",
+        "options": {
+            "option_a": "Updates will be processed as inserts",
+            "option_b": "Updates in the Data Warehouse will not be possible",
+            "option_c": "All updates will be ignored",
+            "option_d": "Full loads will be required less frequently"
+        },
+        "answer": "option_b",
+        "explanation": "If you do not use updates in your Incremental Load setup, you will not be able to use updates in the Data Warehouse, which means that changes to existing data will not be reflected."
+    }
+    , "question_13": {
+        "question": "Which type of data source may allow users to copy the connection string for manual migration to ODX?",
+        "options": {
+            "option_a": "ODX storage databases",
+            "option_b": "CData data sources",
+            "option_c": "DSA data sources",
+            "option_d": "Query Table data sources"
+        },
+        "answer": "option_b",
+        "explanation": "Depending on the type of business unit data source, users may be able to copy the connection string into the ODX data source, which is particularly helpful with CData data sources."
+    }
+    , "question_14": {
+        "question": "What is a crucial difference between Business Unit and ODX mentioned in the text?",
+        "options": {
+            "option_a": "ODX allows for more data sources",
+            "option_b": "Business Unit supports conditional lookup fields which ODX does not",
+            "option_c": "ODX requires manual migration",
+            "option_d": "Business Unit uses Query Tables"
+        },
+        "answer": "option_b",
+        "explanation": "One crucial difference between Business Unit and ODX is that some transformations that exist in a BU, like conditional lookup fields, cannot be done in ODX."
+    }
+    , "question_15": {
+        "question": "What is the consequence of renaming a column in the data source without synchronizing?",
+        "options": {
+            "option_a": "The ODX transfer task will fail",
+            "option_b": "The Data Warehouse table execution will fail",
+            "option_c": "The renamed column will be duplicated in the ODX",
+            "option_d": "The ODX will automatically update the column name"
+        },
+        "answer": "option_b",
+        "explanation": "If a column is renamed in the data source and the synchronization task is not run, the ODX transfer task might succeed, but the Data Warehouse table execution will fail due to the broken field mapping."
+    }
+    , "question_16": {
+        "question": "What should you do first when resolving a synchronization error due to a renamed column in TimeXtender?",
+        "options": {
+            "option_a": "Delete the renamed column from the ODX",
+            "option_b": "Rename the column back to its original name",
+            "option_c": "Open the Data Warehouse instance containing the objects to be synchronized",
+            "option_d": "Execute the ODX transfer task again"
+        },
+        "answer": "option_c",
+        "explanation": "The first step to resolve a synchronization error due to a renamed column is to open the Data Warehouse instance that contains the objects to be synchronized."
+    }
+    , "question_17": {
+        "question": "What happens after selecting tables and executing the transfer task in TimeXtender?",
+        "options": {
+            "option_a": "The tables are deleted from the source.",
+            "option_b": "The tables are moved to the ODX storage.",
+            "option_c": "The tables are loaded from source to ODX storage.",
+            "option_d": "The tables are synchronized between the source and ODX storage."
+        },
+        "answer": "option_c",
+        "explanation": "After selecting tables and executing the transfer task, the tables are loaded from the source into the ODX storage."
+    }
+    , "question_18": {
+        "question": "In TimeXtender, what is the purpose of the 'Switch to Simple Selection' feature?",
+        "options": {
+            "option_a": "To remove all tables from the selection.",
+            "option_b": "To filter and select specific columns only.",
+            "option_c": "To simplify the table selection process.",
+            "option_d": "To switch to a more advanced selection mode."
+        },
+        "answer": "option_c",
+        "explanation": "The 'Switch to Simple Selection' feature in TimeXtender is designed to simplify the process of selecting tables."
+    }
+    , "question_19": {
+        "question": "Which setting is specific to Azure Data Lake Storage in TimeXtender's storage management tasks?",
+        "options": {
+            "option_a": "Delete old versions to free up storage",
+            "option_b": "Move old versions to cool storage",
+            "option_c": "Rollup incremental data with Azure Data Factory",
+            "option_d": "All of the above"
+        },
+        "answer": "option_d",
+        "explanation": "All listed settings, such as deleting old versions, moving old versions to cool storage, and rolling up incremental data with Azure Data Factory, are specific to Azure Data Lake Storage in TimeXtender's storage management tasks."
+    }
+    , "question_20": {
+        "question": "What does the 'Rollup incremental data with Azure Data Factory' setting allow you to specify in TimeXtender?",
+        "options": {
+            "option_a": "The credentials for Azure Data Factory",
+            "option_b": "The minimum and maximum size of the rollup file",
+            "option_c": "The frequency of data transfer",
+            "option_d": "The type of data to be rolled up"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Rollup incremental data with Azure Data Factory' setting in TimeXtender allows you to specify the minimum and maximum size of the rollup file."
+    }
+    , "question_21": {
+        "question": "What happens when you drag and drop a table with the same name from an ODX to a data warehouse?",
+        "options": {
+            "option_a": "The table is ignored.",
+            "option_b": "The table is added as a new table with a suffix.",
+            "option_c": "The table is synchronized with the existing table in the data warehouse.",
+            "option_d": "The table is deleted from the ODX."
+        },
+        "answer": "option_c",
+        "explanation": "If a table in the data warehouse has the same name as the table being dragged from the ODX, the default action is to 'Synchronize on Table Name'."
+    }
+    , "question_22": {
+        "question": "What should you do to transfer multiple tables from an ODX to a data warehouse?",
+        "options": {
+            "option_a": "Drag each table individually.",
+            "option_b": "Use the secondary mouse button to drag and drop.",
+            "option_c": "Hold Shift or CTRL to select multiple tables to drag.",
+            "option_d": "Right-click on the ODX instance and select 'Transfer All'."
+        },
+        "answer": "option_c",
+        "explanation": "To transfer multiple tables, you should hold Shift or CTRL to select them and then drag them to the data warehouse."
+    }
+    , "question_23": {
+        "question": "How do you add data from a data source to an ODX instance?",
+        "options": {
+            "option_a": "By manually entering data into the ODX",
+            "option_b": "By using the TimeXtender application to transfer data",
+            "option_c": "By configuring data sources in TimeXtender Desktop",
+            "option_d": "By sending an email request to TimeXtender support"
+        },
+        "answer": "option_c",
+        "explanation": "Adding data to an ODX instance is done by configuring data sources within the TimeXtender Desktop application, such as selecting tables and fields for ingestion."
+    }
+    , "question_24": {
+        "question": "What can be configured within the TimeXtender Desktop when opening an ODX Instance?",
+        "options": {
+            "option_a": "Network configurations only",
+            "option_b": "Data source configurations such as tables, fields, and scheduling",
+            "option_c": "Visualizations and dashboard layouts",
+            "option_d": "Email notifications for system errors"
+        },
+        "answer": "option_b",
+        "explanation": "Within TimeXtender Desktop, when opening an ODX Instance, you can configure data sources, including selecting tables and fields for ingestion, primary keys, incremental load, and scheduling transfers."
+    }
+    , "question_25": {
+        "question": "How do you set up a general rule for overriding data types at an ODX data source?",
+        "options": {
+            "option_a": "By writing a custom SQL script",
+            "option_b": "By configuring settings in the data source's properties",
+            "option_c": "By right-clicking on an ODX data source and selecting 'Override Data Types..'",
+            "option_d": "By manually editing each field's data type"
+        },
+        "answer": "option_c",
+        "explanation": "To set up a general rule for overriding data types, you right-click on an ODX data source and select 'Override Data Types..', as described in the context."
+    }
+    , "question_26": {
+        "question": "What must you specify when setting up a rule to override data types in ODX?",
+        "options": {
+            "option_a": "The username and password for the data source",
+            "option_b": "The Schema, Table, Field, or Data type where the rule will be applied",
+            "option_c": "The IP address of the data source server",
+            "option_d": "The frequency of data refresh"
+        },
+        "answer": "option_b",
+        "explanation": "When setting up a rule to override data types, you need to specify the Schema, Table, Field, or Data type where this rule will be applied."
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "DateTime": "2023-12-27 14:41:08",
+    "URL": "https://support.timextender.com/data-warehouse-108/reverse-data-area-965",
+    "Keywords": "missing",
+    "Title": "Reverse Data Area _ Community",
+    "Author": "missing",
+    "Text": "Tables Views Constraints Stored Procedures User Defined Functions The Reverse Data Area feature entails the followingfoursteps, which aredescribed in more detail below: Warning: Step 3 Step 4  The objects will be generated within the Data Area and marked as red as they have not yet been deployed Go to the TimeXtender Portal, and edit the Data Warehouse instance so that it points to the destination server and database where the TimeXtender objects are to be deployed. Warning: Refresh TimeXtender Desktop, by clicking on the Refresh button Deploy ",
+    "Lists": [
+        {
+            "heading": "Reverse Data Area",
+            "paragraphs": [],
+            "list": [
+                "In the TimeXtender Portal, create or edit a Data Warehouse instance so that it points to the preexisting database with the objects that are to be recreated in the new TimeXtender data area.",
+                "In TimeXtender Desktop, open or add a data area.",
+                "Right-click on the Data Area, select Advanced, then select Reverse Data Area.",
+                "Select the object types to be brought into the TimeXtender data area and click OK.",
+                "The objects will be generated within the Data Area and marked as red as they have not yet been deployed",
+                "Go to the TimeXtender Portal, and edit the Data Warehouse instance so that it points to the destination server and database where the TimeXtender objects are to be deployed.    Warning: if the database is not updated in the portal for the Data Warehouse instance the objects in the source database may be overwritten",
+                "Refresh TimeXtender Desktop, by clicking on the Refresh button",
+                "Right-click on the data area and select Deploy to deploy the generated objects"
+            ]
+        }
+    ]
+}

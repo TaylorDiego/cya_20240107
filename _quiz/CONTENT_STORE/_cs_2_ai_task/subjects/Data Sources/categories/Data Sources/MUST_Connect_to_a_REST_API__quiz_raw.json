@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the first step in setting up a REST provider according to the guide?",
+        "options": {
+            "option_a": "Configure the OAuth settings",
+            "option_b": "Click the REST guide from CData link",
+            "option_c": "Set up the data source template",
+            "option_d": "Generate an RSD file"
+        },
+        "answer": "option_b",
+        "explanation": "The first step in setting up a REST provider is to click the REST guide from CData link, as it likely contains important information and instructions for the setup process."
+    },
+    "question_2": {
+        "question": "Which data format is NOT mentioned as an option for presenting data when setting up a REST provider?",
+        "options": {
+            "option_a": "SOAP",
+            "option_b": "CSV",
+            "option_c": "XML",
+            "option_d": "PDF"
+        },
+        "answer": "option_d",
+        "explanation": "SOAP, CSV, and XML are mentioned as data formats for presenting data. PDF is not listed as an option in the provided context."
+    },
+    "question_3": {
+        "question": "What does SOAP stand for?",
+        "options": {
+            "option_a": "Simple Object Access Protocol",
+            "option_b": "Service Oriented Architecture Protocol",
+            "option_c": "Simple Online API Procedure",
+            "option_d": "Secure Operational Application Process"
+        },
+        "answer": "option_a",
+        "explanation": "SOAP stands for Simple Object Access Protocol, which is a protocol designed to ensure that programs built on different platforms and programming languages could exchange data easily."
+    },
+    "question_4": {
+        "question": "What is the purpose of the Row Scan Depth setting?",
+        "options": {
+            "option_a": "To determine the number of API calls made",
+            "option_b": "To set the depth of data analysis",
+            "option_c": "To ensure all the file is read before choosing the data types",
+            "option_d": "To limit the number of rows returned in the response"
+        },
+        "answer": "option_c",
+        "explanation": "Row Scan Depth is used to ensure that all the file will be read before the data types are chosen, which helps in accurately determining the data types of the fields."
+    },
+    "question_5": {
+        "question": "Which HTTP header is commonly used to set the expected response format to JSON?",
+        "options": {
+            "option_a": "Content-Type:application/json",
+            "option_b": "Accept:application/json",
+            "option_c": "Authorization:Bearer <token id>",
+            "option_d": "Content-Length: <size>"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Accept:application/json' HTTP header is commonly used to inform the server that the client expects the response data in JSON format."
+    },
+    "question_6": {
+        "question": "What is the default method for OAuth authentication mentioned in the context?",
+        "options": {
+            "option_a": "Client Credentials",
+            "option_b": "Resource Owner Password Credentials",
+            "option_c": "Authorization Code",
+            "option_d": "Implicit"
+        },
+        "answer": "option_c",
+        "explanation": "The 'Code' option is mentioned as the default method and the most common one for OAuth authentication in the provided context."
+    }
+}

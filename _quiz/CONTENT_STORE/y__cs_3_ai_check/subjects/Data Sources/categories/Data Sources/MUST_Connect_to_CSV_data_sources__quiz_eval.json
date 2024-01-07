@@ -1,0 +1,18 @@
+{
+    "question_4": {
+        "question_content": {
+            "question": "What setting should be used if the CSV files to be aggregated do not have consistent field names?",
+            "options": {
+                "option_a": "Set 'Row Scan Depth' to 0",
+                "option_b": "Set 'Include Column Headers' to False",
+                "option_c": "Set 'Aggregate Files' to False",
+                "option_d": "Set 'Skip Top' to -1"
+            },
+            "answer": "option_d",
+            "explanation": "If the field names are not consistent, setting 'Skip Top' to -1 will ignore the field names and skip the 1st row in each file."
+        },
+        "question_facts": [
+            "The question is grammatically correct and clear. However, the correct answer provided ('option_d') does not align with the explanation or the information from the article. Setting 'Skip Top' to -1 is not a standard practice and does not logically imply skipping the first row. The explanation suggests that setting 'Skip Top' to -1 will ignore field names, but this is not a standard option for CSV file handling. The article mentions using 'Include Column Headers' and 'Skip Top' settings, but not with the values provided in the answer. \n\nPlease verify the correct answer and explanation with the actual functionality of the system being tested. If 'Skip Top' to -1 is indeed a valid setting in the specific context of the system, then the explanation should clarify that this is a special feature of the system in question. Otherwise, the answer may need to be corrected to reflect standard CSV handling practices."
+        ]
+    }
+}

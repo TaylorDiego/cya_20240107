@@ -1,0 +1,398 @@
+{
+    "question_1": {
+        "question": "What is the first step to add a new environment in TimeXtender according to the article?",
+        "options": {
+            "option_a": "Select the instances to include in the environment.",
+            "option_b": "Navigate to Data estate > Environments and click Add environment.",
+            "option_c": "Name the environment.",
+            "option_d": "Click on the edit icon to modify an existing environment."
+        },
+        "answer": "option_b",
+        "explanation": "The first step to add a new environment is to navigate to Data estate > Environments and click Add environment, as stated in the provided instructions."
+    }
+    , "question_2": {
+        "question": "What must be true for an instance to be transferred to another in TimeXtender?",
+        "options": {
+            "option_a": "The instances must be of different types.",
+            "option_b": "The instances must be part of the same environment.",
+            "option_c": "The instances must be of the same type.",
+            "option_d": "The destination instance must be a new instance."
+        },
+        "answer": "option_c",
+        "explanation": "An instance can only be transferred to another instance of the same type, as mentioned in the article."
+    }
+    , "question_3": {
+        "question": "What is the primary benefit of installing TimeXtender services and SQL Server databases on the same Windows server?",
+        "options": {
+            "option_a": "It is more cost-effective.",
+            "option_b": "It offers performance advantages due to zero network latency.",
+            "option_c": "It allows for unlimited user access.",
+            "option_d": "It simplifies the SQL Server licensing requirements."
+        },
+        "answer": "option_b",
+        "explanation": "Installing TimeXtender services and SQL Server databases on the same server offers performance advantages due to zero network latency, making maintenance easier."
+    }
+    , "question_4": {
+        "question": "What is a recommended practice before finalizing the server configuration for TimeXtender?",
+        "options": {
+            "option_a": "Consulting the default settings provided by TimeXtender.",
+            "option_b": "Using the minimum hardware requirements as a guideline.",
+            "option_c": "Conducting your own testing or obtaining an expert recommendation.",
+            "option_d": "Copying the configuration from another organization."
+        },
+        "answer": "option_c",
+        "explanation": "It is recommended to conduct your own testing or obtain an expert recommendation due to the varying analytics environments and factors impacting performance."
+    }
+    , "question_5": {
+        "question": "What is the first step to deploy the TimeXtender Application Server on Azure?",
+        "options": {
+            "option_a": "Install TimeXtender and ODX Server",
+            "option_b": "Sign-in to https://portal.azure.com",
+            "option_c": "Configure your desired properties for the Virtual Machine",
+            "option_d": "Navigate to the TimeXtender Application Server Azure Deployment"
+        },
+        "answer": "option_b",
+        "explanation": "The first step is to sign in to the Azure portal at https://portal.azure.com before deploying the TimeXtender Application Server."
+    }
+    , "question_6": {
+        "question": "Approximately how long does it take to deploy the necessary Azure resources for TimeXtender Application Server?",
+        "options": {
+            "option_a": "About 5 minutes",
+            "option_b": "About 15 minutes",
+            "option_c": "About 30 minutes",
+            "option_d": "About 60 minutes"
+        },
+        "answer": "option_b",
+        "explanation": "Deploying the necessary Azure resources for TimeXtender Application Server generally takes around 15 minutes."
+    }
+    , "question_7": {
+        "question": "What is the default port number that should be set for a publicly accessible AWS RDS SQL Database?",
+        "options": {
+            "option_a": "3306",
+            "option_b": "1433",
+            "option_c": "1521",
+            "option_d": "5432"
+        },
+        "answer": "option_b",
+        "explanation": "The default port for Microsoft SQL Server, which is the engine type for AWS RDS SQL Database, is 1433."
+    }
+    , "question_8": {
+        "question": "Which AWS service is used to create a virtual machine for SQL Server?",
+        "options": {
+            "option_a": "EC2",
+            "option_b": "Lambda",
+            "option_c": "Lightsail",
+            "option_d": "Elastic Beanstalk"
+        },
+        "answer": "option_c",
+        "explanation": "AWS Lightsail is the service mentioned for creating a virtual machine for SQL Server."
+    }
+    , "question_9": {
+        "question": "What is the first step to use Azure Analysis Services as a target for the Semantic Layer Endpoint?",
+        "options": {
+            "option_a": "Create an App Registration in Azure Active Directory",
+            "option_b": "Deploy the Semantic Model in TimeXtender",
+            "option_c": "Create an Analysis Services Resource in Azure",
+            "option_d": "Assign the App Registration as Analysis Services Admin"
+        },
+        "answer": "option_c",
+        "explanation": "The first step is to create an Analysis Services Resource in Azure, which can be skipped if you already have one."
+    }
+    , "question_10": {
+        "question": "Where do you need to complete the App Registration for Azure Analysis Services?",
+        "options": {
+            "option_a": "Azure Portal > App Registrations > New Registration",
+            "option_b": "TimeXtender Portal > Data Estate > Instances",
+            "option_c": "SQL Server Management Studio",
+            "option_d": "Azure Analysis Services > Server Properties > Security"
+        },
+        "answer": "option_a",
+        "explanation": "App Registration for Azure Analysis Services is done in the Azure Portal under App Registrations."
+    }
+    , "question_11": {
+        "question": "What is the purpose of using Azure Data Factory for data movement according to the TimeXtender guide?",
+        "options": {
+            "option_a": "To manage user permissions and roles within Azure",
+            "option_b": "To transfer data directly from source to target without relying on application server resources",
+            "option_c": "To provide a graphical interface for SQL database management",
+            "option_d": "To encrypt data during transfer between different Azure services"
+        },
+        "answer": "option_b",
+        "explanation": "Azure Data Factory transfers data directly from source to target, which is ideal for large data sets as it does not rely on the limited resources of the application server."
+    }
+    , "question_12": {
+        "question": "What must be installed on a local server if you want to use Azure Data Factory to transfer data from a non-Azure data source?",
+        "options": {
+            "option_a": "Azure Data Lake Storage",
+            "option_b": "Self-Hosted Integration Runtime",
+            "option_c": "Azure Data Factory V2",
+            "option_d": "Azure Active Directory"
+        },
+        "answer": "option_b",
+        "explanation": "A Self-Hosted Integration Runtime must be installed on the local server if you are connecting to a data source not related to Azure, such as a local SQL database."
+    }
+    , "question_13": {
+        "question": "What type of storage account is recommended for hosting an ODX database in Azure Data Lake?",
+        "options": {
+            "option_a": "StorageV1 (general-purpose v1)",
+            "option_b": "BlobStorage",
+            "option_c": "StorageV2 (general-purpose v2)",
+            "option_d": "BlockBlobStorage"
+        },
+        "answer": "option_c",
+        "explanation": "The recommended account type for hosting an ODX database in Azure Data Lake is StorageV2 (general-purpose v2), as it supports a hierarchical namespace."
+    }
+    , "question_14": {
+        "question": "What must be enabled on the Azure Storage Account to use it with TimeXtender for Azure Data Lake Storage?",
+        "options": {
+            "option_a": "Hierarchical namespace",
+            "option_b": "Multi-region writes",
+            "option_c": "Blob soft delete",
+            "option_d": "File sync"
+        },
+        "answer": "option_a",
+        "explanation": "The Hierarchical namespace must be enabled on the Azure Storage Account to organize files into a hierarchy, which is necessary for Azure Data Lake Storage."
+    }
+    , "question_15": {
+        "question": "What is the first step when configuring read access to an Azure SQL Database according to the provided text?",
+        "options": {
+            "option_a": "Run a script in SSMS to create a user from an external provider",
+            "option_b": "Deploy the security tab in TimeXtender",
+            "option_c": "Give admin privileges to the user making the initial changes",
+            "option_d": "Set the user as the Azure Active Directory admin"
+        },
+        "answer": "option_c",
+        "explanation": "The first step is to give admin privileges to the user making the initial changes, as stated in the text."
+    }
+    , "question_16": {
+        "question": "How do you assign an Azure Active Directory user as the admin for an Azure SQL Database?",
+        "options": {
+            "option_a": "Run the CREATE USER script in SSMS",
+            "option_b": "In the Azure portal, set your user as the admin using the 'Set admin' option",
+            "option_c": "Deploy the security tab in TimeXtender",
+            "option_d": "Add the user manually in the TimeXtender desktop application"
+        },
+        "answer": "option_b",
+        "explanation": "To set a user as the admin, you use the 'Set admin' option in the Azure portal, as described in the text."
+    }
+    , "question_17": {
+        "question": "What is the first step to create an Azure Synapse Dedicated SQL Pool according to the provided text?",
+        "options": {
+            "option_a": "Create a Server Level Firewall Rule",
+            "option_b": "In the Azure Portal, click 'Create a Resource' and type 'Dedicated SQL Pool'",
+            "option_c": "Right-click the Instance > Edit Instance > Create Storage...",
+            "option_d": "Open the Data Warehouse Instance"
+        },
+        "answer": "option_b",
+        "explanation": "The first step listed under 'Create an Azure Synapse Dedicated SQL Pool' is to go to the Azure Portal and click 'Create a Resource', then type 'Dedicated SQL Pool'."
+    }
+    , "question_18": {
+        "question": "Which authentication method uses the logged-in Windows user's credentials for authentication, provided that the user is logged in using Azure AD credentials from a domain that is federated with Azure AD?",
+        "options": {
+            "option_a": "Windows Authentication",
+            "option_b": "SQL Server Authentication",
+            "option_c": "Azure AD Password Authentication",
+            "option_d": "Azure AD Integrated Authentication"
+        },
+        "answer": "option_d",
+        "explanation": "Azure AD Integrated Authentication uses the logged-in Windows user's credentials for authentication when the user is logged in using Azure AD credentials from a domain that is federated with Azure AD."
+    }
+    , "question_19": {
+        "question": "What is the default port number used when configuring a Snowflake Data Warehouse instance in TimeXtender?",
+        "options": {
+            "option_a": "80",
+            "option_b": "443",
+            "option_c": "8080",
+            "option_d": "3306"
+        },
+        "answer": "option_b",
+        "explanation": "The default port for Snowflake is 443, as mentioned in the configuration steps for Data Warehouse Instance Storage."
+    }
+    , "question_20": {
+        "question": "Where can you find the Snowflake Account Identifier in the Snowflake portal?",
+        "options": {
+            "option_a": "Admin > Users > Your Profile",
+            "option_b": "Admin > Accounts > Next to your account ID",
+            "option_c": "Home > Dashboard > Account Details",
+            "option_d": "Help > Documentation > Account Information"
+        },
+        "answer": "option_b",
+        "explanation": "The Snowflake Account Identifier can be found by navigating to Admin > Accounts and then clicking the link next to your account ID."
+    }
+    , "question_21": {
+        "question": "Which AWS service is recommended for hosting the TimeXtender application according to the provided architecture?",
+        "options": {
+            "option_a": "AWS Lambda",
+            "option_b": "AWS EC2",
+            "option_c": "AWS S3",
+            "option_d": "AWS RDS"
+        },
+        "answer": "option_b",
+        "explanation": "AWS EC2 is recommended for serving the TimeXtender application in AWS, as it allows for sizing according to the solution's requirements."
+    }
+    , "question_22": {
+        "question": "What is the recommended instance type for moderate workloads of TimeXtender on AWS EC2?",
+        "options": {
+            "option_a": "t2.micro",
+            "option_b": "t2.xlarge",
+            "option_c": "t2.2xlarge",
+            "option_d": "m5.large"
+        },
+        "answer": "option_c",
+        "explanation": "The recommended EC2 instance type for moderate workloads is t2.2xlarge, which provides 8 vCPUs and 32 GiB of memory."
+    }
+    , "question_23": {
+        "question": "What is the recommended Azure Virtual Machine (VM) size for moderate workloads in TimeXtender's Azure reference architecture?",
+        "options": {
+            "option_a": "DS2_v2",
+            "option_b": "DS3_v2",
+            "option_c": "DS1_v2",
+            "option_d": "DS4_v2"
+        },
+        "answer": "option_a",
+        "explanation": "DS2_v2 is recommended for moderate workloads according to the Azure VM Sizes documentation."
+    }
+    , "question_24": {
+        "question": "Which feature must be enabled when creating ADLS Gen2 data lake service for use with TimeXtender?",
+        "options": {
+            "option_a": "Hierarchical Namespaces",
+            "option_b": "Blob Storage",
+            "option_c": "Queue Storage",
+            "option_d": "File Storage"
+        },
+        "answer": "option_a",
+        "explanation": "Hierarchical Namespaces must be enabled for the ADLS Gen2 data lake service when setting it up for TimeXtender."
+    }
+    , "question_25": {
+        "question": "What is the recommended Azure Virtual Machine size for moderate workloads when setting up TimeXtender in Azure?",
+        "options": {
+            "option_a": "DS2_v2",
+            "option_b": "DS3_v2",
+            "option_c": "DS1_v2",
+            "option_d": "DS4_v2"
+        },
+        "answer": "option_a",
+        "explanation": "DS2_v2 is recommended for moderate workloads according to the Azure VM Sizes documentation."
+    }
+    , "question_26": {
+        "question": "Which feature must be enabled when creating ADLS Gen2 data lake service for use with TimeXtender?",
+        "options": {
+            "option_a": "Hierarchical Namespaces",
+            "option_b": "Blob Storage",
+            "option_c": "Queue Storage",
+            "option_d": "File Storage"
+        },
+        "answer": "option_a",
+        "explanation": "Hierarchical Namespaces must be enabled for the ADLS Gen2 data lake service when setting it up for TimeXtender."
+    }
+    , "question_27": {
+        "question": "What environment is recommended to serve the TimeXtender application on-premise?",
+        "options": {
+            "option_a": "Linux Server",
+            "option_b": "Windows Server",
+            "option_c": "macOS Server",
+            "option_d": "Solaris Server"
+        },
+        "answer": "option_b",
+        "explanation": "The text recommends using a Windows environment such as Windows Server, sized according to the solution's requirements, to serve the TimeXtender application on-premise."
+    }
+    , "question_28": {
+        "question": "Which SQL Server version is recommended for ODX Server Storage database creation in TimeXtender?",
+        "options": {
+            "option_a": "SQL Server 2012",
+            "option_b": "SQL Server 2014",
+            "option_c": "SQL Server 2016",
+            "option_d": "SQL Server 2017 or higher"
+        },
+        "answer": "option_d",
+        "explanation": "SQL Server 2017 or higher is recommended for ODX Server Storage database creation in TimeXtender."
+    }
+    , "question_29": {
+        "question": "What is the recommended Azure Virtual Machine (VM) size for moderate workloads when setting up TimeXtender in the cloud?",
+        "options": {
+            "option_a": "DS2_v2",
+            "option_b": "DS3_v2",
+            "option_c": "DS1_v2",
+            "option_d": "DS4_v2"
+        },
+        "answer": "option_a",
+        "explanation": "DS2_v2 is recommended for moderate workloads according to the Azure VM Sizes documentation."
+    }
+    , "question_30": {
+        "question": "Which feature must be enabled when creating the ADLS Gen2 data lake service for TimeXtender?",
+        "options": {
+            "option_a": "Hierarchical Namespaces",
+            "option_b": "Blob Storage",
+            "option_c": "Queue Storage",
+            "option_d": "File Storage"
+        },
+        "answer": "option_a",
+        "explanation": "Hierarchical Namespaces must be enabled when creating the ADLS Gen2 data lake service for TimeXtender."
+    }
+    , "question_31": {
+        "question": "Which of the following objects can be skipped during the migration process without manual changes or deletions?",
+        "options": {
+            "option_a": "Data Exports",
+            "option_b": "External Business Unit",
+            "option_c": "System type project variables",
+            "option_d": "Data Aggregations"
+        },
+        "answer": "option_a",
+        "explanation": "Data Exports are mentioned as objects that cannot be migrated but can be skipped during migration, meaning no manual changes or deletions are required before continuing with the migration."
+    }
+    , "question_32": {
+        "question": "What must be done with a project variable of type 'System' and value 'Environment Name' before migration?",
+        "options": {
+            "option_a": "It can be migrated without changes.",
+            "option_b": "It must be manually changed or deleted.",
+            "option_c": "It can be ignored during migration.",
+            "option_d": "It should be renamed."
+        },
+        "answer": "option_b",
+        "explanation": "The text specifies that a project variable of type 'System' and value 'Environment Name' cannot be migrated and must be manually changed or deleted prior to migration."
+    }
+    , "question_33": {
+        "question": "What is a new feature of TimeXtender SaaS that enhances automation capabilities within Azure?",
+        "options": {
+            "option_a": "Support for Snowflake as a Data Warehouse target storage",
+            "option_b": "Run PowerShell scripts in Execution Packages",
+            "option_c": "Goodbye License Keys and Client Secrets",
+            "option_d": "Simplified Multiple-Environment management & transfer in the portal"
+        },
+        "answer": "option_b",
+        "explanation": "TimeXtender SaaS now allows users to run PowerShell scripts in Execution Packages, which unlocks significant automation capabilities within Azure."
+    }
+    , "question_34": {
+        "question": "Which of the following features from TimeXtender v20.10 is NOT present in the new SaaS version?",
+        "options": {
+            "option_a": "Business Units",
+            "option_b": "Cloud-based Data Source connection management",
+            "option_c": "User sign-in and granular user permission management",
+            "option_d": "Simplified Multiple-Environment management"
+        },
+        "answer": "option_a",
+        "explanation": "Business Units are one of the features from TimeXtender v20.10 that are no longer present in the new SaaS version."
+    }
+    , "question_35": {
+        "question": "What should you do before upgrading TimeXtender according to the Pre-Upgrade Checklist?",
+        "options": {
+            "option_a": "Restart your computer",
+            "option_b": "Ensure all Deployments have completed",
+            "option_c": "Delete old TimeXtender files",
+            "option_d": "Upgrade your operating system"
+        },
+        "answer": "option_b",
+        "explanation": "Before upgrading TimeXtender, it is important to ensure all deployments have completed to prevent any loss of data or interruption in service."
+    }
+    , "question_36": {
+        "question": "How do you prepare the TimeXtender services on the App Server before an upgrade?",
+        "options": {
+            "option_a": "Uninstall the services",
+            "option_b": "Restart the services",
+            "option_c": "Stop the services and set their Startup Type to Disabled",
+            "option_d": "Upgrade the services directly"
+        },
+        "answer": "option_c",
+        "explanation": "The TimeXtender ODX Service and the TimeXtender Execution Service should be stopped and their Startup Type set to Disabled to prepare for the installation of new versions of these services."
+    }
+}

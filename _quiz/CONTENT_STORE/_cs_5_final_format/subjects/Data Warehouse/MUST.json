@@ -1,0 +1,178 @@
+{
+    "question_1": {
+        "question": "What is the primary purpose of conditional lookup fields in TimeXtender?",
+        "options": {
+            "option_a": "To delete values from a field in another table",
+            "option_b": "To update values in the same table",
+            "option_c": "To look up values from a field in another table within the same data area",
+            "option_d": "To create new tables in the Data Warehouse"
+        },
+        "answer": "option_c",
+        "explanation": "Conditional lookup fields are used to look up values from a field in another table within the same data area of a Data Warehouse instance, allowing for the addition of fields from one table to another based on certain conditions."
+    }
+    , "question_2": {
+        "question": "What happens if you create a conditional lookup field without specifying any conditions when multiple source lookup fields are present?",
+        "options": {
+            "option_a": "The last lookup field will be used",
+            "option_b": "The first lookup field will always be used",
+            "option_c": "A random lookup field will be used",
+            "option_d": "The lookup will fail and return an error"
+        },
+        "answer": "option_b",
+        "explanation": "If no conditions are specified for a conditional lookup field with multiple source lookup fields, the first lookup field will always be used and any subsequent lookup fields will be ignored."
+    }
+    , "question_3": {
+        "question": "What is the primary purpose of creating a custom view in a data warehouse?",
+        "options": {
+            "option_a": "To delete data from the database",
+            "option_b": "To generate reports directly",
+            "option_c": "To provide flexibility in data manipulation using SQL",
+            "option_d": "To increase data storage capacity"
+        },
+        "answer": "option_c",
+        "explanation": "Custom views are used to provide flexibility in data manipulation, as they are generated using SQL CREATE VIEW statements which allow for complex joins, groupings, and other SQL functionalities."
+    }
+    , "question_4": {
+        "question": "What must be done to ensure that a custom view's fields are properly documented and traceable in data lineage?",
+        "options": {
+            "option_a": "Automatically map the fields using AI",
+            "option_b": "Perform manual mapping of the fields",
+            "option_c": "Delete and recreate the custom view",
+            "option_d": "Use default settings without any mapping"
+        },
+        "answer": "option_b",
+        "explanation": "Since custom views are highly flexible, their fields cannot be automatically mapped for documentation and data lineage. Manual mapping is required to trace a field from data source to destination."
+    }
+    , "question_5": {
+        "question": "What is the first step to preview the contents of a table using the 'Preview Table' feature?",
+        "options": {
+            "option_a": "Click the Query Tool button in the Preview Table window.",
+            "option_b": "Right-click on a table and select Preview Table.",
+            "option_c": "Drag a table into the query window.",
+            "option_d": "Press the F8 function key."
+        },
+        "answer": "option_b",
+        "explanation": "To preview the contents of a table, the first step is to right-click on the table and then select 'Preview Table' from the context menu."
+    }
+    , "question_6": {
+        "question": "How can you apply a specific date format to the results in the Preview Table window?",
+        "options": {
+            "option_a": "Right-click on the date column and choose a format.",
+            "option_b": "Select the date format from the Instance list.",
+            "option_c": "Click Apply Format after selecting the date format from the Date format list.",
+            "option_d": "Change the system date format settings."
+        },
+        "answer": "option_c",
+        "explanation": "To apply a specific date format to the results, you select the desired format from the Date format list and then click 'Apply Format' to apply the settings."
+    }
+    , "question_7": {
+        "question": "What is the purpose of a primary key in a database table?",
+        "options": {
+            "option_a": "To uniquely identify each row in the table",
+            "option_b": "To encrypt the table data",
+            "option_c": "To increase the data retrieval speed",
+            "option_d": "To store user preferences"
+        },
+        "answer": "option_a",
+        "explanation": "A primary key's main function is to uniquely identify each row in a table, ensuring that no two rows have the same primary key value."
+    }
+    , "question_8": {
+        "question": "How can you identify fields set as primary keys in a table's list of fields?",
+        "options": {
+            "option_a": "They are highlighted in red",
+            "option_b": "They have a key image in their icon",
+            "option_c": "They are italicized",
+            "option_d": "They are underlined"
+        },
+        "answer": "option_b",
+        "explanation": "Primary key fields are made visible in the list of fields within a table by a key image in their icon."
+    }
+    , "question_9": {
+        "question": "What is the primary purpose of a Semantic Model in a data warehouse?",
+        "options": {
+            "option_a": "To increase the amount of data stored",
+            "option_b": "To translate technical names into business terms",
+            "option_c": "To reduce the performance of data queries",
+            "option_d": "To duplicate data for backup purposes"
+        },
+        "answer": "option_b",
+        "explanation": "Semantic Models translate technical names into terms that align with business language, making data more accessible and understandable to business users."
+    }
+    , "question_10": {
+        "question": "What is the benefit of adding hierarchies in a Semantic Model?",
+        "options": {
+            "option_a": "To improve data sorting in front-end applications",
+            "option_b": "To increase data storage requirements",
+            "option_c": "To complicate the data model",
+            "option_d": "To remove redundant data"
+        },
+        "answer": "option_a",
+        "explanation": "Hierarchies benefit browsing data in front-end applications by providing a structured way to navigate through different levels of data."
+    },
+    "question_11": {
+        "question": "What is the primary purpose of the SQL Database Cleanup Tool in TimeXtender?",
+        "options": {
+            "option_a": "To optimize SQL queries",
+            "option_b": "To identify and delete unused tables to free up space",
+            "option_c": "To create new tables in the data warehouse",
+            "option_d": "To backup the data warehouse"
+        },
+        "answer": "option_b",
+        "explanation": "The SQL Database Cleanup Tool is used to identify and delete tables that are no longer needed, which helps in freeing up space in the data warehouse."
+    }
+    , "question_12": {
+        "question": "What does deleting a table in TimeXtender UI NOT do by default?",
+        "options": {
+            "option_a": "Delete the physical table in the data warehouse",
+            "option_b": "Free up space in the database",
+            "option_c": "Remove the table from the TimeXtender project",
+            "option_d": "Delete database schemas"
+        },
+        "answer": "option_a",
+        "explanation": "Deleting a table in TimeXtender UI does not delete the physical table in the data warehouse to prevent accidental data loss."
+    }
+    , "question_13": {
+        "question": "What is the first step in creating a relationship between tables in a new Data Area?",
+        "options": {
+            "option_a": "Drag the ID field from the 'Many' table to the 'One' table",
+            "option_b": "Identify a field that exists in both tables to use for the relationship",
+            "option_c": "Set the default relation setting in the Edit Instance menu",
+            "option_d": "Create a lookup by dragging a field from one table to the other"
+        },
+        "answer": "option_b",
+        "explanation": "The first step is to identify a common field, typically an ID field, that exists in both tables to establish a relationship."
+    }
+    , "question_14": {
+        "question": "Which of the following data type combinations cannot be used to create a table relationship?",
+        "options": {
+            "option_a": "nvarchar(20) with nvarchar(50)",
+            "option_b": "varchar with nvarchar",
+            "option_c": "int with bigint",
+            "option_d": "char with varchar"
+        },
+        "answer": "option_b",
+        "explanation": "A varchar field cannot be used with an nvarchar field to create a relationship due to incompatible data types."
+    }
+    , "question_15": {
+        "question": "What is the primary focus of the provided text?",
+        "options": {
+            "option_a": "Guidelines for team development",
+            "option_b": "Instructions for database management",
+            "option_c": "Tips for individual developers",
+            "option_d": "Rules for consistent time management"
+        },
+        "answer": "option_a",
+        "explanation": "The text is about 'work items' and following 'rules to ensure consistency,' which implies a focus on team development practices."
+    }
+    , "question_16": {
+        "question": "As of the given DateTime, when was the information about working with multiple developers published or last updated?",
+        "options": {
+            "option_a": "December 27, 2023",
+            "option_b": "January 1, 2023",
+            "option_c": "December 27, 2022",
+            "option_d": "The exact date is not provided"
+        },
+        "answer": "option_a",
+        "explanation": "The 'DateTime' field shows '2023-12-27 14:40:22', which indicates the date of publication or last update."
+    }
+}

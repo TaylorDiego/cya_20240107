@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question_content": {
+            "question": "Which authentication method should you set if you want to use Kerberos authentication when connecting to SharePoint Excel?",
+            "options": {
+                "option_a": "Basic",
+                "option_b": "Negotiate",
+                "option_c": "Digest",
+                "option_d": "Forms"
+            },
+            "answer": "option_b",
+            "explanation": "The 'Negotiate' authentication method allows the provider to negotiate an authentication mechanism with the server, which includes Kerberos authentication."
+        },
+        "question_facts": [
+            "After reviewing the question provided, there are no typos or misspelled items to report. The question, options, answer, and explanation are all correctly spelled and formatted.",
+            "The test question is grammatically correct and appropriate for a diverse audience. The language is clear and the format is consistent. The question, options, and explanation are all relevant and correctly aligned with the provided article content.",
+            "After reviewing the original material, the test question is relevant to the material. The material specifically states that if \"Auth Scheme is set to Negotiate, the provider will Negotiate an authentication mechanism with the server. Set Auth Scheme to Negotiate if you want to use Kerberos authentication.\" This aligns with the question, which asks which authentication method to select for Kerberos authentication when connecting to SharePoint Excel, with \"Negotiate\" being the correct answer. The explanation provided with the question is also consistent with the information in the material.",
+            "The answer provided, 'option_b' for 'Negotiate', is TRUE according to the information given. The explanation is consistent with the provided materials, as it states that setting the Auth Scheme to 'Negotiate' will allow the provider to negotiate an authentication mechanism with the server, which includes Kerberos authentication.",
+            "The question asks which authentication method should be set to use Kerberos authentication when connecting to SharePoint Excel. The options given are:\n\n- Basic\n- Negotiate\n- Digest\n- Forms\n\nThe answer provided is 'Negotiate' (option B), with the explanation that this setting allows the provider to negotiate an authentication mechanism with the server, which includes Kerberos authentication.\n\nFrom the scraped article, under the 'Authentication' list, it states: \"Negotiate: If Auth Scheme is set to Negotiate, the provider will Negotiate an authentication mechanism with the server. Set Auth Scheme to Negotiate if you want to use Kerberos authentication.\"\n\nBased on this information, the question and answer are aligned with the provided article and are valid. The question is straightforward, not a 'trick' or 'gotcha' question, and it provides a clear choice for those familiar with the subject matter. It is a 'good' question for the test.",
+            "The question assumes prior knowledge of SharePoint and Kerberos authentication without providing context, which might be problematic for test-takers not familiar with these terms. The explanation refers to a provider but does not specify what type of provider, potentially confusing test-takers. It might be more helpful if the question explicitly stated that it is referring to the CData ADO.NET Provider for SharePoint, as that context is missing. Moreover, the question does not mention that Kerberos requires proper configuration on both the client and server sides, which is an important consideration when setting up such authentication. Finally, the question is specific to SharePoint Excel without acknowledging that different versions of SharePoint might have different authentication methods.",
+            "Rating: 5\n\nThe question clearly asks about the appropriate authentication method for using Kerberos with SharePoint Excel, and the correct answer 'Negotiate' aligns with the provided explanation and the information in the scraped article. It is a very good question for assessing understanding of SharePoint Excel authentication methods."
+        ]
+    },
+    "question_2": {
+        "question_content": {
+            "question": "When connecting to SharePoint On-Premises 2010, which property must be set to true?",
+            "options": {
+                "option_a": "UseRESTAPI",
+                "option_b": "UseNTLMV1",
+                "option_c": "UseADFS",
+                "option_d": "UseOData"
+            },
+            "answer": "option_a",
+            "explanation": "For SharePoint On-Premises 2010, the property 'UseRESTAPI' must be set to true to establish a connection."
+        },
+        "question_facts": [
+            "After reviewing the provided test question, there are no typos or misspelled items to report. The question, options, and explanation are all correctly spelled and formatted.",
+            "The test question is grammatically correct and clear. However, the provided article does not confirm the answer given in the question. The article mentions that for SharePoint On-Premises, \"UseRESTAPI\" must be set to true, which aligns with the explanation provided. Therefore, the content of the question is accurate based on the article, but the article does not specifically mention SharePoint On-Premises 2010, which could potentially lead to confusion for readers familiar with different SharePoint versions. It would be beneficial to ensure that the question specifies the correct version if the intention is to test knowledge specific to SharePoint On-Premises 2010.",
+            "Upon review of the provided material, the question is relevant to the material. The original text explicitly states, \"Note: When connecting to SharePoint On-Premises 2010, you must set UseRESTAPI to true.\" Therefore, the question asking which property must be set to true when connecting to SharePoint On-Premises 2010 is directly answered in the material, and the correct answer is indeed 'UseRESTAPI' as given in the question.",
+            "The answer provided in the question is TRUE. The explanation mentioned in the question aligns with the information provided in the article, specifically in the \"Connecting to SharePoint On-Premises\" section, which states, \"Note: When connecting to SharePoint On-Premises 2010, you must set UseRESTAPI to true.\"",
+            "The question seems valid and not 'BS'. It addresses a specific technical requirement for connecting to SharePoint On-Premises 2010, stating that the 'UseRESTAPI' property must be set to true. The source material corroborates this by explicitly mentioning that when connecting to SharePoint On-Premises 2010, 'UseRESTAPI' must be set to true. Therefore, the question is straightforward and provides a clear correct answer without any trickery or ambiguity.",
+            "The question could mislead or confuse students for several reasons:\n\n1. The correct answer indicated may not be accurate according to the provided article. The article suggests that \"UseRESTAPI\" property must be set to true specifically when connecting to SharePoint On-Premises 2010; however, the options provided do not directly reflect this information. Students with knowledge of the subject might be confused by the presence of option 'UseOData' which is related but not equivalent to 'UseRESTAPI'.\n\n2. The question does not specify the context in which the property should be set to true. Students may not understand if it pertains to a specific software, API, or service without additional context.\n\n3. SharePoint versions are not clearly distinguished in the question. SharePoint On-Premises covers various versions, and the question must be explicit that it is referring to the 2010 version.\n\n4. The term \"property\" is vague as it could refer to a property in a configuration file, a programming object, or a system setting.\n\n5. The question assumes prior knowledge about the existence and usage of the 'UseRESTAPI' property, which may not be common knowledge for all students.\n\n6. The question doesn't provide any information on why 'UseRESTAPI' must be set to true, which could be important for understanding the underlying concepts rather than just memorizing the fact.",
+            "Rating: 2\n\nThe correct answer seems to be inconsistent with the provided information. The article suggests that \"UseRESTAPI\" should be set to true when connecting to SharePoint On-Premises 2010, which would make the question and given answer correct. However, the article does not unambiguously validate the answer, as it also discusses various authentication schemes without directly linking \"UseRESTAPI\" to the success of the connection attempt. Additionally, the question lacks context and could be confusing without more information about the specific connection method being referenced."
+        ]
+    }
+}

@@ -1,0 +1,104 @@
+{"folder":"(2024_01) PRACTICE - TimeXtender Portal","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Who is the author of the article titled 'Upgrade from Free to Premium _ Community'?
+
+{"score":0}Timextender Support
+{"score":100.0}Thomas Hjermitslev
+{"score":0}Premium User
+{"score":0}Community Member
+-
+{"folder":"(2024_01) PRACTICE - TimeXtender Portal","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Who can grant access to instances according to the article?
+
+{"score":0}Any user with the desktop application
+{"score":0}Only the instance creator
+{"score":100.0}Admin users
+{"score":0}External consultants
+-
+{"folder":"(2024_01) PRACTICE - TimeXtender Portal","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What capability do users have once they are granted access to a particular instance?
+
+{"score":0}They can only view the instance
+{"score":0}They can delete the instance
+{"score":100.0}They can see and edit the instance
+{"score":0}They can transfer ownership of the instance
+-
+{"folder":"(2024_01) PRACTICE - TimeXtender Portal","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What method is used for communications between the various services on the TimeXtender Portal?
+
+{"score":0}Public key infrastructure
+{"score":100.0}Custom Authentication through Client secrets
+{"score":0}Username and password only
+{"score":0}Biometric authentication
+-
+{"folder":"(2024_01) PRACTICE - TimeXtender Portal","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How are the databases on the TimeXtender Portal secured?
+
+{"score":100.0}Through encrypted connection strings with username and password
+{"score":0}By using a public Wi-Fi network
+{"score":0}Using a single master password
+{"score":0}Databases are left open for ease of access
+-
+{"folder":"(2024_01) PRACTICE - TimeXtender Portal","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of a TriggerId in TimeXtender's API?
+
+{"score":0}To authenticate users
+{"score":100.0}To filter logs
+{"score":0}To execute jobs
+{"score":0}To create new API keys
+-
+{"folder":"(2024_01) PRACTICE - TimeXtender Portal","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which HTTP method is used by the 'Get All Jobs Endpoint' in TimeXtender's API?
+
+{"score":0}POST
+{"score":0}PUT
+{"score":0}DELETE
+{"score":100.0}GET
+-
+{"folder":"(2024_01) PRACTICE - TimeXtender Portal","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do immediately after generating a new API key?
+
+{"score":0}Select Close to close the window
+{"score":100.0}Select Copy and save the key in a secure location
+{"score":0}Provide a name for the API key
+{"score":0}Navigate back to the main dashboard
+-
+{"folder":"(2024_01) PRACTICE - TimeXtender Portal","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must you do to confirm the deletion of an API key?
+
+{"score":0}Just select the delete icon
+{"score":0}Type the name of the API key
+{"score":0}Provide a reason for deletion in the comments
+{"score":100.0}Select Delete to confirm and finalize the deletion
+-
+{"folder":"(2024_01) PRACTICE - TimeXtender Portal","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What visual cue indicates a user with 'company admin' permission in the TimeXtender Portal?
+
+{"score":0}A star icon next to their name
+{"score":100.0}A crown icon next to their name
+{"score":0}A lock icon next to their name
+{"score":0}A checkmark next to their name
+-
+{"folder":"(2024_01) PRACTICE - TimeXtender Portal","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should a user do if they did not receive the invitation email or have forgotten their password for the TimeXtender Portal?
+
+{"score":0}Contact TimeXtender support
+{"score":0}Create a new user account
+{"score":100.0}Use the 'Forgot your password?' link or have a company admin trigger a password reset
+{"score":0}Wait for the system to resend the invitation automatically
+-
+{"folder":"(2024_01) PRACTICE - TimeXtender Portal","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you view the number of automatic firewall rules created for an instance in TimeXtender?
+
+{"score":0}By checking the instance's metadata database
+{"score":100.0}By selecting 'Show automatic rules' in the Firewall rules section
+{"score":0}By contacting TimeXtender support
+{"score":0}Automatic rules are not visible to users
+-
+{"folder":"(2024_01) PRACTICE - TimeXtender Portal","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if the TimeXtender automatic rule system does not support your setup or is malfunctioning?
+
+{"score":0}Contact TimeXtender support immediately
+{"score":100.0}Disable automatic rules and create manual rules
+{"score":0}Ignore the issue as it will resolve itself
+{"score":0}Reinstall TimeXtender
+-
+{"folder":"(2024_01) PRACTICE - TimeXtender Portal","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens if more credits are consumed than are available in TimeXtender?
+
+{"score":0}The system will automatically top up the credits
+{"score":0}The account will be suspended until credits are added
+{"score":100.0}The credit balance becomes negative and you will be invoiced
+{"score":0}The excess usage will be deducted from the next month's credit balance
+-
+{"folder":"(2024_01) PRACTICE - TimeXtender Portal","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is shown in the Total column of the monthly overview table in TimeXtender?
+
+{"score":0}The total number of instances available
+{"score":0}The total number of credits added for the month
+{"score":0}The total number of credits remaining at the end of the month
+{"score":100.0}The total number of credits used throughout the month

@@ -1,0 +1,33 @@
+{
+    "DateTime": "2023-12-27 14:41:06",
+    "URL": "https://support.timextender.com/data-warehouse-108/spatial-joins-with-timextender-1302",
+    "Keywords": "missing",
+    "Title": "Spatial Joins with TimeXtender _ Community",
+    "Author": "Thomas Lind",
+    "Text": "Here is a guide about spatial joins in TimeXtender. Is point P on the line L? How far is the distance between two points P1, P2? https://en.wikipedia.org/wiki/Spatial_relation Which country does this GPS coordinate belong to? reverse geocoding Is point P (GPS coordinate) contained within shape S (country outline)? DimCountries FactDeliveries CountryId FactDeliveries DimCountries geography geometry Contains Intersect Distance many many more You can even plot the shapes in SQL Management Studio, which can be very helpful: So you can write a query like this: In the last line of the statement you see the two tables joined together based on the spatial relation of a country outline and a GPS coordinate that is compared to the shapes. The result is that for each address the containing country is found. This of course is just an example, you can do this also on level of streets, neighborhoods, cities, communities, counties, continents, oceans, and also on artificial groupings like NAFTA, Nordics, UK&I, DACH, etc. - as long as you have the right reference data. Also, there's many other potential use cases for spatial joins, like assign the nearest service provider, create a list of potential customers in a particular area, identify clusters of occurences within a certain geographical area, to to just name a few. TimeXtender does not support spatial joins as native relationships between tables. Such relationships are computationally expensive, so they should be used carefully. To follow the example along please follow these steps: Geometry GpsCoordinates Geography same type Deliveries GpsCoordinatesGeometry Geometry Field Transformation Custom value Make sure the parameter is mapped: Custom View Again, make sure, all parameters are mapped: Now its time to deploy (deploy only, execute is not necessary at this point). Read View Fields Map Custom View Fields CountrySurrogateKey  DW_Id Countries  DeliverySurrogateKey  DW_Id Deliveries Deliveries CountryNameLong  CountrySurrogateKey Create the following fields: Custom Step Script Action UpdateDeliveriesCountryIds Again, make sure that all parameters are mapped: Now its time to deploy and execute. spatial joins are computationally expensive operations Now we can use the Query Tool to see the results, e.g. by executing a query like this: It shows most Deliveries happened in the US, but also that 3,357 deliveries couldnt be mapped to a country in this example. This can happen because of inaccurate GPS coordinates, or because of lacking reference data in the Countries table  GIS/geo computing can be super complex and is a whole world of its own.   ",
+    "Lists": [
+        {
+            "heading": "Prepare sample data",
+            "paragraphs": [
+                "To follow the example along please follow these steps:"
+            ],
+            "list": [
+                "download the sample database and restore it on a SQL server.",
+                "Make sure, you have SQLSysCLRTypes installed so geography and geometry data types are available.",
+                "Use the SQL server source to load the data to your ODX.",
+                "Create a MDW and move both tables Countries and Deliveries into your MDW."
+            ]
+        },
+        {
+            "heading": "Prepare Deliveries table with additional columns",
+            "paragraphs": [
+                "Next, create two fields in the Deliveries table to hold the CountryNameLong and the CountrySurrogateKey, the Foreign Key to the Countries table for the relationship:",
+                "Create the following fields:"
+            ],
+            "list": [
+                "Name: CountrySurrogateKey, type: bigint",
+                "Name: CountryNameLong, type: nvarchar, length 100"
+            ]
+        }
+    ]
+}

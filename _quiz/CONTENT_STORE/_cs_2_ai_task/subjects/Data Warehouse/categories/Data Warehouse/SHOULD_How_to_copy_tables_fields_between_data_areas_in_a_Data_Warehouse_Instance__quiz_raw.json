@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the primary limitation when copying tables between data areas in a Modern Data Warehouse (MDW) instance?",
+        "options": {
+            "option_a": "Tables must have the same column names.",
+            "option_b": "Data areas must be in the same MDW instance.",
+            "option_c": "Only one table can be copied at a time.",
+            "option_d": "Tables cannot be copied if they contain more than 1000 records."
+        },
+        "answer": "option_b",
+        "explanation": "Tables can be copied from one data area to as many alternate data areas as needed, but the only limitation is that the data areas must be in the same MDW instance."
+    },
+    "question_2": {
+        "question": "Which method of copying a table between data areas will display the 'Add New Table options' menu?",
+        "options": {
+            "option_a": "Dragging the table with a left-click.",
+            "option_b": "Dragging the table with a right-click.",
+            "option_c": "Using the Direct Read stored procedure.",
+            "option_d": "Copying the table using SQL commands."
+        },
+        "answer": "option_b",
+        "explanation": "Right-clicking on the table you want to transfer and dragging it onto the Tables node of the destination area will display the 'Add New Table options' menu."
+    },
+    "question_3": {
+        "question": "What must mapped tables share in order to implement incremental loading with history enabled?",
+        "options": {
+            "option_a": "The same data type for all columns.",
+            "option_b": "The same number of columns.",
+            "option_c": "The same primary key field.",
+            "option_d": "The same schema name."
+        },
+        "answer": "option_c",
+        "explanation": "Mapped tables must share the same primary key field to implement incremental loading and to execute with history enabled."
+    },
+    "question_4": {
+        "question": "What setting must be reapplied when a table with incremental data loading is transferred to a new data area?",
+        "options": {
+            "option_a": "The Direct Read stored procedure.",
+            "option_b": "The Simple mode setting.",
+            "option_c": "The incremental data loading setting.",
+            "option_d": "The primary key field."
+        },
+        "answer": "option_c",
+        "explanation": "If incremental data loading was implemented on the source data table, then that setting will need to be reapplied on the transferred table in the new data area for incremental data loading to take effect."
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What is a potential benefit of restricting synchronization to only necessary tables when synchronizing an Azure Data Factory with an Oracle data source?",
+        "options": {
+            "option_a": "Increases the number of tables synchronized",
+            "option_b": "Speeds up the synchronization process",
+            "option_c": "Reduces the cost of Azure Data Factory",
+            "option_d": "Eliminates the need for owner permissions"
+        },
+        "answer": "option_b",
+        "explanation": "Restricting synchronization to necessary tables can speed up the process due to Oracle databases being highly normalized with potentially tens of thousands of tables."
+    },
+    "question_2": {
+        "question": "Why might an Oracle database require careful synchronization with Azure Data Factory?",
+        "options": {
+            "option_a": "Because it uses a different cloud provider",
+            "option_b": "Due to its potential high degree of normalization and large number of tables",
+            "option_c": "Oracle databases do not support synchronization",
+            "option_d": "Because Oracle databases are less secure"
+        },
+        "answer": "option_b",
+        "explanation": "Oracle databases tend to be highly normalized with many tables, which can complicate synchronization efforts."
+    }
+}

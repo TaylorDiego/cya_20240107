@@ -1,0 +1,20 @@
+{
+    "DateTime": "2023-12-27 14:39:59",
+    "URL": "https://support.timextender.com/odx-107/what-is-an-odx-server-898",
+    "Keywords": "missing",
+    "Title": "What is an ODX Server _ Community",
+    "Author": "missing",
+    "Text": " TimeXtender 6024.1 This article describes the structure of an ODX, and outlines how to add data from a data source to an ODX instance and then transfer the data from the ODX to a Data Warehouse. The ODX Server: Though data ingestion tasks are configured by the desktop software, the actual movement of data is performed by the ODX server, and because the ODX Server can be installed within your own environment it ensures that the data is always within your control. The ODX server copies data from data sources to a data storage, which caneither be on-premise or in the cloud. The data can then be transferred from the ODX to data warehouses using the TimeXtender application. Raw Data Storage Connect to a Remote ODX Server from TimeXtender Desktop TimeXtender ODX Service sign-in Solution Explorer TimeXtender Portal Grant Access to Instances Refresh Open Edit Create storage...  Opening the ODX Instance in TimeXtender Desktop allows you to configure your data sources like selecting tables & fields for ingestion, identifying primary keys, configuring Incremental load, & scheduling recurring transfers etc. Add Data Source... Add Transfer Task... Selecting Tables from Transfer Tasks Synchronization task Execute  ADO.net Azure Data Factory transfer task Transferring Data from an ODX to a Data Warehouse Instance. Symptoms Cause  ",
+    "Lists": [
+        {
+            "heading": "Related Topics",
+            "paragraphs": [],
+            "list": [
+                "Add ODX Instances",
+                "Tasks in an ODX Instance",
+                "Incremental Load in an ODX Instance",
+                "Table and Column Selection in an ODX Instance"
+            ]
+        }
+    ]
+}

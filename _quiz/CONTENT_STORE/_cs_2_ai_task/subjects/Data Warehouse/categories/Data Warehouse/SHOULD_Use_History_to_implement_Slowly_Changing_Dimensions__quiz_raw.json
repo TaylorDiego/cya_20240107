@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the purpose of implementing a slowly changing dimension (SCD) in a data warehouse?",
+        "options": {
+            "option_a": "To increase the speed of data retrieval",
+            "option_b": "To maintain historical data accuracy",
+            "option_c": "To reduce the storage space required",
+            "option_d": "To simplify the data model"
+        },
+        "answer": "option_b",
+        "explanation": "SCD is used to maintain the accuracy of historical data in a data warehouse when the underlying data changes over time."
+    },
+    "question_2": {
+        "question": "In the context of SCD Type II, what does the 'DW_Id' field represent?",
+        "options": {
+            "option_a": "The date when the record was last updated",
+            "option_b": "A unique identifier for each row in the table",
+            "option_c": "The primary key of the source table",
+            "option_d": "The timestamp indicating when the record became valid"
+        },
+        "answer": "option_b",
+        "explanation": "The 'DW_Id' field is a unique identifier for each row in a Type II SCD table, used as a surrogate key."
+    },
+    "question_3": {
+        "question": "Which field in a history-enabled table indicates whether a row is the current version aligning with the source data?",
+        "options": {
+            "option_a": "SCD From DateTime",
+            "option_b": "SCD To DateTime",
+            "option_c": "SCD Is Current",
+            "option_d": "SCD Is TombStone"
+        },
+        "answer": "option_c",
+        "explanation": "The 'SCD Is Current' field is set to 1 for rows that are the current version and 0 for historical rows."
+    },
+    "question_4": {
+        "question": "What happens to a Type I field when 'Update also historical records with new value on type I change' is enabled?",
+        "options": {
+            "option_a": "It creates a new record with the updated value.",
+            "option_b": "It updates only the current version of the record.",
+            "option_c": "It updates all versions of the record with the new value.",
+            "option_d": "It marks the record as deleted."
+        },
+        "answer": "option_c",
+        "explanation": "When enabled, 'Update also historical records with new value on type I change' updates all versions of the record with the new value."
+    }
+}

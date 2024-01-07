@@ -1,0 +1,26 @@
+{
+    "DateTime": "2023-12-27 14:41:11",
+    "URL": "https://support.timextender.com/data-warehouse-108/related-records-1330",
+    "Keywords": "missing",
+    "Title": "Related Records _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "Add Related Records Early Arriving Facts Add Related Records In a live working environment,it is possible that transactional data may contain values that have not yet been added to the source database in the corresponding dimension table. An example of this could be a Sales Invoice that has a Salesperson Code where the Salesperson Code does not yet exist in the Salesperson table. When the data warehouse is updated and the semantic models are processed, the values for this salesperson will not exist in the Salesperson dimension. Early Arriving Facts A relation between the source table and destination table is required to add related records. For more information see:  The example below uses the following setup between a fact table and a dimension table.  ",
+    "Lists": [
+        {
+            "heading": "Add Related Records",
+            "paragraphs": [
+                "The example below uses the following setup between a fact table and a dimension table."
+            ],
+            "list": [
+                "Select Add Related Records under Advanced on the destination table",
+                "Provide a Name for the Related Records transformation.",
+                "Select the table to create records from in the Create Records from table dropdown.",
+                "Select the record condition as Exists or Not Exists. The Exists option will add records returned by the condition, whereas Not Exists will return records that fall outside the condition as defined in Step 7 below.",
+                "Select the Data Destination Table as Raw or Valid. The Valid option will insert the records after the data cleansing procedure, ensuring the values in any conditional lookup fields are overwritten by the related records insert.",
+                "Select the field mappings from the dropdowns in the Mapping area by either selecting a field from the source table or by selecting Fixed Value or None. Select Allow Default Value and specify a Default Value in order to populate the value of a mapped field when the field is empty.",
+                "Select Add near the Conditions pane to add conditions, and then select a field from the source table in the first dropdown and a field from the destination table in the second dropdown. Select an operator to compare the two fields. Click OK",
+                "Deploy and execute the destination table with the Related Records transformation. Notice that new records have been added from the source table."
+            ]
+        }
+    ]
+}

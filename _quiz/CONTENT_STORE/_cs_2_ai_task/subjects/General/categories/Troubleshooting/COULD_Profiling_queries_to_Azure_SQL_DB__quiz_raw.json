@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What is the purpose of the 'sys.query_store_query_text' mentioned in the context?",
+        "options": {
+            "option_a": "To modify data in Azure SQL DB",
+            "option_b": "To profile queries in Azure SQL DB",
+            "option_c": "To create new tables in Azure SQL DB",
+            "option_d": "To delete records from Azure SQL DB"
+        },
+        "answer": "option_b",
+        "explanation": "The 'sys.query_store_query_text' is used for profiling queries to Azure SQL DB, as indicated by the context provided."
+    },
+    "question_2": {
+        "question": "Where can you find more information about querying the SQL Server System Catalog?",
+        "options": {
+            "option_a": "Azure SQL DB official blog",
+            "option_b": "Microsoft's customer service",
+            "option_c": "Microsoft documentation",
+            "option_d": "Community forums"
+        },
+        "answer": "option_c",
+        "explanation": "The context suggests reviewing Microsoft documentation for more information, specifically the 'Querying the SQL Server System Catalog FAQ - SQL Server | Microsoft Docs'."
+    }
+}

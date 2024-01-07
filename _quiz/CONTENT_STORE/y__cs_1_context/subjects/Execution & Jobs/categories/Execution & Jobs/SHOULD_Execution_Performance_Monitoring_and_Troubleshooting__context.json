@@ -1,0 +1,47 @@
+{
+    "DateTime": "2023-12-27 14:41:49",
+    "URL": "https://support.timextender.com/executions-jobs-110/execution-performance-monitoring-and-troubleshooting-624",
+    "Keywords": "missing",
+    "Title": "Execution Performance Monitoring and Troubleshooting _ Community",
+    "Author": "missing",
+    "Text": "Earlier executions of a package used to complete in less time. However, it is taking more time now. There are no specific errorsorretries. Execution History Gantt charts Execution Overview Log. Execution Overview Log Log Execution time Log Row Count Compare slow and fast executions, looking at timings and number of rows. Event Viewer ODX Scheduler When reading data from another machine, look for these factors when applicable: Warning: Scheduling Executions using Jobs ",
+    "Lists": [
+        {
+            "heading": "Environment, machine and network factors",
+            "paragraphs": [
+                "Review Windows Event Viewer logs for errors or warnings related to ODX Service and TimeXtender Scheduler Service.",
+                "When reading data from another machine, look for these factors when applicable:"
+            ],
+            "list": [
+                "network latency",
+                "CPU/ memory on other machine",
+                "memory allocation for SQL server (for large executions)",
+                "reboots, server maintenance, nightly patching (if any)",
+                "retries on the package",
+                "intermittent connectivity issues to Azure server"
+            ]
+        },
+        {
+            "heading": "Check for blocking",
+            "paragraphs": [],
+            "list": [
+                "Use a Profiler tool to trace SQL queries in currently executing package. Understand and resolve blocking problems Understand and resolve Azure SQL blocking problems",
+                "Understand and resolve blocking problems",
+                "Understand and resolve Azure SQL blocking problems",
+                "Number of Threads:  lower the number of concurrent execution threads on ODX data source",
+                "Redesign: split data sources and/or execution packages to avoid interdependency of data sources",
+                "Implement incremental load for loading big tables.",
+                "If your ODX storage is on a SQL database, consider moving it to Azure Data Lake, even if the data warehouses are on-premises.",
+                "Tune SQL Server performance - adjust relevant parameters which affect concurrency and memory consumption to give extra room for non-SQL processes from TimeXtender and ODX services."
+            ]
+        },
+        {
+            "heading": "Periodic Maintenance and Cleanup",
+            "paragraphs": [],
+            "list": [
+                "Right click on the Instance Node > Advanced > SQL Database Cleanup Tool, in order to remove objects no longer used in the instance.   Warning:  Ensure that the objects you select to cleanup are not being used in other instances, if they are sharing the same storage.",
+                "Also review \"Proactive maintenance, cleanup & backup\" section in this article Self-Service Troubleshooting in TimeXtender"
+            ]
+        }
+    ]
+}

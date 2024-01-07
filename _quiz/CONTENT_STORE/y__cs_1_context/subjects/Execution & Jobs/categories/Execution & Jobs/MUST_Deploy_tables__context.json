@@ -1,0 +1,50 @@
+{
+    "DateTime": "2023-12-27 14:41:54",
+    "URL": "https://support.timextender.com/executions-jobs-110/deploy-tables-1132",
+    "Keywords": "missing",
+    "Title": "Deploy tables _ Community",
+    "Author": "Greg Lennox",
+    "Text": "Deployment takes the table definitions that were created in the TimeXtender Desktop and uses these to generate scripts that are then run to create the tables and their associated stored procedures in the data area storage. Deploy and Execution are two separate processes that are commonly performed one after the other via the Deploy and Execute command, and together these two processes are used to create and populatetables in the SQL database. However, Deploy and Execute are different processes that can be run separately, and each process has its own options and circumstances. Click on the following link for more information about executing tables.  Deployment of the data area is needed to apply any new changes to the metadata of a data warehouse database. Deployment of changes can be done at different levels of the data warehouse, so that changes may be applied in a more focused manner to just those parts of the data warehousethatincludes the changes. After any data areachanges have beendeployed, it is common to then executethe table, which will attempt totransfer and cleanse thedata.   Deployment scope is determined by where or what levelthe deployment is initiated from.   When deployment is done on the table level, then only the changes to thattable aredeployed,which might affect other tables that relate to the deployed table. In that scenario, deploying changes on the data area level may be better as it willdeploy any changes that are needed to all the tables in the data area. Tables may also be related to tables that reside in different data areas, and when that is thecase deploying on the data warehouse level may be the best option to ensure that all related tables aredeployed. The following two deploy options are selected by default in the Deploy and/or Execute dialog. Enable differential deployment Review Tasks Deploy Tasks Deploy->Tasks Start  Deployment creates the tables, views, and stored procedures that form the basis of your data estate. In SQL Server Management Studio, a group of deployed SQL tables that comprise a TimeXtender data area table may appear similar to the following: Note: Depending on the features that may be enabled on a table, the following additional tables may be created as part of the deployment: Enable the Guard on deployment option to ensure that a table will not be deployed or accidentally truncated, even if the tableis marked as dirty. Table Settings A guarded table may appear to start running if you attempt to deploy it, but upon completion a message will appear stating that the table is guarded.  Execute   ",
+    "Lists": [
+        {
+            "heading": "Deployment",
+            "paragraphs": [
+                "Once a change has been made to a table, TimeXtender uses visible cues, such as a red font and an asterisks (*) next to the object name, to highlight that those objects have changes that have yet to be deployed.",
+                "",
+                "Deployment scope is determined by where or what level the deployment is initiated from."
+            ],
+            "list": [
+                "To limit the deployment scope to a single table, right-click on a table that contains pending changes and select \u201cDeploy\u201d or \u201cDeploy and Execute\u201d from the menu."
+            ]
+        },
+        {
+            "heading": "The Deploy and/or Execute dialog",
+            "paragraphs": [
+                "The following two deploy options are selected by default in the Deploy and/or Execute dialog."
+            ],
+            "list": [
+                "Enable differential deployment Using this option will focus the deployment so that only those objects that have been changed will be deployed. In cases where a table is made up of objects from different sources, only those objects that have been changed will be deployed. Turning off differential deployment allows the process to perform all the deployment steps. Note that incremental loading still applies and is not affected by enabling or disabling differential deployment.",
+                "Enable managed deployment Managed deployment will deploy the changes in the order of relations. If no relations are present, then the deployment will be done from the top to the bottom of the data area."
+            ]
+        },
+        {
+            "heading": "Data Area Table component parts",
+            "paragraphs": [
+                "Deployment creates the tables, views, and stored procedures that form the basis of your data estate.",
+                "In SQL Server Management Studio, a group of deployed SQL tables that comprise a TimeXtender data area table may appear similar to the following:"
+            ],
+            "list": [
+                "The Raw Table (_R) - Stores the raw copy of the source table.",
+                "The Transformation View (_T) - Performs all the needed transformations using CAST and AS, along with other operators.",
+                "The List Table (_L) - Holds the list DW_IDs (row identifiers) for all the rows in the raw table that were flagged by a data validation rule.",
+                "The Messages Table (_M) - relates to the _L table and includes the error messages for the rule violations.",
+                "The Data Cleansing Stored Procedure (_Clean) - script that performs different deployment steps, including but limited to the following: Processing conditional lookups. Enforcing data validation rules. Managing History. Processing incremental loading.",
+                "Processing conditional lookups.",
+                "Enforcing data validation rules.",
+                "Managing History.",
+                "Processing incremental loading.",
+                "The Valid Table (no postfix or _V if enabled) - All resulting \"Valid\" records are inserted here."
+            ]
+        }
+    ]
+}

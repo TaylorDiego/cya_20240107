@@ -1,0 +1,112 @@
+{
+    "question_1": {
+        "question": "What is the primary function described in the article 'Grant and Revoke Access to Instances' by Christian Hauggaard?",
+        "options": {
+            "option_a": "Describing how to install TimeXtender",
+            "option_b": "Explaining how to grant and revoke user access to instances",
+            "option_c": "Guiding users through data visualization in TimeXtender",
+            "option_d": "Providing a history of TimeXtender versions"
+        },
+        "answer": "option_b",
+        "explanation": "The article's title and text clearly indicate that it is about granting and revoking users' access to instances within the TimeXtender Desktop Application."
+    }
+    , "question_2": {
+        "question": "Which version of TimeXtender does the article refer to?",
+        "options": {
+            "option_a": "6024.0",
+            "option_b": "6024.1",
+            "option_c": "6025.1",
+            "option_d": "6023.1"
+        },
+        "answer": "option_b",
+        "explanation": "The text specifies 'TimeXtender 6024.1', indicating the version of TimeXtender the article is referencing."
+     }
+    , "question_3": {
+        "question": "What is the primary function of HTTPS on the TimeXtender Portal?",
+        "options": {
+            "option_a": "To speed up the data transfer",
+            "option_b": "To redirect all HTTP requests as HTTPS",
+            "option_c": "To serve as a user interface",
+            "option_d": "To provide firewall services"
+        },
+        "answer": "option_b",
+        "explanation": "HTTPS ensures that all communications between the Portal and the User are encrypted, enhancing security by redirecting all unsecured HTTP requests as HTTPS."
+    }
+    , "question_4": {
+        "question": "How are the backend services on the TimeXtender Portal protected?",
+        "options": {
+            "option_a": "Using a blacklist rule",
+            "option_b": "Through open access",
+            "option_c": "By a firewall with a whitelist rule",
+            "option_d": "With antivirus software"
+        },
+        "answer": "option_c",
+        "explanation": "The backend services are protected by a firewall that employs a whitelist rule, allowing only approved apps and services to access them."
+     }
+    , "question_5": {
+        "question": "What must be set up to use the TimeXtender API endpoints?",
+        "options": {
+            "option_a": "User credentials",
+            "option_b": "API Key",
+            "option_c": "Database connection",
+            "option_d": "Postman installation"
+        },
+        "answer": "option_b",
+        "explanation": "The API Key needs to be set up in order to use the TimeXtender API endpoints, as mentioned in the prerequisites."
+    }
+    , "question_6": {
+        "question": "Where is the apiKey variable used in the TimeXtender Postman collection?",
+        "options": {
+            "option_a": "In the body of the requests",
+            "option_b": "In the request URLs",
+            "option_c": "In the request headers",
+            "option_d": "In the Postman environment settings"
+        },
+        "answer": "option_c",
+        "explanation": "Once entered, the apiKey variable is used in the request headers for the various calls in the TimeXtender Postman collection."
+     }
+    , "question_7": {
+        "question": "Where in the TimeXtender Portal can you create a new API key?",
+        "options": {
+            "option_a": "Under Admin, then Security and permissions",
+            "option_b": "Under the Dashboard settings",
+            "option_c": "In the Data Sources configuration",
+            "option_d": "In the Help and Support section"
+        },
+        "answer": "option_a",
+        "explanation": "To create a new API key in TimeXtender Portal, you navigate to Admin and then to Security and permissions as per the provided instructions."
+    }
+    , "question_8": {
+        "question": "What is the first step to delete an API key in the TimeXtender Portal?",
+        "options": {
+            "option_a": "Type the name of the API key to confirm deletion",
+            "option_b": "Navigate to Security and permissions and select the delete icon next to the API key",
+            "option_c": "Add a Comment stating the reason for deletion",
+            "option_d": "Select Delete to confirm and finalize the deletion"
+        },
+        "answer": "option_b",
+        "explanation": "The first step to delete an API key is to navigate to Security and permissions and select the delete icon next to the API key."
+    }
+    , "question_9": {
+        "question": "What is the primary function of the TimeXtender Portal?",
+        "options": {
+            "option_a": "To manage email campaigns",
+            "option_b": "To create and manage data estate items",
+            "option_c": "To track time and attendance",
+            "option_d": "To conduct online training"
+        },
+        "answer": "option_b",
+        "explanation": "The TimeXtender Portal is used to create and manage data estate items such as users and user-level permissions."
+    }
+    , "question_10": {
+        "question": "Which permission level cannot be removed by the user from themselves in the TimeXtender Portal?",
+        "options": {
+            "option_a": "Customer manager",
+            "option_b": "Data estate admin",
+            "option_c": "Company admin",
+            "option_d": "Portal user-level"
+        },
+        "answer": "option_c",
+        "explanation": "Company admins cannot remove the company admin permission from themselves to ensure that there is always at least one admin."
+    }
+}

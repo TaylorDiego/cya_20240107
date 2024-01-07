@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:42:47",
+    "URL": "https://support.timextender.com/troubleshooting-134/adf-execution-error-adls-gen2-operation-failed-for-operation-returned-an-invalid-status-code-forbidden-1229",
+    "Keywords": "missing",
+    "Title": "ADF execution error_ ADLS Gen2 operation failed for_ Operation returned an invalid status code 'Forbidden' _ Community",
+    "Author": "Greg Lennox",
+    "Text": "When using ODX Server with an Azure Data Lake Gen2 storage (ADLS) and an Azure Data Factory (ADF) data source, ADF execution consistently fails with this error: Forbidden Firewall is blocking ADF from reading or writing files in the Data Lake. 1. In the ADLS storage account networking options, allow access from \"All networks\"  OR 2. Modify firewall settings on storage account (ADLS Gen2) to allow access from ADF. Configure Azure Storage firewalls and virtual networks | Microsoft Docs   ",
+    "Lists": []
+}

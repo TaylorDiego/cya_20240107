@@ -1,0 +1,18 @@
+{
+    "question_2": {
+        "question_content": {
+            "question": "How can you edit a PowerShell script in TimeXtender?",
+            "options": {
+                "option_a": "By using the 'Edit Script' button in the execution pane.",
+                "option_b": "By right-clicking on the external executable and selecting 'Edit'.",
+                "option_c": "By modifying the script directly in the PowerShell console.",
+                "option_d": "By contacting TimeXtender support to request script changes."
+            },
+            "answer": "option_b",
+            "explanation": "A PowerShell script can be edited by right-clicking on the external executable and selecting 'Edit'."
+        },
+        "question_facts": [
+            "The question is clear and directly related to the content provided. It tests the understanding of how to edit a PowerShell script in TimeXtender, which is a specific and relevant skill. The options are well-structured and plausible, making the question challenging but fair. The explanation is also straightforward and aligns with the correct answer. Based on these factors, I would rate this question as a 5 - 'very good question'."
+        ]
+    }
+}

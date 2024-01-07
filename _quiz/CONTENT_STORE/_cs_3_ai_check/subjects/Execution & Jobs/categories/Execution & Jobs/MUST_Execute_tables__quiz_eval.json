@@ -1,0 +1,34 @@
+{
+    "question_1": {
+        "question_content": {
+            "question": "What is the primary purpose of executing tables in TimeXtender?",
+            "options": {
+                "option_a": "To modify the structure of existing tables",
+                "option_b": "To transfer and cleanse data into tables that have been deployed",
+                "option_c": "To generate reports from the data",
+                "option_d": "To create new tables without transferring data"
+            },
+            "answer": "option_b",
+            "explanation": "Execution of tables in TimeXtender is done to transfer and cleanse data into tables that have already been deployed, ensuring the data is ready for use."
+        },
+        "question_facts": [
+            "The question is clear, concise, and directly related to the content provided. It tests the understanding of the primary purpose of executing tables in TimeXtender, which is a key concept in the article. The options are well-structured and plausible, making the question challenging. The explanation is also clear and directly answers the question. However, the question could be improved by adding more context or complexity, such as asking about specific steps in the execution process. \n\nOverall rating: 4 (Good question)"
+        ]
+    },
+    "question_6": {
+        "question_content": {
+            "question": "What happens when you drag-and-drop an object to the Execution Queue in TimeXtender?",
+            "options": {
+                "option_a": "The object is immediately executed",
+                "option_b": "The object is deleted from the project",
+                "option_c": "The object is queued for execution",
+                "option_d": "The object's data is exported"
+            },
+            "answer": "option_c",
+            "explanation": "When an object is dragged-and-dropped to the Execution Queue in TimeXtender, it is queued up for execution. If there are no other items in the queue, the object will begin executing immediately."
+        },
+        "question_facts": [
+            "The question is clear, concise, and directly related to the content provided. It tests the understanding of a specific feature of TimeXtender, which is the Execution Queue. The options provided are distinct and not confusing, with only one correct answer. The explanation is also clear and directly answers the question. This question is a good measure of whether the student understands how the Execution Queue works in TimeXtender.\n\nOverall rating: 5 (Very good question)"
+        ]
+    }
+}

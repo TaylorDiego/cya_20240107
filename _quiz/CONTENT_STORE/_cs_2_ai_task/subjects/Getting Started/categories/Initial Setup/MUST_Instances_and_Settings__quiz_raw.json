@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What are the three types of instances that a TimeXtender solution is built up of?",
+        "options": {
+            "option_a": "ODX, MDW, and Semantic Model",
+            "option_b": "ODX, Data Warehouse, and Semantic Layer",
+            "option_c": "ODX, Data Warehouse, and Semantic Model",
+            "option_d": "ODX, ETL, and Data Mart"
+        },
+        "answer": "option_c",
+        "explanation": "A TimeXtender solution comprises ODX (Operational Data Exchange), Data Warehouse, and Semantic Model instances, which serve as its foundational building blocks."
+    },
+    "question_2": {
+        "question": "What is the default setting for 'Postfix valid tables with '_V' in TimeXtender Data Warehouse settings?",
+        "options": {
+            "option_a": "Yes",
+            "option_b": "No",
+            "option_c": "Only for invalid tables",
+            "option_d": "User-defined"
+        },
+        "answer": "option_b",
+        "explanation": "By default, the setting 'Postfix valid tables with '_V' is set to No in TimeXtender Data Warehouse settings."
+    },
+    "question_3": {
+        "question": "In TimeXtender, what does the 'Type for new relations' setting determine?",
+        "options": {
+            "option_a": "How new tables are created",
+            "option_b": "How TimeXtender treats foreign key violations",
+            "option_c": "The type of relationship between tables",
+            "option_d": "The naming convention for new relations"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Type for new relations' setting in TimeXtender determines how the system should treat foreign key violations, with options such as Error, Warning, or Physical."
+    },
+    "question_4": {
+        "question": "Which hashing algorithm is described as the safest in terms of the probability that two different data sets would create identical hashes?",
+        "options": {
+            "option_a": "SHA-1, SQL Server 2016 +",
+            "option_b": "SHA-1, SQL Server 2005 +",
+            "option_c": "SHA-2 512, SQL Server 2016 +",
+            "option_d": "Legacy binary"
+        },
+        "answer": "option_c",
+        "explanation": "SHA-2 512, SQL Server 2016 + is described as the safest hashing algorithm offered by TimeXtender, due to its low probability of creating identical hashes for different data sets."
+    },
+    "question_5": {
+        "question": "What is the default behavior for primary key violations in TimeXtender's Data Warehouse settings?",
+        "options": {
+            "option_a": "Warning",
+            "option_b": "Error",
+            "option_c": "None",
+            "option_d": "Physical"
+        },
+        "answer": "option_b",
+        "explanation": "The default behavior for primary key violations in TimeXtender's Data Warehouse settings is set to Error, which moves the offending row to the error table."
+    },
+    "question_6": {
+        "question": "What is the default Null check approach in TimeXtender's Data Warehouse settings?",
+        "options": {
+            "option_a": "Record Based",
+            "option_b": "Field Based",
+            "option_c": "Error Table",
+            "option_d": "Warning Table"
+        },
+        "answer": "option_b",
+        "explanation": "The default Null check approach in TimeXtender's Data Warehouse settings is Field Based, which advises both the record and the specific field within that record that contains the null value."
+    }
+}

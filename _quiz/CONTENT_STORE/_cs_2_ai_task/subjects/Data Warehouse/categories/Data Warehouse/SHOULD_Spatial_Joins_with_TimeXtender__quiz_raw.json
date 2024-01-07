@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the primary purpose of spatial joins in the context provided?",
+        "options": {
+            "option_a": "To update the user interface of TimeXtender",
+            "option_b": "To create native relationships between tables in TimeXtender",
+            "option_c": "To find the spatial relationship between different geographical entities",
+            "option_d": "To reduce the computational load on the database"
+        },
+        "answer": "option_c",
+        "explanation": "Spatial joins are used to determine the spatial relationship between geographical entities, such as finding which country a GPS coordinate falls within or the distance between two points."
+    },
+    "question_2": {
+        "question": "Why should spatial joins be used carefully in TimeXtender?",
+        "options": {
+            "option_a": "Because they are not supported by TimeXtender",
+            "option_b": "Because they are computationally expensive",
+            "option_c": "Because they can only be used with SQL Management Studio",
+            "option_d": "Because they require internet access to function"
+        },
+        "answer": "option_b",
+        "explanation": "Spatial joins are computationally expensive operations, which means they can significantly impact the performance of the database if not used judiciously."
+    },
+    "question_3": {
+        "question": "What must be installed to ensure geography and geometry data types are available in SQL Server for TimeXtender?",
+        "options": {
+            "option_a": "SQLSysCLRTypes",
+            "option_b": "ODX",
+            "option_c": "MDW",
+            "option_d": "TimeXtender Query Tool"
+        },
+        "answer": "option_a",
+        "explanation": "SQLSysCLRTypes must be installed on the SQL server to make geography and geometry data types available, which are essential for spatial data operations."
+    },
+    "question_4": {
+        "question": "What was the result of the spatial join query example provided in the context?",
+        "options": {
+            "option_a": "All deliveries were successfully mapped to a country",
+            "option_b": "3,357 deliveries could not be mapped to a country",
+            "option_c": "Most deliveries happened in Canada",
+            "option_d": "The query failed due to lack of reference data"
+        },
+        "answer": "option_b",
+        "explanation": "The example query showed that most deliveries happened in the US, but also that 3,357 deliveries could not be mapped to a country, possibly due to inaccurate GPS coordinates or missing reference data."
+    }
+}

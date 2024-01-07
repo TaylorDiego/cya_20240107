@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the first step to add a new data source in TimeXtender Desktop?",
+        "options": {
+            "option_a": "Select the Connection from available connections in TimeXtender Portal.",
+            "option_b": "Double-click on your ODX instance.",
+            "option_c": "Right-click on your data source > Edit.",
+            "option_d": "Check the box Data on demand."
+        },
+        "answer": "option_b",
+        "explanation": "The first step is to double-click on your ODX instance as per the guide for adding a data source in TimeXtender Desktop."
+    },
+    "question_2": {
+        "question": "How do you initiate adding a data source after accessing the ODX instance in TimeXtender Desktop?",
+        "options": {
+            "option_a": "Click on Advanced Settings.",
+            "option_b": "Double-click on your ODX instance.",
+            "option_c": "Right-click 'Data Sources' > Add Data Source.",
+            "option_d": "Select the Connection from available connections in TimeXtender Portal."
+        },
+        "answer": "option_c",
+        "explanation": "After accessing the ODX instance, you initiate adding a data source by right-clicking 'Data Sources' and selecting 'Add Data Source'."
+    },
+    "question_3": {
+        "question": "What should you do to configure a data source to transfer data into ODX storage on demand?",
+        "options": {
+            "option_a": "Double-click on your ODX instance.",
+            "option_b": "Right-click 'Data Sources' > Add Data Source.",
+            "option_c": "Right-click on your data source > Edit, then click on Advanced Settings and check 'Data on demand'.",
+            "option_d": "Select the Connection from available connections in TimeXtender Portal."
+        },
+        "answer": "option_c",
+        "explanation": "To configure on-demand data transfer into ODX storage, edit the data source, access Advanced Settings, and check the 'Data on demand' option."
+    },
+    "question_4": {
+        "question": "What is the purpose of enabling 'Data on demand' in TimeXtender Desktop's data source settings?",
+        "options": {
+            "option_a": "To automatically create a new ODX instance.",
+            "option_b": "To transfer data into ODX storage before the MDW ingests the data without configuring an explicit 'Transfer task'.",
+            "option_c": "To add a new data source to the TimeXtender Desktop.",
+            "option_d": "To select the Connection from available connections in TimeXtender Portal."
+        },
+        "answer": "option_b",
+        "explanation": "Enabling 'Data on demand' allows the data source to transfer data into ODX storage before the MDW ingests it, without the need for an explicit 'Transfer task'."
+    },
+    "question_5": {
+        "question": "After adding a data source in TimeXtender Desktop, what is the next step to configure it for on-demand data transfer?",
+        "options": {
+            "option_a": "Double-click on your ODX instance.",
+            "option_b": "Right-click 'Data Sources' > Add Data Source.",
+            "option_c": "Right-click on your data source > Edit, then click on Advanced Settings.",
+            "option_d": "Select the Connection from available connections in TimeXtender Portal."
+        },
+        "answer": "option_c",
+        "explanation": "The next step after adding a data source is to right-click on it, choose 'Edit', and then click on 'Advanced Settings' to configure on-demand data transfer."
+    },
+    "question_6": {
+        "question": "Where do you select the connection for your new data source in TimeXtender Desktop?",
+        "options": {
+            "option_a": "In the TimeXtender Portal after configuring the data source.",
+            "option_b": "In the Advanced Settings of the data source.",
+            "option_c": "After double-clicking on your ODX instance.",
+            "option_d": "From available connections you have configured in TimeXtender Portal."
+        },
+        "answer": "option_d",
+        "explanation": "You select the connection for your new data source from the available connections that you have previously configured in the TimeXtender Portal."
+    }
+}

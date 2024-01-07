@@ -1,0 +1,33 @@
+{
+    "DateTime": "2023-12-27 14:40:30",
+    "URL": "https://support.timextender.com/data-warehouse-108/how-to-copy-tables-fields-between-data-areas-in-a-data-warehouse-instance-1012",
+    "Keywords": "missing",
+    "Title": "How to copy tables_fields between data areas in a Data Warehouse Instance _ Community",
+    "Author": "Thomas Lind",
+    "Text": "It is possible to create as many data areas as needed in your Data Warehouse (DW) or Modern Data Warehouse (MDW) Instance. Each data area will share the same physical database but use different schemas to store its tables. Transfer between these data areas is done using the Direct Read stored procedure that copies the data from one area to another. A table can be copied from one data area to as many alternate data areas as is needed, the only limit is that the data areas must be in the same MDW instance. The steps to copy a table are as follows. First Method:  Left-click on the table you want to transfer and drag it onto the Tables node of the destination data area. Second Method : Right-click on the table you want to transfer and drag it onto the Tables node of the destination area. Note that this approach differs from left-clicking as it will display the Add New Table options menu, which allows the user to select from one of the following options.  Third Method : Click on the table you want to transfer and drag it to the destination data area and drop the table onto an existing table, which will map this new source table to the existing table and the following options will be presented. Data Movement Data Movement As many tables as needed can be mapped to a destination table. However, the mapped tables must share the same primary key field in order to implement incremental loading and to execute with history enabled. Each data area includes other options that control how a table appears. Right-click on a data area and select Edit Data Area to display these options. Enabling Simple mode will ensure that all new tables added to this data area will include this setting, and enabling this Simple mode on the data area may save time later, since it may require more effort to configure a table with this setting after the fact should that be needed. Incremental load Incremental data loading can be automated by configuring this on the data area as it is listed out in the ODX Instance, or incremental data loading can be set up manually for a table. The following items must be present in a data table in order to implement incremental data loading. Automated Incremental Data Loading Automated incremental data loading can be implemented using either of the following two methods. Automated incremental data loading can be implemented using either of the following two methods. Manually Configured Incremental Data Loading If incremental data loading is not configured as part of the data area, then incremental data loading can be set on the individual tables in the data area. In this scenario, please note that the incremental data loading setting is not automatically carried over when adding a table from one data area to another. If incremental data loading was implemented on the source data table, then that setting will need to be reapplied on the transferred table in the new data area in order for incremental data loading to take effect. The following steps can be used to implement incremental data loading for a table that does not have automated incremental data loading implemented as described above. SQL Database: What actions are being performed in the database Direct Read Stored Procedures There is one procedure generated for each mapped table. ExchangeRates  simple mode The above shows how the stored procedure does the copy of data from the sources transfer table view to the valid source table. This is the same ExchangeRate table above except thathere the table is notconfigured to use simple mode. The change is that it now adds the rows to the raw (_R) version of the table instead of directly in the valid one. Automate Now the complexity is slightly larger and the above shows how the timestamp field is being used to track and only load new data. ",
+    "Lists": [
+        {
+            "heading": "Copy a table from one data area to another.",
+            "paragraphs": [
+                "A table can be copied from one data area to as many alternate data areas as is needed, the only limit is that the data areas must be in the same MDW instance.",
+                "The steps to copy a table are as follows."
+            ],
+            "list": [
+                "Open the source data area that contains the table to be copied.",
+                "Open the destination data area.",
+                "There is more than one way to copy a table, see the following for the specifics on each method."
+            ]
+        },
+        {
+            "heading": "Automate options",
+            "paragraphs": [
+                "Automated incremental data loading can be implemented using either of the following two methods."
+            ],
+            "list": [
+                "Add suggested constraints: This option will attempt to locate any primary key fields that are not already identified on the source tables, however this option will not normally be able to find additional key fields.",
+                "Add incremental load: This option automates the setup of incremental loading across all the tables in the data area. This approach may streamline an implantation, as no prior setup is required and the setup dialog is sufficient to configure the process.",
+                ""
+            ]
+        }
+    ]
+}

@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:43:00",
+    "URL": "https://support.timextender.com/troubleshooting-134/how-to-use-a-debugger-to-review-a-timextender-process-1255",
+    "Keywords": "missing",
+    "Title": "How to use a debugger to review a TimeXtender process _ Community",
+    "Author": "Thomas Lind",
+    "Text": "Note sandbox This article describes how to use a GUI debugger, x64Dbg or Windbg Preview, to attach to a running TimeXtender process and to review DLLs loaded, threads and call stack. This may help debug complex issues involving performance, hang or unexpected process termination. Download x64Dbg Get WinDbg Preview - Microsoft Store x64Dbg   File -> Attach Note: Windbg  File -> Attach to process This shows the list of DLLs loaded. Task Manager Create dump file This may generate a huge file. Use this option for a hung process only, when troubleshooting the root cause. This dump can be further analyzed in a Windows debugger. For example, load this dump in Windbg and perform exception analysis by this command: Dumps WinDbg ",
+    "Lists": []
+}

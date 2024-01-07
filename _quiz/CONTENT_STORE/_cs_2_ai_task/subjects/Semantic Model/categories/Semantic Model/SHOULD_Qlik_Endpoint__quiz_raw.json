@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the default port used when setting up a Qlik Endpoint with certificate authentication in TimeXtender?",
+        "options": {
+            "option_a": "80",
+            "option_b": "443",
+            "option_c": "4747",
+            "option_d": "8080"
+        },
+        "answer": "option_c",
+        "explanation": "The default port for certificate authentication is 4747, as mentioned in the Server Settings section for deploying to Qlik Sense Enterprise."
+    },
+    "question_2": {
+        "question": "When deploying to Qlik Sense Enterprise, what should you do if you want TimeXtender to terminate an execution when a timeout is reached?",
+        "options": {
+            "option_a": "Select 'Terminate execution when timeout is reached'",
+            "option_b": "Enter a timeout value in the Timeout box",
+            "option_c": "Use proxy authentication",
+            "option_d": "Use certificate authentication"
+        },
+        "answer": "option_a",
+        "explanation": "You should select 'Terminate execution when timeout is reached' to have TimeXtender terminate an execution when the timeout is reached, as indicated in the Server Settings instructions."
+    },
+    "question_3": {
+        "question": "Which of the following is NOT an optional field when adding a Qlik Endpoint in TimeXtender?",
+        "options": {
+            "option_a": "View schema",
+            "option_b": "Postfix",
+            "option_c": "Qlik application",
+            "option_d": "App prefix"
+        },
+        "answer": "option_c",
+        "explanation": "The 'Qlik application' field is not optional as you need to select the Qlik application to target, which is a necessary step in the setup process."
+    },
+    "question_4": {
+        "question": "In the context of TimeXtender's Qlik Endpoint setup, what is the purpose of the 'Virtual proxy prefix'?",
+        "options": {
+            "option_a": "It is used to specify the schema name for views.",
+            "option_b": "It is the prefix from the virtual proxy in Qlik Sense used for proxy authentication.",
+            "option_c": "It is the prefix added to the endpoint name to create the app name in Qlik Sense.",
+            "option_d": "It is the postfix used for views and folder names."
+        },
+        "answer": "option_b",
+        "explanation": "The 'Virtual proxy prefix' is used when setting up proxy authentication with the Qlik Sense Enterprise server, where you write the prefix from the virtual proxy in Qlik Sense."
+    }
+}

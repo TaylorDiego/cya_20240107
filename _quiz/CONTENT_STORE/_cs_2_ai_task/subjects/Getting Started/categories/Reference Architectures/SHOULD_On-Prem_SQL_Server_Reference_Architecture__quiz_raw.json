@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What environment is recommended to serve the TimeXtender application on-premise?",
+        "options": {
+            "option_a": "Linux Server",
+            "option_b": "Windows Server",
+            "option_c": "macOS Server",
+            "option_d": "Solaris Server"
+        },
+        "answer": "option_b",
+        "explanation": "The text recommends using a Windows environment such as Windows Server, sized according to the solution's requirements, to serve the TimeXtender application on-premise."
+    },
+    "question_2": {
+        "question": "Which SQL Server version is recommended for ODX Server Storage database creation in TimeXtender?",
+        "options": {
+            "option_a": "SQL Server 2012",
+            "option_b": "SQL Server 2014",
+            "option_c": "SQL Server 2016",
+            "option_d": "SQL Server 2017 or higher"
+        },
+        "answer": "option_d",
+        "explanation": "SQL Server 2017 or higher is recommended for ODX Server Storage database creation in TimeXtender."
+    },
+    "question_3": {
+        "question": "Where should the ODX Server Service be hosted according to the TimeXtender on-prem reference architecture?",
+        "options": {
+            "option_a": "On a cloud platform",
+            "option_b": "Locally on the App Server",
+            "option_c": "On a separate database server",
+            "option_d": "Remotely on a third-party server"
+        },
+        "answer": "option_b",
+        "explanation": "The ODX Server Service should be hosted locally on the App Server as per the TimeXtender on-prem reference architecture."
+    },
+    "question_4": {
+        "question": "What is the role of SQL Server Analysis Services in the TimeXtender on-prem reference architecture?",
+        "options": {
+            "option_a": "To host the TimeXtender application",
+            "option_b": "To store raw data",
+            "option_c": "To serve data to Power BI and Excel",
+            "option_d": "To manage firewall exceptions"
+        },
+        "answer": "option_c",
+        "explanation": "SQL Server Analysis Services is the ideal way to serve data to Power BI and Excel, making it an optional step in the TimeXtender on-prem reference architecture."
+    }
+}

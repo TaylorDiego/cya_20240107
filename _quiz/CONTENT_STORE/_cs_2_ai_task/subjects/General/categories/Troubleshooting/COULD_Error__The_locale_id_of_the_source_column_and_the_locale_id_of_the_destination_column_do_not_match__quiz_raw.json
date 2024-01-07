@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What is a potential cause for the locale id error when executing a data area table?",
+        "options": {
+            "option_a": "Mismatched time zones between the source and destination databases",
+            "option_b": "Different collation options between the Data Warehouse instance and source databases",
+            "option_c": "Incorrect SQL query syntax",
+            "option_d": "Mismatched data types between source and destination columns"
+        },
+        "answer": "option_b",
+        "explanation": "The error can occur if the Data Warehouse instance and one or more of the source databases are using different collation options, leading to a mismatch."
+    },
+    "question_2": {
+        "question": "How can the locale id error be resolved when a numeric field is being converted to a text field using ODX SQL storage?",
+        "options": {
+            "option_a": "Restarting the database server",
+            "option_b": "Changing the server's locale settings",
+            "option_c": "Using a data type override for the numeric column in the ODX data source",
+            "option_d": "Ignoring the error and proceeding with the data transfer"
+        },
+        "answer": "option_c",
+        "explanation": "The error can be resolved by using a data type override for the numeric column in the ODX data source to convert it to text before bringing it into the data area."
+    }
+}

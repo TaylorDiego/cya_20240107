@@ -1,0 +1,62 @@
+{
+    "DateTime": "2023-12-27 14:41:41",
+    "URL": "https://support.timextender.com/semantic-model-109/semantic-relations-1198",
+    "Keywords": "missing",
+    "Title": "Semantic Relations _ Community",
+    "Author": "Thomas Lind",
+    "Text": "In semantic tables, a relationship is a connection between two tables of data. The relation establishes a correlation between the data in the two tables defining how the data from each table will relate to the data in theother table. For example, a Customers table and an Invoices table can be related so that the customer name can be shown with anassociated invoice. The Relations folder in the table tree lists out all the relations for that table, which means that the same relation will be listed out under eachof the relatedtables. A newly created relation will have adefault name of the two table names separated by a hyphen, butthisdefault name can be amendedas needed.  When adding relations, the available settings depend on the types of endpoints that have been selected for the Semantic instance. To add a new relation on a model where Qlik is the only endpoint type enabled Use the following steps to add a new relation on a Semantic model where the enabled endpoint type is either SSAS Tabular, PowerBI Premium or Tableau.  Note: To add a new relation item to an existing relation Multiple relations may existbetween two tables. The first relation will be designated as the default relation, which isnecessary in some endpoints. To set a relation as the default relation Note: Each relation has cardinality. In the tree, the cardinality can be identified on the relation items as follows: To change the cardinality for a relation Note: Each relation also has a filter direction. To change the filter direction If relations have already been created inthe data area of a DWH instance, then these relations mayautomatically be brought in when one of the data area tables are added totheSemantic Instance. In order for this to work, the dimension tables shouldfirst be added to the Semantic instance prior to adding the associated fact table. The fields that comprise the relations do not need to be added themselves, the relations on the DWH tables just need to be deployed prior to adding the tables to the Semantic model. The same holds true when adding the fact table. The specific fields in the relation do not need to be added themselves, and the relation should come over automatically. When thefact table is added,a menu will be presented with all the existing relations andoptions are available to select which relations to use. For example, if the fact table contains more than one date field, then the specific date fieldto use for the relationship with the date table can be selected. Once this is complete,the fields used for the relations will be added as hidden fields. https://use.vg/RT7JQV ",
+    "Lists": [
+        {
+            "heading": "Add a Relation for a Qlik endpoint",
+            "paragraphs": [
+                "To add a new relation on a model where Qlik is the only endpoint type enabled"
+            ],
+            "list": [
+                "Drag a field from one table on the model to a field on another table and click Yes when prompted to add the relation."
+            ]
+        },
+        {
+            "heading": "Add a new relation for SSAS Tabular, PowerBI Premium or Tableau",
+            "paragraphs": [
+                "Use the following steps to add a new relation on a Semantic model where the enabled endpoint type is either SSAS Tabular, PowerBI Premium or Tableau."
+            ],
+            "list": [
+                "Drag a field from the first table to the corresponding field on the second table. If the cardinality of the tables involved is not \u201cOne-to-One\u201d, drag from the \"One\" table to the \"Many\" table.",
+                "In the Cardinality list, click on the option the represents the cardinality of the table relationship.",
+                "In the Filter direction list, click on option you prefer: To [table]: [Table] is filtered by the other table in the relationship. To both tables: The tables filter each other.       Note: This setting applies to SSAS Tabular endpoints and PowerBI Premium only.",
+                "To [table]: [Table] is filtered by the other table in the relationship.",
+                "To both tables: The tables filter each other."
+            ]
+        },
+        {
+            "heading": "Changing the Default Relation",
+            "paragraphs": [
+                "Multiple relations may exist between two tables. The first relation will be designated as the default relation, which is necessary in some endpoints.",
+                "To set a relation as the default relation"
+            ],
+            "list": [
+                "Right click the relation and click Set as default relation."
+            ]
+        },
+        {
+            "heading": "Changing a Relation's Cardinality",
+            "paragraphs": [
+                "Each relation has cardinality. In the tree, the cardinality can be identified on the relation items as follows:"
+            ],
+            "list": [
+                "--: One to one",
+                "-<: One to Many",
+                ">-: Many to one"
+            ]
+        },
+        {
+            "heading": "Changing a Relation's Filter Direction",
+            "paragraphs": [
+                "Each relation also has a filter direction. To change the filter direction"
+            ],
+            "list": [
+                "Right click on the relation, click on Filter Direction and click on the filter direction you want to set for the table."
+            ]
+        }
+    ]
+}

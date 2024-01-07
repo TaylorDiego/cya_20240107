@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "Where should you increase the timeout if an error occurs during the transfer step of a table in the ODX database?",
+        "options": {
+            "option_a": "TimeXtender Portal Data estate > Data sources",
+            "option_b": "TimeXtender Portal ODX instance > Edit",
+            "option_c": "TimeXtender Portal data warehouse > Edit",
+            "option_d": "TimeXtender Portal semantic model > Edit"
+        },
+        "answer": "option_a",
+        "explanation": "If a timeout error occurs during the transfer step of a table in the ODX database, the data source command timeout needs to be increased, which is configured in the TimeXtender Portal Data estate > Data sources."
+    },
+    "question_2": {
+        "question": "What might be a next action to take if a timeout happens during nightly execution on a data source?",
+        "options": {
+            "option_a": "Increase the batch size option",
+            "option_b": "Decrease the batch size option",
+            "option_c": "Turn off automatic index generation",
+            "option_d": "Change the lookup type to Partition by"
+        },
+        "answer": "option_b",
+        "explanation": "If a timeout occurs during nightly execution on a data source, one action to consider is decreasing the batch size option, if supported by the data source adapter, to split the execution into several parts."
+    },
+    "question_3": {
+        "question": "What should you do if a timeout error occurs during data cleansing on the DWH?",
+        "options": {
+            "option_a": "Increase the timeout on the Qlik semantic model instance",
+            "option_b": "Increase the command timeout on the DWH instance",
+            "option_c": "Set up incremental load on the table",
+            "option_d": "Change the lookup type to Group by"
+        },
+        "answer": "option_b",
+        "explanation": "If a timeout error occurs during data cleansing on the DWH, the command timeout on the DWH instance should be increased."
+    },
+    "question_4": {
+        "question": "What is a recommended action if a join in the data cleansing step is not an equal join?",
+        "options": {
+            "option_a": "Increase the batch size option",
+            "option_b": "Turn off automatic index generation",
+            "option_c": "Apply views where applicable",
+            "option_d": "Change the lookup type to Partition by"
+        },
+        "answer": "option_c",
+        "explanation": "If there is a join that is not an equal join (e.g., larger than, or smaller than) during the data cleansing step, it is recommended to apply views where applicable."
+    }
+}

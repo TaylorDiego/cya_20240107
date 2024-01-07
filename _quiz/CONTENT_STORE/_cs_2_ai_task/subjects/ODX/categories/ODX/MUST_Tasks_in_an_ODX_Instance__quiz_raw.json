@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the purpose of executing a transfer task in TimeXtender?",
+        "options": {
+            "option_a": "To delete data from the data source",
+            "option_b": "To transfer data from data source to data storage",
+            "option_c": "To synchronize data between different data sources",
+            "option_d": "To generate reports from the data source"
+        },
+        "answer": "option_b",
+        "explanation": "Executing a transfer task in TimeXtender transfers data from the data source to data storage, while respecting the table selection on the data source and the task itself."
+    },
+    "question_2": {
+        "question": "How do you add a task to a data source in TimeXtender?",
+        "options": {
+            "option_a": "By executing a pre-existing task",
+            "option_b": "By importing tasks from another project",
+            "option_c": "By right-clicking the data source and following the wizard instructions",
+            "option_d": "By using the TimeXtender API"
+        },
+        "answer": "option_c",
+        "explanation": "To add a task to a data source in TimeXtender, you right-click the data source and select the appropriate task type, then follow the instructions in the wizard."
+    },
+    "question_3": {
+        "question": "Which setting is specific to Azure Data Lake Storage in TimeXtender's storage management tasks?",
+        "options": {
+            "option_a": "Delete old versions to free up storage",
+            "option_b": "Move old versions to cool storage",
+            "option_c": "Rollup incremental data with Azure Data Factory",
+            "option_d": "All of the above"
+        },
+        "answer": "option_d",
+        "explanation": "All listed settings, such as deleting old versions, moving old versions to cool storage, and rolling up incremental data with Azure Data Factory, are specific to Azure Data Lake Storage in TimeXtender's storage management tasks."
+    },
+    "question_4": {
+        "question": "What does the 'Rollup incremental data with Azure Data Factory' setting allow you to specify in TimeXtender?",
+        "options": {
+            "option_a": "The credentials for Azure Data Factory",
+            "option_b": "The minimum and maximum size of the rollup file",
+            "option_c": "The frequency of data transfer",
+            "option_d": "The type of data to be rolled up"
+        },
+        "answer": "option_b",
+        "explanation": "The 'Rollup incremental data with Azure Data Factory' setting in TimeXtender allows you to specify the minimum and maximum size of the rollup file."
+    },
+    "question_5": {
+        "question": "How can you execute a task in TimeXtender?",
+        "options": {
+            "option_a": "By double-clicking the task",
+            "option_b": "By selecting the task and pressing the 'Execute' button",
+            "option_c": "By right-clicking the task and clicking 'Execute'",
+            "option_d": "By scheduling the task to run automatically"
+        },
+        "answer": "option_c",
+        "explanation": "To execute a task in TimeXtender, you right-click the task and click 'Execute'. The status of the execution will be displayed in parenthesis after the task name in the tree."
+    },
+    "question_6": {
+        "question": "In TimeXtender, how do you select which tables a transfer or storage management task should process?",
+        "options": {
+            "option_a": "By editing the task properties",
+            "option_b": "By right-clicking the task and clicking 'Select tables...'",
+            "option_c": "By using a SQL query to specify the tables",
+            "option_d": "By configuring the data source to only include the desired tables"
+        },
+        "answer": "option_b",
+        "explanation": "For transfer and storage management tasks in TimeXtender, you select which tables the task should process by right-clicking the task and clicking 'Select tables...'."
+    }
+}

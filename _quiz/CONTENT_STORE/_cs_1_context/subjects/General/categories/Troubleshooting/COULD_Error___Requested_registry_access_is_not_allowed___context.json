@@ -1,0 +1,24 @@
+{
+    "DateTime": "2023-12-27 14:42:53",
+    "URL": "https://support.timextender.com/troubleshooting-134/error-requested-registry-access-is-not-allowed-1242",
+    "Keywords": "missing",
+    "Title": "Error_ _Requested registry access is not allowed_ _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "You receive an error message similar to the following: Requested registry access is not allowed The account used by TimeXtender does not have permission to get a list of all System DSN entries on the machine. TimeXtender needs this permission when you create a ODBC data source. Grant permission to read the list of System DSN entries in the registry by following the steps below. You need administrative rights to complete these steps. Warning: ",
+    "Lists": [
+        {
+            "heading": "Resolution",
+            "paragraphs": [
+                "Grant permission to read the list of System DSN entries in the registry by following the steps below. You need administrative rights to complete these steps."
+            ],
+            "list": [
+                "Determine which account is used by TimeXtender.",
+                "From the Start menu, click Run, type \"regedit\", and then click OK to start Registry Editor.",
+                "In the HKEY_LOCAL_MACHINE window, browse to the HKLM\\SOFTWARE\\ODBC\\ODBC.INI key. The ODBC.INI key contains a subkey for each ODBC system DSN that is registered on the machine.",
+                "Right-click the ODBC.INI key and from the context menu, click Permissions.",
+                "Add the user account that you identified in step 1 to the list of users who can access this key, and select the Read check box for this user.",
+                "Click Apply, and then close Registry Editor."
+            ]
+        }
+    ]
+}

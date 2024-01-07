@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the first step to configure Power BI for deploying a semantic model according to the TimeXtender article?",
+        "options": {
+            "option_a": "Copy the workspace connection.",
+            "option_b": "Login to app.powerbi.com",
+            "option_c": "Click the Premium tab",
+            "option_d": "Select the Premium per user or Premium per capacity License mode"
+        },
+        "answer": "option_b",
+        "explanation": "The first step listed under 'Configure Power BI' is to login to app.powerbi.com before any other actions are taken."
+    },
+    "question_2": {
+        "question": "What should you do if you receive an authentication error when first attempting to execute your model in TimeXtender?",
+        "options": {
+            "option_a": "Restart TimeXtender Desktop",
+            "option_b": "Update your data source credentials",
+            "option_c": "Copy the workspace connection again",
+            "option_d": "Create a new semantic model instance"
+        },
+        "answer": "option_b",
+        "explanation": "The article advises updating your data source credentials if you encounter an authentication error when first executing your model."
+    },
+    "question_3": {
+        "question": "Which of the following is NOT a step in adding a Power BI Premium Semantic Model Endpoint?",
+        "options": {
+            "option_a": "Paste the Workspace Connection URL copied from the Power BI workspace.",
+            "option_b": "Authenticate using a Service Principal.",
+            "option_c": "Deploy & Execute the semantic instance in TimeXtender Desktop.",
+            "option_d": "Give your endpoint a friendly name in TimeXtender."
+        },
+        "answer": "option_c",
+        "explanation": "Deploying & Executing the semantic instance is a separate step in TimeXtender Desktop, not part of adding a Power BI Premium Semantic Model Endpoint."
+    },
+    "question_4": {
+        "question": "What should you take note of when creating an App Registration in Azure for use with TimeXtender?",
+        "options": {
+            "option_a": "The Tenant ID and App ID",
+            "option_b": "The Workspace Connection URL",
+            "option_c": "The Data Warehouse credentials",
+            "option_d": "The Power BI workspace settings"
+        },
+        "answer": "option_a",
+        "explanation": "When creating an App Registration in Azure, it is important to take note of the Tenant ID and App ID, as these will be used as part of your username later."
+    }
+}

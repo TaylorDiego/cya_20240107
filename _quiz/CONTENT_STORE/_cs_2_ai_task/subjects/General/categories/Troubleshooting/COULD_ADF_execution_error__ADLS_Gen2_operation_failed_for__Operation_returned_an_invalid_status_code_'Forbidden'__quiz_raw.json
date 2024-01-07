@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What is a potential reason for an Azure Data Factory (ADF) execution error when using ODX Server with an Azure Data Lake Gen2 storage?",
+        "options": {
+            "option_a": "Incorrect file format",
+            "option_b": "Firewall blocking ADF from accessing the Data Lake",
+            "option_c": "Insufficient permissions on the ADF",
+            "option_d": "ODX Server is offline"
+        },
+        "answer": "option_b",
+        "explanation": "The error 'Forbidden' indicates that the firewall is blocking ADF from reading or writing files in the Data Lake, which is a networking issue rather than a problem with file formats, permissions, or server status."
+    },
+    "question_2": {
+        "question": "How can you resolve the 'Forbidden' error when ADF fails to access ADLS Gen2?",
+        "options": {
+            "option_a": "Restart the ADF service",
+            "option_b": "Allow access from 'All networks' in the ADLS storage account networking options",
+            "option_c": "Increase the storage capacity of ADLS Gen2",
+            "option_d": "Modify firewall settings to allow access from ADF"
+        },
+        "answer": "option_b",
+        "explanation": "To resolve the 'Forbidden' error, you can allow access from 'All networks' in the ADLS storage account networking options or modify firewall settings to specifically allow access from ADF."
+    }
+}

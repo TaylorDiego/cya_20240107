@@ -1,0 +1,55 @@
+{"folder":"(2024_01) Execution & Jobs","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of creating and executing a PowerShell executable in TimeXtender?
+
+{"score":0}To automate the process of data analysis.
+{"score":100.0}To schedule the execution of PowerShell scripts.
+{"score":0}To generate reports from the data warehouse.
+{"score":0}To install new software on the server.
+-
+{"folder":"(2024_01) Execution & Jobs","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you edit a PowerShell script in TimeXtender?
+
+{"score":0}By using the 'Edit Script' button in the execution pane.
+{"score":100.0}By right-clicking on the external executable and selecting 'Edit'.
+{"score":0}By modifying the script directly in the PowerShell console.
+{"score":0}By contacting TimeXtender support to request script changes.
+-
+{"folder":"(2024_01) Execution & Jobs","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you review if a package execution in TimeXtender is taking longer than usual without specific errors or retries?
+
+{"score":0}Review the latest code changes in the package
+{"score":100.0}Review Windows Event Viewer logs for related errors or warnings
+{"score":0}Increase the memory allocation for the TimeXtender application
+{"score":0}Check the network speed of the internet connection
+-
+{"folder":"(2024_01) Execution & Jobs","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a recommended step when dealing with slow package executions in TimeXtender?
+
+{"score":0}Implement incremental load for loading big tables
+{"score":0}Lower the number of concurrent execution threads on ODX data source
+{"score":100.0}Ignore network latency and CPU/memory usage on other machines
+{"score":0}Use a Profiler tool to trace SQL queries and resolve blocking problems
+-
+{"folder":"(2024_01) Execution & Jobs","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default behavior of execution packages when encountering an error?
+
+{"score":0}Retry indefinitely
+{"score":0}Pause the execution
+{"score":100.0}Fail the execution
+{"score":0}Skip the error and continue
+-
+{"folder":"(2024_01) Execution & Jobs","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Why might an execution package fail due to an error with a data source?
+
+{"score":0}Because the data source is permanently unavailable
+{"score":0}Due to a syntax error in the execution package
+{"score":100.0}If the load collides with updates or backups
+{"score":0}Because the data source has been deleted
+-
+{"folder":"(2024_01) Execution & Jobs","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where should you increase the timeout if an error occurs during the transfer step of a table in the ODX database?
+
+{"score":100.0}TimeXtender Portal Data estate > Data sources
+{"score":0}TimeXtender Portal ODX instance > Edit
+{"score":0}TimeXtender Portal data warehouse > Edit
+{"score":0}TimeXtender Portal semantic model > Edit
+-
+{"folder":"(2024_01) Execution & Jobs","tags":{"category":"(2024_01) SHOULD KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What might be a next action to take if a timeout happens during nightly execution on a data source?
+
+{"score":0}Increase the batch size option
+{"score":100.0}Decrease the batch size option
+{"score":0}Turn off automatic index generation
+{"score":0}Change the lookup type to Partition by

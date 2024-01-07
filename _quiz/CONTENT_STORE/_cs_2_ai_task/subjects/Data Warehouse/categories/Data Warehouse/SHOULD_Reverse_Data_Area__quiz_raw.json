@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the first step in the Reverse Data Area process in TimeXtender?",
+        "options": {
+            "option_a": "Deploy the generated objects",
+            "option_b": "Create or edit a Data Warehouse instance in the TimeXtender Portal",
+            "option_c": "Refresh TimeXtender Desktop",
+            "option_d": "Right-click on the Data Area and select Reverse Data Area"
+        },
+        "answer": "option_b",
+        "explanation": "The first step is to create or edit a Data Warehouse instance in the TimeXtender Portal to point to the preexisting database with the objects to be recreated."
+    },
+    "question_2": {
+        "question": "What should you do after selecting 'Reverse Data Area' in TimeXtender Desktop?",
+        "options": {
+            "option_a": "Deploy the objects immediately",
+            "option_b": "Select the object types to be included and click OK",
+            "option_c": "Refresh TimeXtender Desktop",
+            "option_d": "Edit the Data Warehouse instance again"
+        },
+        "answer": "option_b",
+        "explanation": "After selecting 'Reverse Data Area', you need to select the object types that you want to bring into the TimeXtender data area and then click OK."
+    },
+    "question_3": {
+        "question": "What happens to the objects in the Data Area after the Reverse Data Area process before deployment?",
+        "options": {
+            "option_a": "They are deleted",
+            "option_b": "They are marked as green",
+            "option_c": "They are marked as red",
+            "option_d": "They are automatically deployed"
+        },
+        "answer": "option_c",
+        "explanation": "The objects are generated within the Data Area and marked as red because they have not yet been deployed."
+    },
+    "question_4": {
+        "question": "What is the consequence of not updating the database in the TimeXtender Portal for the Data Warehouse instance?",
+        "options": {
+            "option_a": "The source database may be overwritten",
+            "option_b": "The objects will be marked as green",
+            "option_c": "The Reverse Data Area process will be canceled",
+            "option_d": "TimeXtender Desktop will not refresh"
+        },
+        "answer": "option_a",
+        "explanation": "If the database is not updated in the portal for the Data Warehouse instance, there is a risk that the objects in the source database may be overwritten."
+    }
+}

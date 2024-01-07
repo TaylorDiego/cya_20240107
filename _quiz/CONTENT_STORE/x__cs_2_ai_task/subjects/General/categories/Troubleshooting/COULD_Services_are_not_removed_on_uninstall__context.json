@@ -1,0 +1,23 @@
+{
+    "DateTime": "2023-12-27 14:43:05",
+    "URL": "https://support.timextender.com/troubleshooting-134/services-are-not-removed-on-uninstall-1274",
+    "Keywords": "missing",
+    "Title": "Services are not removed on uninstall _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "Sometimes the TimeXtender Scheduler service is not removed from the services list when TimeXtender is uninstalled Remove the service manually. This can be done using the command prompt as follows: ",
+    "Lists": [
+        {
+            "heading": "Resolution",
+            "paragraphs": [
+                "Remove the service manually. This can be done using the command prompt as follows:"
+            ],
+            "list": [
+                "Run command prompt with elevated rights: Click Start Type \"CMD\" Right click the icon and click Run as administrator",
+                "Click Start",
+                "Type \"CMD\"",
+                "Right click the icon and click Run as administrator",
+                "Type \"sc delete 'timeXtender Scheduler <Version>'\" in the prompt and press enter."
+            ]
+        }
+    ]
+}

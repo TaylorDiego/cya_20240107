@@ -1,0 +1,47 @@
+{
+    "DateTime": "2023-12-27 14:42:37",
+    "URL": "https://support.timextender.com/data-sources-112/timextender-dynamics-365-finance-data-source-1432",
+    "Keywords": "missing",
+    "Title": "TimeXtender Dynamics 365 Finance data source _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "TimeXtender Dynamics 365 Finance - SQL Server Enter the connection information Server Database Trust server certificate True SQL Server Authentication Active Directory Password Authentication Include all accounts  Accounts Include all accounts Compare accounts case-insensitive Add Use the following steps to set up and use this data source.  @Christian Hauggaard  = Daniel ",
+    "Lists": [
+        {
+            "heading": "Adding a TimeXtender Dynamics 365 Finance data source",
+            "paragraphs": [],
+            "list": [
+                "Sign in to the Portal, navigate to Data estate > Data sources, and click Add data source.",
+                "On the Add data source page, select the select TimeXtender Dynamics 365 Finance - SQL Server.",
+                "Enter the connection information  Add a SQL server name in the Server field.   Add the name of the database you connect to in the Database field.   Check the Trust server certificate to True.",
+                "Add a SQL server name in the Server field.",
+                "Add the name of the database you connect to in the Database field.",
+                "Check the Trust server certificate to True.",
+                "In the Authentication area, set the option to either SQL Server Authentication or Active Directory Password Authentication.",
+                "After choosing one of those options add a user and password.",
+                "The Accounts box can either be used to include or exclude accounts, depending on whether the \u201cInclude all accounts\u201d box below is checked or not. When this box is checked, then all of the accounts will be included except for those listed out in the \u201cAccounts\u201d box. Therefore, enter the accounts (or companies) that you do not want to extract data from in the Accounts box, and enter one account per line. In the example below, all accounts will be included except for the DAT account listed in the \u201cAccounts\u201d box.",
+                "Conversely, clear the \u201cInclude all accounts\u201d checkbox to explicitly define which accounts to be included. The accounts listed in the Accounts box will then be included rather than excluded, as in the following example.  If the Accounts field is empty and the \u201cInclude all accounts\u201d checkbox is checked then all accounts will be added.",
+                "Select Compare accounts case-insensitive to convert account names to lowercase before comparing them. This ensures that account names will still match even when there are differences in the letter casing.",
+                "Under Advanced Options, the provider's behavior can be fine-tuned:   Enum label length: The maximum length of an enum label. Increase this if the length is too short for the data in your system Allow dirty reads: If enabled, tables will not be locked before data is read from them. This property only applies to the SQL Server provider.",
+                "Enum label length: The maximum length of an enum label. Increase this if the length is too short for the data in your system",
+                "Allow dirty reads: If enabled, tables will not be locked before data is read from them. This property only applies to the SQL Server provider.",
+                "Click Add to save the data source"
+            ]
+        },
+        {
+            "heading": "Using the TimeXtender Dynamics 365 Finance data source",
+            "paragraphs": [
+                "Use the following steps to set up and use this data source."
+            ],
+            "list": [
+                "Open TimeXtender and then open the ODX instance. Right-click on data sources and select Add Data Source...",
+                "Provide a Name for the data source and click Next.",
+                "Select the Dynamics 365 Finance data source connection that was setup in the Portal and click Next.",
+                "In the Table Selection menu, choose the Let me select the tables option and click Next.",
+                "Use the search field to locate the tables to be used in the setup, starting with a few tables and adding more as appropriate.",
+                "Select the columns to include using Select Columns...",
+                "Be sure to add the fields DATAAREAID and MODIFIEDDATETIME, provided they exist, as they are the fields that contains the account name and a date, which are ideal to use for Incremental loading.",
+                "Set up Incremental Load. The best field to use for this is the ModifiedDateTime."
+            ]
+        }
+    ]
+}

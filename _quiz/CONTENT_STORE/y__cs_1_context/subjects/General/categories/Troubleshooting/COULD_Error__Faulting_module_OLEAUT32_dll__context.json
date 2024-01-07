@@ -1,0 +1,30 @@
+{
+    "DateTime": "2023-12-27 14:42:55",
+    "URL": "https://support.timextender.com/troubleshooting-134/error-faulting-module-oleaut32-dll-1244",
+    "Keywords": "missing",
+    "Title": "Error_ Faulting module OLEAUT32.dll _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "Intermittent crashes during execution that result in a \"hung\" load. You will find the error message if you go through the error in the event viewer. No error message occurs in TimeXtender. The load simply stays in \"Running/Unknown\" status. However, an error does occur in the Windows Event Log:   Warning: There are a number of reasons that this this error could occur. Troubleshooting the issue is an involved process that may require the assistance of your IT staff. However, there are some steps we can recommend. Basic checks 1. Log in as your system user and ensurethat the OLEAUT32.dll file exists and that you have sufficient permissions to access it. The default directory for this file isC:\\Windows\\system32\\OLEAUT32.dll.  Antivirus checks 1. Run a full antivirus scan. Some viruses will remove system files like OLEAUT32.dll and hide their own files in its place. 2. Check your antivirus settings - it is also possible for an over-enthusiastic security program to block access to the file on accident. Repair or restore the file System Restore 2. If the problem is not related to a system, software, or driver change, ensure that the following are all up to date: 3. Restore OLEAUT32.dll from a backup, if you have one. System File Checker 5. Download and executeMSVBVM50.EXE from the Microsoft Software Library. This will allow you to install files for Visual Basic 5.0 runtime, including OLEAUT32.dll. 6. Repair your operating system. Methods for doing this vary depending on which version of Windows you are using, but all of them have at least one non-destructive repair option. Hardware checks 1. Check with your network admin/check your network card and make sure that there havent been any network problems that could render the file inaccessible. 2. Check and repair the file system by running CHKDSK. 3. Check the integrity of your server's RAM. 4.Check to see if other files near the .dll on the disk can be opened. If not, the disc itself may be damaged. Re-installation options 1. Reinstall MS SQL Server and TimeXtender. 2. Reinstall your server's OS. Note: ",
+    "Lists": [
+        {
+            "heading": "Resolution",
+            "paragraphs": [
+                "There are a number of reasons that this this error could occur. Troubleshooting the issue is an involved process that may require the assistance of your IT staff. However, there are some steps we can recommend.",
+                "Basic checks",
+                "1. Log in as your system user and ensure that the OLEAUT32.dll file exists and that you have sufficient permissions to access it.  The default directory for this file is C:\\Windows\\system32\\OLEAUT32.dll.",
+                "2. Check that the following registry exists:folder: HKEY_CLASSES_ROOT\\CLSID{00020424-0000-0000-C000-000000000046}\\InprocServer32value: (default) = C:\\Windows\\system32\\oleaut32.dll",
+                "Antivirus checks",
+                "1. Run a full antivirus scan.  Some viruses will remove system files like OLEAUT32.dll and hide their own files in its place.",
+                "2. Check your antivirus settings - it is also possible for an over-enthusiastic security program to block access to the file on accident.",
+                "Repair or restore the file",
+                "1. If the problem began after a system, software, or driver change, try reverting to a previous version of the driver or software, or using System Restore to revert to a previous system configuration.",
+                "2. If the problem is not related to a system, software, or driver change, ensure that the following are all up to date:"
+            ],
+            "list": [
+                "System OS",
+                "SQL Server",
+                ".NET Framework"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "DateTime": "2023-12-27 14:43:09",
+    "URL": "https://support.timextender.com/troubleshooting-134/error-the-locale-id-of-the-source-column-and-the-locale-id-of-the-destination-column-do-not-match-1247",
+    "Keywords": "missing",
+    "Title": "Error_ The locale id of the source column and the locale id of the destination column do not match _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "Executing a data areatable results in an error message. The locale id '####' of the source column '<ColumnName>' and the locale id '####' of the destination column '<ColumnName>' do not match. There are two potential causes for this error: Depending on the cause above, the error can be resolved by:  @Christian Hauggaard We have an issue where the collation of the data source DB (Chinese_PRC_CI_AS AS) and the collation of the ODXSQL Storage DB (SQL_Latin1_General_CP1_CI_AS)donot match. Using COLLATE on the columns in a Query table results in locale id error message above. Is the only solution to change collation on the ODX Storage DB? Best, Pontus @pontus.berglund @Christian Hauggaard Sorry, I was not very detailed in my original comment. The problem is not that we are unable to read from the source, but that Chinese characters show up as ??? in the ODX SQL DB table. In our attempt to solve this, we tried using the COLLATE clause in a query table like this:  SQL_Latin1_General_CP1_CI_AS is unicode compatible, so if[ChineseColumn] had data type nvarchar instead of varchar, I believe we would be getting the correct characters. We tried to create the following query table: SELECT CAST([ChineseColumn] AS NVARCHAR) FROM [dbo].[ChineseTable] but this also gave us the locale id error. As for testing, the error could be replicated by creating a source table with this code: Then creating a data source connection to this table from an ODX using SQL storage in a SQL DB with collationSQL_Latin1_General_CP1_CI_AS. @Christian Hauggaard We managed to solve it with this query table:  ",
+    "Lists": [
+        {
+            "heading": "Cause",
+            "paragraphs": [
+                "There are two potential causes for this error:"
+            ],
+            "list": [
+                "The database used for the Data Warehouse instance and one or more of the source databases are using different collation options. Check the collation settings in SSMS to verify whether this is the case.",
+                "A numeric field is being converted to a text field, and you are using ODX SQL storage."
+            ]
+        },
+        {
+            "heading": "Resolution",
+            "paragraphs": [
+                "Depending on the cause above, the error can be resolved by:"
+            ],
+            "list": [
+                "Change the collation of the databases so that they match each other. Alternatively change the collation of the problematic columns within the database. Alternatively create a custom view specifying the collation.",
+                "Use a data type override for the relevant numeric column in the ODX data source similar to below in order to convert the numeric field to text prior to bringing it into your data area."
+            ]
+        }
+    ]
+}

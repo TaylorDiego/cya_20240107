@@ -1,0 +1,30 @@
+{
+    "DateTime": "2023-12-27 14:42:23",
+    "URL": "https://support.timextender.com/data-sources-112/connect-to-xml-811",
+    "Keywords": "missing",
+    "Title": "Connect to XML _ Community",
+    "Author": "Thomas Lind",
+    "Text": "Go through this guide before you start. Add a CData data source XML files can be structured in different ways Here below is how a XML file structured in element form looks: Here is how a XML file structured in attribute form looks: To make the Kings.XML file Download this link and save it as Kings.XML http://mysafeinfo.com/api/data?list=englishmonarchs&mappingtype=element&rootname=englishmonarchs&elementname=Monarch This is the URI link to the file I use for the element setup. https://mysafeinfo.com/api/data?list=top100rocksongs_billboard_2013&format=xml&abbreviate=false&case=default&token=e3ODIxQFAgT9TD69GSlvZ6rfgMKnZdVt&mappingtype=element&formatting=indented This is the URI link to the file that uses attributes. https://mysafeinfo.com/api/data?list=top100rocksongs_billboard_2013&format=xml&abbreviate=false&case=default&token=e3ODIxQFAgT9TD69GSlvZ6rfgMKnZdVt&mappingtype=attribute&formatting=indented Add a data source and choose the XML provider. XML guide from CData If the XML source is a file you need to fill out the following fields. Add a link to the file. Be sure that all accounts that could decide to execute this have access to the folder where the file is stored. If your XML is stored in an online location, you need to fill out the following fields. Add a link to the file. XPath You need to add a link to the location of the data and a XPath: XPath  rootname  element name Following the setup, you need to map the source to the ODX, add the data source to your ODX instance and run the synchronize task. This is no different than all other data source types. Besides this you can also set up Query Tables, Data Type overwrites, Incremental load and data selection rules. The options for this provider are similar to those you got for REST and to some degree JSON. You can use REST instead of XML, the only limit is that the data must be XML, otherwise they are interchangeable. Row Scan Depth 0 Raw nested data When I create a file from this, adds it as a data source like this and use no other features. It gives me one table called people and when I preview it, each nested part is put into one field. Data Model Flatten Documents Relational The setup is as follows. Relational Like this. People now looks like this. And Vehicles flatten arrays FlattenDocument Like this. flatten arrays Is an option to split fields into more fields while keeping the existing one. Flatten Arrays It will look as below when you synchronize. The original field still exists and new versions of the field contain the data with the name from before and a digit. Like features, features.0 features.1, and so forth. You do not need to know the amount of iterations it needs to go through, it just has to be high enough to get all values added. ",
+    "Lists": [
+        {
+            "heading": "With Elements",
+            "paragraphs": [
+                "If the XML source is a file you need to fill out the following fields. Add a link to the file. Be sure that all accounts that could decide to execute this have access to the folder where the file is stored."
+            ],
+            "list": [
+                "URI: <the location of the kings.xml file>"
+            ]
+        },
+        {
+            "heading": "With Attributes",
+            "paragraphs": [
+                "If the XML file is using attributes as its element type, you need to take into account that it cant automatically read the XPath. You need to provide it.",
+                "You need to add a link to the location of the data and a XPath:"
+            ],
+            "list": [
+                "URI: https://mysafeinfo.com/api/data?list=top100rocksongs_billboard_2013&format=xml&abbreviate=false&case=default&token=e3ODIxQFAgT9TD69GSlvZ6rfgMKnZdVt&mappingtype=attribute&formatting=indented",
+                "XPath: top100rocksongs_billboard_2013\\t"
+            ]
+        }
+    ]
+}

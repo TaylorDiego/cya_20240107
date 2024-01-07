@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:42:03",
+    "URL": "https://support.timextender.com/timextender-portal-111/portal-security-947",
+    "Keywords": "missing",
+    "Title": "Portal Security _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "This document will outline the different security efforts made on the Software as a Service (SaaS) TimeXtender Portal, with a brief description of each item. Auth0 The Portal has enabled HTTPS Only, meaning all unsecured HTTP requests will be redirected as HTTPS requests, making sure all communications between the Portal and the User is encrypted.  Some of our backend services are protected by a firewall with a whitelist rule. The whitelist rule is that only approved apps and services can access those backend services. For communications between the various services we use custom Authentication through Client secrets. For Databases we use connection strings with username and password. All connection credentials and other sensitive data is protected with 256 bit AES encryption ",
+    "Lists": []
+}

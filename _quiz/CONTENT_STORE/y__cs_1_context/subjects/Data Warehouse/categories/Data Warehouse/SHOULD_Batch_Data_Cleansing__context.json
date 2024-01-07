@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:40:37",
+    "URL": "https://support.timextender.com/data-warehouse-108/batch-data-cleansing-1035",
+    "Keywords": "missing",
+    "Title": "Batch Data Cleansing _ Community",
+    "Author": "missing",
+    "Text": "Batch Data Cleansing You can choose to split the INSERT statement up in batches during data cleansing, i.e. when copying data from the transformation view for a table to the valid table. This saves log space on the SQL Server, which provides forbetter performance on large tables with 100,000s or millions of rows. To enable batch data cleansing, follow the steps below.  Note that the optimal batch size may require some evaluation before itis apparent. Execute the batch data cleansing process and monitor the results to see if any adjustments should be made to the batch size. The following community post contains useful informationregarding best practices for batch data cleansing.  The optimal batch size is determined by the amount of memory available on the server to support the batch data cleansing process. Selecting the largest batch size that the available memory can support will generally be the optimal batch size. ",
+    "Lists": []
+}

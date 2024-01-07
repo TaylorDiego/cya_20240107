@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:40:19",
+    "URL": "https://support.timextender.com/data-warehouse-108/what-is-a-data-staging-area-826",
+    "Keywords": "missing",
+    "Title": "What is a Data Staging Area_ _ Community",
+    "Author": "missing",
+    "Text": "A data staging area is a storage area between the data sources and a data warehouse. The staging area is mainly used to quickly extract data from its data sources, minimizing the impact onthe sources. ODX Server Data Lake SQL storage ODX  MDW staging  MDW staging ",
+    "Lists": []
+}

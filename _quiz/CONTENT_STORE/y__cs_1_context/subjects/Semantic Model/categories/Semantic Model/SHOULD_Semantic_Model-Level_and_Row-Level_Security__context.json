@@ -1,0 +1,127 @@
+{
+    "DateTime": "2023-12-27 14:41:47",
+    "URL": "https://support.timextender.com/semantic-model-109/semantic-model-level-and-row-level-security-1203",
+    "Keywords": "missing",
+    "Title": "Semantic Model-Level and Row-Level Security _ Community",
+    "Author": "Greg Lennox",
+    "Text": "Semantic models comprisethe serving layer in a data warehouse and representtheculmination of all the extraction, transformation, and loading that happens prior to the tables being added to the semantic model. TimeXtender Semantic Security allows developers to implement role based accessto the semantic model, providing access to either the entire semantic model, or asubset of the model data that isrelated to specificfield values. Model-Level Security is configured by creating a role that is not associated to any row-level security setup,and then associating that roleto an endpoint. This associationwill grant full access to the endpoint for all the members of that role. Row-Level Secuirty is configured according to the following general steps that are outlinedin more detail below. A Row-Level Security Setup is created under a specific field and specifies which field values that the role will have access to, which also means that the role will not have access to data that is related to the field values that are not specified as part of the setup. In this way, roles and row-level security setups work together to provide a security layer to the semantic model based on the identity of the user that is accessing it. For example, the TerritoryWest security setup shown below is based on the Territoryfield and is granting access to the subset of data that is related to the West Territory field value. Any role associated with this security setup will not have access to data that is outside of theWest territory.  The specific steps for implementing model-level and row-level security are outlined as follows. Use the following steps to add a role.  Mapping a role to an endpoint will providemodel-level access to that endpoint for the members of that role, provided the role does not have an associated row-level secuirty setup.Use the following steps to map a role to an endpoint. Roles   Note: Row-Level Security Setup There are two types of row-level security setups that are available: row-level security setup.  Note: dynamic row-level security Dynamic Row-Level Security Setup  OK Row-Level Security Setup Role Role Members Row-Level Security Setup Role.  How to Setup Up Row-level Security Multiple Roles can be associated with the same Row-Level Security Setup and vice-versa, providing flexibility in the deployment of the access security. Thetwo basic approaches are as follows: As hinted above, Analysis Services and Qlik handles security differently: Example 1: Using All to represent all the field values: Dynamic Row-LevelSecuritySetup The semantic FullName field has been renamed from FullName to Sales_Rep_Name in the Semantic model, but the original name of FullName is still visible inside ofthe parentheses, and this is the name that should be used for the field in the security table, since it matches the name of the field in the DSA source table. A data warehouse security table is populated with the FullNamefield values and the Members that the field values will be mapped to. The Security table has the following two entries:  Example 2: Using Role Members to assign a specific field value to all the role members. Territory is the name of the Semantic model field that the Dynamic Row-LevelSecuritySetup is created under as shown below.  A data warehouse security table is populated with the Territoryfield values and the Members that the field values will be mapped to. Role Members The result is that all the members of the role associated with this security setup will only have access to data in the West territory.   ",
+    "Lists": [
+        {
+            "heading": "Adding a Role",
+            "paragraphs": [
+                "Use the following steps to add a role."
+            ],
+            "list": [
+                "In the Semantic model tree, right-click Roles and select Add Role.",
+                "The Add Role window opens as follows:",
+                "In the Name box, enter a name for the role.",
+                "Click the Add Users button to add users from the Local Computer Users directory, which will open the normal Select Users and Groups dialog.",
+                "Click the Add External Users button to add external users, such as those in Azure Active Directory. The Add External Users window will appear as follows:",
+                "Enter the user's email address and click the Add button. Active Directory Groups can also be added, provided their name is specified in the following format:  <obj:groupid123@tenantid123>.",
+                "Click OK to return to the Edit Role window, which will list out the new users in the Instance pane below. Note the format for the different types of user as shown below.",
+                "Click OK to add the role."
+            ]
+        },
+        {
+            "heading": "Mapping a Role to an Endpoint",
+            "paragraphs": [
+                "Mapping a role to an endpoint will provide model-level access to that endpoint for the members of that role, provided the role does not have an associated row-level secuirty setup. Use the following steps to map a role to an endpoint.",
+                "In the Semantic Model tree, expand the Roles folder, and use either of the following two methods to complete the mapping."
+            ],
+            "list": [
+                "Right-click a role, select Endpoints, and then select the specific endpoint for the role mapping.",
+                "Role mapping can also be created by simply dragging the role to the endpoint as shown in the GIF below."
+            ]
+        },
+        {
+            "heading": "Adding a Row-Level Security Setup",
+            "paragraphs": [
+                "Row-Level security is implemented by associating a Row-Level Security Setup to an existing role.",
+                "There are two types of row-level security setups that are available:"
+            ],
+            "list": [
+                "Manual - Values and members are mapped in the security setup dialog.",
+                "Dynamic - Mappings are configured to be read from a table in the data warehouse."
+            ]
+        },
+        {
+            "heading": "Manual Row-Level-Security",
+            "paragraphs": [
+                "Use the following steps to manually add a row-level security setup."
+            ],
+            "list": [
+                "Right-click a field and select Add Row-level Security Setup to open the following window.",
+                "In the Name box, enter a name for the setup.",
+                "In the Type menu, keep the default setting of \u201cManual.\u201d",
+                "Complete the following steps to add one or more security setups: From the Values list, select one or more of the available field values. From the Members list, check the (Role Members) box to apply the setup to the members of the Role(s) that the setup will later be associated with. (Optional) Additional members can be added to the Members list using the Add Member box below, which provides a way to configure access for users that are not members of any role. Enter a username in the text box and click the Add Member button to add a user or group to the Members list. Usernames may need to be Full Qualified in order to resolve properly, i.e. specified in the following format: <DomainName\\UserName>. Click the \u201cAdd >\u201d button to map the selected values to the selected members.",
+                "From the Values list, select one or more of the available field values.",
+                "From the Members list, check the (Role Members) box to apply the setup to the members of the Role(s) that the setup will later be associated with.",
+                "(Optional) Additional members can be added to the Members list using the Add Member box below, which provides a way to configure access for users that are not members of any role. Enter a username in the text box and click the Add Member button to add a user or group to the Members list. Usernames may need to be Full Qualified in order to resolve properly, i.e. specified in the following format: <DomainName\\UserName>.",
+                "Click the \u201cAdd >\u201d button to map the selected values to the selected members.",
+                "Note: Users added as Additional Members may not work with all Endpoints. Verify that access is working properly for all Additional Members added to Row-Level Security Setups that are associated with Roles that are associated with Endpoints.",
+                "The Add Row-Level Security Setup dialog may appear similar to the following once a series of setups have been added.  In the list of setups above, some of the field values are mapped to role members while other field values are mapped to specific additional users."
+            ]
+        },
+        {
+            "heading": "Add Dynamic Row-Level-Security",
+            "paragraphs": [
+                "Use the following steps to add a dynamic row-level security setup. It may be helpful to have the security setup outlined in a view or text file ahead of time, in order to assist in validating that the security access is working properly.",
+                "A Dynamic Row-Level Security Setup uses a data set within the data warehouse to get the values that will be mapped to the members. Use the following steps to create a Dynamic Row-Level Security Setup."
+            ],
+            "list": [
+                "Right-click a field and select Add Row-level Security Setup.",
+                "In the Type list, select Dynamic.",
+                "In the Table list, click the table or view that contains the field whose values will be used for the mapping.",
+                "In the 'Values' field list, select the field that contains the values that will be used to filter the data, which corresponds to the field that the Dynamic Row-Level Security Setup is being created under.",
+                "In the 'All values' value box, select an existing field value, or enter a new value that will be used to represent or map to all of the field values, i.e. All.",
+                "In the 'Members' field list, click the column that contains the values that correspond to the role members, i.e. \u201cLogon\u201d.",
+                "In the 'Role members' value box, select an existing value or enter a new value that will be used to indicate any member of any role that has been mapped to this row-level security setup, i.e. Role Members.",
+                "Click OK to save the setup."
+            ]
+        },
+        {
+            "heading": "Mapping a Row-level Security Setup to a Role",
+            "paragraphs": [
+                "Mapping a Row-Level Security Setup to a Role restricts access to data on that endpoint to the field values that have been mapped to the Role Members as part of the setup.",
+                "Use either of the following two methods to map a Row-Level Security Setup to a Role."
+            ],
+            "list": [
+                "Right-click the Row-Level Security Setup, select Roles, and then select the specific Role from the Roles list.",
+                "Drag the Row-Level Security Setup onto the Role."
+            ]
+        },
+        {
+            "heading": "Setting Up Row-level Security",
+            "paragraphs": [
+                "There are different ways of setting up row-level security depending on the type of endpoint(s) and how security is handled in your organization. Click on the following link for more information on How to Setup Up Row-level Security",
+                "Multiple Roles can be associated with the same Row-Level Security Setup and vice-versa, providing flexibility in the deployment of the access security.",
+                "The two basic approaches are as follows:"
+            ],
+            "list": [
+                "One role and one setup: Add one Role. If you target SSAS Tabular, all users and groups that require access must be added to the role to have access. If you only target Qlik, the role can be empty since it only serves as a link between the security setup and the endpoint. Add one Row-Level Security Setup. Map the relevant Values to the Members (or Users). Using Active Directory groups as role members can expedite the setup and maintenance of the security setup.",
+                "Add one Role. If you target SSAS Tabular, all users and groups that require access must be added to the role to have access. If you only target Qlik, the role can be empty since it only serves as a link between the security setup and the endpoint.",
+                "Add one Row-Level Security Setup. Map the relevant Values to the Members (or Users).",
+                "Using Active Directory groups as role members can expedite the setup and maintenance of the security setup.",
+                "Many roles and setups: Add a role for each user or group that should have access to a specific subset of data. Add a setup for each of the roles. Map the relevant values to \"(Role Member)\" in the Members list. Map the security setups to the roles and the roles to the endpoint(s). This approach is basically using roles as user groups in the semantic layer.",
+                "Add a role for each user or group that should have access to a specific subset of data.",
+                "Add a setup for each of the roles. Map the relevant values to \"(Role Member)\" in the Members list.",
+                "Map the security setups to the roles and the roles to the endpoint(s).",
+                "This approach is basically using roles as user groups in the semantic layer."
+            ]
+        },
+        {
+            "heading": "Dynamic Row-Level Security Setup examples using a data warehouse security table.",
+            "paragraphs": [
+                "Example 1: Using \u201cAll\u201d to represent all the field values:",
+                "\u201cFullName\u201d is the original name of the semantic model field that the Dynamic Row-Level Security Setup is created under as shown below.",
+                "The semantic \u201cFullName\u201d field has been renamed from \u201cFullName\u201d to \u201cSales_Rep_Name\u201d in the Semantic model, but the original name of \u201cFullName\u201d is still visible inside of the parentheses, and this is the name that should be used for the field in the security table, since it matches the name of the field in the DSA source table.",
+                "A data warehouse security table is populated with the \u201cFullName\u201d field values and the Members that the field values will be mapped to.",
+                "The Security table has the following two entries:"
+            ],
+            "list": [
+                "The FullName field value of \u201cTony Roma\u201d is mapped to the Tony Roma member logon, which configures row-level security so that Tony Roma only has access to his own data.",
+                "The FullName field value of \u201cAll\u201d is mapped to the Thomas Pale member logon, which means that Thomas Pale has access to the data for all of the FullName field values. This works because \u201cAll\u201d has been configured in the Dynamic Row-Level Security Setup to represent all of the field values as shown below."
+            ]
+        }
+    ]
+}

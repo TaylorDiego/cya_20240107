@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the default setting for Index Automation in TimeXtender?",
+        "options": {
+            "option_a": "Manual",
+            "option_b": "Automatic",
+            "option_c": "Disabled",
+            "option_d": "Legacy"
+        },
+        "answer": "option_b",
+        "explanation": "The default setting for Index Automation in TimeXtender is 'Automatic', which updates the indexes whenever changes to the instance could trigger a new or altered index."
+    },
+    "question_2": {
+        "question": "What does setting the Index Automation to 'Manual' allow users to do?",
+        "options": {
+            "option_a": "Let TimeXtender manage all indexes automatically.",
+            "option_b": "Prevent any indexes from being created.",
+            "option_c": "Give users complete control over the indexes, allowing them to add, delete, and modify them.",
+            "option_d": "Automatically generate new indexes without user intervention."
+        },
+        "answer": "option_c",
+        "explanation": "Setting Index Automation to 'Manual' enables users to utilize TimeXtender's index generation features while retaining complete control to add, delete, and modify indexes."
+    },
+    "question_3": {
+        "question": "What happens when the Index Automation is set to 'Disabled'?",
+        "options": {
+            "option_a": "Indexes are managed by TimeXtender with high performance tuning.",
+            "option_b": "Indexes are generated during execution as needed by data cleansing, potentially multiple times, without fine-tuning for performance.",
+            "option_c": "No indexes are generated at all.",
+            "option_d": "Indexes are only generated manually by the user."
+        },
+        "answer": "option_b",
+        "explanation": "When Index Automation is set to 'Disabled', TimeXtender uses legacy behavior to generate indexes during execution as needed by data cleansing, without performance fine-tuning, and may create the same index multiple times."
+    },
+    "question_4": {
+        "question": "Which index option in TimeXtender guarantees that each combination of values in the index key is unique?",
+        "options": {
+            "option_a": "NonClustered Index",
+            "option_b": "Clustered Columnstore Index",
+            "option_c": "Columnstore Index",
+            "option_d": "Unique Index"
+        },
+        "answer": "option_d",
+        "explanation": "The Unique Index option in TimeXtender ensures that each combination of values in the index key is unique, preventing duplicate combinations in the indexed columns."
+    }
+}

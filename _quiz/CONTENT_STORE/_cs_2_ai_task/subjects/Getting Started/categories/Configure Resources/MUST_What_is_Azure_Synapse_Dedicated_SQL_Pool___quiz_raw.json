@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the primary benefit of using Azure Synapse Analytics in terms of cost management?",
+        "options": {
+            "option_a": "It offers unlimited storage for a fixed price.",
+            "option_b": "It allows users to pause the service and only be charged for storage.",
+            "option_c": "It provides free computation resources indefinitely.",
+            "option_d": "It charges a flat rate regardless of the amount of data stored."
+        },
+        "answer": "option_b",
+        "explanation": "Azure Synapse Analytics helps manage costs by allowing users to pause the service, which releases compute resources and incurs charges only for storage used."
+    },
+    "question_2": {
+        "question": "What happens to your data when the Azure Synapse Dedicated SQL Pool is paused?",
+        "options": {
+            "option_a": "Data is deleted and must be restored from a backup.",
+            "option_b": "Data is archived and incurs additional charges.",
+            "option_c": "Data remains intact but is unavailable for queries.",
+            "option_d": "Data is automatically moved to Azure Blob Storage."
+        },
+        "answer": "option_c",
+        "explanation": "When the Azure Synapse Dedicated SQL Pool is paused, the data remains intact but is not accessible via queries."
+    },
+    "question_3": {
+        "question": "What are Data Warehouse Units (DWUs) used for in Azure Synapse SQL Pool?",
+        "options": {
+            "option_a": "To measure the amount of storage used.",
+            "option_b": "To determine the number of concurrent queries allowed.",
+            "option_c": "To measure the computational power and affect performance and cost.",
+            "option_d": "To track the number of user connections to the database."
+        },
+        "answer": "option_c",
+        "explanation": "DWUs measure the computational power in a Synapse SQL Pool, which influences the available compute nodes, performance, and cost."
+    },
+    "question_4": {
+        "question": "Which type of table distribution is ideal for Dimension Tables smaller than 2GB in Azure Synapse?",
+        "options": {
+            "option_a": "Round-robin",
+            "option_b": "Replicated",
+            "option_c": "Hash",
+            "option_d": "Sharded"
+        },
+        "answer": "option_b",
+        "explanation": "Replicated distribution is ideal for Dimension Tables smaller than 2GB, as it allows for quick access to the data without the need for sharding."
+    },
+    "question_5": {
+        "question": "When choosing a distribution column for Azure Synapse, which characteristic should be avoided?",
+        "options": {
+            "option_a": "Columns with many unique values",
+            "option_b": "Columns commonly used in JOIN or Group By clauses",
+            "option_c": "Columns that cannot be updated",
+            "option_d": "Date columns where all users filter on the same date"
+        },
+        "answer": "option_d",
+        "explanation": "Date columns where all users filter on the same date should be avoided as a distribution column because it can lead to uneven processing load across nodes."
+    },
+    "question_6": {
+        "question": "At what point does Azure Synapse Dedicated SQL Pool begin to queue queries?",
+        "options": {
+            "option_a": "More than 60 concurrent queries",
+            "option_b": "More than 128 concurrent queries",
+            "option_c": "More than 1,000 concurrent queries",
+            "option_d": "More than 10,000 concurrent queries"
+        },
+        "answer": "option_b",
+        "explanation": "Azure Synapse Dedicated SQL Pool starts to queue queries when it receives more than 128 concurrent queries, processing them on a first-in-first-out basis."
+    }
+}

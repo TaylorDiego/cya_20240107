@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the primary benefit of creating a bacpac export of a database as mentioned in the article?",
+        "options": {
+            "option_a": "It includes the security settings.",
+            "option_b": "It is the only way to move a database to Azure SQL.",
+            "option_c": "It takes way less space compared to a backup.",
+            "option_d": "It automatically transfers all users and roles."
+        },
+        "answer": "option_c",
+        "explanation": "The article highlights that a bacpac export takes way less space compared to a traditional backup."
+    }
+    , "question_2": {
+        "question": "According to the article, what must be done with the roles and users during an Azure-to-Azure migration?",
+        "options": {
+            "option_a": "They are automatically transferred.",
+            "option_b": "They must be transferred in a separate step.",
+            "option_c": "They are included in the bacpac export.",
+            "option_d": "They remain unchanged."
+        },
+        "answer": "option_b",
+        "explanation": "The roles and users are deleted during an Azure-to-Azure migration and must be transferred separately."
+     }
+    , "question_3": {
+        "question": "What is the default TCP port for SQL Server that must be enabled on the Windows Firewall to allow remote connections?",
+        "options": {
+            "option_a": "1433",
+            "option_b": "8080",
+            "option_c": "3306",
+            "option_d": "1521"
+        },
+        "answer": "option_a",
+        "explanation": "TCP port 1433 is the default port for SQL Server. It must be enabled in the Windows Firewall to allow for remote connections."
+    }
+    , "question_4": {
+        "question": "In SQL Server Management Studio (SSMS), which authentication mode should be enabled for remote connections?",
+        "options": {
+            "option_a": "Windows Authentication mode",
+            "option_b": "SQL Server and Windows Authentication mode",
+            "option_c": "SQL Server Authentication mode",
+            "option_d": "No authentication mode"
+        },
+        "answer": "option_b",
+        "explanation": "SQL Server and Windows Authentication mode should be enabled in SSMS to allow for both SQL Server logins and Windows accounts."
+    }
+}

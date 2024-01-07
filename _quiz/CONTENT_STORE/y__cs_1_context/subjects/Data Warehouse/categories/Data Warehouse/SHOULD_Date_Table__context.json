@@ -1,0 +1,68 @@
+{
+    "DateTime": "2023-12-27 14:41:24",
+    "URL": "https://support.timextender.com/data-warehouse-108/date-table-1047",
+    "Keywords": "missing",
+    "Title": "Date Table _ Community",
+    "Author": "Thomas Lind",
+    "Text": "To analyze data over time, it's common to include a date dimension in your data model. By adding a date table to your data area, you can provide the semantic instance with a time dimension that can be used in calculations. Date tables are typically added to semantic instances because they simplify the calculation needed to compare different dates related to each other. In addition to using various components of the date value as time dimensions (Day, Week, Month, Quarter, Year), date tables also contain indexes that help determine the relation of any date value to the current date. Updating a Date Table Custom time periods can be added to account for special periods of time such as holidays or yearly sales campaigns. These custom periods can be comprised of one or more individual time periods and provide a quick and convenient way to account for these special periods of time. To add a date table, follow the steps below.   After your date table is deployed, you can complete the following to create a data hierarchy. After setting this change, the table will now have the following fields set. The following example shows creating an import file for the 2023 holidays usingthe required time period format of name;startdate;enddate . After the file is imported, the necessaryfields will be created and appear as follows.    @Thomas Lind I am not sure if this is the correct place to drop a question but it is related to the toppic..  I set the date display to 'DD-MM-YYY in the 'Edit Date Table settings. After deploying and executing the DateValue is presented as 'MM-DD-YYY.  What could be wrong?    @boyclaesen It is due to the Date format you have chosen.  If I preview it it looks like this. Notice the Date format and compare it to the DisplayDate. If I click on Query Tool it again looks different. If I were to change it to look like yours with slash instead of - and dd-mm-yyyy format it will look like this. The preview and in the query tool.  I hope this explains it. I myself prefer a date format that includes the hour:minute:second part as well as the date as I often work with almost equal date values. @Thomas Lind @boyclaesen as far as I know the Date display formatting options directly affect the filling of any varchar type fields in the Date table. With the top line of options only deciding the ordering of day/month/year and the bottom row determining the separator (even if the top row shows - ). The display of datetime and date are decided by the formatting you choose in the preview dialog. Other SQL Server tools like Management Studio may differ as this can depend on collation and regional settings. I have a question about my date table. First day of the week is set to Monday and First week of the year is set to Starts on Jan 1. But week 1 only has one day (Jan 1), and it's already week 2 on Jan 2:   Is that the expected behavior? I'm guessing my settings for First day of the week and First week of the year are incompatible (US versus European)? @RLB the first of January was a Sunday, so that would make week two start on the Monday. TX's date table gives you full control over those settings, if your SQL settings deviate that would make function calls used elsewhere mismatch I expect. Here in NW Europe we usually use ISO 8601 (which is TX's default setup I think) numbering. think https://support.microsoft.com/en-us/office/weeknum-function-e5c43a03-b4ab-426c-b411-b18c13c75340 But you're right, my SQL settings deviate from the date table settings which causes issues. @RLB  tl;dr: a weeknumber may not always represent 7 days, weeknumber 1 is not in the previous year (almost 100%), weeknumbers are like all things dates: overly complicated. Lotus 1-2-3 https://learn.microsoft.com/en-us/sql/t-sql/statements/set-datefirst-transact-sql?view=sql-server-ver16 https://support.microsoft.com/en-au/office/isoweeknum-function-1c2d0afe-d25b-4ab1-8894-8d0520e90e0e https://en.wikipedia.org/wiki/ISO_8601#Week_dates https://devblogs.microsoft.com/oldnewthing/20160311-00/?p=93144 https://learn.microsoft.com/en-us/archive/blogs/shawnste/iso-8601-week-of-year-format-in-microsoft-net  ",
+    "Lists": [
+        {
+            "heading": "Adding a date table",
+            "paragraphs": [
+                "To add a date table, follow the steps below."
+            ],
+            "list": [
+                "On a data warehouse, right click Tables and click Add Date Table to open the Add Date Table window.",
+                "In the Name box, type a name for the table.",
+                "Select a Date range by entering a Start date and an End date. Regarding the end date, there are two ways that it can be entered. Either a normal date value can be set, or the Days Ahead option can be used to specify a number that indicates the number days to be added to the current date in order to calculate the end date.  The Days ahead feature provides a way for a table to extend itself and effectively have no end, as new rows may get added to the table each time it is executed.",
+                "Under Date display, select the date Format to be used from the following patterns: YYYY-MM-DD DD-MM-YYYY MM-DD-YYYY",
+                "YYYY-MM-DD",
+                "DD-MM-YYYY",
+                "MM-DD-YYYY",
+                "Select which Separator to used with the above date format from one of the following: - (dash) / (slash) . (dot)",
+                "- (dash)",
+                "/ (slash)",
+                ". (dot)",
+                "Under Week numbering, click the First day of the week from the following two choices: Sunday Monday",
+                "Sunday",
+                "Monday",
+                "Select the how to define the First week of the year from one of the following options: First 4-day week (following the ISO 8601 standard, common in Europe) Starts on Jan 1 (common in North American) First full week",
+                "First 4-day week (following the ISO 8601 standard, common in Europe)",
+                "Starts on Jan 1 (common in North American)",
+                "First full week",
+                "Under Fiscal year, click Staggered to use a staggered fiscal year and click the first month of the staggered fiscal year in the First month list.",
+                "(Optional) Click Add under Custom periods to add a custom time period to the date table. In the Add Custom Period window that opens up, first enter a Name for the custom period itself, and then specify the Name, Start date and End date of one or more time periods that will comprise this custom period. In addition to entering time periods manually, they can also be imported and exported using the Import and Export buttons. Once all the time periods have been entered, click OK to save the new custom period.",
+                "(Optional) Click Custom names to change the names used for days, quarters and months. In the Date Table Custom Names window that opens up, enter the custom names to be used for specific time periods as needed. The default names are derived from the regional settings of that system. Click OK to save the custom names once complete.",
+                "Click OK to add the date table."
+            ]
+        },
+        {
+            "heading": "Add a Date Hierarchy",
+            "paragraphs": [
+                "After your date table is deployed, you can complete the following to create a data hierarchy."
+            ],
+            "list": [
+                "Edit the MonthName field and set the \u201cSort by\u201d setting to use the MonthKey, which is the integer number of the month."
+            ]
+        },
+        {
+            "heading": "Set up a Fiscal year",
+            "paragraphs": [],
+            "list": [
+                "Create or edit a Date Table",
+                "Change the setting to Staggered",
+                "Choose a month to be the first month."
+            ]
+        },
+        {
+            "heading": "Set up custom names",
+            "paragraphs": [],
+            "list": [
+                "Create or edit a Date table",
+                "Click on Custom names to open the Date Table Custom Names window, which by default appears as follows:",
+                "Change the default names to a custom name to be used instead as is appropriate.",
+                "Once the table has been deployed and executed, the output of the date values may appear as follows:"
+            ]
+        }
+    ]
+}

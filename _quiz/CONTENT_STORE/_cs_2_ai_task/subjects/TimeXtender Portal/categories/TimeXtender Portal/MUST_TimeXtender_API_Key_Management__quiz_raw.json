@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "Where in the TimeXtender Portal can you create a new API key?",
+        "options": {
+            "option_a": "Under Admin, then Security and permissions",
+            "option_b": "Under the Dashboard settings",
+            "option_c": "In the Data Sources configuration",
+            "option_d": "In the Help and Support section"
+        },
+        "answer": "option_a",
+        "explanation": "To create a new API key in TimeXtender Portal, you navigate to Admin and then to Security and permissions as per the provided instructions."
+    },
+    "question_2": {
+        "question": "What is the first step to delete an API key in the TimeXtender Portal?",
+        "options": {
+            "option_a": "Type the name of the API key to confirm deletion",
+            "option_b": "Navigate to Security and permissions and select the delete icon next to the API key",
+            "option_c": "Add a Comment stating the reason for deletion",
+            "option_d": "Select Delete to confirm and finalize the deletion"
+        },
+        "answer": "option_b",
+        "explanation": "The first step to delete an API key is to navigate to Security and permissions and select the delete icon next to the API key."
+    },
+    "question_3": {
+        "question": "What should you do immediately after generating a new API key?",
+        "options": {
+            "option_a": "Select Close to close the window",
+            "option_b": "Select Copy and save the key in a secure location",
+            "option_c": "Provide a name for the API key",
+            "option_d": "Navigate back to the main dashboard"
+        },
+        "answer": "option_b",
+        "explanation": "After generating a new API key, it is crucial to select Copy and save the key in a secure location because it will not be visible again."
+    },
+    "question_4": {
+        "question": "What must you do to confirm the deletion of an API key?",
+        "options": {
+            "option_a": "Just select the delete icon",
+            "option_b": "Type the name of the API key",
+            "option_c": "Provide a reason for deletion in the comments",
+            "option_d": "Select Delete to confirm and finalize the deletion"
+        },
+        "answer": "option_d",
+        "explanation": "To confirm the deletion of an API key, you must select Delete to confirm and finalize the deletion process."
+    },
+    "question_5": {
+        "question": "Why is it important to save the API key in a secure location after creation?",
+        "options": {
+            "option_a": "Because it will be needed for future logins",
+            "option_b": "Because it can be used to track API usage",
+            "option_c": "Because it will not be visible again after creation",
+            "option_d": "Because it is required for deleting the API key later"
+        },
+        "answer": "option_c",
+        "explanation": "It is important to save the API key in a secure location because once it is generated and you navigate away from the page, it will not be visible again for security reasons."
+    },
+    "question_6": {
+        "question": "Before finalizing the deletion of an API key, what additional step is recommended for logging purposes?",
+        "options": {
+            "option_a": "Copy the API key to a backup location",
+            "option_b": "Add a Comment stating the reason for deletion",
+            "option_c": "Notify all team members about the deletion",
+            "option_d": "Create a new API key as a replacement"
+        },
+        "answer": "option_b",
+        "explanation": "Adding a Comment stating the reason for deletion is recommended as part of logging, which can be found under Admin > Activities, to maintain a record of why the API key was deleted."
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What is the main benefit of upgrading to the Premium tier according to the text provided?",
+        "options": {
+            "option_a": "Limited access to features",
+            "option_b": "Unlimited everything",
+            "option_c": "Free tier benefits",
+            "option_d": "Discounted pricing"
+        },
+        "answer": "option_b",
+        "explanation": "The text states that upgrading to Premium provides 'unlimited everything,' which is the main benefit over the Free tier."
+    },
+    "question_2": {
+        "question": "Who is the author of the article titled 'Upgrade from Free to Premium _ Community'?",
+        "options": {
+            "option_a": "Timextender Support",
+            "option_b": "Thomas Hjermitslev",
+            "option_c": "Premium User",
+            "option_d": "Community Member"
+        },
+        "answer": "option_b",
+        "explanation": "The author of the article is explicitly mentioned as Thomas Hjermitslev."
+    }
+}

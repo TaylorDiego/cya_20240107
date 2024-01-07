@@ -1,0 +1,97 @@
+{"folder":"(2024_01) PRACTICE - Execution & Jobs","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does the 'Enable differential deployment' option do in the Deploy and/or Execute dialog?
+
+{"score":0}It deploys all objects regardless of changes
+{"score":0}It deploys only the objects that have not been changed
+{"score":100.0}It focuses the deployment on only those objects that have been changed
+{"score":0}It disables incremental loading
+-
+{"folder":"(2024_01) PRACTICE - Execution & Jobs","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the result of deploying a guarded table in TimeXtender?
+
+{"score":0}The table is deployed without any warnings
+{"score":0}The table is deployed and truncated
+{"score":100.0}The table appears to start running but a message states that the table is guarded upon completion
+{"score":0}The table is immediately deleted
+-
+{"folder":"(2024_01) PRACTICE - Execution & Jobs","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does the 'Guard on Execution' option do in TimeXtender?
+
+{"score":0}It speeds up the execution process
+{"score":100.0}It prevents a table from being executed
+{"score":0}It guards the table against data corruption
+{"score":0}It encrypts the table data for security
+-
+{"folder":"(2024_01) PRACTICE - Execution & Jobs","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the effect of enabling the 'Send to Execution Queue' option in TimeXtender?
+
+{"score":0}It cancels the execution of tables
+{"score":0}It executes tables immediately
+{"score":100.0}It allows users to continue working while execution is performed in the background
+{"score":0}It sends a notification to the user when execution is complete
+-
+{"folder":"(2024_01) PRACTICE - Execution & Jobs","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens to the state of a job in TimeXtender when it is run?
+
+{"score":0}It changes from Active to Idle
+{"score":0}It remains in the Idle state
+{"score":100.0}It changes from Idle to Active, then to Running, and finally to Completed
+{"score":0}It is immediately marked as Completed
+-
+{"folder":"(2024_01) PRACTICE - Execution & Jobs","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you prioritize objects during a managed execution in TimeXtender?
+
+{"score":0}By setting the job to run at a higher priority
+{"score":0}By configuring the SMTP server settings
+{"score":100.0}By using the Managed Execution settings in an execution package
+{"score":0}By manually executing packages in a specific order
+-
+{"folder":"(2024_01) PRACTICE - Execution & Jobs","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if you receive an error indicating a lack of permissions when executing a PowerShell script in TimeXtender?
+
+{"score":0}Reinstall TimeXtender.
+{"score":0}Ensure the user has installed the required module.
+{"score":0}Check and update the PowerShell execution policies.
+{"score":100.0}Give the user permissions for the Analysis Services database.
+-
+{"folder":"(2024_01) PRACTICE - Execution & Jobs","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the result of setting the Timeout for a PowerShell script to 0 in TimeXtender?
+
+{"score":0}The script will execute immediately.
+{"score":0}The script will be executed with the highest priority.
+{"score":100.0}The script will have an infinite timeout.
+{"score":0}The script will not execute.
+-
+{"folder":"(2024_01) PRACTICE - Execution & Jobs","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a proactive step you can take to maintain TimeXtender execution performance?
+
+{"score":0}Regularly reboot the server to clear temporary files
+{"score":100.0}Use the SQL Database Cleanup Tool to remove unused objects
+{"score":0}Always keep the number of threads at the maximum level
+{"score":0}Avoid reviewing the Execution History Gantt charts
+-
+{"folder":"(2024_01) PRACTICE - Execution & Jobs","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When experiencing slow executions in TimeXtender, what should you compare to identify potential issues?
+
+{"score":0}Compare the color schemes of the Execution Overview Log
+{"score":0}Compare the user permissions of the current and previous executions
+{"score":100.0}Compare slow and fast executions, looking at timings and number of rows
+{"score":0}Compare the version of TimeXtender used in both executions
+-
+{"folder":"(2024_01) PRACTICE - Execution & Jobs","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of 'Retry steps' in execution packages?
+
+{"score":0}To fix data integrity issues
+{"score":100.0}To wait and retry when a data source is temporarily unavailable
+{"score":0}To increase the speed of execution
+{"score":0}To skip problematic steps in the execution
+-
+{"folder":"(2024_01) PRACTICE - Execution & Jobs","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}If you want one step to be retried up to three times, how should 'Retries per Step' and 'Retries' be configured?
+
+{"score":0}'Retries per Step' should be 1 and 'Retries' should be 3
+{"score":100.0}'Retries per Step' should be 3 and 'Retries' should be 3
+{"score":0}'Retries per Step' should be 3 and 'Retries' should be 9
+{"score":0}'Retries per Step' should be 0 and 'Retries' should be 3
+-
+{"folder":"(2024_01) PRACTICE - Execution & Jobs","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if a timeout error occurs during data cleansing on the DWH?
+
+{"score":0}Increase the timeout on the Qlik semantic model instance
+{"score":100.0}Increase the command timeout on the DWH instance
+{"score":0}Set up incremental load on the table
+{"score":0}Change the lookup type to Group by
+-
+{"folder":"(2024_01) PRACTICE - Execution & Jobs","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a recommended action if a join in the data cleansing step is not an equal join?
+
+{"score":0}Increase the batch size option
+{"score":0}Turn off automatic index generation
+{"score":100.0}Apply views where applicable
+{"score":0}Change the lookup type to Partition by

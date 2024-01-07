@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What should you do first to manually remove the TimeXtender Scheduler service using the command prompt?",
+        "options": {
+            "option_a": "Type 'sc delete 'timeXtender Scheduler <Version>'' and press enter",
+            "option_b": "Click Start, type 'CMD', and press enter",
+            "option_c": "Run command prompt with elevated rights",
+            "option_d": "Restart the computer"
+        },
+        "answer": "option_c",
+        "explanation": "Before removing the TimeXtender Scheduler service, you must run the command prompt with elevated rights to execute administrative commands."
+    },
+    "question_2": {
+        "question": "Which command is used to remove the TimeXtender Scheduler service?",
+        "options": {
+            "option_a": "sc remove 'timeXtender Scheduler <Version>'",
+            "option_b": "sc delete 'timeXtender Scheduler <Version>'",
+            "option_c": "delete 'timeXtender Scheduler <Version>'",
+            "option_d": "uninstall 'timeXtender Scheduler <Version>'"
+        },
+        "answer": "option_b",
+        "explanation": "The correct command to remove a service is 'sc delete', followed by the service name, which in this case is 'timeXtender Scheduler <Version>'."
+    }
+}

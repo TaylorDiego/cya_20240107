@@ -1,0 +1,34 @@
+{
+    "question_2": {
+        "question_content": {
+            "question": "How many different types of providers can an ODX instance connect to a data source through, according to the article?",
+            "options": {
+                "option_a": "Three",
+                "option_b": "Four",
+                "option_c": "Five",
+                "option_d": "Six"
+            },
+            "answer": "option_c",
+            "explanation": "An ODX instance can connect to a data source through one of five different types of providers."
+        },
+        "question_facts": [
+            "The question provided does not contain any typos. Everything is spelled correctly."
+        ]
+    },
+    "question_4": {
+        "question_content": {
+            "question": "Which provider type uses Azure Data Factory for transferring data?",
+            "options": {
+                "option_a": "Managed ADO.NET",
+                "option_b": "ADF",
+                "option_c": "Local OLE DB",
+                "option_d": "TimeXtender enhanced"
+            },
+            "answer": "option_b",
+            "explanation": "ADF providers from TimeXtender use Azure Data Factory for transferring data."
+        },
+        "question_facts": [
+            "The question is grammatically correct and clear for a diverse audience. However, the explanation could be slightly improved for clarity. Here's a suggested revision:\n\n\"ADF, which stands for Azure Data Factory, is the provider type from TimeXtender that uses Azure Data Factory for transferring data.\""
+        ]
+    }
+}

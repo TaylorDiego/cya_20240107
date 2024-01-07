@@ -1,0 +1,27 @@
+{
+    "DateTime": "2023-12-27 14:41:19",
+    "URL": "https://support.timextender.com/data-warehouse-108/how-to-add-a-default-value-to-a-unique-identifier-field-1426",
+    "Keywords": "missing",
+    "Title": "How to add a default value to a unique identifier field _ Community",
+    "Author": "Greg Lennox",
+    "Text": "There may be occasions where a data warehouse table has a unique identifier field that has one or more rows with a nullvalue. This article explains two approaches that can be used to create a unique identifier value that canbe used in lieu of the null value. The SQL Server functions that canassign a new value to a unique identifier field are NEWID() and NEWSEQUENTIALID(). InSQL Server, however, User-Defined Functions (UDF) are not allowed to use the NEWID() orNEWSEQUENTIALID() functions as both of these areside-effecting functions. Any attempt to use one of these functions in a User-Defined Function will result in an exception being thrown similar to the following: \"Invalid use of a side-effecting operator 'newsequentialid' within a function.\" The reason for the exception being thrown isbecause a function cannot be used to insert data into a base table. Instead, functions are used to return data, such as the GETDATE() function. Transformations in TimeXtender arewrapped in User-Defined Functions, and therefore are not allowed to call either theNEWID() and NEWSEQUENTIALID() functions, which could be used to assigna new unique identifier value during a transformation. The following two options may be usedtodesign around this limitation. Note that the NEWID() and the NEWSEQUENTIALID() functions will create a new GUID each time the table or view is executed.   Please be aware that default values are not assigned to custom rows (custom data), due to the use of an SQL bulk copy operation. During a bulk copy nulls and defaults are not assigned in order to preserve nulls from the source. The following is an example of using the CASE construct for this type of view.  ",
+    "Lists": [
+        {
+            "heading": "Create ID using Custom Field",
+            "paragraphs": [],
+            "list": [
+                "Add a new custom field to the table of type uniqueidentifier.",
+                "Add a \u201cDefault table column value\u201d transformation, using either the NEWID() or NEWSEQUENTIALID() function.",
+                "Add a transformation and condition to the destination field, assigning it the value of this new field when the destination field is null."
+            ]
+        },
+        {
+            "heading": "Create ID using Custom View",
+            "paragraphs": [],
+            "list": [
+                "Inject a custom view in between the source and destination tables.",
+                "Add a CASE construct to assign either the NEWID() or NEWSEQUENTIALID() function to the field when it is null."
+            ]
+        }
+    ]
+}

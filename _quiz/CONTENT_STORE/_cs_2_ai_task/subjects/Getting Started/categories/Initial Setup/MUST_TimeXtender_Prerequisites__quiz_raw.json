@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "Which .NET Framework version is the minimum requirement to run TimeXtender?",
+        "options": {
+            "option_a": ".NET Framework 3.5",
+            "option_b": ".NET Framework 4.5",
+            "option_c": ".NET Framework 4.8 or higher",
+            "option_d": ".NET Framework 4.7.2"
+        },
+        "answer": "option_c",
+        "explanation": "TimeXtender requires .NET Framework 4.8 or higher as a minimum software prerequisite."
+    },
+    "question_2": {
+        "question": "What is required for connecting to ODX Cloud instances when TimeXtender is installed on a separate server from Microsoft SQL Server?",
+        "options": {
+            "option_a": "IPv6 connectivity",
+            "option_b": "IPv4 connectivity",
+            "option_c": "Bluetooth connectivity",
+            "option_d": "Wi-Fi connectivity"
+        },
+        "answer": "option_b",
+        "explanation": "IPv4 connectivity is required for connecting to ODX Cloud instances when TimeXtender is installed on a separate server from Microsoft SQL Server."
+    },
+    "question_3": {
+        "question": "Which components are not necessary for SQL Server 2017 editions and above when installing TimeXtender on a separate server?",
+        "options": {
+            "option_a": "Microsoft SQL Server Native Client",
+            "option_b": "Microsoft SQL Server System CLR Types",
+            "option_c": "Microsoft SQL Server Management Objects (SMO)",
+            "option_d": "All of the above"
+        },
+        "answer": "option_d",
+        "explanation": "For SQL Server 2017 editions and above, it is not necessary to install Microsoft SQL Server Native Client, Microsoft SQL Server System CLR Types, and Microsoft SQL Server Management Objects (SMO)."
+    },
+    "question_4": {
+        "question": "Which edition of Microsoft SQL Server is the minimum requirement for TimeXtender?",
+        "options": {
+            "option_a": "Express Edition",
+            "option_b": "Standard Edition",
+            "option_c": "Developer Edition",
+            "option_d": "Enterprise Edition"
+        },
+        "answer": "option_b",
+        "explanation": "The minimum edition of Microsoft SQL Server required for TimeXtender is the Standard Edition."
+    },
+    "question_5": {
+        "question": "Which TimeXtender feature requires Microsoft SQL Server Enterprise Edition or SQL Server 2016 SP1 or later?",
+        "options": {
+            "option_a": "Compression of tables and indexes",
+            "option_b": "Incremental Load on Cubes",
+            "option_c": "IPv4 connectivity",
+            "option_d": "Both option_a and option_b"
+        },
+        "answer": "option_d",
+        "explanation": "Compression of tables and indexes and Incremental Load on Cubes are TimeXtender features that require Microsoft SQL Server Enterprise Edition or SQL Server 2016 SP1 or later."
+    },
+    "question_6": {
+        "question": "How can you verify the installed .NET version on a Windows machine?",
+        "options": {
+            "option_a": "Checking the list of installed programs",
+            "option_b": "Using the TimeXtender installer",
+            "option_c": "Navigating to the Microsoft.NET framework directory via the Run dialog",
+            "option_d": "Looking at the system properties"
+        },
+        "answer": "option_c",
+        "explanation": "The installed .NET version can be verified by navigating to the Microsoft.NET framework directory via the Run dialog."
+    }
+}

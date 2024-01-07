@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the purpose of creating and executing a PowerShell executable in TimeXtender?",
+        "options": {
+            "option_a": "To automate the process of data analysis.",
+            "option_b": "To schedule the execution of PowerShell scripts.",
+            "option_c": "To generate reports from the data warehouse.",
+            "option_d": "To install new software on the server."
+        },
+        "answer": "option_b",
+        "explanation": "The purpose is to allow for a scheduled execution of PowerShell scripts as part of an execution package."
+    },
+    "question_2": {
+        "question": "How can you edit a PowerShell script in TimeXtender?",
+        "options": {
+            "option_a": "By using the 'Edit Script' button in the execution pane.",
+            "option_b": "By right-clicking on the external executable and selecting 'Edit'.",
+            "option_c": "By modifying the script directly in the PowerShell console.",
+            "option_d": "By contacting TimeXtender support to request script changes."
+        },
+        "answer": "option_b",
+        "explanation": "A PowerShell script can be edited by right-clicking on the external executable and selecting 'Edit'."
+    },
+    "question_3": {
+        "question": "What should you do if you receive an error indicating a lack of permissions when executing a PowerShell script in TimeXtender?",
+        "options": {
+            "option_a": "Reinstall TimeXtender.",
+            "option_b": "Ensure the user has installed the required module.",
+            "option_c": "Check and update the PowerShell execution policies.",
+            "option_d": "Give the user permissions for the Analysis Services database."
+        },
+        "answer": "option_d",
+        "explanation": "If there's an error related to permissions, the user must be given permissions for the Analysis Services database."
+    },
+    "question_4": {
+        "question": "What is the result of setting the Timeout for a PowerShell script to 0 in TimeXtender?",
+        "options": {
+            "option_a": "The script will execute immediately.",
+            "option_b": "The script will be executed with the highest priority.",
+            "option_c": "The script will have an infinite timeout.",
+            "option_d": "The script will not execute."
+        },
+        "answer": "option_c",
+        "explanation": "Setting the Timeout to 0 means the timeout is infinite, allowing the script to run indefinitely until completion."
+    }
+}

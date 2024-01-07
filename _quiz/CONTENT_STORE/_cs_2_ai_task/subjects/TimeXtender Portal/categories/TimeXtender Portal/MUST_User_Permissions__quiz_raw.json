@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the primary function of the TimeXtender Portal?",
+        "options": {
+            "option_a": "To manage email campaigns",
+            "option_b": "To create and manage data estate items",
+            "option_c": "To track time and attendance",
+            "option_d": "To conduct online training"
+        },
+        "answer": "option_b",
+        "explanation": "The TimeXtender Portal is used to create and manage data estate items such as users and user-level permissions."
+    },
+    "question_2": {
+        "question": "Which permission level cannot be removed by the user from themselves in the TimeXtender Portal?",
+        "options": {
+            "option_a": "Customer manager",
+            "option_b": "Data estate admin",
+            "option_c": "Company admin",
+            "option_d": "Portal user-level"
+        },
+        "answer": "option_c",
+        "explanation": "Company admins cannot remove the company admin permission from themselves to ensure that there is always at least one admin."
+    },
+    "question_3": {
+        "question": "What visual cue indicates a user with 'company admin' permission in the TimeXtender Portal?",
+        "options": {
+            "option_a": "A star icon next to their name",
+            "option_b": "A crown icon next to their name",
+            "option_c": "A lock icon next to their name",
+            "option_d": "A checkmark next to their name"
+        },
+        "answer": "option_b",
+        "explanation": "Users with 'company admin' permission have a crown icon displayed next to their name in the user list."
+    },
+    "question_4": {
+        "question": "What should a user do if they did not receive the invitation email or have forgotten their password for the TimeXtender Portal?",
+        "options": {
+            "option_a": "Contact TimeXtender support",
+            "option_b": "Create a new user account",
+            "option_c": "Use the 'Forgot your password?' link or have a company admin trigger a password reset",
+            "option_d": "Wait for the system to resend the invitation automatically"
+        },
+        "answer": "option_c",
+        "explanation": "Users can use the 'Forgot your password?' link on the sign-in page or have a company admin trigger a password reset from within the Portal."
+    },
+    "question_5": {
+        "question": "Which permission is required to add a new user to a customer company in the TimeXtender Portal?",
+        "options": {
+            "option_a": "Data estate admin",
+            "option_b": "Portal user-level",
+            "option_c": "Company admin",
+            "option_d": "Customer manager"
+        },
+        "answer": "option_d",
+        "explanation": "A user with 'customer manager' permission can add new users to a customer company in the TimeXtender Portal."
+    },
+    "question_6": {
+        "question": "What is the optional step when adding a new user to the TimeXtender Portal?",
+        "options": {
+            "option_a": "Entering the user's phone number",
+            "option_b": "Selecting the appropriate user-level permission",
+            "option_c": "Unchecking the Send sign-in invitation to user box",
+            "option_d": "Clicking the Add button"
+        },
+        "answer": "option_c",
+        "explanation": "Unchecking the Send sign-in invitation to user box is an optional step that creates a user who will not be able to sign in to the Portal."
+    }
+}

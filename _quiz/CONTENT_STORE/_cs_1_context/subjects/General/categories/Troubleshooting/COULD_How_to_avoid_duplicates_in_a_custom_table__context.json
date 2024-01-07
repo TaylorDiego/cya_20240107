@@ -1,0 +1,21 @@
+{
+    "DateTime": "2023-12-27 14:43:08",
+    "URL": "https://support.timextender.com/troubleshooting-134/how-to-avoid-duplicates-in-a-custom-table-1280",
+    "Keywords": "missing",
+    "Title": "How to avoid duplicates in a custom table _ Community",
+    "Author": "Thomas Lind",
+    "Text": "If you have a script that is used to fill a custom table, you may get duplicates, if you do nothing about it. The reason it doesn't get truncated, is that there is no data transfer on a custom table. You have a custom table insert. It uses a select statement instead of a table Insert Into command to fill a table. Every time you execute this the line amount doubles. There are three methods to fix this. Guide here The benefit of using method 3 is that it is easy to see what the script does and what table it affects.  ",
+    "Lists": [
+        {
+            "heading": "The solutions",
+            "paragraphs": [
+                "There are three methods to fix this."
+            ],
+            "list": [
+                "You add a truncate [dbo].[tablename_R] as the first line of the script.",
+                "You add a check on the table for truncation of the r table after the data cleansing.",
+                "Instead of using a custom script and then calling it as a Pre Step. You use the Custom Table Insert feature. Guide here. You use the same script as before, but remove the insert into the statement. This truncates the table."
+            ]
+        }
+    ]
+}

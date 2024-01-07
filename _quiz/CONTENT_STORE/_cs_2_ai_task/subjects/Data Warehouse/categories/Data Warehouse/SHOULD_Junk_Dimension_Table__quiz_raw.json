@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the purpose of a Junk Dimension Table in a data warehouse?",
+        "options": {
+            "option_a": "To store user access logs",
+            "option_b": "To contain distinct combinations of junk dimension attributes",
+            "option_c": "To increase the size of the fact table",
+            "option_d": "To serve as a backup for the fact table"
+        },
+        "answer": "option_b",
+        "explanation": "A Junk Dimension Table is used to store all the distinct combinations of junk dimension attributes, which can then be referenced by a single field in the fact table, thereby reducing the number of fields in the fact table."
+    },
+    "question_2": {
+        "question": "How can multiple tables utilize a Junk Dimension Table?",
+        "options": {
+            "option_a": "By merging them into a single table",
+            "option_b": "By creating separate junk dimension tables for each",
+            "option_c": "By referencing a row in the same junk dimension table",
+            "option_d": "By duplicating the junk dimension attributes in each table"
+        },
+        "answer": "option_c",
+        "explanation": "Multiple tables can utilize the same Junk Dimension Table by referencing a row in it, which allows for a more efficient and organized data warehouse structure."
+    },
+    "question_3": {
+        "question": "What does the Junk Dimension Table do when executed?",
+        "options": {
+            "option_a": "It truncates the raw table instance",
+            "option_b": "It inserts non-existing junk dimension combinations from associated tables",
+            "option_c": "It deletes all existing records",
+            "option_d": "It archives the data for long-term storage"
+        },
+        "answer": "option_b",
+        "explanation": "When the Junk Dimension Table is executed, it inserts non-existing junk dimension combinations from the associated tables, ensuring that all possible combinations are represented."
+    },
+    "question_4": {
+        "question": "What should be avoided when selecting a hashing algorithm for the Junk Dimension Table key?",
+        "options": {
+            "option_a": "Using the 'Legacy integer' algorithm",
+            "option_b": "Choosing a strong encryption method",
+            "option_c": "Selecting the default algorithm",
+            "option_d": "Using a hashing algorithm that is too complex"
+        },
+        "answer": "option_a",
+        "explanation": "The 'Legacy integer' hashing algorithm should be avoided for the Junk Dimension Table key because it is less safe than other algorithms and has an increased risk of hash collisions due to using only 8 bytes for the hash value."
+    }
+}

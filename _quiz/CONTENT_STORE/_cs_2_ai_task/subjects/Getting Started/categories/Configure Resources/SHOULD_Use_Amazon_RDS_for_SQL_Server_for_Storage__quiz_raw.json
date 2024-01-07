@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the default port number that should be set for a publicly accessible AWS RDS SQL Database?",
+        "options": {
+            "option_a": "3306",
+            "option_b": "1433",
+            "option_c": "1521",
+            "option_d": "5432"
+        },
+        "answer": "option_b",
+        "explanation": "The default port for Microsoft SQL Server, which is the engine type for AWS RDS SQL Database, is 1433."
+    },
+    "question_2": {
+        "question": "Which AWS service is used to create a virtual machine for SQL Server?",
+        "options": {
+            "option_a": "EC2",
+            "option_b": "Lambda",
+            "option_c": "Lightsail",
+            "option_d": "Elastic Beanstalk"
+        },
+        "answer": "option_c",
+        "explanation": "AWS Lightsail is the service mentioned for creating a virtual machine for SQL Server."
+    },
+    "question_3": {
+        "question": "What must be configured in the AWS RDS SQL Database to allow remote access?",
+        "options": {
+            "option_a": "Inbound rules only",
+            "option_b": "Outbound rules only",
+            "option_c": "Both inbound and outbound rules",
+            "option_d": "Remote access is not configurable"
+        },
+        "answer": "option_c",
+        "explanation": "To allow remote access to the AWS RDS SQL Database, both inbound and outbound rules must be set in the VPC security group."
+    },
+    "question_4": {
+        "question": "After setting up an AWS RDS Custom for SQL Server, what should you verify?",
+        "options": {
+            "option_a": "Ability to connect via SSH",
+            "option_b": "Connection via SQL Server Management Studio (SSMS)",
+            "option_c": "Connection via AWS Management Console",
+            "option_d": "Ability to host a website"
+        },
+        "answer": "option_b",
+        "explanation": "After setting up, you should verify the ability to connect via SQL Server Management Studio (SSMS) running on a remote machine."
+    }
+}

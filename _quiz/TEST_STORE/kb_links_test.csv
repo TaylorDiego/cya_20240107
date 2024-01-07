@@ -1,0 +1,12 @@
+folder,category,title,type,url
+Getting Started,Initial Setup,Certification Exam Study Guide,WON'T,https://support.timextender.com/initial-setup-start-here-115/certification-exam-study-guide-703
+Getting Started,Initial Setup,Self-Service Troubleshooting in TimeXtender,MUST,https://support.timextender.com/initial-setup-start-here-115/self-service-troubleshooting-in-timextender-623
+Getting Started,Initial Setup,Instances and Settings,MUST,https://support.timextender.com/initial-setup-start-here-115/instances-and-settings-1014
+Getting Started,Initial Setup,User Interface,MUST,https://support.timextender.com/initial-setup-start-here-115/user-interface-999
+Getting Started,Reference Architectures,Azure Synapse Dedicated SQL Pool Reference Architecture,SHOULD,https://support.timextender.com/reference-architectures-125/azure-synapse-dedicated-sql-pool-reference-architecture-807
+Getting Started,Reference Architectures,Snowflake Database Reference Architecture,SHOULD,https://support.timextender.com/reference-architectures-125/snowflake-database-reference-architecture-870
+Getting Started,Reference Architectures,AWS RDS SQL Reference Architecture,SHOULD,https://support.timextender.com/reference-architectures-125/aws-rds-sql-reference-architecture-1000
+Getting Started,Reference Architectures,On-Prem SQL Server Reference Architecture,SHOULD,https://support.timextender.com/reference-architectures-125/on-prem-sql-server-reference-architecture-809
+Getting Started,Reference Architectures,Azure SQL Database Reference Architecture,SHOULD,https://support.timextender.com/reference-architectures-125/azure-sql-database-reference-architecture-803
+Getting Started,Add & Configure Instances,Add ODX Instances,MUST,https://support.timextender.com/add-and-configure-instances-127/add-odx-instances-717
+Getting Started,Add & Configure Instances,Add and Configure Data Sources,MUST,https://support.timextender.com/add-and-configure-instances-127/add-and-configure-data-sources-819

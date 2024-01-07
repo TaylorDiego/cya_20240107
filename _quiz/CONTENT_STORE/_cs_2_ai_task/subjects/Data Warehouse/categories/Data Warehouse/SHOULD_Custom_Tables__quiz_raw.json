@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the initial content of a custom table when it is created?",
+        "options": {
+            "option_a": "It contains a full set of data fields and types.",
+            "option_b": "It includes data imported from an ODX Instance.",
+            "option_c": "It contains only the standard system fields.",
+            "option_d": "It is pre-populated with data from a staging database."
+        },
+        "answer": "option_c",
+        "explanation": "Initially, custom tables contain only the standard system fields and are completed by adding new fields."
+    },
+    "question_2": {
+        "question": "How can you add a custom table to a data warehouse or staging database?",
+        "options": {
+            "option_a": "By dragging a table from an ODX Instance.",
+            "option_b": "By right-clicking Tables, then clicking Add Table.",
+            "option_c": "By importing directly from an Excel file.",
+            "option_d": "By using a pre-defined template."
+        },
+        "answer": "option_b",
+        "explanation": "To add a custom table, you right-click Tables, click Add Table to open the Add Table window, enter a name, and then add desired fields and data types."
+    },
+    "question_3": {
+        "question": "Which of the following is a use case for creating custom tables?",
+        "options": {
+            "option_a": "To translate boolean fields into more descriptive values.",
+            "option_b": "To automatically generate reports.",
+            "option_c": "To create a backup of the data warehouse.",
+            "option_d": "To increase the speed of data retrieval."
+        },
+        "answer": "option_a",
+        "explanation": "Custom tables can be used to translate '0' and '1' values in boolean fields into more descriptive terms, such as 'ID' and 'Name'."
+    },
+    "question_4": {
+        "question": "What should you do to enable data lineage when adding a custom table from a view?",
+        "options": {
+            "option_a": "Clone the table and remove any mapped tables.",
+            "option_b": "Deploy/execute immediately after adding the table.",
+            "option_c": "Use object dependencies to relate the table to the sources of the view.",
+            "option_d": "Enable Simple Mode in the Table Settings."
+        },
+        "answer": "option_c",
+        "explanation": "To enable data lineage for a custom table created from a view, you should use object dependencies to relate the table to the sources of the view."
+    }
+}

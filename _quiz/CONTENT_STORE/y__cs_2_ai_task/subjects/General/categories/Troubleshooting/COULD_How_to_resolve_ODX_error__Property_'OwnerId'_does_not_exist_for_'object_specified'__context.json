@@ -1,0 +1,21 @@
+{
+    "DateTime": "2023-12-27 14:43:18",
+    "URL": "https://support.timextender.com/troubleshooting-134/how-to-resolve-odx-error-property-ownerid-does-not-exist-for-object-specified-1301",
+    "Keywords": "missing",
+    "Title": "How to resolve ODX error_ Property 'OwnerId' does not exist for 'object specified' _ Community",
+    "Author": "Thomas Lind",
+    "Text": "You receive the following error when you execute an ODX Transfer task: System.Data.SqlClient.SqlException (0x80131904): Property cannot be updated or deleted. Property 'OwnerId' does not exist for 'object specified' You are using a pre-existing SQL database as ODX storage. SQL Server Data Storage create OnwerId OnwerId ",
+    "Lists": [
+        {
+            "heading": "Resolution",
+            "paragraphs": [],
+            "list": [
+                "Create a new SQL Server Data Storage from within ODX",
+                "If you need to use a pre-existing SQL database for ODX storage In SQL Server Management Studio (SSMS), right-click on the database for ODX storage -> Properties -> Extended Properties Manually add an extended property as shown below    Name: OwnerId  Value: 00000000000000000000000000000000 This will enable ODX to take ownership of the database.",
+                "In SQL Server Management Studio (SSMS), right-click on the database for ODX storage -> Properties -> Extended Properties",
+                "Manually add an extended property as shown below    Name: OwnerId  Value: 00000000000000000000000000000000",
+                "This will enable ODX to take ownership of the database."
+            ]
+        }
+    ]
+}

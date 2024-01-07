@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What should you consider before adding custom Stored Procedures and User Defined Functions in TimeXtender?",
+        "options": {
+            "option_a": "Reviewing the TimeXtender documentation",
+            "option_b": "Considering all the native TimeXtender functionality",
+            "option_c": "Consulting with a database administrator",
+            "option_d": "Ensuring you have the latest version of TimeXtender"
+        },
+        "answer": "option_b",
+        "explanation": "Before adding custom code, it's important to consider all the native TimeXtender functionality to avoid issues with data lineage and maintenance."
+    },
+    "question_2": {
+        "question": "How do you add a Stored Procedure in TimeXtender?",
+        "options": {
+            "option_a": "By writing a script in SQL Server Management Studio",
+            "option_b": "By using the 'Add Stored Procedure' option in the Scripts folder",
+            "option_c": "By importing it from an external database",
+            "option_d": "By contacting TimeXtender support"
+        },
+        "answer": "option_b",
+        "explanation": "To add a Stored Procedure, you open a data area, right-click on the Scripts folder, and select 'Add Stored Procedure'."
+    },
+    "question_3": {
+        "question": "What is the final step to make a Stored Procedure executable in TimeXtender?",
+        "options": {
+            "option_a": "Saving the script",
+            "option_b": "Closing the TimeXtender application",
+            "option_c": "Deploying the Stored Procedure",
+            "option_d": "Scheduling the Stored Procedure"
+        },
+        "answer": "option_c",
+        "explanation": "After creating a Stored Procedure, the final step is to deploy it, making it visible in SQL Server Management Studio."
+    },
+    "question_4": {
+        "question": "What must be done for a User Defined Function to be executed in relation to a table in TimeXtender?",
+        "options": {
+            "option_a": "It must be compiled separately",
+            "option_b": "It must be included in the table's design",
+            "option_c": "It must be scheduled using the Set Pre- and post scripts dialog",
+            "option_d": "It must be approved by a TimeXtender administrator"
+        },
+        "answer": "option_c",
+        "explanation": "A User Defined Function needs to be scheduled to run in relation to a table's deployment/execution using the Set Pre- and post scripts dialog."
+    }
+}

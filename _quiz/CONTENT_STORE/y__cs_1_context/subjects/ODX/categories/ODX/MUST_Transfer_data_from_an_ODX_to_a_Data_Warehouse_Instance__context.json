@@ -1,0 +1,34 @@
+{
+    "DateTime": "2023-12-27 14:39:58",
+    "URL": "https://support.timextender.com/odx-107/transfer-data-from-an-odx-to-a-data-warehouse-instance-706",
+    "Keywords": "missing",
+    "Title": "Transfer data from an ODX to a Data Warehouse Instance _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "TimeXtender 6024.1 This article describes how to search for and preview data from all the sources in the ODX, and then drag-and-drop the tables to your data warehouse instances.  ",
+    "Lists": [
+        {
+            "heading": "Search for Tables in an ODX",
+            "paragraphs": [],
+            "list": [
+                "In the Solution Explorer in the left hand pane, right-click on the ODX instance, and click Open Table Selector",
+                "In the Table Selector tab you can search for the tables and views you want to copy using the Schema and Tables boxes.",
+                "In the Data source list, select the sources you want to search and click Search. If a new data source has recently been added, while the Table Selector was open, click on Search again to refresh the results."
+            ]
+        },
+        {
+            "heading": "Transfer Tables from an ODX",
+            "paragraphs": [],
+            "list": [
+                "In the Solution Explorer, expand the Data Warehouses and then expand Data Areas. Open the Data Area that you would like to transfer data to.",
+                "Drag-and-drop the tables from the data source onto the Data Area. When you drag and drop a single table, each operation has a default action and some secondary actions. The default action will be used if you drag and drop using the primary mouse button, while the secondary actions will be available in a shortcut menu if you use the secondary mouse button to drag and drop. The available actions are as follows: Add New Table (default): Adds the table as a new table in the data warehouse. Default when no table in the data warehouse has the same name as the table being dragged. Synchronize on Table Name (default): Synchronizes the table with an existing table in the data warehouse with the same name. New fields from the new table are added and already existing fields are mapped to the fields from the new table. Default when a table in the data warehouse has the same name as the table being dragged. Add New Table with Field Selection: Adds the table with the fields you select in a window that opens. Synchronize with Other Table: Synchronizes the table with an existing table in the data warehouse chosen by you. Hold Shift or CTRL to select multiple tables to drag. When you drag and drop multiple tables, TimeXtender will first try to synchronize each table on table name. If no table with the same name exists in the data warehouse, the table is added as a new table.",
+                "Add New Table (default): Adds the table as a new table in the data warehouse. Default when no table in the data warehouse has the same name as the table being dragged.",
+                "Synchronize on Table Name (default): Synchronizes the table with an existing table in the data warehouse with the same name. New fields from the new table are added and already existing fields are mapped to the fields from the new table. Default when a table in the data warehouse has the same name as the table being dragged.",
+                "Add New Table with Field Selection: Adds the table with the fields you select in a window that opens.",
+                "Synchronize with Other Table: Synchronizes the table with an existing table in the data warehouse chosen by you.",
+                "Hold Shift or CTRL to select multiple tables to drag. When you drag and drop multiple tables, TimeXtender will first try to synchronize each table on table name. If no table with the same name exists in the data warehouse, the table is added as a new table.",
+                "Right-click on the tables or Data Area and select Deploy to deploy the changes.",
+                "Right-click on the tables or Data Area and select Execute to transfer the data from the ODX to the Data Area."
+            ]
+        }
+    ]
+}

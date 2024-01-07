@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the primary benefit of using a Lookup Transformation Template in TimeXtender?",
+        "options": {
+            "option_a": "It allows for the creation of multiple conditional lookup fields manually.",
+            "option_b": "It saves time and improves performance when creating multiple lookups.",
+            "option_c": "It requires more joins which ensures data accuracy.",
+            "option_d": "It is the only way to create lookups with a variable join field."
+        },
+        "answer": "option_b",
+        "explanation": "The Lookup Transformation Template saves time and improves performance because it is created once and can be reapplied multiple times, as opposed to creating multiple conditional lookup fields manually."
+    },
+    "question_2": {
+        "question": "In the provided context, what are the fixed join fields when setting up a Lookup Transformation Template?",
+        "options": {
+            "option_a": "Job ID and Department ID",
+            "option_b": "Table and Field",
+            "option_c": "Value and Field",
+            "option_d": "TableName and FieldName"
+        },
+        "answer": "option_b",
+        "explanation": "The fixed join fields mentioned in the context for setting up a Lookup Transformation Template are 'Table' and 'Field'."
+    },
+    "question_3": {
+        "question": "How do you add a new join when using conditional lookup fields in TimeXtender?",
+        "options": {
+            "option_a": "By dragging the Value column onto the Employees table.",
+            "option_b": "By right-clicking on joins and selecting Add Join.",
+            "option_c": "By using the Lookup Transformation Template.",
+            "option_d": "By entering a fixed value in the Table column."
+        },
+        "answer": "option_b",
+        "explanation": "To add a new join when using conditional lookup fields, you right-click on joins and select Add Join, as described in the context."
+    },
+    "question_4": {
+        "question": "What is the result of applying the Lookup Transformation Template to the Employees table in the given context?",
+        "options": {
+            "option_a": "It creates a new table with combined data from JobDept and Employees.",
+            "option_b": "It adds the Job Title and Department Name for each employee from the JobDept table.",
+            "option_c": "It replaces the existing data in the Employees table with data from JobDept.",
+            "option_d": "It deletes the JobDept table after transferring the data."
+        },
+        "answer": "option_b",
+        "explanation": "Applying the Lookup Transformation Template to the Employees table brings in the Job Title and Department Name for each employee from the JobDept table, as described in the context."
+    }
+}

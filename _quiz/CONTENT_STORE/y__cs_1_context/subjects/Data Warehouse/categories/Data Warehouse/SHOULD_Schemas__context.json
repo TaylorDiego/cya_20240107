@@ -1,0 +1,56 @@
+{
+    "DateTime": "2023-12-27 14:41:12",
+    "URL": "https://support.timextender.com/data-warehouse-108/schemas-1156",
+    "Keywords": "missing",
+    "Title": "Schemas _ Community",
+    "Author": "Thomas Lind",
+    "Text": "TimeXtender database schemas allow developers to apply a specificschema to a table or group of tables. Schemas can be used torestrict access to tables that are not useful or needed for report designers, simplifyingthe creation of reports based on the data warehouse. Schemas can be set foreither Data Areas orindividual tables. In the order of precendence, schema settings applied at thetable level take precedence over those applied on the data area. Whenadding a data area, the name provided will be set as the default schema for the objects in the new data area. The data area name being used as the schema for the tables in this data area is done is so that Direct Read will be able to work with tables in differentdata areas. The next data area created mayalso be inthe same database but will be differentiated from the other data areas as itsname will be used as the schema for its tables and objects. The schema name can be amended after it has been created. Use the following steps to edit an existing schema: Different data areas in the same instance should not use the same schema name. The following message will appear if a data area attempts to use a schema name that already exits in a different data area. In the warning dialog above, it is not advisiable to click Yes and attempt to usetheexisting schema name, though it is possible. Ifan attempt is madeto deploy tables whose schema has the same name as adifferent data area schema,then errors are likely to occur due to that fact that the tables may have the same schema and name as tables existing in other data areas. If the deployment of tables in the first data area is successful, then it is likely that the subsequent deployment of tables in the second data areawill have errors. Use the following steps to create a database schema.   Table schemas are configured in the Table Settings as follows: If a new schema is added to either the entiredata area or a table, and if thedeployment is run withthe Only modified tables and views option as shown below, then thedeployment may not be able to completeandresult in an error. The error displayed maybe similar to the following: Create failed for table schemaname.tablename_r An exception occurred during while executing a Transact-SQL statement or batch. The specific schema name schemaname does not exist or you do not have permission to use it. The reason for the error aboveis that the Only deploy modified tables and views deploymentoption will excludes the deployment ofthe new schema, which needs to be deployedbefore the table using this schema can be deployed. The deployment of the schema can be doneas follows:  @Thomas Lind @sten.lomme in TX 20.10.34 the [DataTables] table holds the [SchemaName] field and there is also [TxObjectSchemaSettings] which (I believe) may holdthe Schema allocations for individual tables. ",
+    "Lists": [
+        {
+            "heading": "Edit existing schema",
+            "paragraphs": [
+                "The schema name can be amended after it has been created. Use the following steps to edit an existing schema:"
+            ],
+            "list": [
+                "Right-click on the default schema",
+                "Click Edit Schema",
+                "Enter a new name in the Name field to change the schema name.",
+                "A refresh message will appear advising a refresh is needed to display the new schema name in the data area tree. Click Yes.",
+                "Lastly, deploy all the tables in the data area to apply the new schema name."
+            ]
+        },
+        {
+            "heading": "Adding a Database Schema to a Data Warehouse or Business Unit",
+            "paragraphs": [
+                "Use the following steps to create a database schema."
+            ],
+            "list": [
+                "In the Data Area tree, right-click on the Database Schemas folder, and then select Add Database Schema.",
+                "Enter a name for the new schema in the Name box, and enter the schema owner In the Owner box below. The default owner is \"dbo\". Click OK to create the schema.",
+                "To configure the schema behavior, right-click the new schema in the Database Schemas folder and select the appropriate behavior from the following options as delineated below.    None: The schema will not be applied unless manually assigned to the table.  Main default schema: The schema will be applied to all tables and views in the data area. Main Raw default schema: The schema will be applied to all Raw (_R postfix) tables in the data area. Main Transfer default schema: The schema will be applied to all Transfer (_T postfix) views in the data area. Main Valid default schema: The schema will be applied to all Valid (_V postfix) tables and views in the data area. Main Error/Warning default schema: The schema will be applied to all Link and Message (_L and _M postfix) tables in the data area. Main Securable Column default schema: The schema will be applied to all secured columns created. Main Securable View default schema: The schema will be applied to all secured views created. Main Key Store default schema: The schema will be applied to all key stores created.",
+                "None: The schema will not be applied unless manually assigned to the table.",
+                "Main default schema: The schema will be applied to all tables and views in the data area.",
+                "Main Raw default schema: The schema will be applied to all Raw (_R postfix) tables in the data area.",
+                "Main Transfer default schema: The schema will be applied to all Transfer (_T postfix) views in the data area.",
+                "Main Valid default schema: The schema will be applied to all Valid (_V postfix) tables and views in the data area.",
+                "Main Error/Warning default schema: The schema will be applied to all Link and Message (_L and _M postfix) tables in the data area.",
+                "Main Securable Column default schema: The schema will be applied to all secured columns created.",
+                "Main Securable View default schema: The schema will be applied to all secured views created.",
+                "Main Key Store default schema: The schema will be applied to all key stores created.",
+                "Use the following steps to manually assign the schema to a table, as may be  necessary when None is selected as the Schema Behavior.    Right-click the table, click Table Settings and click the Table Schemas tab. Select the schema to be used for the table based on the options as described in Step 3 above.",
+                "Assigning user rights to the schema can be done through SQL Server Management Studio or T-SQL. Click on the link below to open an article on the Microsoft website that details how to grant user rights using T-SQL: http://msdn.microsoft.com/en-us/library/ms187940.aspx"
+            ]
+        },
+        {
+            "heading": "Configuring Schemas for Tables",
+            "paragraphs": [
+                "Table schemas are configured in the Table Settings as follows:"
+            ],
+            "list": [
+                "Right-click on a table and select Table Settings.",
+                "Select the Table Schemas tab where the various objects that comprise the table along with their schemas are listed out. Select the appropriate schema to associate with the various table instances. The lists includes all the schemas that have been added to the data area of the table. If needed, click Add new schema... to add a new schema for use with the table or data source.",
+                "Click OK."
+            ]
+        }
+    ]
+}

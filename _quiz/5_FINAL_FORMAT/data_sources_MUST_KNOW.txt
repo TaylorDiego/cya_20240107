@@ -1,0 +1,111 @@
+{"folder":"Data Sources","tags":{"category":"Data Sources - MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step required before setting up a specific CData data source according to the guide?
+
+{"score":0}Creating a data source and searching for the provider
+{"score":0}Mapping the data source to an ODX instance
+{"score":100.0}Going through the Initial setup
+{"score":0}Setting up a log file for troubleshooting
+-
+{"folder":"Data Sources","tags":{"category":"Data Sources - MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When adding a CData data source, how should you choose between different versions of a provider?
+
+{"score":0}Select the oldest version for compatibility
+{"score":100.0}Choose the version with the highest number
+{"score":0}Pick any version as they are all the same
+{"score":0}Choose the version with the lowest number
+-
+{"folder":"Data Sources","tags":{"category":"Data Sources - MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step to add a new data source in TimeXtender Desktop?
+
+{"score":0}Select the Connection from available connections in TimeXtender Portal.
+{"score":100.0}Double-click on your ODX instance.
+{"score":0}Right-click on your data source > Edit.
+{"score":0}Check the box Data on demand.
+-
+{"folder":"Data Sources","tags":{"category":"Data Sources - MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How do you initiate adding a data source after accessing the ODX instance in TimeXtender Desktop?
+
+{"score":0}Click on Advanced Settings.
+{"score":0}Double-click on your ODX instance.
+{"score":100.0}Right-click 'Data Sources' > Add Data Source.
+{"score":0}Select the Connection from available connections in TimeXtender Portal.
+-
+{"folder":"Data Sources","tags":{"category":"Data Sources - MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step in setting up a REST provider according to the guide?
+
+{"score":0}Configure the OAuth settings
+{"score":100.0}Click the REST guide from CData link
+{"score":0}Set up the data source template
+{"score":0}Generate an RSD file
+-
+{"folder":"Data Sources","tags":{"category":"Data Sources - MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which data format is NOT mentioned as an option for presenting data when setting up a REST provider?
+
+{"score":0}SOAP
+{"score":0}CSV
+{"score":0}XML
+{"score":100.0}PDF
+-
+{"folder":"Data Sources","tags":{"category":"Data Sources - MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default Row Scan Depth value when setting up a connection to a local Excel file?
+
+{"score":0}0
+{"score":100.0}100
+{"score":0}1000
+{"score":0}10000
+-
+{"folder":"Data Sources","tags":{"category":"Data Sources - MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which authentication scheme is required when connecting to a SharePoint file through the Microsoft Excel Online provider?
+
+{"score":0}Basic Authentication
+{"score":100.0}OAuth
+{"score":0}API Key
+{"score":0}Windows Authentication
+-
+{"folder":"Data Sources","tags":{"category":"Data Sources - MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the new default 'Row Scan Depth' value when setting up a CSV data source according to the provided text?
+
+{"score":0}100
+{"score":100.0}0
+{"score":0}10000
+{"score":0}1
+-
+{"folder":"Data Sources","tags":{"category":"Data Sources - MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When connecting to CSV data sources, what does setting the 'Row Scan Depth' to a value like 10000 help with?
+
+{"score":100.0}It helps to read the file faster by only scanning the first 10000 rows.
+{"score":0}It increases the security of the data source.
+{"score":0}It allows for more files to be aggregated.
+{"score":0}It changes the file format to JSON.
+-
+{"folder":"Data Sources","tags":{"category":"Data Sources - MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary difference between the REST provider and the CData data source for connecting to JSON data?
+
+{"score":0}CData data source can only connect to JSON data in APIs, not files.
+{"score":100.0}CData data source is used exclusively for JSON data.
+{"score":0}REST provider cannot handle pagination parameters.
+{"score":0}CData data source does not support incremental load.
+-
+{"folder":"Data Sources","tags":{"category":"Data Sources - MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When setting up a CData connector to a JSON data source, what is the first step according to the guide?
+
+{"score":0}Paste in the link to the JSON resource location.
+{"score":0}Set up incremental load and data type overwrites.
+{"score":100.0}Check the online documentation for the JSON guide from CData.
+{"score":0}Configure the JSON Path in the data source field.
+-
+{"folder":"Data Sources","tags":{"category":"Data Sources - MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary function of RSD files in the context provided?
+
+{"score":0}To store user credentials securely
+{"score":100.0}To generate and synchronize schema files for REST data sources
+{"score":0}To increase the speed of data retrieval from REST APIs
+{"score":0}To encrypt data transferred from REST APIs
+-
+{"folder":"Data Sources","tags":{"category":"Data Sources - MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a schema generation option for RSD files?
+
+{"score":0}OnUse
+{"score":0}OnStart
+{"score":0}OnCreate
+{"score":100.0}OnFinish
+-
+{"folder":"Data Sources","tags":{"category":"Data Sources - MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of the article written by Christian Hauggaard?
+
+{"score":0}To provide a historical overview of TimeXtender
+{"score":100.0}To describe different provider types for data sources in TimeXtender
+{"score":0}To offer troubleshooting tips for TimeXtender
+{"score":0}To announce new features in TimeXtender
+-
+{"folder":"Data Sources","tags":{"category":"Data Sources - MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How many different types of providers can an ODX instance connect to a data source through, according to the article?
+
+{"score":0}Three
+{"score":0}Four
+{"score":100.0}Five
+{"score":0}Six

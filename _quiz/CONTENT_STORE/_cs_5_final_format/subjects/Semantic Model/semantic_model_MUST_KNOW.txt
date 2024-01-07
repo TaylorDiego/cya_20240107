@@ -1,0 +1,55 @@
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How many methods are described for adding tables to a Semantic Model instance in the provided text?
+
+{"score":0}One
+{"score":100.0}Two
+{"score":0}Three
+{"score":0}Four
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step when using the drag-and-drop method from the Data Area to add tables to a Semantic Model instance?
+
+{"score":0}Open the Semantic Model instance
+{"score":0}Drag-and-drop the table from the data area
+{"score":100.0}Open the relevant Data Warehouse instance and data area
+{"score":0}Select the relevant data area from the dropdown
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary action described in the context for interacting with a semantic model instance?
+
+{"score":0}Delete semantic model instance
+{"score":100.0}Add semantic model instance
+{"score":0}Update semantic model instance
+{"score":0}Review semantic model instance
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is a step in the process outlined in the context?
+
+{"score":0}Remove endpoints
+{"score":100.0}Add an endpoint
+{"score":0}Configure global settings
+{"score":0}Export semantic model
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary purpose of semantic tables in a data warehouse?
+
+{"score":0}To store raw data for future processing
+{"score":100.0}To serve as the serving layer representing the culmination of all ETL processes
+{"score":0}To act as a backup for the transactional database
+{"score":0}To directly interact with the user's queries
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can the data format and category of a field in a semantic table be configured?
+
+{"score":0}By modifying the field properties in the source database
+{"score":0}Through the use of SQL queries
+{"score":100.0}By right-clicking the field and selecting 'Edit Field'
+{"score":0}By exporting and re-importing the data with the desired format
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary action described in the context for interacting with a semantic model instance?
+
+{"score":0}Deleting an instance
+{"score":100.0}Adding an instance
+{"score":0}Updating an instance
+{"score":0}Reviewing an instance
+-
+{"folder":"(2024_01) Semantic Model","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which additional action is mentioned in the context after adding a semantic model instance?
+
+{"score":0}Add tables
+{"score":0}Add relationships
+{"score":100.0}Add endpoints
+{"score":0}Add filters

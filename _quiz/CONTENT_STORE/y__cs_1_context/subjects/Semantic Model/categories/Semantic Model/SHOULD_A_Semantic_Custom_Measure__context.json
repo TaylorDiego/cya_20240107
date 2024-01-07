@@ -1,0 +1,39 @@
+{
+    "DateTime": "2023-12-27 14:41:45",
+    "URL": "https://support.timextender.com/semantic-model-109/a-semantic-custom-measure-1172",
+    "Keywords": "missing",
+    "Title": "A Semantic Custom Measure _ Community",
+    "Author": "Thomas Lind",
+    "Text": "Semantic tables are part of the semantic model thatcomprises the serving layer in a data warehouse and represents theculmination of all the extraction, transformation, and loading that happens prior to the tables being added to the semantic model. In addition to the data source fields that can be included in the semantic tables, there are also various other types of fieldsthat can be added. This article clarifies how to add a custom measure to a semantic table. Click the following link for more information on semantic fields in general. Semantic Fields Custom measures areused to produce values that may not be availabledirectly inthe data source, such as the profit measureused in the example below. Note: Custom measures use a script to calculate the value of the measure. Use the following steps toadd a custom measure.  Note: Note: Profit % Default Edit Custom Measure   Variant Qualified Semantic field Name The set up for the Tabular and PowerBI Premium endpoint is shown in the following window: Sales  SUM Profit  Sales - Cost  Hi Thomas, Great tutorial. Would be nice if it becomes possible to copy/paste measures (within and across semantic layers), since a lot of measures often use similar fields or calculations. Regards, Devin ",
+    "Lists": [
+        {
+            "heading": "Adding a Custom Measure",
+            "paragraphs": [
+                "Custom measures use a script to calculate the value of the measure.",
+                "Use the following steps to add a custom measure."
+            ],
+            "list": [
+                "Right-click a table and select Add Custom Measure to open the following window.",
+                "In the Name box, enter a name for the field.",
+                "In the Description box, type a description of the custom measure, which may be available in front-end tools.      Note: This setting applies to SSAS Tabular and PowerBI Premium endpoints only.",
+                "In the Data type list, click on the data type to be used for the custom field.",
+                "In the Data format list, select the data format to be used for the field. For some data types, only one data format is available and this cannot be changed. Click Customize to customize the data format, e.g. number of decimal places for decimal numbers.      Note: This setting applies to SSAS Tabular and PowerBI Premium endpoints only.",
+                "In the Script box, enter the script that generates the value for the custom measure. Since script syntax is not the same for different endpoint types, it is possible to add separate scripts for each type of endpoint. Click on an endpoint type in the Endpoints list to switch between the different endpoint types. Any endpoint type that does not have a specific script will use the Default script. Drag fields from the Available parameters list to the Script pane to use them as parameters in the script. Click Show translation to show the script TimeXtender will deploy to the endpoint."
+            ]
+        },
+        {
+            "heading": "How to set up a custom measure",
+            "paragraphs": [
+                "The following \u201cProfit %\u201d custom measure calculates the profit percentage based on the \u201cSales_Amount_Actual\u201d and \u201cCost_Amount_Actual\u201d fields.",
+                "The Default endpoint is configured in the Edit Custom Measure below."
+            ],
+            "list": [
+                "The Data type is set to Decimal",
+                "The Data format is set to Percentage, which will convert the decimal result to a percentage, so this does not need to be done manually using a script. Customize is set to have two Decimal places as follows:",
+                "The two fields used in the Script window have been dragged over from the Available parameters pane on the right.",
+                "After being added, the parameters are listed out below. In this example, the Variant setting for the Cost_Amount_Actual parameter has been changed from Qualified Semantic field Name to Fully qualified Semantic field name. Clicking Show translation will show the updated fully qualified parameter name as follows:",
+                "The Variant parameter setting for the Sales_Amount_Actual field has been set to Qualified Semantic field Name to show how this affects the script."
+            ]
+        }
+    ]
+}

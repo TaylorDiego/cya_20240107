@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "What is the purpose of a primary key in a database table?",
+        "options": {
+            "option_a": "To uniquely identify each row in the table",
+            "option_b": "To encrypt the table data",
+            "option_c": "To increase the data retrieval speed",
+            "option_d": "To store user preferences"
+        },
+        "answer": "option_a",
+        "explanation": "A primary key's main function is to uniquely identify each row in a table, ensuring that no two rows have the same primary key value."
+    },
+    "question_2": {
+        "question": "How can you identify fields set as primary keys in a table's list of fields?",
+        "options": {
+            "option_a": "They are highlighted in red",
+            "option_b": "They have a key image in their icon",
+            "option_c": "They are italicized",
+            "option_d": "They are underlined"
+        },
+        "answer": "option_b",
+        "explanation": "Primary key fields are made visible in the list of fields within a table by a key image in their icon."
+    },
+    "question_3": {
+        "question": "What happens if you add a table with the 'Add table with field selection' option and a field is set as a primary key?",
+        "options": {
+            "option_a": "The field is highlighted",
+            "option_b": "The field is automatically encrypted",
+            "option_c": "A checkmark is indicated in the Primary Key column",
+            "option_d": "The field is deleted"
+        },
+        "answer": "option_c",
+        "explanation": "When adding a table with the 'Add table with field selection' option, fields set as primary keys are indicated by a checkmark in the Primary Key column."
+    },
+    "question_4": {
+        "question": "Which of the following is NOT a primary key constraint behavior that can be set in the table settings?",
+        "options": {
+            "option_a": "Error",
+            "option_b": "Warning",
+            "option_c": "Ignore",
+            "option_d": "None"
+        },
+        "answer": "option_c",
+        "explanation": "The primary key constraint behaviors that can be set are 'Use instance setting (error)', 'Error', 'Warning', and 'None'. 'Ignore' is not a listed behavior."
+    },
+    "question_5": {
+        "question": "What is the first step in setting up a supernatural key as a primary key?",
+        "options": {
+            "option_a": "Selecting the primary key fields from the Business key selection area",
+            "option_b": "Creating a new supernatural key by right-clicking on a non-simple mode table and choosing 'Add Supernatural key field'",
+            "option_c": "Giving the key store a name that relates to the table",
+            "option_d": "Unchecking the two original primary key fields"
+        },
+        "answer": "option_b",
+        "explanation": "The first step in setting up a supernatural key as a primary key is to create a new supernatural key by right-clicking on a non-simple mode table and choosing 'Add Supernatural key field'."
+    },
+    "question_6": {
+        "question": "What should you do after creating a supernatural key and before applying it to the original primary key fields?",
+        "options": {
+            "option_a": "Encrypt the supernatural key",
+            "option_b": "Check the two original primary key fields",
+            "option_c": "Uncheck the two original primary key fields",
+            "option_d": "Delete the original primary key fields"
+        },
+        "answer": "option_c",
+        "explanation": "After creating a supernatural key and before applying it, you should uncheck the two original primary key fields to apply the supernatural key to them."
+    }
+}

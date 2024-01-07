@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "Where are semantic models added in TimeXtender?",
+        "options": {
+            "option_a": "In the desktop application",
+            "option_b": "In the web interface",
+            "option_c": "Via command line",
+            "option_d": "In the mobile app"
+        },
+        "answer": "option_b",
+        "explanation": "Semantic models are added in the web interface of TimeXtender, as stated in the provided context."
+    },
+    "question_2": {
+        "question": "What can you do with a semantic model instance after it has been created?",
+        "options": {
+            "option_a": "Only delete it",
+            "option_b": "Only add more endpoints",
+            "option_c": "Edit to add or remove endpoints",
+            "option_d": "It cannot be modified after creation"
+        },
+        "answer": "option_c",
+        "explanation": "After creating a semantic model instance, you can edit it to add more endpoints or remove existing ones."
+    },
+    "question_3": {
+        "question": "What is the default number of days for log retention in TimeXtender?",
+        "options": {
+            "option_a": "30 days",
+            "option_b": "60 days",
+            "option_c": "90 days",
+            "option_d": "120 days"
+        },
+        "answer": "option_c",
+        "explanation": "The default setting for log retention days in TimeXtender is 90 days."
+    },
+    "question_4": {
+        "question": "What should you enable if you want multiple developers to work on the same instance simultaneously?",
+        "options": {
+            "option_a": "Team Development",
+            "option_b": "Multi-User Access",
+            "option_c": "Collaborative Mode",
+            "option_d": "Concurrent Development"
+        },
+        "answer": "option_a",
+        "explanation": "Team Development should be enabled to allow multiple developers to develop on the instance at the same time."
+    },
+    "question_5": {
+        "question": "What is the first step to add a new semantic model in TimeXtender?",
+        "options": {
+            "option_a": "Add endpoints",
+            "option_b": "Delete instance name",
+            "option_c": "Add Instance > Add semantic model instance",
+            "option_d": "Edit Save"
+        },
+        "answer": "option_c",
+        "explanation": "To add a new semantic model, the first step is to navigate to 'Data Estate Instances, Add Instance > Add semantic model instance' as per the instructions."
+    },
+    "question_6": {
+        "question": "Is it typically recommended to enable Team Development for semantic models in TimeXtender?",
+        "options": {
+            "option_a": "Yes, it is always recommended",
+            "option_b": "No, it is not typically recommended",
+            "option_c": "Only for large models",
+            "option_d": "Only for models with sensitive data"
+        },
+        "answer": "option_b",
+        "explanation": "Since Semantic models are relatively small, enabling Team Development is not typically recommended."
+    }
+}

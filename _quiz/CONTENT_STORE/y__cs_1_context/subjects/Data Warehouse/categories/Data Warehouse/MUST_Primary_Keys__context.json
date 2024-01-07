@@ -1,0 +1,44 @@
+{
+    "DateTime": "2023-12-27 14:40:43",
+    "URL": "https://support.timextender.com/data-warehouse-108/primary-keys-1115",
+    "Keywords": "missing",
+    "Title": "Primary Keys _ Community",
+    "Author": "Thomas Lind",
+    "Text": "Primary Keys All tables can have a primary key that uniquely identifies eachrow in the table. The primary key field can consist of one or more fields. Primary key fields have a key image in their icon, helping make them visible in the list of fields within the table. Primary keys have the followingadvantages: Include in Primary Key If your data source in the ODX instance has set primary keys for tables, they will be applied automatically when you add them to your data area. If you choose to add a table using the Add table with field selection option, then which fields are set as primary keys is indicated by a checkmarkin the Primary Key column. Primary key behavior can be set inthe table settings of a table using one ofthe following options.  The instance setting is controlled on the Edit Data Warehouse instance menu. The behavior is the same as explained above. If you have more than one field in your table that are set as primary keys and you want to limit this to one field creating a Supernatural key consisting of these fields is a good solution.   That is it. When the supernatural key is set as primary key it will affect the applied fields so they are treated as primary keys as well. ",
+    "Lists": [
+        {
+            "heading": "Set up a Primary Key field",
+            "paragraphs": [
+                "To include a field in the primary key for a table, right-click on the field and select Include in Primary Key."
+            ],
+            "list": [
+                ""
+            ]
+        },
+        {
+            "heading": "Primary key Constraints",
+            "paragraphs": [
+                "Primary key behavior can be set in the table settings of a table using one of the following options.",
+                ""
+            ],
+            "list": [
+                "Use instance setting (error) This refers to the default setting of the instance",
+                "Error This will send a row to the Errors view and avoid adding the row to the valid table if there is a violation.",
+                "Warning This will send a row the the Warnings view and not remove the row from the valid table if there is a violation.",
+                "None This will do nothing if a violation occurs. Only use this for debugging."
+            ]
+        },
+        {
+            "heading": "Set up supernatural key as primary key",
+            "paragraphs": [],
+            "list": [
+                "Start by creating a new supernatural key by right-clicking on a non simple mode table and choosing Add Supernatural key field.",
+                "Add the primary key fields from the Business key selection area by selecting them and clicking Add.",
+                "Click on the Add button next to the Key store menu.",
+                "In the Add Key Store menu, give the store a name that relates to the table.",
+                "Be sure the fields are in the correct order and click OK to create the field.",
+                "Uncheck the two original primary key fields and apply it to the supernatural key."
+            ]
+        }
+    ]
+}

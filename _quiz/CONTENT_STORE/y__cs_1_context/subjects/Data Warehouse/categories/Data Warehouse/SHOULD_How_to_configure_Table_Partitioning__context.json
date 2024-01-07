@@ -1,0 +1,23 @@
+{
+    "DateTime": "2023-12-27 14:41:21",
+    "URL": "https://support.timextender.com/data-warehouse-108/how-to-configure-table-partitioning-1525",
+    "Keywords": "missing",
+    "Title": "How to configure Table Partitioning _ Community",
+    "Author": "Greg Lennox",
+    "Text": "Partitioning can be configured under the Table Settings Performance Tabis the database process where very large tables are divided into multiple smaller individual tables.As a result, queries that access only a fraction of the data mayrun faster sincethere may beless data to scan.  Partitioning can be configuredbased on eitherfixed or dynamic date ranges. Click the Template Add buttonto create a partition template. Date - System Field Use NULL value Conversion How the data is queried generally determines the optimal partitioning period. For example, if queries are commonly performed on monthly based data, then partitioning by Month(YYYYMM) would normally be the appropriate date range to select for partitioning. For the scenario above, complete the configuration by setting the appropriate date field and time table, which is usually your Date table and used to compare the date data. There may be instances where partitioning based on set time periods is not optimal, as there may bedynamic ranges that do not adhere to only one timeframe. A custom partition may be used to accomodate these types of partitioning situations. Click the Template Add buttonto create a partition template. Select the Other - Manual Setup radio button. Select thedata type that the range should contain, i.e. String. New Range Value Advanced Filegroups Per partition Once your custom template is created, you to create the customdate ranges that correspond to the values in it that match the range values created above. These are the dynamic ranges. Start by going to the source table of the table you want to use the partition in. Create a custom text field called, i.e. Part Right-click on the field and select Field Transformations to add some fixed characters. For each fixed value character, add a condition that defines the dynamic ranges. Once your custom date ranges are setup under the fixed values, you can set this field as the partitioning field and also select the appropriate date table.  ",
+    "Lists": [
+        {
+            "heading": "Fixed Date Range Partitioning",
+            "paragraphs": [
+                "Click the Template Add button to create a partition template.",
+                "Selecting the \u201cDate - System Field\u201d bullet point will open the date range menu below where the following options are available."
+            ],
+            "list": [
+                "Year (YYYY)",
+                "Month(YYYYMM)",
+                "Day (YYYYMMDD)",
+                "Use NULL value Conversion"
+            ]
+        }
+    ]
+}

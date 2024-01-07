@@ -1,0 +1,68 @@
+{
+    "question_1": {
+        "question": "How can you display data lineage for a specific field in TimeXtender?",
+        "options": {
+            "option_a": "Double-click on the field",
+            "option_b": "Right-click on the field and select Data Lineage",
+            "option_c": "Go to the Object Dependencies menu",
+            "option_d": "Click the refresh button in the Content section"
+        },
+        "answer": "option_b",
+        "explanation": "To show data lineage, you need to right-click on a field and then click Data Lineage, as per the instructions provided in the context."
+    },
+    "question_2": {
+        "question": "What should you do to customize the display of objects in the visualization window of TimeXtender?",
+        "options": {
+            "option_a": "Click the refresh button",
+            "option_b": "Right-click the background to bring up the customization menu",
+            "option_c": "Double-click on a node",
+            "option_d": "Deploy the tables"
+        },
+        "answer": "option_b",
+        "explanation": "To customize the display, you right-click the background in the visualization window to bring up a menu with different options for organizing and displaying the data."
+    },
+    "question_3": {
+        "question": "What feature is suggested to be brought back for better navigation in TimeXtender's GUI?",
+        "options": {
+            "option_a": "Double-click on a node to go to that object",
+            "option_b": "Reset Layout option",
+            "option_c": "Expand All feature",
+            "option_d": "Object Dependencies menu"
+        },
+        "answer": "option_a",
+        "explanation": "The user suggests bringing back the feature to double-click on a node to go to that object in the GUI, which is valuable when working with large solutions."
+    },
+    "question_4": {
+        "question": "What issue is mentioned regarding the data lineage view in TimeXtender?",
+        "options": {
+            "option_a": "It does not show any tables",
+            "option_b": "It incorrectly shows the same schema for all tables",
+            "option_c": "It does not refresh automatically",
+            "option_d": "It lacks a feature to show object dependencies"
+        },
+        "answer": "option_b",
+        "explanation": "The issue mentioned is that the data lineage view shows an incorrect schema for the tables, indicating [dbo] for all tables even if they have different schemas."
+    },
+    "question_5": {
+        "question": "What action allows you to move an object around in the visualization window of TimeXtender?",
+        "options": {
+            "option_a": "Click and drag the object",
+            "option_b": "Right-click and select 'Move'",
+            "option_c": "Click and hold on an object to move it",
+            "option_d": "Use the arrow keys on the keyboard"
+        },
+        "answer": "option_c",
+        "explanation": "To move an object around in the visualization window, you click and hold on an object, then release the mouse button to place it."
+    },
+    "question_6": {
+        "question": "Which option is used to ensure that dependencies are respected during multi-threaded execution packages in TimeXtender?",
+        "options": {
+            "option_a": "Advanced Object Dependencies",
+            "option_b": "Reset Layout",
+            "option_c": "Deploy tables",
+            "option_d": "Refresh Data Lineage"
+        },
+        "answer": "option_a",
+        "explanation": "The context implies a concern about whether dependencies are respected in multi-threaded execution packages, hinting at the importance of Advanced Object Dependencies in this scenario."
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "question_4": {
+        "question_content": {
+            "question": "If you want one step to be retried up to three times, how should 'Retries per Step' and 'Retries' be configured?",
+            "options": {
+                "option_a": "'Retries per Step' should be 1 and 'Retries' should be 3",
+                "option_b": "'Retries per Step' should be 3 and 'Retries' should be 3",
+                "option_c": "'Retries per Step' should be 3 and 'Retries' should be 9",
+                "option_d": "'Retries per Step' should be 0 and 'Retries' should be 3"
+            },
+            "answer": "option_b",
+            "explanation": "'Retries per Step' must be 3, and 'Retries' should be equal to 3 retries * 1 step = 3."
+        },
+        "question_facts": [
+            "The question is clear and directly related to the content provided. It tests the understanding of the 'Retries per Step' and 'Retries' configuration, which is a key concept in the article. The options are well-structured and plausible, which makes the question challenging. The explanation is also clear and concise. However, the question could be improved by providing a bit more context about what these configurations are used for. Overall, I would rate this question a 4 out of 5."
+        ]
+    }
+}

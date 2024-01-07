@@ -1,0 +1,102 @@
+{
+    "question_1": {
+        "question_content": {
+            "question": "What is the primary function of the ODX server in the context of TimeXtender?",
+            "options": {
+                "option_a": "To provide a user interface for data analysis",
+                "option_b": "To perform the actual movement of data",
+                "option_c": "To generate reports from data",
+                "option_d": "To visualize data in dashboards"
+            },
+            "answer": "option_b",
+            "explanation": "The ODX server is responsible for the actual movement of data, as configured by the desktop software, ensuring data control within the user's environment."
+        },
+        "question_facts": [
+            "After reviewing the test question, there are no typos to report. All words are spelled correctly.",
+            "The question assumes prior knowledge of TimeXtender and its components, which might not be familiar to all test-takers. The term \"ODX server\" is specific to TimeXtender and without context, this question could be confusing. The question also lacks clarity on what \"the actual movement of data\" entails, which might leave test-takers uncertain about what the ODX server's role is compared to other components like ETL processes or data storage solutions. The other options provided could be considered as potentially misleading because they are also functions associated with data management and handling, but not specifically tied to the ODX server's primary function, thus not clearly incorrect for someone unfamiliar with TimeXtender. The explanation provided with the answer is useful but could be more detailed to enhance the test-taker's understanding of the ODX server's role within the TimeXtender ecosystem."
+        ]
+    },
+    "question_2": {
+        "question_content": {
+            "question": "Where can the ODX server store the data it ingests?",
+            "options": {
+                "option_a": "Only on-premise",
+                "option_b": "Only in the cloud",
+                "option_c": "Either on-premise or in the cloud",
+                "option_d": "Directly on TimeXtender desktop"
+            },
+            "answer": "option_c",
+            "explanation": "The ODX server can copy data to a data storage which can be either on-premise or in the cloud, offering flexibility in data storage options."
+        },
+        "question_facts": [
+            "After reviewing the question, there are no typos in the question, options, answer, or explanation provided. Everything is spelled correctly.",
+            "The test question is grammatically correct and clear. It is also considerate of diverse readers as it does not contain any jargon or culturally specific references that could be confusing. The question, options, and explanation are all straightforward and should be easily understood by individuals with varying backgrounds.",
+            "Rating: 5\n\nExplanation: The question is clear, specific, and assesses knowledge of ODX server capabilities regarding data storage locations. The correct answer 'Either on-premise or in the cloud' is also supported by the provided article, which states the ODX server can copy data to either type of storage."
+        ]
+    },
+    "question_3": {
+        "question_content": {
+            "question": "How do you add data from a data source to an ODX instance?",
+            "options": {
+                "option_a": "By manually entering data into the ODX",
+                "option_b": "By using the TimeXtender application to transfer data",
+                "option_c": "By configuring data sources in TimeXtender Desktop",
+                "option_d": "By sending an email request to TimeXtender support"
+            },
+            "answer": "option_c",
+            "explanation": "Adding data to an ODX instance is done by configuring data sources within the TimeXtender Desktop application, such as selecting tables and fields for ingestion."
+        },
+        "question_facts": [
+            "The answer provided as 'option_c' is true. The explanation is correct, stating that configuring data sources within the TimeXtender Desktop application is the method to add data to an ODX instance. The supporting text from the article confirms this by indicating that opening the ODX instance in TimeXtender Desktop allows for configuring data sources, including selecting tables and fields for ingestion.",
+            "The question provides an accurate answer, but there are several issues that could make it problematic:\n\n1. The term \"ODX\" might be unfamiliar to some test takers without context; the question assumes prior knowledge of the acronym without defining it.\n2. Option A is implausible as manually entering data into an ODX instance is not typical for such systems, potentially misleading test takers about the nature of the process.\n3. Option D is unlikely and could misguide test takers into thinking that email support is a standard method for data transfer in professional settings.\n4. The explanation is brief and does not fully elaborate on why the other options are incorrect, which could be essential for understanding the context of the correct answer.\n5. The question does not specify the level of knowledge required (e.g., beginner, intermediate, expert), which could affect how test takers approach the question.\n\nA more context-rich explanation and plausible distractors could improve the question's quality."
+        ]
+    },
+    "question_4": {
+        "question_content": {
+            "question": "What can be configured within the TimeXtender Desktop when opening an ODX Instance?",
+            "options": {
+                "option_a": "Network configurations only",
+                "option_b": "Data source configurations such as tables, fields, and scheduling",
+                "option_c": "Visualizations and dashboard layouts",
+                "option_d": "Email notifications for system errors"
+            },
+            "answer": "option_b",
+            "explanation": "Within TimeXtender Desktop, when opening an ODX Instance, you can configure data sources, including selecting tables and fields for ingestion, primary keys, incremental load, and scheduling transfers."
+        },
+        "question_facts": [
+            "The test question is grammatically correct and clear for a diverse audience. The final format of the question is appropriate for use."
+        ]
+    },
+    "question_5": {
+        "question_content": {
+            "question": "Which feature in an ODX instance allows for efficient data updates by only loading changes since the last transfer?",
+            "options": {
+                "option_a": "Full Load",
+                "option_b": "Incremental Load",
+                "option_c": "Synchronization task",
+                "option_d": "ADO.net"
+            },
+            "answer": "option_b",
+            "explanation": "The Incremental Load feature in an ODX instance enables efficient data updates by loading only the changes that occurred since the last data transfer, rather than the entire dataset."
+        },
+        "question_facts": [
+            "After reviewing the question, there are no typos in the provided text. Everything is spelled correctly."
+        ]
+    },
+    "question_6": {
+        "question_content": {
+            "question": "What is a necessary step to transfer data from an ODX to a Data Warehouse using TimeXtender?",
+            "options": {
+                "option_a": "Creating a new email account",
+                "option_b": "Installing a new desktop operating system",
+                "option_c": "Adding a Transfer Task",
+                "option_d": "Purchasing additional cloud storage"
+            },
+            "answer": "option_c",
+            "explanation": "To transfer data from an ODX to a Data Warehouse in TimeXtender, you need to add a Transfer Task, which is part of configuring the data movement process."
+        },
+        "question_facts": [
+            "After reviewing the question, there are no typos present. Everything is spelled correctly."
+        ]
+    }
+}

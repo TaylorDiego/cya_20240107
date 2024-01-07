@@ -1,0 +1,18 @@
+{
+    "question_2": {
+        "question_content": {
+            "question": "Which of the following is NOT a recommended step when dealing with slow package executions in TimeXtender?",
+            "options": {
+                "option_a": "Implement incremental load for loading big tables",
+                "option_b": "Lower the number of concurrent execution threads on ODX data source",
+                "option_c": "Ignore network latency and CPU/memory usage on other machines",
+                "option_d": "Use a Profiler tool to trace SQL queries and resolve blocking problems"
+            },
+            "answer": "option_c",
+            "explanation": "Ignoring network latency and CPU/memory usage on other machines is not recommended as these factors can significantly impact execution performance."
+        },
+        "question_facts": [
+            "The question is well-structured, clear, and directly related to the content provided. It tests the understanding of the recommended steps when dealing with slow package executions in TimeXtender. The options are well thought out and the correct answer is clearly indicated. The explanation provided for the answer is also clear and concise. However, the question could be improved by providing a bit more context or background information. Overall, I would rate this question a 4 out of 5."
+        ]
+    }
+}

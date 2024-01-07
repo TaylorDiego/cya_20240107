@@ -1,0 +1,27 @@
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What can TimeXtender 6024.1 Documentation be generated for?
+
+{"score":0}ODX instances only
+{"score":0}Data Warehouse instances only
+{"score":0}Semantic Model instances only
+{"score":100.0}ODX instances, Data Warehouse instances, and Semantic Model instances
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you generate a deployment status report in TimeXtender?
+
+{"score":0}By emailing TimeXtender support
+{"score":100.0}By generating it on an instance or data area level
+{"score":0}By printing the project
+{"score":0}By purchasing an additional module
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you display data lineage for a specific field in TimeXtender?
+
+{"score":0}Double-click on the field
+{"score":100.0}Right-click on the field and select Data Lineage
+{"score":0}Go to the Object Dependencies menu
+{"score":0}Click the refresh button in the Content section
+-
+{"folder":"(2024_01) General","tags":{"category":"(2024_01) MUST KNOW"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do to customize the display of objects in the visualization window of TimeXtender?
+
+{"score":0}Click the refresh button
+{"score":100.0}Right-click the background to bring up the customization menu
+{"score":0}Double-click on a node
+{"score":0}Deploy the tables

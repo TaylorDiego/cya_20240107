@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the primary benefit of partitioning large tables into smaller ones?",
+        "options": {
+            "option_a": "To increase the amount of data stored",
+            "option_b": "To make queries run faster by scanning less data",
+            "option_c": "To create more tables for organizational purposes",
+            "option_d": "To use more disk space"
+        },
+        "answer": "option_b",
+        "explanation": "Partitioning large tables into smaller ones allows queries that access only a fraction of the data to run faster because there is less data to scan."
+    },
+    "question_2": {
+        "question": "Under which tab can table partitioning be configured?",
+        "options": {
+            "option_a": "Data Sources Tab",
+            "option_b": "Performance Tab",
+            "option_c": "Design Tab",
+            "option_d": "Execution Tab"
+        },
+        "answer": "option_b",
+        "explanation": "Table partitioning can be configured under the Table Settings Performance Tab."
+    },
+    "question_3": {
+        "question": "Which of the following is NOT a fixed date range option for partitioning?",
+        "options": {
+            "option_a": "Year (YYYY)",
+            "option_b": "Week (YYYYWW)",
+            "option_c": "Month (YYYYMM)",
+            "option_d": "Day (YYYYMMDD)"
+        },
+        "answer": "option_b",
+        "explanation": "The fixed date range options for partitioning listed are Year (YYYY), Month (YYYYMM), Day (YYYYMMDD), and Use NULL value Conversion. Week (YYYYWW) is not mentioned as an option."
+    },
+    "question_4": {
+        "question": "What should you do to create a custom partition template?",
+        "options": {
+            "option_a": "Select the 'Other - Manual Setup' radio button",
+            "option_b": "Choose the 'Date - System Field' bullet point",
+            "option_c": "Click the 'Template Add' button twice",
+            "option_d": "Set the partitioning field to a numeric type"
+        },
+        "answer": "option_a",
+        "explanation": "To create a custom partition template, you should select the 'Other - Manual Setup' radio button."
+    }
+}

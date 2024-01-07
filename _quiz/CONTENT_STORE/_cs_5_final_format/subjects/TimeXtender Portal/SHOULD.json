@@ -1,0 +1,79 @@
+{
+    "question_1": {
+        "question": "What is the main benefit of upgrading to the Premium tier according to the text provided?",
+        "options": {
+            "option_a": "Limited access to features",
+            "option_b": "Unlimited everything",
+            "option_c": "Free tier benefits",
+            "option_d": "Discounted pricing"
+        },
+        "answer": "option_b",
+        "explanation": "The text states that upgrading to Premium provides 'unlimited everything,' which is the main benefit over the Free tier."
+     }
+    , "question_2": {
+        "question": "What types of instances can have their firewall configured in TimeXtender?",
+        "options": {
+            "option_a": "ODX instances only",
+            "option_b": "DW instances only",
+            "option_c": "Semantic Model instances only",
+            "option_d": "ODX, DW, and Semantic Model instances"
+        },
+        "answer": "option_d",
+        "explanation": "The firewall can be configured for ODX instances, DW instances, and Semantic Model instances, allowing for flexibility in securing different types of instances."
+    }
+    , "question_3": {
+        "question": "What is the main advantage of using automatic firewall rules in TimeXtender?",
+        "options": {
+            "option_a": "They offer more control over IP address access",
+            "option_b": "They require manual authentication each time",
+            "option_c": "They provide convenience and efficiency",
+            "option_d": "They are necessary for all TimeXtender setups"
+        },
+        "answer": "option_c",
+        "explanation": "Automatic rules, or dynamic rules, are created automatically when a user connects, providing convenience and efficiency by eliminating the need for manual rule creation."
+     }
+    , "question_4": {
+        "question": "What does the TimeXtender Portal Admin page display regarding credits and billing?",
+        "options": {
+            "option_a": "Only the current credit balance",
+            "option_b": "Only a monthly overview of usage",
+            "option_c": "Both the current credit balance and a monthly overview of usage",
+            "option_d": "Historical credit balances and future credit projections"
+        },
+        "answer": "option_c",
+        "explanation": "The TimeXtender Portal Admin page shows the current credit balance and provides a monthly overview of usage, including ODX, Data Warehouse, and Semantic Model Instances."
+    }
+    , "question_5": {
+        "question": "How often are credits deducted from your balance in TimeXtender?",
+        "options": {
+            "option_a": "Weekly",
+            "option_b": "Daily",
+            "option_c": "Monthly",
+            "option_d": "At the end of the billing cycle"
+        },
+        "answer": "option_b",
+        "explanation": "Usage is deducted from the credit balance at the end of each day, based on the number of instances set up."
+     }
+    , "question_6": {
+        "question": "What is the first step to update an existing data source provider in TimeXtender according to the article?",
+        "options": {
+            "option_a": "Download the new provider version",
+            "option_b": "Sign into the TimeXtender Portal and go to data sources",
+            "option_c": "Contact TimeXtender support",
+            "option_d": "Uninstall the previous version of the provider"
+        },
+        "answer": "option_b",
+        "explanation": "The first step is to sign into the TimeXtender Portal and navigate to data sources, as this is where you can see if updates are available."
+    }
+    , "question_7": {
+        "question": "Where will a newer version of a data source provider appear if it is available?",
+        "options": {
+            "option_a": "In an email notification",
+            "option_b": "On the TimeXtender Portal homepage",
+            "option_c": "On the list in the data sources section of the TimeXtender Portal",
+            "option_d": "It needs to be searched for manually in the portal"
+        },
+        "answer": "option_c",
+        "explanation": "If a newer version of a data source provider is available, it will appear on the list in the data sources section of the TimeXtender Portal."
+    }
+}

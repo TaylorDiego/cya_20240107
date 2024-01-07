@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the purpose of using validation rules in a data warehouse?",
+        "options": {
+            "option_a": "To format the data into a more readable structure",
+            "option_b": "To discover invalid data and increase data accuracy and reliability",
+            "option_c": "To encrypt sensitive data",
+            "option_d": "To decrease the size of the data warehouse"
+        },
+        "answer": "option_b",
+        "explanation": "Validation rules help in identifying invalid data, which in turn increases the accuracy and reliability of the data within the data warehouse."
+    },
+    "question_2": {
+        "question": "When defining data selection or validation rules, which of the following is NOT an operator mentioned in the context?",
+        "options": {
+            "option_a": "Greater Than",
+            "option_b": "Contains",
+            "option_c": "Not Empty",
+            "option_d": "Less or Equal"
+        },
+        "answer": "option_b",
+        "explanation": "The operator 'Contains' is not listed in the provided context. Operators like 'Greater Than', 'Not Empty', and 'Less or Equal' are mentioned."
+    },
+    "question_3": {
+        "question": "What should be done after selecting the appropriate operator in the Field Validations pane?",
+        "options": {
+            "option_a": "Click 'Add' to add the rule",
+            "option_b": "Type a value in the Value box, if applicable",
+            "option_c": "Select Field Validations to open the pane",
+            "option_d": "Right-click the relevant field"
+        },
+        "answer": "option_b",
+        "explanation": "After selecting the operator, if applicable, you should type a value to be used with the operator in the Value box before adding the rule."
+    },
+    "question_4": {
+        "question": "How can you view the validation errors or warnings for a specific table in the data warehouse?",
+        "options": {
+            "option_a": "By running a diagnostic tool on the database",
+            "option_b": "By querying the database directly",
+            "option_c": "By clicking Errors or Warnings in the Reports menu",
+            "option_d": "By exporting the table data to a CSV file"
+        },
+        "answer": "option_c",
+        "explanation": "To view validation errors or warnings, you should click on Errors or Warnings in the Reports menu and then select the relevant database and table."
+    }
+}

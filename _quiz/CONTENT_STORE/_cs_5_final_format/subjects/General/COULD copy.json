@@ -1,0 +1,310 @@
+{
+    "question_1": {
+        "question": "What is a potential reason for an Azure Data Factory (ADF) execution error when using ODX Server with an Azure Data Lake Gen2 storage?",
+        "options": {
+            "option_a": "Incorrect file format",
+            "option_b": "Firewall blocking ADF from accessing the Data Lake",
+            "option_c": "Insufficient permissions on the ADF",
+            "option_d": "ODX Server is offline"
+        },
+        "answer": "option_b",
+        "explanation": "The error 'Forbidden' indicates that the firewall is blocking ADF from reading or writing files in the Data Lake, which is a networking issue rather than a problem with file formats, permissions, or server status."
+    }
+    , "question_2": {
+        "question": "What is the likely cause of the error 'Could not load file or assembly' when using TimeXtender?",
+        "options": {
+            "option_a": "Incorrect TimeXtender version",
+            "option_b": "Missing SQL Shared Management Objects (SMO)",
+            "option_c": "Corrupted TimeXtender project file",
+            "option_d": "Outdated Windows operating system"
+        },
+        "answer": "option_b",
+        "explanation": "The error is caused by missing SQL Shared Management Objects (SMO), which are necessary for creating tables and other SQL objects from TimeXtender."
+    }
+    , "question_3": {
+        "question": "What is the primary reason for the 'Requested registry access is not allowed' error in TimeXtender?",
+        "options": {
+            "option_a": "The TimeXtender service is not installed correctly.",
+            "option_b": "The account used by TimeXtender lacks permission to read System DSN entries.",
+            "option_c": "The ODBC data source is corrupted.",
+            "option_d": "The Registry Editor is not functioning properly."
+        },
+        "answer": "option_b",
+        "explanation": "The error occurs because the account used by TimeXtender does not have permission to read the list of System DSN entries in the registry, which is necessary for creating an ODBC data source."
+    }
+    , "question_4": {
+        "question": "What is the default timeout setting for a query on a DW instance if it is not changed?",
+        "options": {
+            "option_a": "60 seconds",
+            "option_b": "100 seconds",
+            "option_c": "360 seconds",
+            "option_d": "3600 seconds"
+        },
+        "answer": "option_b",
+        "explanation": "The default timeout for a query on a DW instance is 100 seconds, after which the query will timeout if not completed."
+    }
+    , "question_5": {
+        "question": "What is the recommended solution when encountering an error related to 'Microsoft.SqlServer.BatchParser.dll' according to the provided context?",
+        "options": {
+            "option_a": "Reinstall Microsoft SQL Server 2016",
+            "option_b": "Download and install specific packages from Microsoft SQL Server 2016 Service Pack 2 Feature Pack",
+            "option_c": "Update the existing Microsoft SQL Server to the latest version",
+            "option_d": "Ignore the error as it does not affect the database functionality"
+        },
+        "answer": "option_b",
+        "explanation": "The context suggests downloading and installing 'ENUx64SharedManagementObjects.msi' and 'ENUx64SQLSysClrTypes.msi' from the Microsoft SQL Server 2016 Service Pack 2 Feature Pack as a resolution to the error."
+    }
+    , "question_6": {
+        "question": "What is the default directory for the OLEAUT32.dll file according to the provided text?",
+        "options": {
+            "option_a": "C:Program FilesOLEAUT32.dll",
+            "option_b": "C:WindowsOLEAUT32.dll",
+            "option_c": "C:Windowssystem32OLEAUT32.dll",
+            "option_d": "C:OLEAUT32system32.dll"
+        },
+        "answer": "option_c",
+        "explanation": "The default directory for the OLEAUT32.dll file is specified in the text as C:Windowssystem32OLEAUT32.dll."
+    }
+    , "question_7": {
+        "question": "What permission should be given to the user running the Analysis Services Service to resolve the login failure error?",
+        "options": {
+            "option_a": "db_datawriter",
+            "option_b": "db_datareader",
+            "option_c": "db_owner",
+            "option_d": "db_accessadmin"
+        },
+        "answer": "option_b",
+        "explanation": "The user running the Analysis Services Service needs at least db_datareader permissions on the data warehouse to resolve the login failure error."
+    }
+    , "question_8": {
+        "question": "What is a likely reason for receiving an error message when reading objects from an Oracle data source, despite the Test Connection to the Oracle data source working?",
+        "options": {
+            "option_a": "The Oracle database is offline",
+            "option_b": "The Oracle Data Provider is a different bit version than TimeXtender",
+            "option_c": "The network connection is unstable",
+            "option_d": "The Oracle data source contains no tables"
+        },
+        "answer": "option_b",
+        "explanation": "The error is likely due to a bit version mismatch between the Oracle Data Provider and TimeXtender, as the connection test succeeds but object reading fails."
+    }
+    , "question_9": {
+        "question": "What is a potential cause for the locale id error when executing a data area table?",
+        "options": {
+            "option_a": "Mismatched time zones between the source and destination databases",
+            "option_b": "Different collation options between the Data Warehouse instance and source databases",
+            "option_c": "Incorrect SQL query syntax",
+            "option_d": "Mismatched data types between source and destination columns"
+        },
+        "answer": "option_b",
+        "explanation": "The error can occur if the Data Warehouse instance and one or more of the source databases are using different collation options, leading to a mismatch."
+    }
+    , "question_10": {
+        "question": "What action is suggested to resolve the error encountered when testing the connection to a new Oracle data source?",
+        "options": {
+            "option_a": "Reboot the system",
+            "option_b": "Remove the Oracle Native Client and install only the Oracle Data Provider",
+            "option_c": "Update the Oracle data source credentials",
+            "option_d": "Ignore the error and continue"
+        },
+        "answer": "option_b",
+        "explanation": "The error suggests a conflict between Oracle Native Client and Oracle Data Provider. Removing the Oracle Native Client and installing only the Oracle Data Provider as per the instructions in the provided article is the recommended solution."
+    }
+    , "question_11": {
+        "question": "What is a likely cause of the 'Login failed for user' error when executing a table in a Data Warehouse Instance sourced from an ODX?",
+        "options": {
+            "option_a": "The ODX Server service account has 'read-only' access to the DWH Database.",
+            "option_b": "The ODX Server and DWH database are on the same server, causing conflicts.",
+            "option_c": "The ODX Server service account does not have 'write' access to the DWH Database.",
+            "option_d": "The DWH database does not support data loading from an ODX Instance."
+        },
+        "answer": "option_c",
+        "explanation": "The error is likely due to the service account running the ODX Server not having 'write' access to the DWH Database, which is necessary to execute data transfer operations."
+    }
+    , "question_12": {
+        "question": "What is the main reason duplicates occur in a custom table according to the text?",
+        "options": {
+            "option_a": "Because the custom table is truncated after each insert",
+            "option_b": "Due to a select statement being used instead of an Insert Into command",
+            "option_c": "Because the script is executed only once",
+            "option_d": "The custom table does not support the insert operation"
+        },
+        "answer": "option_b",
+        "explanation": "Duplicates occur because a select statement is used in the custom table insert, which does not truncate the table, leading to doubling of line amount with each execution."
+    }
+    , "question_13": {
+        "question": "What is a likely cause for the 'Service request failed: Access is denied' error when adding or editing an ODX data source according to the provided text?",
+        "options": {
+            "option_a": "Incorrect login credentials for the ODX data source",
+            "option_b": "Network connectivity issues",
+            "option_c": "Configuration on the machine blocking ODX from starting new processes",
+            "option_d": "Outdated version of the TimeXtender software"
+        },
+        "answer": "option_c",
+        "explanation": "The error is due to some configuration on the machine that is preventing the ODX from starting new processes and communicating with those processes."
+    }
+    , "question_14": {
+        "question": "What should you do if you encounter an ODX error stating that the 'OwnerId' property does not exist for the specified object?",
+        "options": {
+            "option_a": "Ignore the error as it does not affect the ODX operation.",
+            "option_b": "Create a new SQL Server Data Storage from within ODX.",
+            "option_c": "Restart the SQL Server to refresh the system.",
+            "option_d": "Delete the database and create a new one."
+        },
+        "answer": "option_b",
+        "explanation": "When the 'OwnerId' property is missing, creating a new SQL Server Data Storage from within ODX is recommended to resolve the error."
+    }
+    , "question_15": {
+        "question": "Which debugger is mentioned in the article for attaching to a running TimeXtender process?",
+        "options": {
+            "option_a": "GDB",
+            "option_b": "x64Dbg",
+            "option_c": "LLDB",
+            "option_d": "JDB"
+        },
+        "answer": "option_b",
+        "explanation": "The article specifies using x64Dbg or Windbg Preview as GUI debuggers to attach to a running TimeXtender process."
+    }
+    , "question_16": {
+        "question": "What should you ensure is online when executing ODX tasks for an ADF data source that requires it?",
+        "options": {
+            "option_a": "Self-Hosted Integration Runtime",
+            "option_b": "Cloud Data Factory",
+            "option_c": "On-Prem Data Gateway",
+            "option_d": "Azure Blob Storage"
+        },
+        "answer": "option_a",
+        "explanation": "The Self-Hosted Integration Runtime must be online to encrypt the payload when executing ODX tasks for an ADF data source."
+    }
+    , "question_17": {
+        "question": "What is the primary reason a new field in an incremental table might not populate with data?",
+        "options": {
+            "option_a": "The database connection is lost",
+            "option_b": "Incremental tables only update new or changed records",
+            "option_c": "The field is not properly defined in the database schema",
+            "option_d": "The data source does not contain any data for the new field"
+        },
+        "answer": "option_b",
+        "explanation": "Incremental tables are designed to update only new or changed records. Therefore, a new field will remain NULL for existing records unless the table is fully reloaded or another method is used to update the field."
+    }
+    , "question_18": {
+        "question": "What is the most likely cause for not receiving notification e-mails when executing on a schedule according to the provided text?",
+        "options": {
+            "option_a": "The e-mail server is down.",
+            "option_b": "The execution package is not part of the latest deployed version of the project.",
+            "option_c": "The notification system is not configured correctly.",
+            "option_d": "The project has not been saved."
+        },
+        "answer": "option_b",
+        "explanation": "The text suggests that the most likely cause is that the execution package is not included in the latest deployed version of the project."
+    }
+    , "question_19": {
+        "question": "What does the exit code 0016 indicate in the context of an ODX execution error?",
+        "options": {
+            "option_a": "Successful completion of the task",
+            "option_b": "The execution unexpectedly stopped",
+            "option_c": "Syntax error in the code",
+            "option_d": "Missing file or resource"
+        },
+        "answer": "option_b",
+        "explanation": "The exit code 0016 indicates that the execution unexpectedly stopped, which is a key point from the provided context."
+    }
+    , "question_20": {
+        "question": "What is a likely cause for the 'Could not load file or assembly' error when connecting to an Oracle data source according to the text?",
+        "options": {
+            "option_a": "The Oracle.DataAccess assembly is missing.",
+            "option_b": "The Oracle data source window is outdated.",
+            "option_c": "The PublicKeyToken is incorrect.",
+            "option_d": "The assembly is compiled for the correct processor."
+        },
+        "answer": "option_a",
+        "explanation": "The error message indicates that the Oracle.DataAccess assembly could not be loaded, which suggests it is missing or not installed correctly."
+    }
+    , "question_21": {
+        "question": "What is the purpose of the 'sys.query_store_query_text' mentioned in the context?",
+        "options": {
+            "option_a": "To modify data in Azure SQL DB",
+            "option_b": "To profile queries in Azure SQL DB",
+            "option_c": "To create new tables in Azure SQL DB",
+            "option_d": "To delete records from Azure SQL DB"
+        },
+        "answer": "option_b",
+        "explanation": "The 'sys.query_store_query_text' is used for profiling queries to Azure SQL DB, as indicated by the context provided."
+    }
+    , "question_22": {
+        "question": "What should you do first to manually remove the TimeXtender Scheduler service using the command prompt?",
+        "options": {
+            "option_a": "Type 'sc delete 'timeXtender Scheduler <Version>'' and press enter",
+            "option_b": "Click Start, type 'CMD', and press enter",
+            "option_c": "Run command prompt with elevated rights",
+            "option_d": "Restart the computer"
+        },
+        "answer": "option_c",
+        "explanation": "Before removing the TimeXtender Scheduler service, you must run the command prompt with elevated rights to execute administrative commands."
+    }
+    , "question_23": {
+        "question": "What is a potential benefit of restricting synchronization to only necessary tables when synchronizing an Azure Data Factory with an Oracle data source?",
+        "options": {
+            "option_a": "Increases the number of tables synchronized",
+            "option_b": "Speeds up the synchronization process",
+            "option_c": "Reduces the cost of Azure Data Factory",
+            "option_d": "Eliminates the need for owner permissions"
+        },
+        "answer": "option_b",
+        "explanation": "Restricting synchronization to necessary tables can speed up the process due to Oracle databases being highly normalized with potentially tens of thousands of tables."
+    }
+    , "question_24": {
+        "question": "Where can you find the TimeXtender LogEngine events in the Event Viewer?",
+        "options": {
+            "option_a": "Tools -> Options -> Advanced tab",
+            "option_b": "Tools -> Options -> General tab",
+            "option_c": "File -> View -> Event Viewer",
+            "option_d": "View -> Logs -> TimeXtender"
+        },
+        "answer": "option_b",
+        "explanation": "The Event Viewer Application log for TimeXtender LogEngine events can be accessed via Tools -> Options -> General tab."
+    }
+    , "question_25": {
+        "question": "What is a possible cause of sporadic failures in ODX load from source systems as described in the article?",
+        "options": {
+            "option_a": "Consistent failure of a specific table/connection",
+            "option_b": "Manual execution of tables always fails",
+            "option_c": "Intermittent errors during scheduled execution of tasks",
+            "option_d": "Issues with the ODX Server Service handling outbound transfers only"
+        },
+        "answer": "option_c",
+        "explanation": "The article mentions that intermittent errors occur during the scheduled execution of tasks, which can be a cause of sporadic failures. However, re-execution of a task works without failure, indicating that the issue is not consistent or related to a specific table/connection."
+    }
+    , "question_26": {
+        "question": "What is a potential consequence of upgrading TimeXtender if circular reference detection wasn't properly configured in older versions?",
+        "options": {
+            "option_a": "Older objects will deploy more efficiently.",
+            "option_b": "Certain objects may not deploy properly after upgrading.",
+            "option_c": "Execution packages will run without errors.",
+            "option_d": "Circular references will be automatically fixed."
+        },
+        "answer": "option_b",
+        "explanation": "Upgrading TimeXtender can lead to deployment issues for certain objects if the older version had improperly configured circular reference detection, which newer versions rectify."
+    }
+    , "question_27": {
+        "question": "What is a potential cause for user interface elements appearing blurry or very small in TimeXtender?",
+        "options": {
+            "option_a": "Issues with the user's vision",
+            "option_b": "Incorrect display scaling settings",
+            "option_c": "Outdated graphics drivers",
+            "option_d": "Corrupted TimeXtender installation files"
+        },
+        "answer": "option_b",
+        "explanation": "The blurriness or small size of UI elements in TimeXtender is due to issues with display scaling, especially when the application is moved to a monitor with a different scaling factor."
+    }
+    , "question_28": {
+        "question": "What is the primary use of TCPView in troubleshooting a TimeXtender ODX instance?",
+        "options": {
+            "option_a": "To view and edit database records within the ODX",
+            "option_b": "To monitor TCP and UDP endpoints, including the state of TCP connections",
+            "option_c": "To increase the speed of data transfer in the ODX",
+            "option_d": "To create new TCP connections for the ODX instance"
+        },
+        "answer": "option_b",
+        "explanation": "TCPView is used to view TCP and UDP endpoints, including the local and remote addresses and the state of TCP connections, which is essential for troubleshooting network issues in a TimeXtender ODX instance."
+    }
+}

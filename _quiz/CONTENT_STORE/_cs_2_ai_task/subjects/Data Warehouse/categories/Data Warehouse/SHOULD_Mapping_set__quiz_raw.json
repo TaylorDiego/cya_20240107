@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the primary function of the mapping set feature in TimeXtender?",
+        "options": {
+            "option_a": "To create visualizations for data analysis",
+            "option_b": "To merge multiple tables from different data sources into one",
+            "option_c": "To delete redundant data from the database",
+            "option_d": "To encrypt data for security purposes"
+        },
+        "answer": "option_b",
+        "explanation": "The mapping set feature in TimeXtender allows for the merging of multiple tables from several data sources into one table using a UNION ALL SQL statement, which is useful for consolidating data."
+    },
+    "question_2": {
+        "question": "What must be true for tables to be merged using the mapping set feature in TimeXtender?",
+        "options": {
+            "option_a": "All tables must have different primary keys",
+            "option_b": "All tables must be from the same data source",
+            "option_c": "All tables must share some fields with exact names",
+            "option_d": "All tables must contain the same number of records"
+        },
+        "answer": "option_c",
+        "explanation": "For tables to be merged using the mapping set feature, they must share some fields with the exact same names, allowing for the merging of those fields."
+    },
+    "question_3": {
+        "question": "What happens if there is a data type change in one of the tables involved in a mapping set?",
+        "options": {
+            "option_a": "The mapping set will be deleted",
+            "option_b": "The table with the original data type will prevail",
+            "option_c": "All data types in the mapping set will be converted to VARCHAR",
+            "option_d": "The mapping set will be disabled until the issue is resolved"
+        },
+        "answer": "option_b",
+        "explanation": "If there is a data type change in one of the tables in a mapping set, the data type that was originally set will win, meaning the original data type takes precedence over the change."
+    },
+    "question_4": {
+        "question": "What should be done if columns are removed from one or more tables in a mapping set?",
+        "options": {
+            "option_a": "Ignore the changes and continue with the current mapping",
+            "option_b": "Manually add the removed columns back into the tables",
+            "option_c": "Synchronize the mapping set to reflect the changes",
+            "option_d": "Delete the mapping set and create a new one"
+        },
+        "answer": "option_c",
+        "explanation": "If columns are removed from tables in a mapping set, the mapping set should be synchronized to reflect the changes, which may involve removing the tables with missing fields or adjusting the mapping set to accommodate the new structure."
+    }
+}

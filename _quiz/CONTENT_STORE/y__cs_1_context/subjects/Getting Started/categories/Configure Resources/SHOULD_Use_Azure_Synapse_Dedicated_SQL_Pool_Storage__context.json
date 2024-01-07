@@ -1,0 +1,73 @@
+{
+    "DateTime": "2023-12-27 14:39:41",
+    "URL": "https://support.timextender.com/configure-resources-126/use-azure-synapse-dedicated-sql-pool-storage-627",
+    "Keywords": "missing",
+    "Title": "Use Azure Synapse Dedicated SQL Pool Storage _ Community",
+    "Author": "Thomas Lind",
+    "Text": "Note: Premium Tier Azure  Synapse Dedicated SQL Pool Azure SQL Data Warehouse What is Azure Synapse Dedicated SQL Pool? create an Azure Synapse SQL Pool More Info here smallrc more about Resource Classes here xlargerc Note: Sample Statement: more about Master Keys here Add Data warehouse SLQ - Dedicated SQL Pool Server name Database Edit Instance... Create Storage Authentication Windows Authentication: SQL Server Authentication Azure AD Password Authentication: Azure AD Integrated Authentication: Connection timeout Command timeout Encrypt connection No: Yes: Yes, trust server certificate: Additional connection properties Open the Data Warehouse Instance Create Storage Right click on the Data Area > Create required objects for SQL Data Area Error: Right-Click on Data Warehouse > Create required objects for SQL DW as indicated in step 2 above. Error: You need to create the Master Key by running the SQL query directly against the database. More info in step 3 above. The Fastest Way to Implement Azure Synapse Analytics ",
+    "Lists": [
+        {
+            "heading": "Create an Azure Synapse Dedicated SQL Pool",
+            "paragraphs": [
+                "You can view the Microsoft documentation on how to create an Azure Synapse SQL Pool. However, the basic steps are listed below:"
+            ],
+            "list": [
+                "In the Azure Portal, click \"Create a Resource\" and type \"Dedicated SQL Pool\" Use an existing Azure SQL Server or create a new Azure SQL Server.  Take note of the SQL Server Admin Username & Password.",
+                "Use an existing Azure SQL Server or create a new Azure SQL Server.",
+                "Take note of the SQL Server Admin Username & Password.",
+                "Create a Server Level Firewall Rule In the Azure SQL Server, click Firewalls and virtual networks, click Add client IP, and click save.",
+                "In the Azure SQL Server, click Firewalls and virtual networks, click Add client IP, and click save."
+            ]
+        },
+        {
+            "heading": "Connect to the Server",
+            "paragraphs": [],
+            "list": [
+                "Get the fully qualified server name On the Synapse Dedicated SQL Pool resource Overview page, find the \"Server Name\" and click copy.",
+                "On the Synapse Dedicated SQL Pool resource Overview page, find the \"Server Name\" and click copy.",
+                "Using SQL Server Management Studio, connect to the database Server name: fully qualified Server name Database: name of the Dedicated SQL Pool Username & Password: use the SQL Server administrator",
+                "Server name: fully qualified Server name",
+                "Database: name of the Dedicated SQL Pool",
+                "Username & Password: use the SQL Server administrator"
+            ]
+        },
+        {
+            "heading": "Configure Dedicated SQL Pool Storage",
+            "paragraphs": [],
+            "list": [
+                "In the Add Data warehouse menu in the portal, select the Server Storage Type: SLQ - Dedicated SQL Pool",
+                "In the Server name box, type the name of the server that you want to store the database on. If it is a named instance, type the server name and the instance name.",
+                "In the Database box, type the name of the database you want to create.  TimeXtender will create this Database for you, later in the Desktop click Edit Instance... and click Create Storage... See Below",
+                "TimeXtender will create this Database for you, later in the Desktop click Edit Instance... and click Create Storage... See Below",
+                "In the Authentication list, click the mode of authentication you want to use. You have the following options:  Windows Authentication: Use the logged-in Windows user's credentials for authentication.   SQL Server Authentication: Use a login set up on the SQL Server. Enter the username and password in the corresponding fields.   Azure AD Password Authentication: Use Azure AD credentials from a domain that is not federated with Azure AD. Enter the username and password in the corresponding fields.   Azure AD Integrated Authentication: Use the logged-in Windows user's credentials for authentication, provided that he is logged in using Azure AD credentials from a domain that is federated with Azure AD.",
+                "Windows Authentication: Use the logged-in Windows user's credentials for authentication.",
+                "SQL Server Authentication: Use a login set up on the SQL Server. Enter the username and password in the corresponding fields.",
+                "Azure AD Password Authentication: Use Azure AD credentials from a domain that is not federated with Azure AD. Enter the username and password in the corresponding fields.",
+                "Azure AD Integrated Authentication: Use the logged-in Windows user's credentials for authentication, provided that he is logged in using Azure AD credentials from a domain that is federated with Azure AD.",
+                "In the Connection timeout box, enter the number of seconds to wait before terminating the attempt to connect to the server. Set it to 0 to wait indefinitely.",
+                "In the Command timeout box, enter the number of seconds to wait before terminating a command. Set it to 0 to wait indefinitely.",
+                "In the Encrypt connection list, you can enable encryption of the connection, which is recommended when you are not in a private network (e.g. when your server is on Azure). You have the following options:  No: The communication is not encrypted (default).   Yes: The communication is encrypted. The server's certificate is verified by a certificate authority.   Yes, trust server certificate: The communication is encrypted. but the server's certificate is not verified. This setting is not recommended for use on public networks.",
+                "No: The communication is not encrypted (default).",
+                "Yes: The communication is encrypted. The server's certificate is verified by a certificate authority.",
+                "Yes, trust server certificate: The communication is encrypted. but the server's certificate is not verified. This setting is not recommended for use on public networks.",
+                "(Optional) If you need a connection string with properties not found in the UI, you can enter it in the Additional connection properties box. It will override the data in the other boxes with connection information."
+            ]
+        },
+        {
+            "heading": "Create Storage & Required Objects",
+            "paragraphs": [],
+            "list": [
+                "Open the Data Warehouse Instance",
+                "Right-click the Instance > Edit Instance > Create Storage...",
+                "Right click on the Data Area > Create required objects for SQL Data Area"
+            ]
+        },
+        {
+            "heading": "Troubleshooting",
+            "paragraphs": [],
+            "list": [
+                "Right-Click on Data Warehouse > Create required objects for SQL DW as indicated in step 2 above."
+            ]
+        }
+    ]
+}

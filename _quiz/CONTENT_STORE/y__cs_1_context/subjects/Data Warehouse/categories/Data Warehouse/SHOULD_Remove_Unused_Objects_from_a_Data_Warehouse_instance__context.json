@@ -1,0 +1,19 @@
+{
+    "DateTime": "2023-12-27 14:41:17",
+    "URL": "https://support.timextender.com/data-warehouse-108/remove-unused-objects-from-a-data-warehouse-instance-1468",
+    "Keywords": "missing",
+    "Title": "Remove Unused Objects from a Data Warehouse instance _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "This article describes how to remove unused objects from a DW instance. The purpose of removing unused objects is to remove table references (also referred to as sources) that no longer exist in the DW instance. For example, if a table is brought into a data area from an ODX instance and then this data area table is later deleted, then selecting remove unused objects will remove table references that no longer exists from the DWinstance repository. Note: SQL database cleanup tool  ",
+    "Lists": [
+        {
+            "heading": "Removing Unused Objects",
+            "paragraphs": [],
+            "list": [
+                "Open the relevant ODX instance",
+                "Expand the relevant DW instance and then open the relevant data area which contains unused table references",
+                "Right-click on the ODX and select Remove Unused Objects"
+            ]
+        }
+    ]
+}

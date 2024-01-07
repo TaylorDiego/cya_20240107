@@ -1,0 +1,31 @@
+{
+    "DateTime": "2023-12-27 14:39:45",
+    "URL": "https://support.timextender.com/configure-resources-126/create-a-timextender-application-server-in-azure-799",
+    "Keywords": "missing",
+    "Title": "Create a TimeXtender Application Server in Azure _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "Azure Marketplace App: TimeXtender Application Server. Complete the following steps to configure TimeXtender Application Server on Azure: Install TimeXtender and ODX Server on your TimeXtender Application Serverand then setup your instances. For more information see the below article:  ",
+    "Lists": [
+        {
+            "heading": "Overview",
+            "paragraphs": [
+                "This guide will cover how to deploy and configure your environment using the Azure Marketplace App: TimeXtender Application Server. The deployment of the Azure resources will vary depending on Azure resource availability. Deploying the necessary Azure resources generally takes ~15 minutes.",
+                "Complete the following steps to configure TimeXtender Application Server on Azure:"
+            ],
+            "list": [
+                "Deploy the TimeXtender Application Server Sign-in to https://portal.azure.com Navigate to the TimeXtender Application Server Azure Deployment or type \"TimeXtender Application Server\" In the Search bar. Click Create. Configure your desired properties for the Virtual Machine. Click Create.",
+                "Sign-in to https://portal.azure.com",
+                "Navigate to the TimeXtender Application Server Azure Deployment or type \"TimeXtender Application Server\" In the Search bar.",
+                "Click Create.",
+                "Configure your desired properties for the Virtual Machine.",
+                "Click Create.",
+                "Connect to the Virtual Machine Once deployment is complete, navigate to the Virtual machine & Click Connect Select RDP and download the RDP file.  Open the RDP file once it has downloaded and click Connect Enter in the credentials to connect to the virtual machine that you created earlier and click OK to connect.",
+                "Once deployment is complete, navigate to the Virtual machine & Click Connect",
+                "Select RDP and download the RDP file.",
+                "Open the RDP file once it has downloaded and click Connect",
+                "Enter in the credentials to connect to the virtual machine that you created earlier and click OK to connect.",
+                "Install TimeXtender and ODX Server on your TimeXtender Application Server and then setup your instances. For more information see the below article:"
+            ]
+        }
+    ]
+}

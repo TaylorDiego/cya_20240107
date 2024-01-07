@@ -1,0 +1,447 @@
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is required by the ODX server to handle updated and deleted records during incremental load?
+
+{"score":100.0}A rule-based interface for defining primary keys
+{"score":0}A complete backup of the data source
+{"score":0}A manual update of each record
+{"score":0}A data type override for each field
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What feature allows you to create a table in the ODX from a SQL query?
+
+{"score":0}Data Source Explorer
+{"score":0}Primary Keys Setup
+{"score":100.0}Query Tables
+{"score":0}Filter Rows
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which authentication method uses the logged-in Windows user's credentials for authentication in a domain federated with Azure AD?
+
+{"score":0}Windows Authentication
+{"score":0}SQL Server Authentication
+{"score":0}Azure AD Password Authentication
+{"score":100.0}Azure AD Integrated Authentication
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if your ODX server becomes overloaded during data transfer?
+
+{"score":0}Increase the Command timeout
+{"score":100.0}Use Azure Data Factory for transferring data
+{"score":0}Decrease the Batch size
+{"score":0}Enable Encrypt connection
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should be entered in the 'IP or hostname' box when configuring the ODX Server Connection Info in TimeXtender?
+
+{"score":0}The private IP address of the ODX server
+{"score":100.0}The public IP address or DNS name defined for the VM in Azure
+{"score":0}The MAC address of the ODX server
+{"score":0}Any IP address as it does not need to be reachable
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of the 'Encrypt connection' list when setting up storage for an ODX instance in TimeXtender?
+
+{"score":0}To choose the encryption algorithm for the database
+{"score":100.0}To enable or disable encryption of the connection
+{"score":0}To encrypt the ODX instance's data at rest
+{"score":0}To generate a new encryption key
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the default number of days for log retention in TimeXtender?
+
+{"score":0}30 days
+{"score":0}60 days
+{"score":100.0}90 days
+{"score":0}120 days
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you enable if you want multiple developers to work on the same instance simultaneously?
+
+{"score":100.0}Team Development
+{"score":0}Multi-User Access
+{"score":0}Collaborative Mode
+{"score":0}Concurrent Development
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you undo a transfer of a data warehouse or semantic model instance in TimeXtender?
+
+{"score":0}By deleting the instance and recreating it.
+{"score":100.0}By using the standard version system in TimeXtender to revert to a previous version.
+{"score":0}By transferring the instance back to the original environment.
+{"score":0}By renaming the instance to its original name.
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if you encounter an error stating 'MDW repository version not supported' during a transfer in TimeXtender?
+
+{"score":0}Remove the instances from the environment and try again.
+{"score":0}Rename the MDW instance and initiate the transfer once more.
+{"score":100.0}Upgrade all instances before starting the transfer.
+{"score":0}Open a support ticket as suggested by a user in the article.
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What role is required for a user to manage an Azure SQL Database as a Target Database?
+
+{"score":0}db_datareader
+{"score":0}dbmanager
+{"score":0}db_owner
+{"score":100.0}server admin
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which permission level is needed for a Service Account on the Application Server to run TimeXtender services?
+
+{"score":0}db_datawriter
+{"score":0}db_owner
+{"score":100.0}sysadmin
+{"score":0}server administrator
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What are Data Warehouse Units (DWUs) used for in Azure Synapse SQL Pool?
+
+{"score":0}To measure the amount of storage used.
+{"score":0}To determine the number of concurrent queries allowed.
+{"score":100.0}To measure the computational power and affect performance and cost.
+{"score":0}To track the number of user connections to the database.
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which type of table distribution is ideal for Dimension Tables smaller than 2GB in Azure Synapse?
+
+{"score":0}Round-robin
+{"score":100.0}Replicated
+{"score":0}Hash
+{"score":0}Sharded
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is a key consideration when setting up separate Application and Database Servers for TimeXtender?
+
+{"score":0}Ensuring the Application server has internet access.
+{"score":100.0}Mitigating risk by avoiding additional applications on the database server.
+{"score":0}Using the same operating system on both servers.
+{"score":0}Ensuring both servers are in the same geographic location.
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}According to the text, what is NOT a minimum hardware requirement for TimeXtender?
+
+{"score":100.0}Specific TimeXtender requirements beyond Microsoft SQL Server.
+{"score":0}A Windows server for hosting services and databases.
+{"score":0}Adequate hardware to support Microsoft SQL Server.
+{"score":0}Network infrastructure to support zero latency.
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How do you connect to the Virtual Machine after deploying the TimeXtender Application Server?
+
+{"score":0}Use SSH to connect to the Virtual Machine
+{"score":100.0}Navigate to the Virtual Machine and click 'Connect'
+{"score":0}Email Azure support for connection details
+{"score":0}Connect via the Azure mobile app
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do after downloading the RDP file to connect to your TimeXtender Application Server?
+
+{"score":0}Upload the RDP file back to the Azure portal
+{"score":100.0}Open the RDP file and click 'Connect'
+{"score":0}Convert the RDP file to a different format
+{"score":0}Delete the RDP file for security reasons
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What must be configured in the AWS RDS SQL Database to allow remote access?
+
+{"score":0}Inbound rules only
+{"score":0}Outbound rules only
+{"score":100.0}Both inbound and outbound rules
+{"score":0}Remote access is not configurable
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}After setting up an AWS RDS Custom for SQL Server, what should you verify?
+
+{"score":0}Ability to connect via SSH
+{"score":100.0}Connection via SQL Server Management Studio (SSMS)
+{"score":0}Connection via AWS Management Console
+{"score":0}Ability to host a website
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How can you provide users access to the Analysis Services model?
+
+{"score":100.0}By adding their e-mail address or Azure User Groups
+{"score":0}By creating a new Analysis Services Resource
+{"score":0}By registering a new App in Azure Active Directory
+{"score":0}By deploying a Semantic Model in TimeXtender
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if you encounter authentication errors due to 2-factor authentication when deploying models?
+
+{"score":100.0}Create a new Active Directory user account without 2-factor authentication
+{"score":0}Skip the step of App Registration
+{"score":0}Use an On-premises Data Gateway
+{"score":0}Assign the App Registration as Analysis Services Admin again
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a required field when setting up a connection to a PostgreSQL database using Azure Data Factory?
+
+{"score":0}Server Name
+{"score":0}Port
+{"score":0}Force unicode conversion
+{"score":100.0}Azure Data Factory Name
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if you encounter a 'JreNotFound' error when running a copy activity in Azure Data Factory?
+
+{"score":0}Install the latest .NET Framework on the Integration Runtime machine
+{"score":0}Update the SQL authentication password
+{"score":100.0}Install Java Runtime Environment on the Self-hosted Integration Runtime machine
+{"score":0}Disable Git in the Azure Data Factory resource settings
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where can you find the Tenant ID required to configure ODX Instance Storage in TimeXtender?
+
+{"score":0}Under properties of Azure Storage Account
+{"score":100.0}Under properties of Azure Active Directory
+{"score":0}In the Azure portal's main dashboard
+{"score":0}Under the App Registrations section
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of creating an App Registration in Azure when configuring Azure Data Lake Storage for an ODX instance?
+
+{"score":0}To generate a new Azure subscription
+{"score":100.0}To configure access to Data Lake resources from TimeXtender
+{"score":0}To create a new Azure Storage Account
+{"score":0}To monitor the performance of the ODX instance
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which tool is used to run a script that grants read access to all tables in an Azure SQL Database?
+
+{"score":0}Azure portal
+{"score":0}TimeXtender desktop application
+{"score":0}Microsoft Docs
+{"score":100.0}SQL Server Management Studio (SSMS)
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In the TimeXtender desktop application, how do you provide users in a group access to only valid schemas?
+
+{"score":0}Run the CREATE USER script with the valid schema
+{"score":0}Use the 'Set admin' option in the Azure portal
+{"score":100.0}Right click Database Roles > Object Security Setup > Click on Schemas and check user Access Role
+{"score":0}Deploy the security tab without any modifications
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if you encounter an error when trying to create required objects for SQL Data Warehouse?
+
+{"score":0}Create a Server Level Firewall Rule
+{"score":100.0}Right-click on Data Warehouse > Create required objects for SQL DW as indicated in step 2
+{"score":0}Create a new Azure SQL Server
+{"score":0}Change the Server Storage Type to SLQ - Dedicated SQL Pool
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which option is NOT recommended for use on public networks when configuring the encryption for the connection to the Dedicated SQL Pool?
+
+{"score":0}Yes: The communication is encrypted. The server's certificate is verified by a certificate authority.
+{"score":0}No: The communication is not encrypted (default).
+{"score":100.0}Yes, trust server certificate: The communication is encrypted, but the server's certificate is not verified.
+{"score":0}Use Azure AD Password Authentication
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which role must you select in the Snowflake portal to create a Snowflake Database?
+
+{"score":0}ACCOUNTADMIN
+{"score":0}USER
+{"score":100.0}SYSADMIN
+{"score":0}PUBLIC
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How do you configure the ODBC Data Source for Snowflake in TimeXtender?
+
+{"score":0}Install the Snowflake JDBC driver and configure in TimeXtender
+{"score":0}Use the default ODBC Data Source provided by TimeXtender
+{"score":100.0}Download and install the Snowflake ODBC driver and configure in the ODBC Data Source Administrator Application
+{"score":0}Configure directly in TimeXtender without any additional drivers
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should be done if an Azure VM is experiencing access issues due to firewall settings?
+
+{"score":0}Open Port 80 for all Azure VMs
+{"score":0}Create a rule for Port 1433 outside Azure VMs
+{"score":100.0}Make a rule for the server in the firewall to allow communication to the ODX Server
+{"score":0}Ignore the issue as it will resolve itself
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which of the following is NOT a correct pairing of a server and its required port for TimeXtender setup?
+
+{"score":0}api.timextender.com Port 443
+{"score":0}management.azure.com Port 443
+{"score":100.0}auth0.com Port 80
+{"score":0}app.timextender.com Port 443
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of a SQL Database, Synapse Dedicated SQL Pool, or Snowflake Data Warehouse in TimeXtender?
+
+{"score":0}To store raw data for backup purposes
+{"score":0}To serve as a web portal for administration
+{"score":100.0}To cleanse, transform, and consolidate data into a single version of truth
+{"score":0}To configure and implement instances through a user interface
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is an instance in the context of TimeXtender?
+
+{"score":0}A physical or virtual machine where the server software is installed
+{"score":0}A subset of related data combined into a single model
+{"score":100.0}A metadata component configured in the portal
+{"score":0}A type of data source used for ingestion
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What version of TimeXtender is being referred to in the article?
+
+{"score":0}6024.0
+{"score":100.0}6024.1
+{"score":0}6025.1
+{"score":0}6023.1
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the URL for accessing TimeXtender Portal according to the article?
+
+{"score":0}www.timextender.com
+{"score":0}portal.timextender.com
+{"score":100.0}app.timextender.com
+{"score":0}desktop.timextender.com
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if your server is behind a Proxy Server during the ODX Server Service configuration?
+
+{"score":0}Skip the proxy settings
+{"score":100.0}Configure your proxy settings
+{"score":0}Contact TimeXtender support
+{"score":0}Disable the Proxy Server
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}How should you specify the user account to run the ODX Server Service?
+
+{"score":0}As .useraccount
+{"score":0}As useraccount@domainname
+{"score":100.0}As domainnameuseraccount
+{"score":0}As useraccount only
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}In TimeXtender, what does the 'Type for new relations' setting determine?
+
+{"score":0}How new tables are created
+{"score":100.0}How TimeXtender treats foreign key violations
+{"score":0}The type of relationship between tables
+{"score":0}The naming convention for new relations
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which hashing algorithm is described as the safest in terms of the probability that two different data sets would create identical hashes?
+
+{"score":0}SHA-1, SQL Server 2016 +
+{"score":0}SHA-1, SQL Server 2005 +
+{"score":100.0}SHA-2 512, SQL Server 2016 +
+{"score":0}Legacy binary
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should be done before upgrading TimeXtender according to the best practices outlined?
+
+{"score":100.0}Backup the current instance and stop any running jobs
+{"score":0}Delete all previous versions of TimeXtender
+{"score":0}Disconnect all data sources
+{"score":0}Reinstall the .NET framework
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}According to the text, what is a proactive step to maintain the performance of SQL databases in TimeXtender?
+
+{"score":0}Regularly restarting the database server
+{"score":100.0}Automating a process for backups, cleanups, and optimizations
+{"score":0}Increasing the storage capacity
+{"score":0}Upgrading the database server hardware
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which components are not necessary for SQL Server 2017 editions and above when installing TimeXtender on a separate server?
+
+{"score":0}Microsoft SQL Server Native Client
+{"score":0}Microsoft SQL Server System CLR Types
+{"score":0}Microsoft SQL Server Management Objects (SMO)
+{"score":100.0}All of the above
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which edition of Microsoft SQL Server is the minimum requirement for TimeXtender?
+
+{"score":0}Express Edition
+{"score":100.0}Standard Edition
+{"score":0}Developer Edition
+{"score":0}Enterprise Edition
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What happens when 'Data types' is checked in the View menu of TimeXtender?
+
+{"score":0}Data types are hidden in the interface
+{"score":0}Data types are added as a prefix to field names
+{"score":100.0}Data types are added as a postfix to field names
+{"score":0}Data types are converted to a default type
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does the TimeXtender user interface display when 'Highlight descriptions' is enabled?
+
+{"score":0}It highlights the description text in yellow
+{"score":100.0}It displays objects with descriptions in bold text
+{"score":0}It underlines the objects with descriptions
+{"score":0}It creates a pop-up window with descriptions
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}For small size databases, which AWS RDS SQL Server instance is suggested?
+
+{"score":100.0}m5.large
+{"score":0}t2.micro
+{"score":0}t2.xlarge
+{"score":0}m5.xlarge
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What tool does AWS provide to help estimate costs for various configurations?
+
+{"score":0}AWS Cost Explorer
+{"score":0}AWS Budgets
+{"score":100.0}AWS Pricing Calculator
+{"score":0}AWS Total Cost of Ownership Calculator
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary benefit of using Azure SQL Single DB Serverless for data warehouse storage in TimeXtender's Azure reference architecture?
+
+{"score":0}Unlimited storage capacity
+{"score":0}Auto-scaling compute resources
+{"score":100.0}Auto-pause capability
+{"score":0}Built-in machine learning services
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does TimeXtender recommend using for large data movement tasks in Azure?
+
+{"score":0}Azure Blob Storage
+{"score":100.0}Azure Data Factory
+{"score":0}Azure Data Lake Storage
+{"score":0}Azure SQL Data Warehouse
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the primary benefit of using Azure Synapse SQL Pool for data warehouse storage at scale?
+
+{"score":0}Support for JSON data types
+{"score":100.0}Massively parallel processing capabilities
+{"score":0}Built-in machine learning services
+{"score":0}Automatic data encryption
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What does TimeXtender use to transport data when using Azure Synapse for a data warehouse?
+
+{"score":0}Azure Data Factory
+{"score":100.0}PolyBase
+{"score":0}Azure Blob Storage
+{"score":0}Azure Data Lake Storage
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Where should the ODX Server Service be hosted according to the TimeXtender on-prem reference architecture?
+
+{"score":0}On a cloud platform
+{"score":100.0}Locally on the App Server
+{"score":0}On a separate database server
+{"score":0}Remotely on a third-party server
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the role of SQL Server Analysis Services in the TimeXtender on-prem reference architecture?
+
+{"score":0}To host the TimeXtender application
+{"score":0}To store raw data
+{"score":100.0}To serve data to Power BI and Excel
+{"score":0}To manage firewall exceptions
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What file format does TimeXtender use to write files in the data lake?
+
+{"score":0}CSV
+{"score":0}JSON
+{"score":100.0}Parquet
+{"score":0}Avro
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which cloud platforms does Snowflake's multi-cloud compatibility allow users to deploy on?
+
+{"score":0}AWS and Azure
+{"score":0}GCP and IBM Cloud
+{"score":100.0}AWS and GCP
+{"score":0}Azure and IBM Cloud
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the correct sequence of steps to remove a project variable that cannot be migrated?
+
+{"score":100.0}Tools menu > Project Variables > Select variable > Delete
+{"score":0}Project Variables > Tools menu > Delete > Confirm
+{"score":0}Select variable > Tools menu > Delete > Save changes
+{"score":0}Delete > Project Variables > Tools menu > Confirm deletion
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Which SQL mode setting should be used for lookup fields to replace the deprecated 'Partition by' setting?
+
+{"score":100.0}Group by
+{"score":0}Order by
+{"score":0}Distinct
+{"score":0}None of the above
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}Before using the Migration Tool to upgrade from TimeXtender v20.10, what must be done according to the provided checklist?
+
+{"score":0}Create a new project in the latest version
+{"score":100.0}Upgrade to the newest version of LTS
+{"score":0}Host project repositories locally
+{"score":0}Generate new License Keys and Client Secrets
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the purpose of the 'Validate' step when using the Migration Tool in TimeXtender?
+
+{"score":0}To confirm user permissions for the migration
+{"score":100.0}To ensure the same destination instance is not selected twice
+{"score":0}To check the compatibility of the old data sources with the new version
+{"score":0}To validate the project's semantic models
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step in the Upgrade Steps for TimeXtender?
+
+{"score":0}Launch the TimeXtender Execution Server Configuration
+{"score":100.0}Download the latest version of TimeXtender ODX Server
+{"score":0}Uninstall previous versions of TimeXtender
+{"score":0}Check the Job Monitor
+-
+{"folder":"(2024_01) PRACTICE - Getting Started","tags":{"category":"(2024_01) PRACTICE QUESTIONS"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do after upgrading TimeXtender as per the Post Upgrade Checklist?
+
+{"score":0}Restart the computer immediately
+{"score":100.0}Open each TimeXtender instance and upgrade it if prompted
+{"score":0}Disable the TimeXtender services
+{"score":0}Reinstall the previous version of TimeXtender

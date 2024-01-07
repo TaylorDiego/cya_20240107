@@ -1,0 +1,95 @@
+{
+    "DateTime": "2023-12-27 14:43:03",
+    "URL": "https://support.timextender.com/troubleshooting-134/troubleshooting-concurrency-issues-in-odx-data-sources-1263",
+    "Keywords": "missing",
+    "Title": "Troubleshooting concurrency issues in ODX data sources _ Community",
+    "Author": "Thomas Lind",
+    "Text": "This article describes a few scenarios on concurrency and parallel processing of tasks as well as expected behavior in TimeXtender and ODX. You experience sporadic failures within the ODX load from source systems. The sources vary and there is never a consistent table/connection that is failing. The tables do pass when executed manually. You notice intermittent errors during the scheduled execution of the tasks. However, re-execution of a task works OK without failure. You feel it is related to throughput or table locking (concurrency) but not a communication issue. The ODX Server Service handles both inbound and outbound ODX transfers. So, if a data warehouse table is sourced from the ODX, anytime that table is executed, the ODX Transfer step is accomplished by the ODX. In other words, any table which shows a mapping to the ODX source will invoke ODX when it is Executed. Reference Architecture with Azure SQL DB Reference Architecture with On-Premise SQL Server System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Operation could not be completed within the specified time.). Transfers from ODX  to DWH instance Execution Performance Monitoring and Troubleshooting ",
+    "Lists": [
+        {
+            "heading": "Which data transfers involve ODX",
+            "paragraphs": [
+                "The ODX Server Service handles both inbound and outbound ODX transfers. So, if a data warehouse table is sourced from the ODX, anytime that table is executed, the ODX Transfer step is accomplished by the ODX.  In other words, any table which shows a mapping to the ODX source will invoke ODX when it is Executed."
+            ],
+            "list": [
+                "Source table data extraction to ODX storage (on Data Lake or SQL storage) - triggered by an ODX task, running manually, with data on demand, or scheduled.",
+                "Transfer from ODX storage to a staging Data Warehouse - triggered by an Execute operation on Data Warehouse object (manual, queued, or scheduled package)."
+            ]
+        },
+        {
+            "heading": "Settings to control concurrency",
+            "paragraphs": [],
+            "list": [
+                "Concurrent execution threads in each ODX data source Advanced Settings.",
+                "Since ODX to Data Warehouse transfers are processed by the ODX, any table executed also adds to the number of concurrent threads. These are the outbound transfers that you see in the ODX log. Keep an eye on scheduled Execution packages in any environment as well as manual Executions.",
+                "Review schedules, tasks & threads Number of threads on execution packages (including the default package) containing tables mapped to an ODX instance. Number of ODX tasks set to run at the same time a 'high-thread' execution package runs. Currently running TX and ODX helper processes in Task Manager Schedules of tasks in ODX data sources and Execution packages - try to adjust the timing of certain scheduled task to not overlap with other tasks, outbound stage transfer, or use the Enable data on demand option instead of adding transfer tasks to the jobs.",
+                "Number of threads on execution packages (including the default package) containing tables mapped to an ODX instance.",
+                "Number of ODX tasks set to run at the same time a 'high-thread' execution package runs.",
+                "Currently running TX and ODX helper processes in Task Manager",
+                "Schedules of tasks in ODX data sources and Execution packages - try to adjust the timing of certain scheduled task to not overlap with other tasks, outbound stage transfer, or use the Enable data on demand option instead of adding transfer tasks to the jobs.",
+                "How much data is being extracted/ transformed on these tasks/connections?  Depending upon the architecture and data passing through the ODX machine, monitor its baseline and peak performance to determine if an alternate design or scaling of CPU/ Memory may help."
+            ]
+        },
+        {
+            "heading": "How to increase the timeout for ODX data source, ADLS, and ADF",
+            "paragraphs": [],
+            "list": [
+                "For very large data transfers, increase the timeouts on the Data Lake storage  Do not set the timeout to infinite (0) it will always be better to have a actual timeout.",
+                "When using Azure Data Factory to connect to and on-premises SQL (via Self Host Integration Runtime) and extracting large number of rows, if you get a timeout error (similar to the following):     System.Net.Http.HttpRequestException: Response status code does not indicate success: 500 (Operation could not be completed within the specified time.).     Edit the ADF data source settings in the portal Increase Connection timeout from 30 to 7200.",
+                "Edit the ADF data source settings in the portal",
+                "Increase Connection timeout from 30 to 7200."
+            ]
+        },
+        {
+            "heading": "FAQ on concurrency and parallel processing",
+            "paragraphs": [],
+            "list": [
+                "How many tasks can I run in parallel in ODX, when I have multiple data sources and multiple tasks inside each data source? For a specific data source, you can run only 1 task at a time. If you run multiple tasks there, the first task will run and the rest would wait (i.e. pending). Multiple data sources can run 1 task each at the same time. So, if you have nn data sources, each may run 1 task at the same time, making a total of nn tasks running in ODX. At some point, the number of parallel tasks will be limited by your machine capacity. Resize the VM running the ODX Server, to increase the number of vCPUs, and the number of concurrent tasks allowed",
+                "For a specific data source, you can run only 1 task at a time. If you run multiple tasks there, the first task will run and the rest would wait (i.e. pending).",
+                "Multiple data sources can run 1 task each at the same time. So, if you have nn data sources, each may run 1 task at the same time, making a total of nn tasks running in ODX.",
+                "At some point, the number of parallel tasks will be limited by your machine capacity. Resize the VM running the ODX Server, to increase the number of vCPUs, and the number of concurrent tasks allowed",
+                "Two data sources extract data from the same table in a source database.  Can I run an ODX Transfer task in each data source at the same time? Yes.",
+                "Yes.",
+                "Can I Execute a default or named package in my Data Warehouse (manual or Scheduled) at the same time when ODX tasks are running?  Both the ODX task and Execution package operate on the same table in various stages. ODX stores data on a data lake. Yes, you can. Ideally, it should not cause an error. But the package may wait if it depends on completion of ODX an task. If an ODX task is extracting new data into its storage, the Execution package will NOT fetch data from the \"previous\" (existing) version of table from the data lake.  It will wait until ODX task fetches new version of data into data lake, then the Execution package will pull the new data into Data Warehouse.   You can turn on Data On Demand on the data source, to be sure the tables in the ODX store gets updated before a transfer from the ODX instance to the DWH instance is done.",
+                "Yes, you can. Ideally, it should not cause an error. But the package may wait if it depends on completion of ODX an task.",
+                "If an ODX task is extracting new data into its storage, the Execution package will NOT fetch data from the \"previous\" (existing) version of table from the data lake.  It will wait until ODX task fetches new version of data into data lake, then the Execution package will pull the new data into Data Warehouse.",
+                "You can turn on Data On Demand on the data source, to be sure the tables in the ODX store gets updated before a transfer from the ODX instance to the DWH instance is done.",
+                "How does the \"Multiple threads\" setting in the ODX task or Execution package contribute to concurrency? Each thread may fetch a different table at the same time.",
+                "Each thread may fetch a different table at the same time.",
+                "Does reducing \"Multiple threads\" setting helps resolve some errors with concurrent tasks, multiple threads and package executions ? Yes.",
+                "Yes.",
+                "How many Execution packages (manual or scheduled) should I run at the same time in a Development environment? Only 1  The check that looks for currently running packages - only applies to scheduled instances of an execution package. If you also start a scheduled package manually, the scheduler will not recognize it. In that scenario, both the manual and scheduled version of the execution may run at once. This overlap may cause unexpected results. Potentially, it might cause deadlocks and/or 'faulty' data due to execution not performed in the correct order.  Consider the two execution packages as one where individual constraints are unknown.",
+                "Only 1  The check that looks for currently running packages - only applies to scheduled instances of an execution package. If you also start a scheduled package manually, the scheduler will not recognize it. In that scenario, both the manual and scheduled version of the execution may run at once. This overlap may cause unexpected results. Potentially, it might cause deadlocks and/or 'faulty' data due to execution not performed in the correct order.  Consider the two execution packages as one where individual constraints are unknown.",
+                "The check that looks for currently running packages - only applies to scheduled instances of an execution package.",
+                "If you also start a scheduled package manually, the scheduler will not recognize it. In that scenario, both the manual and scheduled version of the execution may run at once.",
+                "This overlap may cause unexpected results. Potentially, it might cause deadlocks and/or 'faulty' data due to execution not performed in the correct order.  Consider the two execution packages as one where individual constraints are unknown.",
+                "How does the Execution service work?  Study these articles Schedule executions using Jobs and How do you set up the execution service?  The Execution Service checks for jobs for the instances that are checked to its setup. When it makes this check, it applies two restrictions:  The service only runs one execution package per DWH Instance per check The service will not start an job executing a Execution Package if a previously scheduled execution of that package, or any package in that project is still running.",
+                "Study these articles Schedule executions using Jobs and How do you set up the execution service?  The Execution Service checks for jobs for the instances that are checked to its setup. When it makes this check, it applies two restrictions:  The service only runs one execution package per DWH Instance per check The service will not start an job executing a Execution Package if a previously scheduled execution of that package, or any package in that project is still running.",
+                "The service only runs one execution package per DWH Instance per check",
+                "The service will not start an job executing a Execution Package if a previously scheduled execution of that package, or any package in that project is still running.",
+                "I have multiple DWH instances each running on their own server, each setup has 1 job scheduled to run at the same time. Will the execution service run these at the same time? Yes, if the execution service has been set up to point on each individual DWH instance.",
+                "Yes, if the execution service has been set up to point on each individual DWH instance.",
+                "I have multiple DWH instances sharing the same ODX Instances data sources. The Execution service is checked for each instance. Can each instance run a Job at the same time? Yes, but consider the pressure put on the source systems as you are reading the same data from different instances at the same time.",
+                "Yes, but consider the pressure put on the source systems as you are reading the same data from different instances at the same time.",
+                "How to sequence packages to run one after another? Edit package settings, In the Post Execution section, Run Package option, select the next package name.",
+                "Edit package settings, In the Post Execution section, Run Package option, select the next package name.",
+                "I have a number of Jobs scheduled to run repeatedly with short intervals. How does TimeXtender pick a package to run? Does that \"collide\" with ODX tasks? One execution package can be executed per DWH instance per starting time.  To avoid possible conflicts, be sure to space the scheduled start times of each of your packages by at least five minutes from one another.",
+                "One execution package can be executed per DWH instance per starting time.  To avoid possible conflicts, be sure to space the scheduled start times of each of your packages by at least five minutes from one another.",
+                "I see a number of ExecutionEngine_x64 processes running in Task Manager when I run many ODX tasks Those are helper processes launched by ODX.    Each started task in the ODX will generate one of these.",
+                "Those are helper processes launched by ODX.    Each started task in the ODX will generate one of these."
+            ]
+        },
+        {
+            "heading": "Performance optimization",
+            "paragraphs": [
+                "Transfers from ODX to DWH instance - The ODX attempts to download the parquet files from Data Lake into memory on the VM, then write those back to the DWH Instances SQL database. You have a few options to optimize:"
+            ],
+            "list": [
+                "Use Azure Data Factory (ADF) to transfer from ODX to DWH - This may significantly increase speed but may come with a minor cost for the Azure resource.",
+                "Increase the Memory Limit on the ODX Data Lake Storage account. For example, if it was set to 8 GB of your 14 GB available on the server, you could increase it to 10-12 GB. This should increase transfer speed slightly without any extra cost.",
+                "Increase threads. Test your scenario with 2-6-10 thread etc. and see which setting works best.",
+                "Increase the Azure SQL database Compute tier. Review Azure metrics. if your SQL database is maxing out at times, more compute resources could be utilized, but it may increase cost."
+            ]
+        }
+    ]
+}

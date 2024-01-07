@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:43:21",
+    "URL": "https://support.timextender.com/troubleshooting-134/error-no-suitable-oracle-driver-installed-1309",
+    "Keywords": "missing",
+    "Title": "Error_ No suitable Oracle driver installed _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "Reading objects from an Oracle data source results in an error message, but Test Connection to the Oracle data source works 'No suitable Oracle driver installed' The Oracle Data Provider may be a different bit version than TimeXtender Ensure that Oracle Data Provider is the correct bit version ",
+    "Lists": []
+}

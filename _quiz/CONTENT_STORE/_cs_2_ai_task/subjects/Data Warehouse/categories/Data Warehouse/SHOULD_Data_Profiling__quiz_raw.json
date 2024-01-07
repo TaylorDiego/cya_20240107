@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the purpose of data profiling in TimeXtender?",
+        "options": {
+            "option_a": "To format the data into a more readable format",
+            "option_b": "To examine, analyze, and summarize data sets to understand data quality",
+            "option_c": "To convert text fields into integer fields",
+            "option_d": "To delete all null values from the data sets"
+        },
+        "answer": "option_b",
+        "explanation": "Data profiling is used to examine, analyze, review, and summarize data sets to gain insight into the quality of data, which helps in making decisions about data cleansing and understanding data types."
+    },
+    "question_2": {
+        "question": "How can you check the data profile of a table in TimeXtender?",
+        "options": {
+            "option_a": "By writing a SQL query",
+            "option_b": "By using the Pattern Search button",
+            "option_c": "By right-clicking on a table and selecting Data Profile",
+            "option_d": "By setting the 'Select top' number of records to unlimited"
+        },
+        "answer": "option_c",
+        "explanation": "In TimeXtender, you can check the data profile of a table by right-clicking on the table and selecting the Data Profile option."
+    },
+    "question_3": {
+        "question": "What does the Pattern Search functionality in TimeXtender's data profile tool do?",
+        "options": {
+            "option_a": "It deletes patterns that do not match the search criteria",
+            "option_b": "It formats the data according to the specified pattern",
+            "option_c": "It finds rows matching a LIKE or NOT LIKE search phrase",
+            "option_d": "It automatically corrects incorrect data patterns"
+        },
+        "answer": "option_c",
+        "explanation": "The Pattern Search button in the data profile tool of TimeXtender is used to explore the data and find patterns within the data by finding rows that match a LIKE or NOT LIKE search phrase."
+    },
+    "question_4": {
+        "question": "What happens if you change the 'Select top' number of records from unlimited to 2 in the data profile tool of TimeXtender?",
+        "options": {
+            "option_a": "The data profile tool will show only the first two fields of the table",
+            "option_b": "The data profile tool will stop functioning",
+            "option_c": "Only two records will be returned from the search",
+            "option_d": "The data profile tool will display two random records"
+        },
+        "answer": "option_c",
+        "explanation": "When the 'Select top' number of records is set to unlimited, all matching records are returned. If this is changed to 2, then only the first two matching records are returned."
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "question_1": {
+        "question": "What is the default directory for the OLEAUT32.dll file according to the provided text?",
+        "options": {
+            "option_a": "C:Program FilesOLEAUT32.dll",
+            "option_b": "C:WindowsOLEAUT32.dll",
+            "option_c": "C:Windowssystem32OLEAUT32.dll",
+            "option_d": "C:OLEAUT32system32.dll"
+        },
+        "answer": "option_c",
+        "explanation": "The default directory for the OLEAUT32.dll file is specified in the text as C:Windowssystem32OLEAUT32.dll."
+    },
+    "question_2": {
+        "question": "Which of the following is NOT listed as a recommended step if the OLEAUT32.dll error is not related to a system, software, or driver change?",
+        "options": {
+            "option_a": "Restore OLEAUT32.dll from a backup.",
+            "option_b": "Ensure the System OS is up to date.",
+            "option_c": "Reinstall your server's OS.",
+            "option_d": "Update the .NET Framework."
+        },
+        "answer": "option_a",
+        "explanation": "Restoring OLEAUT32.dll from a backup is not listed as a step under the 'Repair or restore the file' section for when the problem is not related to a system, software, or driver change. The steps listed include updating the System OS, SQL Server, and .NET Framework."
+    }
+}

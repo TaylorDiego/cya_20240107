@@ -1,0 +1,46 @@
+{
+    "question_1": {
+        "question": "What is the first step in configuring data area security in TimeXtender?",
+        "options": {
+            "option_a": "Create a database role based on an SQL Server login.",
+            "option_b": "Set up either object level or row level security.",
+            "option_c": "Drop existing roles on the database.",
+            "option_d": "Edit the data area settings."
+        },
+        "answer": "option_a",
+        "explanation": "The first step in configuring data area security is to create a database role based on an SQL Server login, which is a prerequisite for setting up object level or row level security."
+    },
+    "question_2": {
+        "question": "What should you do if there are no existing SQL Server logins suitable for a database role in TimeXtender?",
+        "options": {
+            "option_a": "Skip the creation of a database role.",
+            "option_b": "Create a new SQL Server login either in TimeXtender or on the SQL Server itself.",
+            "option_c": "Use the default login provided by TimeXtender.",
+            "option_d": "Contact TimeXtender support for a new login."
+        },
+        "answer": "option_b",
+        "explanation": "If there are no suitable existing SQL Server logins, a new login can be created either in TimeXtender or directly on the SQL Server to be used for the database role."
+    },
+    "question_3": {
+        "question": "Which of the following is NOT a step in adding a database role in TimeXtender?",
+        "options": {
+            "option_a": "Selecting the logins to be added from the list in the Select Login(s) window.",
+            "option_b": "Entering a name for the database role in the Name box.",
+            "option_c": "Dropping all roles on the database before creating a new one.",
+            "option_d": "Adding logins that exist on the SQL Server configured for the data area storage."
+        },
+        "answer": "option_c",
+        "explanation": "Dropping all roles on the database is not a step in adding a database role; it is a separate action that TimeXtender performs on each deployment."
+    },
+    "question_4": {
+        "question": "In TimeXtender, what is the purpose of creating a database role based on an SQL Server login?",
+        "options": {
+            "option_a": "To manage the TimeXtender application settings.",
+            "option_b": "To implement object level or row level security.",
+            "option_c": "To configure the data area SQL storage.",
+            "option_d": "To drop existing roles on the database."
+        },
+        "answer": "option_b",
+        "explanation": "Creating a database role based on an SQL Server login in TimeXtender is used to implement object level or row level security for specific data area objects."
+    }
+}
