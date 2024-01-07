@@ -1,0 +1,187 @@
+folder,category,title,type,url
+Getting Started,Initial Setup,Get Started with TimeXtender,MUST,https://support.timextender.com/initial-setup-start-here-115/get-started-with-timextender-794
+Getting Started,Initial Setup,How to Configure TimeXtender Portal and Desktop,MUST,https://support.timextender.com/initial-setup-start-here-115/how-to-configure-timextender-portal-and-desktop-654
+Getting Started,Initial Setup,Install TimeXtender,MUST,https://support.timextender.com/initial-setup-start-here-115/install-timextender-697
+Getting Started,Initial Setup,TimeXtender Prerequisites,MUST,https://support.timextender.com/initial-setup-start-here-115/timextender-prerequisites-699
+Getting Started,Initial Setup,Configure your Firewall,MUST,https://support.timextender.com/initial-setup-start-here-115/configure-your-firewall-700
+Getting Started,Initial Setup,Certification Exam Study Guide,WON'T,https://support.timextender.com/initial-setup-start-here-115/certification-exam-study-guide-703
+Getting Started,Initial Setup,Self-Service Troubleshooting in TimeXtender,MUST,https://support.timextender.com/initial-setup-start-here-115/self-service-troubleshooting-in-timextender-623
+Getting Started,Initial Setup,Instances and Settings,MUST,https://support.timextender.com/initial-setup-start-here-115/instances-and-settings-1014
+Getting Started,Initial Setup,User Interface,MUST,https://support.timextender.com/initial-setup-start-here-115/user-interface-999
+Getting Started,Reference Architectures,Azure Synapse Dedicated SQL Pool Reference Architecture,SHOULD,https://support.timextender.com/reference-architectures-125/azure-synapse-dedicated-sql-pool-reference-architecture-807
+Getting Started,Reference Architectures,Snowflake Database Reference Architecture,SHOULD,https://support.timextender.com/reference-architectures-125/snowflake-database-reference-architecture-870
+Getting Started,Reference Architectures,AWS RDS SQL Reference Architecture,SHOULD,https://support.timextender.com/reference-architectures-125/aws-rds-sql-reference-architecture-1000
+Getting Started,Reference Architectures,On-Prem SQL Server Reference Architecture,SHOULD,https://support.timextender.com/reference-architectures-125/on-prem-sql-server-reference-architecture-809
+Getting Started,Reference Architectures,Azure SQL Database Reference Architecture,SHOULD,https://support.timextender.com/reference-architectures-125/azure-sql-database-reference-architecture-803
+Getting Started,Add & Configure Instances,Add ODX Instances,MUST,https://support.timextender.com/add-and-configure-instances-127/add-odx-instances-717
+Getting Started,Add & Configure Instances,Add and Configure Data Sources,MUST,https://support.timextender.com/add-and-configure-instances-127/add-and-configure-data-sources-819
+Getting Started,Add & Configure Instances,Add Data Warehouse Instances,MUST,https://support.timextender.com/add-and-configure-instances-127/add-data-warehouse-instances-718
+Getting Started,Add & Configure Instances,Add Semantic Model Instances,MUST,https://support.timextender.com/add-and-configure-instances-127/add-semantic-model-instances-719
+Getting Started,Add & Configure Instances,Multiple Environments,SHOULD,https://support.timextender.com/add-and-configure-instances-127/multiple-environments-1527
+Getting Started,Configure Resources,Use Azure SQL Databases as Storage for your Instances,SHOULD,https://support.timextender.com/configure-resources-126/use-azure-sql-databases-as-storage-for-your-instances-801
+Getting Started,Configure Resources,Use Azure Data Lake Storage for your ODX Instance,SHOULD,https://support.timextender.com/configure-resources-126/use-azure-data-lake-storage-for-your-odx-instance-800
+Getting Started,Configure Resources,Use Snowflake Data Warehouse Storage,SHOULD,https://support.timextender.com/configure-resources-126/use-snowflake-data-warehouse-storage-727
+Getting Started,Configure Resources,Use Azure Data Factory for Data Movement,SHOULD,https://support.timextender.com/configure-resources-126/use-azure-data-factory-for-data-movement-702
+Getting Started,Configure Resources,What is Azure Synapse Dedicated SQL Pool?,MUST,https://support.timextender.com/configure-resources-126/what-is-azure-synapse-dedicated-sql-pool-751
+Getting Started,Configure Resources,Use Azure Synapse Dedicated SQL Pool Storage,SHOULD,https://support.timextender.com/configure-resources-126/use-azure-synapse-dedicated-sql-pool-storage-627
+Getting Started,Configure Resources,Configure an On-Prem Application Server & Storage,SHOULD,https://support.timextender.com/configure-resources-126/configure-an-on-prem-application-server-storage-808
+Getting Started,Configure Resources,Use Azure Analysis Services,SHOULD,https://support.timextender.com/configure-resources-126/use-azure-analysis-services-621
+Getting Started,Configure Resources,Create a TimeXtender Application Server in Azure,SHOULD,https://support.timextender.com/configure-resources-126/create-a-timextender-application-server-in-azure-799
+Getting Started,Configure Resources,Configure User Accounts & Permissions,MUST,https://support.timextender.com/configure-resources-126/configure-user-accounts-permissions-871
+Getting Started,Configure Resources,Use Amazon RDS for SQL Server for Storage,SHOULD,https://support.timextender.com/configure-resources-126/use-amazon-rds-for-sql-server-for-storage-1003
+Getting Started,Upgrades & Migration,Migration Tool - Project Validation,SHOULD,https://support.timextender.com/upgrades-migration-130/migration-tool-project-validation-1152
+Getting Started,Upgrades & Migration,Upgrade TimeXtender,SHOULD,https://support.timextender.com/upgrades-migration-130/upgrade-timextender-1568
+Getting Started,Upgrades & Migration,Migration Tool - Upgrade from TimeXtender v20.10 to the latest cloud-enabled version,SHOULD,https://support.timextender.com/upgrades-migration-130/migration-tool-upgrade-from-timextender-v20-10-to-the-latest-cloud-enabled-version-1150
+ODX,ODX,Using the Override Data Type feature,SHOULD,https://support.timextender.com/odx-107/using-the-override-data-type-feature-656
+ODX,ODX,Tasks in an ODX Instance,MUST,https://support.timextender.com/odx-107/tasks-in-an-odx-instance-704
+ODX,ODX,Table and Column Selection in an ODX Instance,MUST,https://support.timextender.com/odx-107/table-and-column-selection-in-an-odx-instance-705
+ODX,ODX,Transfer data from an ODX to a Data Warehouse Instance,MUST,https://support.timextender.com/odx-107/transfer-data-from-an-odx-to-a-data-warehouse-instance-706
+ODX,ODX,What is an ODX Server,MUST,https://support.timextender.com/odx-107/what-is-an-odx-server-898
+ODX,ODX,"Execution Queue, Logs and Statistics",MUST,https://support.timextender.com/odx-107/execution-queue-logs-and-statistics-1005
+ODX,ODX,Set up Notifications on Critical Errors from the ODX Instance,COULD,https://support.timextender.com/odx-107/set-up-notifications-on-critical-errors-from-the-odx-instance-1093
+ODX,ODX,Synchronize Objects,MUST,https://support.timextender.com/odx-107/synchronize-objects-1227
+ODX,ODX,Filtering Rows in ODX Data Sources,MUST,https://support.timextender.com/odx-107/filtering-rows-in-odx-data-sources-1451
+ODX,ODX,Query ODX Parquet files with Azure Synapse Workspace,COULD,https://support.timextender.com/odx-107/query-odx-parquet-files-with-azure-synapse-workspace-1469
+ODX,ODX,How to add a new field or column to an existing ODX data source and Data Warehouse data area,MUST,https://support.timextender.com/odx-107/how-to-add-a-new-field-or-column-to-an-existing-odx-data-source-and-data-warehouse-data-area-1487
+ODX,ODX,Manual Migration of Business Unit to ODX,MUST,https://support.timextender.com/odx-107/manual-migration-of-business-unit-to-odx-1493
+ODX,ODX,Benefits of ODX instances,MUST,https://support.timextender.com/odx-107/benefits-of-odx-instances-1569
+ODX,ODX,Incremental Load in an ODX Instance,MUST,https://support.timextender.com/odx-107/incremental-load-in-an-odx-instance-708
+Data Warehouse,Data Warehouse,Incremental load in Data Warehouse Instances,SHOULD,https://support.timextender.com/data-warehouse-108/incremental-load-in-data-warehouse-instances-710
+Data Warehouse,Data Warehouse,Mapping set,SHOULD,https://support.timextender.com/data-warehouse-108/mapping-set-712
+Data Warehouse,Data Warehouse,Data Profiling,SHOULD,https://support.timextender.com/data-warehouse-108/data-profiling-713
+Data Warehouse,Data Warehouse,SQL Snippets,SHOULD,https://support.timextender.com/data-warehouse-108/sql-snippets-729
+Data Warehouse,Data Warehouse,What is a Data Staging Area?,SHOULD,https://support.timextender.com/data-warehouse-108/what-is-a-data-staging-area-826
+Data Warehouse,Data Warehouse,Simple mode,SHOULD,https://support.timextender.com/data-warehouse-108/simple-mode-951
+Data Warehouse,Data Warehouse,Team Development: How to work with multiple developers,MUST,https://support.timextender.com/data-warehouse-108/team-development-how-to-work-with-multiple-developers-980
+Data Warehouse,Data Warehouse,Use History to implement Slowly Changing Dimensions,SHOULD,https://support.timextender.com/data-warehouse-108/use-history-to-implement-slowly-changing-dimensions-998
+Data Warehouse,Data Warehouse,SQL Database Cleanup Tool,MUST,https://support.timextender.com/data-warehouse-108/sql-database-cleanup-tool-1008
+Data Warehouse,Data Warehouse,Data Warehouse - Table Settings,SHOULD,https://support.timextender.com/data-warehouse-108/data-warehouse-table-settings-1018
+Data Warehouse,Data Warehouse,Set Distribution for Tables on Azure Synapse Analytics,SHOULD,https://support.timextender.com/data-warehouse-108/set-distribution-for-tables-on-azure-synapse-analytics-1019
+Data Warehouse,Data Warehouse,Data Warehouse Perspectives,SHOULD,https://support.timextender.com/data-warehouse-108/data-warehouse-perspectives-1054
+Data Warehouse,Data Warehouse,How to copy tables/fields between data areas in a Data Warehouse Instance,SHOULD,https://support.timextender.com/data-warehouse-108/how-to-copy-tables-fields-between-data-areas-in-a-data-warehouse-instance-1012
+Data Warehouse,Data Warehouse,Table relations,MUST,https://support.timextender.com/data-warehouse-108/table-relations-1030
+Data Warehouse,Data Warehouse,Customized Code,SHOULD,https://support.timextender.com/data-warehouse-108/customized-code-1034
+Data Warehouse,Data Warehouse,Data Validation Rules,SHOULD,https://support.timextender.com/data-warehouse-108/data-validation-rules-1075
+Data Warehouse,Data Warehouse,Data Transformation,SHOULD,https://support.timextender.com/data-warehouse-108/data-transformation-1076
+Data Warehouse,Data Warehouse,Batch Data Cleansing,SHOULD,https://support.timextender.com/data-warehouse-108/batch-data-cleansing-1035
+Data Warehouse,Data Warehouse,Performance Recommendations,SHOULD,https://support.timextender.com/data-warehouse-108/performance-recommendations-1021
+Data Warehouse,Data Warehouse,Tagging a Field,SHOULD,https://support.timextender.com/data-warehouse-108/tagging-a-field-1022
+Data Warehouse,Data Warehouse,How to use Raw-only fields,SHOULD,https://support.timextender.com/data-warehouse-108/how-to-use-raw-only-fields-1117
+Data Warehouse,Data Warehouse,Primary Keys,MUST,https://support.timextender.com/data-warehouse-108/primary-keys-1115
+Data Warehouse,Data Warehouse,Supernatural Keys,SHOULD,https://support.timextender.com/data-warehouse-108/supernatural-keys-1120
+Data Warehouse,Data Warehouse,Cloning a field,SHOULD,https://support.timextender.com/data-warehouse-108/cloning-a-field-1020
+Data Warehouse,Data Warehouse,Aggregate Table,SHOULD,https://support.timextender.com/data-warehouse-108/aggregate-table-1016
+Data Warehouse,Data Warehouse,Data Selection rules,SHOULD,https://support.timextender.com/data-warehouse-108/data-selection-rules-1031
+Data Warehouse,Data Warehouse,Semantic Model,MUST,https://support.timextender.com/data-warehouse-108/semantic-model-1157
+Data Warehouse,Data Warehouse,Custom Tables,SHOULD,https://support.timextender.com/data-warehouse-108/custom-tables-1017
+Data Warehouse,Data Warehouse,Custom Fields,SHOULD,https://support.timextender.com/data-warehouse-108/custom-fields-1023
+Data Warehouse,Data Warehouse,Custom Views,MUST,https://support.timextender.com/data-warehouse-108/custom-views-1165
+Data Warehouse,Data Warehouse,Previewing Data,MUST,https://support.timextender.com/data-warehouse-108/previewing-data-1091
+Data Warehouse,Data Warehouse,Customized Code and Custom Scripting,SHOULD,https://support.timextender.com/data-warehouse-108/customized-code-and-custom-scripting-1145
+Data Warehouse,Data Warehouse,Data Area Security - Database Roles,SHOULD,https://support.timextender.com/data-warehouse-108/data-area-security-database-roles-1209
+Data Warehouse,Data Warehouse,Data Area Security - Object Level Security,SHOULD,https://support.timextender.com/data-warehouse-108/data-area-security-object-level-security-1215
+Data Warehouse,Data Warehouse,Stored Procedures and User Defined Functions,SHOULD,https://support.timextender.com/data-warehouse-108/stored-procedures-and-user-defined-functions-1168
+Data Warehouse,Data Warehouse,Instance Variables,SHOULD,https://support.timextender.com/data-warehouse-108/instance-variables-1201
+Data Warehouse,Data Warehouse,Use parameters in your scripts,SHOULD,https://support.timextender.com/data-warehouse-108/use-parameters-in-your-scripts-views-and-calculations-1276
+Data Warehouse,Data Warehouse,Add a Custom Table Insert,SHOULD,https://support.timextender.com/data-warehouse-108/add-a-custom-table-insert-1281
+Data Warehouse,Data Warehouse,Spatial Joins with TimeXtender,SHOULD,https://support.timextender.com/data-warehouse-108/spatial-joins-with-timextender-1302
+Data Warehouse,Data Warehouse,Reverse Data Area,SHOULD,https://support.timextender.com/data-warehouse-108/reverse-data-area-965
+Data Warehouse,Data Warehouse,Junk Dimension Table,SHOULD,https://support.timextender.com/data-warehouse-108/junk-dimension-table-1015
+Data Warehouse,Data Warehouse,Related Records,SHOULD,https://support.timextender.com/data-warehouse-108/related-records-1330
+Data Warehouse,Data Warehouse,Schemas,SHOULD,https://support.timextender.com/data-warehouse-108/schemas-1156
+Data Warehouse,Data Warehouse,Indexes,SHOULD,https://support.timextender.com/data-warehouse-108/indexes-1138
+Data Warehouse,Data Warehouse,Data Area Security - Row Level Security,SHOULD,https://support.timextender.com/data-warehouse-108/data-area-security-row-level-security-1208
+Data Warehouse,Data Warehouse,Custom Hash Fields,SHOULD,https://support.timextender.com/data-warehouse-108/custom-hash-fields-1036
+Data Warehouse,Data Warehouse,Remove Unused Objects from a Data Warehouse instance,SHOULD,https://support.timextender.com/data-warehouse-108/remove-unused-objects-from-a-data-warehouse-instance-1468
+Data Warehouse,Data Warehouse,How to add a default value to a unique identifier field,SHOULD,https://support.timextender.com/data-warehouse-108/how-to-add-a-default-value-to-a-unique-identifier-field-1426
+Data Warehouse,Data Warehouse,Lookup Transformation Template,SHOULD,https://support.timextender.com/data-warehouse-108/lookup-transformation-template-711
+Data Warehouse,Data Warehouse,How to configure Table Partitioning,SHOULD,https://support.timextender.com/data-warehouse-108/how-to-configure-table-partitioning-1525
+Data Warehouse,Data Warehouse,Guidelines for maintaining clustered SQL indexes on Incremental Load and History tables,SHOULD,https://support.timextender.com/data-warehouse-108/guidelines-for-maintaining-clustered-sql-indexes-on-incremental-load-and-history-tables-1567
+Data Warehouse,Data Warehouse,Date Table,SHOULD,https://support.timextender.com/data-warehouse-108/date-table-1047
+Data Warehouse,Data Warehouse,How to Identify and Prevent Circular References,SHOULD,https://support.timextender.com/data-warehouse-108/how-to-identify-and-prevent-circular-references-1587
+Data Warehouse,Data Warehouse,Create a Role-Playing Dimension,SHOULD,https://support.timextender.com/data-warehouse-108/create-a-role-playing-dimension-1600
+Data Warehouse,Data Warehouse,Conditional Lookup Fields,MUST,https://support.timextender.com/data-warehouse-108/conditional-lookup-fields-1116
+Semantic Model,Semantic Model,Adding Tables from a Data Area to a Semantic Model Instance,MUST,https://support.timextender.com/semantic-model-109/adding-tables-from-a-data-area-to-a-semantic-model-instance-1452
+Semantic Model,Semantic Model,Semantic Model Synchronization,SHOULD,https://support.timextender.com/semantic-model-109/semantic-model-synchronization-714
+Semantic Model,Semantic Model,Power BI Premium Endpoint,SHOULD,https://support.timextender.com/semantic-model-109/power-bi-premium-endpoint-715
+Semantic Model,Semantic Model,CSV Endpoint,MUST,https://support.timextender.com/semantic-model-109/csv-endpoint-1040
+Semantic Model,Semantic Model,Tabular Endpoint,MUST,https://support.timextender.com/semantic-model-109/tabular-endpoint-1041
+Semantic Model,Semantic Model,Qlik Endpoint,SHOULD,https://support.timextender.com/semantic-model-109/qlik-endpoint-1042
+Semantic Model,Semantic Model,Tableau,SHOULD,https://support.timextender.com/semantic-model-109/tableau-endpoint-1043
+Semantic Model,Semantic Model,SSAS Perspectives,SHOULD,https://support.timextender.com/semantic-model-109/ssas-perspectives-1055
+Semantic Model,Semantic Model,Semantic Relations,SHOULD,https://support.timextender.com/semantic-model-109/semantic-relations-1198
+Semantic Model,Semantic Model,Semantic Fields,MUST,https://support.timextender.com/semantic-model-109/semantic-fields-1170
+Semantic Model,Semantic Model,Custom Semantic field,SHOULD,https://support.timextender.com/semantic-model-109/custom-semantic-field-1171
+Semantic Model,Semantic Model,A Semantic Custom Measure,SHOULD,https://support.timextender.com/semantic-model-109/a-semantic-custom-measure-1172
+Semantic Model,Semantic Model,Semantic Measure based on a field or a table,SHOULD,https://support.timextender.com/semantic-model-109/semantic-measure-based-on-a-field-or-a-table-1174
+Semantic Model,Semantic Model,Semantic Model-Level and Row-Level Security,SHOULD,https://support.timextender.com/semantic-model-109/semantic-model-level-and-row-level-security-1203
+Execution & Jobs,Execution & Jobs,Execution Performance Monitoring and Troubleshooting,SHOULD,https://support.timextender.com/executions-jobs-110/execution-performance-monitoring-and-troubleshooting-624
+Execution & Jobs,Execution & Jobs,Timeouts on databases,SHOULD,https://support.timextender.com/executions-jobs-110/timeouts-on-databases-655
+Execution & Jobs,Execution & Jobs,Setting up Retry Steps,SHOULD,https://support.timextender.com/executions-jobs-110/setting-up-retry-steps-730
+Execution & Jobs,Execution & Jobs,Execute PowerShell Script as External Executable,SHOULD,https://support.timextender.com/executions-jobs-110/execute-powershell-script-as-external-executable-721
+Execution & Jobs,Execution & Jobs,Deploy tables,MUST,https://support.timextender.com/executions-jobs-110/deploy-tables-1132
+Execution & Jobs,Execution & Jobs,Execute tables,MUST,https://support.timextender.com/executions-jobs-110/execute-tables-1134
+Execution & Jobs,Execution & Jobs,Scheduling Executions using Jobs,MUST,https://support.timextender.com/executions-jobs-110/scheduling-executions-using-jobs-722
+TimeXtender Portal,TimeXtender Portal,Grant and Revoke Access to Instances,MUST,https://support.timextender.com/timextender-portal-111/grant-and-revoke-access-to-instances-716
+TimeXtender Portal,TimeXtender Portal,Credits and Billing,SHOULD,https://support.timextender.com/timextender-portal-111/credits-and-billing-720
+TimeXtender Portal,TimeXtender Portal,Upgrade from Free to Premium,COULD,https://support.timextender.com/timextender-portal-111/upgrade-from-free-to-premium-762
+TimeXtender Portal,TimeXtender Portal,Portal Security,MUST,https://support.timextender.com/timextender-portal-111/portal-security-947
+TimeXtender Portal,TimeXtender Portal,Update Data Sources Providers,SHOULD,https://support.timextender.com/timextender-portal-111/update-data-sources-providers-1026
+TimeXtender Portal,TimeXtender Portal,TimeXtender API Key Management,MUST,https://support.timextender.com/timextender-portal-111/timextender-api-key-management-1109
+TimeXtender Portal,TimeXtender Portal,User Permissions,MUST,https://support.timextender.com/timextender-portal-111/user-permissions-1228
+TimeXtender Portal,TimeXtender Portal,Configuring Firewall Rules for Instances,SHOULD,https://support.timextender.com/timextender-portal-111/configuring-firewall-rules-for-instances-1390
+TimeXtender Portal,TimeXtender Portal,TimeXtender API Endpoints,MUST,https://support.timextender.com/timextender-portal-111/timextender-api-endpoints-1110
+Data Sources,Data Sources,TimeXtender Oracle Data Source provider for ODX,COULD,https://support.timextender.com/data-sources-112/timextender-oracle-data-source-provider-for-odx-709
+Data Sources,Data Sources,Connect to Oracle Database,COULD,https://support.timextender.com/data-sources-112/connect-to-oracle-database-728
+Data Sources,Data Sources,Add and Map a Data Source Connection in the TimeXtender Portal,COULD,https://support.timextender.com/data-sources-112/add-and-map-a-data-source-connection-in-the-timextender-portal-731
+Data Sources,Data Sources,Connect to an Excel file,MUST,https://support.timextender.com/data-sources-112/connect-to-an-excel-file-629
+Data Sources,Data Sources,Add a CData Data Source,MUST,https://support.timextender.com/data-sources-112/add-a-cdata-data-source-625
+Data Sources,Data Sources,Connect to Sharepoint Excel,COULD,https://support.timextender.com/data-sources-112/connect-to-sharepoint-excel-626
+Data Sources,Data Sources,Connect to Excel files with Excel Online,COULD,https://support.timextender.com/data-sources-112/connect-to-excel-files-with-excel-online-628
+Data Sources,Data Sources,Connect to JSON,MUST,https://support.timextender.com/data-sources-112/connect-to-json-785
+Data Sources,Data Sources,Adding a Data Source in the TimeXtender Desktop,MUST,https://support.timextender.com/data-sources-112/adding-a-data-source-in-the-timextender-desktop-780
+Data Sources,Data Sources,Connect to XML,COULD,https://support.timextender.com/data-sources-112/connect-to-xml-811
+Data Sources,Data Sources,Connect to a REST API,MUST,https://support.timextender.com/data-sources-112/connect-to-a-rest-api-824
+Data Sources,Data Sources,CData Providers  - Performance Optimization and Troubleshooting,SHOULD,https://support.timextender.com/data-sources-112/cdata-providers-performance-optimization-and-troubleshooting-868
+Data Sources,Data Sources,Advanced RSD file options,SHOULD,https://support.timextender.com/data-sources-112/advanced-rsd-file-options-884
+Data Sources,Data Sources,Generate and use RSD files,MUST,https://support.timextender.com/data-sources-112/generate-and-use-rsd-files-886
+Data Sources,Data Sources,Overview of Data Sources and Provider Types,MUST,https://support.timextender.com/data-sources-112/overview-of-data-sources-and-provider-types-1087
+Data Sources,Data Sources,Theobald Xtract Universal,COULD,https://support.timextender.com/data-sources-112/theobald-xtract-universal-839
+Data Sources,Data Sources,TimeXtender Business Central 365 Data Source,SHOULD,https://support.timextender.com/data-sources-112/timextender-business-central-365-data-source-707
+Data Sources,Data Sources,Prerequisites to Connecting to Dynamics Business Central 365 Online Data Sources,COULD,https://support.timextender.com/data-sources-112/prerequisites-to-connecting-to-dynamics-business-central-365-online-data-sources-1431
+Data Sources,Data Sources,TimeXtender Dynamics 365 Finance data source,COULD,https://support.timextender.com/data-sources-112/timextender-dynamics-365-finance-data-source-1432
+Data Sources,Data Sources,TimeXtender Dynamics 365 Business Central Data Source,COULD,https://support.timextender.com/data-sources-112/timextender-dynamics-365-business-central-data-source-1430
+Data Sources,Data Sources,Adding a SharePoint site as a data source,SHOULD,https://support.timextender.com/data-sources-112/adding-a-sharepoint-site-as-a-data-source-1457
+Data Sources,Data Sources,Connect to CSV data sources,MUST,https://support.timextender.com/data-sources-112/connect-to-csv-data-sources-732
+General,Documentation & Lineage,Documentation for Instances,MUST,https://support.timextender.com/documentation-and-lineage-114/documentation-for-instances-723
+General,Documentation & Lineage,Lineage and Visualization,MUST,https://support.timextender.com/documentation-and-lineage-114/lineage-and-visualization-827
+General,Infrastructure & Networking,Enable Remote Connections to SQL Server using IP address,SHOULD,https://support.timextender.com/infrastructure-networking-133/enable-remote-connections-to-sql-server-using-ip-address-622
+General,Infrastructure & Networking,Create a bacpac export,SHOULD,https://support.timextender.com/infrastructure-networking-133/create-a-bacpac-export-760
+General,Troubleshooting,ADF execution error: ADLS Gen2 operation failed for: Operation returned an invalid status code 'Forbidden',COULD,https://support.timextender.com/troubleshooting-134/adf-execution-error-adls-gen2-operation-failed-for-operation-returned-an-invalid-status-code-forbidden-1229
+General,Troubleshooting,"Error: ""Could not load file or assembly""",COULD,https://support.timextender.com/troubleshooting-134/error-could-not-load-file-or-assembly-1230
+General,Troubleshooting,Error: The type initializer for 'Oracle.DataAccess.Client. OracleConnectionStringBuilder' threw an exception.,COULD,https://support.timextender.com/troubleshooting-134/error-the-type-initializer-for-oracle-dataaccess-client-oracleconnectionstringbuilder-threw-an-exception-1240
+General,Troubleshooting,Error: Could not load file or assembly 'Microsoft.SqlServer.BatchParser.dll',COULD,https://support.timextender.com/troubleshooting-134/error-could-not-load-file-or-assembly-microsoft-sqlserver-batchparser-dll-1241
+General,Troubleshooting,"Error: ""Requested registry access is not allowed""",COULD,https://support.timextender.com/troubleshooting-134/error-requested-registry-access-is-not-allowed-1242
+General,Troubleshooting,Error: Login failed error when executing first dimension,COULD,https://support.timextender.com/troubleshooting-134/error-login-failed-error-when-executing-first-dimension-1243
+General,Troubleshooting,Error: Faulting module OLEAUT32.dll,COULD,https://support.timextender.com/troubleshooting-134/error-faulting-module-oleaut32-dll-1244
+General,Troubleshooting,New field in an incremental table doesn't populate,COULD,https://support.timextender.com/troubleshooting-134/new-field-in-an-incremental-table-doesn-t-populate-1245
+General,Troubleshooting,"Executing a Data Warehouse table from ODX Instance gives error: ""Login failed for user""",COULD,https://support.timextender.com/troubleshooting-134/executing-a-data-warehouse-table-from-odx-instance-gives-error-login-failed-for-user-1249
+General,Troubleshooting,"How to resolve ""Service request failed: Access is denied"" error in ODX",COULD,https://support.timextender.com/troubleshooting-134/how-to-resolve-service-request-failed-access-is-denied-error-in-odx-1252
+General,Troubleshooting,How to use a debugger to review a TimeXtender process,COULD,https://support.timextender.com/troubleshooting-134/how-to-use-a-debugger-to-review-a-timextender-process-1255
+General,Troubleshooting,"ODX execution error: ""The execution unexpectedly stopped with exit code: 0016 - Error""",COULD,https://support.timextender.com/troubleshooting-134/odx-execution-error-the-execution-unexpectedly-stopped-with-exit-code-0016-error-1256
+General,Troubleshooting,Troubleshooting concurrency issues in ODX data sources,COULD,https://support.timextender.com/troubleshooting-134/troubleshooting-concurrency-issues-in-odx-data-sources-1263
+General,Troubleshooting,"Error: ""Timeout expired""",COULD,https://support.timextender.com/troubleshooting-134/error-timeout-expired-1273
+General,Troubleshooting,Services are not removed on uninstall,COULD,https://support.timextender.com/troubleshooting-134/services-are-not-removed-on-uninstall-1274
+General,Troubleshooting,Troubleshooting deadlocks in Execution,COULD,https://support.timextender.com/troubleshooting-134/troubleshooting-deadlocks-in-execution-1257
+General,Troubleshooting,How to avoid duplicates in a custom table,COULD,https://support.timextender.com/troubleshooting-134/how-to-avoid-duplicates-in-a-custom-table-1280
+General,Troubleshooting,Error: The locale id of the source column and the locale id of the destination column do not match,COULD,https://support.timextender.com/troubleshooting-134/error-the-locale-id-of-the-source-column-and-the-locale-id-of-the-destination-column-do-not-match-1247
+General,Troubleshooting,Using TCPView tool to monitor an ODX instance,COULD,https://support.timextender.com/troubleshooting-134/using-tcpview-tool-to-monitor-an-odx-instance-1291
+General,Troubleshooting,Tracing to Event Viewer or Text file logs,COULD,https://support.timextender.com/troubleshooting-134/tracing-to-event-viewer-or-text-file-logs-1292
+General,Troubleshooting,Profiling queries to Azure SQL DB,COULD,https://support.timextender.com/troubleshooting-134/profiling-queries-to-azure-sql-db-1293
+General,Troubleshooting,Synchronizing ADF Oracle data source produces unexpected results,COULD,https://support.timextender.com/troubleshooting-134/synchronizing-adf-oracle-data-source-produces-unexpected-results-1294
+General,Troubleshooting,User interface elements blurry,COULD,https://support.timextender.com/troubleshooting-134/user-interface-elements-blurry-very-small-or-missing-1299
+General,Troubleshooting,No notification e-mails are send when executing on a schedule,COULD,https://support.timextender.com/troubleshooting-134/no-notification-e-mails-are-send-when-executing-on-a-schedule-1300
+General,Troubleshooting,How to resolve ODX error: Property 'OwnerId' does not exist for 'object specified',COULD,https://support.timextender.com/troubleshooting-134/how-to-resolve-odx-error-property-ownerid-does-not-exist-for-object-specified-1301
+General,Troubleshooting,Oracle data source Error in command: Could not load file or assembly Oracle.DataAccess,COULD,https://support.timextender.com/troubleshooting-134/oracle-data-source-error-in-command-could-not-load-file-or-assembly-oracle-dataaccess-1308
+General,Troubleshooting,Error: No suitable Oracle driver installed,COULD,https://support.timextender.com/troubleshooting-134/error-no-suitable-oracle-driver-installed-1309
+General,Troubleshooting,"New ADF data source with an ODX task error: ""Failed to encrypt sub-resource payload""",COULD,https://support.timextender.com/troubleshooting-134/new-adf-data-source-with-an-odx-task-error-failed-to-encrypt-sub-resource-payload-1310

@@ -1,0 +1,9 @@
+{
+    "URL": "https://support.timextender.com/executions-jobs-110/setting-up-retry-steps-730",
+    "DateTime": "2023-12-14 18:54:40",
+    "Keywords": "No Keywords",
+    "Title": "Setting up Retry Steps _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "Execution packages havetwo ways of handling errors: fail and retry. The default value is to fail when encountering an error. This ensures the integrity of data in your BI environment. However, data sources may be periodically locked by updates, backups, etc. In this case, failure may occur if the load collides with one of these processes. In the event the data source is temporarily unavailable, the failure doesn't represent a problem that needs to be fixed - instead, the desired behavior is to simply wait a while and try again. Retry steps is designed to provide this functionality. Retries Retries perStep Retry delay in minutes Retry delay in minutes Retries Retries per Step Retries Retries per Step Retries Retries per Step Retries per Step Retries Retries Retries per step Retries If you want one step to get retried up to three times, then Retries per Step must be 3, and Retries should be equal to 3 retries * 1step= 3. Note that this could also result in three steps being retried one time each. This is a limitation of the current implementation of the Retry functionality. Login Create an account Enter your username or e-mail address. We'll send you an e-mail with instructions to reset your password. Sorry, we're still checking this file's contents to make sure it's safe to download. Please try again in a few minutes. Sorry, our virus scanner detected that this file isn't safe to download.",
+    "Lists": []
+}

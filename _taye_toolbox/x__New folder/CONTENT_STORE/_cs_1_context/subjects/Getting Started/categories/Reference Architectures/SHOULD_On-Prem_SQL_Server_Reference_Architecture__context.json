@@ -1,0 +1,62 @@
+{
+    "DateTime": "2023-12-27 14:39:25",
+    "URL": "https://support.timextender.com/reference-architectures-125/on-prem-sql-server-reference-architecture-809",
+    "Keywords": "missing",
+    "Title": "On-Prem SQL Server Reference Architecture _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "This is a standard reference architecture to implement TimeXtender fully On-Premises. To prepare your TimeXtender environment, here are the steps we recommend: To serve the TimeXtender application on-premise, we recommend using an Windows environment such as Windows Server sized according to your solution's requirements. Guide: Configure an On-Prem Application Server & Storage Considerations: TimeXtender Prerequisites List of Required Firewall Exceptions To integrate your siloed data, On-Prem SQL DB can store your raw data quickly and easily. Guide: Add an ODX Instance Considerations: SQL DB is a great option for the data warehouse storage. Guide: Add a Data Warehouse Instance Considerations: SQL Server Analysis Services is the ideal way to serve data to Power BI and Excel. Since there are many ways to connect visualization tools directly to the MDW, this is an optional step. Guide: Add a Semantic Model Instance Considerations:  Hi,  Are there cases when we should have multiple database instances? Where are scheduling and executions run? Is contact with TimeXtender's servers required to be able to run jobs in an on-prem environment?  The image for the on-prem reference architecture contains an Azure Data Factory instance which I assume is incorrect or a very niche option. Should that be modified? You could also add the Power BI dataset to theSematic Endpoints. Thanks for the feedback, I will make the changes to the diagram! @anders.e.jonsson ",
+    "Lists": [
+        {
+            "heading": "1. Create Application Server - Local Server",
+            "paragraphs": [
+                "To serve the TimeXtender application on-premise, we recommend using an Windows environment such as Windows Server sized according to your solution's requirements.",
+                "Guide: Configure an On-Prem Application Server & Storage",
+                "Considerations:"
+            ],
+            "list": [
+                "This article highlights the Separate Application and Database Server architecture. In this configuration, the ODX Server is installed on an \"Application\" server and the SQL Databases are stored on a separate \"Database\" server. It is also possible to run the ODX and SQL on a consolidated server.",
+                "Once you have chosen your desired configuration and deployed the necessary servers, you must install all the necessary TimeXtender Prerequisites.",
+                "Configure your server(s) firewall to allow TimeXtender's List of Required Firewall Exceptions."
+            ]
+        },
+        {
+            "heading": "2. Create ODX Storage - SQL Server Data Storage",
+            "paragraphs": [
+                "To integrate your siloed data, On-Prem SQL DB can store your raw data quickly and easily.",
+                "Guide: Add an ODX Instance",
+                "Considerations:"
+            ],
+            "list": [
+                "ODX Server Storage database can be created directly in TimeXtender",
+                "ODX Server Service should be hosted locally on the App Server",
+                "SQL Server 17 or higher is recommended"
+            ]
+        },
+        {
+            "heading": "3. Create MDW Storage - SQL Server Data Storage",
+            "paragraphs": [
+                "SQL DB is a great option for the data warehouse storage.",
+                "Guide: Add a Data Warehouse Instance",
+                "Considerations:"
+            ],
+            "list": [
+                "A data warehouse in TimeXtender is a SQL Server database on premise (or in Azure) where your data is stored for queries and analysis.",
+                "Often, a TimeXtender solution consists of one data warehouse where you consolidate data from one of more staging databases and a number of data sources.",
+                "SQL Server 2017 or higher is recommended",
+                "If using a Data Staging Area (DSA) in your solution, you can use a separate SQL DB as the MDW."
+            ]
+        },
+        {
+            "heading": "4. (Optional) Create Semantic Model - SQL Server Analysis Services",
+            "paragraphs": [
+                "SQL Server Analysis Services is the ideal way to serve data to Power BI and Excel. Since there are many ways to connect visualization tools directly to the MDW, this is an optional step.",
+                "Guide: Add a Semantic Model Instance",
+                "Considerations:"
+            ],
+            "list": [
+                "TimeXtender stores semantic models in Analysis Services Tabular model behind the scenes.",
+                "Each semantic model can be deployed to one or more endpoints."
+            ]
+        }
+    ]
+}

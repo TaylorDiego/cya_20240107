@@ -1,0 +1,27 @@
+﻿folder,category,type,Count of title
+Data Sources,Data Sources,COULD,10
+Data Sources,Data Sources,MUST,8
+Data Sources,Data Sources,SHOULD,4
+Data Warehouse,Data Warehouse,MUST,8
+Data Warehouse,Data Warehouse,SHOULD,47
+Execution & Jobs,Execution & Jobs,MUST,3
+Execution & Jobs,Execution & Jobs,SHOULD,4
+General,Documentation and Lineage,MUST,2
+General,Infrastructure & Networking,SHOULD,2
+General,Troubleshooting,COULD,28
+Getting Started,Add and Configure Instances,MUST,4
+Getting Started,Add and Configure Instances,SHOULD,1
+Getting Started,Configure Resources,MUST,2
+Getting Started,Configure Resources,SHOULD,9
+Getting Started,Initial Setup,MUST,8
+Getting Started,Initial Setup,WON'T,1
+Getting Started,Reference Architectures,SHOULD,5
+Getting Started,Upgrades & Migration,SHOULD,3
+ODX,ODX,COULD,2
+ODX,ODX,MUST,11
+ODX,ODX,SHOULD,1
+Semantic Model,Semantic Model,MUST,4
+Semantic Model,Semantic Model,SHOULD,10
+TimeXtender Portal,TimeXtender Portal,COULD,1
+TimeXtender Portal,TimeXtender Portal,MUST,5
+TimeXtender Portal,TimeXtender Portal,SHOULD,3

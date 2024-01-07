@@ -1,0 +1,46 @@
+{
+    "DateTime": "2023-12-27 14:40:14",
+    "URL": "https://support.timextender.com/data-warehouse-108/incremental-load-in-data-warehouse-instances-710",
+    "Keywords": "missing",
+    "Title": "Incremental load in Data Warehouse Instances _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "TimeXtender 6024.1 Tables in a Data Area can have several mappings and each mapping have individual incremental load rules, instead of an overarching one. This means that a table with multiple mapped ODX tables can have one mapped table run afull load, the other mapped table can run incremental with deletes, and a third mapped table can run an incremental load with updates. max batch number Incremental Load in an ODX Instance When you map in a new table from a ODX, the data extraction setting for the table will be set as automatic. If the table has an incremental load rule that is applied in the source, the table will load incrementally. This will be represented by an \"I\" icon for the mapping in the mappings folder under the table.  Table Settings Data Extraction Automatic Incremental Load If there is no incremental load rule that is applied in the source, then the mapping for the table will not display an \"I\" icon, and a full load will occur when the table is executed. See an example of this below. Automatic Full Load Full Load Incremental rules will be set on the individual mapped table, so you can have one running with incremental load and the other without incremental load without any issues. It does not require the setting to be changed from automatic.  If you are mapping a table to a table from another Data Area, and the source table has an incremental rule setup in the ODX, we recommend that you use the Automate feature to base the incremental rule on the auto-suggested IncrementalTimeStamp field. This IncrementalTimeStamp field is mapped to the DW_Timestamp field of the source table. However, if you are mapping a table to a table from another Data Area, and the source table does not have an incremental rule setup in the ODX, we recommend that you use setup the incremental rule on a date field (e.g. a modified date field). When the rule has been applied, the incremental load table will contain the incremental rule. It will require that the data extraction settings are set to Incremental Load and not Automatic. If you are mapping more than one table and have these set up for incremental load, it will still create one rule per mapped table. If a table has a mapping from an ODX instance, and another mapping from a table in another Data Warehouse instance, it will not be possible to use incremental load. This is because one uses the DW_TimeStamp field and the other uses an ODX Batch number. You will have to split them out into two tables and then merge them at another point.  Here is how it looks when two tables are mapped. Also what you can see here is that the table have been executed at least twice, but haven't received new data from the source. That is why the ODX fields contain null values.  There are two fields added, when adding data from an ODX to conform to how the incremental load works. Here is how it looks when there is new data in the raw table. If you relate that to the incremental table, the batch number have in the same numbers. Here is what the reference in the data lake is. Each file has an higher number, which is the Batch number in the other tables. Here is what the reference is in an SQL store. It is a field containing the batch number.  As in the other parts it is also possible to set up deletes on the Data Area tables. Is Tombstone  You can see how this is done in the code by looking at the data cleansing procedure. Here it is for the Country table using Hard deletes. ",
+    "Lists": [
+        {
+            "heading": "The incremental table",
+            "paragraphs": [
+                "The _I table has seven fields."
+            ],
+            "list": [
+                "Last id field This is the max DW_Id of the table before the latest execution.",
+                "This is the max DW_Id of the table before the latest execution.",
+                "Mapping id field This is the GUID value of the mapping of the two tables. It is used to make sure it always uses the correct table.",
+                "This is the GUID value of the mapping of the two tables. It is used to make sure it always uses the correct table.",
+                "Status field If you open a table during execution and goes to the _I table, this will contain an Null value, but after an successful execution it will be set to OK.",
+                "If you open a table during execution and goes to the _I table, this will contain an Null value, but after an successful execution it will be set to OK.",
+                "Create time field This is the value that is applied as the incremental value have been added for each table.",
+                "This is the value that is applied as the incremental value have been added for each table.",
+                "ODX Batch Number field Is the reference field in the _R table that is used to know what the largest batch is.",
+                "Is the reference field in the _R table that is used to know what the largest batch is.",
+                "ODX Batch Timestamp field Is the date of creation of the latest full load folder or table depending on the store. Data Lake   SQL",
+                "Is the date of creation of the latest full load folder or table depending on the store.",
+                "Data Lake",
+                "SQL",
+                "ODX Batch Number Full Load field This will show whether an execution was a full load or not.",
+                "This will show whether an execution was a full load or not."
+            ]
+        },
+        {
+            "heading": "The raw table",
+            "paragraphs": [
+                "There are two fields added, when adding data from an ODX to conform to how the incremental load works."
+            ],
+            "list": [
+                "ODX Batch Number field The reference batch number from the incremental table",
+                "The reference batch number from the incremental table",
+                "ODX Batch Id field The id of the batches. Necessary as you can map more than one table that each have a batch 0 and you would not be able to see the difference otherwise.",
+                "The id of the batches. Necessary as you can map more than one table that each have a batch 0 and you would not be able to see the difference otherwise."
+            ]
+        }
+    ]
+}

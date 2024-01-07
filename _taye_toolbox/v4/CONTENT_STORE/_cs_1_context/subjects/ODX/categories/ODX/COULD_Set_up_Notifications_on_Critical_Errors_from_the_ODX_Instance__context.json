@@ -1,0 +1,31 @@
+{
+    "DateTime": "2023-12-27 14:40:02",
+    "URL": "https://support.timextender.com/odx-107/set-up-notifications-on-critical-errors-from-the-odx-instance-1093",
+    "Keywords": "missing",
+    "Title": "Set up Notifications on Critical Errors from the ODX Instance _ Community",
+    "Author": "Thomas Lind",
+    "Text": "Email notifications can be set up and used to help monitor an ODX Instance. The ODXis designed to run on a server without user interaction. Once your data sources have been set up and jobs are scheduled, data will automatically flow from the data sources into the configured data storage. In those cases where data sources are not changing, there may be little reason to open ODX instances. However, there may be errors and users may not realize immediately that something is not working.To mitigate this type of delay, email notifications can be set up to notify the appropriate users when critical errors occur, which also should be prominently displayed in the management interface. Critical errors include the following: Use the following steps to configurecritical error notifications for an ODX instance. Notify by email when a critical error occurs Recipients Here is how it can look when it has been set up. The following is an example of atest notification email.  ",
+    "Lists": [
+        {
+            "heading": "Adding an Email Notification For Critical Errors",
+            "paragraphs": [
+                "Use the following steps to configure critical error notifications for an ODX instance."
+            ],
+            "list": [
+                "In the Solution Explorer, right-click the ODX and click Notifications on Critical Errors.",
+                "Select Notify by email when a critical error occurs and enter the recipients in the Recipients box. Separate recipients with a semicolon.",
+                "Enter a Name for the notification and select the Type of notification you want to create. Continue entering the appropriate email server in the following steps.",
+                "In Server name, enter the information for the SMTP server that will be used to send the email. Note that on October 1st, 2022, Microsoft discontinued basic authentication for email on online SMTP servers. In lieu of basic authentication, enter the an Application ID from an app created for this and the Tenant ID for your company.  In order for the App to work, it should have the following the three permissions set. Mail.Send SMTP.Send User.Read  An Admin may need to grant consent for the three settings above. For GMail to authenticate, it is necessary to turn on 2-step authentication for your email account and then use the App Password in the password field.",
+                "Note that on October 1st, 2022, Microsoft discontinued basic authentication for email on online SMTP servers.",
+                "In lieu of basic authentication, enter the an Application ID from an app created for this and the Tenant ID for your company.",
+                "In order for the App to work, it should have the following the three permissions set. Mail.Send SMTP.Send User.Read",
+                "Mail.Send",
+                "SMTP.Send",
+                "User.Read",
+                "An Admin may need to grant consent for the three settings above.",
+                "For GMail to authenticate, it is necessary to turn on 2-step authentication for your email account and then use the App Password in the password field.",
+                "Click Test Notification to test if the email server settings are working."
+            ]
+        }
+    ]
+}

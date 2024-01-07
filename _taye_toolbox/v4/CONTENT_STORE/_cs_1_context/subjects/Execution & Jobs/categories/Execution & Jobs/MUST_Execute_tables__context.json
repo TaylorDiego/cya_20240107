@@ -1,0 +1,89 @@
+{
+    "DateTime": "2023-12-27 14:41:56",
+    "URL": "https://support.timextender.com/executions-jobs-110/execute-tables-1134",
+    "Keywords": "missing",
+    "Title": "Execute tables _ Community",
+    "Author": "Greg Lennox",
+    "Text": "Execution of the tables performs all the steps needed to transfer and cleanse the data into the tables that have already been deployed. Deploy and Execution are two separate processes that are commonly performed one after the other via the Deploy and Execute command, and together these two processes are used to create and populatetables in the SQL database.  However, Deploy and Execute are different processes that can be run separately, and each process has its own options and circumstances. After data areachanges have beendeployed, then the execution of the table can be performed to transfer and cleanse the data. Click on the following link for more information on deploying tables.  The following describes Executing tables in detail. Execution is the process of loading data into the selected area using the following steps: TimeXtender supports managed and threaded execution, which means that TimeXtender can execute a package in multiple threads while managing dependencies between the objects and optimizing the execution to complete in the shortest amount of time. Setting up a default execution package to run with multi-threaded execution is one way to realize this performance optimization. The following guide has more information onsetting up execution packages. Execute  Deploy and Execute Table level Data Warehouse level Affected objects All Execute  Deploy and Execute data area Affected objects   Work Item Send to Execution Queue The Execution Queue enables usersto continue working while the execution of tables or theentire instance is performedin the background. Execution Queue   Adding an object to the Execution Queue is a simple drag-and-drop operation.  Pause Pause Resume Resume Pause Resume Resume Queued Move up Move down Remove Clear In Progress Stop Completed Status Duration Start Time View Error You can close the Execution Queue window by clicking the X in the top right corner. Execution Queue  Execution Queue When you close TimeXtender, the Execution Queue will be stopped along with the rest of the application. The Guard on Execution option can prevent a table from being executed. This option can be enabled in the lower left of the Table Settings dialog. Attempting to execute a guarded table mayappear to start running, but once completed, the following Is Guarded message will be displayed. Guarding tablesprevents them from being deployed and executed, which can be help avoid losing data that should not be overwritten or mayno longer be available in the data source. ",
+    "Lists": [
+        {
+            "heading": "Execution of tables",
+            "paragraphs": [
+                "The following describes Executing tables in detail.",
+                "Execution is the process of loading data into the selected area using the following steps:"
+            ],
+            "list": [
+                "By default, TimeXtender will truncate the Raw Table, unless this setting has been disabled, which can be done in the Table Settings -> Data Extraction tab.",
+                "Transferring data from the ODX Store to Raw tables. Note that the data selection rules and the incremental loading rules will apply during bulk loading and transferring of data from the data sources into the destination areas. The actual transfer of the data will be performed using one of the following two methods. If the ODX is configured to use an Azure Data Factory (ADF) to transfer the data, then the Azure Data Factory will be responsible for the data transfer. When several tables are being transferred as part of the execution, then the Azure Data Factory may employ the Data Factory Merge option to do all of the transfers in one step. When the ODX Server is not configured to use an Azure Data Facotry for the data transfer, then ADO.NET will perform the data transfer. Note that since ADO.NET is part of the server where ODX service is running, then the state of that server may have an impact on execution performance.",
+                "If the ODX is configured to use an Azure Data Factory (ADF) to transfer the data, then the Azure Data Factory will be responsible for the data transfer. When several tables are being transferred as part of the execution, then the Azure Data Factory may employ the Data Factory Merge option to do all of the transfers in one step.",
+                "When the ODX Server is not configured to use an Azure Data Facotry for the data transfer, then ADO.NET will perform the data transfer. Note that since ADO.NET is part of the server where ODX service is running, then the state of that server may have an impact on execution performance.",
+                "Transferring data from one Data area to the raw table of another Data area. Transfer of data from one data area to another is done using the Direct Read method, which is comprised of stored procedures transferring the data internally within the database.",
+                "If enabled, Custom Data is inserted into the Custom Data table using the _CustomDataFill Stored procedure.",
+                "By default, TimeXtender truncates the Valid Table, which can be configured under Table Settings -> Data Extraction tab. Table truncation must be disabled if either of the following are enabled:  Simple Mode.  History. Incremental Loading.",
+                "Simple Mode.",
+                "History.",
+                "Incremental Loading.",
+                "Processing data (Data Cleansing): Data cleansing is the process of validating data against the business rules, and then moving the validated data to the Valid table. Status information is generated at this point, and the specific processing steps include the following: Disable indexes on the Valid table. Process Incremental Loading. Process conditional lookups and insert values into the Raw table. Apply all transformations through the Transformation view (_T) Log violations of data cleansing rules for records in the raw table. These violations may include records that fail primary & foreign key checks as well as custom field validations. Violations are logged by inserting the DW_ID of the violating row in the List table (_L), which references the associated error message in the Messages table. Messages table (_M) - contains the error message or description of why each row in the List table was flagged is recorded in the Implement all functions as needed for enabling History. Load all records from the Transformation view into the Valid table. Rebuild table indexes as needed.",
+                "Disable indexes on the Valid table.",
+                "Process Incremental Loading.",
+                "Process conditional lookups and insert values into the Raw table.",
+                "Apply all transformations through the Transformation view (_T)",
+                "Log violations of data cleansing rules for records in the raw table. These violations may include records that fail primary & foreign key checks as well as custom field validations. Violations are logged by inserting the DW_ID of the violating row in the List table (_L), which references the associated error message in the Messages table.",
+                "Messages table (_M) - contains the error message or description of why each row in the List table was flagged is recorded in the",
+                "Implement all functions as needed for enabling History.",
+                "Load all records from the Transformation view into the Valid table.",
+                "Rebuild table indexes as needed.",
+                "Batch Data Cleansing may be helpful for large data sets, as it breaks the data cleansing steps up into batches. The following link has a more detailed explanation of this feature.",
+                "Verifying data against checkpoints: The process of checking the data that is being processed against any checkpoints that may have been configured. Checkpoints are validation rules that will halt the execution process when the rules are not met. This feature can be helpful if it stops a problematic execution from overwriting the current warehouse data with non-valuable data. The following community post has some perspective on using this feature."
+            ]
+        },
+        {
+            "heading": "The Deploy and/or Execute dialog",
+            "paragraphs": [
+                "The following dialog is displayed when clicking on either \u201cExecute\u201d or \u201cDeploy and Execute\u201d on either the Table level or on the Data Warehouse level.",
+                "In the Affected objects section, only the \u201cAll\u201d option is available, which means that all the objects in the data area will be executed.",
+                "Conversely, the Affected objects area will have more options available when selecting to \u201cExecute\u201d or \u201cDeploy and Execute\u201d on a more specific object, like a table located in a data area.",
+                "In this scenario, the Affected objects section will now have two more options available and the following is a description of all three options:"
+            ],
+            "list": [
+                "All Will execute all steps in the selected area.",
+                "Only modified tables and views Will execute only those steps that are required for deployment. This option works best when both Differential and Managed deployment is chosen, as the exectution will only select those tables necessary for the execution.",
+                "Only work items Only those objects that are work items will be executed. In the screenshot above, the Customer table is a Work Item and even though another table may also need to be deployed as well, this execution option will only attempt to execute those objects that are added as Work Items. The Send to Execution Queue option allows users to push the execution to the execution queue, which means that users can continue to work while the package is being executed. See the following section for more information on this feature."
+            ]
+        },
+        {
+            "heading": "Executing objects with the Execution Queue",
+            "paragraphs": [
+                "The Execution Queue enables users to continue working while the execution of tables or the entire instance is performed in the background.",
+                "Use the following steps to open the Execution Queue window."
+            ],
+            "list": [
+                "Start an execution and check the Send to execution queue box in the Deploy and Execute dialog.",
+                "On the Tools menu, click Execution Queue."
+            ]
+        },
+        {
+            "heading": "Adding an object to the Execution Queue",
+            "paragraphs": [
+                "Adding an object to the Execution Queue is a simple drag-and-drop operation."
+            ],
+            "list": [
+                "Drag-and-drop a table, a perspective, an execution package, or another type of executable object to the Execution Queue window. After the object has been dragged to the Queued area, a new window will appear that will allow users to select which execution steps for the object will be added to the queue.",
+                "Select Add all steps, or Add selected steps and choose which steps you would like to added to the queue. Click Add button when finished.",
+                "The object is now queued up in the Execution Queue. If there are no other items in the queue, the object will immediately be moved to In Progress and begin executing.",
+                "The Execution Queued mode can be paused using the Pause button, which acts like a tobble between Pause and Resume. Pausing will prevent further objects from being executed but does not stop an object that is currently in progress. Pressing the Resume button will resume executing the queue."
+            ]
+        },
+        {
+            "heading": "Removing executed items and viewing errors",
+            "paragraphs": [
+                "The Completed list shows the objects that have been executed, and lists out the Status of each individual items, including the Duration and the Start Time. Completed items can have one of three statuses:"
+            ],
+            "list": [
+                "Success: The object was executed without errors.",
+                "Failed: The execution was ended prematurely by an error.",
+                "Stopped: The execution was stopped by the user before it was completed."
+            ]
+        }
+    ]
+}

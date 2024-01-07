@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:41:05",
+    "URL": "https://support.timextender.com/data-warehouse-108/add-a-custom-table-insert-1281",
+    "Keywords": "missing",
+    "Title": "Add a Custom Table Insert _ Community",
+    "Author": "Thomas Lind",
+    "Text": "TimeXtender has a feature called Custom Table Insert. This feature allows user to add data to a table based on a custom SQL query and store the output in the table it is added on. Advanced  Add Custom Table Insert INSERT If the field names in the source tables are different from the field names in the destination table table, use an alias to make the names match up. The benefit is that you can use this in all locations you would use a insert into script action, all you need is to be sure the select statement ends up with the same field names and data types. @Thomas Lind Yes, as I do in this script. @Thomas Lind Yes But if the fields of the table you put it in are different than the source it will not work as the names doesnt exist. That is why I have the select statement in the other script. @Thomas Lind I supose that if we select Raw, we will can to use transformations in TX isnt it?  Yes, if you set it to raw it will be affected by the data cleansing procedure, whereas if you set it to valid it will not. It is only very rare occasions it will ever be necessary to not add it to raw, but there could be some instances where you want to update a field or similar after the cleansing have been done. @Thomas Lind  Invalid object name '#PurchForecast'. Details:   ",
+    "Lists": []
+}

@@ -1,0 +1,84 @@
+{
+    "DateTime": "2023-12-27 14:42:15",
+    "URL": "https://support.timextender.com/data-sources-112/connect-to-an-excel-file-629",
+    "Keywords": "missing",
+    "Title": "Connect to an Excel file _ Community",
+    "Author": "Thomas Lind",
+    "Text": " Microsoft Excel Microsoft SharePoint Excel Microsoft Excel Online Which one to use depends on what you need to do. There are some things to consider that will help decide what option should be used. Microsoft Excel Microsoft Excel Online CData ADO.NET Provider for Excel. Establishing a Connection Connection String options That is all you need to do to connect to an Excel file, however, it may need some additional changes to provide the proper data. You can read about what can be done here. The above options are also relevant for all other connection types.  How a real pathcould look: azureblob://sharedfiles/IncT.xlsx How a real pathcould look: abfss://sharedfiles/IncT.xlsx How the path to a file could look: azurefile://test/GSX/IncT.xlsx While you can use the Microsoft Excel Online provider to connect to SharePoint as well, this is how to only connect to one file through this provider. You need to use OAuth for this, so your first step is to set up an app registration. Once this is done, you have to figure out where the file is located in the SharePoint structure as the options change based on whether it is located on a specific site. sheet range culture culture charset Define Tables Table1=Sheet1!A1:N25,Table2=Sheet2!C3:M53 Data Define Tables Select data Data=Sheet1!B2:E7 URI Excel File Establishing a Connection Aggregate files URI Include subdirectories Metadata discovery URI Type Detection Scheme RowScan  ",
+    "Lists": [
+        {
+            "heading": "Set up a connection to a local file",
+            "paragraphs": [],
+            "list": [
+                "Create a new data source in the portal.",
+                "Search for Microsoft Excel and choose the one with the highest number.",
+                "Give the data source a name.",
+                "Locate an Excel file in a folder press and hold Shift, right-click on the file, and click \u201ccopy as path\u201d.",
+                "Locate and paste this path in the URI field. Remember to remove the quotation (\u201c) marks at the start and beginning of the path.",
+                "Locate the Row Scan Depth field. It is set to 100 as default. Consider changing this value. If this value is: 0 - The provider will read the whole file before deciding on the fields' data types. 100 - It will read only the first 100 rows and decide the data types based on that. 10000 - Set it to 1000 if the file is very large, it can take a long time to synchronize the data source and read the whole file to determine the data types.",
+                "0 - The provider will read the whole file before deciding on the fields' data types.",
+                "100 - It will read only the first 100 rows and decide the data types based on that.",
+                "10000 - Set it to 1000 if the file is very large, it can take a long time to synchronize the data source and read the whole file to determine the data types.",
+                "Click Save to create the data source."
+            ]
+        },
+        {
+            "heading": "Set up a connection to a file stored in Azure Storage",
+            "paragraphs": [],
+            "list": [
+                "Create a new data source in the portal.",
+                "Search for Microsoft Excel and choose the one with the highest number.",
+                "Give the data source a name.",
+                "Locate the Azure Authentication area and find the Azure Storage Account field. Add the name of the Storage Account the file is stored in. You can copy the storage account name from the Access Keys menu.",
+                "You can copy the storage account name from the Access Keys menu.",
+                "Locate the Azure Tenant field and add the Tenant ID for this Storage Account. The Tenant ID can be found here. Just search for Tenant and choose tenant properties.",
+                "The Tenant ID can be found here. Just search for Tenant and choose tenant properties.",
+                "Locate the Azure Access Key field and add the Storage Accounts Access Key.",
+                "You have an option to use an Azure Shared Access Signature (SAS) token as well, but it is not necessary if you have an Access Key.  Here is how I have set it up for my storage account in the portal.",
+                "Locate the field called Connection Type in the Connection area. If you want to connect to a file located in Azure Blob storage Set the Connection Type field to Azure Blob, locate the URI field, and add the following azureblob://mycontainer/myblob/file.xlsx How a real path could look: File path URI: azureblob://sharedfiles/IncT.xlsx   If you want to connect to a file located in Azure Data Lake storage  Set the Connection Type field to Azure Data Lake storage, locate the URI field, and add the following adl://myfilesystem/folder1/file.xlsx Azure Data Lake Storage Gen2, locate the URI field and add the following abfs://myfilesystem/folder1/file.xlsx Azure Data Lake Storage Gen2 SSL (this option is most common), locate the URI field and add the following abfss://myfilesystem/folder1/file.xlsx How a real path could look: File path URI: abfss://sharedfiles/IncT.xlsx   If you want to connect to a file located in Azure File storage Set the Connection Type field to Azure Files, locate the URI field, and add the following azurefile://fileShare/remotePath/file.xlsx How the path to a file could look: File path URI: azurefile://test/GSX/IncT.xlsx",
+                "If you want to connect to a file located in Azure Blob storage Set the Connection Type field to Azure Blob, locate the URI field, and add the following azureblob://mycontainer/myblob/file.xlsx How a real path could look: File path URI: azureblob://sharedfiles/IncT.xlsx",
+                "Set the Connection Type field to Azure Blob, locate the URI field, and add the following azureblob://mycontainer/myblob/file.xlsx How a real path could look: File path URI: azureblob://sharedfiles/IncT.xlsx",
+                "If you want to connect to a file located in Azure Data Lake storage  Set the Connection Type field to Azure Data Lake storage, locate the URI field, and add the following adl://myfilesystem/folder1/file.xlsx Azure Data Lake Storage Gen2, locate the URI field and add the following abfs://myfilesystem/folder1/file.xlsx Azure Data Lake Storage Gen2 SSL (this option is most common), locate the URI field and add the following abfss://myfilesystem/folder1/file.xlsx How a real path could look: File path URI: abfss://sharedfiles/IncT.xlsx",
+                "Set the Connection Type field to Azure Data Lake storage, locate the URI field, and add the following adl://myfilesystem/folder1/file.xlsx",
+                "Azure Data Lake Storage Gen2, locate the URI field and add the following abfs://myfilesystem/folder1/file.xlsx",
+                "Azure Data Lake Storage Gen2 SSL (this option is most common), locate the URI field and add the following abfss://myfilesystem/folder1/file.xlsx How a real path could look: File path URI: abfss://sharedfiles/IncT.xlsx",
+                "If you want to connect to a file located in Azure File storage Set the Connection Type field to Azure Files, locate the URI field, and add the following azurefile://fileShare/remotePath/file.xlsx How the path to a file could look: File path URI: azurefile://test/GSX/IncT.xlsx",
+                "Set the Connection Type field to Azure Files, locate the URI field, and add the following azurefile://fileShare/remotePath/file.xlsx How the path to a file could look: File path URI: azurefile://test/GSX/IncT.xlsx"
+            ]
+        },
+        {
+            "heading": "Connect to a SharePoint file",
+            "paragraphs": [],
+            "list": [
+                "Locate and set the Auth Scheme field to OAuth",
+                "Locate the URI field and add the path to the file sprest://remotePath/file.xlsx. The remote path is not the SharePoint URL, but instead all the folders besides the Documents folder. If the file is stored in the Documents folder the path would be sprest://file.xlsx. See how you can locate the file path here.  This would make the path be sprest://Product Development & Delivery/Engineering/TestData/EvilWorkbook.xlsx You do not need to add a SharePoint URL as it is known by the app you are using.",
+                "Locate the OAuth area and set the Initiate OAuth field to GETANDREFRESH",
+                "Locate the OAuth Client ID field and add the Client ID of the app you have",
+                "Locate the OAuth Client Secret field and add the Secret of the app.",
+                "Locate the OAuth Settings File field and consider changing the default path to a local folder on the server. This is where the OAuth connection tokens will be stored. It needs to end in OAuthSettings.txt, but the file does not need to exist before authenticating.  How to see where the file is stored as default."
+            ]
+        },
+        {
+            "heading": "Connect to a SharePoint file on a specific site",
+            "paragraphs": [],
+            "list": [
+                "Locate and set the Auth Scheme field to OAuth",
+                "Locate the URI field and add the path to the file with the following format sprest://remotePath/file.xlsx. The remote path is not the SharePoint URL, but instead all the folders besides the Documents folder. If the file is stored in the Documents folder the path would be sprest://file.xlsx.",
+                "Locate the Storage Base URL field and add the path to the site. The format is https://companyname.sharepoint.com/site/sitename  This would make the URI: sprest://EvilWorkbook.xlxs And the Storage Base URL: https://timextender.sharepoint.com/sites/PowerBITest",
+                "Locate the OAuth area and set the Initiate OAuth field to GETANDREFRESH the same as when you are Connect to a SharePoint file and the same relates to the steps below.",
+                "Locate the OAuth Client ID field and add the Client ID of the app you have",
+                "Locate the OAuth Client Secret field and add the Secret of the app.",
+                "Locate the OAuth Settings File field and consider changing the default path to a local folder on the server. This is where the OAuth connection tokens will be stored. It needs to end in OAuthSettings.txt, but the file does not need to exist before authenticating."
+            ]
+        },
+        {
+            "heading": "Set up a connection to a file on an FTP server",
+            "paragraphs": [],
+            "list": [
+                "Set the URI to the address of the server followed by the path to the Excel file. URI=ftps://localhost:990/folder1/file.xlsx Here is how it looks when I connect to a file in our FTP server.  Here is how the URI would  be: ftps://us.hostedftp.com:21/TL/Rand/IncrementalTest.xlxs",
+                "Locate the User field and set it to an account that has access to the FTP server",
+                "Locate the Password field and add the password of the user account."
+            ]
+        }
+    ]
+}

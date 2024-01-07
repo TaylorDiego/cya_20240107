@@ -1,0 +1,20 @@
+{
+    "DateTime": "2023-12-27 14:39:32",
+    "URL": "https://support.timextender.com/add-and-configure-instances-127/add-semantic-model-instances-719",
+    "Keywords": "missing",
+    "Title": "Add Semantic Model Instances _ Community",
+    "Author": "missing",
+    "Text": "TimeXtender 6024.1 As with other instances, your semantic models are added in the web interface. You add both the basic semantic model and the accompanying semantic endpoints that you want to use. You can always edit a semantic model instance to add more endpoints or remove existing ones. To add a new semantic model, follow the steps below. Data Estate Instances, Add Instance> Add semantic model instance Note: The 'add' form is divided into two sections - we'll take them one by one in the following. When you've taken care of the basic info, it's time to add the endpoints you want to use with this model. Add endpoints Add an endpoint Name      Note: TimeXtender Portal Home Data Estate Instances Edit Save Note: TimeXtender Portal Home Data Estate Instances Delete instance name comment Delete Edit Instance Test Endpoint Connection  ",
+    "Lists": [
+        {
+            "heading": "Basic info",
+            "paragraphs": [],
+            "list": [
+                "Name: type the name you want to use for the data warehouse.",
+                "Description: type a description of the Instance. The description is displayed on the desktop and on the instance details page.",
+                "Log Retention Days: adjust the number of days logs should be kept (default is 90).",
+                "Team Development: Enable if you want to allow multiple developers to develop on the instance at the same time. Since Semantic models are relatively small this is not typically recommended."
+            ]
+        }
+    ]
+}

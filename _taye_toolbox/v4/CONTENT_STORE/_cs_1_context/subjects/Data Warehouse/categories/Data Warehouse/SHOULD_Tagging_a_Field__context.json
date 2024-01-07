@@ -1,0 +1,24 @@
+{
+    "DateTime": "2023-12-27 14:40:40",
+    "URL": "https://support.timextender.com/data-warehouse-108/tagging-a-field-1022",
+    "Keywords": "missing",
+    "Title": "Tagging a Field _ Community",
+    "Author": "missing",
+    "Text": " DWH perspectives instance documentation Whentagging a field to create data impact documentation, it is recommendedto tag fields as \"early\" in the data flow as possible, in order for the documentationto capture the complete data journeyasthe data moves from its source to the endpoint. Tags must first be created before they can be used to tag fields.  ",
+    "Lists": [
+        {
+            "heading": "To add a new tag",
+            "paragraphs": [],
+            "list": [
+                "Right click Tags in the Solution Explorer and click Add tag. Name the tag and click OK."
+            ]
+        },
+        {
+            "heading": "To add a tag to a field",
+            "paragraphs": [],
+            "list": [
+                "Right click the field, click Tags and select the appropriate tag to be added to the field."
+            ]
+        }
+    ]
+}

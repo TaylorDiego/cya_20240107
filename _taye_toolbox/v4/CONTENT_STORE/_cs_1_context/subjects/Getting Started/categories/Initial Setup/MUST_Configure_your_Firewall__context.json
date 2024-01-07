@@ -1,0 +1,55 @@
+{
+    "DateTime": "2023-12-27 14:39:14",
+    "URL": "https://support.timextender.com/initial-setup-start-here-115/configure-your-firewall-700",
+    "Keywords": "missing",
+    "Title": "Configure your Firewall _ Community",
+    "Author": "missing",
+    "Text": "TimeXtender 6024.1 The following list of servers and ports used by TimeXtender and ODX Server should be opened in your firewall settings. To use the new version of TimeXtender, the desktop software needs to be able to reach these URLs: Test-NetConnection servers ports As an example, you can copy and paste the following command into PowerShell then hit ENTER to execute: Server Name Port This is how the command and results should appear in PowerShell:  Microsoft.Web Virtual network/subnet subnet   Microsoft.Web Save the new configuration. This may resolve the access issue. With this error locate the bottom part of the message it may mention a server name in the message such as this. This is one of the things Microsoft does in routing calls. It is an internal Microsoft worker server on one of their (West Europe) clusters. We don't control this. It will likely not even be for West Europe, the best we can say is that it will be *.worker.database.windows.net,* something. It will be 11000-11999 if it is an Azure VM and 1433 outside that. In any case, the solution is to make a rule for this in your firewall to allow for communication to the ODX Server from our Cloud repository. I have a customer who usesan on-premises virtual machine with no internet access. We added the above firewall rules as a preparation step. Turns out this list is not exhaustive, you need to addmore to the firewall whitelist, to make the login process work correctly: So you need to add these 5 rules to the firewall as well, besidesthe list above. Hans ",
+    "Lists": [
+        {
+            "heading": "TimeXtender Desktop",
+            "paragraphs": [
+                "To use the new version of TimeXtender, the desktop software needs to be able to reach these URLs:"
+            ],
+            "list": [
+                "Instance databases: sql-instances-prod.database.windows.net Server is outside Azure (On-Prem): Port 1433 standard for SQL Server Server is Inside Azure: Port range 11000-11999",
+                "sql-instances-prod.database.windows.net",
+                "Server is outside Azure (On-Prem): Port 1433 standard for SQL Server",
+                "Server is Inside Azure: Port range 11000-11999",
+                "Client secret authentication, data sources provider download and updates: traws.timextender.com Port 443",
+                "traws.timextender.com",
+                "Port 443",
+                "Sign-in to Desktop, ODX configuration timextender-saas.eu.auth0.com Port 443",
+                "timextender-saas.eu.auth0.com",
+                "Port 443"
+            ]
+        },
+        {
+            "heading": "ODX Server",
+            "paragraphs": [],
+            "list": [
+                "Updating CData components: api.timextender.com Port 443",
+                "api.timextender.com",
+                "Port 443",
+                "If using Azure Data Lake Storage <storage account name>.dfs.core.windows.net Port 443",
+                "<storage account name>.dfs.core.windows.net",
+                "Port 443",
+                "If using Azure Data Factory Data Sources management.azure.com Port 443",
+                "management.azure.com",
+                "Port 443",
+                "Ensure that inbound rules are added for the ports used for the ODX instances"
+            ]
+        },
+        {
+            "heading": "Additional servers",
+            "paragraphs": [],
+            "list": [
+                "auth0.com             Port 443",
+                "eu.auth0.com        Port 443",
+                "cdn.auth0.com      Port 443",
+                "app.timextender.com  Port 443",
+                "app-encryption-prod-001.azurewebsites.net   Port 443"
+            ]
+        }
+    ]
+}

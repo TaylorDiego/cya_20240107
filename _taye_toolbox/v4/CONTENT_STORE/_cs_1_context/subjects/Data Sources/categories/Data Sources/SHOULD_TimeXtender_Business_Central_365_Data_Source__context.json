@@ -1,0 +1,60 @@
+{
+    "DateTime": "2023-12-27 14:42:34",
+    "URL": "https://support.timextender.com/data-sources-112/timextender-business-central-365-data-source-707",
+    "Keywords": "missing",
+    "Title": "TimeXtender Business Central 365 Data Source _ Community",
+    "Author": "Thomas Lind",
+    "Text": "TimeXtender 6024.1 TimeXtender Business Central 365 TimeXtender Business Central 365 Option Values  BC CData Dynamics 365 Business Central provider businesscentral.dynamics.com    TimeXtender Business Central 365 Option Values The setup is the same as for a normal BC. Follow steps 1 - 6 from the above guide to set up the data source. Use the Dynamics 365 Business Central Values provider Lookup Transformation Template @Thomas Lind I do face an issue when running extractions. I get the message that multiple parquet files are received where one file is expected. Ive looked at the data source settings but I dont see any settings related to this. Have you seen this before and do you know how to solve it? Error message below. Executing table $customer: failed with error: System.AggregateException: One or more errors occurred. ---> System.Exception: Received 24 parquet data files, but expected 1 at DataStorageEngine.DataLakeGen2.DataLakeGen2Transfer.<CommitDataAsync>d__39.MoveNext() --- End of inner exception stack trace --- ---> (Inner Exception #0) System.Exception: Received 24 parquet data files, but expected 1 at DataStorageEngine.DataLakeGen2.DataLakeGen2Transfer.<CommitDataAsync>d__39.MoveNext()<--- @Thomas Lind  @Niels Jonker I made this a ticket in our support system. ",
+    "Lists": [
+        {
+            "heading": "Set up the BC data source in the TimeXtender portal",
+            "paragraphs": [],
+            "list": [
+                "In Data Sources click Add new Data Source.",
+                "Search for TimeXtender Business Central 365 and choose that option.",
+                "In the Name field, type the name of the data source. Also add a Description as it is a requirements.",
+                "In the API URL field change the https://api.businesscentral.dynamics.com/v2.0/{tenantId} value. Replace {tenantId} with the actual Azure AD Tenant ID which can be found by navigating to the BC environment in https://businesscentral.dynamics.com/, selecting the \u201c?\u201d icon and selecting \u201cHelp & Support\u201d. Enter the environment which can also be found in the same location.",
+                "You have the following options to authenticate.   If the choice is to use OAuth 2.0 authentication, select this option and enter a legitimate file path (e.g. C:\\oauth\\oauth.txt) for the locally stored OAuth token to authenticate the connection. The text file does not have to be created beforehand, as TimeXtender will create it once you authorize OAuth.   If the choice is to authenticate using \u201cService to Service Authentication\u201d then select this option. To use this, apply the Client ID and the Client Secret from an Application as explained above. The other options are not necessarily possible, specifically, the Username and Password option is expired by BC. It used to work with a Web Service Access Key as the Password.",
+                "If the choice is to use OAuth 2.0 authentication, select this option and enter a legitimate file path (e.g. C:\\oauth\\oauth.txt) for the locally stored OAuth token to authenticate the connection. The text file does not have to be created beforehand, as TimeXtender will create it once you authorize OAuth.",
+                "If the choice is to authenticate using \u201cService to Service Authentication\u201d then select this option. To use this, apply the Client ID and the Client Secret from an Application as explained above.",
+                "The other options are not necessarily possible, specifically, the Username and Password option is expired by BC. It used to work with a Web Service Access Key as the Password.",
+                "Once the data source is set up, be sure to map it to the ODX Instance you want to use it with."
+            ]
+        },
+        {
+            "heading": "Create the BC data source in the ODX Instance",
+            "paragraphs": [],
+            "list": [
+                "Create a new data source by right-clicking on Data Sources and clicking Add Data Source.",
+                "Give it a name",
+                "In the Connection menu choose the BC data source from the list.",
+                "Choose All tables in the data source.",
+                "Say yes to create a transfer task and name it Incremental or similar. Say yes to all default settings.",
+                "Right-click on the source just created and choose the Authorize OAuth option.",
+                "If your logon option is OAuth 2.0 authentication it will then request you to log on. Log on as the user you use for the portal. Once done and successful, this message will be shown.",
+                "Right-click on the data source and choose Select Tables. Click on Remove All to remove the existing rule. Click on Switch to Simple Selection and in that Search for the tables you want to add. Click Add to add one of them or select multiple tables to add more than one to the Selected Tables area. For example, I searched for customer and added the Customer table.",
+                "Click on Select Columns to unselect columns that are not needed. Be sure to always keep SystemModifiedAt as it will be optimal to use for Incremental load.",
+                "Once you have finalized table selection, you are ready to use the tables in a Data Area.",
+                "Execute the Synchronize task for the BC data source.",
+                "Right-click on the data source and choose Set up Primary Keys. Locate if any tables has no primary keys and use the override feature to add one. Click OK to acknowledge this.",
+                "Right-click on the data source and choose Set up Incremental Load. Click Add to add a new rule. Set the Column field to Contains (ignore case), check for Handle primary key updates and Handle primary key deletes. If you have any tables affected by the incremental load rule that have no primary keys, a message about this will be displayed.",
+                "Run the synchronize task again and once it is done open the Data Source Explorer.  Here you can see that multiple versions of the tables exist, as a table is replicated for each BC account. If you want to only look at specific ones, you can do this by right-clicking on the data source and choosing Select Accounts.    By default all accounts are selected with the Use all accounts option, but by changing it to Use specific accounts you can select only the ones you want to use",
+                "Run the Synchronize task again, and then run the Transfer task and you are ready to use the BC data source in the Data Warehouse Instances you have."
+            ]
+        },
+        {
+            "heading": "Create the BC data source in the ODX Instance",
+            "paragraphs": [],
+            "list": [
+                "Create a new data source by right-clicking on Data Sources and clicking Add Data Source.",
+                "Give it a name",
+                "In the Connection menu choose the BC Values data source from the list.",
+                "Choose All tables in the data source.",
+                "Say yes to create a transfer task and name it Transfer or similar. Say yes to all default settings.",
+                "Right-click on the source just created and choose the Authorize OAuth option.",
+                "If your logon option is OAuth 2.0 authentication it will then request you to log on. Log on as the user you use for the portal. Once done and successful, this message will be shown.",
+                "Run the Synchronize task on the data source again and run the Transfer task."
+            ]
+        }
+    ]
+}

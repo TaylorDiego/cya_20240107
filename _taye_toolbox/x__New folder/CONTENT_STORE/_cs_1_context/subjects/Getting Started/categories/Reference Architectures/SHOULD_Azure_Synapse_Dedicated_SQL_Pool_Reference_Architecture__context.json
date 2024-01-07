@@ -1,0 +1,88 @@
+{
+    "DateTime": "2023-12-27 14:39:21",
+    "URL": "https://support.timextender.com/reference-architectures-125/azure-synapse-dedicated-sql-pool-reference-architecture-807",
+    "Keywords": "missing",
+    "Title": "Azure Synapse Dedicated SQL Pool Reference Architecture _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "Azure Synapse Dedicated SQL Pool data becomes very big Dedicated SQL Pool When should I consider Azure Synapse Analytics? What is Azure Synapse Analytics? Note: Serverless SQL Pool   Query ODX Parquet files with Azure Synapse Workspace To prepare your TimeXtender environment in Azure, here are the steps we recommend: To serve the TimeXtender application in Azure, we recommend using an Azure Virtual Machine (VM), sized according to your solution's requirements. Guide: Create Application Server - Azure VM Considerations: ADLS Gen2 is highly performant, economical, scalable, and secure way to store your raw data. Guide: Create ODX Storage - Azure Data Lake Storage Gen2 Considerations: For large data movement tasks, ADF provides amazing performance and ease of use for both ingestion and transport. Guide: Prepare for Ingest and Transport - Azure Data Factory (recommended) Considerations: As your organizations data grows and performance is a key consideration Azure Synapse SQL Pool, a massively parallel processing database, can be a great option for your data warehouse storage at scale. Guide: Use Azure Synapse SQL Pool (SQL DW) Considerations:  If you have Power BI Premium, TimeXtender and deploy and execute Semantic Models directly to the Power BI Premium endpoint. Guide: Configure PowerBI Premium Endpoint (Optional) Balancing cost and performance requires monitoring and forecasting of your services and needs. Guide: Estimate Azure Costs Considerations: Note: does not include ",
+    "Lists": [
+        {
+            "heading": "1. Create Application Server - Azure VM",
+            "paragraphs": [
+                "To serve the TimeXtender application in Azure, we recommend using an Azure Virtual Machine (VM), sized according to your solution's requirements.",
+                "Guide: Create Application Server - Azure VM",
+                "Considerations:"
+            ],
+            "list": [
+                "Recommended Sizing: DS2_v2 (for moderate workloads). See Azure VM Sizes documentation for more detail.",
+                "If Azure VM (App Server) serves the ODX Server, it must remain running for TimeXtender to run.",
+                "This VM will host the below services to run TimeXtender. ODX Server Service Execution Server Configuration Service",
+                "ODX Server Service",
+                "Execution Server Configuration Service"
+            ]
+        },
+        {
+            "heading": "2. Create ODX Storage - Azure Data Lake Storage Gen2",
+            "paragraphs": [
+                "ADLS Gen2 is highly performant, economical, scalable, and secure way to store your raw data.",
+                "Guide: Create ODX Storage - Azure Data Lake Storage Gen2",
+                "Considerations:"
+            ],
+            "list": [
+                "When creating the ADLS Gen2 data lake service, you must enable Hierarchical Namespaces",
+                "TimeXtender writes files in Parquet file format, a highly compressed, columnar storage in the data lake.",
+                "It is possible for ODX Server to store data in Azure SQL DB (rather than in a data lake), but this adds cost and complexity but no additional functionality",
+                "When using Azure Data Lake for ODX and SQL DB for the Data Warehouse, it is highly recommended to use Data Factory to transport this data.",
+                "ADLS will require a service principle, called App Registration in Azure, for TimeXtender to access your ADF service.  Both Data Lake and ADF, may share the same App Registration if desired.",
+                "Both Data Lake and ADF, may share the same App Registration if desired."
+            ]
+        },
+        {
+            "heading": "3. Prepare for Ingest and Transport - Azure Data Factory (optional)",
+            "paragraphs": [
+                "For large data movement tasks, ADF provides amazing performance and ease of use for both ingestion and transport.",
+                "Guide: Prepare for Ingest and Transport - Azure Data Factory (recommended)",
+                "Considerations:"
+            ],
+            "list": [
+                "When creating ADF resources use Gen2, which is the current default",
+                "A single ADF service can be used for both transport and ingestion Ingestion from data source to ODX Storage Transport from ODX to MDW",
+                "Ingestion from data source to ODX Storage",
+                "Transport from ODX to MDW",
+                "The option to use ADF is not available for all data source types, but many options are available.",
+                "ADF Data sources do not support ODX Query Tables at this time.",
+                "ADF's performance can be quite costly for such incredible fault-tolerant performance",
+                "ADF will require a service principle, called App Registration in Azure, for TimeXtender to access your ADF service.  Both Data Lake and ADF, may share the same App Registration if desired.",
+                "Both Data Lake and ADF, may share the same App Registration if desired."
+            ]
+        },
+        {
+            "heading": "4. Create MDW Storage - Azure Synapse SQL Pool (SQL DW)",
+            "paragraphs": [
+                "As your organizations data grows and performance is a key consideration Azure Synapse SQL Pool, a massively parallel processing database, can be a great option for your data warehouse storage at scale.",
+                "Guide: Use Azure Synapse SQL Pool (SQL DW)",
+                "Considerations:",
+                ""
+            ],
+            "list": [
+                "Recommended Synapse Use Case Criteria: More than 1 TB of data Tables with at least 1 billion rows Data Warehouse tuning is needed to achieve max performance",
+                "More than 1 TB of data",
+                "Tables with at least 1 billion rows",
+                "Data Warehouse tuning is needed to achieve max performance",
+                "Data tables are split up across 60 distributed nodes, in a process called sharding. There are three types of distributions (Round-robin, Replicated, and Hash), each with ideal use cases.",
+                "TimeXtender automatically switches to PolyBase for transport when using Synapse for a data warehouse. Note: the user interface will not reflect this change has been made."
+            ]
+        },
+        {
+            "heading": "6. Estimate Azure Costs",
+            "paragraphs": [
+                "Balancing cost and performance requires monitoring and forecasting of your services and needs.",
+                "Guide: Estimate Azure Costs",
+                "Considerations:"
+            ],
+            "list": [
+                "Azure provides a pricing calculator to help you estimate your costs for various configurations"
+            ]
+        }
+    ]
+}

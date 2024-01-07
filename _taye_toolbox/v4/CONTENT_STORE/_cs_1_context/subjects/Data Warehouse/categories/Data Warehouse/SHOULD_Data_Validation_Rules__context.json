@@ -1,0 +1,50 @@
+{
+    "DateTime": "2023-12-27 14:40:35",
+    "URL": "https://support.timextender.com/data-warehouse-108/data-validation-rules-1075",
+    "Keywords": "missing",
+    "Title": "Data Validation Rules _ Community",
+    "Author": "Thomas Lind",
+    "Text": "Validation rules can be used to discover invalid data and therefore increase the accuracy and reliability of data in the data warehouse. Validation rules can be applied at the field level in a data area. Even when data cleansing is being performed in one data area, that same data may need to be cleansed further in other data area tables when it is being combined tables with data from other ODX instances. Note that validation rules can be conditional when they should only be applied in specific situations. The following operators are available for use when defining data selection or validation rules. Values must be alphanumeric characters and can also be specified as a comma separated list. Operator Definition Not Empty Selects records where the value of a field is not empty or NULL Equal Selects records where the value of a field is equal to the specified value Greater Than Selects records where the value of a field is greater than the specified value Less Than Selects records where the value of a field is less than the specified value Not Equal Selects records where the value of a field is not equal to the specified value Greater or Equal Selects records where the value of a field is greater than or equal to the specified value Less or Equal Selects records where the value of a field is less than or equal to the specified value Min. Length Selects records that contain at least the specified number of characters Max. Length Selects records that contain no more than the specified number of characters List Selects records where the value of a field is equal to one of the specified comma-separated values Empty Selects records where the value of a field is empty or NULL Not in List Selects records where the value of a field is not equal to one of the specified comma-separated values Like Selects records where the value of a field is similar to the specified value. A percent sign (%) can be used as a wildcard. For instance, \"ABC%\" will return all records where the value in the specified field starts with \"ABC\". Not Like Selects records where the value of a field is not similar to the specified value. A percent sign ( % ) can be used as a wildcard. For instance, \"ABC%\" will return all records where the value in the specified field does not start with \"ABC\". For each field data validation rule, a severity level needs to be set from one of the following two options, which will determine how the rule handles any violations. Use the following steps to add one or more validation rules to a field. The following example shows a data validation rule for the Document_No field that moves all records with a value greater than 100,000 to the Errors report. Use the following steps to add one or more conditions to a validation rule.  The new condition is now displayed under the validation rule or transformation rule to which it belongs. Errors  ",
+    "Lists": [
+        {
+            "heading": "Adding Data Validation Rules",
+            "paragraphs": [
+                "Use the following steps to add one or more validation rules to a field."
+            ],
+            "list": [
+                "Expand the relevant data area, then Tables, and then the specific table with the field to be used in the data validation rule.",
+                "Right-click the relevant field, and then select Field Validations to open the Field Validations pane on the right-hand side of the window.",
+                "Click the field to be used in the validation rule.",
+                "In the Operator list, click the appropriate operator to be used with the field above. See Operators for Selecting and Validating Data section above for more information.",
+                "If applicable, type a value to be used with the operator in the Value box.",
+                "Click Error to specify that as the severity level or leave it at Warning.",
+                "Click Add to add the rule."
+            ]
+        },
+        {
+            "heading": "Adding Conditions to a validation rule",
+            "paragraphs": [
+                "Use the following steps to add one or more conditions to a validation rule."
+            ],
+            "list": [
+                "Locate the relevant selection rule.",
+                "Right-click the rule and then click Add Condition to open the Conditions pane.",
+                "In the Operator list, click the appropriate operator. See Operators for Selecting and Validating Data section above for more information.",
+                "Use one of the following two options to specify which data will be used in the validation rule. Choose the Value option and add a value to be used in the comparison. Choose the Field option and click the appropriate field to be used in the comparison.",
+                "Choose the Value option and add a value to be used in the comparison.",
+                "Choose the Field option and click the appropriate field to be used in the comparison.",
+                "Click Add to add the condition to the rule."
+            ]
+        },
+        {
+            "heading": "View Validation Errors or Warnings",
+            "paragraphs": [],
+            "list": [
+                "On the Reports menu, click Errors or Warnings.",
+                "In the Database list, select the relevant database.",
+                "In the Table list, click the relevant table. The Row Count displays the number of errors or warnings for the selected table with the validation rules themselves listed out in the pane below.",
+                "Click on any row to display the error or warning message in the Error Message or Warning Message box."
+            ]
+        }
+    ]
+}

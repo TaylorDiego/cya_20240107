@@ -1,0 +1,21 @@
+{
+    "DateTime": "2023-12-27 14:40:46",
+    "URL": "https://support.timextender.com/data-warehouse-108/cloning-a-field-1020",
+    "Keywords": "missing",
+    "Title": "Cloning a field _ Community",
+    "Author": "missing",
+    "Text": "Cloning fields can be a way to save time when creating new fields, particularly when there is a specific field setup that is to be repeated. All fields in a table can be cloned, regardless ofwhetherthe fieldshave been brought in from a data source or whether they were added later. Simple Mode Clone Structure Clone Values  ",
+    "Lists": [
+        {
+            "heading": "How to clone a field",
+            "paragraphs": [],
+            "list": [
+                "Right-click on a field and click Clone Field to open the Clone Field dialog.",
+                "In the Name box, enter a name for the field.",
+                "For the cloning behavior, select one of the following two options: Clone structure: The cloned field will be an exact copy of the original field, including any transformations and validations. Clone values: The cloned field will be a custom field that gets its value from the original field.",
+                "Clone structure: The cloned field will be an exact copy of the original field, including any transformations and validations.",
+                "Clone values: The cloned field will be a custom field that gets its value from the original field."
+            ]
+        }
+    ]
+}

@@ -1,0 +1,153 @@
+{
+    "Question Bank": {
+        "previous_bank":{
+            "Administration and Settings": {
+                "Questions": 16
+             }
+            , "Architect and Design": {
+                "Questions": 13
+            }
+            , "Azure Deployments": {
+                "Questions": 11
+            }
+            , "Connecting to Data": {
+                "Questions": 12
+            }
+            , "Data Validation, Quality, and Profiling": {
+                "Questions": 14
+            }
+            , "Design, Modeling, and Transformations": {
+                "Questions": 33
+            }
+            , "Incremental Load, Execution & Scheduling": {
+                "Questions": 21
+            }
+            , "Objection Handling": {
+                "Questions": 4
+            }
+            , "Semantic Models": {
+                "Questions": 6
+            }
+            , "SSIS, Stored Procedures, Scripts & Functions": {
+                "Questions": 3
+            }
+            , "Troubleshooting": {
+                "Questions": 5
+            }
+            , "Use Cases": {
+                "Questions": 10
+            }
+            , "Value Proposition & Positioning": {
+                "Questions": 20
+            }
+        }
+        , "knowledge_base": {
+            "Getting Started": {
+                "metaadata": {
+                    "Categories": 5
+                    , "Articles": 33
+                }
+                , "_categories": {
+                    "Initial Setup - (Start Here)": {
+                        "_main": "https://support.timextender.com/initial-setup-start-here-115"
+                        , "Get Started with TimeXtender": "https://support.timextender.com/initial-setup-start-here-115/get-started-with-timextender-794"
+                        , "https://support.timextender.com/initial-setup-start-here-115/how-to-configure-timextender-portal-and-desktop-654"
+                        , "https://support.timextender.com/initial-setup-start-here-115/install-timextender-697"
+                    , "Installation": {
+                        "Categories": 1
+                        , "Articles": 5
+                    }
+                    , "Licensing": {
+                        "Categories": 1
+                        , "Articles": 3
+                    }
+                    , "Portal": {
+                        "Categories": 1
+                        , "Articles": 5
+                    }
+                    , "Security": {
+                        "Categories": 1
+                        , "Articles": 15
+                    }
+                }
+            , "ODX": {
+                "Categories": 1
+                , "Articles": 14
+            }
+            , "Data Warehouse": {
+                "Categories": 1
+                , "Articles": 55
+            }
+            , "Semantic Model": {
+                "Categories": 1
+                , "Articles": 14
+            }
+            , "Execution & Jobs": {
+                "Categories": 1
+                , "Articles": 7
+            }
+            , "TimeXtender Portal": {
+                "Categories": 1
+                , "Articles": 9
+            }
+            , "Data Sources": {
+                "Categories": 1
+                , "Articles": 22
+            }
+            , "General": {
+                "Categories": 3
+                , "Articles": 32
+            }
+            }
+        , "Training_modules": {
+            "What is TimeXtender": {
+                "sections": 1
+            }
+            , "Create a Sandbox": {
+                "sections": 3
+            }
+            , "Portal & Installation": {
+                "sections": 6
+            }
+            , "Operational Data Exchange": {
+                "sections": 4
+            }
+            , "Modern Data Warehouse": {
+                "sections": 3
+            }
+            , "Product Dimension": {
+                "sections": 4
+            }
+            , "Customer Dimension": {
+                "sections": 2
+            }
+            , "Sales Transactions": {
+                "sections": 2
+            }
+            , "Finalizing the Data Warehouse": {
+                "sections": 4
+            }
+            , "Semantic Models": {
+                "sections": 4
+            }
+            , "Data Quality": {
+                "sections": 4
+            }
+            , "Optimization": {
+                "sections": 3
+            }
+            , "Table Transformations": {
+                "sections": 6
+            }
+            , "Slowly Changing Dimensions": {
+                "sections": 3
+            }
+            , "Jobs": {
+                "sections": 5
+            }
+            , "Environments & Teamwork": {
+                "sections": 0
+            }
+        }
+    }
+}

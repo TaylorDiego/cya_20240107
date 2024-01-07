@@ -1,0 +1,24 @@
+{
+  "question_1": {
+    "question": "What should be done to execute a PowerShell script as an external executable in TimeXtender?",
+    "options": {
+      "option_a": "Right click on the 'External Executables' folder and select 'Add Execute PowerShell Script Step'",
+      "option_b": "Install the Azure Az PowerShell module",
+      "option_c": "Set the current Execution Policy",
+      "option_d": "Add a user under Security in SSMS"
+    },
+    "answer": "option_a",
+    "explanation": "To execute a PowerShell script as an external executable, you should right click on the 'External Executables' folder and select 'Add Execute PowerShell Script Step' as per the instructions in the 'Creating and Executing a PowerShell Executable' section."
+  },
+  "question_2": {
+    "question": "How can you implement row level security in a SSAS database using a PowerShell script?",
+    "options": {
+      "option_a": "Invoke-ProcessPartition",
+      "option_b": "Execute an XMLA script via PowerShell",
+      "option_c": "Backup-ASDatabase",
+      "option_d": "Add-RoleMember"
+    },
+    "answer": "option_b",
+    "explanation": "To implement row level security in a SSAS database, you can execute an XMLA script via PowerShell, which can be scripted as 'CREATE OR REPLACE To' from the properties of the SSAS role in SSMS, as described in the 'Change and Overwrite Roles in a SSAS database' section."
+  }
+}

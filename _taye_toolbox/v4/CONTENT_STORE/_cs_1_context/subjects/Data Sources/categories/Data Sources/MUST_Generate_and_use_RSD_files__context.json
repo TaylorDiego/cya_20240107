@@ -1,0 +1,32 @@
+{
+    "DateTime": "2023-12-27 14:42:30",
+    "URL": "https://support.timextender.com/data-sources-112/generate-and-use-rsd-files-886",
+    "Keywords": "missing",
+    "Title": "Generate and use RSD files _ Community",
+    "Author": "Thomas Lind",
+    "Text": "CData REST RSD schema file Get Post The important options you need to use to generate this are these three things. Here is an how the default look for an JSON provider, but it could be any provider that contains these fields. What schema generation option to use is dependent on a few things. RSD OnStart OnUse URI OnCreate OnUse location default folder path appdata TimeXtender OneDrive synchronizing https://gorest.co.in/ Like so. Other Row Scan Depth Data Model JSONPath Row Scan Data Model RELATIONAL URI Other Default Column Size These needs to be set before you synchronize as you cant add these options after the file has been created. After this create the data source using this setup and let it run the synchronize task. Rename this file to Users, open it in a text file editor and change the following info row to also be called Users. The rule is that whenever you synchronize and a file without the name the provider would give exists, it will generate it. There is no limit to how many RSD files it can look at as long as they are stored in this folder. GoRest  posts  comments https://gorest.co.in/public/v2/posts Now another file with the name from before exists. So you would again need to rename the file, open the file and change the title to Posts. empty Never Looking at the Data Source Explorer will show you the ones you made a RSD file for. Bonus info. jsonproviderGet SELECT Execution If you want to keep the URL parameters separate by modifying attributes in the connection via the _connection object. For example: https://gorest.co.in/access-token Then it will be used by the file. You can do the same with custom headers and this is more necessary, as the other part can be added in the URL string and this can't. The setup is as follows. So that translates to this for example. It can set the file requested to be returned in JSON format. More importantly you can authenticate the RSD file with this method, say you want to add a bearer token you have generated. OAuth  REST get command Important to remember are where in the file it is added, in what order, and how it is used. custom URL parameter RSD  info  DataModel Script Method=Get URI ParamName  Header:Name Go here to learn about pagination, nested calls, dynamic parameters, custom authentication and Post calls. All the RSD files I have used in these are added as attachments and here is a list of connection strings for the various parts. They can be copied into a connection string field in a REST CData provider and work with very little customization. ",
+    "Lists": [
+        {
+            "heading": "Setup",
+            "paragraphs": [
+                "The important options you need to use to generate this are these three things."
+            ],
+            "list": [
+                "You need to point at a file or URI.",
+                "You need the feature Generate Schema Files set to one of the following options OnUse, OnStart and OnCreate",
+                "Your Schema Location needs to be set to an existing folder."
+            ]
+        },
+        {
+            "heading": "Custom Headers",
+            "paragraphs": [
+                "You can do the same with custom headers and this is more necessary, as the other part can be added in the URL string and this can't.",
+                "The setup is as follows."
+            ],
+            "list": [
+                "Header:Name#: The name for each custom header to pass with the request.",
+                "Header:Value#: The value for each custom header to pass with the request."
+            ]
+        }
+    ]
+}

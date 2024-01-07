@@ -1,0 +1,26 @@
+{
+    "DateTime": "2023-12-27 14:39:42",
+    "URL": "https://support.timextender.com/configure-resources-126/configure-an-on-prem-application-server-storage-808",
+    "Keywords": "missing",
+    "Title": "Configure an On-Prem Application Server & Storage _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "Configure your TimeXtender Environment Follow the below steps to configure an On-Prem Server. You have multiple options regarding server configuration depending on where you wish to house theTimeXtenderapplication, Services, and SQL Server databases. There are no minimum hardware requirements forTimeXtenderbeyond that which is required by Microsoft SQL Server. Analytics environments can be drastically different from one organization to the next and performance can be impacted by any number of factors. Because of this we highly recommend you conduct your own testing and/or obtain an expert recommendation from a qualified professional. With this in mind, below are some general guidelines for optimal performance ofTimeXtender. Note:  separate Install TimeXtender and ODX Server on your TimeXtender Application Serverand then setup your instances. For more information see the below article:  ",
+    "Lists": [
+        {
+            "heading": "Consolidated BI Server",
+            "paragraphs": [],
+            "list": [
+                "TimeXtender services and SQL Server databases are all installed on the same windows server.",
+                "This setup is easier to maintain and offers some performance advantages due to zero network latency."
+            ]
+        },
+        {
+            "heading": "Separate Application and Database Servers",
+            "paragraphs": [],
+            "list": [
+                "TimeXtender services are installed on an \"Application\" server and the SQL Databases are stored on a separate \"Database\" server.",
+                "This setup can mitigate risk be ensuring additional applications aren't installed and users don't need to sign in to the database server."
+            ]
+        }
+    ]
+}

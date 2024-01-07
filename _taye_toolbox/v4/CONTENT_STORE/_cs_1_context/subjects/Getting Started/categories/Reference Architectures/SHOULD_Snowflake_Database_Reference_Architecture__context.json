@@ -1,0 +1,68 @@
+{
+    "DateTime": "2023-12-27 17:41:29",
+    "URL": "https://support.timextender.com/reference-architectures-125/snowflake-database-reference-architecture-870",
+    "Keywords": "missing",
+    "Title": "Snowflake Database Reference Architecture _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "This is a standard reference architecture to implement TimeXtender fully in the cloud with Snowflake for data warehouse storage. To prepare yourTimeXtender cloud environment, here are the steps we recommend. To serve the TimeXtender application in Azure, we recommend using an Azure Virtual Machine (VM), sized according to your solution's requirements. Guide: Create Application Server - Azure VM Considerations: ADLS Gen2 is highly performant, economical, scalable, and secure way to store your raw data. Guide: Create ODX Storage - Azure Data Lake Storage Gen2 Considerations: For large data movement tasks, ADF provides amazing performance and ease of use for both ingestion and transport. Guide: Prepare for Ingest and Transport - Azure Data Factory (recommended) Considerations: Guide: Use Snowflake Data Warehouse Storage If you have Power BI Premium, TimeXtender and deploy and execute Semantic Models directly to the Power BI Premium endpoint. Guide: Configure PowerBI Premium Endpoint (Optional  Hi, we have a question. Why is snowflake not being used also asODX storage? Why is ADLS Gen2 necessary ?  Thanks a lot ! @valeriehocepied ideas section @Christian Hauggaard Do you have a timeline on when basic features such as lookups, field transformations, etc. will be available in a Snowflake MDW?Also, am I understanding your previous reply correctly that there are no current plans on supporting Snowflakes internal stage in the future? Thank you! @pontus.berglund ",
+    "Lists": [
+        {
+            "heading": "1. Create Application Server - Azure VM",
+            "paragraphs": [
+                "To serve the TimeXtender application in Azure, we recommend using an Azure Virtual Machine (VM), sized according to your solution's requirements.",
+                "Guide: Create Application Server - Azure VM",
+                "Considerations:"
+            ],
+            "list": [
+                "Recommended Sizing: DS2_v2 (for moderate workloads). See Azure VM Sizes documentation for more detail.",
+                "This VM will host the below services, and must remain running for TimeXtender to function ODX Server Service Execution Server Configuration Service",
+                "ODX Server Service",
+                "Execution Server Configuration Service"
+            ]
+        },
+        {
+            "heading": "2. Create ODX Storage - Azure Data Lake Storage Gen2",
+            "paragraphs": [
+                "ADLS Gen2 is highly performant, economical, scalable, and secure way to store your raw data.",
+                "Guide: Create ODX Storage - Azure Data Lake Storage Gen2",
+                "Considerations:"
+            ],
+            "list": [
+                "When creating the ADLS Gen2 data lake service, you must enable Hierarchical Namespaces",
+                "TimeXtender writes files in Parquet file format, a highly compressed, columnar storage in the data lake.",
+                "It is possible for ODX Server to store data in Azure SQL DB (rather than in a data lake), but this adds cost and complexity but no additional functionality",
+                "When using Azure Data Lake for ODX and SQL DB for the Data Warehouse, it is highly recommended to use Data Factory to transport this data.",
+                "ADLS will require a service principle, called App Registration in Azure, for TimeXtender to access your ADF service.  Both Data Lake and ADF, may share the same App Registration if desired.",
+                "Both Data Lake and ADF, may share the same App Registration if desired."
+            ]
+        },
+        {
+            "heading": "3. Prepare for Ingest and Transport - Azure Data Factory (Optional)",
+            "paragraphs": [
+                "For large data movement tasks, ADF provides amazing performance and ease of use for both ingestion and transport.",
+                "Guide: Prepare for Ingest and Transport - Azure Data Factory (recommended)",
+                "Considerations:"
+            ],
+            "list": [
+                "When creating ADF resources use Gen2, which is the current default",
+                "A single ADF service can be used for both transport and ingestion Ingestion from data source to ODX Storage Transport from ODX to MDW",
+                "Ingestion from data source to ODX Storage",
+                "Transport from ODX to MDW",
+                "The option to use ADF is not available for all data source types, but many options are available.",
+                "ADF Data sources do not support ODX Query Tables at this time.",
+                "ADF's performance can be quite costly for such incredible fault-tolerant performance",
+                "ADF will require a service principle, called App Registration in Azure, for TimeXtender to access your ADF service.  Both Data Lake and ADF, may share the same App Registration if desired.",
+                "Both Data Lake and ADF, may share the same App Registration if desired."
+            ]
+        },
+        {
+            "heading": "4. Create MDW Storage - Snowflake Database",
+            "paragraphs": [],
+            "list": [
+                "Snowflake's multi-cloud compatibility allows users to deploy on AWS or GCP.",
+                "Automatic usage-based scaling of compute and storage resource provides ideal cost/resource optimization.",
+                "Suitable for medium to large data solutions. A great choice for mid-size data solutions (from 500GB and up), or in cases where estimated size of data solution is uncertain and/or might rapidly grow."
+            ]
+        }
+    ]
+}

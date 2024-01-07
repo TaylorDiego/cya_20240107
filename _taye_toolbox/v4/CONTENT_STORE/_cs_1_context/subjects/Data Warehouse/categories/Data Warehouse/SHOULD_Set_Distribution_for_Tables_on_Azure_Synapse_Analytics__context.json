@@ -1,0 +1,22 @@
+{
+    "DateTime": "2023-12-27 14:40:28",
+    "URL": "https://support.timextender.com/data-warehouse-108/set-distribution-for-tables-on-azure-synapse-analytics-1019",
+    "Keywords": "missing",
+    "Title": "Set Distribution for Tables on Azure Synapse Analytics _ Community",
+    "Author": "missing",
+    "Text": "Performance Table Settings Distribution The following settings are available: distribution distribution column Note: Note: documentation ",
+    "Lists": [
+        {
+            "heading": "Set Distribution for Tables on Azure Synapse Analytics",
+            "paragraphs": [
+                "For tables on a data warehouse deployed on Azure Synapse Analytics, additional settings are available on the Performance tab in Table Settings. The Distribution option controls how data in the table is distributed among the 60 distributions and x amount of compute nodes on the server.",
+                "The following settings are available:"
+            ],
+            "list": [
+                "Round-robin (default): Rows of data are distributed evenly across the server.",
+                "Replicate: A copy of all data in the table is stored on all nodes.",
+                "Hash: Rows of data are split among the distributions using a hash function based on the values in a 'distribution column' that you set. The default is the system field 'DW_id'."
+            ]
+        }
+    ]
+}

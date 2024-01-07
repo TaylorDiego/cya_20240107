@@ -1,0 +1,42 @@
+{
+    "DateTime": "2023-12-27 14:39:51",
+    "URL": "https://support.timextender.com/upgrades-migration-130/upgrade-timextender-1568",
+    "Keywords": "missing",
+    "Title": "Upgrade TimeXtender _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "This article describes how to upgrade TimeXtender to the latest version. Since TimeXtender is composed of services that may be running operations in the background, it is best to follow the steps below to ensure that the upgrade completes smoothly. Note: Migration Tool TimeXtender Execution Server Configuration ",
+    "Lists": [
+        {
+            "heading": "Pre-Upgrade Checklist",
+            "paragraphs": [],
+            "list": [
+                "Ensure all Deployments have completed",
+                "Check the Job Monitor to ensure that no jobs are running",
+                "Close TimeXtender",
+                "Go to Services on the App Server, and stop the TimeXtender ODX Service and the TimeXtender Execution Service",
+                "Right-click both the TimeXtender ODX Service and the TimeXtender Execution Service, select Properties, and set the Startup Type to Disabled as you will be installing new versions of these services"
+            ]
+        },
+        {
+            "heading": "Upgrade Steps",
+            "paragraphs": [],
+            "list": [
+                "Download latest version of TimeXtender ODX Server",
+                "Install TimeXtender ODX Server by opening the download folder and running the Setup.exe file",
+                "Launch the TimeXtender ODX Server Configuration and sign-in. Select the ODX instance to run on the VM. If you are running multiple ODX servers with services on multiple virtual machines (VMs), repeat this step on each VM and select the appropriate ODX instance. Go to Services and ensure that the ODX service is running. Right-click on the TimeXtender ODX Service and set the Startup Type to Automatic (Delayed Start)",
+                "Download the latest version of TimeXtender",
+                "Install TimeXtender by opening the download folder and running the Setup.exe file",
+                "Launch the TimeXtender Execution Server Configuration and select the instances that you intend on using in Jobs to schedule executions."
+            ]
+        },
+        {
+            "heading": "Post Upgrade Checklist",
+            "paragraphs": [],
+            "list": [
+                "Open up each TimeXtender instance by double-clicking on it in the TimeXtender application. You may get confirmation messages similar to the below, click Upgrade or Yes to upgrade the instance",
+                "As a general best practice, we recommend updating data source providers in the Portal",
+                "As a general best practice, we recommend uninstalling previous versions of TimeXtender using Add or remove programs in System Settings"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,73 @@
+{
+    "DateTime": "2023-12-27 17:41:36",
+    "URL": "https://support.timextender.com/add-and-configure-instances-127/add-and-configure-data-sources-819",
+    "Keywords": "missing",
+    "Title": "Add and Configure Data Sources _ Community",
+    "Author": "missing",
+    "Text": "Add and map a data source connection Connection settings SQL Server Configuring a data source on the desktop Right-clickon a data source to open itscontext menu, which displays all of the data source settings that can be accessed and configured. A numbered explanation of each setting is as follows: Change Advanced Settings Test Connection Data Sources Add Data Source This clones the data source connection in the TimeXtender Desktop. The data source will not be clonedin the TimeXtender Portal. After cloning, the data source connection will be duplicated in the TimeXtender Desktop. Cloning can be helpful in creating copies of data source connections that are heavily customized. Tasks in an ODX Instance Tasks in an ODX Instance Tasks in an ODX Instance security roles in an ODX instance Table and Column Selection in an ODX Instance All rows of data are transferred from a table unlessa row filter rule is added that matches the table. The rule defines the criteria a row needs to have to be included, e.g. an ID over a specific number or a timestamp later than a specific date. To filter out rows of data from transfers, follow the steps below.  The ODXServer can load data incrementally to get the latest data quickly and with minimal load on the data source. Since the ODX is built for handling sources with a lot of tables, you do not pick individual tables to load incrementally. Instead, you define the rules for when incremental load should or should not be applied. For information on how to setup incremental load, see the following guide:  To handle updated and deleted records in the source on incremental load, the ODX server needs to know the primary key on each table. There is a rule-based interface available for defining primary keys. To set up primary keys for a data source, follow the steps below.  Data types can be overriden in order to make fields from the data source \"fit\" the data type on an ODX storage.For information on how to override data types, see the following guide:  With the query tables feature, you can enter a SQLquery that the ODXwill turn into a table that works just like any other table in the ODX. This is useful, for instance, when a table cannot be extracted from the data source by the regular ODXlogic. To add a query table, follow the steps below.  Note: Data Source Explorer ODX instance, update a data source provider  Statistics  ",
+    "Lists": [
+        {
+            "heading": "\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b\u200b9. Filter Rows",
+            "paragraphs": [
+                "All rows of data are transferred from a table unless a row filter rule is added that matches the table. The rule defines the criteria a row needs to have to be included, e.g. an ID over a specific number or a timestamp later than a specific date.",
+                "To filter out rows of data from transfers, follow the steps below."
+            ],
+            "list": [
+                "Right click the data source and click Filter Rows..."
+            ]
+        },
+        {
+            "heading": "11. Set Up Primary Keys",
+            "paragraphs": [
+                "To handle updated and deleted records in the source on incremental load, the ODX server needs to know the primary key on each table. There is a rule-based interface available for defining primary keys. To set up primary keys for a data source, follow the steps below."
+            ],
+            "list": [
+                "Right click the data source and click Set Up Primary Keys....",
+                "Click Add... to add Primary Keys Setup Rule.",
+                "Under Conditions, define the conditions a field needs to match to be included in or excluded from the primary key.",
+                "Under Actions, click on the action to apply to the fields that match the conditions above from the following options: Include in primary key Exclude from primary key",
+                "Include in primary key",
+                "Exclude from primary key",
+                "Click OK to add the rule."
+            ]
+        },
+        {
+            "heading": "13. Managing Query Tables",
+            "paragraphs": [
+                "With the query tables feature, you can enter a SQL query that the ODX will turn into a table that works just like any other table in the ODX. This is useful, for instance, when a table cannot be extracted from the data source by the regular ODX logic. To add a query table, follow the steps below."
+            ],
+            "list": [
+                "Right-click the data source that contains the data to extract and click Manage Query Tables.",
+                "Click Add to add a new query table to the list.",
+                "(Optional) In the Schema box, type the Schema name you want the table to use.",
+                "In the Name box, type a name for the table.",
+                "In some cases, clearing Use subquery can lead to better performance. This includes query tables that will not be incrementally loaded or where the query does not contain an alias or a WHERE clause.",
+                "In Query, enter the query to use for creating the table. The query should contain a SELECT statement and follow the syntax required by the source. You can drag a table in from the list in the right-hand side of the window to add a SELECT statement that includes all fields in the table to use as a starting point.",
+                "(Optional) Click Validate Query to check whether the query is valid for creating a query table.",
+                "Repeat steps 2-6 to add amy more query tables, as needed.",
+                "Click OK to save the query tables.",
+                "Right-click on the data source and click on Select Tables in order to ensure that the new query table is selected. Synchronize the data source to make the query table(s) available for transfer to the data warehouse. Add the query to a transfer task and then execute the transfer task to transfer the data to ODX storage using the query table."
+            ]
+        },
+        {
+            "heading": "14. Data Source Explorer",
+            "paragraphs": [
+                "To select the correct data to move into the data storage and on to the data warehouse, it is important to know what data is in the data source in the first place. In addition to that, it is useful to see how the ODX \"sees\" the data source. The Data Source Explorer works on the meta data stored in the ODX instance, and allows you to browse the tables and columns in the data source to give you an overview of the structure of the data source. In addition to that, you can see how the different rules that have been set up in the ODX affect the source."
+            ],
+            "list": [
+                "To open the Data Source Explorer, right-click the data source and click Data Source Explorer",
+                "To see all tables click Search. You can search for specific tables and and filter the search results to see only tables that e.g. are being transferred to data storage or support incremental load. On the field list, two names are listed for each field. The Field source name is the name of the field in the source, while the Field destination name is the name used in the ODX data storage and onwards to the data warehouse. Check marks indicate fields that are \"hit\" by a primary key, incremental load or data selection rule. The data type of the field is also displayed, along with the new data type if a data type override rule is applied to the field.",
+                "Select a table and click Preview, to launch the Query Tool from the Data Source Explorer with data from the selected table\u200b\u200b\u200b\u200b\u200b\u200b\u200b"
+            ]
+        },
+        {
+            "heading": "15. Query Tool",
+            "paragraphs": [],
+            "list": [
+                "The Query Tool works directly on the source and allows you to preview the data stored in the data source using various SQL queries.",
+                "To preview a table in the Query Tool, right click the data source and click Query Tool. Drag a table from the list in the left-hand side to the Query box to generate a SELECT statement that selects all rows from the table. If the Query box is not empty when you drag in a table, a complete SELECT statement will not be generated. Instead, the schema and table name, e.g. [dbo].[Customers] will be inserted. You can edit the generated SELECT statement, for instance adding a WHERE clause. (Optional) In Max. no of rows, enter the maximum number of rows you want the query to return. When you are ready to run the query, click Execute. In the Results list, the returned rows will be listed.",
+                "As it is standard in other tools, the Query Tool will execute any selected text in the Query box instead of everything when you click Execute."
+            ]
+        }
+    ]
+}

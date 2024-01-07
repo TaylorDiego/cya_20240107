@@ -1,0 +1,63 @@
+{
+    "DateTime": "2023-12-27 14:39:11",
+    "URL": "https://support.timextender.com/initial-setup-start-here-115/install-timextender-697",
+    "Keywords": "missing",
+    "Title": "Install TimeXtender _ Community",
+    "Author": "Thomas Lind",
+    "Text": "TimeXtender 6024.1 TimeXtender Prerequisites ODX instance  Click to download the latest version of here  TimeXtender Portal. Note: Error 1064: An exception occurred in the service when handling the control request Run the TimeXtender Execution Server Configuration before starting the Execution Service. ",
+    "Lists": [
+        {
+            "heading": "Download Installation Files",
+            "paragraphs": [
+                "Click to download the latest version of"
+            ],
+            "list": [
+                "TimeXtender Desktop",
+                "TimeXtender ODX Server"
+            ]
+        },
+        {
+            "heading": "Install TimeXtender ODX Server",
+            "paragraphs": [],
+            "list": [
+                "Unzip the TimeXtender ODX Server installation package (TimeXtender ODX Server.zip) and run the Setup.exe.",
+                "On the Choose Setup Type page, select the Typical or Complete option. Either will install the service. Custom gives you an option to choose what to install.",
+                "On the last page, there is an option to Launch the ODXConfigurationService, be sure to check that to open the ODX Server Configuration tool. If this is unchecked, you can also launch the ODX Server Configuration wizard from its desktop shortcut, or from C:\\Program Files\\TimeXtender\\<ODX Version>\\ODXServerConfiguration.exe."
+            ]
+        },
+        {
+            "heading": "Configure the ODX Server Service",
+            "paragraphs": [],
+            "list": [
+                "At the start of the wizard, will be presented with the Welcome page, Click Next. If you have already run the ODX Service Configuration tool and run it again, the Welcome page will show the previously added settings.",
+                "If your server is behind a Proxy Server, configure your proxy settings (click on the check box to add a server, a port, and a user account). Otherwise, leave as default and click Next.",
+                "Sign in and choose the ODX instance you want to use on this specific installation. The user that is used for sign in, must have access to the ODX instance in order to select the instance. For more information on how to grant access to an ODX instance in the TimeXtender Portal, see Grant Access to Instances. Click Next.",
+                "Specify the maximum concurrent execution tasks and the folder for storing downloaded data source providers. These can be left as default unless you have a reason to customize them. Click Next.",
+                "Specify the Windows or Active Directory account you want to run the ODX Server Service. If you are connecting to SQL Server data sources using Windows Authentication, the user account specified needs to have the appropriate access to these servers. It is important that you state the user as domainname\\useraccount, rather than .\\useraccount. Specify the account or use the Local System Account and click Next.",
+                "Save your settings and start the ODX Server Service. Click Save.",
+                "Open up Windows Services, to ensure that the TimeXtender ODX Server Service is running."
+            ]
+        },
+        {
+            "heading": "Install TimeXtender Desktop",
+            "paragraphs": [],
+            "list": [
+                "Unzip the TimeXtender installation package (TimeXtender.zip) and run Setup.exe.",
+                "On the Choose Setup Type page, select your desired option. Typical and Complete will install the TimeXtender Execution Service. Use Custom and select \"do not install\" if you do not need this service, you can always add it later."
+            ]
+        },
+        {
+            "heading": "Configure the Execution Service",
+            "paragraphs": [
+                "In order to run jobs (i.e. scheduled executions) for instances, you must first setup your instances in the TimeXtender Portal. Once these have been setup:"
+            ],
+            "list": [
+                "Launch the TimeXtender Execution Configuration app from the file path C:\\Program Files\\TimeXtender\\<TimeXtender Version>\\TimeXtender.Job.Execution.Configuration.exe",
+                "Sign in",
+                "Select the instances that you would like the execution service to execute jobs for.",
+                "Save.",
+                "Open up Windows Services, to ensure that the TimeXtender ODX Server Service is running. If it is not running, right-click on the service and select start. If you would like to use a service account to run the jobs, right-click on the service and select properties, under the Log On tab change the log on as option from \"Local System account\" to \"This account\" and specify the account as domainname\\useraccount and provide the password, and restart the service."
+            ]
+        }
+    ]
+}

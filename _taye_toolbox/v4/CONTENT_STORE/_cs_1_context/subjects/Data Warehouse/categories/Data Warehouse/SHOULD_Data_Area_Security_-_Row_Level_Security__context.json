@@ -1,0 +1,46 @@
+{
+    "DateTime": "2023-12-27 14:41:14",
+    "URL": "https://support.timextender.com/data-warehouse-108/data-area-security-row-level-security-1208",
+    "Keywords": "missing",
+    "Title": "Data Area Security - Row Level Security _ Community",
+    "Author": "Greg Lennox",
+    "Text": "TimeXtender includes security functionality that provides a way to set both row level and object level permissions for objects within a data area. Security Data Area Security - Database Roles In addition to configuring access on the object level, the data available can be filtered based on individual Active Directory users or SQL Server database roles. For example, a particular salesperson canbe configured to only have access to their own sales data. See the example at the end of this article for how this might be implemented. Data level security in TimeXtender is based on the following four concepts thatallowfor thecreation ofasecurity model that can later be reused forothertables. Use the following steps to assign rowlevel security to a table.  Use the following steps to use a securable column setup to configure row level permissions on a table.  Data Area Security - Object-Level Security There are three sales reps: The logon for each sales rep is setup in SSMS under Security and logons so that they have a user mapping to the SecureDSA02 database. The logon properties for the three users are setup as follows: In TimeXtender, the SecureDSA02 data area is setup as follows: There are three database roles, one for each sales representative. In this example, the following is the database role for Thomas Pale referencing the logon that matches the one setup in SQL Server Management Studio. The Securable Column Setup includes the logons for each sales rep tied to their individual database roles. To create the Secured View, drag the SalesRepSecurity securable column onto a field in the data area. In this example, the Sales facts table includes the Logon field that has been mapped over from the EE table. The SalesRepSecurity securable column setup was then dragged onto the Sales tables Logon field to create the DSA2.Sales_SV secured view. Using the logon of ThomasPale, connect to the data area using a reporting tool, i.e. PowerBI, and click on the DSA2.Sales_SV secured view, which will include all of the fields in the Sales table where the Logon field is located. The data available is filtered to only show the information related to the ThomasPale logon. If logging on to PowerBI as TonyRoma, then only the TonyRoma information is available. If logging on to Power BI as a user that is not listed in the Securable Column Setup, then no information is available in the secured view.  ",
+    "Lists": [
+        {
+            "heading": "Assigning Row Level Permissions",
+            "paragraphs": [
+                "In addition to configuring access on the object level, the data available can be filtered based on individual Active Directory users or SQL Server database roles. For example, a particular salesperson can be configured to only have access to their own sales data. See the example at the end of this article for how this might be implemented.",
+                "Data level security in TimeXtender is based on the following four concepts that allow for the creation of a security model that can later be reused for other tables."
+            ],
+            "list": [
+                "A securable column contains the values to be used in the filter. For the salesperson example above, this column could be the \u201csales region id\u201d in the \u201csales regions\u201d table.",
+                "A securable column setup is a mapping between selected securable column values and the associated users or database roles. Each securable column can have multiple securable column setups.",
+                "A secured column is a table column containing the fitlered data. For the salesperson example, this could be the \u201cLogon\u201d column in the \u201cSales Transactions\u201d table.",
+                "A secured view is a view that filters out all the data that the user does not have access to. For the salesperson example, this would be all the \u201csales transactions\u201d rows that do not match the \u201cLogon\u201d of the salesperson. When using row level security, the secured view should be used for reporting instead of the table it secures."
+            ]
+        },
+        {
+            "heading": "Applying Row Level Permissions",
+            "paragraphs": [
+                "Use the following steps to use a securable column setup to configure row level permissions on a table."
+            ],
+            "list": [
+                "Drag and drop a securable column setup on a field in a data area table. A secured view is created and can be found under Security, Secured Columns, [table name], [setup name]_SV.",
+                "To add further permissions to the view, drag and drop a securable column setup on the view, which will open the Add Field window.",
+                "In the Field Name list, select the field that contains the values to be filtered with the securable column setup.",
+                "Click OK. The field is added to the secured view."
+            ]
+        },
+        {
+            "heading": "Sales Rep Example:",
+            "paragraphs": [
+                "There are three sales reps:"
+            ],
+            "list": [
+                "Tony Roma",
+                "Thomas Pale",
+                "Shelbourne Levine"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,39 @@
+{
+    "DateTime": "2023-12-27 14:39:39",
+    "URL": "https://support.timextender.com/configure-resources-126/what-is-azure-synapse-dedicated-sql-pool-751",
+    "Keywords": "missing",
+    "Title": "What is Azure Synapse Dedicated SQL Pool_ _ Community",
+    "Author": "JTreadwell",
+    "Text": "Use Azure Synapse Dedicated SQL Pool Azure Synapse Analytics helps users better manage costs by separatingcomputation and storage of their data. Users can pause the service, releasing the compute resources back into Azure. While paused, users are only charged for the storage currently in use (roughly $125 USD/Month/Terabyte). During this time, your data remains intact but unavailable via queries. Resuming the SQL Pool re-allocates compute resources to your account, your data comes back online and charges resume. Similar to Azure SQL DB's DTUs, Computation in a Synapse SQL Pool is Measured by Data Warehouse Units (DWUs). Adjusting DWUs will increase or decrease the number of available compute nodes as well as relative performance and cost of the service. Processing of data in a Synapse SQL Pool is distributed across many nodes of different types. control node compute nodes Azure Storage Data Movement Service (DMS) sharding Round-robin Ideal for Staging Tables. Replicated Ideal for Dimension Tables smaller than 2GB Hash Ideal for Fact Tables and Dimensions larger than 2GB To help choose a distribution column that will result in the best performance, you can follow these guidelines. ",
+    "Lists": [
+        {
+            "heading": "Choosing a Distribution Column",
+            "paragraphs": [
+                "To help choose a distribution column that will result in the best performance, you can follow these guidelines."
+            ],
+            "list": [
+                "No Updates - Distribution columns cannot be updated",
+                "Even Distribution of Values - for best performance, all distributions should have the same number of rows. Queries can only be as fast as the largest distribution. To achieve this, aim for columns that have: Many unique values - more uniques, higher chance of evening the distribution Few or No Nulls Not a Date Column - If all users are filtering on the same date, only one node will be doing all the processing.",
+                "Many unique values - more uniques, higher chance of evening the distribution",
+                "Few or No Nulls",
+                "Not a Date Column - If all users are filtering on the same date, only one node will be doing all the processing.",
+                "JOIN or Group By Column - Selecting a Distribution column that is commonly used in a Join or Group by clause reduces the amount of data movement to process a query.",
+                "If no good option - Create a Composite Column using multiple join columns"
+            ]
+        },
+        {
+            "heading": "When should I consider Azure Synapse Analytics?",
+            "paragraphs": [],
+            "list": [
+                "> 1TB Database Since Tables in Azure Synapse are always spread across 60 distributions, performance gains are not typically realized until your data warehouse is more than 1-5 TB. As a general rule data warehouses of less than 1 TB will perform better on Azure SQL DB than on DW.",
+                "Since Tables in Azure Synapse are always spread across 60 distributions, performance gains are not typically realized until your data warehouse is more than 1-5 TB. As a general rule data warehouses of less than 1 TB will perform better on Azure SQL DB than on DW.",
+                "> Billion Row Tables Database size is not the only consideration. Since Distribution happens at the table level if all your tables are less than 100 Milllion rows, You may not see a significant performance boost from Azure Synapse.",
+                "Database size is not the only consideration. Since Distribution happens at the table level if all your tables are less than 100 Milllion rows, You may not see a significant performance boost from Azure Synapse.",
+                "< 128 Concurrent Queries Once the SQL Pool has receives more than 128 concurrent queries, it will begin to queue them in a first-in-first-out basis. Azure SQL DB and Analysis Services can support much more concurrent queries. To resolve this limitation, Microsoft recommends feeding data into an Analysis Service Server for larger demand.",
+                "Once the SQL Pool has receives more than 128 concurrent queries, it will begin to queue them in a first-in-first-out basis. Azure SQL DB and Analysis Services can support much more concurrent queries. To resolve this limitation, Microsoft recommends feeding data into an Analysis Service Server for larger demand.",
+                "DWH Tuning How tables are distributed should be based on how users query the data and the approach can drastically effect performance. So the Synapse SQL Pool is not a magic fix to all your query performance problems. Just like a data warehouse running on traditional SQL Server, it requires monitoring and tuning of the distribution keys, indexes, caching, and partitions to ensure best performance.",
+                "How tables are distributed should be based on how users query the data and the approach can drastically effect performance. So the Synapse SQL Pool is not a magic fix to all your query performance problems. Just like a data warehouse running on traditional SQL Server, it requires monitoring and tuning of the distribution keys, indexes, caching, and partitions to ensure best performance."
+            ]
+        }
+    ]
+}

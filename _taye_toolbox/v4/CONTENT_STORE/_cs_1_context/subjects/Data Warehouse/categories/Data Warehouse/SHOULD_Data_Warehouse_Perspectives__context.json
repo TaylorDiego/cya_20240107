@@ -1,0 +1,20 @@
+{
+    "DateTime": "2023-12-27 14:40:29",
+    "URL": "https://support.timextender.com/data-warehouse-108/data-warehouse-perspectives-1054",
+    "Keywords": "missing",
+    "Title": "Data Warehouse Perspectives _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "The purpose of perspectives is to make it easier to work with an instance that contains a lot of objects. In instances with a lot of objects, it can be hard to maintain a good overview and find an individual object quickly. A perspective is a subset of the objects within an instance that relate to a specific area. For example, you could create a finance perspective that contains all the tablesthat are related to finance. When this perspective is active, anything else outside this subset of objects will be hidden. A perspective can be static or dynamic. In dynamic perspectives, any object that is related to an object already in the perspective will automatically be included in the perspective. Perspectives Add/Edit Perspectives Select Add in the Perspectives window. Perspective + Ensure that the Dynamic perspective checkbox is checked. Select the checkboxes for the objects you would like to include in the perspective. Notice that when the table Org.CleanCurrencyis explicitly selected, a number of other objects are automatically selected as well since they are related/mapped to the CleanCurrency table. These implicitly included objects are marked by a dot, whereas explicitly included objects such as CleanCurrency are noted by a checkmark. Note: Use Dynamic Perspective (Active) Use Dynamic Perspective (Active) Sort by execution Sort alphabetically unmanaged Perspectives are sorted alphabetically by default. An alphabetic sorting would result in the following order of tables sort by execution order Note: Perspectives can be deployed and executed just as other objects. This enables you to easily work with a subset of your instance from source to execution. You can deploy and/or execute a perspective in two ways: ",
+    "Lists": [
+        {
+            "heading": "Deploying and executing a perspective",
+            "paragraphs": [
+                "Perspectives can be deployed and executed just as other objects. This enables you to easily work with a subset of your instance from source to execution. You can deploy and/or execute a perspective in two ways:"
+            ],
+            "list": [
+                "In the Solution Explorer, under Perspectives, right-click the perspective you want to deploy and/or execute and click Deploy, Execute or Deploy and Execute.",
+                "You can also add a perspective to an execution package, for example if you want to execute the perspective in a scheduled job."
+            ]
+        }
+    ]
+}

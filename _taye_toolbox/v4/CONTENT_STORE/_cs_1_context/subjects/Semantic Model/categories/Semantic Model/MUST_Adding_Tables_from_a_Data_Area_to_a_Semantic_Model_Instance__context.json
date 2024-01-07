@@ -1,0 +1,28 @@
+{
+    "DateTime": "2023-12-27 14:41:29",
+    "URL": "https://support.timextender.com/semantic-model-109/adding-tables-from-a-data-area-to-a-semantic-model-instance-1452",
+    "Keywords": "missing",
+    "Title": "Adding Tables from a Data Area to a Semantic Model Instance _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "There are two ways to add tables, or fields,from a data area to a Semantic Model instance, this article covers both of these options below.  ",
+    "Lists": [
+        {
+            "heading": "Drag-and-drop from Data Area",
+            "paragraphs": [],
+            "list": [
+                "Open the relevant Data Warehouse instance and data area which contains the tables you would like to move to the semantic model",
+                "Open the Semantic Model instance",
+                "Drag-and-drop the table from the data area to your semantic model"
+            ]
+        },
+        {
+            "heading": "Drag-and-drop from Source Database Browser",
+            "paragraphs": [],
+            "list": [
+                "Open the Semantic Model instance and click on the Semantic Model instance name",
+                "The Source Database Browser appears in the right-hand pane. Select the relevant data area from the dropdown, which contains the tables that you would like to bring into your semantic model instance",
+                "Drag-and-drop the table from the Source Database Browser into your semantic model instance. Once a table has been added, fields can also be added using drag-and-drop"
+            ]
+        }
+    ]
+}

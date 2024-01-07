@@ -1,0 +1,103 @@
+{
+    "DateTime": "2023-12-27 14:39:13",
+    "URL": "https://support.timextender.com/initial-setup-start-here-115/timextender-prerequisites-699",
+    "Keywords": "missing",
+    "Title": "TimeXtender Prerequisites _ Community",
+    "Author": "missing",
+    "Text": "TimeXtender 6024.1 This article describes the software requirements needed to run TimeXtender. It does not cover hardware requirements or recommendations on server configuration. Refer to Microsofts recommendations for Microsoft SQL Server sizing when deciding your hardware needs and configuration. Minimum software requirements to run TimeXtender are listed below. These are split into two areas: Application and Database. When TimeXtender is installed on a server which does not run Microsoft SQL Server, then those requirements must manually be installed. If Microsoft SQL Server and TimeXtender reside on the same server then all components (except the .NET Framework) are already installed by Microsoft SQL Server installation. When installing TimeXtender on a separate server from Microsoft SQL Server, the following components need to be installed or configured: IPv4 Using a Microsoft Azure SQL server requires the application server to be installed with the following components: The Application Server requirements also apply to a scenario where TimeXtender is not installed on a dedicated application server but has multiple installations on each developers workstation as a client application. In this case, any machine that has TimeXtender on it without SQL Server is considered an Application Server and will need to comply with the software prerequisites for the Application Server. On Microsoft SQL Server, the above requirements (except the .NET Framework), are installed during the SQL installation. In addition to those, the following minimum requirements must be met: Standard Enterprise features This section will help you make sure you have met the necessary requirements. The .NET version can be verified by: Microsoft SQL Server Native Client, Microsoft SQL Server System CLR Types and Microsoft SQL Server Management Objects can all be found by checking the list of installed programs. Programs and Features The image below shows the necessary requirements listed above have been met. It also shows that Microsoft SQL Server 2016 (64-bit), is installed. Sign in Instances TimeXtender Portal Grant Access to Instances A few common errors due to lack of prerequisites are listed below. Note: TimeXtender supports newer versions of OS, includingWindows 11 and Windows Server 2022. ",
+    "Lists": [
+        {
+            "heading": "When data will be hosted in on-premise SQL Server",
+            "paragraphs": [
+                "When installing TimeXtender on a separate server from Microsoft SQL Server, the following components need to be installed or configured:"
+            ],
+            "list": [
+                ".NET Framework 4.8 or higher",
+                "IPv4 connectivity for connecting to ODX Cloud instances",
+                "Core XML Services (MSXML) 6.0",
+                "Microsoft SQL Server Native Client",
+                "Microsoft SQL Server System CLR Types Install the version that corresponds to the version of SQL Server, although it is not necessary for SQL 2017 editions and above.",
+                "Install the version that corresponds to the version of SQL Server, although it is not necessary for SQL 2017 editions and above.",
+                "Microsoft SQL Server Management Objects (SMO) Install the version that corresponds to the version of SQL Server, although it is not necessary for SQL 2017 editions and above.",
+                "Install the version that corresponds to the version of SQL Server, although it is not necessary for SQL 2017 editions and above.",
+                "Microsoft Analysis Management Objects (AMO), ADOMD and AS_OLEDB Install the version that corresponds to the version of SQL Server. Here is link to the Analysis Server 2016 Feature Pack .",
+                "Install the version that corresponds to the version of SQL Server. Here is link to the Analysis Server 2016 Feature Pack ."
+            ]
+        },
+        {
+            "heading": "When data will be hosted in Azure SQL or Azure SQL Managed Instance",
+            "paragraphs": [
+                "Using a Microsoft Azure SQL server requires the application server to be installed with the following components:"
+            ],
+            "list": [
+                ".NET Framework 4.8 or higher",
+                "IPv4 connectivity for connecting to ODX Cloud instances",
+                "SQL Server Management Studio. Here is a link to the newest edition Download and install. Because Azure SQL DBs are SQL 2017 and we, for versions newer than this, apply the necessary DLLs during installation of TimeXtender.",
+                "You will also need the Client libraries for connecting to Azure Analysis Services"
+            ]
+        },
+        {
+            "heading": "Database Server",
+            "paragraphs": [
+                "On Microsoft SQL Server, the above requirements (except the .NET Framework), are installed during the SQL installation. In addition to those, the following minimum requirements must be met:"
+            ],
+            "list": [
+                "Microsoft SQL Server 2008/2008 R2/2012/2014/2016/2017/2019. Minimum edition is Standard with the following components installed: DB Engine Analysis Services (SSAS)  Only necessary when using OLAP Cubes or Tabular Models.",
+                "DB Engine",
+                "Analysis Services (SSAS)  Only necessary when using OLAP Cubes or Tabular Models.",
+                "Only necessary when using OLAP Cubes or Tabular Models.",
+                "Microsoft Azure SQL Server (DB Engine only)",
+                "IPv4 connectivity for connecting to ODX Cloud instances"
+            ]
+        },
+        {
+            "heading": "Advanced Feature Requirements",
+            "paragraphs": [
+                "Most of TimeXtender functionality can be accomplished using the Standard Edition of Microsoft SQL Server; however, there are some features that require the Enterprise Edition.",
+                "The following TimeXtender features require Microsoft SQL Server Enterprise Edition or SQL Server 2016 SP1 or later:"
+            ],
+            "list": [
+                "Compression of tables and indexes",
+                "Partitioning on tables",
+                "Non-Physical Cube Perspectives (Standard Perspectives on SSAS)",
+                "Incremental Load on Cubes",
+                "OLAP translations where you translate dimension member display values"
+            ]
+        },
+        {
+            "heading": ".NET verification",
+            "paragraphs": [
+                "The .NET version can be verified by:"
+            ],
+            "list": [
+                "Click on the Windows Start button.",
+                "Type \u201crun\u201d (without the quotes), and click enter.",
+                "Type \u201c%windir%\\Microsoft.NET\\framework\u201d (without the quotes), and click enter."
+            ]
+        },
+        {
+            "heading": "Error writing to file.",
+            "paragraphs": [],
+            "list": [
+                "Issue: Microsoft .NET 4.8 or higher is not installed.",
+                "Resolution: Install Microsoft .NET 4.8 or higher or, using the TimeXtender installer, run the setup.exe (not the msi)."
+            ]
+        },
+        {
+            "heading": "Could not load file or assembly",
+            "paragraphs": [],
+            "list": [
+                "Issue: SQL Shared Management Objects (SMO) or Analysis Management Objects is (AMO) not installed.",
+                "Resolution: Install the appropriate version of Microsoft's SQL SMO that corresponds with the version of Microsoft SQL Server, or the AMO version."
+            ]
+        },
+        {
+            "heading": "TimeXtender not launching after installation",
+            "paragraphs": [],
+            "list": [
+                "Issue: Missing the appropriate .NET Framework.",
+                "Resolution: Reinstall TimeXtender using the setup file or download Microsoft's .NET Framework 4.8 or higher."
+            ]
+        }
+    ]
+}

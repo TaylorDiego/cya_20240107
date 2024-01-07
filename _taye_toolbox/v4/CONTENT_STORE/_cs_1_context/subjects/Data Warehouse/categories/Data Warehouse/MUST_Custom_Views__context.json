@@ -1,0 +1,49 @@
+{
+    "DateTime": "2023-12-27 14:40:54",
+    "URL": "https://support.timextender.com/data-warehouse-108/custom-views-1165",
+    "Keywords": "missing",
+    "Title": "Custom Views _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "Custom Views are similar to tables andare generated using SQL CREATE VIEWstatements, which providefor a great deal of flexibility in terms of the joins and groupings that can be used, as well as all the other SQL functionality and syntax that are available. To add a custom view, follow the steps below.  Views In order to change the view: Since a custom view is very flexible, the relationship between the parameterized 'input' fields and the view's fields cannot automatically be mapped. This means that documentation and visualizations, such as data lineage, cannot automatically trace a field from data source to destination if it passes through a custom view. However, documentation and data lineage through custom views can be achievedwith some manual mapping. To map the custom view's fields to the parameterized fields, follow the steps below.  Avoid transformations in the view BR Anders ",
+    "Lists": [
+        {
+            "heading": "Adding a Custom View",
+            "paragraphs": [
+                "To add a custom view, follow the steps below."
+            ],
+            "list": [
+                "Expand the relevant data area, right-click Views and then click Add Custom View.",
+                "In Name as in script box, type the name of the view, which must be the same as the name specified in the script, including the schema.",
+                "Enter the create statement for the view using the standard SQL syntax. Drag tables, fields and variables from the list in the right-hand pane to use them as parameters. Fields entered as parameters can be mapped to the view's fields to enable documentation and data lineage - for more information see the section on Mapping Custom View Fields below.",
+                "Click OK to save the view.",
+                "Deploy the view",
+                "Right-click the view and select Read View Fields.",
+                "Expand the view to show the fields, and then right-click the view and select Preview View to double-check that the view is working properly."
+            ]
+        },
+        {
+            "heading": "Editing a Custom View",
+            "paragraphs": [
+                "In order to change the view:"
+            ],
+            "list": [
+                "Right-click on the Custom View and select Edit Custom View",
+                "Make the changes to the create statement and click OK",
+                "Right-click on the Custom View and select Deploy",
+                "Right-click on the Custom View and select Synchronize View Fields"
+            ]
+        },
+        {
+            "heading": "Mapping Custom View Fields",
+            "paragraphs": [
+                "Since a custom view is very flexible, the relationship between the parameterized 'input' fields and the view's fields cannot automatically be mapped. This means that documentation and visualizations, such as data lineage, cannot automatically trace a field from data source to destination if it passes through a custom view. However, documentation and data lineage through custom views can be achieved with some manual mapping.",
+                "To map the custom view's fields to the parameterized fields, follow the steps below."
+            ],
+            "list": [
+                "Make sure the fields have been read, then right-click the view and click Map Custom View Fields.",
+                "Drag each field from the View fields list to one or more fields in the Parameter fields list to create mappings. To delete a mapping, click the mapping and then click Delete. Click Auto Map to map fields automatically based on name.",
+                "Once all view fields have been mapped, click OK."
+            ]
+        }
+    ]
+}

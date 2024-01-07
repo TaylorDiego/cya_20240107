@@ -1,0 +1,27 @@
+{
+    "DateTime": "2023-12-27 14:39:54",
+    "URL": "https://support.timextender.com/odx-107/using-the-override-data-type-feature-656",
+    "Keywords": "missing",
+    "Title": "Using the Override Data Type feature _ Community",
+    "Author": "missing",
+    "Text": "Override Data Type Override Data Type  schema ODX  Synchronize objects Synchronize  Transfer Below is an example, explicitly changing data type of a field indata warehouse.   ",
+    "Lists": [
+        {
+            "heading": "Example Scenarios",
+            "paragraphs": [],
+            "list": [
+                "You have an Excel data source with some sheets that contains a field with only numbers. Even though it actually is an Item Id, it gets treated as a numeric value.",
+                "You have a data source connection to a database with a datetime field that contains both nulls and dates lower than 1753-01-01."
+            ]
+        },
+        {
+            "heading": "Set up a general rule at ODX data source",
+            "paragraphs": [],
+            "list": [
+                "Right-click on an ODX data source > Override Data Types..",
+                "Specify the Schema, Table, Field or Data type where this rule will be applied.",
+                "Choose what data type you want to convert to."
+            ]
+        }
+    ]
+}

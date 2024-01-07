@@ -1,0 +1,30 @@
+{
+    "DateTime": "2023-12-27 14:41:09",
+    "URL": "https://support.timextender.com/data-warehouse-108/junk-dimension-table-1015",
+    "Keywords": "missing",
+    "Title": "Junk Dimension Table _ Community",
+    "Author": "missing",
+    "Text": "Junk Dimension The Junk Dimension table contains a row for all the distinct combinations of the junk dimension attributes, and each row contains akey that identifies thatspecific combination. The junk dimension attribute fields can be removed from the fact table and then replaced with asingle field that references a rowin the junk dimension table. Multiple tables can utilize the same junk dimension table. Junk Dimension Table    relations When the junk dimension table is executed, it will insert non-existing junk dimension combinations from the associatedtables. The junk dimension table preformsno truncation of the raw table instance.  ",
+    "Lists": [
+        {
+            "heading": "Add a Junk Dimension Table",
+            "paragraphs": [
+                "Use the following steps to add Junk Dimension Table to an existing table in the data warehouse instance."
+            ],
+            "list": [
+                "Right-click on a table, select Advanced, and then select Add Junk Dimension Table",
+                "Select the fields to be added to the Junk Dimension Table and click OK.",
+                "Enter a Name for the table.",
+                "(Optional) Select a table in the Available tables list and click Add to associate this other table to the junk dimension table. In the prompt that appears, select whether to implement automatic field mapping. The automatic field mapping algorithm will map a field in the new table to a field in the junk dimension table based on whether one of the following conditions is true: The new table field has the same name as the junk dimension table field. The new table field has the same name as another field that is mapped to the junk dimension table field.",
+                "The new table field has the same name as the junk dimension table field.",
+                "The new table field has the same name as another field that is mapped to the junk dimension table field.",
+                "Map the fields in the junk dimension table with the fields in the associated tables. Each row in the table represents one field in the junk dimension table while each column represents a table. To add a new field to the junk dimension table, click the empty field in the bottom row of the second column and type a name. To remove a field from the junk dimension table, right-click the first column of the corresponding row and click Remove. To remove a table from the junk dimension table, right-click the header row of the corresponding column - the table name - and click Remove. To change the order the tables are loaded in, click on the header row of the corresponding column - the table name - and drag it to the desired location.",
+                "To add a new field to the junk dimension table, click the empty field in the bottom row of the second column and type a name.",
+                "To remove a field from the junk dimension table, right-click the first column of the corresponding row and click Remove.",
+                "To remove a table from the junk dimension table, right-click the header row of the corresponding column - the table name - and click Remove.",
+                "To change the order the tables are loaded in, click on the header row of the corresponding column - the table name - and drag it to the desired location.",
+                "(Optional) In the Hashing algorithm list, click on the hashing algorithm to be used for the dimension table key. See this guide for information regarding the different algorithms. Junk dimensions have a special hashing algorithm that is available called \"Legacy integer\", which is for compatibility with older versions of Analysis Services. This algorithm should be avoided if possible, however, since it is less safe than other algorithms and only uses 8 bytes for the hash value, which means an increased risk that two different data sets may end up having the same hash value."
+            ]
+        }
+    ]
+}

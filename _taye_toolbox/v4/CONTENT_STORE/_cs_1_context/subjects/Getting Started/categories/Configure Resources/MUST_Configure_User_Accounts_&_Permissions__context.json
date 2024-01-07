@@ -1,0 +1,51 @@
+{
+    "DateTime": "2023-12-27 14:39:46",
+    "URL": "https://support.timextender.com/configure-resources-126/configure-user-accounts-permissions-871",
+    "Keywords": "missing",
+    "Title": "Configure User Accounts & Permissions _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "For TimeXtender to ingests data from sources and write data to the target data storages it must have the proper permissions. This is done by configuring users accounts within a security group and then providing that security group the necessary permissions below. Identify and/or create the following useraccounts. For Cloud deployment, Azure Active Directory (AAD), is recommended. If utilizing Azure AnalysisServicesthen Azure Active Directory is required. For On-Premise deployments, Active Directory (AD) is recommended, but not required. Since you will need to provide the same permissions to any users working on TimeXtender as well as the service accounts running TimeXtender services, will make it easier create and manager permissions for all users at once using a Security Group. TXDevelopers Administrator READ permissions Configure the below permissions for the Target data platforms in your chosen environment architecture. The following permissions are needed when using SQL Server or Azure SQL Managed Instance as a Target Database: The following permissions are needed when using Azure SQL DB as a Target Database: article Analysis Services Administrator Owner Data Factory Contributor To use a Dedicated SQL Pool as the Target Storage for the MDW you need the following:  Hi Thomas, https://docs.microsoft.com/en-us/azure/sql-database/sql-database-manage-logins%C2%A0%C2%A0 Adding Users to Your SQL Azure Database | Azure-blog en -updates | Microsoft Azure Authorize server and database access using logins and user accounts - Azure SQL Database & SQL Managed Instance & Azure Synapse Analytics | Microsoft Learn  Kind regards, Andrew - E-mergo @andrew.gebhard ",
+    "Lists": [
+        {
+            "heading": "User Accounts",
+            "paragraphs": [
+                "Identify and/or create the following user accounts. For Cloud deployment, Azure Active Directory (AAD), is recommended. If utilizing Azure Analysis Services then Azure Active Directory is required. For On-Premise deployments, Active Directory (AD) is recommended, but not required."
+            ],
+            "list": [
+                "One user account for each TimeXtender developer (you may already have these in place).",
+                "Ensure that each TimeXtender developer also has access to the relevant instances in the TimeXtender Portal.",
+                "One Service Account must be created on the Application Server. This will be used to run the TimeXtender Execution Service and the TimeXtender ODX Server Service."
+            ]
+        },
+        {
+            "heading": "SQL Server (On-Premise) or Azure SQL Managed Instance",
+            "paragraphs": [
+                "The following permissions are needed when using SQL Server or Azure SQL Managed Instance as a Target Database:"
+            ],
+            "list": [
+                "sysadmin or dbOwner. Note that if using dbOwner instead of sysAdmin, a user account with at least dbCreator rights must log in and create the database.",
+                "SQL Server Analysis Services (if applicable) \u2013 server administrator."
+            ]
+        },
+        {
+            "heading": "Azure SQL Database",
+            "paragraphs": [
+                "The following permissions are needed when using Azure SQL DB as a Target Database:"
+            ],
+            "list": [
+                "Server admin, Azure Active Directory admin or dbmanager role in the master database. If using contained database users, then use the db_owner role."
+            ]
+        },
+        {
+            "heading": "Azure Synapse Analytics - Dedicated SQL Pool",
+            "paragraphs": [
+                "To use a Dedicated SQL Pool as the Target Storage for the MDW you need the following:"
+            ],
+            "list": [
+                "Create SQL Server Login in the Master Database USE MASTERCREATE LOGIN <LOGINNAME> WITH PASSWORD = 'STRONGPASSWORD';",
+                "Create User in the desired Data Warehouse  USE <Insert Database Name Here>CREATE USER <USERNAME> FROM LOGIN <LOGINNAME>;",
+                "Assign user the db_owner permission in the Data Warehouse EXEC sp_addrolemember 'db_owner', '<USERNAME>'"
+            ]
+        }
+    ]
+}

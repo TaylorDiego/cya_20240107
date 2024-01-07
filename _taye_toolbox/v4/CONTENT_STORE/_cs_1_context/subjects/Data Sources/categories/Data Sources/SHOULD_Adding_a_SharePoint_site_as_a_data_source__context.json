@@ -1,0 +1,52 @@
+{
+    "DateTime": "2023-12-27 14:42:39",
+    "URL": "https://support.timextender.com/data-sources-112/adding-a-sharepoint-site-as-a-data-source-1457",
+    "Keywords": "missing",
+    "Title": "Adding a SharePoint site as a data source _ Community",
+    "Author": "Greg Lennox",
+    "Text": "This article clarifies two different methods of adding a SharePoint site as a data source in the TimeXtender Portal. This method specifies a user account that does not have MFA two factor authentication enabled and has been granted access to the SharePoint site. The configuration in the TimeXtender Portal for the SharePoint data source is as follows: This method uses an Azure App Registrationand OAuth to connect to the specified SharePoint site.     To anyone that is going to set up a data source with method 2 (in my case SharePoint Online): if you forget step 12 (Set the Schema toREST.) you will run into this error when clickin on Authorize OAuth:   post on the community @Greg Lennox  Where you say the file types to retrieve. Is it the same setup for Excel files or CSV files? To anyone that is going to set up a data source with method 2 (in my case SharePoint Online): if you forget step 12 (Set the Schema toREST.) you will run into this error when clickin on Authorize OAuth:   post on the community @KajEmergo Auth Scheme OAuthSharePoint OAuth none  Schema REST  @rvgfox The SharePoint provider cant give the files stored there, the only thing it gives is Meta data about what is stored in it and Lists. So you want to use the provider to get SharePoint lists like this. If you want to connect to the files stored in the SharePoint, you will need to use the specific provider for that file type. CSV default online ",
+    "Lists": [
+        {
+            "heading": "Method 1: Basic Authentication",
+            "paragraphs": [
+                "This method specifies a user account that does not have MFA two factor authentication enabled and has been granted access to the SharePoint site. The configuration in the TimeXtender Portal for the SharePoint data source is as follows:"
+            ],
+            "list": [
+                "Provider: Microsoft SharePoint",
+                "Auth Scheme: Basic",
+                "Share Point Edition: SharePoint Online",
+                "URL: <SharePoint Site URL> i.e. https://contoso.sharepoint.com/sites/PBI",
+                "User: <username> of a user that has been granted access to the site.",
+                "Password: <password> for the specified user."
+            ]
+        },
+        {
+            "heading": "Method 2: OAuth",
+            "paragraphs": [
+                "This method uses an Azure App Registration and OAuth to connect to the specified SharePoint site."
+            ],
+            "list": [
+                "In the TimeXtender Portal, create a new data source and set the provider to be \u201cMicrosoft SharePoint\u201d.",
+                "Auth Scheme: \u201cSharePointOAuth\u201d.",
+                "Share Point Edition: SharePoint Online",
+                "URL: <SharePoint Site URL> i.e. https://contoso.sharepoint.com/sites/PBI",
+                "Azure Tenant: <Azure Tenant ID> for your SharePoint site.",
+                "In the Azure Portal, create or open the App Registration. From the Overview page, copy the Application (client) ID and paste this into the \u201cOAuth Client ID\u201d field in the OAuth Section of the SharePoint data source in the TimeXtender Portal.",
+                "From the \u201cCertficates and Secrets\u201d page copy the value for your secret and then paste the secret value into the \u201cOAuth Client Secret\u201d field in the OAuth Section of the SharePoint data source in the TimeXtender Portal.",
+                "In the App Registration \u201cAuthentication\u201d page, set the Web Redirect URL to http://localhost:33333. Paste the \u201cWeb Redirect URL\u201d into the \u201cCall Back URL\u201d field in the OAuth Section of the SharePoint data source in the TimeXtender Portal.",
+                "In the TimeXtender Portal, set the \u201cInitiate OAuth\u201d to GetAndRefresh.",
+                "Set the \u201cOAuth Grant Type\u201d equal to Code.",
+                "Enter a path and filename in the \u201cOAuth Settings Location\u201d",
+                "Set the Schema to \u201cREST\u201d.",
+                "Click \u201cSave\u201d to save this new SharePoint data source.",
+                "In the TimeXtender Portal, open an ODX instance and add this new data source to the \u201cMapped Data Sources\u201d section.",
+                "Open the TimeXtender Desktop, and double click on the ODX instance that contains the data source.",
+                "In the ODX pane, right-click on \u201cData Sources\u201d and select \u201cAdd Data Source\u201d.",
+                "Complete the fields to create Synchronization and Transfer tasks for the new SharePoint data source.",
+                "Right-click on the SharePoint data source and select \u201cEdit Data Source\u201d.",
+                "Click on the \u201cAuthorize OAuth\u201d button to create the OAuth settings file.",
+                "Go back to the portal and edit the data source. Locate the Initiate OAuth field and change it to REFRESH. Click Save."
+            ]
+        }
+    ]
+}

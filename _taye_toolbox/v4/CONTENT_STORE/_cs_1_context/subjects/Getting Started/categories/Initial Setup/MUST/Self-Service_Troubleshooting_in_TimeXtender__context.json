@@ -1,0 +1,193 @@
+{
+    "DateTime": "2023-12-27 17:33:01",
+    "URL": "https://support.timextender.com/initial-setup-start-here-115/self-service-troubleshooting-in-timextender-623",
+    "Keywords": "missing",
+    "Title": "Self-Service Troubleshooting in TimeXtender _ Community",
+    "Author": "missing",
+    "Text": "self-describing self-diagnosing self-healing self-supporting how to, setup, configuration, connectivity, performance, monitoring best practices .NET ODX Instances, ODX Data Lake data sources, providers, endpoints scripts, API logs self-service scientific Customer Success It is likely that someone has experienced these issues before. Instead of re-inventing the wheel, we can find best practices already documented. For example: source data architecture configuration Include all the necessary information for the support team to expedite research. Documenting and deep thinking over a technical issue often reveal fresh ideas, workarounds and solutions. Because you (and your team that built the instance/solution) have access and in-depth knowledge to most of the working pieces, you have a much greater capacity for finding a solution or workaround. alternate or better way Example:If a providers remote connection is slow, we can upload (or download) source data to a staging server and then use a faster method to extract, or use a better connector? options settings repro, prototype, analyze While an immediate upgrade is not always feasible, check to see if a newer release includes the feature or fix you are looking for. Modern software systems operate in an eco-system of host environment and external tools. For further troubleshooting: When the problem occurs in extracting data, use connectivity and tracing tools for that specific source. For example: It is time-consuming to troubleshoot an issue with large systems and many moving objects. Often, we can quickly solve the same problem by splitting it into smaller parts, or by removing ambiguous layers (divide and conquer). post-upgrade Over time, the underlying log files for SQL databases may grow, ODX backlog may also grow. This may cause slower response for certain tasks. Development Test Production helper processes brief connectivity error right-size We hope this article and comprehensive checklists help data architects, data engineers and data scientists design and maintain big data framework, extract from any data source and build modern data estates for BI and AI in less time. Creative troubleshooting is a combination of verification processes, checklists, quick debug tools, know-how of hybrid/ external parts of the puzzle, and applying proven practices. Review our articles section headings again to make your own top-10 tips for self-support. Takeaway lesson: Eliminate variables, simplify the repro, and isolate the root cause! ",
+    "Lists": [
+        {
+            "heading": "Is the Solution already documented somewhere?",
+            "paragraphs": [
+                "It is likely that someone has experienced these issues before. Instead of re-inventing the wheel, we can find best practices already documented.  For example:"
+            ],
+            "list": [
+                "Lookup Knowledge Base and community forums for known issues and tips \u2013 check to see if another user has discovered a similar design pattern before.",
+                "Review online training for \u201cHow To\u201d tutorials.",
+                "When working with REST APIs, JSON, XML and other no-SQL data sources, look for specific guides covering methods to connect and extract data."
+            ]
+        },
+        {
+            "heading": "Clearly define the problem for Support",
+            "paragraphs": [
+                "Each TimeXtender solution consists of multiple parts: source data, architecture (servers, databases etc.), instance configuration (implemented business logic), and finally the TimeXtender software logic.  Our Support team works with hundreds of implementations, each with different data sources, environments, data targets, and architectures.  Troubleshooting and root cause analysis may require an overall understanding of your architecture, tables, instance configuration, settings, and some analysis of the actual data in your tables.",
+                "Include all the necessary information for the support team to expedite research.  Documenting and deep thinking over a technical issue often reveal fresh ideas, workarounds and solutions."
+            ],
+            "list": [
+                "Environment - how many machines or endpoints (on-premises or cloud) are involved in this overall scenario? An architecture diagram helps summarize a complex environment. A picture is worth a thousand words!",
+                "Business impact and deadlines (if any)",
+                "Software versions (including databases, providers and components). Add an image of Help-> \"About\u201d",
+                "Detailed reproduction steps (simplified steps to re-create the problem)",
+                "Where in the instance is the issue occurring ( Source -> ODX,  ODX->Stage,  Stage->MDW,       MDW->Semantic model.)",
+                "What are the relevant data storage targets being used (Data Lake, Azure SQL DB, SQL Server)",
+                "What are the relevant data transfer methods being used (CData, ADO, Data Factory, Direct Read) etc.",
+                "Relevant error messages or log files (copy-paste error messages in text, where possible)",
+                "Screen images - environment, settings, and configuration options used in current setup",
+                "Frequency: is this an intermittent/ transient (rare occurrence, hard to reproduce) or consistent issue?     Was it working before, or did this only occur in a new implementation or after upgrade?",
+                "When researching design best practices, or unexpected behavior among hundreds of objects and relations in a Data Warehouse, consider making a video or screenshots showing current state and UI operations.",
+                "What root-cause analysis you have done and what were your findings?"
+            ]
+        },
+        {
+            "heading": "Consider potential workarounds",
+            "paragraphs": [
+                "Because you (and your team that built the instance/solution) have access and in-depth knowledge to most of the working pieces, you have a much greater capacity for finding a solution or workaround.",
+                "Is there an alternate or better way to implement it with TimeXtender (with less time and resources)?",
+                "Example: If a provider's remote connection is slow, we can upload (or download) source data to a staging server and then use a faster method to extract, or use a better connector?",
+                "As we implement data flow from source to ODX, then to a Data Warehouse and towards endpoints - there are various configuration options and settings to tune and optimize. Explore the following choices:"
+            ],
+            "list": [
+                "an alternate data source provider (custom provider, ADO, OLE DB, Azure Data Factory, CData)",
+                "an alternate data movement method (for example, ADO vs. Azure Data Factory)",
+                "timeout settings at various stages to process large data transfer",
+                "increase/ decrease concurrency (multiple threads) to fix a performance, racing or deadlock issue",
+                "scale up cloud resources to solve a performance, latency or size issue",
+                "batching, chunking, incremental load, or custom query \u2013 review the best strategy for your use case",
+                "data type conversion, cast or override \u2013 find the best way to load and process data from a variety of sources",
+                "enable row and page-based compression on larger tables to reduce size and improve performance"
+            ]
+        },
+        {
+            "heading": "Is the problem already resolved in a newer version",
+            "paragraphs": [
+                "While an immediate upgrade is not always feasible, check to see if a newer release includes the feature or fix you are looking for."
+            ],
+            "list": [
+                "Review the latest release notes and Release Documentation.",
+                "Upgrade in the \u201csandbox\u201d and apply acceptance tests without changing the production system first."
+            ]
+        },
+        {
+            "heading": "Isolate environment and operating system issues",
+            "paragraphs": [
+                "Modern software systems operate in an eco-system of host environment and external tools.  For further troubleshooting:"
+            ],
+            "list": [
+                "Lookup community forums for known issues and explanations on error messages, generic HResults, or \"unknown\u201d exceptions. This is useful if the underlying framework returns an error code without a descriptive message.",
+                "Use Windows Event Viewer to identify issues during startup, execution, sync and transfer",
+                "Use Task Manager, Process Explorer, Process Monitor for insight on CPU/ memory usage. View all TimeXtender and ODX related helper processes and other services.",
+                "For strange errors occurring on a specific machine only, run sfc (System File Checker)"
+            ]
+        },
+        {
+            "heading": "Isolate Data Source specific issues",
+            "paragraphs": [
+                "When the problem occurs in extracting data, use connectivity and tracing tools for that specific source.  For example:"
+            ],
+            "list": [
+                "Use a profiler or query tool for SQL Server and other DBMS.",
+                "Enable tracing for ODBC data sources. Try switching from 32-bit to 64-bit, or from \u201cUser DSN\u201d to \u201cSystem DSN\u201d to see if that enables data extraction",
+                "Enable logging for CData providers",
+                "Try an alternate form of connection string. Review provider docs and connection string examples",
+                "View Data Lake folders and files via Azure Storage Explorer View .parquet files in a visual tool to examine data being transferred",
+                "View .parquet files in a visual tool to examine data being transferred",
+                "Compare generated scripts and logs for \u201cworking\u201d and \u201cnon-working\u201d scenarios Use a graphical tool with syntax highlighting to compare side-by-side",
+                "Use a graphical tool with syntax highlighting to compare side-by-side"
+            ]
+        },
+        {
+            "heading": "For root-cause, narrow down and analyze",
+            "paragraphs": [
+                "It is time-consuming to troubleshoot an issue with large systems and many moving objects. Often, we can quickly solve the same problem by splitting it into smaller parts, or by removing ambiguous layers (divide and conquer)."
+            ],
+            "list": [
+                "Eliminate variables, simplify the repro, and isolate the root cause. (Example: does retry or manual execution resolve the issue?)",
+                "Connectivity/ authentication/ permissions: use an external tool such as SSMS (SQL Server Management Studio) or Power BI to verify the same credentials",
+                "Ensure TimeXtender Execution Service is running when you schedule a Job/ package to execute.",
+                "For cloud resources, ensure the right tenant and key are used, and application role is configured.",
+                "Visualize and trace end-to-end data movement of specific row(s) through various layers and subsystems, from the source to the endpoint. This may help troubleshoot history, incremental load, data type override and similar issues."
+            ]
+        },
+        {
+            "heading": "Upgrade checklist",
+            "paragraphs": [
+                "Agile development, emerging technologies and feature improvements lead to new releases periodically. Before upgrade, save and close current instances and ensure any scheduled jobs are not running on any environment.  Upgrade the ODX first, then TimeXtender.  Add the following post-upgrade verification:"
+            ],
+            "list": [
+                "Review new release documentation for changes in architecture, data flow, settings, or tracking (logs)",
+                "Ensure the software is configured properly and existing instances are building OK.",
+                "Ensure the previous version's Windows services are stopped or disabled, and newer version's Windows services are up and running.",
+                "Upgrade both the ODX and TimeXtender to the latest version where possible.",
+                "Verify that existing data connections refresh, load new providers, and operate as expected",
+                "Run the Performance Recommendations tool"
+            ]
+        },
+        {
+            "heading": "Proactive maintenance, cleanup & backup",
+            "paragraphs": [
+                "Over time, the underlying log files for SQL databases may grow, ODX backlog may also grow. This may cause slower response for certain tasks."
+            ],
+            "list": [
+                "Work with your DB administrator to automate a process for backups, cleanups and optimizations on SQL Servers",
+                "Write descriptive notes for instance versions after reaching major milestones in design. This may help restore or revert-back to a working configuration when needed.",
+                "Upon solution completion (or reaching an important milestone), generate its documentation.",
+                "Upgrade your host OS, apply the latest service updates for SQL Server, ensure an appropriate version of .NET framework and Java runtime are installed.",
+                "Uninstall old versions of TimeXtender not in use.",
+                "Clean up ODX storage's leftover folders from unused data sources. Each full load adds a new version of data to storage. Use Storage Management tasks to delete or archive old Data Lake folders into \u201ccool\u201d storage.",
+                "Run SQL Database Cleanup wizard to identify old/ unused objects which may be dropped to save space.",
+                "When designing and testing a large instance over a period, it is a good idea to save and close the instance periodically (to release memory resources)."
+            ]
+        },
+        {
+            "heading": "Networking issues",
+            "paragraphs": [
+                "Modern software such as TimeXtender may communicate with remote machines and cloud resources for meta-data access, API calls, data movement between user configured databases, instance deployment from Development environment to Test (or Production)."
+            ],
+            "list": [
+                "Review ports and communications between servers and machines involved",
+                "Enable or white-list specific addresses or ports as appropriate.",
+                "Use specific servername instead of 'localhost' or '.'",
+                "For server \u201cremote name could not be resolved\u201d, review if there is any change on DNS Servers",
+                "For scenarios related to latency, throughput, or congestion, use a packet sniffer or network debugging tool such as Wireshark. For dedicated HTTP/ HTTPS debugging, use Fiddler."
+            ]
+        },
+        {
+            "heading": "Antivirus impact on running processes",
+            "paragraphs": [
+                "During an ETL pipeline -  ODX sync and transfer tasks, Data Factory pipeline activity, manual Deploy and Execute as well as scheduled package execution - TimeXtender, ODX and Self-Hosted Integration Runtime (if in use) may launch several helper processes (visible in Task Manager).  It is important that all those processes and corresponding windows services are running smoothly without interference from external factors, server maintenance/ reboots and Antivirus tools."
+            ],
+            "list": [
+                "We recommend adding TimeXtender and ODX related applications to your antivirus \"whitelist\""
+            ]
+        },
+        {
+            "heading": "Cloud intermittent issues",
+            "paragraphs": [
+                "Running a data access framework in the cloud for a period, we may come across transient issues which resolve quickly. For example, a brief connectivity error could occur when a system reconfiguration is in progress."
+            ],
+            "list": [
+                "Check Azure Service Health",
+                "View Azure resource monitoring tools and metrics",
+                "View Data Factory pipeline activity",
+                "Implement retry logic in execution package",
+                "For Azure Data Factory connecting to on-Premises data sources, ensure the Self-Hosted Integration Runtime is installed and running.",
+                "Check for resource usage and scaling options"
+            ]
+        },
+        {
+            "heading": "Cloud cost issues",
+            "paragraphs": [
+                "To save cost on cloud deployments, configure and right-size external resources:"
+            ],
+            "list": [
+                "Before Deployment - use Azure Pricing Calculator to estimate the total cost of all resources",
+                "After Deployment - view Cost Management options in Azure Portal.  Set budgets, thresholds, and alerts",
+                "Review Azure Advisor recommendations and cost-saving tips based on your usage patterns",
+                "Pause Azure resources (Azure Synapse, Analysis Services etc.) not in use",
+                "Use serverless option where available",
+                "Identify unused resources and VMs.  Stop and deallocate VMs not in use",
+                "Clean up old Data Lake folders from unused data sources \u2013 delete or archive into \u201ccool\u201d storage."
+            ]
+        }
+    ]
+}

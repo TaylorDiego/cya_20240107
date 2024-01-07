@@ -1,0 +1,26 @@
+```json
+{
+  "question_1": {
+    "question": "What should you do after creating a PowerShell executable in TimeXtender before executing it?",
+    "options": {
+      "option_a": "Restart the TimeXtender service",
+      "option_b": "Try to execute it immediately",
+      "option_c": "Add it to an execution package",
+      "option_d": "Check the script for errors"
+    },
+    "answer": "option_b",
+    "explanation": "After creating the PowerShell executable, you should try to execute it to ensure it works as expected."
+  },
+  "question_2": {
+    "question": "Which cmdlet is used to sign into Azure when executing a PowerShell script as an external executable in TimeXtender?",
+    "options": {
+      "option_a": "Invoke-AzAuthentication",
+      "option_b": "Connect-AzAccount",
+      "option_c": "Set-AzureRmAccount",
+      "option_d": "Login-AzureAccount"
+    },
+    "answer": "option_b",
+    "explanation": "The cmdlet 'Connect-AzAccount' is used to sign into Azure when executing a PowerShell script as an external executable."
+  }
+}
+```

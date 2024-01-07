@@ -1,0 +1,50 @@
+{
+    "subjects": {
+        "Getting Started": {
+            "categories": [
+                "Initial Setup"
+                , "Reference Architectures"
+                , "Add & Configure Instances"
+                , "Configure Resources"
+                , "Upgrades & Migration"
+            ]
+        }
+        , "ODX": {
+            "categories": [
+                "ODX"
+            ]
+        }
+        , "Data Warehouse": {
+            "categories": [
+                "Data Warehouse"
+            ]
+        }
+        , "Semantic Model": {
+            "categories": [
+                "Semantic Model"
+            ]
+        }
+        , "Execution & Jobs": {
+            "categories": [
+                "Execution & Jobs"
+            ]
+        }
+        , "TimeXtender Portal": {
+            "categories": [
+                "TimeXtender Portal"
+            ]
+        }
+        , "Data Sources": {
+            "categories": [
+                "Data Sources"
+            ]
+        }
+        , "General": {
+            "categories": [
+                "Documentation & Lineage"
+                , "Infrastructure & Networking"
+                , "Troubleshooting"
+            ]
+        }
+    }
+}

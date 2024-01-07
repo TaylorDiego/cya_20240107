@@ -1,0 +1,9 @@
+DIR_READY_TO_PROCESS:
+  - ..\assets\test_asset_1\
+
+RAW_HTML_DIR: raw_html
+LINKS_FILE: ..\assets\test_asset_1\links.json
+CONTEXT_FILE: ..\data\inputs\context.json
+RAW_QUIZ_FILE: raw_quiz.json
+QUIZ_FILE: quiz.json
+ANSWER_KEY_FILE: answer_key.json

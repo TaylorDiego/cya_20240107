@@ -1,0 +1,75 @@
+{
+    "DateTime": "2023-12-27 14:40:56",
+    "URL": "https://support.timextender.com/data-warehouse-108/previewing-data-1091",
+    "Keywords": "missing",
+    "Title": "Previewing Data _ Community",
+    "Author": "Thomas Lind",
+    "Text": "Preview Table Query Tool Preview Table  Query Tool Preview Table Query Tool Query Tool The Query Tool opens with the preview contentsquery pre-populated. Update or amend this query as needed. Use the following steps to execute a query: The Result tab will display the query results when they are available, andthe Message tab will display any messages that resulted from the query execution, i.e. error messages. The Query Tool supports drag and drop of tables and fields. The Query Tool provides a way to sort and filter the results. Note: Results Results To sort the data, follow the steps below. Use the following steps to apply a filter in the results tab.  ",
+    "Lists": [
+        {
+            "heading": "Preview Table",
+            "paragraphs": [
+                "Use \u201cPreview Table\u201d to preview the contents of a table according to the following steps:"
+            ],
+            "list": [
+                "Right-click on a table located in either a data warehouse or staging database, and then click Preview Table to open the following window and review the data in the table.",
+                "Use the following options to adjust how the preview results are shown.  In Select Top, type the number of rows to be fetched and displayed. Click Apply Top to apply the setting. Note that the \u201cselect top\u201d setting is applied before any sorting of the data. In the Date format list, click the date format to use for dates. Click Apply Format to apply the settings. Once the format has been set it will be used for all table previews. In the Instance list, click the instance of the table to be loaded from one of the following:  Valid Transformations Raw Incremental  Click Count Rows to see the number of rows that the table contains.",
+                "In Select Top, type the number of rows to be fetched and displayed. Click Apply Top to apply the setting. Note that the \u201cselect top\u201d setting is applied before any sorting of the data.",
+                "In the Date format list, click the date format to use for dates. Click Apply Format to apply the settings. Once the format has been set it will be used for all table previews.",
+                "In the Instance list, click the instance of the table to be loaded from one of the following:  Valid Transformations Raw Incremental",
+                "Valid",
+                "Transformations",
+                "Raw",
+                "Incremental",
+                "Click Count Rows to see the number of rows that the table contains.",
+                "Once preview is complete, click Close to close the window."
+            ]
+        },
+        {
+            "heading": "Opening the Query Tool",
+            "paragraphs": [
+                "Open the Query Tool window using one of the following options."
+            ],
+            "list": [
+                "Right-click a table, click Preview Table and then click the Query Tool button in the Preview Table window.",
+                "Right-click a table, click Advanced and then click Query Tool.",
+                "Click a table and then press the F8 function key."
+            ]
+        },
+        {
+            "heading": "Executing queries",
+            "paragraphs": [
+                "Use the following steps to execute a query:"
+            ],
+            "list": [
+                "Open the Query Tool using one of the options described above.",
+                "Enter a query in the top text box of the Query Tool window.",
+                "Adjust the \u201cMax no. of rows\u201d to the desired maximum number of rows to be returned.",
+                "Click Execute - OR - Press F5 on your keyboard.",
+                "An amimated lotus flower icon will be displayed while the query is running.",
+                "If the query is taking too long to complete, click the Stop button to cancel the execution of the query."
+            ]
+        },
+        {
+            "heading": "Drag-and-drop and the Query Tool window",
+            "paragraphs": [
+                "The Query Tool supports drag and drop of tables and fields."
+            ],
+            "list": [
+                "Drag a table or a field into the query to place the table name in the query.",
+                "If you drag a table to an empty query, the default query is generated. The default query fetches everything in the table."
+            ]
+        },
+        {
+            "heading": "Sorting and filtering data",
+            "paragraphs": [
+                "The Query Tool provides a way to sort and filter the results.",
+                "To sort the data, follow the steps below."
+            ],
+            "list": [
+                "Open the Query Tool and execute a query as described above.",
+                "In the Result tab, click a column heading to sort the rows on the value in that column. Click again to switch between ascending or descending order."
+            ]
+        }
+    ]
+}

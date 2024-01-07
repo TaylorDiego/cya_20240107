@@ -1,0 +1,57 @@
+{
+    "question_1": {
+        "question": "What is the purpose of executing a PowerShell script as an external executable in TimeXtender?",
+        "options": {
+            "option_a": "To schedule the execution of the script",
+            "option_b": "To increase the script's performance",
+            "option_c": "To monitor real-time data changes",
+            "option_d": "To generate graphical reports"
+        },
+        "answer": "option_a",
+        "explanation": "The article describes using an external executable to allow for a scheduled execution of the PowerShell script."
+    },
+    "question_2": {
+        "question": "Which PowerShell cmdlet is used to sign into Azure within a script?",
+        "options": {
+            "option_a": "Invoke-AzAuthentication",
+            "option_b": "Connect-AzAccount",
+            "option_c": "Set-AzCredential",
+            "option_d": "New-AzSession"
+        },
+        "answer": "option_b",
+        "explanation": "The cmdlet 'Connect-AzAccount' is used to sign into Azure when executing a PowerShell script."
+    },
+    "question_3": {
+        "question": "What should be done if a PowerShell script execution results in an error due to inadequate permissions?",
+        "options": {
+            "option_a": "Reinstall the TimeXtender software",
+            "option_b": "Change the script's timeout setting",
+            "option_c": "Ensure the user has the required module installed",
+            "option_d": "Grant the user permissions on the database"
+        },
+        "answer": "option_d",
+        "explanation": "If an error occurs due to inadequate permissions, the user running the script must be given the necessary permissions on the database."
+    },
+    "question_4": {
+        "question": "What is the result of setting the Timeout for a PowerShell script to 0 in TimeXtender?",
+        "options": {
+            "option_a": "The script will execute immediately",
+            "option_b": "The script will have a default timeout",
+            "option_c": "The script will have an infinite timeout",
+            "option_d": "The script execution will be canceled"
+        },
+        "answer": "option_c",
+        "explanation": "Setting the Timeout to 0 for a PowerShell script in TimeXtender results in an infinite timeout."
+    },
+    "question_5": {
+        "question": "Which module must be installed for a user to execute the 'Invoke-ProcessASDatabase' cmdlet?",
+        "options": {
+            "option_a": "AzureRM",
+            "option_b": "PowerBI",
+            "option_c": "SqlServer",
+            "option_d": "AzDataFactory"
+        },
+        "answer": "option_c",
+        "explanation": "The 'Invoke-ProcessASDatabase' cmdlet is part of the SqlServer module, which must be installed for the user running the script."
+    }
+}

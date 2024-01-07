@@ -1,0 +1,52 @@
+{
+    "DateTime": "2023-12-27 14:41:01",
+    "URL": "https://support.timextender.com/data-warehouse-108/stored-procedures-and-user-defined-functions-1168",
+    "Keywords": "missing",
+    "Title": "Stored Procedures and User Defined Functions _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "TimeXtender automatically generates the vast majority of the code needed for your data warehouse, however it is possible to extend the functionality of TimeXtender by writing and executing your ownscripts. Before adding custom Stored Procedures and User Defined Functions, it is important to review and consider all the native TimeXtender functionality first, becausecustom code can impede the ability to trace data lineage and is alsomore difficult to troubleshoot andmaintain. Script Usage Go to Script Usage Go to  ",
+    "Lists": [
+        {
+            "heading": "Add a Stored Procedure",
+            "paragraphs": [],
+            "list": [
+                "Open a data area, and then right-click on the Scripts folder and select Add Stored Procedure.",
+                "Enter the script for the Stored Procedure. Drag in the necessary objects from the right-hand pane, such as table and field names. Click OK.",
+                "Right-click on the stored procedure and select Deploy.",
+                "Once deployed, the stored procedure is visible in the SQL Server Management Studio (SSMS)."
+            ]
+        },
+        {
+            "heading": "Add a User Defined Function",
+            "paragraphs": [],
+            "list": [
+                "Open a data area, and then right-click on the Scripts folder and select Add User Defined Function",
+                "Enter the script for the User Defined Function. Drag in the necessary objects from the right-hand pane, such as table and field names. Click OK.",
+                "Right-click on the User Defined Function and select Deploy.",
+                "Once deployed, the User Defined Function is visible in SSMS."
+            ]
+        },
+        {
+            "heading": "Executing a Stored Procedure",
+            "paragraphs": [],
+            "list": [
+                "In a data area, right-click on the Scripts folder and select Add Custom Step.",
+                "Enter the script for executing the stored procedure. Drag in the necessary objects from the right-hand pane, such as the stored procedure. Click OK.",
+                "The Stored Procedure needs to be scheduled to run before or after the deployment/execution of a table, which can be done using the Set Pre- and post scripts dialog. To open this, right-click on the table, select Advanced, and then select Set Pre- and post scripts as shown below.",
+                "In the Set Pre- and post scripts window, select the Custom Step from the dropdown menu for either the Pre-Step or Post Step column, depending on which is appropriate for this custom step related to the deployment/execution. Click OK.",
+                "Deploy or execute the chosen table, which in turn will run the Custom Step and execute the Stored Procedure."
+            ]
+        },
+        {
+            "heading": "\u200bExecuting a User Defined Function",
+            "paragraphs": [],
+            "list": [
+                "Right-click on the Scripts folder and select Add Custom Step.",
+                "Enter the script for applying the User Defined Function. In the case below, the User Defined Function is applied via an insert statement. Drag in the necessary objects from the right-hand pane. Click OK",
+                "The User Defined Function needs to be scheduled to run before or after the deployment/execution of a table, which can be done using the Set Pre- and post scripts dialog. To open this, right-click on the table, select Advanced, and then select Set Pre- and post scripts.",
+                "In the Set Pre- and post scripts window, select the Custom Step from the dropdown for either the Pre-Step or Post Step column, depending on which is appropriate for this custom step related to the deployment/execution. Click OK.",
+                "Deploy or execute the chosen table, which in turn will run the Custom Step and execute the User Defined Function. In this example, once the table is executed, the User Defined Function takes the FilePath field from the Documents table  Then it splits this field out into separate records based on the delimiter and inserts these records into the DocumentSplitPath table"
+            ]
+        }
+    ]
+}

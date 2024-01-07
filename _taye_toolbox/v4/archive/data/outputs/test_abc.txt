@@ -1,0 +1,35 @@
+{
+  "question_1": {
+    "question": "Which HTTP method is used to retrieve a list of all jobs for an organization within the TimeXtender API?",
+    "options": {
+      "a": "GET",
+      "b": "POST",
+      "c": "DELETE",
+      "d": "PUT"
+    },
+    "answer": "a",
+    "explanation": "The 'GET /public/jobs' endpoint is used to retrieve a list of all jobs for an organization, which indicates that the HTTP GET method is used for this action."
+  },
+  "question_2": {
+    "question": "What must be set up in Postman to use the TimeXtender API endpoints effectively?",
+    "options": {
+      "a": "Password",
+      "b": "Username",
+      "c": "Bearer Token",
+      "d": "API Key"
+    },
+    "answer": "d",
+    "explanation": "The API Key needs to be set up in Postman in order to use the TimeXtender API endpoints, as the variable is referenced in the request headers for the calls."
+  },
+"question_3": {
+"question": "What is the status of a job in TimeXtender API after it is picked up by the application for execution?",
+"options": {
+    "a": "idle",
+    "b": "pending",
+    "c": "running",
+    "d": "finished"
+},
+"answer": "c",
+"explanation": "The endpoint documentation specifies that the job status changes to 'running' once it is picked up by the application for execution, after being in 'pending' status."
+}
+}

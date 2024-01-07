@@ -1,0 +1,253 @@
+question,asked,answered,avg_correct
+"In a TimeXtender Data Warehouse, when creating a custom transformation, you notice you can configure Parameters. What do these do?",77,67,32.50%
+"You use your team’s user credentials with RDP to log on to a virtual machine in Azure which runs TimeXtender. You notice that some check boxes are not showing up correctly. Also, you are unable to drag and drop fields to a table. How should you resolve this issue?",71,71,33.80%
+ How is data security ensured for the credentials entered in the TimeXtender Portal app.timextender.com? Select correct statement(s),76,70,38.00%
+How does TimeXtender handle frequent changes in Source data structure and/or design?,25,22,40.00%
+"When looking at schemas, what is the order of precedence in the schema settings between tables, data warehouses, and data sources?",43,42,41.90%
+"For System Control Fields DW_Id and DW_Batch, which field(s) allow you to control its starting value?",115,105,42.60%
+In which layer/ component should you break down complex data file(s) for TimeXtender that are exported from an XML data source? (Select All correct answers),120,112,43.00%
+Which statement is true? ,165,156,44.20%
+"In Table Performance Settings, the following option is enabled by default: ""Enable Physical Valid Table"".",84,75,45.20%
+Which of the following would be the most likely scenario for you to disable this option?,,,
+"You are looking to implement Surrogate Keys for a Type II slowly changing dimension, what method should you use?",135,122,45.90%
+"Your team has designed big data analytics for weather forecasting research using TimeXtender. In your DSA database table RegionTemperature, there are fields Season and Rain_Inches. Your BI consultant has defined two separate data selection rules on this table:",133,125,46.60%
+Rule#1: Season Equals Spring,,,
+Rule#2: Rain_Inches Greater or Equal 5,,,
+Which data rows will qualify to be imported into the table?,,,
+"When manually executing objects in the TimeXtender interface with a SQL storage, the SQL database is accessed using which identity?",122,114,47.50%
+Scenario: Real-Time Analytics,120,111,48.70%
+"During your requirements gathering you speak with the manufacturing department. The plant manager would like to get real-time data from all the IOT sensors and asks you if this is something your project can help with. After a bit of research, you learn that you can use the Azure IOT Hub and Azure Stream Analytics to ingest the IOT sensor data into multiple Azure storage options including Blob storage, SQL Database and Synapse.",,,
+Which of the below options would be supported by the TimeXtender data estate (Select ALL that apply)?,,,
+Scenario: Architecture Design,138,121,49.90%
+"As you prepare to embark on your Data Estate build-out, you begin to gather information from the business to understand the types of data you will need to handle. Once your analysis is done you determine all the existing infrastructure is on-premise, however, many business units have plans to migrate to cloud-based SaaS replacements. Eventually your solution will need to consume over 30 data sources with a combined 1,500 tables. The resulting data warehouse will likely be several Terabytes including fact tables with over 1 billion rows. ",,,
+Which platforms are best suited for each area of TimeXtender to support your organizations data needs?,,,
+How do you handle Early Arriving facts (when facts are available before the related dimensions in a data warehouse) in TimeXtender ?,54,46,50.00%
+"If you have an existing data warehouse AND a semantic model, you may simply turn on Show System Fields at the Project Level and each table and model will show these fields. Is that correct?",53,53,50.90%
+"You are working on your Modern Data Warehouse, and when executing a table you receive the following error: ",72,64,51.40%
+The given value of type String from the data source cannot be converted to type bigint of the specified target column.,,,
+What does it mean and how can you fix it? Select correct statement(s),,,
+"When incremental loading a table, the delta loaded rows can be viewed in? (select ALL that apply)",126,118,52.00%
+Picture,108,103,53.70%
+Select statement(s) which are true about ODX,78,70,54.90%
+"When manually executing a project in TimeXtender, the execution is running in the context of?",127,117,55.10%
+"True or false: When using Azure Data Factory to transfer data from the data source into the ODX storage, all data will pass through the ODX Application Server.",143,131,55.20%
+True or False: TimeXtender allows you to resume a failed execution from within the Execution Log.,133,124,55.60%
+"True or False: Project perspectives can be used for security purposes, by restricting what developers can see?",125,117,56.00%
+What are the steps necessary to add an Azure Data Lake Storage to your TimeXtender Environment ?,142,134,56.30%
+What is the purpose of the Shared Semantic Layer (SSL) component in TimeXtender? Select correct statement(s),92,85,57.10%
+In which module of the TimeXtender platform should you handle the integration of disparate data into a single version of truth?,62,55,58.10%
+"For Index Generation settings in TimeXtender, which of the following is an invalid option?",117,110,58.10%
+"When using Multiple Environments, how do you control which environment you are inside?",56,56,58.90%
+"You have TimeXtender open and are executing an execution package or a table manually. What will happen if you press the ""Stop"" button?",139,131,59.00%
+"In ODX, which of the following Storage Management task options are used to consolidate smaller incremental files into larger files using Azure Data Factory? ",72,62,59.70%
+Where would you input data source credentials in TimeXtender? ,78,71,60.30%
+"You have an ODX data source, which stores a table in an Azure Data Lake storage. When you preview the table in the ODX, it reports a total row counts of 1005 rows. When you query the data source directly, it reports a total row count of 1000 rows. What is the most likely cause of this difference?",73,64,60.30%
+Scenario: Migrate to Production,73,69,60.30%
+"You have completed the development and testing of multiple user requests and are now ready to transfer to production. You want to ensure minimal downtime for your users as well as the lowest possibility of errors. So, you are developing a series of steps you will take for a problem-free transfer (which you have begun writing below), however you could not remember the correct tasks for steps 3-6. ",,,
+"Step 1 - In the source environment, Deploy & Execute the entire project to ensure ETL can run without error.",,,
+"Step 2 - In the source environment, create an execution package that includes all the updated (and dependent) tables as well as mark any necessary tables for full load.",,,
+Step 3 – ,,,
+Step 4 - ,,,
+Step 5 - ,,,
+Step 6 - ,,,
+"Step 7 - In the destination environment, validate the data in updated tables & any impacted reports. ",,,
+"Step 8 - In the destination environment, start the Scheduler service. ",,,
+Which of the below statement(s) are true about TimeXtender instances?,72,63,60.40%
+Mark each of the below statements about Custom Code as True or False.,71,67,60.60%
+"How fast can you produce real-time documentation of your entire data warehouse project in TimeXtender? (Let's assume you are trying to do this quickly, and your answer includes generating the PDF. (Actual may vary slightly based on your environment, memory, and familiarity with the platform)",56,55,60.70%
+"When adding a Qlik Sense Enterprise Semantic Endpoint, you are limited to which authentication option(s)? (Select All that apply)",83,81,60.80%
+"In TimeXtender, where can you set Primary Key Behavior ? Select correct statement(s)",61,53,61.50%
+"You recently added several fields to a table, however, when previewing the table, these newly added fields are still NULL. What are some possible reasons for these null values? Select correct statement(s)",61,53,61.50%
+"What are the four relationship types, which TimeXtender uses to treat relation violations?",110,98,61.80%
+You get an error 'Cannot create DTS package' when executing a table. What do you check? (Select All that Apply),69,68,61.90%
+"You try to delete a project through Repository Administration tool, but it shows an error. What is the likely cause ?",79,77,62.00%
+What format will data be stored in when you use an Azure Data Lake as ODX Storage?,132,126,62.10%
+"True or False: For connecting to SAP R3 data the only option is to use the CData connector, that is using the SAP function RFC_READ_TABLE",61,60,62.30%
+"In TimeXtender version 20.5 and later, which of the following data transfer methods are supported? Select correct statement(s)",117,108,62.40%
+How can TimeXtender help migrating a TimeXtender build solution from On-prem to Cloud?,22,19,63.70%
+"In a TimeXtender Data Warehouse, at which of the following Level(s) can you assign security roles access to data?",75,68,64.00%
+"You create a Semantic Model, map tables from the MDW, and add a SSAS Tabular Endpoint. However, upon execution you receive the following error: ""A connection could not be made to the data source with the Name of 'MDW'."" How do you resolve? (Select Two)",178,167,64.00%
+Please complete the following statement. Primary Key Behavior has to do with how TimeXtender… (select all that apply),96,86,64.10%
+Scenario: Architecture Design,122,106,64.30%
+"As you prepare to embark on your Data Estate build-out, you begin to gather information from the business to understand the types of data you will need to handle. Once your analysis is done you determine all the existing infrastructure is on-premise, however, many business units have plans to migrate to cloud-based SaaS replacements. Eventually your solution will need to consume over 30 data sources with a combined 1,500 tables. The resulting data warehouse will likely be several Terabytes including fact tables with over 1 billion rows. ",,,
+"With your organizations data needs, you manager is concerned that TimeXtender will not be able to move and store this much data. What are some accurate details about TimeXtender you can tell your manager to ease his mind? Select correct statement(s)",,,
+"You have successfully designed a TimeXtender Data estate with an ODX Server, MDW database and semantic layer.  Your ODX Server (with an Azure Data Lake storage) extracts data from an Oracle data source. You have run the ODX data source’s Synchronize and Transfer tasks without errors. Where can you look at data rows (extracted) to verify that the ODX tasks are working as expected? Select correct statement(s)",85,76,64.70%
+How does TimeXtender help future-proof your data infrastructure? Select correct statement(s),84,77,64.90%
+"When adding a new work item on the Product table, you notice the option “Add Work Item” was red. What does that mean?",120,114,65.00%
+"Customer Prospect: ""Though our data team is small, I think we have too much data for TimeXtender to be effective. Our legacy data warehouse has over 5TB"" (please select all appropriate responses)",40,38,65.00%
+You need to identify all objects used by a specific semantic model. Which feature do you use? (Select all that apply),160,150,65.30%
+"The purpose of Project Perspectives is to help developers to filter what is shown, in a larger project. If you choose a static perspective, what will you filter? (select ALL that apply)",57,55,65.70%
+"After upgrading to a newer version, you notice that your nightly-load package did not execute, and data was not uploaded. You try to execute the Scheduler Service, but it fails with this error:",44,44,65.90%
+---------------------------,,,
+The TimeXtender Scheduler <version> service on Local Computer started and then stopped. Some services stop automatically if they are not in use by other services or programs.,,,
+---------------------------,,,
+"How should you resolve the error, before attempting to re-start the Scheduler Service?",,,
+Which of the following is INCORRECT about TimeXtender ODX Service?,47,45,66.00%
+"Using the SQL Database Cleanup tool, you can do which of the following? Select correct statement(s)",99,90,66.20%
+What is simple mode? Select correct statement(s),144,132,66.30%
+"Creating a custom view in TimeXtender allows you to write your own SQL code, though regular views are generated without coding. When using custom views, how is data lineage (visualization function) impacted?",122,112,66.40%
+"Using the latest version of TimeXtender, you have successfully designed a data warehousing project with a SQL data source and a SQL staging database. A new team member has joined your team and has installed the latest version of TimeXtender and SQL Server on his laptop. You ask him to re-create the same data warehousing project on his instance of TimeXtender (with local SQL databases) with minimal time and effort.  Since there are additional projects in your Repository, you do not want to share your whole Repository database with him.",141,136,66.70%
+You decide to implement the following:,,,
+"﻿Right-Click on Project name in TimeXtender, select “Documentation” to generate a .PDF description of all data objects, share this document to re-create an identical design on the new machine",,,
+Is this the recommended approach for the new team member to rebuild the data warehouse ?,,,
+Where can you find reports about flagged (warnings) or discarded (errors) rows of data due to poor data quality?,114,106,66.70%
+In TimeXtender it is possible to use DAX queries in semantic model to create custom measures?,75,63,66.70%
+"You try to enable “Simple mode” on a table in TimeXtender project, but the UI shows an error sign. What are some possible reasons (Select ALL that apply)?",119,111,67.20%
+What happens when you drag a table name from a Database to a table name in another Database in TimeXtender?,116,108,67.20%
+Your compliance department is asking for details on how your Data Warehouse tables were designed. What is the easiest way to fulfil this request?,129,117,67.40%
+How are conditional lookups created in TimeXtender?,74,69,67.60%
+"When transferring from a Development to Test environment, how can you do deployment and execution in Test environment with minimal effort? (select the best answer)",59,58,67.80%
+Scenario: Architecture Design,140,120,67.90%
+"As you prepare to embark on your Data Estate build-out, you begin to gather information from the business to understand the types of data you will need to handle. Once your analysis is done you determine all the existing infrastructure is on-premise, however, many business units have plans to migrate to cloud-based SaaS replacements. Eventually your solution will need to consume over 30 data sources with a combined 1,500 tables. The resulting data warehouse will likely be several Terabytes including fact tables with over 1 billion rows. ",,,
+"Your organization is still unsure if they are ready to move to the cloud. Out of the options below, what is the one criteria you DO NOT need to be concerned about (Select 1 answer). ",,,
+How far apart should execution packages be scheduled?,140,132,67.90%
+Scenario: Customers by Territory,130,117,68.50%
+"You have built a Sales semantic model and business users are gathering insight from this dataset. The analyst team requests the option to filter customers by territory and they provide you with a few examples. Subsequently, you begin exploring the tables available in the ODX and notice a table called CustomerTerritory. ",,,
+You have decided to denormalize using a conditional lookup to add the TerritoryName to the Semantic model. Please select the correct task for each step listed below.,,,
+True or false: It is possible to do multiple lookups on one conditional look up field,67,59,68.70%
+Which one of the below statement about Team Development in TimeXtender is False?,125,114,68.80%
+What is a good example of SCD Type 0 field?,133,121,69.20%
+"You bring the Products table from the AdventureWorks SQL data source into your TimeXtender SQL DSA database. After you Deploy and Execute your project, the SQL Server Management Studio (SSMS) shows that TimeXtender has created multiple tables with _L, _M and _R suffix. How should you implement your DSA database where it creates a single table per source table?",124,111,69.40%
+Which of the following statement(s) correctly complete the sentence about the TimeXtender Portal: The portal is where I can...,84,76,69.50%
+What are benefits of using a data lake?,33,30,69.70%
+"True or false: When deploying a full cloud solution, the ODX Server needs to be installed on the same virtual machine as TimeXtender?",139,130,69.80%
+When should you use the “Compression” option for a table in TimeXtender?,126,118,69.80%
+For which scenario (s) is TimeXtender a good fit?,20,19,70.00%
+"You need to connect to multiple CSV files as data source, however those files are located in multiple hard to reach locations. From which of the following location can TimeXtender load CSV Files? Select correct statement(s)",150,137,70.20%
+What makes TimeXtender's metadata-driven solution future-proof?,27,25,70.40%
+"You use a Remote Desktop tool on your laptop to access an Azure VM where TimeXtender is installed. You have successfully designed a modern data warehouse and a scheduled package to load data from a data source weekly on a Saturday night. However, you notice that the package did not run at all. The Azure VM has been running OK and no problem was reported on Azure Health Dashboard. What should you do to troubleshoot this type of issue in TimeXtender?",146,137,70.50%
+"You have successfully created a new ODX instance in the portal. On the desktop app, the newly created ODX is not displayed. ",58,52,70.70%
+What would be the 1st thing to try to solve the issue?,,,
+What is the purpose of the Modern Data Warehouse (MDW) component in TimeXtender? Select correct statement(s),76,68,71.10%
+What is the purpose behind a Junk Dimension table?,115,104,71.30%
+In which module of the TimeXtender platform should you handle the ingestion of data from Source Systems?,63,53,71.40%
+Where can you set Primary Key Behavior in a TimeXtender project? (select ALL that apply),49,49,71.40%
+"When applying Incremental loading to the ODX Server, must you set up every table individually?",130,121,71.50%
+How are relations and conditional lookups created in TimeXtender?,127,116,71.70%
+What statement is incorrect when using Customized Code in TimeXtender?,78,73,71.80%
+Scenario: Customers by Territory,126,115,72.20%
+"You have built a Sales semantic model and business users are gathering insight from this dataset. The analyst team requests the option to filter customers by territory and they provide you with a few examples. Subsequently, you begin exploring the tables available in the ODX and notice a table called CustomerTerritory. ",,,
+"Given what you know about dimensional modeling techniques in TimeXtender, what is the most optimal way to add the territory values requested to the Sales semantic model?",,,
+Which field are required to support incremental load in TimeXtender? ,90,83,72.20%
+"In a TimeXtender Data Warehouse you've added a Fixed Field Transformation [ = 'N/A' ]. However, after executing, notice this has made every field value = 'N/A' but you only want it to apply to specific field values where original value is NULL. How would you do this?",85,77,72.90%
+"In TimeXtender, field validation rules… Select correct statement(s)",100,93,73.00%
+Table performance can be customized in which of the following ways? (select ALL possible answers),102,93,73.00%
+"You have successfully designed a project using TimeXtender ODX Server (with an Azure Data Lake storage) to load data incrementally from mySQL source tables, an MDW data warehouse on Azure SQL database and a semantic layer with Azure Analysis Services endpoint.  The initial (manual) testing and demo worked well. However, you have not yet configured any schedule to run ODX tasks.  After a few hours, a business process adds new data rows at the source. You execute your MDW and semantic layer. However, new data rows are not shown.  What is the most likely fix for this?",127,112,73.20%
+"Your TimeXtender Multiple Environment was working OK with Dev and Test Environments yesterday. Today, when you attempt to transfer your updated project from Dev to Test , it shows an error “No connection could be made because the target machine actively refused it ..”. You were told that the Test server was rebooted last night which may have stopped some services. Which service do you need to check and restart on the Test server?",86,85,73.30%
+"When using Index Generation setting (Automatic), if you want to add a manual index to a table which already has one or more indexes, how can you do this?",124,112,73.40%
+What is the process of denormalization?,72,62,73.60%
+"Your data warehouse is deployed on Azure Synapse. You are configuring Table Settings => Performance in TimeXtender, which three of the following options can you choose for Distributions?",140,129,74.10%
+"True or False: Supernatural Keys, a type of surrogate key, are tied to a Key Store. All supernatural keys that you want to relate should use the same key store.",128,119,74.20%
+"In TimeXtender, a user can apply a data selection rule on what object type? Select correct statement(s)",66,58,74.20%
+"True or False? When adding a REST Data source, TimeXtender is limited to one REST endpoint per data source.",142,132,74.60%
+"You are adding a Supernatural key in TimeXtender. For two or more tables to compare and use the same set of keys, which of the following condition is needed?",112,103,75.00%
+Which of the following is incorrect about TimeXtender's project Repository?,68,65,75.00%
+"When designing a data warehouse solution, at which point in the project planning should Cloud migration be considered?",141,129,75.20%
+"In the TimeXtender Data Warehouse there is an Employee table with a Primary key (Emp_Id). After adding a Supernatural key (Emp_Badge) to the table, you want to make it this new field the Primary Key. How should you accomplish this task?",135,124,75.60%
+In which module of the TimeXtender platform should you deliver a relevant dataset to a group of users?,78,69,75.60%
+What does Differential Deployment do? Select correct statement(s),75,66,76.00%
+Data lineage can be accessed by selecting Visualization on which of the following objects? (Select all that apply),36,36,76.10%
+"When reviewing Execution Package Logs & Execution History, which database TimeXtender uses to retrieve logs from?",130,123,76.20%
+"The current sprint of your agile development in TimeXtender completed yesterday and all objects Deployed & Executed correctly. Unfortunately, an accidental deletion of a few relations in the MDW database occurred today by a new team member trying to evaluate the developments. What should you do to quickly recover from this mistake with minimal effort?",126,119,76.20%
+What are some of the business Advantages of Low-Code Environment. Select all that apply,98,89,76.30%
+For which type of data integration project(s) is TimeXtender a good fit?,34,30,76.50%
+True or false: Simple mode is the default setting in Data Warehouse,126,118,77.00%
+True or false: The dimension table is intended to record all the measurements or transactions for a specific business process,79,69,77.20%
+"In TimeXtender version 20.5 and later, Operational Data Exchange supports which of the following data storage options? (Select all that apply)",143,134,77.20%
+What is a recommended way to re-order tables in a finished MDW (Modern Data Warehouse) in TimeXtender project?,128,119,77.30%
+"You have created an ODX instance and data source connection successfully in portal. In the desktop client, the ODX is visible, however the data source connection does not appear when adding the data source. What could be the possible reason?",53,49,77.40%
+"True or False: the only possible deployment for Modern Data Warehouse on Azure SQL DB is Provisioned, by configuring a specific number of vCores",158,143,77.80%
+You are modeling your MDW database based on the tables imported from the DSA database. There is a field named discount (type float) on Items table. All values in discount field are positive.  You need to change all values from positive to negative in this field. How can you accomplish this task with minimal effort?,111,101,78.40%
+A large data source contains a table that needs incremental loading to keep transfer times at a manageable level. Which of the below scenarios would be supported by TimeXtender's incremental load feature? (Select 3 correct answers),141,130,78.50%
+"During the Execution of a very large fact table from the Raw table into the Valid table, your SQL Server DBA noticed a significant increase in the SQL log size. What can you do in TimeXtender to reduce the SQL logging overhead? (Select the best answer)",126,116,78.60%
+"What distinguishes TimeXtender from ""other solutions""?",25,24,78.60%
+Which of the following is not a built-in provider for ODX Data Sources?,153,143,79.10%
+What is the most performant setup for the 'Enable batch data cleansing' option on a specific table,140,128,80.00%
+What are the benefits of using TimeXtender's data catalog? Select correct statement(s),90,84,80.00%
+"You are configuring Multiple Environments in TimeXtender and plan to have Dev, Test, UAT and Prod. How many Repository databases do you need?",50,44,80.00%
+"You saved a working TimeXtender project on an Azure VM yesterday. When you run TimeXtender today, you get an error: “Could not connect to Repository. Please review your Repository Settings”. How should you resolve the error?",81,80,80.20%
+Which of the following fields are included in TimeXtender System Control Fields?,132,121,80.30%
+"Customer Prospect: ""We have some very obscure cloud data sources. I doubt TimeXtender would support them."" (Select all correct responses)",27,27,80.40%
+How many types of documentation .PDF can TimeXtender generate (Select ALL correct answers)?,49,48,80.60%
+You receive the following error:,62,60,80.60%
+Package load failed for package: TimeXtender\Development\DM_DSA2_dbo_Product_MDW2_etl_Product,,,
+Module: SSIS2019,,,
+System.Exception,,,
+You run SQL Server Configuration Manager and note that the SQL Server Service is already running. Which additional SQL Service do you need to run?,,,
+In which areas can you choose to hide or show System Control Fields? (Select All that apply),62,60,80.60%
+Can TimeXtender be integrated with other business intelligence and analytics tools?,90,79,81.10%
+You have successfully designed a complete Datawarehouse in TimeXtender. Marketing and HR departments are using the semantic layers you have already created. Now the Sales department wants you to build a data mart for their dashboard. What should you do?,155,142,81.30%
+"You have successfully designed a modern data warehouse and a default package to load data from data source. However, you notice it takes a long time to run all steps the package. Which option in the package setting may increase performance (select 1 best answer)?",129,121,81.40%
+Which feature allows you to continue working in TimeXtender UI while your project or objects are being executed in the background?,129,121,81.40%
+True of False: An App Registration is needed for setting up a connection to add Azure Data Factory Data Sources to ODX Server,146,136,81.50%
+The Main Features of TimeXtenders Unified Metadata Framework are? Select all that apply,88,81,81.50%
+"In TimeXtender, when you delete a table, this will automatically execute a script to drop the table in SQL Server.",114,106,81.60%
+"When using Multiple environments to support separate Development, Test and Production environments, which statement are best practice in TimeXtender?",49,49,81.60%
+"True or false: When deploying a hybrid solution, the ODX Server can be installed either on-premise or on a virtual machine in Azure?",155,141,81.90%
+What options for Primary Key Behavior can you set in TimeXtender? (Select All that apply),102,94,82.00%
+"You have designed and tested an Execution package yesterday and it ran OK. The package executes the “Employee” table. Today you renamed the table to “Staff”, but have not yet deployed this table. What will happen when you execute the package?",123,115,82.10%
+"When using TimeXtender Multiple Environments, how do you configure a separate set of DSA and MDW databases to be used for each environment?",56,54,82.10%
+"Using the latest version of TimeXtender, you have successfully designed a data warehousing project with a SQL data source and a SQL staging database. A new team member has joined your team and has installed the latest version of TimeXtender and SQL Server on his laptop. You ask him to re-create the same data warehousing project on his instance of TimeXtender (with local SQL databases) with minimal time and effort.  Since there are additional projects in your Repository, you do not want to share your whole Repository database with him.",142,137,82.40%
+You decide to implement the following:,,,
+"﻿Export your project in XML format and ask him to import. Also, provide a backup of the source and destination databases used in your project - ask him to restore those to the new SQL Server. He will create a new Repository database.",,,
+Is this the recommended approach for the new team member to rebuild the data warehouse ?,,,
+Which of the following are supported in TimeXtender for History functionality? (Select all that apply),126,117,82.50%
+In which layers can you apply Incremental load?,134,125,82.80%
+Can you deliver Governed Models for BI with TimeXtender?,30,28,83.30%
+Which of the following options of TimeXtender's documentation are you able to customize?,72,65,83.30%
+"True or False? When adding a REST Data Source, TimeXtender is limited to only the first page of records allowed by the REST API",133,123,83.50%
+What is the best-practice when using Multiple Environments in TimeXtender?,121,111,83.50%
+"You are designing a Datawarehouse in TimeXtender. When you “Execute” your DW, where does TimeXtender load data?",182,172,83.50%
+True/False: TimeXtender allows you to eliminate vendor lock-in,79,74,83.50%
+"True or false: When using Azure Data Factory for data transfer, you will need to set up a dedicated Azure Data Factory for the exclusive use for TimeXtender?",135,129,83.70%
+Which semantic model endpoints are available in TimeXtender (Select All that apply)?,179,167,83.80%
+Which technologies can be used by TimeXtender for Data Warehouse deployment?,33,31,83.90%
+What options are available for failure handling in TimeXtender Execution packages? Select All valid options that apply.,140,134,83.90%
+"In TimeXtender version 20.5 and later, Data Warehouse supports which of the following data storage options? (Select all that apply)",149,138,84.20%
+"When the source table schema changes (Schema Drift), how to propagate new changes to the ODX storage? Select correct statement(s)",77,68,84.40%
+You are tracking changes on a table. What is correct about Type I and Type II fields? Select correct statement(s),119,111,84.50%
+How does TimeXtender enable users to build data solutions 10x faster? Select correct statement(s),81,78,84.60%
+What is the MDW model recommended by TimeXtender?,104,99,84.60%
+True/False: TimeXtender is only compatible with cloud-based data storage solutions,85,78,84.70%
+"When you specify a validation rule on a field, what options are available to classify the severity of a violation? (select All that apply)",95,85,84.70%
+Your Enterprise Resource Planning system (providing source data to TimeXtender) has moved to a new server. what do you need to do?,139,131,84.90%
+Which of these should be included in the Positioning of TimeXtender?,94,86,85.10%
+You are modeling your MDW database based on the tables imported from the DSA database. There are a lot of Nulls in Invention field inside Patent table. You need to display those Nulls as “Not Applicable”. How can you accomplish this task with minimal effort?,110,104,85.50%
+"Using the latest version of TimeXtender, you have successfully designed a data warehousing project with a SQL data source and a SQL staging database. A new team member has joined your team and has installed the latest version of TimeXtender and SQL Server on his laptop. You ask him to re-create the same data warehousing project on his instance of TimeXtender (with local SQL databases) with minimal time and effort.  Since there are additional projects in your Repository, you do not want to share your whole Repository database with him.",141,136,85.80%
+You decide to implement the following:,,,
+"﻿Use SQL Server Management Studio (SSMS) to script out all CREATE TABLE, VIEWS and stored procedures - share those scripts to re-create those objects.",,,
+Is this the recommended approach for the new team member to rebuild the data warehouse ?,,,
+"To implement a solution to track Slowly Changing Dimensions, what is a required step in TimeXtender?",128,119,85.90%
+Please match the following options with the correct type of table in the dimensional model,73,67,86.30%
+Who does TimeXtender empower at every level of an organization?,73,68,86.30%
+What are the benefits of using TimeXtender to quickly adapt to changing circumstances and emerging technologies?,96,89,86.50%
+You can set up email notifications on successful- and failed execution packages,82,73,86.60%
+Customer: Why do I need TimeXtender if I can build my data warehouse myself? (select all that apply),36,34,86.80%
+"How do you setup incremental load on a table, where you want to read rows created within the latest 10 days?",122,114,86.90%
+What is the purpose of the Ingest (Operational Data Exchange) component in TimeXtender?,79,76,87.30%
+Is it possible to use custom SQL code in TimeXtender? Select correct statement(s),80,73,87.50%
+Your colleague is showing a demo using TimeXtender project. You notice that some tables have “H” and “I” signs inside the icon next to table name and some table names are red. What does that mean (Select all correct answers)?,137,127,87.60%
+Which endpoint(s) are supported by TimeXtender?,33,30,87.90%
+What is one of the key advantages of using Timextender for your data integration needs?,93,84,88.20%
+"You have successfully designed a modern data warehouse and a scheduled package to load data from data source at nighttime. However, you notice that occasionally the package fails due to intermittent network connectivity loss. Which option in the package setting may solve this problem (select 1 best answer)?",127,121,88.20%
+"When designing a data warehouse solution, at which point in the project planning should Team Development be considered?",138,129,88.40%
+What is the downside of using manual coding in the modern data stack? Select correct statement(s),88,82,88.60%
+True or False: TimeXtender allows you to choose the number of threads to utilize when executing packages.,125,116,88.80%
+What are some steps you can take to design a dimensional model database in TimeXtender? (Choose 1 best answer),134,126,88.80%
+"Customer Prospect: ""I've never heard of TimeXtender. Why should I trust you with managing my organization's mission-critical data workflows?"" (Please select all correct responses)",32,30,89.10%
+What are the benefits of using the Operational Data Exchange in TimeXtender's Ingest component? Select correct statement(s),101,94,89.10%
+"To improve data ingestion in TimeXtender, your BI team would like to evaluate whether converting “money” datatype to “Decimal” is a better choice. How can they quickly experiment with data types?",125,119,89.60%
+"True or false: Null values can be handled in multiple ways in TX, at the project, table, and field level?",39,38,89.70%
+"Using the ODX Server, you are bringing some tables form a SQL data source into your ODX storage and have mapped those into a TimeXtender MDW database. A week later, a new table is added to the data source by another team. What should you do to bring the new table and its rows to the ODX storage, and then propagate those to your Data Warehouse? ",147,138,89.80%
+What is the ultimate goal of data and analytics?,89,83,89.90%
+"True of False: Index Generation setting (Automation) is configured on the project level, but you can override it at the table level?",43,42,90.70%
+Does TimeXtender support data governance and compliance?,87,81,90.80%
+"You have selected tables from 10 different data sources in TimeXtender ODX staging area and have designed a modern Datawarehouse. Once the design process completes, you run a Full Deploy of your modern Datawarehouse. SQL Server Management Studio (SSMS) shows that new tables, views and stored procedure were created. However, you don’t see any data rows. What should you do to import data?",134,130,91.00%
+"When applying Incremental loading to the Modern Data Warehouse, do you pick individual tables?",136,130,91.20%
+Which of these does NOT Contribute to TimeXtenders Future-Proof Agility,91,86,91.20%
+TimeXtender allows you to review the Execution Queue?,133,124,91.70%
+"You are designing a data warehousing project in TimeXtender. When you click “Save”, where does TimeXtender store meta-data about the objects you are working on?",87,86,92.00%
+"Using the latest version of TimeXtender, you have successfully designed a data warehousing project with a SQL data source and a SQL staging database. A new team member has joined your team and has installed the latest version of TimeXtender and SQL Server on his laptop. You ask him to re-create the same data warehousing project on his instance of TimeXtender (with local SQL databases) with minimal time and effort.  Since there are additional projects in your Repository, you do not want to share your whole Repository database with him.",,,
+You decide to implement the following:﻿,,,
+"Demo your project to the new team member. Click Control + Right keys on all objects to expand the project tree, take screenshots of all objects and share those to re-create those objects on his machine.",,,
+Is this the recommended approach for the new team member to rebuild the data warehouse ?,,,

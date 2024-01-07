@@ -1,0 +1,85 @@
+{
+    "DateTime": "2023-12-27 14:39:26",
+    "URL": "https://support.timextender.com/reference-architectures-125/azure-sql-database-reference-architecture-803",
+    "Keywords": "missing",
+    "Title": "Azure SQL Database Reference Architecture _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "This is a standard reference architecture to implement TimeXtender fully in Azure, the goal is to balance performance and cost, when working in the cloud. To prepare your TimeXtender environment in Azure, here are the steps we recommend.  To serve the TimeXtender application in Azure, we recommend using an Azure Virtual Machine (VM), sized according to your solution's requirements. Guide: Create Application Server - Azure VM Considerations: ADLS Gen2 is highly performant, economical, scalable, and secure way to store your raw data. Guide: Create ODX Storage - Azure Data Lake Storage Gen2 Considerations: For large data movement tasks, ADF provides amazing performance and ease of use for both ingestion and transport. Guide: Prepare for Ingest and Transport - Azure Data Factory (recommended) Considerations: With its ability to auto-pause, Azure SQL Single DB Serverless is a great, potentially cost-saving option for the data warehouse storage, both Modern Data Warehouse (MDW) and Data Staging Area (DSA). Guide: Create Data Warehouse Storage - Azure SQL DB Considerations: If you have Power BI Premium, TimeXtender and deploy and execute Semantic Models directly to the Power BI Premium endpoint. Guide: Configure PowerBI Premium Endpoint (Optional) Balancing cost and performance requires monitoring and forecasting of your services and needs. Guide: Estimate Azure Costs Considerations: Note: does not include Quick question:is this reference architecture still valid for the current, non-legacy TimeXtender (TimeXtender Next Gen)? @RLB Thank you Christian. It's the answer I was hoping to get.  @gjongeneel @Christian Hauggaard Are there any plans to support managed identity in the (near) future? It would greatly improve security and Microsoft often recommends it as a best practice. Specifically if one Azure resource needs to connect to another Azure resource. Use Azure Data Lake Storage for your ODX Instance | Community (timextender.com) @gjongeneel We've found out the following:  Hi all,  just a few things for Private Endpoints: ",
+    "Lists": [
+        {
+            "heading": "1. Create Application Server - Azure VM",
+            "paragraphs": [
+                "To serve the TimeXtender application in Azure, we recommend using an Azure Virtual Machine (VM), sized according to your solution's requirements.",
+                "Guide: Create Application Server - Azure VM",
+                "Considerations:"
+            ],
+            "list": [
+                "Recommended Sizing: DS2_v2 (for moderate workloads). See Azure VM Sizes documentation for more detail.",
+                "This VM will host the below services, and must remain running for TimeXtender to function ODX Server Service Execution Server Configuration Service",
+                "ODX Server Service",
+                "Execution Server Configuration Service"
+            ]
+        },
+        {
+            "heading": "2. Create ODX Storage - Azure Data Lake Storage Gen2",
+            "paragraphs": [
+                "ADLS Gen2 is highly performant, economical, scalable, and secure way to store your raw data.",
+                "Guide: Create ODX Storage - Azure Data Lake Storage Gen2",
+                "Considerations:"
+            ],
+            "list": [
+                "When creating the ADLS Gen2 data lake service, you must enable Hierarchical Namespaces",
+                "TimeXtender writes files in Parquet file format, a highly compressed, columnar storage in the data lake.",
+                "It is possible for ODX Server to store data in Azure SQL DB (rather than in a data lake), but this adds cost and complexity but no additional functionality",
+                "When using Azure Data Lake for ODX and SQL DB for the Data Warehouse, it is highly recommended to use Data Factory to transport this data.",
+                "ADLS will require a service principle, called App Registration in Azure, for TimeXtender to access your ADF service.  Both Data Lake and ADF, may share the same App Registration if desired.",
+                "Both Data Lake and ADF, may share the same App Registration if desired."
+            ]
+        },
+        {
+            "heading": "3. Prepare for Ingest and Transport - Azure Data Factory (optional)",
+            "paragraphs": [
+                "For large data movement tasks, ADF provides amazing performance and ease of use for both ingestion and transport.",
+                "Guide: Prepare for Ingest and Transport - Azure Data Factory (recommended)",
+                "Considerations:"
+            ],
+            "list": [
+                "When creating ADF resources use Gen2, which is the current default",
+                "A single ADF service can be used for both transport and ingestion Ingestion from data source to ODX Storage Transport from ODX to MDW",
+                "Ingestion from data source to ODX Storage",
+                "Transport from ODX to MDW",
+                "The option to use ADF is not available for all data source types, but many options are available.",
+                "ADF Data sources do not support ODX Query Tables at this time.",
+                "ADF's performance can be quite costly for such incredible fault-tolerant performance",
+                "ADF will require a service principle, called App Registration in Azure, for TimeXtender to access your ADF service.  Both Data Lake and ADF, may share the same App Registration if desired.",
+                "Both Data Lake and ADF, may share the same App Registration if desired."
+            ]
+        },
+        {
+            "heading": "4. Create MDW Storage - Azure SQL Database",
+            "paragraphs": [
+                "With its ability to auto-pause, Azure SQL Single DB Serverless is a great, potentially cost-saving option for the data warehouse storage, both Modern Data Warehouse (MDW) and Data Staging Area (DSA).",
+                "Guide: Create Data Warehouse Storage - Azure SQL DB",
+                "Considerations:"
+            ],
+            "list": [
+                "Recommended SQL Single DB (vCore - General Purpose) sizing: Serverless -  Min 10 vCores - Max 10 vCores Data Max Size - 50 GB",
+                "Serverless -  Min 10 vCores - Max 10 vCores",
+                "Data Max Size - 50 GB",
+                "When Serverless is conducting load balancing, it will drop connections, therefore, when using Serverless for your data warehouse, you want to set the Min vCores and Max vCores to the same level.",
+                "The Serverless compute tier can be a cost saving option, if you do not require your database to be online more that 50% of the time. If you do require >50% uptime for the Data Warehouse, then the Provisioned compute tier will be more economical."
+            ]
+        },
+        {
+            "heading": "6. Estimate Azure Costs",
+            "paragraphs": [
+                "Balancing cost and performance requires monitoring and forecasting of your services and needs.",
+                "Guide: Estimate Azure Costs",
+                "Considerations:"
+            ],
+            "list": [
+                "Azure provides a pricing calculator to help you estimate your costs for various configurations"
+            ]
+        }
+    ]
+}

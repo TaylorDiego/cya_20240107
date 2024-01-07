@@ -1,0 +1,5 @@
+f'{"folder":{folder},"tags":{"subject":"arithmetic"},"points":[1,0], "min":1, "max":1, "shuffle":false, "display": {"direction":"column"}}{question}\n\n
+{"score":0}{option_1}
+{"score":0}{option_2}
+{"score":0}{option_3}
+{"score":0}{option_4}'

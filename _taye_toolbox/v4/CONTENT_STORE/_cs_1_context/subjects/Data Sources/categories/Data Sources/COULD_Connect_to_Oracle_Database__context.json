@@ -1,0 +1,28 @@
+{
+    "DateTime": "2023-12-27 14:42:13",
+    "URL": "https://support.timextender.com/data-sources-112/connect-to-oracle-database-728",
+    "Keywords": "missing",
+    "Title": "Connect to Oracle Database _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "Due to discontinuation of the direct Oracle Support in the Microsoft .Net framework, the requirements for using Oracle databases as a data source in TX has changed.You will have to install the ODP.Net package with .Net 4 support on the machine. The package is only available in the newer versions of the Oracle Client (11g). Our experience so far indicates that the easiest way to get it setup is to follow these steps: TX are using the .Net providers when you test the data source connection, for preview of data source data and for the data transfer. ",
+    "Lists": [
+        {
+            "heading": "Step by step",
+            "paragraphs": [
+                "Our experience so far indicates that the easiest way to get it setup is to follow these steps:"
+            ],
+            "list": [
+                "Ensure a copy of the files TNSNames.ora and SQLNet.ora, either by using the Net Configuration assistant (if the full Oracle Client is already installed) or by copying the files from another installation.",
+                "Download and extract ODP.Net (ODAC 11.2 Release 3). We have successfully tested ODAC 11.2.0.2.1 with Xcopy Deployment. Make sure to get the correct bit version: 32 bit 64 bit",
+                "32 bit",
+                "64 bit",
+                "Run the Command Prompt as administrator (Right click -> Run as Administrator). This is very important!",
+                "Navigate to the unzipped installation files and run the installation by typing \"install.bat all c:\\oracle odac\"",
+                "Create a directory called TNS in your installation folder (i.e. c:\\oracle\\TNS)",
+                "Change the Environment Variable PATH to include your installation folder and its bin directory (ie C:\\oracle;C:\\Oracle\\bin)",
+                "Add an environment Variable called TNS_ADMIN pointing to the directory you created (i.e. C:\\oracle\\TNS)",
+                "Copy the SQLNet.Ora and TNSNAMES.ora to the TNS folder."
+            ]
+        }
+    ]
+}

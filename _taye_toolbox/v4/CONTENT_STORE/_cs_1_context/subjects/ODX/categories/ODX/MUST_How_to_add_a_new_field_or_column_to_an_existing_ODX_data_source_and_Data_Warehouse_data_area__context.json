@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:40:08",
+    "URL": "https://support.timextender.com/odx-107/how-to-add-a-new-field-or-column-to-an-existing-odx-data-source-and-data-warehouse-data-area-1487",
+    "Keywords": "missing",
+    "Title": "How to add a new field or column to an existing ODX data source and Data Warehouse data area _ Community",
+    "Author": "Greg Lennox",
+    "Text": "TimeXtender provides the flexibility to connect to many different data providers, and there may be times when new fields have been addedto a data source after that data sourcehasbeen configured in theODX and tables from thatdata source have been mapped into a data warehouse data area. This article clarifies the steps needed to update both the ODX data source and the data warehouse table to include this new field. The steps outlined below include screenshots of an SQL Server database source as an example, where the ALTER table command wasused to add an additional column called Manufacturing Supplier to the LawnProducts table.         ",
+    "Lists": []
+}

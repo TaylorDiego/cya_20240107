@@ -1,0 +1,69 @@
+{
+    "DateTime": "2023-12-27 14:42:18",
+    "URL": "https://support.timextender.com/data-sources-112/connect-to-sharepoint-excel-626",
+    "Keywords": "missing",
+    "Title": "Connect to Sharepoint Excel _ Community",
+    "Author": "Thomas Lind",
+    "Text": "There are three methods to connect to excel files with CData - Excel, SharePoint Excel, and Excel Online. This article discusses the SharePoint Excel one. If you want to connect to more than one excel file at a location, the only option is to use Excel Online. You will have to have these files stored in SharePoint or OneDrive to connect to them. SharePoint OAuth OAuth As in the normal Excel provider, there are a lot of options and some are more relevant than others. ADO.NET Provider for SharePoint Excel Establishing a Connection Connection String Options Authentication Connection Misc There are many ways to connect and check the link about establishing a connection for more options. File The provider detects the available tables based on the available objects in the underlying API. The APIs surface different API objects; select the API based on the organization of your spreadsheets and your SharePoint version: Define Tables  Excel guide Data Model URL  SharePointVersion OnPremise AuthScheme  User  Password Note UseRESTAPI Windows (NTLM) User  Password Authenticating with ADFS AuthScheme  ADFS ",
+    "Lists": [
+        {
+            "heading": "Authentication",
+            "paragraphs": [
+                "There are many ways to connect and check the link about establishing a connection for more options."
+            ],
+            "list": [
+                "Auth Scheme    NTLM: Set this to use your Windows credentials for authentication. Default option. Basic: Set this to use HTTP Basic authentication. Digest: Set this to HTTP Digest authentication. Forms: Set this to use Forms authentication. Negotiate: If Auth Scheme is set to Negotiate, the provider will Negotiate an authentication mechanism with the server. Set Auth Scheme to Negotiate if you want to use Kerberos authentication. ADFS: Set this to use Single Sign-On authentication with ADFS. None: Set this to use anonymous authentication.",
+                "NTLM: Set this to use your Windows credentials for authentication. Default option.",
+                "Basic: Set this to use HTTP Basic authentication.",
+                "Digest: Set this to HTTP Digest authentication.",
+                "Forms: Set this to use Forms authentication.",
+                "Negotiate: If Auth Scheme is set to Negotiate, the provider will Negotiate an authentication mechanism with the server. Set Auth Scheme to Negotiate if you want to use Kerberos authentication.",
+                "ADFS: Set this to use Single Sign-On authentication with ADFS.",
+                "None: Set this to use anonymous authentication.",
+                "Password: Add the password of the account you connect with.",
+                "SharePoint version: To determine if it is an online or local version of SharePoint.",
+                "STSURL: The URL of the security token service (STS) when using Single Sign On (SSO). You also need Active Directory Federation Services (ADFS) as the Auth Scheme setting.",
+                "URL: The name of the SharePoint server you connect to. It will usually be something like https://companyname.sharepoint.com. If you are pointing at a specific site you can add it as https://companyname.sharepoint.com/Sites/mysite/.",
+                "Use NTLMV1: If your server uses the old version add this check.",
+                "User: The user name you want to connect to SharePoint as."
+            ]
+        },
+        {
+            "heading": "Connecting to a Workbook",
+            "paragraphs": [
+                "Regardless of which edition of SharePoint you are using, set File to the Excel workbook. This path is relative to the following properties:"
+            ],
+            "list": [
+                "Library: The Shared Documents library is used by default. You can use this property to specify another document library in your organization; for example, if you want to connect to OneDrive, set this property to \"Documents\".",
+                "Folder: You can use this property to specify a path to a sub-folder in a library. The path is relative to the library name specified in Library."
+            ]
+        },
+        {
+            "heading": "Connecting to Spreadsheet Data as Tables",
+            "paragraphs": [
+                "The provider detects the available tables based on the available objects in the underlying API.",
+                "The APIs surface different API objects; select the API based on the organization of your spreadsheets and your SharePoint version:"
+            ],
+            "list": [
+                "OData: The OData API allows access to tables defined from Excel table objects (not ranges or spreadsheets), which you create by clicking Insert > Table in Excel. When connecting to the OData API, the provider may not return any tables if you do not have table objects defined in your workbook. Set UseRESTAPI to true to connect to spreadsheets or ranges as tables.",
+                "REST: The REST API enables access to tables defined from Excel table objects, ranges, and spreadsheets. This is the default API. Requesting a large number of rows from ranges and spreadsheets is restricted by the REST API, and the provider limits the number of rows returned to 100 by default. The provider also defaults to detecting column names from the first row; set Header to disable this."
+            ]
+        },
+        {
+            "heading": "Connecting to SharePoint On-Premises",
+            "paragraphs": [
+                "Set the URL to your server's name or IP address. Additionally, set SharePointVersion and the authentication values.",
+                "To authenticate to SharePoint OnPremise, set AuthScheme to the authentication type and set User and Password, if necessary.",
+                "Note: When connecting to SharePoint On-Premises 2010, you must set UseRESTAPI to true."
+            ],
+            "list": [
+                "Windows (NTLM) This is the most common authentication type. As such, the provider is preconfigured to use NTLM as the default; simply set the Windows User and Password to connect.",
+                "Authenticating with ADFS Set the AuthScheme to ADFS. The following connection properties need to be set: User: Set this to the ADFS user. Password: Set this to ADFS password for the user. SSOLoginURL: Set this to the WS-trust endpoint of the ADFS server.  The following SSOProperties are needed to authenticate to ADFS: RelyingParty: The value of the relying party identifier on the ADFS server for Sharepoint.  Below is an example connection string: AuthScheme=ADFS;User=ADFSUserName;Password=ADFSPassword;SSOLoginURL=https://<authority>/adfs/services/trust/2005/usernamemixed;SSO Properties ='RelyingParty=urn:sharepoint:sp2016;';",
+                "User: Set this to the ADFS user.",
+                "Password: Set this to ADFS password for the user.",
+                "SSOLoginURL: Set this to the WS-trust endpoint of the ADFS server.",
+                "RelyingParty: The value of the relying party identifier on the ADFS server for Sharepoint."
+            ]
+        }
+    ]
+}

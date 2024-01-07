@@ -1,0 +1,20 @@
+{"folder":"test_folder","tags":{"category":"abc_category"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What is the first step to configure Power BI for deploying a semantic model according to the provided instructions?
+
+{"score":0}Copy the workspace connection.
+{"score":100.0}Login to app.powerbi.com
+{"score":0}Select the workspace settings
+{"score":0}Click the Premium tab
+-
+{"folder":"test_folder","tags":{"category":"abc_category"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}When adding a Power BI Premium Semantic Model Endpoint, what is an alternative method for authentication mentioned in the text?
+
+{"score":100.0}Using a Service Principal
+{"score":0}Email verification
+{"score":0}Two-factor authentication
+{"score":0}OAuth token
+-
+{"folder":"test_folder","tags":{"category":"abc_category"},"points":[1,0], "min":1, "max":1, "shuffle":true, "display":{"direction":"column"}}What should you do if you encounter an authentication error when first attempting to execute your model in TimeXtender?
+
+{"score":0}Restart TimeXtender Desktop
+{"score":100.0}Update your data source credentials
+{"score":0}Check your internet connection
+{"score":0}Reinstall TimeXtender

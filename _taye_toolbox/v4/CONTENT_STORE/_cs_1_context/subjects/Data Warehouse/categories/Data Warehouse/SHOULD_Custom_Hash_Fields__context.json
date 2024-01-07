@@ -1,0 +1,30 @@
+{
+    "DateTime": "2023-12-27 14:41:16",
+    "URL": "https://support.timextender.com/data-warehouse-108/custom-hash-fields-1036",
+    "Keywords": "missing",
+    "Title": "Custom Hash Fields _ Community",
+    "Author": "Thomas Lind",
+    "Text": "In scenarios with multiple fields making up the primary key, hashing the values of those fields into a single field can improve lookup performance. In TimeXtender, such a field is called a custom hash field, and this field can also be usedto easily investigate whether changes havebeen made to a record or not. For compatibility reasons, we offer a number of different algorithms for hashing fields in TimeXtender. These hashing algorithms are available on all hashed fields in your instance. In addition tocustom hash fields, the following hash fields are also available in TimeXtender: default  compare  debugging To change the hashing algorithm of a hash field  Hi, Custom hash field may createa hashed representation of combination of multiple fields eventhough one of the fields contains NULL. how do i change this behaivor to create hash only of ALL fields are filled?  With kind regards,  Dror @dsvartzman You will need to create a std field with a varbinary(20) data type and then you need to run the conversion with a custom transformation. You can then add conditions on the transformation so it only runs when all fields are not null. ",
+    "Lists": [
+        {
+            "heading": "Adding a custom hash field",
+            "paragraphs": [],
+            "list": [
+                "Right-click on a table and select \"Add Custom Hash Field\". A custom hash field will be added to the table and selected, and the \"Custom Hash Key\" pane will appear on the right-hand side of the window.",
+                "In the Custom Hash Key pane, select the fields to include in the custom hash field.",
+                "(Optional) Use the \"Field Order\" option to reorder the fields using drag-and-drop or ALT + Up/Down. To ensure an accurate comparison of two custom hash fields, verify that the field sequence is the same for both hash fields. Otherwise, the hash value may differ even if the individual field values that make up the hash fields are the same."
+            ]
+        },
+        {
+            "heading": "Changing the Hashing Algorithm for a Field",
+            "paragraphs": [
+                "For compatibility reasons, we offer a number of different algorithms for hashing fields in TimeXtender. These hashing algorithms are available on all hashed fields in your instance.",
+                "In addition to custom hash fields, the following hash fields are also available in TimeXtender:"
+            ],
+            "list": [
+                "Junk dimension key",
+                "Surrogate hash key, type I hash key and type II hash key (used for history)"
+            ]
+        }
+    ]
+}

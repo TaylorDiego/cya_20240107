@@ -1,0 +1,59 @@
+{
+    "DateTime": "2023-12-27 14:40:01",
+    "URL": "https://support.timextender.com/odx-107/execution-queue-logs-and-statistics-1005",
+    "Keywords": "missing",
+    "Title": "Execution Queue, Logs and Statistics _ Community",
+    "Author": "Thomas Lind",
+    "Text": "You can keep track of what the ODXServer is doing and has done in a number of ways. In the ExecutionQueue, you can see the tasks that are currently executing, waiting to start or just finished executing. To open the Execution Queue,  ODX Execution Queue running pending  completed You have the following options. The ExecutionLog shows you all the previous task executions. There are two ways to open the Execution Log Execution Log Task details Previous Next You can also open the Execution Log on a specific task of a data source, to see how previous and current execution are doing. To open a specific data source task execution log. The content of this log is specific to this task only Other than that the options are the same as the one you have on the main instance. The ODXServer also logs the communication between the ODX Server Manager and itself. To open the Service Log It looks like this You can see all log entries sent about the service. You also have some options to filter the entries. You can get additional information about an entry by double clicking on the message. The ODX server collects some statistics on the data source and data storage. On the data source, you can see e.g. how many tables and columns are available. On the data storage the number of tables and columns and the total data consumption is listed. To view the statistics of a data source. It will give information looking like this. For the entire ODX instance you can also see it. You open it like so.  It will give info such as this.  ",
+    "Lists": [
+        {
+            "heading": "View Executing and Queued Tasks",
+            "paragraphs": [
+                "In the Execution Queue, you can see the tasks that are currently executing, waiting to start or just finished executing.",
+                "To open the Execution Queue,"
+            ],
+            "list": [
+                "Be sure the ODX instance is marked and in the Tools menu, click ODX Execution Queue.",
+                "The ODX Execution Queue menu can be opened whenever this icon is available."
+            ]
+        },
+        {
+            "heading": "Main Execution Log",
+            "paragraphs": [],
+            "list": [
+                "On the ODX instance, right-click and choose View Execution Log.",
+                "On the ODX instance, right-click and choose View Execution Log."
+            ]
+        },
+        {
+            "heading": "Specific Execution Log",
+            "paragraphs": [
+                "You can also open the Execution Log on a specific task of a data source, to see how previous and current execution are doing.",
+                "To open a specific data source task execution log."
+            ],
+            "list": [
+                "Right-click on a task and choose View Execution Log."
+            ]
+        },
+        {
+            "heading": "View Log of Service Calls",
+            "paragraphs": [
+                "The ODX Server also logs the communication between the ODX Server Manager and itself.",
+                "To open the Service Log"
+            ],
+            "list": [
+                "On the ODX instance right-click and choose View Service Log."
+            ]
+        },
+        {
+            "heading": "View Data Source and Data Storage Statistics",
+            "paragraphs": [
+                "The ODX server collects some statistics on the data source and data storage. On the data source, you can see e.g. how many tables and columns are available. On the data storage the number of tables and columns and the total data consumption is listed.",
+                "To view the statistics of a data source."
+            ],
+            "list": [
+                "Right click a data source and click Statistics"
+            ]
+        }
+    ]
+}

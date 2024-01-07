@@ -1,0 +1,41 @@
+CONFIG: ..\\config\\config.yaml
+KEYS: ..\\config\\keys.yaml
+FOLDERS: ..\\config\\_folder_structure.json
+
+_0_SOURCE: ..\\0_SOURCE
+LINKS: ..\\0_SOURCE\\_links.json
+
+_1_CONTEXT: ..\\1_CONTEXT
+CONTEXT: ..\\1_CONTEXT\\_context.json
+ADD_CONTEXT: ..\\1_CONTEXT\\add_context.txt
+
+_2_AI_TASK: ..\\2_AI_TASK
+TASK: ..\\2_AI_TASK\\_raw_quiz.json
+A_QUIZ: ..\\2_AI_TASK\\_ai_quiz__a.json 
+A_QUIZ_KEY: ..\\2_AI_TASK\\_ai_quiz_key__a.json
+
+_3_AI_CHECK: ..\\3_AI_CHECK
+AI_CHECK: ..\\3_AI_CHECK\\_ai_check.json
+QA_REPORT: ..\\3_AI_CHECK\\_qa_report.json
+B_QUIZ: ..\\3_AI_CHECK\\_ai_quiz__b.json
+B_QUIZ_KEY: ..\\3_AI_CHECK\\_ai_quiz_key__b.json
+
+_4_USER_CHECK: ..\\4_USER_CHECK
+USER_CHECK: ..\\4_USER_CHECK\\human_check.json
+REMARKS: ..\\4_USER_CHECK\\remarks.txt
+C_QUIZ: ..\\4_USER_CHECK\\human_quiz__c.json
+C_QUIZ_KEY: ..\\4_USER_CHECK\\human_quiz_key__c.json
+TYPO_CHECK: ..\\4_USER_CHECK\\_ai_typo_check.json
+
+_5_FINAL_FORMAT: ..\\5_FINAL_FORMAT
+FINAL_QUIZ: ..\\5_FINAL_FORMAT\\_final_quiz.json
+FINAL_QUIZ_KEY: ..\\5_FINAL_FORMAT\\_final_quiz_key.json
+TESTINVITE: ..\\5_FINAL_FORMAT\\_bulk_question_upload__testinvite.json
+
+CONTENT_STORE: ..\\CONTENT_STORE
+STORE_0: ..\\CONTENT_STORE\\_cs_0_source
+STORE_1: ..\\CONTENT_STORE\\_cs_1_context
+STORE_2: ..\\CONTENT_STORE\\_cs_2_ai_task
+STORE_3: ..\\CONTENT_STORE\\_cs_3_ai_check
+STORE_4: ..\\CONTENT_STORE\\_cs_4_user_check
+STORE_5: ..\\CONTENT_STORE\\_cs_5_final_format

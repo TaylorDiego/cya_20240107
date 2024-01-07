@@ -1,0 +1,37 @@
+{
+    "DateTime": "2023-12-27 14:39:48",
+    "URL": "https://support.timextender.com/configure-resources-126/use-amazon-rds-for-sql-server-for-storage-1003",
+    "Keywords": "missing",
+    "Title": "Use Amazon RDS for SQL Server for Storage _ Community",
+    "Author": "JTreadwell",
+    "Text": "Amazon RDS for SQL Server AWS RDS SQL Reference Architecture Note: Lightsail RDS Easy create Configuration = Microsoft SQL Server engine type DB instance identifier Master username Create database Configure settings to allow remote access Open the created database and modify its settings. Connectivity Publicly accessible database port VPC security group Inbound rules Outbound rules   Important: sysadmin Custom  sysadmin Amazon RDS Custom for SQL Server Technical Overview How to Create and Connect to RDS Custom for SQL Server Instance AWSDocs  Setting up your environment for Amazon RDS Custom for SQL Server AWSDocs Working with RDS Custom for SQL Server - Amazon Relational Database Service  Custom Note Custom   Create users inAWS RDS SQL Databasewith the necessary permissions. Create a Data Warehouse instance using the guide below.  ServerName AWS RDS SQL Reference Architecture  ",
+    "Lists": [
+        {
+            "heading": "Configure an AWS RDS SQL Database",
+            "paragraphs": [
+                "To create AWS virtual machine, select the Lightsail option from Console Home:",
+                "To create a database, click on the RDS option from Console Home:",
+                "The easiest way to create the database is by selecting the option \u201cEasy create\u201d",
+                "Configuration = Microsoft SQL Server",
+                "Select the engine type and enter a name for the \u201cDB instance identifier\u201d.",
+                "Enter Master username and Password details.",
+                "Click on \u201cCreate database\u201d button.",
+                "Configure settings to allow remote access",
+                "Open the created database and modify its settings.",
+                "Go to \u201cConnectivity\u201d settings > Additional Configuration >",
+                "Set Public Access to \u201cPublicly accessible\u201d",
+                "Set database port to 1433",
+                "Open the VPC security group and set \u201cInbound rules\u201d and \u201cOutbound rules\u201d to access the database.",
+                "",
+                "",
+                "",
+                "Once your RDS Custom for SQL Server is fully configured, verify the following:"
+            ],
+            "list": [
+                "Connect via SQL Server Management Studio (SSMS) running on a remote machine",
+                "Login via SQL authentication and configure required permissions to create and manage databases. Give admin privileges to the user as needed.",
+                "Test creating a new database and/ or restoring a backup (or bacpac) of a sample SQL database"
+            ]
+        }
+    ]
+}

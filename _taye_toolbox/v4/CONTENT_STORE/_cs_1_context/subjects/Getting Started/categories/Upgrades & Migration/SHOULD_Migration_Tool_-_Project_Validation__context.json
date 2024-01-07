@@ -1,0 +1,121 @@
+{
+    "DateTime": "2023-12-27 14:39:49",
+    "URL": "https://support.timextender.com/upgrades-migration-130/migration-tool-project-validation-1152",
+    "Keywords": "missing",
+    "Title": "Migration Tool - Project Validation _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "This article describes the various objects thatcannot be migrated from version 20.10 to the next generation of TimeXtender. The Migration Tool will not allow these objects to be migrated, and while some of these affected objects can be ignored and themigration process cancontinue, there are other types of objects that cannot be ignored and must be resolved prior to being able to continue on withthe migration. The following outlines the Project Validalidation step in the Migration Tooland how to handle the specific types of objects that cannot be migrated. Next For affected objects thatcan be skipped, the migration tool will displaya warning that highlightsthe affected object. In the example below, there is awarning displayed because the project contains Data Exports, which is something that cannot be migrated. By selecting the checkbox I confirm that the listed items will not be migrated, the affected object will be skipped during the migration process. These objects do not have to be manually changed or deleted prior to continuing on with the migration. The following objects, features, and settingscannot be migrated, but can be skipped during migration, so no further action is required.  The following objects, feature,s and settingscannot be migrated, and cannot be skipped during migration. These itemsmust be manually changed or deleted prior to being able to continue on withthemigration. Delete Time Table Delete External Business Unit A project variable of type \"System\" and value \"Environment Name\" cannot be migrated. For project variables of other types such as Source, Destination, and Contextual Scope, only the value Name can be migrated. Other values for these types of project variables cannot be migrated. Use the following steps to remove a project variable that cannot be migrated. Use the following steps to remove this deprecated setting. Use the following steps to remove this deprecated setting. The following SQL query can be used on the TimeXtender repository database to locate lookup fields that containdeprecated settings: Use the following steps to remove conditional lookups with these deprecated settings The following SQL query can be used on the TimeXtender repository database to locate the conditional lookups that contain thesedeprecated settings. Use the following steps to remove these deprecated settings from field mappings.   The following SQL query can be usedon the TimeXtender repository database to locate the fields that usethe split data movement method. The following SQL query can be usedon the TimeXtender repository database to locate the fields that usethe concatenation data movement method. Use the following steps to remove this deprecated feature. Use the following steps to remove this deprecated setting. Use the following steps to remove this deprecated feature The following SQL query can be usedon the TimeXtender repository database to locate the tables that have the BK Hash Key setting enabled. Delete Data Aggregations The following SQL query can be usedon the TimeXtender repository database to locate the tables that have data aggregations. A project that contains the following deprecated Business Unit data sources cannot be migrated. This type of data source must be deleted and then a new data source must be created for it as outlined below.    only the value Name can be migrated ",
+    "Lists": [
+        {
+            "heading": "Project Variables",
+            "paragraphs": [
+                "A project variable of type \"System\" and value \"Environment Name\" cannot be migrated. For project variables of other types such as Source, Destination, and Contextual Scope, only the value \u201cName\u201d can be migrated. Other values for these types of project variables cannot be migrated. Use the following steps to remove a project variable that cannot be migrated."
+            ],
+            "list": [
+                "Open the Tools menu.",
+                "Select Project Variables.",
+                "Select the relevant variable.",
+                "Clck Delete."
+            ]
+        },
+        {
+            "heading": "Entire Row Hash Key field",
+            "paragraphs": [
+                "Use the following steps to remove this deprecated setting."
+            ],
+            "list": [
+                "Right-click on the table.",
+                "Select Table Settings.",
+                "Select the Miscellaneous tab.",
+                "Select Not Used for the Entire row hash key property",
+                "Click OK"
+            ]
+        },
+        {
+            "heading": "Lookup fields using Partition by as SQL mode",
+            "paragraphs": [
+                "Use the following steps to remove this deprecated setting."
+            ],
+            "list": [
+                "Expand the table that contains the lookup field.",
+                "Right-click on the lookup field and select Edit Lookup Field.",
+                "Change the SQL mode setting to Group by.",
+                "and click OK."
+            ]
+        },
+        {
+            "heading": "Conditional Lookups with Force sub select and Use a temporary table",
+            "paragraphs": [
+                "Use the following steps to remove conditional lookups with these deprecated settings"
+            ],
+            "list": [
+                "Expand the table and then the field that contains the conditional lookup.",
+                "Right-click on the conditional lookup.",
+                "Select Edit Conditional Lookup.",
+                "Deselect the Force sub select checkbox and ensure that either \"Take the first value\" or the \"Take the first non-empty value\" options are selected for the Multiple lookup fields property.",
+                "Click OK."
+            ]
+        },
+        {
+            "heading": "Field Mappings with Concatenation / Split Data Movement Methods",
+            "paragraphs": [
+                "Use the following steps to remove these deprecated settings from field mappings."
+            ],
+            "list": [
+                "Right-click on the field mapping.",
+                "To remove a split, right-click on the mapping and select Delete Split.",
+                "To remove a concatenation, right-click on the mapping and select Delete Concatenation.",
+                "Then remap the field by dragging the field from the source table to the field in the destination table. Ensure that the data movement method for the new mapping is set to Copy."
+            ]
+        },
+        {
+            "heading": "Mapping tables",
+            "paragraphs": [
+                "Use the following steps to remove this deprecated feature."
+            ],
+            "list": [
+                "Expand the relevant Business Unit.",
+                "Expand the Data Mapping node.",
+                "Right-click on the mapping table and select Delete Mapping Table.",
+                "Click OK."
+            ]
+        },
+        {
+            "heading": "Target-based incremental load",
+            "paragraphs": [
+                "Use the following steps to remove this deprecated setting."
+            ],
+            "list": [
+                "Right-click on the relevant table and select Table Settings.",
+                "Select the Data extraction tab.",
+                "Deselect the \"Enable target-based incremental load\" option.",
+                "Click OK."
+            ]
+        },
+        {
+            "heading": "BK Hash Key",
+            "paragraphs": [
+                "Use the following steps to remove this deprecated feature"
+            ],
+            "list": [
+                "Right-click on the relevant table and select Table Settings.",
+                "Select the Performance tab",
+                "Deselect the \"Enable BK hash key\" option.",
+                "Click OK."
+            ]
+        },
+        {
+            "heading": "Navision data source (2.6-4.0)",
+            "paragraphs": [
+                "A project that contains the following deprecated Business Unit data sources cannot be migrated. This type of data source must be deleted and then a new data source must be created for it as outlined below.",
+                ""
+            ],
+            "list": [
+                "Right-click on the data source and select Remove Data Source.",
+                "Expand Adapter Data Sources.",
+                "Right-click on data sources and select Add Dynamics Business Central (NAV) Adapter to setup a new Navision data source to replace the deleted data source. Click on the following article for more information on how to set up this data source.",
+                "Once the new Navision data source has been setup, remap the tables in your Data Warehouse that were mapped to the deleted data source, so that they point to the new data source."
+            ]
+        }
+    ]
+}

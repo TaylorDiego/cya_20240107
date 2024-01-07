@@ -1,0 +1,33 @@
+{
+    "URL": "https://support.timextender.com/executions-jobs-110/execute-powershell-script-as-external-executable-721",
+    "DateTime": "2023-12-14 15:29:05",
+    "Keywords": "No Keywords",
+    "Title": "Execute PowerShell Script as External Executable _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "TimeXtender 6024.1 This article describes how to create, edit and execute a PowerShell Power as an external executable, as well as how to add this executable in an execution package, to allow for a scheduled execution of the PowerShell script. It also covers required permissions for the execution of the script. Check and Update the PowerShell Execution Policies Get current Execution Policy Set current Execution Policy Install the Azure Az PowerShell module | Microsoft Docs Sign Into Azure using Connect-AzAccount Install SqlServer module - modules need to be installed for the User that is running the script. This is typically both developers writing the script and the TimeXtender Execution Service user. For the latter, run PowerShell as theTimeXtender Execution Service user, and then run the following:  The script can be edited by right clicking on the external executable and selecting edit. The Timeout setting can also be changed for the script. If this is set to 0, the timeout is infinite. In order to add the external executable to a execution package. Add or edit an execution package and then drag the external executable to the \"Include Steps\" section. Invoke-ProcessASDatabase Invoke-ProcessDimension Invoke-ProcessPartition Backup-ASDatabase Add-RoleMember Example: Execute an XMLA script via PowerShell, for example to implement row level security based on CUSTOMDATA(). Save the script in a .xmla file. Use the following PowerShell script to execute the XMLA script. In order to execute ODX transfers where you are using Azure Data Factory, as well as execution packages within Data Areas andSemantic Models,as part of the same scheduled job, then add the following script as a PowerShell executable. Keep in mind thatvariables ($TriggerJobsInOrder, $ApiKey, $OcpApimSubscriptionKeyand $BaseUrl) need to be changed for your environment.Please see the below video for more details,  If an error message similar to the following is returned when executing the script, ensure that the user running the script has adequate permissions, as referred to in the prerequisites above. Error: If an error message similar to the following is returned when executing the script, ensure that the user running the script has installed the required module, as referred to in the prerequisites above. In this case, the'Invoke-ProcessASDatabase' cmdlet is part of the SqlServer module which must be installed for the user running the script. Error: If an error message similar to the following is returned when executing the script, ensure that the user running the script has permissions on the database. In this case, the user must be given permissions for the Analysis Services database. In SSMS, right-click on the Analysis Services Server and select Properties. Add the user running the script, under Security. Error: Please could you Tag this article (all KB articles) with the relevant version of TX/ODX as appropriate - I thought for a moment I could do this in v20.10.26 (or even up to .39).  Tagging could make searches more useful too. Thanks. Jon. @jon.catt  Furthermore, we have linked the new features released in each version (from 6024.1 and later) to the relevant KB articles.   The KB articles in this new community will always strive to be up-to-date and aligned with the latest version (i.e. currently 6117.1).  https://legacysupport.timextender.com/hc/en-us/    @RLB @Christian Hauggaard Is it possible to use this technic to refresh a PBI dataset? If yes, can you share an example? @rvgfox  @Christian Hauggaard https://github.com/Azure-Samples/powerbi-powershell/blob/master/manageRefresh.ps1 Login Create an account Enter your username or e-mail address. We'll send you an e-mail with instructions to reset your password. Sorry, we're still checking this file's contents to make sure it's safe to download. Please try again in a few minutes. Sorry, our virus scanner detected that this file isn't safe to download.",
+    "Lists": [
+        {
+            "heading": "Creating and Executing a PowerShell Executable",
+            "paragraphs": [],
+            "list": [
+                "Expand the data warehouse and the underlying data area, and open up the execution pane.",
+                "Right click on the \"External Executables\" folder and select \"Add Execute PowerShell Script Step\"",
+                "Add a PowerShell script.",
+                "Click execute in the top right corner, a message will displayed in the results pane, which will indicate if the script was executed successfully or results in an error. This script executes successfully.",
+                "After creating the PowerShell executable, try to execute it.",
+                "In SSMS you can see the SSAS database has been updated."
+            ]
+        },
+        {
+            "heading": "Change and Overwrite Roles in a SSAS database",
+            "paragraphs": [
+                "Execute an XMLA script via PowerShell, for example to implement row level security based on CUSTOMDATA()."
+            ],
+            "list": [
+                "Go to the properties of the SSAS role in SSMS",
+                "Under Row Filters, create the desired DAX filter on the table based on CUSTOMDATA()",
+                "Script the Role as \"CREATE OR REPLACE To\" in order to generate the XMLA script."
+            ]
+        }
+    ]
+}

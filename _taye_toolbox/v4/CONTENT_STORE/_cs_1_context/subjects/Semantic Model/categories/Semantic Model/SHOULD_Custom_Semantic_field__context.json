@@ -1,0 +1,43 @@
+{
+    "DateTime": "2023-12-27 14:41:44",
+    "URL": "https://support.timextender.com/semantic-model-109/custom-semantic-field-1171",
+    "Keywords": "missing",
+    "Title": "Custom Semantic field _ Community",
+    "Author": "Thomas Lind",
+    "Text": "Semantic tables are part of the semantic model thatcomprises the serving layer in a data warehouse and represents theculmination of all the extraction, transformation, and loading that happens prior to the tables being added to the semantic model. In addition to the data source fields included in the semantic tables, there are also various othertypes of fields that can be added. This article clarifies how to add a custom field to a semantic table.  Custom fields provide a means to presentcontent that is not normally available for a field from a data warehouse instance. Semantic Fields Use the following steps to add a custom field to a table.  Note: Note: Note: Note: Note: Note: The following custom field example merges two fields into one field in theCustomer table. Qlik Sense Tabular Tableau The Tableau endpoint uses plus signs + instead of ampersands & as compared with other endpoints above. Default Only the name field is added above to ensure asetting will be applied.  ",
+    "Lists": [
+        {
+            "heading": "Adding a Custom Field",
+            "paragraphs": [
+                "Use the following steps to add a custom field to a table."
+            ],
+            "list": [
+                "Right-click a table and click Add Custom Field to open the following window.",
+                "In the Name box, enter a name for the field.",
+                "In the Description box, enter a description for the custom field, which may be available in front-end tools.       Note: This setting applies to SSAS Tabular and PowerBI Premium endpoints only.",
+                "In the Data type list, click on the data type to be used for the custom field.       Note: This setting applies to SSAS Tabular and PowerBI Premium endpoints only.",
+                "In the Data format list, click on the data format to be used for the custom field. For some data types, only one data format is available and cannot be changed. Click Customize to customize the data format, e.g. number of decimal places for decimal numbers.       Note: This setting applies to SSAS Tabular and PowerBI Premium endpoints only.",
+                "In the Category list, click on the category to be used for the custom field.        Note: This setting applies to SSAS Tabular and PowerBI Premium endpoints only.",
+                "In the Summarize by list, click on the type of aggregation to be used with the custom field and in front-end applications, e.g. Power BI.       Note: This setting applies to SSAS Tabular and PowerBI Premium endpoints only.",
+                "In the Sort by list, click on the field that contains the values to be used to sort the custom field.        Note: This setting applies to SSAS Tabular and PowerBI Premium endpoints only.",
+                "In the Script box, enter the script that generates the value for the custom field. Since script syntax is not the same for different endpoint types, it is possible to add separate scripts for each type of endpoint. Click on an endpoint type in the Endpoints list to switch between the different endpoint types. Any endpoint type that does not have a specific script will use the Default script. Drag fields from the Available parameters list to the Script pane to use them as parameters in the script. Click Show translation to show the script TimeXtender will deploy to the endpoint."
+            ]
+        },
+        {
+            "heading": "How to set up a custom field",
+            "paragraphs": [
+                "The following custom field example merges two fields into one field in the Customer table.",
+                "Qlik Sense endpoint set up of the custom field."
+            ],
+            "list": [
+                "The Data type is set to Text",
+                "The Data format is set to Text",
+                "The Category is set to \u201cUncategorized\u201d as there is no category is suitable for this custom field.",
+                "The Summarize by option is not available for Qlik and Tableau.",
+                "The Sort by option is not available for Qlik and Tableau.",
+                "The two fields have been dragged into the Script pane from the Available parameters area",
+                "The ampersand \u201c&\u201d character is used to seperate each field as is recommended with Qlik endpoints."
+            ]
+        }
+    ]
+}

@@ -1,0 +1,24 @@
+{
+    "DateTime": "2023-12-27 14:40:04",
+    "URL": "https://support.timextender.com/odx-107/synchronize-objects-1227",
+    "Keywords": "missing",
+    "Title": "Synchronize Objects _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "In TimeXtender, the synchronization of data sources and objects is necessary to ensure that the ODX metadata matches up with that in the data source. Synchronization can be performed either as a task for the entire data source or on specific data source objects. This article describes the difference between the synchronize task and synchronizing objects in an ODX instance, and when to use each feature respectively. The synchronize task on the data source levelsynchronizes the structure of the source with the metadata stored in the ODX. For example, if a column is added in the source, and the ODX is configuredto include all the columns from that data source table,then executing the synchronize task will ensure that the column is also added to the ODX metadata. Furthermore,when the transfer task is subsequentlyexecuted the new column will alsobe included.If a column is renamed in the data source, then executing the synchronize task will ensure that an invalid column name error is not thrown the next time the transfer task is executed. Synchronize objects in the ODXidentifies Data Warehouse instances that are impacted by structural changes in the ODX.For example, if a column is renamed in the source, and the synchronization task has been run, the ODX transfer task will succeed, but theData Warehousetable execution (with a mapping to this field that has undergone the name change) will fail with the following error. In this example, the Name column in the Currency table was renamed to CName. As a result, the Name column no longer exists in the ODX, and the next execution of the table will fail because the mapping of the field has been brokenin the Data Warehouse table. Perform the following steps to resolve this type oferror.  ",
+    "Lists": [
+        {
+            "heading": "Synchronize Objects",
+            "paragraphs": [
+                "Synchronize objects in the ODX identifies Data Warehouse instances that are impacted by structural changes in the ODX. For example, if a column is renamed in the source, and the synchronization task has been run, the ODX transfer task will succeed, but the Data Warehouse table execution (with a mapping to this field that has undergone the name change) will fail with the following error.",
+                "In this example, the \u201cName\u201d column in the Currency table was renamed to \u201cCName\u201d. As a result, the \u201cName\u201d column no longer exists in the ODX, and the next execution of the table will fail because the mapping of the field has been broken in the Data Warehouse table. Perform the following steps to resolve this type of error."
+            ],
+            "list": [
+                "Open the Data Warehouse instance that contains the objects to be synchronized.",
+                "Right-click on the ODX and select Synchronize objects.",
+                "TimeXtender will identify any columns in the Data Warehouse instances that were affected by a change in their field name.",
+                "In the Synchronize window, fix the broken mapping by selecting the new field name from the drop down menu. Click OK.",
+                "Additionally, if the renamed field selected in the Synchronize window has a different data type than the target column, then TimeXtender will suggest a data type for the synchronization. Once selected, the data type of the field in the Data Warehouse table will be updated accordingly. Review the data type change and click OK.  The data type suggestion can also be reviewed by right-clicking on the Data Warehouse data area or table, clicking Advanced, and then selecting Synchronize Data Types."
+            ]
+        }
+    ]
+}

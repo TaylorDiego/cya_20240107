@@ -1,0 +1,50 @@
+{
+    "DateTime": "2023-12-27 14:42:07",
+    "URL": "https://support.timextender.com/timextender-portal-111/user-permissions-1228",
+    "Keywords": "missing",
+    "Title": "User Permissions _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "The TimeXtender Portal is the online administrative website where the following data estate itemscan be created and managed: Users User-Level Permissions Portal user-level permissions The important user-level permissions are as follows: contact person. Use the following steps to amendthe contact person   Use the following steps to add a new user to a company or a customer.  Signing In for the First Time Portal Sign-In Invitations can alwaysbe sent later, should that be needed for any reason, i.e. users that were not initially sent an invitation email. Use the following steps to send the sign-in invitation email toa user in your company. Use the following steps to send the sign-in invitation email toa customer user. If a user did not receive the invitation email or has forgotten their password, company admins can trigger a password reset from within the Portal. The user can also use the \"Forgot your password?\" link on the sign-in page to reset their password. Use the following steps to reset the password for a user at your company. ",
+    "Lists": [
+        {
+            "heading": "User-level Permissions and the Contact Person",
+            "paragraphs": [
+                "In the Portal, a user can be assigned user-level permissions that grant the user access to restricted features and functions. The permissions available may depend on the permissions that are assigned at the company level.",
+                "The important user-level permissions are as follows:"
+            ],
+            "list": [
+                "Company admin: Users with this permission have full access to their company account in the Portal, and the visual queue of a crown icon is displayed next to their name in the user list. Company Admins can edit the company info, add/edit/delete users, and assign user-level permissions. The one restriction placed on Company admins is that they cannot remove the company admin permission from themselves, which is not allowed to help ensure that all companies have at least one admin.",
+                "Customer manager: This permission is only available for partners. A customer manager acts as an administrator for all of the partner's customer companies. While Customer managers can administer their customer companies, then cannot make any changes to their own partner company account.",
+                "Data estate admin: This permissions allows users to manage the instances and data sources that comprise their data estate. Data estate admins can also grant users access to their data estate instances, which is configured in the Portal on the details page for each specific instance. Once granted access, users will be able to open and use the instances in the TimeXtender Desktop."
+            ]
+        },
+        {
+            "heading": "Adding a New User",
+            "paragraphs": [
+                "Use the following steps to add a new user to a company or a customer."
+            ],
+            "list": [
+                "Go to the Users list and click the Add button. Depending on whether the new user is for a company or a customer, use the following steps as appropriate.  To add a user to your own company: Sign in to the Portal as a user with the 'company admin' permission. Then go to Admin > Users and click the Add button. To add a user to a customer: Sign in to the Portal as user that with 'customer manager' permission. Then go to My Customers > Customers and locate the Customer. Click on the Company name to open the customer details page. In the Users list, click the Add button.",
+                "To add a user to your own company: Sign in to the Portal as a user with the 'company admin' permission. Then go to Admin > Users and click the Add button.",
+                "To add a user to a customer: Sign in to the Portal as user that with 'customer manager' permission. Then go to My Customers > Customers and locate the Customer. Click on the Company name to open the customer details page. In the Users list, click the Add button.",
+                "In the Add user dialog, enter the new user's First name, Last name, Email, and Phone (optional).",
+                "Under User permissions, select the appropriate user-level permission.",
+                "(Optional) Uncheck the Send sign in-invitation to user box to create a user that will not be able to sign in to the Portal.",
+                "Click Add."
+            ]
+        },
+        {
+            "heading": "Resetting a User's Password",
+            "paragraphs": [
+                "If a user did not receive the invitation email or has forgotten their password, company admins can trigger a password reset from within the Portal. The user can also use the \"Forgot your password?\" link on the sign-in page to reset their password.",
+                "Use the following steps to reset the password for a user at your company."
+            ],
+            "list": [
+                "Sign in to the Portal as a user with the 'company admin' permission.",
+                "Go to Admin > Users.",
+                "In the User list, click on the user's name.",
+                "Click Reset Password on the user details page."
+            ]
+        }
+    ]
+}

@@ -1,0 +1,31 @@
+KEYS: ..\\config\\keys.yaml
+CONFIG: ..\\config\\config.yaml
+
+0_SOURCE: ..\\0_SOURCE
+LINKS: ..\\0_SOURCE\\links.json
+FOLDERS: ..\\0_SOURCE\\_folder_structure.json
+
+1_CONTEXT: ..\\1_CONTEXT
+CONTEXT: ..\\1_CONTEXT\\_context.json
+ADD_CONTEXT: ..\\1_CONTEXT\\add_context.txt
+
+2_RAW_QUIZ: ..\\2_RAW_QUIZ
+RAW_QUIZ: ..\\2_RAW_QUIZ\\_raw_quiz.json
+
+3_AI_CHECK: ..\\3_AI_CHECK
+AI_QUIZ: ..\\3_AI_CHECK\\_ai_quiz.json #
+AI_ANSWER_KEY: ..\\3_AI_CHECK\\_ai_answer_key.json #
+AI_CHECK: ..\\3_AI_CHECK\\_ai_check.json
+QA_REPORT: ..\\3_AI_CHECK\\_qa_report.json
+
+4_HUMAN_CHECK: ..\\4_HUMAN_CHECK
+HUMAN_QUIZ: ..\\4_HUMAN_CHECK\\human_quiz.json #
+HUMAN_ANSWER_KEY: ..\\4_HUMAN_CHECK\\human_answer_key.json #
+HUMAN_CHECK: ..\\4_HUMAN_CHECK\\human_check.json
+FINAL_CHECK: ..\\4_HUMAN_CHECK\\_ai_final_check.json # 
+REMARKS: ..\\4_HUMAN_CHECK\\remarks.txt
+
+5_FINAL_FORMAT: ..\\5_FINAL_FORMAT
+FINAL_QUIZ: ..\\5_FINAL_FORMAT\\_final_quiz.json #
+FINAL_ANSWER_KEY: ..\\5_FINAL_FORMAT\\_final_answer_key.json #
+TESTINVITE: ..\\5_FINAL_FORMAT\\_bulk_question_upload__testinvite.json

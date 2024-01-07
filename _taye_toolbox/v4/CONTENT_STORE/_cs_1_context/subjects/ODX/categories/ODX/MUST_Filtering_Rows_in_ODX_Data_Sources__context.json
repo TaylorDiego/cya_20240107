@@ -1,0 +1,25 @@
+{
+    "DateTime": "2023-12-27 14:40:06",
+    "URL": "https://support.timextender.com/odx-107/filtering-rows-in-odx-data-sources-1451",
+    "Keywords": "missing",
+    "Title": "Filtering Rows in ODX Data Sources _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "All rows of data are transferred from a data source table to ODX storage unless you add a row filter rule that matches the table. The rule defines the criteria a row needs to have to be included, e.g. an ID over a specific number or a timestamp later than a specific date. To filter out rows of data from transfers, follow the steps below.  ",
+    "Lists": [
+        {
+            "heading": "Adding a Row Filter Rule",
+            "paragraphs": [
+                "The rule defines the criteria a row needs to have to be included, e.g. an ID over a specific number or a timestamp later than a specific date.",
+                "To filter out rows of data from transfers, follow the steps below."
+            ],
+            "list": [
+                "Open the relevant ODX instance. Right-click the data source and click Filter Rows...",
+                "Click Add... to add a new rule.",
+                "If you want the rule to apply to specific tables, enter the schema and/or table names that they need to match. In the Schema/Table list, click on the operator you want to use and type text to match in the box.",
+                "Click Add to add a new column and value combination. In the Column list, click on the operator you want to use and type the text to match in the box. In the Value list, click on the comparison you want to use and enter a value in the box.",
+                "Click OK to add the rule.",
+                "(Optional) In the Filter Rows window, click Refresh to see a list of affected tables. Click Preview to open the query tool with a preset query to see what rows will be transferred from a specific table."
+            ]
+        }
+    ]
+}

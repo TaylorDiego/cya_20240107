@@ -1,0 +1,20 @@
+{
+    "DateTime": "2023-12-27 14:40:20",
+    "URL": "https://support.timextender.com/data-warehouse-108/simple-mode-951",
+    "Keywords": "missing",
+    "Title": "Simple mode _ Community",
+    "Author": "missing",
+    "Text": "Simple mode is a setting aimed at maximizing performance when you need to copy large amounts of data to create an exact copy. When a table is in simple mode, everything but the most basic functionality is disabled: data area To enable simple mode for a data area A table inherits the simple mode setting from the data area. To enable simple mode data area Simple mode Enabled  ",
+    "Lists": [
+        {
+            "heading": "Simple Mode",
+            "paragraphs": [
+                "Simple mode is a setting aimed at maximizing performance when you need to copy large amounts of data to create an exact copy. When a table is in simple mode, everything but the most basic functionality is disabled:"
+            ],
+            "list": [
+                "Tables in simple mode do not support field transformations, field validations, conditional lookup fields.",
+                "Tables in simple mode only have the valid instance of the table unless incremental load is enabled."
+            ]
+        }
+    ]
+}

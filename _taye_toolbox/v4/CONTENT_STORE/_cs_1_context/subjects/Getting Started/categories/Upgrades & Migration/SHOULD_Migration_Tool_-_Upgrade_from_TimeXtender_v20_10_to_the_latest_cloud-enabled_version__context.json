@@ -1,0 +1,56 @@
+{
+    "DateTime": "2023-12-27 14:39:52",
+    "URL": "https://support.timextender.com/upgrades-migration-130/migration-tool-upgrade-from-timextender-v20-10-to-the-latest-cloud-enabled-version-1150",
+    "Keywords": "missing",
+    "Title": "Migration Tool - Upgrade from TimeXtender v20.10 to the latest cloud-enabled version _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "TimeXtenderMigration Tool The latest version of TimeXtender is Cloud-enabled for significantly improved scalability and usability. Some features only available in TimeXtender SaaS include: The new SaaS version of TimeXtender differs significantlyfrom v20.10 and below. Some features from the older version are no longer present, such as: We strongly encourage you toreview the release notes and test thoroughly before upgrading to understand the changes and the potential impact on your operations. To run theMigration Tool, you must first create atarget instancesand data sources to match your old environment Add and Configure Instances The number of instances and data sources that need to be setup depends on the project that is being migrated. For example, if you have a project in version 20.10 that contains 5 semantic models, 1 Business Unit, 1 ODX,and a total of 8 data sources between the ODX and the business units (4 data sources in Business Unit and 4 data sources in ODX), then you will need to create 1 MDW instance, 5 SSL instances, 1 ODX instance, and all 8 data sources in the TX Portalbefore attempting to run the migration tool.    Hi Christian, We're excited to get to work using the new migration tool! I have a couple of questions about the database used for storage in version 20.10 and the database used for storage in the destination instance: Thanks in advance, Andrew - E-mergo Hi Christian, Good news the migrationtool is available now. Another prerequisite is to upgrade the legacy version to version 20.10.45 (or higher if newer versions are released)so the migration tool becomes available in the Tools menu. Might be good to add that where the prerequisites are mentioned. Greetings, Roy Hi For making it easy to know what you need to do I made a checklist. Initially it was for internal use, but it can be used by everyone who is in the process of doing a migration. You will need to upgrade to the newest version of LTS (Long Time Support) before doing this and that is also not part of this guide. ",
+    "Lists": [
+        {
+            "heading": "Benefits",
+            "paragraphs": [
+                "The latest version of TimeXtender is Cloud-enabled for significantly improved scalability and usability. Some features only available in TimeXtender SaaS include:"
+            ],
+            "list": [
+                "No need to host project repositories - TimeXtender SaaS is powered by fully managed cloud instances.",
+                "Goodbye License Keys and Client Secrets - TimeXtender now supports user sign-in and granular user permission management.",
+                "Simplified Multiple-Environment management & transfer in the portal, including the ODX.",
+                "Cloud-based Data Source connection management - Admins can now create and share access to data sources without passing around passwords.",
+                "Run PowerShell scripts in Execution Packages - Unlock significantly automation capabilities within Azure through PowerShell.",
+                "Support for Snowflake as a Data Warehouse target storage.",
+                "And so much more, see original release notes here:"
+            ]
+        },
+        {
+            "heading": "Please Read First",
+            "paragraphs": [
+                "The new SaaS version of TimeXtender differs significantly from v20.10 and below. Some features from the older version are no longer present, such as:"
+            ],
+            "list": [
+                "Business Units (These can be converted to a DWH using this tool)",
+                "Multidimensional OLAP Cubes",
+                "Project Variables",
+                "External SQL Connection"
+            ]
+        },
+        {
+            "heading": "Using the Migration Tool",
+            "paragraphs": [],
+            "list": [
+                "Open the project to be migrated in version 20.10",
+                "Under Tools, select Migration Tool",
+                "Read through the \u201cGet Started with our Migration Wizard\u201d guidelines and click Next.",
+                "The project will be validated to see if it's ready to be migrated or if further steps are required before migrating. As described below, there are two types of issues that may be encountered during Project Validation. Click on Project Validation to open the KB article that has more information on the different types of warnings and errors that may arise during Project Validation. Errors - these need to be handled before the project can be migrated (e.g. a deprecated feature still in use as shown in the image above) Warnings - these highlight features that are not supported in the new cloud-enabled version of TimeXtender and, as a result, these features cannot be migrated. However no further action is required, and the project is ready to be migrated despite the warnings, since these features can be skipped (e.g. Data Export in the example below)",
+                "Errors - these need to be handled before the project can be migrated (e.g. a deprecated feature still in use as shown in the image above)",
+                "Warnings - these highlight features that are not supported in the new cloud-enabled version of TimeXtender and, as a result, these features cannot be migrated. However no further action is required, and the project is ready to be migrated despite the warnings, since these features can be skipped (e.g. Data Export in the example below)",
+                "Once the Project Validation completes with no errors, select the Confirm checkbox to accept any remaining warnings, and then select Next.",
+                "Click the button to sign in using your credentials to the TimeXtender Portal. Click Next.",
+                "Map your Project into a Data Warehouse instance and map your semantic models into SSL instances by selecting Destination instances from the drop-downs. If the name of your semantic model and your SSL instance is the same, the migration tool will map them automatically.",
+                "Click Validate, which will check to ensure that the same destination instance is not selected twice and also validate that the project is mapped into a Data Warehouse instance. Once validation is complete, click Next.",
+                "Input your ODX client secret and then click Connect. Select the ODX project and click Next.",
+                "Map the data sources from Business Units and the version 20.10 ODX to the new data sources created in the Portal by selecting them from the dropdowns. If the name of the data source in the project matches the name of the data source created in the portal, then the migration tool will automatically map them.",
+                "Review the list of instances and data sources that will be migrated. Also review the list of features in the project that will be skipped during migration. Once the review is complete and all is determined to be acceptable, select the Confirm checkbox and click Migrate."
+            ]
+        }
+    ]
+}

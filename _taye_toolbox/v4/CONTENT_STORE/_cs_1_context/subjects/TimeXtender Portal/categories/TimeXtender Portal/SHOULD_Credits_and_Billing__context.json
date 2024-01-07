@@ -1,0 +1,9 @@
+{
+    "DateTime": "2023-12-27 14:42:01",
+    "URL": "https://support.timextender.com/timextender-portal-111/credits-and-billing-720",
+    "Keywords": "missing",
+    "Title": "Credits and Billing _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "TimeXtender 6024.1 TimeXtender Portal TimeXtender Portal Admin, Credits and billing This page shows the current credit balance, and gives a monthly overview of usage. Once credits have been added, they will be shown in the credit balance. The monthly overview table shows the number of ODX, Data Warehouse and Semantic Model Instances. The Total column in the monthly overview table shows the total number of credits used throughout the month.At the end of each day, usage for the day is deducted from your balance, based on the number of instances that have been setup. If more credits are consumed, than those available, the creditbalance becomes negative, and you will be invoiced at the end of your billing cycle. Credits and billing Credits and billing credit balance  ",
+    "Lists": []
+}

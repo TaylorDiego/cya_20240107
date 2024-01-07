@@ -1,0 +1,104 @@
+{
+    "DateTime": "2023-12-27 14:41:28",
+    "URL": "https://support.timextender.com/data-warehouse-108/conditional-lookup-fields-1116",
+    "Keywords": "missing",
+    "Title": "Conditional Lookup Fields _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "Creating and Using Conditional Lookup Fields in TimeXtender Conditional lookup fields are used to look up values from a field in another table in the same data area within a Data Warehouse instance. An example would be adding a field from adimension table to the fact table via a key field that joins the two tables. Drag the field to be looked up (i.e. AccountNumber) from the source tableto the destination table.  Depending on the existing joins and relations, the following options will be available when creating the lookup: Warning: The following two GIFs show the processadding a relationby first dragging the CustomerID field from the Customer table to the Order table. After the field and its relation have been deployed in the Order table,then the conditional lookup field can be added. Since the conditional lookup field is being added to a table that already hasan existing relation, then the a window will appear with the following three options that are available for the join: Note:  Add Conditional Lookup Field.  A conditional lookup field contains a lookup field for each source field that is apotential source for the eventual value of the conditional lookup field. Creating a new conditional lookup field will automatically add a new lookup field as shown below. A conditional lookup field can look up values frommore than one source field, andconditions can be configured to calculate which source value to use forthe lookupvalue. As an example, a company may have may than one CRM system online at the same time. There is anew CRM system as well as a legacy CRM system that are both availalbeduring the transition period In this scenario, the customers AccountNumber maybe sourced from one of two different tables and there is a specified condition to ensure the appropriate value is selected. Use the following steps to add an additionallookup field to an existing conditional lookup.   The Lookup Fields section will now contain two source lookup fields. The next needed step is to add in conditions that will be used to determine which value is used as the source value, and the following section explains creating conditionsindetail. Lookup Fields Each lookup field can be configured with conditions that must first evaluate to true in order for the lookup field value to be used. Examples of lookup conditions: Conditions must also be used to determine which lookup value to usewhen there aremultiple source lookup fields. Bydefault, the first lookup field where the condition evaluates to true will be used, and this can be the caseeven when the value returned is NULL, or no matching records are found. If no conditions are specified, then the first lookup field will always be used and any subsequent lookup fields will be ignored. Use the following steps to add a condition to a lookup field. Continuing theexample above, where two lookups have been created for theAccountNumber(one from the Customer table and another from the NewCustomers table), conditions need to be added to each lookup field to determinewhen to use the value from that field.The CustomerIDs in the two CRM systems do not overlap, so conditions can be added to specify that the value will besourced from the Old CRMCustomer table for any CustomerIDs that are less than1,000, and sourced from the New CRM Customers table for any CustomerIDs that are greater than or equal to 1,000. More complex conditions can be added using the custom condition operator that allows usersto script the condition manually. For example, the above condition can be scripted out manually using the following steps: All conditional lookup fields require at least one join exist or be created between the source and destination tables, since the joinis the means by which the lookup of the value is made.For example, when looking up the value ofthe CustomerName field in the Customers table, a join would need to be created that matches the CustomerID field that exists in both tables. Note: To add a join to a lookup field, follow the steps below:  Note: When creating a conditional lookup field from a history-enabled table, a condition must be configuredthat specifiesthedate to use whenlooking upthe appropriate record. The following window will appear that prompts for this date condition onhistory-enabled tables. The following options are available: @Christian Hauggaard Whats happend if I select None in the Operator field: It retrieves the value it therere only one based in the relationship? @rvgfox Here is a Max operator in the data cleansing procedure. If I use the None it will be a straight equal.So you use it when there is only one value that fits the join. However, I was told that if there was more than one option that fits it would default to Maximum. There is some info in our product in the performance recommendations menu.  So essentially it is an option that is supposed to improve performance when you do lookups. @Thomas Lind ",
+    "Lists": [
+        {
+            "heading": "Adding a Conditional Lookup Field",
+            "paragraphs": [
+                "Drag the field to be looked up (i.e. AccountNumber) from the source table to the destination table.",
+                "",
+                "Depending on the existing joins and relations, the following options will be available when creating the lookup:"
+            ],
+            "list": [
+                "If the source and destination tables do not have any relationships that have already been established between them, and there are no conditional lookup fields that have been added via a join between the two tables, then the Add Join window will appear so that the necessary join can be created. This is the scenario shown in the two examples above. See the Adding a Join to a Conditional Lookup Field section below for more information on adding a join and joins in general.",
+                "If table relations or joins have already been established between the source and destination tables, then a different window will appear prompting the user to select whether to use an existing join or to create a new one, with the specific options available as follows: Use default relation instead of joins: The conditional lookup field will use the default relation between the two tables as a join. This option is only available if a relation already exists between source and destination tables. The join icon will display as \u201cread-only\u201d when it is set to use the default relation.       Warning: Use this option with care. The conditional lookup field will fail if you delete all relations between the source and destination tables, and may produce different values if the default relation is amended or changed in some way.       Add new joins: opens the Add Join window where a new join can be established for the lookup to use. Copy joins from: creates a new join that is based on an existing relation or conditional lookup field.",
+                "Use default relation instead of joins: The conditional lookup field will use the default relation between the two tables as a join. This option is only available if a relation already exists between source and destination tables. The join icon will display as \u201cread-only\u201d when it is set to use the default relation.       Warning: Use this option with care. The conditional lookup field will fail if you delete all relations between the source and destination tables, and may produce different values if the default relation is amended or changed in some way.",
+                "Add new joins: opens the Add Join window where a new join can be established for the lookup to use.",
+                "Copy joins from: creates a new join that is based on an existing relation or conditional lookup field."
+            ]
+        },
+        {
+            "heading": "Edit a Conditional Lookup Field",
+            "paragraphs": [],
+            "list": [
+                "Right-click on the conditional lookup field and select Edit Conditional Lookup",
+                "The following menu is displayed In the Name field, enter a name for the lookup field. Select Use raw values to perform the lookup on the raw values in the source table, instead using the values from the Valid table, which would preclude any transformations and other cleansing tasks that might be performed on the data. Lookup values are always inserted into the raw destination table, and this setting does not affect that. Select Don't refresh data type to set the data type of the lookup field manually. By default, TimeXtender will set the data type of the conditional lookup field to the data type of the first source field referenced by lookup. However, if the is more than one source field, then that data type may not always be correct. This option allows users to right-click the conditional lookup field and click Edit Data Type to amend the data type.  In the Multiple lookup fields list, select what value to be used when the new field contains more than one lookup field. The lookup fields are evaluated in the same order as they appear in the tree, and how a match is determined based on the selected evaluation setting:  Take the first value: The value of the conditional lookup field will be the value of the first lookup field with a condition that evaluates to true. Take the first non-empty value: The value of the conditional lookup field will be the value of the first lookup field with a condition that evaluates to true and is not empty.",
+                "In the Name field, enter a name for the lookup field.",
+                "Select Use raw values to perform the lookup on the raw values in the source table, instead using the values from the Valid table, which would preclude any transformations and other cleansing tasks that might be performed on the data. Lookup values are always inserted into the raw destination table, and this setting does not affect that.",
+                "Select Don't refresh data type to set the data type of the lookup field manually. By default, TimeXtender will set the data type of the conditional lookup field to the data type of the first source field referenced by lookup. However, if the is more than one source field, then that data type may not always be correct. This option allows users to right-click the conditional lookup field and click Edit Data Type to amend the data type.",
+                "In the Multiple lookup fields list, select what value to be used when the new field contains more than one lookup field. The lookup fields are evaluated in the same order as they appear in the tree, and how a match is determined based on the selected evaluation setting:  Take the first value: The value of the conditional lookup field will be the value of the first lookup field with a condition that evaluates to true. Take the first non-empty value: The value of the conditional lookup field will be the value of the first lookup field with a condition that evaluates to true and is not empty.",
+                "Take the first value: The value of the conditional lookup field will be the value of the first lookup field with a condition that evaluates to true.",
+                "Take the first non-empty value: The value of the conditional lookup field will be the value of the first lookup field with a condition that evaluates to true and is not empty."
+            ]
+        },
+        {
+            "heading": "Adding another Lookup Field to an existing Conditional Lookup",
+            "paragraphs": [
+                "A conditional lookup field contains a lookup field for each source field that is a potential source for the eventual value of the conditional lookup field. Creating a new conditional lookup field will automatically add a new lookup field as shown below.",
+                "A conditional lookup field can look up values from more than one source field, and conditions can be configured to calculate which source value to use for the lookup value. As an example, a company may have may than one CRM system online at the same time. There is a new CRM system as well as a legacy CRM system that are both availalbe during the transition period In this scenario, the customer's \u201cAccountNumber\u201d may be sourced from one of two different tables and there is a specified condition to ensure the appropriate value is selected.",
+                "Use the following steps to add an additional lookup field to an existing conditional lookup."
+            ],
+            "list": [
+                "Expand the conditional lookup field, right-click Lookup Fields and click Add Lookup Field.  Alternatively, drag a field from a table to Lookup Fields under the conditional lookup field. This pre-fills some of the settings in the Add Lookup Field window that appears.",
+                "In the Name field, type a name for the field.",
+                "In the Table list, select the table containing the field you want to use.",
+                "In the Field list, select the field you want to use.",
+                "In the Operator list, specify the type of aggregate function that will be used to scale a range of values into a single value, should this be needed. Select from one of the following aggregate function options: Top: Returns the value from the first record that matches the join criteria. Selecting Top will also open a Sorting node for the list order, which can be important to ensure the appropriate value is at the top of the list. Right-click the Sorting node and click Add Sorting to define the sort order of the source table values. Sum: Returns a sum of all the values that match the join criteria. This function only works on numeric values. Null values are ignored. Count: Returns a count of all the values that match the join criteria. Null values are ignored. Maximum: Returns the highest value of the values that match the join criteria. For strings, it will find the highest value in the collating sequence. Null values are ignored. Minimum: Returns the lowest value of the values that match the join criteria. For strings, it will find the lowest value in the collating sequence. Null values are ignored. Average: Returns the average value of the values that matches the join criteria. This function only works on numeric values. Null values are ignored. None",
+                "Top: Returns the value from the first record that matches the join criteria. Selecting Top will also open a Sorting node for the list order, which can be important to ensure the appropriate value is at the top of the list. Right-click the Sorting node and click Add Sorting to define the sort order of the source table values.",
+                "Sum: Returns a sum of all the values that match the join criteria. This function only works on numeric values. Null values are ignored.",
+                "Count: Returns a count of all the values that match the join criteria. Null values are ignored.",
+                "Maximum: Returns the highest value of the values that match the join criteria. For strings, it will find the highest value in the collating sequence. Null values are ignored.",
+                "Minimum: Returns the lowest value of the values that match the join criteria. For strings, it will find the lowest value in the collating sequence. Null values are ignored.",
+                "Average: Returns the average value of the values that matches the join criteria. This function only works on numeric values. Null values are ignored.",
+                "None",
+                "Click OK.",
+                "For the join that the lookup will use, select from one of the following three options and then click OK.   Use default relation instead of joins. Add new joins Copy joins from",
+                "Use default relation instead of joins.",
+                "Add new joins",
+                "Copy joins from"
+            ]
+        },
+        {
+            "heading": "Adding Conditions to Lookup Fields",
+            "paragraphs": [
+                "Each lookup field can be configured with conditions that must first evaluate to true in order for the lookup field value to be used. Examples of lookup conditions:"
+            ],
+            "list": [
+                "Only accept related values when a specified field in the destination table contains a certain value.",
+                "Apply an aggregate function to scale a range of values."
+            ]
+        },
+        {
+            "heading": "Adding a Join to a Conditional Lookup Field",
+            "paragraphs": [
+                "All conditional lookup fields require at least one join exist or be created between the source and destination tables, since the join is the means by which the lookup of the value is made. For example, when looking up the value of the \u201cCustomerName\u201d field in the Customers table, a join would need to be created that matches the CustomerID field that exists in both tables.",
+                "To add a join to a lookup field, follow the steps below:"
+            ],
+            "list": [
+                "Expand the lookup field, right-click Joins, and then select Add Join.",
+                "In the Join Column list, select the field from the source table to be used in the join for the lookup.",
+                "In the Operator field, specify how to relate the source join field, to either a join field in the destination table or a fixed value.",
+                "Select Field or Fixed Value as the Value Type to specify the destination side of the comparison. The Value box will update itself accordingly and a selection can be made as follows:  For \u201cField\u201d value type, select the relevant field in the Value list. For \u201cFixed Value\u201d, enter a value in the Value box.",
+                "For \u201cField\u201d value type, select the relevant field in the Value list.",
+                "For \u201cFixed Value\u201d, enter a value in the Value box.",
+                "Click OK to add the join and close the window, or +1 to create another join."
+            ]
+        },
+        {
+            "heading": "Adding a Conditional Lookup Field from a History Table",
+            "paragraphs": [
+                "When creating a conditional lookup field from a history-enabled table, a condition must be configured that specifies the date to use when looking up the appropriate record. The following window will appear that prompts for this date condition on history-enabled tables.",
+                "The following options are available:"
+            ],
+            "list": [
+                "Use this field: Select a date field on the destination table. The conditions will specify that the record should be the one valid on that date. Use this option when the conditional lookup should return the account number value at the time the order was created (OrderDate) or last modified (ModifiedDate).",
+                "Use the current record: the record that is marked as current will be the one selected. Use this option to return the account number that is current and most up-to-date.",
+                "I will set up any conditions myself: TimeXtender will not set up any conditions."
+            ]
+        }
+    ]
+}

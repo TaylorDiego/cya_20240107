@@ -1,0 +1,61 @@
+{
+    "DateTime": "2023-12-27 14:39:23",
+    "URL": "https://support.timextender.com/reference-architectures-125/aws-rds-sql-reference-architecture-1000",
+    "Keywords": "missing",
+    "Title": "AWS RDS SQL Reference Architecture _ Community",
+    "Author": "JTreadwell",
+    "Text": "To prepare your TimeXtender environment in AWS, here are the steps we recommend. To serve the TimeXtender application in AWS, we recommend using an AWS EC2 instance (Virtual Machine), sized according to your solution's requirements. Guide: Amazon EC2 Instance Types - Amazon Web Services Considerations: Recommended EC2 (VM) specs for moderate workloads:  t2.2xlarge | 8 | 81 | 32 | EBS-Only | Moderate AWS RDS SQL Database may be used for the data warehouse storage. Guide: Use Amazon RDS for SQL Server for Storage Considerations: Recommended SQL server sizing: AWS RDS SQL Database may be used for the data warehouse storage. Guide: Use Amazon RDS for SQL Server for Storage Considerations: Recommended SQL server sizing: Balancing cost and performance requires monitoring and forecasting of your services and needs. Guide: AWS Pricing Calculator Considerations: Note: does not include ",
+    "Lists": [
+        {
+            "heading": "Create Application Server - AWS VM",
+            "paragraphs": [
+                "To serve the TimeXtender application in AWS, we recommend using an AWS EC2 instance (Virtual Machine), sized according to your solution's requirements.",
+                "Guide:   Amazon EC2 Instance Types - Amazon Web Services",
+                "Considerations:",
+                "Recommended EC2 (VM) specs for moderate workloads:",
+                "t2.xlarge | 4 vCPU | 54 CPU Credits / hour | 16 Mem (GiB) | EBS-Only Storage | Moderate Network PerformanceOR",
+                "t2.2xlarge | 8 | 81 | 32 | EBS-Only | Moderate"
+            ],
+            "list": [
+                "This VM will host the below services, and must remain running for TimeXtender to function ODX Server Service Execution Server Configuration Service",
+                "ODX Server Service",
+                "Execution Server Configuration Service"
+            ]
+        },
+        {
+            "heading": "Create ODX Storage - Amazon RDS for SQL Server",
+            "paragraphs": [
+                "AWS RDS SQL Database may be used for the data warehouse storage.",
+                "Guide:  Use Amazon RDS for SQL Server for Storage",
+                "Considerations:",
+                "Recommended SQL server sizing:"
+            ],
+            "list": [
+                "RDS Custom SQL Server instance: m5.large | 2 vCPU | 8 Memory (GiB) | EBS-Only Instance Storage (GB) | Up to 10 Network Bandwidth (Gbps) | Up to 4,750 EBS Bandwidth (Mbps) This is sufficient for small size databases."
+            ]
+        },
+        {
+            "heading": "Create MDW Storage - Amazon RDS for SQL Server",
+            "paragraphs": [
+                "AWS RDS SQL Database may be used for the data warehouse storage.",
+                "Guide:  Use Amazon RDS for SQL Server for Storage",
+                "Considerations:",
+                "Recommended SQL server sizing:"
+            ],
+            "list": [
+                "RDS Custom SQL Server instance: m5.large | 2 vCPU | 8 Memory (GiB) | EBS-Only Instance Storage (GB) | Up to 10 Network Bandwidth (Gbps) | Up to 4,750 EBS Bandwidth (Mbps) This is sufficient for small size databases."
+            ]
+        },
+        {
+            "heading": "Estimate AWS Costs",
+            "paragraphs": [
+                "Balancing cost and performance requires monitoring and forecasting of your services and needs.",
+                "Guide: AWS Pricing Calculator",
+                "Considerations:"
+            ],
+            "list": [
+                "AWS provides a pricing calculator to help you estimate your costs for various configurations"
+            ]
+        }
+    ]
+}

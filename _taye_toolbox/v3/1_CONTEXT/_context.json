@@ -1,0 +1,69 @@
+{
+    "MANUAL_TITLE": "SQL Snippets",
+    "MANUAL_TEXT": "\nSQL Snippets\n\n    11 months ago\n    0 replies\n    575 views\n\nSQL Snippets\nChristian Hauggaard\nRank\nUserlevel 5\nBadge +5\n\n    Christian Hauggaard\n    Community Manager\n    523 replies\n\nSQL snippets are small pieces of SQL code that can be used and reused throughout an instance to speed up development. SQL Snippets can be used when applying Field level transformations. They can also be applied in Views, Stored procedures, User Defined functions, as well as Script Actions.\nAdd a Snippet\n\n    Under Tools, select Snippets\n    Click Add\n    Provide a Name, Description and Formula for the snippet. Highlight the parameter in the formula and click Add Parameter\n    Under Parameters, change the Type to match what the parameter represents. You have the following options:\n        Table\n        Field\n        Database\n        User Defined Function\n        Stored Procedure\n        Value\n    Click OK\n\nUsing a SQL Snippet\n\nApply the Snippet using one of the following methods which may depending on where or how the snippet is being used.\n\nTo use a SQL snippet in a field transformation.\n\n    Expand the Scripts folder\n    Right-click the field.\n    Select Add SQL Snippet Transformation. \n    Select the snippet from the list that appears on the right.\n\n \n\nTo use a SQL snippet as a stored procedure\n\n    Expand the Scripts folder.\n    Right-click Stored Procedures, and then select Add Snippet Stored Procedure.\n    Select the snippet from the list that appears on the right. \n\nTo use a SQL snippet as a user defined function:\n\n    Expand the Scripts folder.\n    Right-click the User Defined Function folder and then select Add Snippet User Defined Function.\n    Select the snippet from the list that appears on the right. \n\nTo use a SQL snippet as a custom step:\n\n    Expand the Scripts folder.\n    Right-click the Script Actions folder and then select Add Snippet Custom Step.\n    Select the snippet from the list that appears on the right. \n\nTo use a SQL snippet as a view:\n\n    Right-click the Views folder and then select Add Snippet View.\n    Select the snippet from the list that appears on the right. \n\n    Map the available fields to the parameters in the snippet. Drag the field(s) from the list on the right and drop the field on the Object Name/Value column for the relevant variable. The Object Name/Value column and Variant column will populate automatically\n\n    Click OK\n\nEdit or Delete a Snippet\n\n Under Tools, select Snippets. Select the snippet and click Edit or Delete\nShow Snippet Usage\n\nUnder Tools, select Snippets. Select the snippet and click Show Usage\nTroubleshooting\n\nIf the Snippet is returning NULL values, for example in a custom transformation, and the table where the snippet is being applied is an incremental table, perform a full load to ensure that values are updated for the snippet.\nExample Snippets\n\nAttached to this post you will find some SQL snippets for use in TimeXtender. Please note that they are provided as-is and with no guarantee that they will receive updates or work in all future versions of the software. Please be aware that it is the content of the individual SQL snippet that determines its suitable usage.\n\nIn the attached XML file you will find the following snippets:\n\nData and Time:\n\n    Current date - First date of future year\n    Current date - First date of last year\n    Current date - First date of month\n    Current date - First date of previous year\n    Current date - First date of year\n    Current date - Last date of month\n    DateDiff (variable end date)\n    DateDiff (fixed end date)\n    DateKey: Converts a datetime formatted field into an integer field for use as a better performing foreign key.\n    First date of future year\n    First date of last year\n    First date of month\n    First date of next year\n    First date of previous year\n    First date of year\n    Last date of month\n    Time Table: Script action that populates a custom time dimension with 15 minute increments \n\nConcatenate:\n\n    Concatenate 2 Fields: Concatenates two fields separated by a space.\n    Concatenate 3 Fields: Concatenates three fields separated by a space. \n\n",
+    "DateTime": "2023-12-15 11:40:30",
+    "URL": "https://support.timextender.com/data-warehouse-108/sql-snippets-729",
+    "Keywords": "missing",
+    "Title": "SQL Snippets _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": " SQL snippetsare small pieces of SQL code that can be used and reusedthroughout an instance to speed up development. SQL Snippets can be used when applying Field level transformations. They can also be applied in Views, Stored procedures, User Defined functions, as well as Script Actions. Apply the Snippet using one of the following methods which may depending on where or how the snippet is being used. To use a SQL snippet in a field transformation.  To use a SQL snippet as a stored procedure To use a SQL snippet as a user defined function: To use a SQL snippet as a custom step: To use a SQL snippet as a view: Map the available fields to the parameters in the snippet. Drag the field(s) from the list on the right and drop the field on theObject Name/Valuecolumn for the relevant variable. TheObject Name/Valuecolumn andVariantcolumn will populate automatically OK Edit  Delete Show Usage If the Snippet is returning NULL values, for example in a custom transformation, and the table where the snippet is being applied is an incremental table, perform a full load to ensure that values are updated for the snippet. Attached to this post you will find some SQL snippets for use in TimeXtender. Please note that they are provided as-is and with no guarantee that they will receive updates or work in all future versions of the software. Please be aware that it is the content of the individual SQL snippet that determines its suitable usage. In the attached XML file you will find the following snippets: Data and Time Concatenate: ",
+    "Lists": [
+        {
+            "heading": "Add a Snippet",
+            "paragraphs": [],
+            "list": [
+                "Under Tools, select Snippets",
+                "Click Add",
+                "Provide a Name, Description and Formula for the snippet. Highlight the parameter in the formula and click Add Parameter",
+                "Under Parameters, change the Type to match what the parameter represents. You have the following options: Table Field Database User Defined Function Stored Procedure Value",
+                "Table",
+                "Field",
+                "Database",
+                "User Defined Function",
+                "Stored Procedure",
+                "Value",
+                "Click OK"
+            ]
+        },
+        {
+            "heading": "Using a SQL Snippet",
+            "paragraphs": [
+                "Apply the Snippet using one of the following methods which may depending on where or how the snippet is being used.",
+                "To use a SQL snippet in a field transformation."
+            ],
+            "list": [
+                "Expand the Scripts folder",
+                "Right-click the field.",
+                "Select Add SQL Snippet Transformation.",
+                "Select the snippet from the list that appears on the right."
+            ]
+        },
+        {
+            "heading": "Example Snippets",
+            "paragraphs": [
+                "Attached to this post you will find some SQL snippets for use in TimeXtender. Please note that they are provided as-is and with no guarantee that they will receive updates or work in all future versions of the software. Please be aware that it is the content of the individual SQL snippet that determines its suitable usage.",
+                "In the attached XML file you will find the following snippets:",
+                "Data and Time:"
+            ],
+            "list": [
+                "Current date - First date of future year",
+                "Current date - First date of last year",
+                "Current date - First date of month",
+                "Current date - First date of previous year",
+                "Current date - First date of year",
+                "Current date - Last date of month",
+                "DateDiff (variable end date)",
+                "DateDiff (fixed end date)",
+                "DateKey: Converts a datetime formatted field into an integer field for use as a better performing foreign key.",
+                "First date of future year",
+                "First date of last year",
+                "First date of month",
+                "First date of next year",
+                "First date of previous year",
+                "First date of year",
+                "Last date of month",
+                "Time Table: Script action that populates a custom time dimension with 15 minute increments"
+            ]
+        }
+    ]
+}

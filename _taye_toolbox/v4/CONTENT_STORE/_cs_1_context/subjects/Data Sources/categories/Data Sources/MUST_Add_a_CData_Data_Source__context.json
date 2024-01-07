@@ -1,0 +1,41 @@
+{
+    "DateTime": "2023-12-27 14:42:17",
+    "URL": "https://support.timextender.com/data-sources-112/add-a-cdata-data-source-625",
+    "Keywords": "missing",
+    "Title": "Add a CData Data Source _ Community",
+    "Author": "Thomas Lind",
+    "Text": "It is possible to use all available ADO.Net versions of CData. They provide the ability to access a wide array of different data sources. Some of the data sources are already available as normal adapters, so you may choose to use those instead. Here are the links to the specific CData setup guides. You will need to go through the Initial setup before you attempt to go through these. ? You can add a CData data source by creating a data source and searching for the provider you want to use. There may be more than one version available, but generally, choose the one with the highest number. Then you will see the setup and the available options. Fill out the necessary fields and save the data source. After you have mapped the data source to an ODX instance you can create it as a data source. There are some general options that are shared across the various providers. These are things you can do for all providers if you need the benefit of these settings. other  hidden options  After a synchronization, it will increase the default string size from 2000 to 4000. If you want to get some more info out about what is going on for troubleshooting while testing a new setup. You set up a log file. Logging  Logfile You also need to set the verbosity to a number between 1 and 5. Regarding verbosity levels. It will give more information the higher the number. You should generally use 3. Higher only if you know the response will be small. Once your log file becomes larger than 100MB it will split out into sub-log files with a _1 enumeration for each new one. You should not use this log for normal executions, but turn it on for troubleshooting only. If the field is empty it will not update a log anymore. ",
+    "Lists": [
+        {
+            "heading": "Specific CData provider setup",
+            "paragraphs": [
+                "Here are the links to the specific CData setup guides. You will need to go through the Initial setup before you attempt to go through these."
+            ],
+            "list": [
+                "Connect to Excel Connect to Excel on Sharepoint Connect to Excel Online",
+                "Connect to Excel on Sharepoint",
+                "Connect to Excel Online",
+                "Connect to Dynamics 365 Sales",
+                "Connect to CSV data sources",
+                "Connect to XML",
+                "Connect to JSON",
+                "Connect to a REST API",
+                "Generate and use RSD files Advanced RSD file options",
+                "Advanced RSD file options"
+            ]
+        },
+        {
+            "heading": "Default data type value lengths",
+            "paragraphs": [
+                "There are some general options that are shared across the various providers. These are things you can do for all providers if you need the benefit of these settings.",
+                "In the other field, you can state some hidden options. Some of these are the following:"
+            ],
+            "list": [
+                "DefaultColumnSize",
+                "DefaultDecimalPrecision",
+                "DefaultDecimalScale",
+                "DefaultTimestampScale"
+            ]
+        }
+    ]
+}

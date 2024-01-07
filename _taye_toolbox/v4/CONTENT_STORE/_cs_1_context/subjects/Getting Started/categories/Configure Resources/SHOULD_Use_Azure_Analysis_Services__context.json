@@ -1,0 +1,99 @@
+{
+    "DateTime": "2023-12-27 14:39:44",
+    "URL": "https://support.timextender.com/configure-resources-126/use-azure-analysis-services-621",
+    "Keywords": "missing",
+    "Title": "Use Azure Analysis Services _ Community",
+    "Author": "missing",
+    "Text": "Complete the steps below to use Azure Analysis Services as a target for the Semantic Layer Endpoint (Analysis Services Tabular). AMO library Analysis Services Data Providers If you already have an Analysis Services in Azure then you can skip this step. App Registration This step must be completed using SQL Server Management Studio. OK TimeXtender Portal Data Estate > Instances, Add instance Add semantic model Add a Semantic Model Instance Tabular Note: Data Estate Admin Profile & preferences Run TimeXtender Desktop, click on refresh button on the menu bar to see the newsemantic modelinstance you added above. Deploy & Execute Note: Managed Instance On-Prem SQL Server, SQL Managed Instance one On-Prem SQL Server  Use an On-premises Data Gateway Just like in SQL, Analysis Services requires user permissions to access the model. This is done by adding user's e-mail address, or you can add Azure User Groups as defined below: Error: Symptoms: Azure Active Directory Admin Root cause: NOT ",
+    "Lists": [
+        {
+            "heading": "Create an Analysis Services Resource in Azure",
+            "paragraphs": [
+                "If you already have an Analysis Services in Azure then you can skip this step."
+            ],
+            "list": [
+                "Azure Portal > Create a new Resource > Analysis Services > Create",
+                "Assign the Server Name, Subscription, Resource group, and Location.",
+                "Once deployed, open the resource and note down the Analysis Services Server Name which will look like this: asazure://eastus.asazure.windows.net/xxxxxx"
+            ]
+        },
+        {
+            "heading": "Create an App Registration",
+            "paragraphs": [
+                "In order to access the Analysis Services resource from TimeXtender, you will need to configure an App Registration in the Azure Active Directory."
+            ],
+            "list": [
+                "In the Azure Portal menu, click on Azure Active Directory, then click on App Registrations in the menu bar on the left. Then click New Registration.",
+                "Enter a name and select Accounts in this organizational directory only. The value of Redirect URI is the URL at which your application is hosted. Click Register when you are done.",
+                "For the newly added App Registration, select Certificates & secrets to create a New Client Secret. This key is encrypted after save, so it needs to be documented somewhere safe. The secret will appear after you click Add.",
+                "Please note the following properties of the App Registration which will be needed later: Application ID Client Secret (Application Key)",
+                "Application ID",
+                "Client Secret (Application Key)"
+            ]
+        },
+        {
+            "heading": "Assign the App Registration as Analysis Services Admin",
+            "paragraphs": [
+                "This step must be completed using SQL Server Management Studio."
+            ],
+            "list": [
+                "In SSMS, connect to your Azure AS server.",
+                "In Server Properties > Security, click Add.",
+                "Type the name of your app registration in the the search box and click search.",
+                "Click the app registration as it appears in the list, click Add.",
+                "If your App registration is not visible in search result, you may enter it manually using the following format: app:<app-ID>@<tenant-ID>"
+            ]
+        },
+        {
+            "heading": "Add TimeXtender Semantic Model Endpoint",
+            "paragraphs": [
+                "Sign in to the TimeXtender Portal, go to Data Estate > Instances, click Add instance > Add semantic model",
+                "Refer to Add a Semantic Model Instance \u201cTabular\u201d section for details on connection options."
+            ],
+            "list": [
+                "In the Server box, type the fully-qualified name of your Azure Analysis Services.",
+                "In the Database box, type the name of the database (new model to be created).",
+                "In the Deployment target list, click the version of SSAS you are targeting. Automatic (default) or Analysis Services Universal are the recommended settings.",
+                "In the Compatibility box, type the compatibility level you want to use, or leave it blank to use the highest supported by the server.",
+                "Set Server authentication to authentication login",
+                "In the Server Username box, type the App Registration (created above), using app:<app-ID> format   .",
+                "In the Server Password box, enter the secret for App Registration",
+                "In the Processing Authentication list, select how the Tabular service will connect to the data warehouse. Click Service account to use the SQL Server Analysis Services service account. Click Windows user to use another user and then enter the user name for the user in the Username box and the corresponding password in the Password box.",
+                "Click Service account to use the SQL Server Analysis Services service account.",
+                "Click Windows user to use another user and then enter the user name for the user in the Username box and the corresponding password in the Password box.",
+                "Select Process model offline to process the model \"behind the scenes\" and make the deployment seamless for the users. The offline database will have the endpoint's name prefixed with \"Offline_\"."
+            ]
+        },
+        {
+            "heading": "Enable use with SQL Managed Instance or On-Prem SQL Server",
+            "paragraphs": [
+                "If using Azure SQL Managed Instance for your Data Warehouse, you must configure one of the two following options to connect to Azure Analysis Services:"
+            ],
+            "list": [
+                "Configure public endpoint (Easiest option - Recommended)",
+                "Use an On-premises Data Gateway"
+            ]
+        },
+        {
+            "heading": "Provide Users Access to the Model",
+            "paragraphs": [
+                "Just like in SQL, Analysis Services requires user permissions to access the model.  This is done by adding user's e-mail address, or you can add Azure User Groups as defined below:"
+            ],
+            "list": [
+                "Identify Azure Active Directory Group Object IDs as shown below:",
+                "In TimeXtender Desktop > Semantic Instance > Role > Add Role > Add External Users, use the following format: obj:<Object-ID>@<tenant-ID>"
+            ]
+        },
+        {
+            "heading": "Troubleshooting",
+            "paragraphs": [
+                "Symptoms: You are trying to authenticate an Azure Active Directory user, who is granted access as Analysis services Admin, but unable to authenticate and deploy the models.  You receive this error:",
+                "Root cause: This scenario will only work for Active Directory user accounts that do NOT use 2-factor authentication. So, you have to implement one of the following 2 options:"
+            ],
+            "list": [
+                "Create a new (special) Active Directory user account which does NOT use 2-factor authentication, for endpoint connection.",
+                "Create an app registration and implement all steps as described above in this guide"
+            ]
+        }
+    ]
+}

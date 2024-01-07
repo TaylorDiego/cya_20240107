@@ -1,0 +1,64 @@
+{
+    "DateTime": "2023-12-27 14:40:57",
+    "URL": "https://support.timextender.com/data-warehouse-108/customized-code-and-custom-scripting-1145",
+    "Keywords": "missing",
+    "Title": "Customized Code and Custom Scripting _ Community",
+    "Author": "Greg Lennox",
+    "Text": "Customized Code and Custom Scripting can be incorporated into your data warehouse as needed, but should only be used when other TimeXtender functionality is unable to accomplish your data sourcing and transformation tasks. Depending on how it is used, customized code may impact TimeXtenders ability to perform the following: Custom Scripting in TimeXtender supports User Defined Functions, Stored Procedures, Script Actions, Code Snippets, and Custom Code. Global Project Variables can also be created for use in custom scripts. The following is an outline of TimeXtender functionality that incorporates custom coding and scripts, listed out in the order of those that are relatively simple and easy to deploy, and ending with amoreadvanced section that explains how to add custom coding to the stored procedures and transformation views that create and comprise a data area table. Custom views are a meansto implement custom code that can be relatively easy to maintain asfield mappings can be set and parameters can be used. A Custom view is a better practice than using a Custom Table Insert, which will not maintain data lineage. Custom Views  Script Actions Stored Procedures (SPs) User Defined Functions Stored Procedures Prescripts and postscripts are scripted actions that can be configured torun as part of a deployment or an execution, with prescripts being run before the deployment or executionand postscripts being run after. TimeXtender autogenerates the stored procedure based on all the settings that have been configured, and will maintain or amend this stored procedure based on new configurations to the data area. If you choose to customize this stored procedure, then TimeXtender will not be able to maintain this stored procedure going forward andany updates to it will need to be done manually. For this reason, customizing stored procedures aregenerally considered to be the last or final option when setting up a data area. With those caveats in mind, TimeXtender does provide a wayfor an instance to integrate\"hand-written\" code that is used to customizethe data cleansing procedure and a transformation viewfora given table. Use the following steps to deploy customized code fora given table: \"Custom Code Editor\" \"Create Procedure\" \"Create View\"  ",
+    "Lists": [
+        {
+            "heading": "Add a Custom View as a Table Insert",
+            "paragraphs": [
+                "Custom views are a means to implement custom code that can be relatively easy to maintain as field mappings can be set and parameters can be used. A Custom view is a better practice than using a Custom Table Insert, which will not maintain data lineage."
+            ],
+            "list": [
+                "First create the Custom View.",
+                "Right-click the view and select Map Custom View fields to set up field mapping, which will maintain data lineage.",
+                "Drag the custom view onto your data warehouse",
+                "Provide a Name for the table",
+                "Deploy and Execute to enact the changes"
+            ]
+        },
+        {
+            "heading": "Add a Script Action",
+            "paragraphs": [],
+            "list": [
+                "Select Add Custom Step from Script Actions under Scripts on a data warehouse",
+                "Provide a Name",
+                "Enter your SQL script in the textbox, using objects in the right-side pane",
+                "Click OK"
+            ]
+        },
+        {
+            "heading": "Adding a Script Action to a table as Pre- or Postscript",
+            "paragraphs": [
+                "Prescripts and postscripts are scripted actions that can be configured to run as part of a deployment or an execution, with prescripts being run before the deployment or execution and postscripts being run after."
+            ],
+            "list": [
+                "Select Set Pre- and Postscripts under Advanced on a table to use the Script Action",
+                "Use the dropdown menus Pre Step and Post Step to select when a Script Action or Custom Step should be triggered",
+                "Click OK."
+            ]
+        },
+        {
+            "heading": "Adding customized code to a table",
+            "paragraphs": [
+                "TimeXtender autogenerates the stored procedure based on all the settings that have been configured, and will maintain or amend this stored procedure based on new configurations to the data area. If you choose to customize this stored procedure, then TimeXtender will not be able to maintain this stored procedure going forward and any updates to it will need to be done manually. For this reason, customizing stored procedures are generally considered to be the last or final option when setting up a data area.",
+                "With those caveats in mind, TimeXtender does provide a way for an instance to integrate \"hand-written\" code that is used to customize the data cleansing procedure and a transformation view for a given table.",
+                "Use the following steps to deploy customized code for a given table:"
+            ],
+            "list": [
+                "Right click the table > Advanced > Customize code.",
+                "Click the \"Add\" button to the right of the step to be customized, which will open the \"Choose Editor\" window.",
+                "In the Editor Name list, the following options are available: Standard is the basic built-in editor in TimeXtender. Default File Program is the program that is set to open files of the type in question. For the data cleansing procedure and the transformation view, the file name extension is .sql.  Any custom editors that have been added (see Managing Custom Editors).",
+                "Standard is the basic built-in editor in TimeXtender.",
+                "Default File Program is the program that is set to open files of the type in question. For the data cleansing procedure and the transformation view, the file name extension is .sql.",
+                "Any custom editors that have been added (see Managing Custom Editors).",
+                "If the \"Standard\" editor is chosen, the \"Edit\" window will open. Once the code editing is complete, click \"OK\" to confirm the edits.",
+                "If a custom editor is chosen, TimeXtender will open the code in the chosen editor. After editing the code, save the changes and close the editor. The \"Custom Code Editor\" window will be open in TimeXtender. Click Import to import the changes made in the custom editor into your instance.",
+                "When returning to the \"Customize Code\" window, note that \"Parameters\" (if applicable) and \"Delete\" can now be clicked. Click \"Delete\" to remove the customization and return to having TimeXtender generate the code. Click \"Parameters\" to decide which parameters are sent to the code on execution.",
+                "Click Close to close the window."
+            ]
+        }
+    ]
+}

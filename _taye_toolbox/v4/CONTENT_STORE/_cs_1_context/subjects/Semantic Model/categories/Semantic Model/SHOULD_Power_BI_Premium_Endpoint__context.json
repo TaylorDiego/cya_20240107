@@ -1,0 +1,94 @@
+{
+    "DateTime": "2023-12-27 14:41:33",
+    "URL": "https://support.timextender.com/semantic-model-109/power-bi-premium-endpoint-715",
+    "Keywords": "missing",
+    "Title": "Power BI Premium Endpoint _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "TimeXtender 6024.1 This article describes how to deploy and execute the semantic model to the Power BI Premium XMLA Read/Write Endpoint.   Portal   add a Semantic Modelinstance endpoint Note: Snowflake  additional steps If you receive an authentication error when you first attempt to execute your model, you may need to update your your data source credentials: Read more about this from Microsoft Docs  ",
+    "Lists": [
+        {
+            "heading": "Configure Power BI",
+            "paragraphs": [],
+            "list": [
+                "Login to app.powerbi.com",
+                "Select the workspace where the semantic model will be deployed to: Go to Workspace Settings Click the Premium tab Select the Premium per user or Premium per capcity License mode (this requires a Premium license) Copy the workspace connection.",
+                "Go to Workspace Settings",
+                "Click the Premium tab",
+                "Select the Premium per user or Premium per capcity License mode (this requires a Premium license)",
+                "Copy the workspace connection."
+            ]
+        },
+        {
+            "heading": "Add Power BI Premium Semantic Model Endpoint",
+            "paragraphs": [
+                "In the Portal, add a Semantic Model instance, and add a Power BI Premium endpoint"
+            ],
+            "list": [
+                "Name: Give your endpoint a friendly name that will appear in TimeXtender.",
+                "Server: paste the Workspace Connection URL copied from the Power BI workspace.",
+                "Dataset: This is the name for the Power BI Dataset,",
+                "Username & Password: The credentials used to log onto app.powerbi.com (i.e. email and password).  Alternatively, you can Authenticate using a Service Principal.",
+                "Click save."
+            ]
+        },
+        {
+            "heading": "Deploying the endpoint in TimeXtender Desktop",
+            "paragraphs": [],
+            "list": [
+                "In TimeXtender Desktop, click Refresh to show the newly created semantic instance and endpoint.",
+                "Right click on the semantic instance and select Open instance.",
+                "Drag the tables from the Data Warehouse into the Semantic instance. Right click on the instance and select Deploy & Execute."
+            ]
+        },
+        {
+            "heading": "Configure the Power BI Data Source Credential",
+            "paragraphs": [
+                "If you receive an authentication error when you first attempt to execute your model, you may need to update your your data source credentials:"
+            ],
+            "list": [
+                "Go to the Data Model, click the 3 dots, click Settings",
+                "Under data source credentials, select Edit credentials and enter the credentials for the Data Warehouse.",
+                "If you are unable to successfully edit the data source credentials, try to take over the dataset settings first and then edit the credentials:",
+                "Go back into TimeXtender Desktop, right click on the Semantic Instance and select Execute."
+            ]
+        },
+        {
+            "heading": "Create an App Registration in Azure",
+            "paragraphs": [],
+            "list": [
+                "In the Azure Portal navigate to Azure Active Directory (Take note, of the Tenant ID, this will be used as part of your username later).",
+                "Click App Registrations, click New Registration (Take note of the App ID, this will be used as part of your username later).",
+                "Once App Registration is created, click Certificate & Secrets, New Client Secret (Take note of the client secret, this will be used as your password later).",
+                "Click API permissions, Add a permission, then add the below permissions."
+            ]
+        },
+        {
+            "heading": "Allow service principals to use Power BI APIs",
+            "paragraphs": [],
+            "list": [
+                "Navigate to Power BI Admin Portal > Tenant settings",
+                "Enable the option: Allow service principals to use Power BI APIs",
+                "Under Apply to, select The entire organization. Alternatively, Select Specific security groups, and ensure the app registration is added to the defined security group."
+            ]
+        },
+        {
+            "heading": "Give your App Registration Admin Access",
+            "paragraphs": [],
+            "list": [
+                "In Power BI, Open your Workspace.",
+                "Click Access",
+                "Enter the name of the App Registration, Set the role to Admin, then click Add."
+            ]
+        },
+        {
+            "heading": "Update Credentials in TimeXtender Semantic Model",
+            "paragraphs": [],
+            "list": [
+                "Open your Semantic Model Instance in the Portal, Click Edit.",
+                "Edit the Credentials of your Power BI Premium Endpoint:",
+                "Usernmame: enter app:<appId>@<tenantId>",
+                "Password: enter the <app client secret>."
+            ]
+        }
+    ]
+}

@@ -1,0 +1,4 @@
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): pylint.readthedocs.io:443
+DEBUG:urllib3.connectionpool:https://pylint.readthedocs.io:443 "GET /en/latest/user_guide/messages/convention/invalid-name.html HTTP/1.1" 200 None
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): pylint.readthedocs.io:443
+DEBUG:urllib3.connectionpool:https://pylint.readthedocs.io:443 "GET /en/latest/user_guide/messages/convention/invalid-name.html HTTP/1.1" 200 None

@@ -1,0 +1,55 @@
+{
+    "DateTime": "2023-12-27 14:42:09",
+    "URL": "https://support.timextender.com/timextender-portal-111/configuring-firewall-rules-for-instances-1390",
+    "Keywords": "missing",
+    "Title": "Configuring Firewall Rules for Instances _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "The firewall of an instance can be configured to use manual rules only, or to use a combination of manual and automatic rules. The firewall can be configured for ODX instances, DW instances, and Semantic Model instances. Automatic rules, also known as dynamic rules, are automatically created by TimeXtender when a user connects to a TimeXtenderinstance. This process entails authenticating both the user credentails and the secret provided. Subsequently, TimeXtender generates a firewall rule for the IP address used to establish the connection and generates a database user associated with the instance's metadata database. A TimeXtender user can create multiple automatic rules, or connections, when signing in from different IP addresses over time. While automatic rules offer convenience and efficiency, they present a less secure option compared to static rules. Although automatic rules necessitate validation via a secret and user credentials, they might inadvertently introduce vulnerabilities to the system, particularly when accessed from public locations. This potential risk emphasizes the significance of utilizing static rules, which grant administrators complete authority over the specific IP addresses permitted to access their instances. As a result, security measures are reinforced. Save Automatic rules can be disabled, in which case it will be necessary to manually create rules for each instance. Manual rules offer more control but require more manual effort. Manual rules, also known as static rules,might be necessary if your setup is not supported by TimeXtender (for example, applying IPs based on outgoing ports, a scenario that the automatic system cannot accommodate) or if the TimeXtender automatic rule system is malfunctioning (for example, if you encounter an error message that a specific IP address is not allowed to access the server) Note: ",
+    "Lists": [
+        {
+            "heading": "Displaying Automatic Firewall Rules",
+            "paragraphs": [],
+            "list": [
+                "Add or edit an instance",
+                "Scroll down to the Firewall rules section and select Show automatic rules. The number of automatic rules is shown in parentheses, in this case (1) automatic rule has been created for the instance",
+                "Save the instance"
+            ]
+        },
+        {
+            "heading": "Disabling Automatic Rules",
+            "paragraphs": [
+                "Automatic rules can be disabled, in which case it will be necessary to manually create rules for each instance. Manual rules offer more control but require more manual effort."
+            ],
+            "list": [
+                "To disable automatic rules, add or edit an instance",
+                "Click on Advanced",
+                "Select Use manual rules only",
+                "Save the instance"
+            ]
+        },
+        {
+            "heading": "Creating a Manual Firewall Rule",
+            "paragraphs": [],
+            "list": [
+                "Add or edit an instance",
+                "Scroll down to the the Firewall rules section and click Add",
+                "Enter the rule Name that describes the purpose of the rule",
+                "Enter the Start IPv4 Address for the range this rule will cover",
+                "Enter the End IPv4 Address for the range this rule will cover",
+                "Enter a Comment for the log to explain why the rule is being created. This comment will appear in the TimeXtender log and can be useful for auditing purposes",
+                "Click the Add to apply the rule",
+                "Save the instance"
+            ]
+        },
+        {
+            "heading": "Deleting a Manual Firewall Rule",
+            "paragraphs": [],
+            "list": [
+                "Edit an instance",
+                "Scroll down to the Firewall rules section",
+                "Click the delete icon associated with the rule that is to be deleted",
+                "Confirm the removal by clicking Remove and Save the instance"
+            ]
+        }
+    ]
+}

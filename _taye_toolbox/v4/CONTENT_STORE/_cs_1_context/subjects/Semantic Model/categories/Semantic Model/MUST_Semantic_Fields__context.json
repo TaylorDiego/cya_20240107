@@ -1,0 +1,59 @@
+{
+    "DateTime": "2023-12-27 14:41:42",
+    "URL": "https://support.timextender.com/semantic-model-109/semantic-fields-1170",
+    "Keywords": "missing",
+    "Title": "Semantic Fields _ Community",
+    "Author": "Thomas Lind",
+    "Text": "Semantic tables are part of the semantic model thatcomprises the serving layer in a data warehouse and represents theculmination of all the extraction, transformation, and loading that happens prior to the tables being added to the semantic model. In addition to the data source fields included in the semantic tables, there are also various othertypes of fields that can be added. This article clarifies these other field types that can be addedto semantic tables. Adding a Custom Field Adding a Custom Measure Adding a Measure based on a Table Adding a Measure based on a Field Hiding a Field or a Measure Note: Configuring the data format and category can control how fielddata is displayed in client applications. For example, Power BIwill display text fields as links when they are categorized as \"Web URL\". Use the following steps to set the data format and category for a field. Note: Summarize by Use the following steps to change the summarize by option: Note: Some fields have an inherent andconventional sort order. For instance, monthsare usually ordered from January toDecember andnot alphabetically from April toSeptember. In this case, it would make sense to order the months according to a month number instead of the month name. Configure one field to be sorted by another field as follows: Note: Display Folders Use the following steps to add a display folder and then to add fields to the folder. ",
+    "Lists": [
+        {
+            "heading": "Setting Data Format and Category",
+            "paragraphs": [
+                "Configuring the data format and category can control how field data is displayed in client applications. For example, Power BI will display text fields as links when they are categorized as \"Web URL\".",
+                "Use the following steps to set the data format and category for a field."
+            ],
+            "list": [
+                "Right-click the field and select Edit Field to open the following window.",
+                "Select the data format for the field from the Data format list. The options available will depend on the data type, which can be changed on the source field in the data warehouse or staging database, if necessary. For some data types, just one data format is available and thus cannot be changed.",
+                "Click Customize to customize the data format, e.g. the number of decimal places for decimal numbers.",
+                "Select the category from the Category list."
+            ]
+        },
+        {
+            "heading": "Choosing How a Field is Summarized",
+            "paragraphs": [
+                "In analysis and reporting applications, a field can be aggregated in a number of different ways, such as 'sum', 'average' or 'minimum'. The Summarize by option for fields in the semantic layer controls how Power BI will aggregate the field.",
+                "Use the following steps to change the summarize by option:"
+            ],
+            "list": [
+                "Right-click the field and select Edit Field.",
+                "in the Summarize by list, click the appropriate summarization setting."
+            ]
+        },
+        {
+            "heading": "Sorting a Field by another Field",
+            "paragraphs": [
+                "Some fields have an inherent and conventional sort order. For instance, months are usually ordered from January to December and not alphabetically from April to September. In this case, it would make sense to order the months according to a month number instead of the month name.",
+                "Configure one field to be sorted by another field as follows:"
+            ],
+            "list": [
+                "Right-click the field and select Edit Field.",
+                "In the Sort by list, click on the field that contains the values to be used for sorting."
+            ]
+        },
+        {
+            "heading": "Organizing fields and Measures in Display Folders",
+            "paragraphs": [
+                "Display Folders can be used to organize fields and measures into folders for use in client applications such as PowerBI.",
+                "Use the following steps to add a display folder and then to add fields to the folder."
+            ],
+            "list": [
+                "Right click the table that contains the fields to be foldered and select Display Folders to open the following window.",
+                "Click Add and type a name for the folder in the Name box. The syntax for display folder names includes two special characters: Backslash: Use backslash to create a hierarchy of display folders. For example, \"A\\B\" will create a display folder \"A\" that contains a display folder \"B\". Semicolon: Behind the scenes, TimeXtender creates one display folder string for each field where each folder is separated by a semicolon. It is possible, but not recommended, to create display folders with a semicolon in the name. For example, mapping a display folder called \"A;B\" to a field is the same as mapping the field to a display folder \"A\" and a display folder \"B\".  Display folders are shared across the model.",
+                "Backslash: Use backslash to create a hierarchy of display folders. For example, \"A\\B\" will create a display folder \"A\" that contains a display folder \"B\".",
+                "Semicolon: Behind the scenes, TimeXtender creates one display folder string for each field where each folder is separated by a semicolon. It is possible, but not recommended, to create display folders with a semicolon in the name. For example, mapping a display folder called \"A;B\" to a field is the same as mapping the field to a display folder \"A\" and a display folder \"B\".",
+                "Map the fields to display folders by clicking the check box where a field and a display folder intersect in the grid."
+            ]
+        }
+    ]
+}

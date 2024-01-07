@@ -1,0 +1,34 @@
+{
+    "task": {
+        "meta": {
+            "name": "Task 1",
+            "description": "Task 1 description",
+            "status": "open",
+            "created": "",
+            "updated": ""
+            }
+        , "continutity" : {
+            "prompt": ""
+            , "report": ""
+        }
+        , "quality" : {
+            "": ""
+        }
+        , "steps" : {
+            "": ""
+        }
+        , "progress" : {
+            "SOURCE": ""
+            , "CONTEXT": ""
+            , "AI_TASK": ""
+            , "AI_CHECK": ""
+            , "USER_CHECK": ""
+            , "FINAL": ""
+
+        }
+        , "storage" : {
+            "": ""
+        }
+        , "summary" : {
+            "": ""
+}

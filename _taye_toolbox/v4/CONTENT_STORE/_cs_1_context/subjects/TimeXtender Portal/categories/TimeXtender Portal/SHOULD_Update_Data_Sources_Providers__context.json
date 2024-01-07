@@ -1,0 +1,17 @@
+{
+    "DateTime": "2023-12-27 14:42:05",
+    "URL": "https://support.timextender.com/timextender-portal-111/update-data-sources-providers-1026",
+    "Keywords": "missing",
+    "Title": "Update Data Sources Providers _ Community",
+    "Author": "Christian Hauggaard",
+    "Text": "This article describes how to update an existing data source provider to a newer version, given that a newer version of the provider is available.  ",
+    "Lists": [
+        {
+            "heading": "Update a Data Source Provider",
+            "paragraphs": [],
+            "list": [
+                "Sign into the TimeXtender Portal and go to data sources. If a data source provider has a newer version available, then it will appear on the list as shown below."
+            ]
+        }
+    ]
+}
